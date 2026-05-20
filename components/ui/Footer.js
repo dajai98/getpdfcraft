@@ -13,30 +13,18 @@ export default function Footer() {
               <span style={{ fontWeight: 800, fontSize: 17, color: "#111827" }}>PDFcraft</span>
             </div>
             <p style={{ fontSize: 13, color: "#9ca3af", lineHeight: 1.7, maxWidth: 260, marginBottom: 16 }}>
-              13 free PDF tools. No sign up. No limits. Files never leave your device.
+              11 free PDF tools. No sign up. No limits. Files never leave your device.
             </p>
-
-            {/* Dajai Studio credit */}
             <p style={{ fontSize: 12, color: "#9ca3af", lineHeight: 1.6, maxWidth: 260, marginBottom: 8 }}>
               PDFcraft is built by{" "}
               <span style={{ color: "#6b7280", fontWeight: 600 }}>Dajai Studio</span>
               , an indie studio from Nepal.
             </p>
-
-            {/* Game promotion — subtle */}
             <a
               href="https://play.google.com/store/apps/details?id=com.dajaistudio.brainstorm"
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 6,
-                fontSize: 12,
-                color: "#9ca3af",
-                textDecoration: "none",
-                transition: "color 0.15s",
-              }}
+              style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12, color: "#9ca3af", textDecoration: "none", transition: "color 0.15s" }}
               onMouseEnter={e => e.currentTarget.style.color = "#E8380D"}
               onMouseLeave={e => e.currentTarget.style.color = "#9ca3af"}
             >
@@ -67,8 +55,6 @@ export default function Footer() {
               {[
                 ["Rotate PDF", "/tools/rotate-pdf"],
                 ["Watermark PDF", "/tools/watermark-pdf"],
-                ["Protect PDF", "/tools/protect-pdf"],
-                ["Unlock PDF", "/tools/unlock-pdf"],
                 ["Delete Pages", "/tools/delete-pages"],
                 ["Page Numbers", "/tools/add-page-numbers"],
                 ["Reorder Pages", "/tools/reorder-pages"],
@@ -114,4 +100,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+                                    }
