@@ -1,133 +1,128 @@
-import BlogPost from "@/components/ui/BlogPost";
+"use client";
+import Link from "next/link";
+import { AdLeaderboard } from "@/components/ui/Ads";
 
-export const metadata = {
-  title: "Best Free iLovePDF Alternative in 2026 | PDFcraft",
-  description: "Looking for a free iLovePDF alternative? PDFcraft offers all the same tools — merge, split, compress, convert — with better privacy. No file uploads ever.",
-  keywords: "ilovepdf alternative, ilovepdf alternative free, best pdf tool alternative to ilovepdf, free pdf tools like ilovepdf",
-  alternates: { canonical: "https://getpdfcraft.com/blog/ilovepdf-alternative" },
-  openGraph: {
-    title: "Best Free iLovePDF Alternative in 2026 | PDFcraft",
-    description: "Looking for a free iLovePDF alternative? PDFcraft offers all the same tools with better privacy. No file uploads ever.",
-    url: "https://getpdfcraft.com/blog/ilovepdf-alternative",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Best Free iLovePDF Alternative in 2026 | PDFcraft",
-    description: "Looking for a free iLovePDF alternative? PDFcraft offers all the same tools with better privacy. No file uploads ever.",
-  },
-};
-
-export default function Post() {
+export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, intro, sections, faqs, ctaText, ctaHref }) {
   return (
-    <BlogPost
-      tag="Comparison" tagColor="#7C3AED" tagBg="#F5F3FF"
-      title="Best Free iLovePDF Alternative in 2026"
-      date="February 1, 2026" readTime="7 min read"
-      intro="iLovePDF is one of the most popular PDF tools online — but it uploads your files to their servers, requires sign up for some features, and shows aggressive ads. If you care about privacy and want a truly free alternative, PDFcraft processes everything directly in your browser. Your files never leave your device."
-      sections={[
-        {
-          heading: "What is iLovePDF?",
-          text: "iLovePDF is a web-based PDF toolkit launched in 2010. It offers over 20 PDF tools and has millions of users worldwide. However, it has some significant drawbacks: all files are uploaded to their cloud servers, some tools require a free account, and heavy usage requires a paid plan starting at $4/month. For users who handle sensitive documents — contracts, medical records, financial files — uploading to a third-party server is a real privacy concern.",
-        },
-        {
-          heading: "PDFcraft vs iLovePDF — side by side",
-          table: {
-            headers: ["Feature", "PDFcraft", "iLovePDF"],
-            rows: [
-              ["Price", "100% Free forever", "Free with paid tier"],
-              ["File uploads", "Never — browser only", "Yes — cloud servers"],
-              ["Sign up required", "Never", "Required for some tools"],
-              ["File size limit", "No limit", "Limited on free plan"],
-              ["Ads", "Minimal", "Aggressive"],
-              ["Works offline", "Yes, after loading", "No"],
-              ["Privacy", "Files never leave device", "Files uploaded to servers"],
-              ["Daily limits", "None", "Limited on free plan"],
-            ],
-          },
-        },
-        {
-          heading: "Why PDFcraft is the better choice",
-          steps: [
-            {
-              title: "100% private — no file uploads",
-              body: "Unlike iLovePDF which uploads your files to their servers, PDFcraft processes everything locally in your browser using JavaScript. Your documents never leave your device — not even for a second. This makes PDFcraft ideal for sensitive files like contracts, tax documents, medical records, and legal paperwork.",
-            },
-            {
-              title: "No sign up required — ever",
-              body: "iLovePDF requires an account for some features and sends marketing emails. PDFcraft requires absolutely nothing. No email, no password, no account. Open the site, use the tool, done. Your privacy is fully protected.",
-            },
-            {
-              title: "No file size limits",
-              body: "PDFcraft has no artificial file size caps imposed by us. Process files as large as your device memory allows. iLovePDF limits file sizes on their free plan, forcing you to upgrade for large documents.",
-            },
-            {
-              title: "All tools completely free — no upsells",
-              body: "Every single tool on PDFcraft is free forever. No premium plan, no feature gating, no daily limits, no watermarks on output. iLovePDF constantly promotes their paid plans and limits free usage.",
-            },
-            {
-              title: "Works offline after loading",
-              body: "Once PDFcraft loads in your browser, it works without an internet connection since all processing is local. iLovePDF requires a constant internet connection because processing happens on their servers.",
-            },
-          ],
-        },
-        {
-          heading: "What tools does PDFcraft have?",
-          text: "PDFcraft covers the 11 most used PDF tasks — all free, all private:",
-          list: [
-            "Merge PDF — combine multiple PDFs into one file",
-            "Split PDF — extract pages or split by range",
-            "Compress PDF — reduce file size without losing quality",
-            "PDF to Image — convert PDF pages to JPG or PNG",
-            "JPG to PDF — convert images to PDF instantly",
-            "Rotate PDF — fix page orientation in one click",
-            "Watermark PDF — add custom text watermarks",
-            "Delete Pages — remove unwanted pages",
-            "Add Page Numbers — number your PDF pages",
-            "Reorder Pages — drag and rearrange pages",
-            "PDF to Grayscale — convert color PDF to black and white",
-          ],
-        },
-        {
-          heading: "When should you still use iLovePDF?",
-          text: "PDFcraft is the better choice for privacy and completely free use. However, iLovePDF has over 20 tools including OCR, PDF to Word, and PDF to Excel conversion. If you specifically need those advanced conversion tools, iLovePDF may still be useful. PDFcraft is actively adding more tools — check back regularly.",
-        },
-        {
-          heading: "Who is PDFcraft built for?",
-          text: "PDFcraft is built for anyone who needs fast, private PDF tools without the hassle of sign-ups or file uploads. It is especially useful for students handling assignments, professionals working with confidential documents, small business owners managing invoices, and anyone who values their privacy online.",
-        },
-        {
-          tip: "PDFcraft is built by Dajai Studio, an indie studio from Nepal. It is completely free with no tricks, no premium upsells, and no file uploads. Just fast, private PDF tools that work on any device.",
-        },
-      ]}
-      faqs={[
-        {
-          q: "Is PDFcraft really free like iLovePDF?",
-          a: "Yes, completely free — and more free than iLovePDF. Unlike iLovePDF which has a paid tier and limits free usage, all PDFcraft tools are free forever with no limits, no sign up, and no watermarks.",
-        },
-        {
-          q: "Does PDFcraft upload my files like iLovePDF?",
-          a: "No. PDFcraft processes files entirely in your browser using JavaScript. Nothing is ever uploaded to any server. This is the biggest difference from iLovePDF and the main reason privacy-conscious users prefer PDFcraft.",
-        },
-        {
-          q: "Does PDFcraft have all the same tools as iLovePDF?",
-          a: "PDFcraft has 11 of the most used PDF tools. iLovePDF has more tools overall including OCR and conversion features. However, for the core tasks most people need — merge, split, compress, convert — PDFcraft works faster and more privately.",
-        },
-        {
-          q: "Is PDFcraft safe to use for sensitive documents?",
-          a: "Yes — PDFcraft is the safest option available. Since files never leave your device, there is zero risk of your documents being stored, accessed, or leaked by any server. It is ideal for confidential files.",
-        },
-        {
-          q: "Which is better — iLovePDF or PDFcraft?",
-          a: "For privacy, speed, and completely free use — PDFcraft wins. For sheer number of tools including advanced OCR and conversions — iLovePDF has more. For the 11 most common PDF tasks, PDFcraft is the better free choice.",
-        },
-        {
-          q: "Does PDFcraft work on iPhone and Android?",
-          a: "Yes. PDFcraft works on any device with a modern browser including iPhone Safari, Android Chrome, and all desktop browsers. No app download needed.",
-        },
-      ]}
-      ctaText="Try PDFcraft free — the better iLovePDF alternative"
-      ctaHref="/"
-    />
+    <div style={{ maxWidth: 740, margin: "0 auto", padding: "80px 24px" }}>
+      <Link href="/blog" style={{ fontSize: 13, color: "#9ca3af", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
+
+      <div style={{ marginBottom: 40 }}>
+        <span style={{ background: tagBg, color: tagColor, fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>{tag}</span>
+        <h1 style={{ fontSize: "clamp(28px, 5vw, 46px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>{title}</h1>
+        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#9ca3af", flexWrap: "wrap" }}>
+          <span>{date}</span><span>· {readTime}</span><span>· By PDFcraft</span>
+        </div>
+      </div>
+
+      {/* Ad at top of article */}
+      <div style={{ marginBottom: 32 }}>
+        <AdLeaderboard />
+      </div>
+
+      <div style={{ fontSize: 16, color: "#374151", lineHeight: 1.8 }}>
+        <p style={{ marginBottom: 32, fontSize: 18, color: "#111827", fontWeight: 500, lineHeight: 1.6 }}>{intro}</p>
+
+        {sections.map((section, i) => (
+          <div key={i} style={{ marginBottom: 36 }}>
+            {section.heading && <h2 style={{ fontSize: 24, fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -0.5 }}>{section.heading}</h2>}
+            {section.text && <p style={{ marginBottom: 16, color: "#374151" }}>{section.text}</p>}
+
+            {/* Comparison Table */}
+            {section.table && (
+              <div style={{ overflowX: "auto", marginBottom: 16 }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+                  <thead>
+                    <tr style={{ background: "#111827" }}>
+                      {section.table.headers.map((h, idx) => (
+                        <th key={idx} style={{
+                          padding: "12px 16px",
+                          textAlign: "left",
+                          color: "white",
+                          fontWeight: 700,
+                          fontSize: 13,
+                          borderBottom: "2px solid #E8380D",
+                        }}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.table.rows.map((row, rIdx) => (
+                      <tr key={rIdx} style={{ background: rIdx % 2 === 0 ? "#f9fafb" : "white" }}>
+                        {row.map((cell, cIdx) => (
+                          <td key={cIdx} style={{
+                            padding: "11px 16px",
+                            color: cIdx === 0 ? "#111827" : cIdx === 1 ? "#15803D" : "#6b7280",
+                            fontWeight: cIdx === 0 ? 600 : 400,
+                            borderBottom: "1px solid #f3f4f6",
+                            fontSize: 14,
+                          }}>{cell}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {section.steps && section.steps.map((step, j) => (
+              <div key={j} style={{ display: "flex", gap: 16, marginBottom: 20, alignItems: "flex-start" }}>
+                <div style={{ width: 36, height: 36, background: tagBg, borderRadius: 9, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 800, fontSize: 12, color: tagColor }}>
+                  {String(j + 1).padStart(2, "0")}
+                </div>
+                <div>
+                  <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 16, marginBottom: 4 }}>{step.title}</h3>
+                  <p style={{ color: "#6b7280", margin: 0, fontSize: 15 }}>{step.body}</p>
+                </div>
+              </div>
+            ))}
+
+            {section.tip && (
+              <div style={{ background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 12, padding: 20, marginTop: 16 }}>
+                <p style={{ fontWeight: 700, color: "#15803D", marginBottom: 6, fontSize: 14 }}>💡 Pro tip</p>
+                <p style={{ color: "#374151", margin: 0, fontSize: 14 }}>{section.tip}</p>
+              </div>
+            )}
+
+            {section.list && (
+              <ul style={{ paddingLeft: 20, color: "#374151" }}>
+                {section.list.map((item, k) => <li key={k} style={{ marginBottom: 8 }}>{item}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+
+        {/* Mid article ad */}
+        <div style={{ margin: "40px 0" }}>
+          <AdLeaderboard />
+        </div>
+
+        {faqs && faqs.length > 0 && (
+          <div style={{ marginTop: 8 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#111827", marginBottom: 24, letterSpacing: -0.5 }}>Frequently asked questions</h2>
+            {faqs.map((faq, i) => (
+              <div key={i} style={{ borderBottom: "1px solid #f3f4f6", paddingBottom: 20, marginBottom: 20 }}>
+                <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 16, marginBottom: 8 }}>{faq.q}</h3>
+                <p style={{ color: "#6b7280", margin: 0, fontSize: 15 }}>{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* CTA */}
+        <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
+          <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>{ctaText}</h3>
+          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free, instant, private. No sign up required.</p>
+          <Link href={ctaHref} style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
+            Try it free →
+          </Link>
+        </div>
+
+        {/* Bottom ad */}
+        <div style={{ marginTop: 40 }}>
+          <AdLeaderboard />
+        </div>
+      </div>
+    </div>
   );
-               }
+  }
