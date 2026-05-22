@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer style={{ borderTop: "1px solid #f3f4f6", background: "#f9fafb" }}>
+    <footer style={{ borderTop: "1px solid #f3f4f6", background: "#f9fafb", minHeight: 400, contain: "layout" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto", padding: "60px 24px 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 40, marginBottom: 48 }}>
           {/* Brand */}
@@ -100,4 +100,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-                                    }
+}
