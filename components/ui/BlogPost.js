@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import { AdLeaderboard } from "@/components/ui/Ads";
@@ -84,9 +85,23 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
               </div>
             )}
 
+            {/* List — supports plain strings AND { text, href } objects */}
             {section.list && (
               <ul style={{ paddingLeft: 20, color: "#374151" }}>
-                {section.list.map((item, k) => <li key={k} style={{ marginBottom: 8 }}>{item}</li>)}
+                {section.list.map((item, k) => (
+                  <li key={k} style={{ marginBottom: 8 }}>
+                    {typeof item === "string" ? (
+                      item
+                    ) : (
+                      <Link href={item.href} style={{ color: "#E8380D", fontWeight: 600, textDecoration: "none" }}
+                        onMouseEnter={e => e.currentTarget.style.textDecoration = "underline"}
+                        onMouseLeave={e => e.currentTarget.style.textDecoration = "none"}
+                      >
+                        {item.text}
+                      </Link>
+                    )}
+                  </li>
+                ))}
               </ul>
             )}
           </div>
@@ -125,4 +140,4 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
       </div>
     </div>
   );
-  }
+}
