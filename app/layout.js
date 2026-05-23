@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import Analytics from "@/components/ui/Analytics";
@@ -46,12 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Analytics />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2531068099084515"
-          crossOrigin="anonymous"
-        />
+        {/* JSON-LD schema — safe in head, no render impact */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -62,6 +58,20 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <CookieBanner />
+
+        {/* Analytics — moved out of <head>, rendered after body content */}
+        <Analytics />
+
+        {/* CLS FIX: AdSense loaded with strategy="afterInteractive" so it runs
+            after the page is interactive, not during initial parse.
+            This prevents it from delaying LCP or triggering layout shifts
+            before ad slots have reserved their space. */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2531068099084515"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
