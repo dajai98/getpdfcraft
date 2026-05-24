@@ -1,6 +1,6 @@
 # PDFCraft — Free PDF Tools
 
-13 free PDF tools that run entirely in your browser. No sign up. No uploads. No cost.
+11 free PDF tools that run entirely in your browser. No sign up. No uploads. No cost.
 
 ## Tools
 - Merge PDF
@@ -9,8 +9,6 @@
 - PDF to Image
 - Rotate PDF
 - Watermark PDF
-- Protect PDF
-- Unlock PDF
 - JPG to PDF
 - Delete Pages
 - Add Page Numbers
