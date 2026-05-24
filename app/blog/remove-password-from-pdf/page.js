@@ -1,55 +1,52 @@
-import Link from "next/link";
-
+import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Remove Password From PDF Free Online | PDFcraft",
-  description: "Remove password protection from any PDF file instantly. Free, no sign up, works in browser. Your files never leave your device.",
-  keywords: "remove password from pdf, unlock pdf free, decrypt pdf online, remove pdf password no sign up, unlock pdf without password",
+  title: "How to Remove Password from PDF Free Online | PDFcraft",
+  description: "Remove password protection from a PDF you own for free online. No sign up, instant, files never uploaded.",
+  keywords: "remove password from pdf free, pdf password remover online free, how to remove pdf password, unlock pdf password free",
   alternates: { canonical: "https://getpdfcraft.com/blog/remove-password-from-pdf" },
+  openGraph: { title: "Remove Password from PDF Free | PDFcraft", description: "Remove PDF password protection for free. No sign up, instant.", url: "https://getpdfcraft.com/blog/remove-password-from-pdf", type: "article" },
 };
-
 export default function Post() {
   return (
-    <div style={{ maxWidth: 740, margin: "0 auto", padding: "80px 24px" }}>
-      <Link href="/blog" style={{ fontSize: 13, color: "#9ca3af", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
-      <div style={{ marginBottom: 40 }}>
-        <span style={{ background: "#EEF2FF", color: "#4F46E5", fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>Unlock PDF</span>
-        <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>
-          How to Remove Password From PDF Free Online
-        </h1>
-        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#9ca3af" }}>
-          <span>January 25, 2026</span><span>· 3 min read</span><span>· By PDFcraft</span>
-        </div>
-      </div>
-      <div style={{ fontSize: 16, color: "#374151", lineHeight: 1.8 }}>
-        <p style={{ marginBottom: 24, fontSize: 18, color: "#111827", fontWeight: 500 }}>Got a password protected PDF you own and want to remove the password? PDFcraft unlocks it instantly for free — no software, no sign up needed.</p>
-
-        <div style={{ background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 14, padding: 24, marginBottom: 32 }}>
-          <p style={{ fontWeight: 700, color: "#DC2626", marginBottom: 8 }}>⚠️ Important note</p>
-          <p style={{ color: "#7f1d1d", margin: 0 }}>Only unlock PDFs that you own or have permission to unlock. Do not use this tool to bypass security on documents you don't have rights to access.</p>
-        </div>
-
-        {[
-          { num: "01", title: "Go to Unlock PDF tool", body: "Open PDFcraft and click Unlock PDF. No account needed." },
-          { num: "02", title: "Select your protected PDF", body: "Click Select File and choose your password protected PDF." },
-          { num: "03", title: "Enter the password", body: "Type the current password for the PDF. PDFcraft uses it to decrypt the file locally in your browser." },
-          { num: "04", title: "Click Unlock", body: "Your browser removes the password protection from the file. This happens entirely on your device." },
-          { num: "05", title: "Download unlocked PDF", body: "Download the unlocked PDF. The file is now free of password protection and opens normally." },
-        ].map(step => (
-          <div key={step.num} style={{ display: "flex", gap: 20, marginBottom: 24, alignItems: "flex-start" }}>
-            <div style={{ width: 40, height: 40, background: "#EEF2FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 800, fontSize: 13, color: "#4F46E5" }}>{step.num}</div>
-            <div>
-              <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 17, marginBottom: 6 }}>{step.title}</h3>
-              <p style={{ color: "#6b7280", margin: 0 }}>{step.body}</p>
-            </div>
-          </div>
-        ))}
-
-        <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
-          <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>Unlock your PDF now</h3>
-          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free, private, instant. Files never leave your device.</p>
-          <Link href="/tools/unlock-pdf" style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>Unlock PDF Free →</Link>
-        </div>
-      </div>
-    </div>
+    <BlogPost tag="Security" tagColor="#DC2626" tagBg="#FEF2F2"
+      title="How to Remove Password from PDF Free Online"
+      date="February 2026" readTime="5 min read"
+      intro="Password protected PDFs can be inconvenient when you need to edit, share, or process them with other tools. If you own the document and know the password, you can remove the protection for free in seconds. PDFcraft removes PDF passwords without uploading your file to any server."
+      sections={[
+        { heading: "When should you remove a PDF password?", steps: [
+          { title: "You want to merge or compress the PDF", body: "Password protected PDFs cannot be merged, split, or compressed until the protection is removed. Remove the password first, then process the file with other tools." },
+          { title: "You want to share without requiring a password", body: "If you previously protected a document for transit and now want to share it openly within your organization, remove the password for convenience." },
+          { title: "You want to print or copy text", body: "Some PDFs have permissions passwords that prevent printing or text copying. Removing this allows normal use of the document." },
+          { title: "The password is inconvenient for daily use", body: "If you access a document regularly and the password has become inconvenient, removing it from your personal copy saves time." },
+        ]},
+        { heading: "How to remove password from PDF — step by step", steps: [
+          { title: "Go to PDFcraft", body: "Open getpdfcraft.com in any browser. No account or software needed." },
+          { title: "Select Unlock PDF tool", body: "Click Unlock PDF from the homepage tools." },
+          { title: "Select your protected PDF", body: "Choose the PDF you want to unlock. It loads in your browser locally." },
+          { title: "Enter the current password", body: "Type the current password to verify you are authorized to remove the protection. PDFcraft requires this — it does not bypass or crack passwords." },
+          { title: "Click Unlock PDF", body: "PDFcraft removes the password protection from the PDF." },
+          { title: "Download the unlocked PDF", body: "Download the password-free version. It can now be opened, shared, and processed freely." },
+        ]},
+        { heading: "After removing the password — what to do next", list: [
+          { text: "Merge PDF — combine with other documents", href: "/tools/merge-pdf" },
+          { text: "Compress PDF — reduce file size", href: "/tools/compress-pdf" },
+          { text: "Split PDF — extract specific pages", href: "/tools/split-pdf" },
+          { text: "Add Watermark — protect with visible stamp instead", href: "/tools/watermark-pdf" },
+          { text: "Add Page Numbers — number the pages", href: "/tools/add-page-numbers" },
+        ]},
+        { heading: "Important — legal and ethical use only", text: "Only remove password protection from PDFs you own or have explicit permission to modify. Removing protection from documents you do not own is illegal and unethical. PDFcraft requires the current password before removing protection — it cannot crack or bypass passwords on documents you do not have authorization for." },
+        { tip: "If you frequently need to remove and re-add password protection, consider using watermarks as your primary security measure instead — they are always visible but don't block access to the document." },
+      ]}
+      faqs={[
+        { q: "Can I remove a PDF password for free?", a: "Yes. PDFcraft removes PDF password protection for free with no sign up, as long as you know the current password." },
+        { q: "Can PDFcraft crack a PDF password?", a: "No. PDFcraft requires the correct current password before removing protection. It cannot crack or bypass passwords." },
+        { q: "Is removing a PDF password legal?", a: "Yes, if you own the document or have permission from the owner. Removing protection from documents you do not own is not legal." },
+        { q: "Will removing the password affect the PDF content?", a: "No. Removing password protection only changes the security settings. The document content, formatting, and quality are completely unchanged." },
+        { q: "Can I remove a PDF password on iPhone?", a: "Yes. PDFcraft works in iPhone Safari. Open getpdfcraft.com and use the Unlock PDF tool on your iPhone." },
+        { q: "What if I forgot the PDF password?", a: "If you do not know the current password, PDFcraft cannot help. You would need to contact whoever created the protected PDF to get the password." },
+      ]}
+      ctaText="Unlock your PDF now — free, instant"
+      ctaHref="/"
+    />
   );
 }

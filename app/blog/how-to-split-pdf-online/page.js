@@ -1,60 +1,51 @@
-import Link from "next/link";
-
+import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Split a PDF Into Separate Pages Free Online | PDFcraft",
-  description: "Split any PDF into individual pages or custom ranges. Free, no sign up, works in browser. Step by step guide to splitting PDFs online.",
-  keywords: "how to split pdf, split pdf into pages, extract pages from pdf free, split pdf online no sign up, separate pdf pages free",
+  title: "How to Split PDF Online Free — No Sign Up | PDFcraft",
+  description: "Split a PDF into separate pages or custom ranges for free online. No sign up, no watermarks, instant results.",
+  keywords: "split pdf online free, how to split pdf, split pdf into pages free, separate pdf pages online",
   alternates: { canonical: "https://getpdfcraft.com/blog/how-to-split-pdf-online" },
+  openGraph: { title: "How to Split PDF Online Free | PDFcraft", description: "Split PDF into pages or ranges for free. No sign up, instant.", url: "https://getpdfcraft.com/blog/how-to-split-pdf-online", type: "article" },
 };
-
 export default function Post() {
   return (
-    <div style={{ maxWidth: 740, margin: "0 auto", padding: "80px 24px" }}>
-      <Link href="/blog" style={{ fontSize: 13, color: "#9ca3af", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
-      <div style={{ marginBottom: 40 }}>
-        <span style={{ background: "#FFF7ED", color: "#EA580C", fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>Split PDF</span>
-        <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>
-          How to Split a PDF Into Separate Pages Online Free
-        </h1>
-        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#9ca3af" }}>
-          <span>January 22, 2026</span><span>· 3 min read</span><span>· By PDFcraft</span>
-        </div>
-      </div>
-      <div style={{ fontSize: 16, color: "#374151", lineHeight: 1.8 }}>
-        <p style={{ marginBottom: 24, fontSize: 18, color: "#111827", fontWeight: 500 }}>Need to extract specific pages from a PDF or split it into individual files? PDFcraft does it for free in seconds — no sign up, no software.</p>
-        <h2 style={{ fontSize: 26, fontWeight: 800, color: "#111827", marginBottom: 16, marginTop: 40, letterSpacing: -0.5 }}>Two ways to split</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 32 }}>
-          {[
-            { title: "Split all pages", desc: "Every page becomes its own PDF file. Perfect for separating a scanned document.", color: "#EA580C", bg: "#FFF7ED" },
-            { title: "Split by range", desc: "Choose specific pages like '1-3, 5, 8-10'. Perfect for extracting sections.", color: "#2563EB", bg: "#EFF6FF" },
-          ].map(m => (
-            <div key={m.title} style={{ background: m.bg, borderRadius: 14, padding: 24 }}>
-              <p style={{ fontWeight: 700, color: m.color, marginBottom: 8, fontSize: 16 }}>{m.title}</p>
-              <p style={{ color: "#374151", fontSize: 14, margin: 0 }}>{m.desc}</p>
-            </div>
-          ))}
-        </div>
-        {[
-          { num: "01", title: "Open PDFcraft Split tool", body: "Go to PDFcraft and click Split PDF. Works in any browser, no account needed." },
-          { num: "02", title: "Select your PDF", body: "Click Select File and choose your PDF. The file stays on your device throughout." },
-          { num: "03", title: "Choose split method", body: "Select 'All pages' to get each page as a separate PDF, or 'Page range' to specify exactly which pages you want." },
-          { num: "04", title: "Enter page range (optional)", body: "If splitting by range, enter something like '1-5, 8, 10-12'. Each range becomes a separate PDF." },
-          { num: "05", title: "Download your files", body: "Each split section downloads as a separate PDF. Download them all or pick the ones you need." },
-        ].map(step => (
-          <div key={step.num} style={{ display: "flex", gap: 20, marginBottom: 24, alignItems: "flex-start" }}>
-            <div style={{ width: 40, height: 40, background: "#FFF7ED", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 800, fontSize: 13, color: "#EA580C" }}>{step.num}</div>
-            <div>
-              <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 17, marginBottom: 6 }}>{step.title}</h3>
-              <p style={{ color: "#6b7280", margin: 0 }}>{step.body}</p>
-            </div>
-          </div>
-        ))}
-        <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
-          <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>Split your PDF now</h3>
-          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free, instant, private. No sign up required.</p>
-          <Link href="/tools/split-pdf" style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>Split PDF Free →</Link>
-        </div>
-      </div>
-    </div>
+    <BlogPost tag="Split PDF" tagColor="#EA580C" tagBg="#FFF7ED"
+      title="How to Split PDF Online Free — No Sign Up"
+      date="February 2026" readTime="5 min read"
+      intro="Splitting a PDF lets you extract specific pages, separate chapters, or divide a large document into smaller parts. PDFcraft splits any PDF for free with no sign up and no watermarks — right in your browser."
+      sections={[
+        { heading: "Why split a PDF?", steps: [
+          { title: "Share only relevant pages", body: "Extract the specific pages a client needs instead of sending a 100-page document." },
+          { title: "Separate chapters or sections", body: "Divide a large document into individual chapters, each as its own PDF." },
+          { title: "Reduce file size for sending", body: "Split a large PDF into smaller parts that fit within email attachment limits." },
+          { title: "Remove confidential pages", body: "Extract only the non-sensitive pages into a new document before sharing." },
+          { title: "Reorganize documents", body: "Split and then re-merge in a different order using PDFcraft's Merge PDF tool." },
+        ]},
+        { heading: "How to split a PDF online — step by step", steps: [
+          { title: "Open PDFcraft Split PDF tool", body: "Go to PDFcraft and click Split PDF. No account or software needed." },
+          { title: "Select your PDF", body: "Click Select File and choose the PDF you want to split. Your file never leaves your device." },
+          { title: "Choose how to split", body: "Enter the pages or ranges you want to extract. For example: pages 1-5, or page 3 and 7, or split every page into separate files." },
+          { title: "Click Split PDF", body: "PDFcraft splits the PDF instantly in your browser." },
+          { title: "Download your split files", body: "Download the resulting PDF or files. No watermarks on any output." },
+        ]},
+        { heading: "Split options explained", steps: [
+          { title: "Extract a page range", body: "Extract pages 3-8 into a new PDF. The original is unchanged." },
+          { title: "Extract specific pages", body: "Enter individual page numbers separated by commas — like 1, 4, 7 — to extract non-consecutive pages." },
+          { title: "Split into equal parts", body: "Divide a 20-page PDF into four 5-page files, for example." },
+          { title: "Split every page", body: "Create a separate PDF for every single page in the document." },
+        ]},
+        { heading: "Split then merge for full control", text: "The most powerful workflow is split then merge. Split a PDF into sections, rearrange or modify the sections, then merge them back together using PDFcraft's Merge PDF tool. This gives you complete control over document structure.", },
+        { tip: "After splitting a large document, use PDFcraft's Compress PDF tool on each part to keep the file sizes small before sending." },
+      ]}
+      faqs={[
+        { q: "Can I split a PDF for free with no sign up?", a: "Yes. PDFcraft's Split PDF tool is completely free with no account required." },
+        { q: "Can I split a PDF into individual pages?", a: "Yes. Choose the option to split every page into a separate PDF file." },
+        { q: "Is there a limit on how many pages I can split?", a: "No. PDFcraft has no limit on PDF page count." },
+        { q: "Does splitting a PDF reduce quality?", a: "No. PDFcraft extracts pages without re-encoding content. Quality is identical to the original." },
+        { q: "Can I split a PDF on mobile?", a: "Yes. PDFcraft works on iPhone and Android browsers." },
+        { q: "Can I split a password protected PDF?", a: "Remove the password first using PDFcraft's Unlock PDF tool, then split." },
+      ]}
+      ctaText="Split your PDF now — free, instant"
+      ctaHref="/tools/split-pdf"
+    />
   );
 }

@@ -1,89 +1,57 @@
-import Link from "next/link";
-
+import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Merge PDF Files Free Online (No Sign Up) | PDFcraft",
-  description: "Step by step guide to combining multiple PDF files into one document. Free, instant, no sign up required. Works on Windows, Mac, iPhone and Android.",
-  keywords: "how to merge pdf, combine pdf files free, merge pdf no sign up, join pdf online free, merge pdf without uploading",
+  title: "How to Merge PDF Files Free Online — No Sign Up | PDFcraft",
+  description: "Merge multiple PDF files into one document for free online. No sign up required, no watermarks, unlimited files. Instant results.",
+  keywords: "merge pdf free, combine pdf online free, how to merge pdf files, join pdf files no sign up",
   alternates: { canonical: "https://getpdfcraft.com/blog/how-to-merge-pdf-free" },
-  openGraph: {
-    title: "How to Merge PDF Files Free Online — PDFcraft",
-    description: "Step by step guide to merging PDFs for free. No sign up, no uploads, works instantly.",
-    type: "article",
-  },
+  openGraph: { title: "How to Merge PDF Files Free Online | PDFcraft", description: "Merge multiple PDFs into one for free. No sign up, no watermarks.", url: "https://getpdfcraft.com/blog/how-to-merge-pdf-free", type: "article" },
 };
-
 export default function Post() {
   return (
-    <div style={{ maxWidth: 740, margin: "0 auto", padding: "80px 24px" }}>
-      <Link href="/blog" style={{ fontSize: 13, color: "#9ca3af", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
-
-      <div style={{ marginBottom: 40 }}>
-        <span style={{ background: "#FEF2F2", color: "#DC2626", fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>Merge PDF</span>
-        <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>
-          How to Merge PDF Files Free Online (No Sign Up)
-        </h1>
-        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#9ca3af" }}>
-          <span>January 15, 2026</span>
-          <span>· 3 min read</span>
-          <span>· By PDFcraft</span>
-        </div>
-      </div>
-
-      <div style={{ fontSize: 16, color: "#374151", lineHeight: 1.8 }}>
-        <p style={{ marginBottom: 24, fontSize: 18, color: "#111827", fontWeight: 500 }}>
-          Need to combine multiple PDF files into one? PDFcraft makes it completely free, instant, and private — no sign up, no file uploads, no watermarks.
-        </p>
-
-        <div style={{ background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 14, padding: 24, marginBottom: 32 }}>
-          <p style={{ fontWeight: 700, color: "#15803D", marginBottom: 8, fontSize: 15 }}>✅ What you need</p>
-          <ul style={{ margin: 0, paddingLeft: 20, color: "#374151" }}>
-            <li>Two or more PDF files on your device</li>
-            <li>A web browser (Chrome, Firefox, Safari, Edge)</li>
-            <li>That's it — no software, no account needed</li>
-          </ul>
-        </div>
-
-        <h2 style={{ fontSize: 26, fontWeight: 800, color: "#111827", marginBottom: 16, marginTop: 40, letterSpacing: -0.5 }}>Step by step guide</h2>
-
-        {[
-          { num: "01", title: "Go to PDFcraft Merge tool", body: `Open your browser and go to PDFcraft's Merge PDF tool. You don't need to create an account or sign in. The tool works immediately.` },
-          { num: "02", title: "Select your PDF files", body: "Click the \"Select Files\" button and choose the PDF files you want to merge from your device. You can select multiple files at once by holding Ctrl (Windows) or Cmd (Mac) while clicking." },
-          { num: "03", title: "Arrange the order", body: "Your files will appear in a list. They will be merged in the order shown. If you need to change the order, remove a file and re-add it in the right position." },
-          { num: "04", title: "Click Merge PDFs", body: "Hit the big Merge button. Your browser will process the files locally — nothing gets uploaded to any server. This usually takes just a few seconds." },
-          { num: "05", title: "Download your merged PDF", body: "Once complete, click Download. Your merged PDF will save directly to your device. The original files are not changed." },
-        ].map(step => (
-          <div key={step.num} style={{ display: "flex", gap: 20, marginBottom: 28, alignItems: "flex-start" }}>
-            <div style={{ width: 40, height: 40, background: "#FEF2F2", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 800, fontSize: 13, color: "#DC2626" }}>{step.num}</div>
-            <div>
-              <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 17, marginBottom: 6 }}>{step.title}</h3>
-              <p style={{ color: "#6b7280", margin: 0 }}>{step.body}</p>
-            </div>
-          </div>
-        ))}
-
-        <h2 style={{ fontSize: 26, fontWeight: 800, color: "#111827", marginBottom: 16, marginTop: 40, letterSpacing: -0.5 }}>Frequently asked questions</h2>
-
-        {[
-          { q: "Is merging PDFs on PDFcraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed for merging. All tools on PDFcraft are free forever." },
-          { q: "Are my files safe?", a: "Absolutely. PDFcraft processes files entirely in your browser. Your PDF files never leave your device and are never uploaded to any server. We physically cannot see your documents." },
-          { q: "Is there a file size limit?", a: "There is no strict file size limit set by us. Very large files (500MB+) may be slow depending on your device's memory, but there is no artificial cap." },
-          { q: "How many PDFs can I merge at once?", a: "As many as you want. Add as many files as you need — there is no limit." },
-          { q: "Does it work on iPhone and Android?", a: "Yes. PDFcraft works on any device with a modern web browser including iPhone, Android, Windows, Mac and Linux." },
-        ].map(faq => (
-          <div key={faq.q} style={{ borderBottom: "1px solid #f3f4f6", paddingBottom: 20, marginBottom: 20 }}>
-            <h3 style={{ fontWeight: 700, color: "#111827", fontSize: 16, marginBottom: 8 }}>{faq.q}</h3>
-            <p style={{ color: "#6b7280", margin: 0 }}>{faq.a}</p>
-          </div>
-        ))}
-
-        <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
-          <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12, letterSpacing: -0.5 }}>Ready to merge your PDFs?</h3>
-          <p style={{ color: "#9ca3af", marginBottom: 24, fontSize: 15 }}>Free, instant, private. No sign up required.</p>
-          <Link href="/tools/merge-pdf" style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
-            Merge PDF Now →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <BlogPost tag="Merge PDF" tagColor="#DC2626" tagBg="#FEF2F2"
+      title="How to Merge PDF Files Free Online — No Sign Up"
+      date="February 2026" readTime="6 min read"
+      intro="Merging PDF files is one of the most common PDF tasks. Whether you are combining chapters of a report, joining scanned pages, merging invoices, or assembling a portfolio — PDFcraft merges unlimited PDF files into one for free. No sign up, no watermarks, and your files never leave your device."
+      sections={[
+        { heading: "Why merge PDF files?", steps: [
+          { title: "Combine a multi-part document", body: "If a document was split into multiple PDF files — chapters, sections, or appendices — merge them into one complete document." },
+          { title: "Join scanned pages", body: "Scanned documents often come out as separate page files. Merge them into one complete PDF." },
+          { title: "Combine invoices or receipts", body: "Merge multiple invoice PDFs into one file for accounting submissions or expense reports." },
+          { title: "Create a portfolio or presentation package", body: "Combine PDF documents, image PDFs, and other files into one comprehensive portfolio." },
+          { title: "Attach cover letters to resumes", body: "Merge your cover letter PDF with your resume PDF before emailing job applications." },
+        ]},
+        { heading: "How to merge PDF files for free — step by step", steps: [
+          { title: "Open PDFcraft Merge PDF tool", body: "Go to PDFcraft and click Merge PDF. Works in any browser — Chrome, Safari, Firefox, Edge. No account needed." },
+          { title: "Add your PDF files", body: "Click Select Files and choose all the PDFs you want to merge. You can select multiple files at once, or add them one by one." },
+          { title: "Arrange the order", body: "Drag the files to arrange them in the correct order. The first file in the list becomes the first section of the merged PDF." },
+          { title: "Click Merge PDFs", body: "PDFcraft combines all your PDFs into one document. Processing happens instantly in your browser — no server involved." },
+          { title: "Download the merged PDF", body: "Click Download to save the merged PDF. No watermarks, no quality loss, no page limits." },
+        ]},
+        { heading: "Tips for merging PDFs", steps: [
+          { title: "Merge in the right order", body: "Arrange files in the exact order you want them before clicking Merge. The list order determines the page order in the final document." },
+          { title: "No limit on number of files", body: "PDFcraft lets you merge as many PDFs as you want in one go. Add 2 files or 20 files — no restrictions." },
+          { title: "Combine with image PDFs", body: "Convert images to PDF first using PDFcraft's JPG to PDF tool, then merge everything together." },
+        ]},
+        { heading: "Common merge PDF use cases", list: [
+          "Combine resume + cover letter before applying for jobs",
+          "Merge monthly bank statements into one annual file",
+          "Join scanned contract pages into one document",
+          "Combine multiple reports into one presentation package",
+          "Merge photo PDFs with a written report",
+          "Combine invoices for accounting submissions",
+        ]},
+        { tip: "After merging, use PDFcraft's Compress PDF tool to reduce the size of the combined file — merged PDFs can be large if they contain many images." },
+      ]}
+      faqs={[
+        { q: "Can I merge PDF files for free with no sign up?", a: "Yes. PDFcraft merges unlimited PDF files completely free with no account required. Just open the tool and start merging." },
+        { q: "Is there a limit on how many PDFs I can merge?", a: "No. PDFcraft has no limit on the number of PDF files you can merge in one operation." },
+        { q: "Will merging PDFs reduce quality?", a: "No. PDFcraft combines PDFs without re-encoding or compressing the content. Output quality is identical to the original files." },
+        { q: "Can I merge PDFs on iPhone or Android?", a: "Yes. PDFcraft works on any mobile browser. Open getpdfcraft.com on your phone and use the Merge PDF tool the same way as on desktop." },
+        { q: "Are my files safe when merging?", a: "Yes. All processing happens locally in your browser. Your PDFs never leave your device." },
+        { q: "Can I merge password protected PDFs?", a: "Password protected PDFs cannot be merged until the password is removed. Use PDFcraft's Unlock PDF tool first, then merge." },
+      ]}
+      ctaText="Merge your PDFs now — free, unlimited, instant"
+      ctaHref="/tools/merge-pdf"
+    />
   );
 }
