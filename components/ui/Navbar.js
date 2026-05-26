@@ -23,7 +23,7 @@ export default function Navbar() {
         </Link>
 
         <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
-          {[["Tools", "/#tools"], ["Blog", "/blog"], ["About", "/about"], ["Privacy", "/privacy"]].map(([name, href]) => (
+          {[["Tools", "/#tools"], ["Blog", "/blog"], ["About", "/about"], ["Contact", "/contact"], ["Privacy", "/privacy"]].map(([name, href]) => (
             <Link key={name} href={href} style={{
               fontSize: 14, color: "#6b7280", textDecoration: "none",
               fontWeight: 500, padding: "8px 14px", borderRadius: 8,

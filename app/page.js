@@ -1,19 +1,18 @@
-"use client";
 import Link from "next/link";
 import { AdLeaderboard } from "@/components/ui/Ads";
 
 const tools = [
-  { icon: "⊕", name: "Merge PDF", desc: "Combine multiple PDFs into one file.", href: "/tools/merge-pdf", bg: "#FEF2F2", color: "#DC2626", border: "#fecaca" },
-  { icon: "⊘", name: "Split PDF", desc: "Split a PDF into separate pages or ranges.", href: "/tools/split-pdf", bg: "#FFF7ED", color: "#EA580C", border: "#fed7aa" },
-  { icon: "◎", name: "Compress PDF", desc: "Reduce PDF size without losing quality.", href: "/tools/compress-pdf", bg: "#FEFCE8", color: "#CA8A04", border: "#fde68a" },
-  { icon: "◈", name: "PDF to Image", desc: "Convert PDF pages to JPG or PNG.", href: "/tools/pdf-to-image", bg: "#F0FDF4", color: "#16A34A", border: "#bbf7d0" },
-  { icon: "↻", name: "Rotate PDF", desc: "Fix page orientation in one click.", href: "/tools/rotate-pdf", bg: "#EFF6FF", color: "#2563EB", border: "#bfdbfe" },
-  { icon: "✎", name: "Watermark PDF", desc: "Add a custom text watermark.", href: "/tools/watermark-pdf", bg: "#FAF5FF", color: "#9333EA", border: "#e9d5ff" },
-  { icon: "🖼️", name: "JPG to PDF", desc: "Convert images to PDF instantly.", href: "/tools/jpg-to-pdf", bg: "#FEF2F2", color: "#DC2626", border: "#fecaca" },
-  { icon: "🗑️", name: "Delete Pages", desc: "Remove unwanted pages from PDF.", href: "/tools/delete-pages", bg: "#FFF7ED", color: "#EA580C", border: "#fed7aa" },
-  { icon: "#", name: "Page Numbers", desc: "Add page numbers to your PDF.", href: "/tools/add-page-numbers", bg: "#F0FDF4", color: "#16A34A", border: "#bbf7d0" },
-  { icon: "↕", name: "Reorder Pages", desc: "Rearrange PDF pages in any order.", href: "/tools/reorder-pages", bg: "#FAF5FF", color: "#9333EA", border: "#e9d5ff" },
-  { icon: "◑", name: "PDF to Grayscale", desc: "Convert color PDF to black and white.", href: "/tools/pdf-to-grayscale", bg: "#F9FAFB", color: "#374151", border: "#e5e7eb" },
+  { icon: "⊕", name: "Merge PDF", desc: "Combine multiple PDFs into one file.", href: "/tools/merge-pdf", bg: "#FEF2F2", color: "#DC2626" },
+  { icon: "⊘", name: "Split PDF", desc: "Split a PDF into separate pages or ranges.", href: "/tools/split-pdf", bg: "#FFF7ED", color: "#EA580C" },
+  { icon: "◎", name: "Compress PDF", desc: "Reduce PDF size without losing quality.", href: "/tools/compress-pdf", bg: "#FEFCE8", color: "#CA8A04" },
+  { icon: "◈", name: "PDF to Image", desc: "Convert PDF pages to JPG or PNG.", href: "/tools/pdf-to-image", bg: "#F0FDF4", color: "#16A34A" },
+  { icon: "↻", name: "Rotate PDF", desc: "Fix page orientation in one click.", href: "/tools/rotate-pdf", bg: "#EFF6FF", color: "#2563EB" },
+  { icon: "✎", name: "Watermark PDF", desc: "Add a custom text watermark.", href: "/tools/watermark-pdf", bg: "#FAF5FF", color: "#9333EA" },
+  { icon: "🖼️", name: "JPG to PDF", desc: "Convert images to PDF instantly.", href: "/tools/jpg-to-pdf", bg: "#FEF2F2", color: "#DC2626" },
+  { icon: "🗑️", name: "Delete Pages", desc: "Remove unwanted pages from PDF.", href: "/tools/delete-pages", bg: "#FFF7ED", color: "#EA580C" },
+  { icon: "#", name: "Page Numbers", desc: "Add page numbers to your PDF.", href: "/tools/add-page-numbers", bg: "#F0FDF4", color: "#16A34A" },
+  { icon: "↕", name: "Reorder Pages", desc: "Rearrange PDF pages in any order.", href: "/tools/reorder-pages", bg: "#FAF5FF", color: "#9333EA" },
+  { icon: "◑", name: "PDF to Grayscale", desc: "Convert color PDF to black and white.", href: "/tools/pdf-to-grayscale", bg: "#F9FAFB", color: "#374151" },
 ];
 
 const features = [
@@ -25,6 +24,24 @@ const features = [
 export default function HomePage() {
   return (
     <div style={{ background: "white" }}>
+
+      <style>{`
+        .tool-card {
+          background: white;
+          border: 1px solid #f3f4f6;
+          border-radius: 18px;
+          padding: 24px;
+          cursor: pointer;
+          height: 100%;
+          transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+        }
+        .tool-card:hover {
+          box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+          transform: translateY(-3px);
+          border-color: #e5e7eb;
+        }
+      `}</style>
+
       {/* Hero */}
       <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px 70px", textAlign: "center" }}>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#FEF2F2", color: "#DC2626", fontSize: 12, fontWeight: 700, padding: "6px 14px", borderRadius: 100, marginBottom: 28, textTransform: "uppercase", letterSpacing: 0.8, border: "1px solid #fecaca" }}>
@@ -63,10 +80,7 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
             {tools.map(tool => (
               <Link key={tool.name} href={tool.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 18, padding: 24, cursor: "pointer", transition: "all 0.2s", height: "100%" }}
-                  onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 8px 28px rgba(0,0,0,0.08)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.borderColor = tool.border; }}
-                  onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "#f3f4f6"; }}
-                >
+                <div className="tool-card">
                   <div style={{ width: 52, height: 52, background: tool.bg, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, marginBottom: 18, color: tool.color }}>{tool.icon}</div>
                   <h3 style={{ fontWeight: 700, fontSize: 16, color: "#111827", marginBottom: 8 }}>{tool.name}</h3>
                   <p style={{ fontSize: 13, color: "#9ca3af", lineHeight: 1.6, margin: 0 }}>{tool.desc}</p>

@@ -72,6 +72,7 @@ export default function Footer() {
               {[
                 ["Blog", "/blog"],
                 ["About", "/about"],
+                ["Contact", "/contact"],
                 ["Privacy Policy", "/privacy"],
                 ["Terms of Service", "/terms"],
               ].map(([n, h]) => (
@@ -92,7 +93,7 @@ export default function Footer() {
         <div style={{ borderTop: "1px solid #e5e7eb", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
           <p style={{ fontSize: 13, color: "#d1d5db" }}>© 2026 PDFcraft — By Dajai Studio, Nepal. All rights reserved.</p>
           <div style={{ display: "flex", gap: 16 }}>
-            {[["Privacy", "/privacy"], ["Terms", "/terms"]].map(([n, h]) => (
+            {[["Privacy", "/privacy"], ["Terms", "/terms"], ["Contact", "/contact"]].map(([n, h]) => (
               <Link key={n} href={h} style={{ fontSize: 13, color: "#d1d5db", textDecoration: "none" }}>{n}</Link>
             ))}
           </div>
