@@ -9,17 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cantoo/pdf-lib": "^2.7.1",
+    "@neslinesli93/qpdf-wasm": "^0.3.0",
     "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
     "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "3.11.174"
+    "pdfjs-dist": "^5.7.284",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
-    "tailwindcss": "3.4.17",
     "postcss": "^8",
-    "autoprefixer": "^10"
+    "tailwindcss": "3.4.17"
   }
 }

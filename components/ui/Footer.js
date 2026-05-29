@@ -13,7 +13,7 @@ export default function Footer() {
               <span style={{ fontWeight: 800, fontSize: 17, color: "#111827" }}>PDFcraft</span>
             </div>
             <p style={{ fontSize: 13, color: "#9ca3af", lineHeight: 1.7, maxWidth: 260, marginBottom: 16 }}>
-              11 free PDF tools. No sign up. No limits. Files never leave your device.
+              13 free PDF tools. No sign up. No limits. Files never leave your device.
             </p>
             <p style={{ fontSize: 12, color: "#9ca3af", lineHeight: 1.6, maxWidth: 260, marginBottom: 8 }}>
               PDFcraft is built by{" "}
@@ -55,6 +55,8 @@ export default function Footer() {
               {[
                 ["Rotate PDF", "/tools/rotate-pdf"],
                 ["Watermark PDF", "/tools/watermark-pdf"],
+                ["Protect PDF", "/tools/protect-pdf"],
+                ["Unlock PDF", "/tools/unlock-pdf"],
                 ["Delete Pages", "/tools/delete-pages"],
                 ["Page Numbers", "/tools/add-page-numbers"],
                 ["Reorder Pages", "/tools/reorder-pages"],
