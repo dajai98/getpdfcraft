@@ -2,6 +2,10 @@
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
+  compress: true,
+  experimental: {
+    optimizeCss: true,
+  },
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -11,6 +15,10 @@ const nextConfig = {
         crypto: false,
       };
     }
+    config.optimization = {
+      ...config.optimization,
+      moduleIds: "deterministic",
+    };
     return config;
   },
 };
