@@ -17,16 +17,20 @@ export default function PDFToImage() {
   const [images, setImages] = useState([]);
   const [format, setFormat] = useState("jpeg");
   const [progress, setProgress] = useState(0);
+  const [error, setError] = useState("");
 
-  const loadFile = (files) => { setFile(files[0]); setImages([]); };
+  const loadFile = (files) => { setFile(files[0]); setImages([]); setError(""); };
 
   const convert = async () => {
     if (!file) return;
     if (typeof window === "undefined") return;
-    setProcessing(true); setImages([]); setProgress(0);
+    setProcessing(true); setImages([]); setProgress(0); setError("");
     try {
       const pdfjsLib = await import("pdfjs-dist");
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+
+      // Use .mjs extension — required for pdfjs-dist v4+
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+
       const pdf = await pdfjsLib.getDocument({ data: await file.arrayBuffer() }).promise;
       const results = [];
       for (let i = 1; i <= pdf.numPages; i++) {
@@ -35,13 +39,16 @@ export default function PDFToImage() {
         const canvas = document.createElement("canvas");
         canvas.width = viewport.width; canvas.height = viewport.height;
         await page.render({ canvasContext: canvas.getContext("2d"), viewport }).promise;
-        results.push({ dataUrl: canvas.toDataURL(`image/${format}`, 0.92), name: `page-${i}.${format === "jpeg" ? "jpg" : "png"}` });
+        results.push({
+          dataUrl: canvas.toDataURL(`image/${format}`, 0.92),
+          name: `page-${i}.${format === "jpeg" ? "jpg" : "png"}`
+        });
         setProgress(Math.round((i / pdf.numPages) * 100));
       }
       setImages(results);
     } catch(e) {
       console.error(e);
-      alert("Error converting PDF. Please try a different file.");
+      setError("Error converting PDF. Please try a different file or browser.");
     }
     setProcessing(false);
   };
@@ -55,9 +62,13 @@ export default function PDFToImage() {
         <div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
             <span style={{ fontSize: 28 }}>📄</span>
-            <div style={{ flex: 1 }}><p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p><p style={{ fontSize: 12, color: "#9ca3af" }}>{(file.size/1024).toFixed(0)} KB</p></div>
-            <button onClick={() => { setFile(null); setImages([]); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <div style={{ flex: 1 }}>
+              <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
+              <p style={{ fontSize: 12, color: "#9ca3af" }}>{(file.size/1024).toFixed(0)} KB</p>
+            </div>
+            <button onClick={() => { setFile(null); setImages([]); setError(""); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
+
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Output format</p>
             <div style={{ display: "flex", gap: 10 }}>
@@ -66,12 +77,20 @@ export default function PDFToImage() {
               ))}
             </div>
           </div>
+
           <button onClick={convert} disabled={processing} style={{ width: "100%", background: processing?"#d1d5db":"#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing?"not-allowed":"pointer", fontFamily: "inherit" }}>
             {processing ? `⏳ Converting... ${progress}%` : "◈ Convert to Images"}
           </button>
+
           {processing && (
             <div style={{ marginTop: 12, background: "#f3f4f6", borderRadius: 100, height: 6, overflow: "hidden" }}>
               <div style={{ height: "100%", width: `${progress}%`, background: "#E8380D", borderRadius: 100, transition: "width 0.3s" }} />
+            </div>
+          )}
+
+          {error && (
+            <div style={{ marginTop: 12, background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 10, padding: "10px 16px" }}>
+              <p style={{ fontSize: 13, color: "#DC2626", margin: 0 }}>⚠️ {error}</p>
             </div>
           )}
         </div>
@@ -81,8 +100,10 @@ export default function PDFToImage() {
         <div style={{ marginTop: 24 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
             <p style={{ fontWeight: 700, color: "#111827" }}>✅ {images.length} images ready</p>
-            <button onClick={() => images.forEach(img => { const a = document.createElement("a"); a.href=img.dataUrl; a.download=img.name; a.click(); })}
-              style={{ background: "#E8380D", color: "white", border: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "inherit" }}>
+            <button
+              onClick={() => images.forEach(img => { const a = document.createElement("a"); a.href=img.dataUrl; a.download=img.name; a.click(); })}
+              style={{ background: "#E8380D", color: "white", border: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "inherit" }}
+            >
               ↓ Download All
             </button>
           </div>

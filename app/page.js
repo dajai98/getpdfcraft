@@ -37,6 +37,15 @@ const blogPosts = [
   { tag: "Guide", title: "Best Free PDF Tools Online in 2026 — No Sign Up, Actually Free", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
 ];
 
+const comparisonRows = [
+  ["Files stay on your device", "Files uploaded to servers"],
+  ["No sign up required", "Account required"],
+  ["Unlimited usage", "Daily limits on free plan"],
+  ["No watermarks on output", "Watermarked exports"],
+  ["Browser-based processing", "Cloud server processing"],
+  ["Works offline after loading", "Requires internet connection"],
+];
+
 export default function HomePage() {
   return (
     <div style={{ background: "white" }}>
@@ -76,23 +85,23 @@ export default function HomePage() {
       {/* Hero */}
       <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px 70px", textAlign: "center" }}>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#FEF2F2", color: "#DC2626", fontSize: 12, fontWeight: 700, padding: "6px 14px", borderRadius: 100, marginBottom: 28, textTransform: "uppercase", letterSpacing: 0.8, border: "1px solid #fecaca" }}>
-          ⚡ 13 Free PDF Tools — No Sign Up
+          🔒 Privacy-First · Browser-Based · No Uploads
         </div>
         <h1 style={{ fontSize: "clamp(40px, 7vw, 76px)", fontWeight: 800, color: "#111827", lineHeight: 1.05, letterSpacing: -3, marginBottom: 20 }}>
-          Every PDF tool.<br />
-          <span style={{ color: "#E8380D" }}>Completely free.</span>
+          Free PDF tools.<br />
+          <span style={{ color: "#E8380D" }}>Private by design.</span>
         </h1>
-        <p style={{ fontSize: 18, color: "#6b7280", maxWidth: 520, margin: "0 auto 36px", lineHeight: 1.65 }}>
-          Merge, split, compress, convert and edit PDFs right in your browser.
-          No uploads. No sign up. No cost. Ever.
+        <p style={{ fontSize: 18, color: "#6b7280", maxWidth: 560, margin: "0 auto 36px", lineHeight: 1.65 }}>
+          Merge, split, compress, convert and edit PDFs directly in your browser.
+          No uploads. No sign up. No watermarks. Your files never leave your device.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginBottom: 48 }}>
-          {["✓ No sign up required", "✓ Files stay on your device", "✓ No file size limits", "✓ 100% free forever"].map(t => (
+          {["✓ No sign up required", "✓ Files never uploaded", "✓ No file size limits", "✓ 100% free forever"].map(t => (
             <span key={t} style={{ background: "#f9fafb", border: "1px solid #e5e7eb", padding: "8px 16px", borderRadius: 100, fontSize: 13, color: "#6b7280", fontWeight: 500 }}>{t}</span>
           ))}
         </div>
         <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 16, boxShadow: "0 4px 16px rgba(232,56,13,0.3)" }}>
-          Browse all 13 tools ↓
+          Browse all 13 free tools ↓
         </Link>
       </section>
 
@@ -101,12 +110,44 @@ export default function HomePage() {
         <div style={{ maxWidth: 1152, margin: "0 auto" }}><AdLeaderboard /></div>
       </div>
 
+      {/* What is PDFcraft */}
+      <section style={{ maxWidth: 860, margin: "0 auto", padding: "64px 24px 0" }}>
+        <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -1 }}>What is PDFcraft?</h2>
+        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 24 }}>
+          PDFcraft is a privacy-first PDF tools platform that processes files directly in your browser. Unlike traditional cloud PDF tools that upload your documents to remote servers, PDFcraft runs entirely on your device — your files never leave your browser, not even for a millisecond.
+        </p>
+        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 40 }}>
+          Built by Dajai Studio, PDFcraft gives everyone access to professional PDF tools for free — with no sign up, no watermarks, no daily limits, and complete privacy. Whether you are merging contracts, compressing reports, or protecting sensitive documents, PDFcraft handles it locally and instantly.
+        </p>
+
+        {/* Comparison table */}
+        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>Why PDFcraft is different</h3>
+        <div style={{ overflowX: "auto", marginBottom: 48 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+            <thead>
+              <tr style={{ background: "#111827" }}>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>PDFcraft</th>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "#9ca3af", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>Typical PDF Sites</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonRows.map(([ours, theirs], i) => (
+                <tr key={i} style={{ background: i % 2 === 0 ? "#f9fafb" : "white" }}>
+                  <td style={{ padding: "11px 20px", color: "#15803D", fontWeight: 600, borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>✅ {ours}</td>
+                  <td style={{ padding: "11px 20px", color: "#9ca3af", borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>❌ {theirs}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* Tools */}
-      <section id="tools" style={{ padding: "80px 24px" }}>
+      <section id="tools" style={{ padding: "64px 24px 80px" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools</h2>
-            <p style={{ fontSize: 16, color: "#9ca3af" }}>Click any tool to get started. No sign up needed.</p>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools — Free Forever</h2>
+            <p style={{ fontSize: 16, color: "#9ca3af" }}>Click any tool to get started. No sign up needed. Files never leave your device.</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
             {tools.map(tool => (
@@ -118,8 +159,6 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-
-            {/* Coming Soon cards */}
             {comingSoon.map(tool => (
               <div key={tool.name} style={{ background: "#f9fafb", border: "1px dashed #e5e7eb", borderRadius: 18, padding: 24, height: "100%", opacity: 0.7, position: "relative" }}>
                 <div style={{ position: "absolute", top: 12, right: 12, background: "#111827", color: "white", fontSize: 10, fontWeight: 700, padding: "3px 8px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 0.5 }}>Coming Soon</div>
@@ -141,7 +180,7 @@ export default function HomePage() {
       <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>Why PDFcraft?</h2>
-          <p style={{ fontSize: 16, color: "#9ca3af" }}>Built different. Genuinely free.</p>
+          <p style={{ fontSize: 16, color: "#9ca3af" }}>Privacy-first. Browser-based. Genuinely free.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
           {features.map(f => (
@@ -160,7 +199,7 @@ export default function HomePage() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, flexWrap: "wrap", gap: 16 }}>
             <div>
               <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#111827", letterSpacing: -1, marginBottom: 8 }}>Latest PDF Guides</h2>
-              <p style={{ fontSize: 15, color: "#9ca3af" }}>Tips, tutorials and guides for working with PDFs.</p>
+              <p style={{ fontSize: 15, color: "#9ca3af" }}>Tips, tutorials and guides for working with PDFs privately and efficiently.</p>
             </div>
             <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "white", border: "1px solid #e5e7eb", color: "#374151", textDecoration: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 600, fontSize: 14 }}>
               View all guides →
@@ -181,11 +220,11 @@ export default function HomePage() {
       <section style={{ background: "#111827", padding: "80px 24px" }}>
         <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 800, color: "white", letterSpacing: -1.5, marginBottom: 16 }}>
-            Start using PDFcraft right now.
+            Your files. Your device. Your privacy.
           </h2>
-          <p style={{ fontSize: 16, color: "#9ca3af", marginBottom: 32 }}>13 free tools. No sign up. No limits. Forever.</p>
+          <p style={{ fontSize: 16, color: "#9ca3af", marginBottom: 32 }}>13 free tools. No uploads. No sign up. No limits. Forever.</p>
           <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 17, boxShadow: "0 4px 20px rgba(232,56,13,0.4)" }}>
-            Browse all tools →
+            Start using PDFcraft free →
           </Link>
         </div>
       </section>

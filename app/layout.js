@@ -6,22 +6,22 @@ import Analytics from "@/components/ui/Analytics";
 import CookieBanner from "@/components/ui/CookieBanner";
 
 export const metadata = {
-  title: "PDFCraft — Every PDF Tool. Completely Free.",
-  description: "Merge, split, compress, convert and edit PDFs for free. No sign up. No limits. Files never leave your device. 11 free PDF tools by Dajai Studio.",
-  keywords: "free pdf tools, merge pdf free, split pdf online, compress pdf, pdf to image, pdf tools no sign up",
+  title: "Free PDF Tools Online — Merge, Split, Compress | PDFcraft",
+  description: "Privacy-first PDF tools that run directly in your browser. Merge, split, compress, convert and edit PDFs without uploads, sign up or watermarks. 13 free tools by Dajai Studio.",
+  keywords: "free pdf tools online, merge pdf free, split pdf online, compress pdf, pdf to image, browser based pdf tools, pdf tools no upload no sign up",
   metadataBase: new URL("https://getpdfcraft.com"),
   openGraph: {
-    title: "PDFCraft — Every PDF Tool. Completely Free.",
-    description: "11 free PDF tools. No sign up, no limits, files never uploaded. By Dajai Studio.",
+    title: "Free PDF Tools Online — No Uploads, No Sign Up | PDFcraft",
+    description: "Privacy-first PDF tools that run in your browser. Merge, split, compress, convert PDFs without uploads or sign up. 13 free tools.",
     type: "website",
     url: "https://getpdfcraft.com",
-    siteName: "PDFCraft",
-    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFCraft — Every PDF Tool. Completely Free." }],
+    siteName: "PDFcraft",
+    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFcraft — Free Privacy-First PDF Tools Online" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PDFCraft — Every PDF Tool. Completely Free.",
-    description: "11 free PDF tools. No sign up, no limits, files never uploaded.",
+    title: "Free PDF Tools Online — No Uploads, No Sign Up | PDFcraft",
+    description: "Privacy-first PDF tools in your browser. Merge, split, compress PDFs without uploads or sign up.",
     images: ["/og.svg"],
   },
   alternates: { canonical: "https://getpdfcraft.com" },
@@ -37,17 +37,32 @@ export const viewport = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "PDFCraft",
+  "name": "PDFcraft",
   "url": "https://getpdfcraft.com",
-  "description": "Free PDF tools online. Merge, split, compress, convert PDFs. No sign up required.",
-  "publisher": { "@type": "Organization", "name": "Dajai Studio" },
+  "description": "Privacy-first PDF tools that run directly in your browser. Merge, split, compress, convert PDFs without uploads or sign up.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dajai Studio",
+    "url": "https://getpdfcraft.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getpdfcraft.com/icon.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://getpdfcraft.com/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* JSON-LD schema — safe in head, no render impact */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -58,14 +73,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <CookieBanner />
-
-        {/* Analytics — moved out of <head>, rendered after body content */}
         <Analytics />
-
-        {/* CLS FIX: AdSense loaded with strategy="afterInteractive" so it runs
-            after the page is interactive, not during initial parse.
-            This prevents it from delaying LCP or triggering layout shifts
-            before ad slots have reserved their space. */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2531068099084515"
