@@ -44,16 +44,18 @@ export default function UploadZone({ onFiles, multiple = false, label = "Drop yo
         type="file"
         accept="application/pdf"
         multiple={multiple}
+        aria-hidden="true"
+        tabIndex={-1}
         style={{ position: "absolute", opacity: 0, pointerEvents: "none", width: 0, height: 0 }}
         onChange={handleChange}
       />
 
-      <div style={{ fontSize: 48, marginBottom: 16 }}>📄</div>
+      <div aria-hidden="true" style={{ fontSize: 48, marginBottom: 16 }}>📄</div>
 
       <p style={{ fontWeight: 600, fontSize: 18, color: "#111827", marginBottom: 8 }}>
         {label}
       </p>
-      <p style={{ fontSize: 14, color: "#9ca3af", marginBottom: 24 }}>
+      <p style={{ fontSize: 14, color: "#6b7280", marginBottom: 24 }}>
         or click the button below to browse your files
       </p>
 

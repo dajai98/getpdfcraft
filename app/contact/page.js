@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Contact PDFcraft — Get in Touch",
   description: "Have a question, suggestion, or found a bug? Contact the PDFcraft team at support@getpdfcraft.com",
+  alternates: { canonical: "https://getpdfcraft.com/contact" },
 };
 
 export default function Contact() {
@@ -14,21 +15,21 @@ export default function Contact() {
           Get in touch
         </h1>
         <p style={{ fontSize: 18, color: "#6b7280", lineHeight: 1.7 }}>
-          Have a question, suggestion, or found a bug? We'd love to hear from you.
-          PDFcraft is built by a small indie team and we read every message.
+          Have a question, suggestion, or found a bug? I'd love to hear from you.
+          PDFcraft is built and maintained by one person, and I read every message.
         </p>
       </div>
 
       {/* Contact card */}
       <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 20, padding: 40, marginBottom: 32 }}>
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 24, letterSpacing: -0.5 }}>
-          Send us an email
+          Send an email
         </h2>
         <div style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 14, padding: 24, display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ fontSize: 28, flexShrink: 0 }}>📧</div>
           <div>
             <p style={{ fontWeight: 700, color: "#111827", fontSize: 15, marginBottom: 4 }}>Support</p>
-            <p style={{ fontSize: 13, color: "#9ca3af", marginBottom: 8 }}>Questions, feedback, bug reports</p>
+            <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>Questions, feedback, bug reports</p>
             <a
               href="mailto:support@getpdfcraft.com"
               style={{ color: "#E8380D", fontWeight: 600, fontSize: 15, textDecoration: "none" }}
@@ -45,7 +46,7 @@ export default function Contact() {
           <span style={{ fontSize: 24 }}>⚡</span>
           <div>
             <p style={{ fontWeight: 700, color: "#15803D", fontSize: 15, marginBottom: 4 }}>We typically respond within 24-48 hours</p>
-            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>PDFcraft is built by a small team. We read every message and do our best to respond quickly.</p>
+            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>PDFcraft is built and run by one person. I read every message and do my best to respond quickly.</p>
           </div>
         </div>
       </div>
@@ -67,14 +68,14 @@ export default function Contact() {
           <div style={{ width: 32, height: 32, background: "#E8380D", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 14 }}>D</div>
           <span style={{ fontWeight: 700, fontSize: 16 }}>Dajai Studio</span>
         </div>
-        <p style={{ fontSize: 14, color: "#9ca3af", lineHeight: 1.7, marginBottom: 16 }}>
+        <p style={{ fontSize: 14, color: "#6b7280", lineHeight: 1.7, marginBottom: 16 }}>
           PDFcraft is built by Rai Dajai under Dajai Studio — an indie studio from Nepal.
         </p>
         <a
           href="https://www.youtube.com/@dajaistudio"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontSize: 14, color: "#9ca3af", textDecoration: "none" }}
+          style={{ fontSize: 14, color: "#6b7280", textDecoration: "none" }}
         >
           📺 YouTube @dajaistudio →
         </a>

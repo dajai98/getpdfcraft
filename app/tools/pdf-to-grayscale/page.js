@@ -69,7 +69,7 @@ export default function PDFToGrayscale() {
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}><p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p></div>
-            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
           <button onClick={convert} disabled={processing} style={{ width: "100%", background: processing?"#d1d5db":"#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing?"not-allowed":"pointer", fontFamily: "inherit" }}>
             {processing ? `⏳ Converting... ${progress}%` : "◑ Convert to Grayscale"}

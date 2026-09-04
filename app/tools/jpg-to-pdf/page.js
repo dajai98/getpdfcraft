@@ -1,6 +1,5 @@
 "use client";
 import { useState, useRef } from "react";
-import { PDFDocument } from "pdf-lib";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
@@ -35,6 +34,7 @@ export default function JPGtoPDF() {
     if (images.length === 0) return alert("Please add at least one image.");
     setProcessing(true);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const doc = await PDFDocument.create();
       for (const img of images) {
         const bytes = await img.file.arrayBuffer();
@@ -74,7 +74,7 @@ export default function JPGtoPDF() {
         <input ref={inputRef} type="file" accept="image/*" multiple onChange={handleFiles} style={{ display: "none" }} />
         <div style={{ fontSize: 48, marginBottom: 12 }}>🖼️</div>
         <p style={{ fontWeight: 700, fontSize: 18, color: "#111827", marginBottom: 8 }}>Drop images here or click to browse</p>
-        <p style={{ fontSize: 14, color: "#9ca3af", marginBottom: 20 }}>JPG, PNG, WebP, GIF supported</p>
+        <p style={{ fontSize: 14, color: "#6b7280", marginBottom: 20 }}>JPG, PNG, WebP, GIF supported</p>
         <button type="button" style={{ background: "#E8380D", color: "white", border: "none", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, cursor: "pointer", fontFamily: "inherit" }}>
           Select Images
         </button>
@@ -85,13 +85,13 @@ export default function JPGtoPDF() {
         <div style={{ marginTop: 24 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14 }}>{images.length} image{images.length > 1 ? "s" : ""} selected</p>
-            <button onClick={() => { setImages([]); setDownloadUrl(null); }} style={{ fontSize: 12, color: "#9ca3af", background: "none", border: "none", cursor: "pointer" }}>Clear all</button>
+            <button onClick={() => { setImages([]); setDownloadUrl(null); }} style={{ fontSize: 12, color: "#6b7280", background: "none", border: "none", cursor: "pointer" }}>Clear all</button>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))", gap: 12, marginBottom: 24 }}>
             {images.map((img, i) => (
               <div key={i} style={{ position: "relative", borderRadius: 12, overflow: "hidden", border: "1px solid #f3f4f6", background: "#f9fafb" }}>
                 <img src={img.url} alt={img.name} style={{ width: "100%", height: 100, objectFit: "cover", display: "block" }} />
-                <div style={{ padding: "6px 8px", fontSize: 10, color: "#9ca3af", fontWeight: 500, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{img.name}</div>
+                <div style={{ padding: "6px 8px", fontSize: 10, color: "#6b7280", fontWeight: 500, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{img.name}</div>
                 <button onClick={() => removeImage(i)} style={{ position: "absolute", top: 6, right: 6, width: 22, height: 22, background: "rgba(0,0,0,0.5)", color: "white", border: "none", borderRadius: "50%", fontSize: 12, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", lineHeight: 1 }}>✕</button>
               </div>
             ))}

@@ -46,6 +46,7 @@ export default function Post() {
         { q: "How do I know if someone edited my PDF?", a: "Watermarks make edits obvious — missing or moved watermark text indicates tampering. For legal documents, use digital signatures for cryptographic verification." },
         { q: "Can I protect a PDF from editing on mobile?", a: "Yes. PDFcraft works on iPhone and Android browsers." },
         { q: "Will protection stop people from taking screenshots?", a: "No. Password protection and watermarks cannot prevent screenshots. Watermarks at least appear in screenshots, making redistribution traceable." },
+        { q: "Can I make a PDF read-only on Google Drive?", a: "Google Drive's sharing settings can restrict editing, but only when the file is viewed through Drive — once someone downloads it, those restrictions no longer apply. Password protection travels with the file itself." },
       ]}
       ctaText="Protect your PDF from editing now — free"
       ctaHref="/tools/protect-pdf"

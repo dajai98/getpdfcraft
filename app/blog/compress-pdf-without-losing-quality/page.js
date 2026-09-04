@@ -27,7 +27,7 @@ export default function Post() {
         },
         {
           heading: "What happens during PDF compression?",
-          text: "When you compress a PDF, the tool optimizes how data is stored inside the file. Images are re-encoded at a more efficient compression level. Duplicate font data is removed. Unnecessary whitespace and metadata are stripped. The result is a smaller file that looks identical when opened — because the visible content hasn't changed at all, only how it is stored internally.",
+          text: "PDFcraft's Compress tool optimizes how objects are stored inside the file — consolidating repeated structures and streamlining the internal layout. It does not currently re-encode or downsample embedded images. That's actually the reason the result is guaranteed to look identical: since nothing about your images or text is touched, there is zero risk of visible quality loss. The tradeoff is that the size reduction is more modest than tools that use lossy image recompression — it depends entirely on how much repeated internal structure your specific PDF has.",
         },
         {
           heading: "How to compress PDF without losing quality — step by step",
@@ -35,17 +35,16 @@ export default function Post() {
             { title: "Open PDFcraft Compress tool", body: "Go to PDFcraft and click Compress PDF. No account needed, no software to install — works immediately in your browser." },
             { title: "Select your PDF", body: "Click Select File and choose your PDF. The file is read locally on your device and never uploaded to any server. Your document stays completely private." },
             { title: "Click Compress PDF", body: "Hit the Compress PDF button. Your browser processes the file and optimizes the internal structure to reduce size. Most files compress in under 5 seconds." },
-            { title: "Check the results", body: "You will see the original file size and the new compressed size. For most documents the reduction is significant. Text-only PDFs may reduce by 10-30%, while image-heavy PDFs often reduce by 50-80%." },
-            { title: "Download the compressed file", body: "Click Download to save the compressed PDF to your device. Open it and compare — the content looks identical while the file is much smaller." },
+            { title: "Check the results", body: "You'll see the exact original and new file size — a real, measured number for your specific file, not an estimate. Documents with a lot of repeated structure (forms, multi-page reports) tend to shrink more than image-heavy scans." },
+            { title: "Download the compressed file", body: "Click Download to save the compressed PDF to your device. Open it and compare — the content looks identical while the file is smaller." },
           ],
         },
         {
-          heading: "How much will my PDF compress?",
+          heading: "What determines how much your PDF will compress?",
           steps: [
-            { title: "Text-only PDFs", body: "Usually compress by 10-30%. Text is already very compact so the gains are modest, but still meaningful for large documents." },
-            { title: "Mixed text and image PDFs", body: "Typically compress by 30-60%. The images compress well while the text remains unaffected." },
-            { title: "Image-heavy PDFs", body: "Can compress by 50-80% or more. Scanned documents, photo books, and presentation exports with many images see the biggest reductions." },
-            { title: "Already compressed PDFs", body: "If a PDF was already aggressively compressed, further reduction may be minimal — only 5-10%. There is a physical limit to how small a file can get." },
+            { title: "PDFs with repeated structure", body: "Multi-page documents, forms, and files with reused resources tend to see the most benefit, since PDFcraft's optimization targets exactly this kind of duplication." },
+            { title: "Image-heavy PDFs and scans", body: "Since PDFcraft doesn't currently recompress embedded images, a PDF that's large mainly because of high-resolution photos or scans will see limited reduction from this tool. Deleting unnecessary pages or re-exporting from the source at a lower resolution (150 DPI instead of 300 DPI) is usually more effective for these files." },
+            { title: "Already-optimized PDFs", body: "If a PDF was exported efficiently to begin with, there may be little left to consolidate — further reduction from any tool will be minimal." },
           ],
         },
         {
@@ -57,8 +56,8 @@ export default function Post() {
         },
       ]}
       faqs={[
-        { q: "Can I compress a PDF without losing quality?", a: "Yes. PDFcraft compresses PDFs by optimizing internal data storage — not by degrading the visible content. Text always remains sharp. Images may have very slight optimization but remain completely readable and professional." },
-        { q: "How much can PDFcraft reduce my PDF size?", a: "It depends on the content. Image-heavy PDFs often reduce by 50-80%. Text-only PDFs typically reduce by 10-30%. Scanned documents can see the biggest reductions." },
+        { q: "Can I compress a PDF without losing quality?", a: "Yes — guaranteed. PDFcraft only optimizes internal file structure and never re-encodes text or images, so there is zero visible quality loss, ever." },
+        { q: "How much can PDFcraft reduce my PDF size?", a: "It varies a lot by file — you'll see the exact before-and-after size after compressing. PDFs with a lot of repeated structure shrink the most; image-heavy scans shrink the least, since PDFcraft doesn't currently recompress images." },
         { q: "Is PDFcraft compression safe for important documents?", a: "Yes. PDFcraft processes files locally in your browser — your document never leaves your device. There is zero risk of your file being stored, accessed, or leaked." },
         { q: "Why is my PDF still large after compression?", a: "If significant compression wasn't achieved, your PDF likely already uses efficient internal compression, or contains very high resolution images at their minimum viable quality. Try splitting the document instead." },
         { q: "Does compression affect text quality?", a: "Never. Text in PDFs is stored as vector data, not as images, so it is not affected by compression at all. Text always remains perfectly sharp regardless of how much the file is compressed." },

@@ -1,0 +1,11 @@
+# Cloudflare Pages static redirects
+# Consolidated duplicate/near-duplicate blog articles identified in the Aug 2026 content audit.
+# Each redirect points the old URL to the article that absorbed its content.
+
+/blog/best-free-pdf-tools-online-updated-adobe   /blog/adobe-acrobat-alternative-free   301
+/blog/how-to-password-protect-a-pdf-free         /blog/how-to-add-password-to-pdf-online   301
+/blog/how-to-protect-pdf-with-password           /blog/how-to-add-password-to-pdf-online   301
+/blog/remove-password-from-pdf                   /blog/how-to-remove-password-from-pdf   301
+/blog/how-to-unlock-pdf-without-password         /blog/how-to-remove-password-from-pdf   301
+/blog/how-to-make-pdf-read-only                  /blog/how-to-protect-pdf-from-editing   301
+/blog/how-to-make-pdf-smaller                    /blog/pdf-file-size-too-large   301

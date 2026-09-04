@@ -64,9 +64,9 @@ export default function PDFToImage() {
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}>
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
-              <p style={{ fontSize: 12, color: "#9ca3af" }}>{(file.size/1024).toFixed(0)} KB</p>
+              <p style={{ fontSize: 12, color: "#6b7280" }}>{(file.size/1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setImages([]); setError(""); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setImages([]); setError(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>
@@ -112,7 +112,7 @@ export default function PDFToImage() {
               <div key={i} style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 12, overflow: "hidden" }}>
                 <img src={img.dataUrl} alt={`Page ${i+1}`} style={{ width: "100%", display: "block" }} />
                 <div style={{ padding: "10px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: 11, color: "#9ca3af", fontWeight: 600 }}>Page {i+1}</span>
+                  <span style={{ fontSize: 11, color: "#6b7280", fontWeight: 600 }}>Page {i+1}</span>
                   <a href={img.dataUrl} download={img.name} style={{ fontSize: 12, fontWeight: 700, color: "#E8380D", textDecoration: "none" }}>↓</a>
                 </div>
               </div>

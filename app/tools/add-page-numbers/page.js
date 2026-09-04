@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -26,6 +25,7 @@ export default function AddPageNumbers() {
   const addNumbers = async () => {
     setProcessing(true);
     try {
+      const { PDFDocument, rgb, StandardFonts } = await import("pdf-lib");
       const doc = await PDFDocument.load(await file.arrayBuffer());
       const font = await doc.embedFont(StandardFonts.Helvetica);
       const pages = doc.getPages();
@@ -100,7 +100,7 @@ export default function AddPageNumbers() {
           </div>
           <button
             onClick={() => { setFile(null); setDownloadUrl(null); }}
-            style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}
+            style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}
           >
             ✕
           </button>

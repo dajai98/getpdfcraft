@@ -12,7 +12,7 @@ export default function Terms() {
         <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>
           Terms of Service
         </h1>
-        <p style={{ fontSize: 15, color: "#9ca3af" }}>Last updated: January 2026</p>
+        <p style={{ fontSize: 15, color: "#6b7280" }}>Last updated: January 2026</p>
       </div>
 
       {[

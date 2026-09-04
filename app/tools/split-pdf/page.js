@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -15,6 +14,7 @@ export default function SplitPDF() {
 
   const loadFile = async (files) => {
     const f = files[0]; setFile(f); setDownloads([]);
+    const { PDFDocument } = await import("pdf-lib");
     const doc = await PDFDocument.load(await f.arrayBuffer());
     setPageCount(doc.getPageCount());
   };
@@ -22,6 +22,7 @@ export default function SplitPDF() {
   const split = async () => {
     setProcessing(true); setDownloads([]);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const src = await PDFDocument.load(await file.arrayBuffer());
       let results = [];
       if (mode === "all") {
@@ -63,9 +64,9 @@ export default function SplitPDF() {
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}>
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
-              <p style={{ fontSize: 12, color: "#9ca3af" }}>{pageCount} pages · {(file.size/1024).toFixed(0)} KB</p>
+              <p style={{ fontSize: 12, color: "#6b7280" }}>{pageCount} pages · {(file.size/1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setDownloads([]); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setDownloads([]); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>

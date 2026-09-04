@@ -149,6 +149,9 @@ export default function Post() {
         {
           tip: "Before assuming your PDF is locked, try opening it in a different PDF viewer first. Many restrictions that appear in one app simply do not exist in another. Adobe Acrobat Reader (free) gives the most accurate view of a PDF's actual security settings.",
         },
+        { list: [
+          { text: "Not actually password-protected but a PDFcraft tool still won't process it? That's a different problem — see our troubleshooting guide", href: "/blog/pdf-tool-not-working-troubleshooting" },
+        ]},
       ]}
       faqs={[
         {

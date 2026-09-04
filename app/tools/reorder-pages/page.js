@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -21,6 +20,7 @@ export default function ReorderPages() {
 
   const loadFile = async (files) => {
     const f = files[0]; setFile(f); setDownloadUrl(null);
+    const { PDFDocument } = await import("pdf-lib");
     const doc = await PDFDocument.load(await f.arrayBuffer());
     setOrder(Array.from({ length: doc.getPageCount() }, (_, i) => i));
   };
@@ -42,6 +42,7 @@ export default function ReorderPages() {
   const reorder = async () => {
     setProcessing(true);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const src = await PDFDocument.load(await file.arrayBuffer());
       const doc = await PDFDocument.create();
       const pages = await doc.copyPages(src, order);
@@ -64,9 +65,9 @@ export default function ReorderPages() {
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}>
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
-              <p style={{ fontSize: 12, color: "#9ca3af" }}>{order.length} pages</p>
+              <p style={{ fontSize: 12, color: "#6b7280" }}>{order.length} pages</p>
             </div>
-            <button onClick={() => { setFile(null); setOrder([]); setDownloadUrl(null); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setOrder([]); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Drag to reorder pages:</p>
@@ -74,8 +75,8 @@ export default function ReorderPages() {
           <div style={{ border: "1px solid #f3f4f6", borderRadius: 14, overflow: "hidden", marginBottom: 20 }}>
             {order.map((originalIndex, currentPos) => (
               <div key={originalIndex} style={{ padding: "14px 20px", display: "flex", alignItems: "center", gap: 14, borderBottom: currentPos < order.length - 1 ? "1px solid #f9fafb" : "none", background: "white", transition: "background 0.15s" }}>
-                <span style={{ fontSize: 18, color: "#d1d5db" }}>⠿</span>
-                <div style={{ width: 36, height: 44, background: "#f9fafb", border: "1px solid #e5e7eb", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, color: "#9ca3af", flexShrink: 0 }}>
+                <span style={{ fontSize: 18, color: "#6b7280" }}>⠿</span>
+                <div style={{ width: 36, height: 44, background: "#f9fafb", border: "1px solid #e5e7eb", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, color: "#6b7280", flexShrink: 0 }}>
                   {originalIndex + 1}
                 </div>
                 <span style={{ flex: 1, fontSize: 14, fontWeight: 500, color: "#374151" }}>

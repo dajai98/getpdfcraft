@@ -13,7 +13,7 @@ export default function NotFound() {
     }}>
       <div style={{ fontSize: 80, marginBottom: 24 }}>📄</div>
       <h1 style={{ fontSize: 48, fontWeight: 800, color: "#111827", marginBottom: 12, letterSpacing: -2 }}>404</h1>
-      <p style={{ fontSize: 18, color: "#9ca3af", marginBottom: 32 }}>
+      <p style={{ fontSize: 18, color: "#6b7280", marginBottom: 32 }}>
         Oops! This page doesn't exist.
       </p>
       <Link href="/" style={{

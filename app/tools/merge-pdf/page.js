@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -26,6 +25,7 @@ export default function MergePDF() {
     if (files.length < 2) return alert("Please add at least 2 PDF files.");
     setProcessing(true);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const merged = await PDFDocument.create();
       for (const file of files) {
         const doc = await PDFDocument.load(await file.arrayBuffer());
@@ -49,16 +49,16 @@ export default function MergePDF() {
         <div style={{ marginTop: 20, border: "1px solid #f3f4f6", borderRadius: 14, overflow: "hidden" }}>
           <div style={{ padding: "12px 20px", borderBottom: "1px solid #f3f4f6", display: "flex", justifyContent: "space-between", background: "#f9fafb" }}>
             <span style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{files.length} file{files.length > 1 ? "s" : ""} selected</span>
-            <button onClick={() => { setFiles([]); setDownloadUrl(null); }} style={{ fontSize: 12, color: "#9ca3af", background: "none", border: "none", cursor: "pointer" }}>Clear all</button>
+            <button onClick={() => { setFiles([]); setDownloadUrl(null); }} style={{ fontSize: 12, color: "#6b7280", background: "none", border: "none", cursor: "pointer" }}>Clear all</button>
           </div>
           {files.map((f, i) => (
             <div key={i} style={{ padding: "12px 20px", display: "flex", alignItems: "center", gap: 12, borderBottom: i < files.length-1 ? "1px solid #f9fafb" : "none" }}>
               <span style={{ fontSize: 22 }}>📄</span>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <p style={{ fontSize: 14, fontWeight: 500, color: "#374151", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{f.name}</p>
-                <p style={{ fontSize: 12, color: "#9ca3af" }}>{(f.size/1024).toFixed(0)} KB</p>
+                <p style={{ fontSize: 12, color: "#6b7280" }}>{(f.size/1024).toFixed(0)} KB</p>
               </div>
-              <button onClick={() => removeFile(i)} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
+              <button onClick={() => removeFile(i)} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
             </div>
           ))}
         </div>

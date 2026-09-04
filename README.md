@@ -1,6 +1,6 @@
 # PDFCraft — Free PDF Tools
 
-11 free PDF tools that run entirely in your browser. No sign up. No uploads. No cost.
+13 free PDF tools that run entirely in your browser. No sign up. No uploads. No cost.
 
 ## Tools
 - Merge PDF
@@ -14,11 +14,14 @@
 - Add Page Numbers
 - Reorder Pages
 - PDF to Grayscale
+- Protect PDF
+- Unlock PDF
 
 ## Tech Stack
-- Next.js 16
+- Next.js 14
 - pdf-lib
 - pdfjs-dist
+- @neslinesli93/qpdf-wasm
 - Tailwind CSS
 
 ## Getting Started

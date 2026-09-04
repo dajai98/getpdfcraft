@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Privacy Policy — PDFcraft",
   description: "PDFcraft privacy policy. Your files never leave your device. We never store, upload or share your documents.",
+  alternates: { canonical: "https://getpdfcraft.com/privacy" },
 };
 
 export default function Privacy() {
@@ -13,6 +14,12 @@ export default function Privacy() {
         </h1>
         <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.7 }}>
           Last updated: January 2026. This policy explains exactly what data we collect, how we use it, and what we absolutely never do.
+        </p>
+        <p style={{ fontSize: 14, color: "#6b7280", marginTop: 12 }}>
+          Want the technical walkthrough behind the claim below?{" "}
+          <a href="/blog/how-browser-based-pdf-processing-works" style={{ color: "#E8380D", fontWeight: 600, textDecoration: "none" }}>
+            See exactly what happens to your file, step by step →
+          </a>
         </p>
       </div>
 
@@ -68,7 +75,7 @@ export default function Privacy() {
             marginBottom: 12,
           }}>
             <div style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
-              <span style={{ fontSize: 12, fontWeight: 800, color: section.highlight ? "#E8380D" : "#d1d5db", letterSpacing: 1, flexShrink: 0, marginTop: 3 }}>{section.num}</span>
+              <span style={{ fontSize: 12, fontWeight: 800, color: section.highlight ? "#E8380D" : "#6b7280", letterSpacing: 1, flexShrink: 0, marginTop: 3 }}>{section.num}</span>
               <div>
                 <h2 style={{ fontSize: 17, fontWeight: 700, color: section.highlight ? "white" : "#111827", marginBottom: 8 }}>{section.title}</h2>
                 <p style={{ fontSize: 15, color: section.highlight ? "#9ca3af" : "#6b7280", lineHeight: 1.7, margin: 0 }}>{section.desc}</p>

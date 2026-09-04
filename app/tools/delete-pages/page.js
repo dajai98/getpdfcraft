@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -23,6 +22,7 @@ export default function DeletePages() {
   const loadFile = async (files) => {
     const f = files[0];
     setFile(f); setSelected(new Set()); setDownloadUrl(null);
+    const { PDFDocument } = await import("pdf-lib");
     const doc = await PDFDocument.load(await f.arrayBuffer());
     setPageCount(doc.getPageCount());
   };
@@ -38,6 +38,7 @@ export default function DeletePages() {
     if (selected.size === pageCount) return alert("You cannot delete all pages. At least one page must remain.");
     setProcessing(true);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const doc = await PDFDocument.load(await file.arrayBuffer());
       // Remove pages in reverse order to preserve indices
       const toDelete = Array.from(selected).sort((a, b) => b - a);
@@ -60,9 +61,9 @@ export default function DeletePages() {
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}>
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
-              <p style={{ fontSize: 12, color: "#9ca3af" }}>{pageCount} pages</p>
+              <p style={{ fontSize: 12, color: "#6b7280" }}>{pageCount} pages</p>
             </div>
-            <button onClick={() => { setFile(null); setSelected(new Set()); setDownloadUrl(null); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setSelected(new Set()); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>

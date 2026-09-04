@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #ffffff;
   color: #0f0f0f;

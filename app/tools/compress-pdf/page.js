@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -14,6 +13,7 @@ export default function CompressPDF() {
     const f = files[0]; setFile(f); setResult(null);
     setProcessing(true);
     try {
+      const { PDFDocument } = await import("pdf-lib");
       const compressed = await (await PDFDocument.load(await f.arrayBuffer())).save({ useObjectStreams: true });
       setResult({ url: URL.createObjectURL(new Blob([compressed], { type: "application/pdf" })), originalSize: f.size, newSize: compressed.length });
     } catch(e) { alert("Error compressing PDF."); }
@@ -26,8 +26,8 @@ export default function CompressPDF() {
     <ToolLayout tag="Compress PDF" tagBg="#FEFCE8" tagColor="#CA8A04"
       title="Compress PDF" desc="Reduce PDF file size while keeping quality. Free and instant."
       current="/tools/compress-pdf" faqs={[
-  { q: "Will compression reduce the quality of my PDF?", a: "For text-based PDFs there is no quality loss. For image-heavy PDFs there may be a slight reduction but text remains sharp." },
-  { q: "How much can PDFcraft compress a PDF?", a: "It depends on the file. Unoptimized PDFs can shrink by 20-50%." },
+  { q: "Will compression reduce the quality of my PDF?", a: "No. PDFcraft doesn't currently recompress or downsample images — it only optimizes the file's internal structure. Text, images, and layout are visually unaffected." },
+  { q: "How much can PDFcraft compress a PDF?", a: "It varies a lot by file — you'll see your exact before-and-after size after compressing. PDFs with a lot of repeated internal structure (forms, multi-page documents) tend to shrink more than image-heavy scans, since PDFcraft doesn't currently recompress embedded images. For large scanned PDFs, deleting unnecessary pages is often more effective." },
   { q: "Is there a file size limit?", a: "No artificial limit. Your device memory is the only constraint." },
   { q: "Are my files safe?", a: "Yes. Files are processed locally. Nothing is uploaded to any server." },
   { q: "Does it work on iPhone?", a: "Yes. Open PDFcraft in Safari on iPhone and it works immediately." },
@@ -58,7 +58,7 @@ export default function CompressPDF() {
         <div style={{ textAlign: "center", padding: 40 }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>⏳</div>
           <p style={{ fontWeight: 600, color: "#374151", fontSize: 16 }}>Compressing {file.name}...</p>
-          <p style={{ color: "#9ca3af", fontSize: 14, marginTop: 8 }}>This usually takes a few seconds.</p>
+          <p style={{ color: "#6b7280", fontSize: 14, marginTop: 8 }}>This usually takes a few seconds.</p>
         </div>
       )}
     </ToolLayout>

@@ -89,9 +89,9 @@ export default function UnlockPDF() {
             <span style={{ fontSize: 22 }}>🔒</span>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ fontSize: 14, fontWeight: 500, color: "#374151", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{file.name}</p>
-              <p style={{ fontSize: 12, color: "#9ca3af" }}>{(file.size / 1024).toFixed(0)} KB</p>
+              <p style={{ fontSize: 12, color: "#6b7280" }}>{(file.size / 1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setDownloadUrl(null); setError(""); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
+            <button onClick={() => { setFile(null); setDownloadUrl(null); setError(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
           </div>
         </div>
       )}
@@ -105,7 +105,7 @@ export default function UnlockPDF() {
           placeholder="Enter the current PDF password"
           style={{ width: "100%", padding: "12px 16px", border: "1px solid #e5e7eb", borderRadius: 10, fontSize: 15, fontFamily: "inherit", outline: "none", boxSizing: "border-box" }}
         />
-        <p style={{ fontSize: 12, color: "#9ca3af", marginTop: 6 }}>Enter the password that is currently protecting this PDF.</p>
+        <p style={{ fontSize: 12, color: "#6b7280", marginTop: 6 }}>Enter the password that is currently protecting this PDF.</p>
       </div>
 
       {error && (

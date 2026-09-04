@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument, degrees } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -14,6 +13,7 @@ export default function RotatePDF() {
   const rotate = async () => {
     setProcessing(true);
     try {
+      const { PDFDocument, degrees } = await import("pdf-lib");
       const doc = await PDFDocument.load(await file.arrayBuffer());
       doc.getPages().forEach(p => p.setRotation(degrees((p.getRotation().angle + rotation) % 360)));
       setDownloadUrl(URL.createObjectURL(new Blob([await doc.save()], { type: "application/pdf" })));
@@ -38,7 +38,7 @@ export default function RotatePDF() {
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}><p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p></div>
-            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Rotation angle</p>

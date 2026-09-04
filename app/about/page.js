@@ -2,6 +2,7 @@
 export const metadata = {
   title: "About PDFcraft — Built by Rai Dajai, Dajai Studio",
   description: "PDFcraft is built by Rai Dajai, a developer from Nepal. Free browser-based PDF tools with no uploads, no sign up, no cost. Here's the story behind it.",
+  alternates: { canonical: "https://getpdfcraft.com/about" },
 };
 
 const schema = {
@@ -101,7 +102,7 @@ export default function About() {
           <div style={{ width: 36, height: 36, background: "#E8380D", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 16 }}>D</div>
           <span style={{ fontWeight: 700, fontSize: 18 }}>Dajai Studio</span>
         </div>
-        <p style={{ fontSize: 15, color: "#9ca3af", lineHeight: 1.7, marginBottom: 20 }}>
+        <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.7, marginBottom: 20 }}>
           Dajai Studio is an indie studio from Nepal. We build free tools and games —
           PDFcraft for the web, and Android apps like BrainStorm Quiz on Google Play.
         </p>

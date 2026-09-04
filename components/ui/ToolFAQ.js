@@ -30,7 +30,7 @@ export default function ToolFAQ({ faqs }) {
                 userSelect: "none",
               }}>
                 {faq.q}
-                <span style={{ color: "#9ca3af", fontSize: 18, flexShrink: 0, marginLeft: 12 }}>+</span>
+                <span style={{ color: "#6b7280", fontSize: 18, flexShrink: 0, marginLeft: 12 }}>+</span>
               </summary>
               <div style={{ padding: "0 20px 18px", color: "#6b7280", fontSize: 15, lineHeight: 1.7 }}>
                 {faq.a}

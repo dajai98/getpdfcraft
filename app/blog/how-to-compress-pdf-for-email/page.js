@@ -65,7 +65,7 @@ export default function Post() {
       faqs={[
         { q: "What is the maximum PDF size I can email?", a: "It depends on your email provider. Gmail and Yahoo allow 25MB. Outlook and Apple Mail allow 20MB. To be safe for all providers, keep your PDF under 20MB." },
         { q: "How do I compress a PDF to under 1MB for email?", a: "Getting a PDF under 1MB requires aggressive compression and usually means the file has significant images. Try compressing first, and if needed, split it into multiple parts and send separately." },
-        { q: "Does PDF compression reduce quality?", a: "For text-based PDFs, there is no visible quality change. For image-heavy PDFs, there may be very slight image optimization, but text always remains perfectly sharp." },
+        { q: "Does PDF compression reduce quality?", a: "No. PDFcraft only optimizes the file's internal structure — it doesn't recompress text or images, so visible quality is never affected." },
         { q: "Can I compress a PDF for email on my phone?", a: "Yes. PDFcraft works on iPhone and Android. Open getpdfcraft.com in your mobile browser, tap Compress PDF, and follow the same steps." },
         { q: "Is there a free way to send large PDFs by email?", a: "Yes. Upload to Google Drive, create a shareable link, and paste it into your email. Google Drive allows files up to 15GB on the free plan." },
         { q: "Why does Gmail automatically create a Drive link for my PDF?", a: "Gmail automatically uses Google Drive for attachments over 25MB. The recipient gets a link instead of a direct attachment. If you want a direct attachment, you must compress the PDF under 25MB first." },

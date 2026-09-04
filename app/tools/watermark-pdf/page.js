@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { PDFDocument, rgb, StandardFonts, degrees } from "pdf-lib";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -16,6 +15,7 @@ export default function WatermarkPDF() {
     if (!file || !text) return;
     setProcessing(true);
     try {
+      const { PDFDocument, rgb, StandardFonts, degrees } = await import("pdf-lib");
       const doc = await PDFDocument.load(await file.arrayBuffer());
       const font = await doc.embedFont(StandardFonts.HelveticaBold);
       doc.getPages().forEach(page => {
@@ -43,7 +43,7 @@ export default function WatermarkPDF() {
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
             <span style={{ fontSize: 28 }}>📄</span>
             <div style={{ flex: 1 }}><p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p></div>
-            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#d1d5db", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button onClick={() => { setFile(null); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20, display: "flex", flexDirection: "column", gap: 18 }}>
             <div>
@@ -55,7 +55,7 @@ export default function WatermarkPDF() {
               <label style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 8 }}>Opacity: {Math.round(opacity*100)}%</label>
               <input type="range" min="0.1" max="0.8" step="0.05" value={opacity} onChange={e => setOpacity(parseFloat(e.target.value))}
                 style={{ width: "100%", accentColor: "#E8380D" }} />
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "#9ca3af", marginTop: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "#6b7280", marginTop: 4 }}>
                 <span>Light</span><span>Strong</span>
               </div>
             </div>

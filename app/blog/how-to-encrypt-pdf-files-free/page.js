@@ -13,12 +13,8 @@ export default function Post() {
       date="May 2026" readTime="6 min read"
       intro="PDF encryption scrambles your document's contents so they can only be read with the correct password. PDFcraft encrypts PDF files using industry-standard AES encryption for free — no sign up, no software, and your file never leaves your device."
       sections={[
-        { heading: "What is PDF encryption?", text: "PDF encryption uses mathematical algorithms to transform your document's readable content into scrambled data that appears as random characters to anyone without the decryption key. The decryption key is your password. Without it, the encrypted PDF is completely unreadable — even to the most powerful computers, a strong AES-encrypted PDF would take billions of years to crack by brute force." },
-        { heading: "PDF encryption standards explained", steps: [
-          { title: "AES-128 encryption", body: "Uses a 128-bit key. Strong enough for most business and personal documents. Very fast to apply and process." },
-          { title: "AES-256 encryption", body: "Uses a 256-bit key. Twice as strong as AES-128. The standard used by governments and military organizations for top-secret data. Recommended for highly sensitive documents." },
-          { title: "RC4 encryption (legacy)", body: "Older encryption standard. Weaker than AES. Found in older PDF files. Not recommended for new documents." },
-        ]},
+        { heading: "What is PDF encryption?", text: "PDF encryption uses mathematical algorithms to transform your document's readable content into scrambled data that appears as random characters to anyone without the decryption key. The decryption key is your password. Without it, AES-256 — the standard PDFcraft uses — is considered computationally infeasible to brute-force with current technology; it's the same encryption standard used by banks and governments for sensitive data." },
+        { heading: "PDF encryption standards explained", text: "PDFcraft always applies AES-256 — the strongest widely-used standard — to every file you protect, so there's no setting to choose. For context, here's how it compares to the other standards you'll see mentioned elsewhere: AES-128 (128-bit key, still strong, faster to process) is common in older tools; AES-256 (256-bit key, twice the key length of AES-128) is the standard used by governments and financial institutions for sensitive data; RC4 is a legacy, weaker standard found in older PDFs and not used by modern tools, including PDFcraft." },
         { heading: "How to encrypt a PDF for free — step by step", steps: [
           { title: "Go to PDFcraft", body: "Open getpdfcraft.com in any browser. No account or software needed." },
           { title: "Click Protect PDF", body: "Select the Protect PDF tool." },

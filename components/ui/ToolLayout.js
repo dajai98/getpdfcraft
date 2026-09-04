@@ -1,6 +1,7 @@
 "use client";
 import { AdLeaderboard, AdRectangle } from "@/components/ui/Ads";
 import RelatedTools from "@/components/ui/RelatedTools";
+import FAQSchema from "@/components/ui/FAQSchema";
 import { useEffect, useState } from "react";
 
 export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children, current, faqs }) {
@@ -60,7 +61,7 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
               }}>
                 {title}
               </h1>
-              <p style={{ fontSize: 15, color: "#9ca3af", lineHeight: 1.6 }}>{desc}</p>
+              <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.6 }}>{desc}</p>
 
               {/* Trust badges */}
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 16 }}>
@@ -111,6 +112,7 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
             {/* FAQ Section */}
             {faqs && faqs.length > 0 && (
               <div style={{ marginTop: 48 }}>
+                <FAQSchema faqs={faqs} />
                 <h2 style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>
                   Frequently asked questions
                 </h2>
@@ -123,7 +125,7 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
                         justifyContent: "space-between", alignItems: "center"
                       }}>
                         {faq.q}
-                        <span style={{ color: "#9ca3af", fontSize: 18, flexShrink: 0, marginLeft: 12 }}>+</span>
+                        <span style={{ color: "#6b7280", fontSize: 18, flexShrink: 0, marginLeft: 12 }}>+</span>
                       </summary>
                       <div style={{ padding: "0 20px 16px", color: "#6b7280", fontSize: 15, lineHeight: 1.7 }}>
                         {faq.a}

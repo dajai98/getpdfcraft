@@ -2,16 +2,47 @@
 "use client";
 import Link from "next/link";
 import { AdLeaderboard } from "@/components/ui/Ads";
+import FAQSchema from "@/components/ui/FAQSchema";
+
+// Parses the display date strings actually used across blog posts
+// ("May 2026" or "February 3, 2026") into ISO 8601 for structured data.
+// Falls back to just the year if the format is unrecognized, rather than
+// guessing a day/month that isn't supported by the visible content.
+const MONTHS = { January: "01", February: "02", March: "03", April: "04", May: "05", June: "06", July: "07", August: "08", September: "09", October: "10", November: "11", December: "12" };
+function toISODate(display) {
+  const withDay = display.match(/^(\w+)\s+(\d{1,2}),\s+(\d{4})$/);
+  if (withDay && MONTHS[withDay[1]]) return `${withDay[3]}-${MONTHS[withDay[1]]}-${withDay[2].padStart(2, "0")}`;
+  const monthOnly = display.match(/^(\w+)\s+(\d{4})$/);
+  if (monthOnly && MONTHS[monthOnly[1]]) return `${monthOnly[2]}-${MONTHS[monthOnly[1]]}`;
+  const yearOnly = display.match(/(\d{4})/);
+  return yearOnly ? yearOnly[1] : undefined;
+}
 
 export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, intro, sections, faqs, ctaText, ctaHref }) {
+  const isoDate = toISODate(date);
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "description": intro,
+    ...(isoDate ? { "datePublished": isoDate } : {}),
+    "author": { "@type": "Organization", "name": "Dajai Studio" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dajai Studio",
+      "logo": { "@type": "ImageObject", "url": "https://getpdfcraft.com/icon.png" },
+    },
+  };
+
   return (
     <div style={{ maxWidth: 740, margin: "0 auto", padding: "80px 24px" }}>
-      <Link href="/blog" style={{ fontSize: 13, color: "#9ca3af", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <Link href="/blog" style={{ fontSize: 13, color: "#6b7280", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 32 }}>← Back to Blog</Link>
 
       <div style={{ marginBottom: 40 }}>
         <span style={{ background: tagBg, color: tagColor, fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>{tag}</span>
         <h1 style={{ fontSize: "clamp(28px, 5vw, 46px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>{title}</h1>
-        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#9ca3af", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#6b7280", flexWrap: "wrap" }}>
           <span>{date}</span><span>· {readTime}</span><span>· By PDFcraft</span>
         </div>
       </div>
@@ -114,6 +145,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
 
         {faqs && faqs.length > 0 && (
           <div style={{ marginTop: 8 }}>
+            <FAQSchema faqs={faqs} />
             <h2 style={{ fontSize: 24, fontWeight: 800, color: "#111827", marginBottom: 24, letterSpacing: -0.5 }}>Frequently asked questions</h2>
             {faqs.map((faq, i) => (
               <div key={i} style={{ borderBottom: "1px solid #f3f4f6", paddingBottom: 20, marginBottom: 20 }}>
@@ -127,7 +159,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         {/* CTA */}
         <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
           <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>{ctaText}</h3>
-          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free, instant, private. No sign up required.</p>
+          <p style={{ color: "#6b7280", marginBottom: 24 }}>Free, instant, private. No sign up required.</p>
           <Link href={ctaHref} style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
             Try it free →
           </Link>

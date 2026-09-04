@@ -18,7 +18,7 @@ export default function Navbar() {
           <div style={{ width: 34, height: 34, background: "#E8380D", borderRadius: 9, display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 800, fontSize: 16, boxShadow: "0 2px 8px rgba(232,56,13,0.3)" }}>P</div>
           <div>
             <div style={{ fontWeight: 800, fontSize: 18, color: "#111827", lineHeight: 1.2, letterSpacing: -0.5 }}>PDFcraft</div>
-            <div style={{ fontSize: 10, color: "#9ca3af", lineHeight: 1, fontWeight: 500 }}>by Dajai Studio</div>
+            <div style={{ fontSize: 10, color: "#6b7280", lineHeight: 1, fontWeight: 500 }}>by Dajai Studio</div>
           </div>
         </Link>
 

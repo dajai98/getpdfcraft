@@ -13,10 +13,17 @@ const allTools = [
   { icon: "#", name: "Page Numbers", href: "/tools/add-page-numbers", bg: "#F0FDF4", color: "#16A34A" },
   { icon: "↕", name: "Reorder Pages", href: "/tools/reorder-pages", bg: "#FAF5FF", color: "#9333EA" },
   { icon: "◑", name: "PDF to Grayscale", href: "/tools/pdf-to-grayscale", bg: "#F9FAFB", color: "#374151" },
+  { icon: "🔒", name: "Protect PDF", href: "/tools/protect-pdf", bg: "#FEF2F2", color: "#DC2626" },
+  { icon: "🔓", name: "Unlock PDF", href: "/tools/unlock-pdf", bg: "#F0FDF4", color: "#16A34A" },
 ];
 
 export default function RelatedTools({ current }) {
-  const related = allTools.filter(t => t.href !== current).slice(0, 6);
+  const others = allTools.filter(t => t.href !== current);
+  // Rotate the starting point based on which tool this is, so every tool
+  // (not just the first 6 in the array) gets surfaced in the "Other Free
+  // PDF Tools" list depending on which page the visitor is on.
+  const startIndex = Math.abs(allTools.findIndex(t => t.href === current)) % others.length;
+  const related = [...others.slice(startIndex), ...others.slice(0, startIndex)].slice(0, 6);
 
   return (
     <div style={{ background: "#f9fafb", borderTop: "1px solid #f3f4f6", padding: "48px 24px" }}>
@@ -31,7 +38,7 @@ export default function RelatedTools({ current }) {
                 onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
                 onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
-                <div style={{ width: 34, height: 34, background: tool.bg, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, color: tool.color, flexShrink: 0 }}>
+                <div aria-hidden="true" style={{ width: 34, height: 34, background: tool.bg, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, color: tool.color, flexShrink: 0 }}>
                   {tool.icon}
                 </div>
                 <span style={{ fontSize: 13, fontWeight: 600, color: "#374151" }}>{tool.name}</span>

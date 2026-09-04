@@ -41,7 +41,7 @@ export default function Layout({ children }) {
 
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>What does the Compress PDF tool do?</h2>
         <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 16 }}>
-          The free PDF compressor optimizes the internal structure of your PDF file to reduce its size. It removes redundant data, optimizes image compression, and cleans up unnecessary metadata — all without affecting the visible content of your document. Text always remains perfectly sharp. Images may have very slight optimization but remain completely readable and professional. The compression process runs entirely in your browser using JavaScript — your files never get sent to any server.
+          The free PDF compressor optimizes the internal structure of your PDF file — consolidating and streamlining how objects are stored — without touching the visible content of your document. This tends to help most on PDFs with a lot of repeated internal structure, like multi-page documents or forms. It does not currently re-compress or downsample embedded images, so a PDF that's large mainly because of high-resolution photos or scans may only shrink a little. For those files, deleting pages you don't need (via PDFcraft's Delete Pages tool) or splitting the document usually makes a bigger difference. Text and images are never altered — the compression process runs entirely in your browser using JavaScript, and your files never get sent to any server.
         </p>
 
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>How to compress a PDF online — step by step</h2>
@@ -74,8 +74,11 @@ export default function Layout({ children }) {
         </ul>
 
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>Is compressing PDFs online safe?</h2>
-        <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 32 }}>
+        <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 16 }}>
           With PDFcraft, completely safe. Your PDF is compressed locally in your browser — it never gets uploaded to any server. This is critical for confidential documents like financial reports, contracts, and medical records. PDFcraft cannot access your files even if it wanted to — all processing happens entirely on your device.
+        </p>
+        <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 32 }}>
+          Wondering how much this tool will actually shrink your file? <a href="/blog/pdf-compression-real-test-results" style={{ color: "#E8380D", fontWeight: 600, textDecoration: "none" }}>We ran real tests on four PDF types and measured the results →</a>
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
