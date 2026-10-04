@@ -1,74 +1,133 @@
 import BlogPost from "@/components/ui/BlogPost";
 
 export const metadata = {
-  title: "How to Convert PDF to PNG Free Online | PDFcraft",
-  description: "Convert PDF pages to PNG images for free online. No sign up, no watermark, high quality output. Works in browser on any device.",
-  keywords: "pdf to png free, convert pdf to png online free, pdf to png no watermark, pdf page to png image",
-  alternates: { canonical: "https://getpdfcraft.com/blog/convert-pdf-to-png-free" },
-  openGraph: {
-    title: "How to Convert PDF to PNG Free Online | PDFcraft",
-    description: "Convert PDF pages to PNG images for free. No sign up, no watermark, high quality.",
-    url: "https://getpdfcraft.com/blog/convert-pdf-to-png-free",
-    type: "article",
+  "title": "How to Convert PDF to PNG Free Online | PDFcraft",
+  "description": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/convert-pdf-to-png-free"
   },
+  "openGraph": {
+    "title": "How to Convert PDF to PNG Free Online | PDFcraft",
+    "description": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised.",
+    "url": "https://getpdfcraft.com/blog/convert-pdf-to-png-free",
+    "type": "article"
+  }
 };
 
 export default function Post() {
   return (
     <BlogPost
-      tag="Convert" tagColor="#16A34A" tagBg="#F0FDF4"
-      title="How to Convert PDF to PNG Free Online"
+      tag={"Convert"} tagColor="#16A34A" tagBg="#F0FDF4"
+      title={"How to Convert PDF to PNG Free Online"}
       date="February 2026" readTime="5 min read"
-      intro="PNG is the best image format when quality cannot be compromised. Unlike JPG which uses lossy compression, PNG preserves every pixel perfectly — making it ideal for PDF pages containing text, diagrams, charts, logos, or any content where sharp edges matter. PDFcraft converts PDF to PNG for free with no sign up and no watermarks."
+      intro={"PNG losslessly encodes the pixels produced when PDFcraft renders a page. That does not preserve PDF vectors at arbitrary zoom or retain interactive document features. Use PDF to Image, select PNG, and review the raster output."}
       sections={[
-        {
-          heading: "Why PNG is better than JPG for most PDF content",
-          text: "JPG compression works by discarding image data that the human eye barely notices. This works well for photographs but causes visible blurring and artifacts on text, diagrams, and sharp edges. PNG uses lossless compression — no data is discarded, so text stays perfectly sharp. If your PDF contains any text, tables, charts, or diagrams, PNG is always the better choice.",
-        },
-        {
-          heading: "How to convert PDF to PNG — step by step",
-          steps: [
-            { title: "Open PDFcraft PDF to Image tool", body: "Go to PDFcraft and click PDF to Image. Works instantly in any browser — Chrome, Safari, Firefox, or Edge. No download or sign up needed." },
-            { title: "Select your PDF", body: "Click Select File and choose your PDF. The file stays on your device throughout the process — it is never uploaded to any server." },
-            { title: "Select PNG as the output format", body: "Choose PNG from the format options. This ensures lossless conversion with maximum quality." },
-            { title: "Click Convert", body: "PDFcraft renders each page of your PDF as a high resolution PNG image. The process runs entirely in your browser." },
-            { title: "Download your PNG images", body: "Each PDF page becomes a separate PNG image. Download them individually or all at once. No watermarks, no quality limits." },
-          ],
-        },
-        {
-          heading: "When to use PNG vs JPG",
-          steps: [
-            { title: "Use PNG for — text documents", body: "Any PDF containing text will look sharper as a PNG. The lossless compression keeps letters perfectly crisp at any zoom level." },
-            { title: "Use PNG for — diagrams and charts", body: "Technical diagrams, flowcharts, graphs, and infographics all have sharp edges that JPG would blur. PNG preserves these perfectly." },
-            { title: "Use PNG for — logos and icons", body: "PNG supports transparency (alpha channel) which is essential for logos. A PNG logo can be placed on any background without a white box around it." },
-            { title: "Use JPG for — photographs", body: "If your PDF mainly contains photos, JPG is better because the file size is much smaller with minimal quality difference for photographic content." },
-          ],
-        },
-        {
-          heading: "Common uses for PDF to PNG conversion",
-          list: [
-            "Extract a diagram from a PDF report for use in presentations",
-            "Convert a PDF certificate to PNG for uploading to LinkedIn",
-            "Save a PDF page as a transparent PNG for design work",
-            "Convert PDF slides to PNG images for web publishing",
-            "Extract logos or graphics from PDF files",
-            "Create sharp image previews of document pages",
-          ],
-        },
-        {
-          tip: "PNG files are larger than JPG but the quality difference is significant for text and diagrams. If file size matters more than quality, use JPG instead.",
-        },
-      ]}
+  {
+    "heading": "PNG and JPG encode rendered pixels differently",
+    "text": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  },
+  {
+    "heading": "How to convert PDF to PNG — step by step",
+    "steps": [
+      {
+        "title": "Open PDFcraft PDF to Image tool",
+        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+      },
+      {
+        "title": "Select your PDF",
+        "body": "Choose a valid input file with the file selector. PDFcraft processes document contents locally; website resource requests are separate."
+      },
+      {
+        "title": "Select PNG as the output format",
+        "body": "PNG encodes rendered pixels without lossy image compression. The output is still a finite-resolution raster, not scalable PDF vectors."
+      },
+      {
+        "title": "Click Convert",
+        "body": "The tool renders all pages using PDF.js at a fixed 2x scale. It loads a remote PDF.js worker from jsDelivr; conversion may fail if that resource is blocked."
+      },
+      {
+        "title": "Download your PNG images",
+        "body": "Each page becomes a separate image. Download individual pages, or use Download All to trigger separate downloads; the browser may require permission. It does not create a ZIP archive."
+      }
+    ]
+  },
+  {
+    "heading": "When to use PNG vs JPG",
+    "steps": [
+      {
+        "title": "Use PNG for — text documents",
+        "body": "PNG encodes rendered pixels without lossy image compression. The output is still a finite-resolution raster, not scalable PDF vectors."
+      },
+      {
+        "title": "Use PNG for — diagrams and charts",
+        "body": "PNG encodes rendered pixels without lossy image compression. The output is still a finite-resolution raster, not scalable PDF vectors."
+      },
+      {
+        "title": "Use PNG for — logos and icons",
+        "body": "The tool renders a whole page rather than extracting an original logo. Do not assume a transparent background."
+      },
+      {
+        "title": "Use JPG for — photographs",
+        "body": "JPG uses lossy image encoding. Compare artifacts and file size at the intended display size."
+      }
+    ]
+  },
+  {
+    "heading": "Common uses for PDF to PNG conversion",
+    "list": [
+      "Extract a diagram from a PDF report for use in presentations",
+      "Convert a PDF certificate to PNG for uploading to LinkedIn",
+      "Save a rendered page as a PNG; do not assume transparent backgrounds",
+      "Convert PDF slides to PNG images for web publishing",
+      "Extract logos or graphics from PDF files",
+      "Create sharp image previews of document pages"
+    ]
+  },
+  {
+    "tip": "Compare JPG and PNG at the intended display size. File size and visible artifacts depend on page content. Keep the original PDF when you need text search or interactive features."
+  },
+  {
+    "heading": "Password-protected inputs",
+    "text": "Unlock an authorized PDF with its correct password before converting. The image tool does not provide a password-entry workflow."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open pdf to image",
+        "href": "/tools/pdf-to-image"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Is PDF to PNG conversion free on PDFcraft?", a: "Yes, completely free. No sign up, no limits, no watermarks. Convert as many PDF pages to PNG as you need." },
-        { q: "Does PDF to PNG conversion lose any quality?", a: "No. PNG uses lossless compression so zero image data is lost. Your PDF pages are converted to PNG with perfect quality." },
-        { q: "Can I convert a multi-page PDF to PNG?", a: "Yes. PDFcraft converts every page in your PDF to a separate PNG image. Download them individually or all at once." },
-        { q: "Does the PNG support transparency?", a: "Yes. PDFcraft PNG output preserves transparency where present in the original PDF, making it suitable for logos and graphic design work." },
-        { q: "Can I convert PDF to PNG on Android?", a: "Yes. PDFcraft works in Android Chrome browser. Open getpdfcraft.com, tap PDF to Image, select PNG, and download the result to your device." },
-        { q: "What is the difference between PDF to JPG and PDF to PNG?", a: "JPG uses lossy compression — smaller files but slight quality loss, best for photos. PNG uses lossless compression — larger files but perfect quality, best for text, diagrams, and logos." },
-      ]}
-      ctaText="Convert PDF to PNG now — free, lossless quality"
-      ctaHref="/tools/pdf-to-image"
+  {
+    "q": "Is PDF to PNG conversion free on PDFcraft?",
+    "a": "Yes. The tool is currently free to use and adds no PDFcraft branding watermark. Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  },
+  {
+    "q": "Does PDF to PNG conversion lose any quality?",
+    "a": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  },
+  {
+    "q": "Can I convert a multi-page PDF to PNG?",
+    "a": "All pages are rendered as separate images. Download All triggers individual downloads, subject to browser permissions."
+  },
+  {
+    "q": "Does the PNG support transparency?",
+    "a": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  },
+  {
+    "q": "Can I convert PDF to PNG on Android?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  },
+  {
+    "q": "What is the difference between PDF to JPG and PDF to PNG?",
+    "a": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  }
+]}
+      ctaText={"Convert PDF pages to PNG — free to use"}
+      ctaHref={"/tools/pdf-to-image"}
     />
   );
 }

@@ -48,9 +48,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
       </div>
 
       {/* Ad at top of article */}
-      <div style={{ marginBottom: 32 }}>
-        <AdLeaderboard />
-      </div>
+      <AdLeaderboard />
 
       <div style={{ fontSize: 16, color: "#374151", lineHeight: 1.8 }}>
         <p style={{ marginBottom: 32, fontSize: 18, color: "#111827", fontWeight: 500, lineHeight: 1.6 }}>{intro}</p>
@@ -139,9 +137,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         ))}
 
         {/* Mid article ad */}
-        <div style={{ margin: "40px 0" }}>
-          <AdLeaderboard />
-        </div>
+        <AdLeaderboard />
 
         {faqs && faqs.length > 0 && (
           <div style={{ marginTop: 8 }}>
@@ -159,16 +155,14 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         {/* CTA */}
         <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
           <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>{ctaText}</h3>
-          <p style={{ color: "#6b7280", marginBottom: 24 }}>Free, instant, private. No sign up required.</p>
+          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free to use. Local document processing. No account required.</p>
           <Link href={ctaHref} style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
             Try it free →
           </Link>
         </div>
 
         {/* Bottom ad */}
-        <div style={{ marginTop: 40 }}>
-          <AdLeaderboard />
-        </div>
+        <AdLeaderboard />
       </div>
     </div>
   );

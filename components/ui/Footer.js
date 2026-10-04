@@ -13,7 +13,7 @@ export default function Footer() {
               <span style={{ fontWeight: 800, fontSize: 17, color: "#111827" }}>PDFcraft</span>
             </div>
             <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, maxWidth: 260, marginBottom: 16 }}>
-              13 free PDF tools. No sign up. No limits. Files never leave your device.
+              13 free PDF tools. No account required. Files processed locally in your browser.
             </p>
             <p style={{ fontSize: 12, color: "#6b7280", lineHeight: 1.6, maxWidth: 260, marginBottom: 8 }}>
               PDFcraft is built by{" "}
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Trust badges */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 24 }}>
-          {["🔒 Files never uploaded", "⚡ 100% browser-based", "♾️ Free forever", "✓ No sign up", "🛡️ No data collected"].map(badge => (
+          {["🔒 Files processed locally", "⚡ Browser-based tools", "✓ Free to use", "✓ No account required"].map(badge => (
             <span key={badge} style={{ background: "white", border: "1px solid #e5e7eb", fontSize: 12, color: "#6b7280", padding: "5px 12px", borderRadius: 100, fontWeight: 500 }}>{badge}</span>
           ))}
         </div>

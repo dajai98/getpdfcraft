@@ -1,50 +1,102 @@
 import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Merge PDF on Windows Free (3 Easy Ways) | PDFcraft",
-  description: "Merge PDF files on Windows for free. Use PDFcraft online, Microsoft Edge, or free software. Step by step guide.",
-  keywords: "merge pdf on windows, combine pdf windows free, how to merge pdf windows 10, join pdf files windows",
-  alternates: { canonical: "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows" },
-  openGraph: { title: "How to Merge PDF on Windows Free | PDFcraft", description: "3 free ways to merge PDFs on Windows 10 and 11.", url: "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows", type: "article" },
+  "title": "How to Merge PDF on Windows Without Installing an App | PDFcraft",
+  "description": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows"
+  },
+  "openGraph": {
+    "title": "How to Merge PDF on Windows Without Installing an App | PDFcraft",
+    "description": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow.",
+    "url": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows",
+    "type": "article"
+  }
 };
 export default function Post() {
   return (
-    <BlogPost tag="Windows" tagColor="#2563EB" tagBg="#EFF6FF"
-      title="How to Merge PDF on Windows Free (3 Easy Ways)"
+    <BlogPost tag={"Windows"} tagColor="#2563EB" tagBg="#EFF6FF"
+      title={"How to Merge PDF on Windows Without Installing an App"}
       date="February 2026" readTime="6 min read"
-      intro="Windows doesn't have a built-in PDF merger like Mac's Preview, but there are several free ways to combine PDFs on Windows 10 and 11. Here are the three easiest methods — no paid software needed."
+      intro={"Use PDFcraft Merge in a supported Windows browser, or evaluate an installed PDF merger when you need an offline workflow. Keep the originals and check output order."}
       sections={[
-        { heading: "Method 1 — PDFcraft online (easiest, no download)", steps: [
-          { title: "Open Chrome or Edge on Windows", body: "Go to getpdfcraft.com. Works in any browser with no installation." },
-          { title: "Click Merge PDF", body: "Select Merge PDF from the tools." },
-          { title: "Add your PDFs", body: "Click Select Files, choose your PDFs, and arrange them in the correct order." },
-          { title: "Merge and download", body: "Click Merge PDFs and save the result to your Windows computer. Done in seconds." },
-        ]},
-        { heading: "Method 2 — Microsoft Edge (built into Windows)", steps: [
-          { title: "Open both PDFs in Microsoft Edge", body: "Right-click any PDF and choose Open with → Microsoft Edge. Open the second PDF in another Edge tab." },
-          { title: "Use Edge PDF tools", body: "Microsoft Edge has basic PDF tools. For merging, Edge itself doesn't merge — but you can print both to PDF as a workaround." },
-          { title: "Print to PDF", body: "A simpler Edge trick: open all PDF pages, then print them all to Microsoft Print to PDF to create one merged file." },
-        ]},
-        { heading: "Method 3 — PDF24 desktop app (free Windows software)", steps: [
-          { title: "Download PDF24 Creator", body: "Go to pdf24.org and download the free PDF24 Creator app for Windows. It is completely free with no trial limits." },
-          { title: "Open the PDF merger tool", body: "Open PDF24 and select the PDF Merger tool." },
-          { title: "Add and merge your PDFs", body: "Add your PDF files, arrange them, and click Merge. Save the output to your computer." },
-        ]},
-        { heading: "Which method is best for Windows?", steps: [
-          { title: "Use PDFcraft for quick online merging", body: "No installation, no sign up, works instantly in any browser. Best for occasional use." },
-          { title: "Use PDF24 for frequent offline use", body: "If you regularly merge PDFs and prefer offline software, PDF24 Creator is the best free Windows option." },
-        ]},
-        { tip: "PDFcraft is the quickest option for Windows users who need to merge PDFs occasionally without installing any software." },
-      ]}
+  {
+    "heading": "Method 1 — PDFcraft in your browser",
+    "steps": [
+      {
+        "title": "Open Chrome or Edge on Windows",
+        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+      },
+      {
+        "title": "Click Merge PDF",
+        "body": "Select Merge PDF from the tools."
+      },
+      {
+        "title": "Add your PDFs",
+        "body": "Select your PDFs, adding them one by one if necessary to establish the displayed insertion order. Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+      },
+      {
+        "title": "Merge and download",
+        "body": "Click Merge PDFs, download the result, and check page count and order. Processing time depends on the files and device."
+      }
+    ]
+  },
+  {
+    "heading": "Do not treat printing separate tabs as merging",
+    "text": "Opening two PDFs in browser tabs does not combine them into one document. Do not rely on separate print jobs to merge files. Use a tool that explicitly supports combining PDFs."
+  },
+  {
+    "heading": "Method 2 — Evaluate a desktop PDF merger",
+    "text": "If you need offline processing, check a desktop tool’s current supported formats, license, and data handling before installing it. This article does not claim current PDF24 pricing, limits, or features. Test the workflow with a sample."
+  },
+  {
+    "heading": "Choose online or installed processing",
+    "text": "PDFcraft avoids a separate desktop installation but still loads website resources. If working offline is essential, verify that requirement against the installed tool you choose."
+  },
+  {
+    "tip": "After merging, inspect the downloaded document before deleting or replacing any source file."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open merge pdf",
+        "href": "/tools/merge-pdf"
+      },
+      {
+        "text": "Adjust page order with Up/Down controls",
+        "href": "/tools/reorder-pages"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Can I merge PDFs on Windows for free?", a: "Yes. PDFcraft works in any Windows browser completely free. For offline merging, PDF24 Creator is free to download." },
-        { q: "Does Windows 10 or 11 have a built-in PDF merger?", a: "Windows does not have a built-in PDF merger. Use PDFcraft online or download PDF24 Creator for free." },
-        { q: "Can I merge PDFs with Microsoft Word?", a: "Not directly. Word can open PDFs but merging requires a PDF-specific tool like PDFcraft." },
-        { q: "Is PDFcraft safe on Windows?", a: "Yes. PDFcraft runs in your browser and never downloads anything to your computer. Your files are processed locally." },
-        { q: "Can I merge PDFs on Windows without internet?", a: "Yes — download the free PDF24 Creator desktop app for offline PDF merging on Windows." },
-        { q: "Can I merge more than 2 PDFs at once on Windows?", a: "Yes. PDFcraft and PDF24 both let you merge unlimited PDFs in one operation." },
-      ]}
-      ctaText="Merge PDFs now — free, works on Windows"
-      ctaHref="/tools/merge-pdf"
+  {
+    "q": "Can I merge PDFs on Windows for free?",
+    "a": "Use a PDF merger that explicitly supports your workflow. PDFcraft Merge is free to use in a supported browser; it uses insertion order and practical device limits apply."
+  },
+  {
+    "q": "Does Windows 10 or 11 have a built-in PDF merger?",
+    "a": "This guide does not establish a built-in merge feature for your Windows version. Printing separate documents does not combine them; choose a tool that explicitly supports merging PDFs."
+  },
+  {
+    "q": "Can I merge PDFs with Microsoft Word?",
+    "a": "This guide does not verify a direct PDF-merge workflow in Word. Use a PDF merger for page assembly; converting through an editable document format can change the layout."
+  },
+  {
+    "q": "Is PDFcraft safe on Windows?",
+    "a": "PDFcraft processes document contents locally without a processing upload backend. Website and third-party requests still occur. See the Privacy Policy; local processing is not a general safety guarantee."
+  },
+  {
+    "q": "Can I merge PDFs on Windows without internet?",
+    "a": "PDFcraft does not guarantee offline operation. Evaluate an installed tool if that is required."
+  },
+  {
+    "q": "Can I merge more than 2 PDFs at once on Windows?",
+    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  }
+]}
+      ctaText={"Merge your PDFs — free to use"}
+      ctaHref={"/tools/merge-pdf"}
     />
   );
 }

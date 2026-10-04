@@ -1,59 +1,98 @@
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = {
-  title: "How to Sign a PDF Free Online (No Adobe Needed) | PDFcraft",
-  description: "Sign PDF documents for free online without Adobe Acrobat. Draw, type, or upload your signature. No sign up required.",
-  keywords: "sign pdf free online, how to sign pdf without adobe, electronic signature pdf free, sign pdf no sign up",
-  alternates: { canonical: "https://getpdfcraft.com/blog/how-to-sign-pdf-free" },
-  openGraph: { title: "How to Sign a PDF Free Online | PDFcraft", description: "Sign PDFs for free without Adobe. Draw, type or upload your signature.", url: "https://getpdfcraft.com/blog/how-to-sign-pdf-free", type: "article" },
+  "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
+  "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/how-to-sign-pdf-free"
+  },
+  "openGraph": {
+    "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
+    "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature.",
+    "url": "https://getpdfcraft.com/blog/how-to-sign-pdf-free",
+    "type": "article"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
+    "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature."
+  }
 };
+
+const article = {
+  "title": "How to Sign a PDF: Options Outside PDFcraft",
+  "intro": "PDFcraft does not currently provide an e-signature tool. If you need to sign a PDF, choose a separate signing method that meets the recipient’s requirements. Adding a text watermark or password in PDFcraft does not sign the document.",
+  "sections": [
+    {
+      "heading": "Ask what the recipient needs",
+      "text": "Before changing the file, ask whether the recipient accepts a visible signature mark, requires a particular signing service, or needs a certificate-based signature. Do not assume those workflows are interchangeable. This guide makes no promise about legal validity or organizational acceptance."
+    },
+    {
+      "heading": "Use an appropriate signing workflow",
+      "text": "Check whether your PDF viewer or a separate signing service offers the required method, whether it is available without payment, and how it handles document uploads. For a certificate-based workflow, check its identity and validation requirements with the provider. No current third-party price or feature availability is asserted here."
+    },
+    {
+      "heading": "A practical signing checklist",
+      "steps": [
+        {
+          "title": "Keep an unsigned original",
+          "body": "Make sure the file is final and includes the right pages before sending it into a signing workflow."
+        },
+        {
+          "title": "Follow the chosen service or viewer’s instructions",
+          "body": "Check the recipient, document version, signature placement, and any identity steps. Read that provider’s data-handling information before using sensitive files."
+        },
+        {
+          "title": "Verify the returned document",
+          "body": "Open the downloaded result in an appropriate viewer. Check what it says about signatures and validation, and confirm the recipient can use it."
+        }
+      ]
+    },
+    {
+      "heading": "Where PDFcraft can help before signing",
+      "text": "Use Merge or Reorder Pages to prepare an unsigned copy if you need page assembly. Merge uses insertion order; Reorder Pages uses Up/Down controls. After a document is signed, avoid running it through page-editing or conversion tools unless you understand how that affects its signatures. PDFcraft does not guarantee signature preservation or validation."
+    },
+    {
+      "heading": "Do not substitute another feature for a signature",
+      "text": "Watermark adds visible text with opacity control and fixed placement/angle/size behavior. Protect adds password-based AES-256 encryption. Neither is an e-signature. Grayscale rasterizes the page and does not preserve signature semantics."
+    },
+    {
+      "heading": "Prepare an unsigned document",
+      "list": [
+        {
+          "text": "Merge PDFs before signing elsewhere",
+          "href": "/tools/merge-pdf"
+        },
+        {
+          "text": "Reorder pages before signing elsewhere",
+          "href": "/tools/reorder-pages"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I sign a PDF with PDFcraft?",
+      "a": "No. PDFcraft currently has no e-signature tool."
+    },
+    {
+      "q": "Is typing my name with Watermark the same as a signing workflow?",
+      "a": "No. It adds visible text but does not provide signature identity or validation features."
+    },
+    {
+      "q": "Is a signature made with a free tool legally valid?",
+      "a": "That depends on the method and your circumstances. Confirm requirements with the recipient rather than relying on a blanket claim in this guide."
+    }
+  ],
+  "ctaHref": "/tools/merge-pdf",
+  "ctaText": "Prepare an unsigned PDF",
+  "tag": "Guide",
+  "tagColor": "#7C3AED",
+  "tagBg": "#F5F3FF",
+  "date": "February 2026",
+  "readTime": "3 min read"
+};
+
 export default function Post() {
-  return (
-    <BlogPost tag="Guide" tagColor="#7C3AED" tagBg="#F5F3FF"
-      title="How to Sign a PDF Free Online (No Adobe Needed)"
-      date="February 2026" readTime="6 min read"
-      intro="Signing PDF documents used to require printing, signing by hand, and scanning. Today you can sign any PDF digitally for free in seconds — no Adobe Acrobat, no printer, no scanner needed. Here are the best free methods to sign a PDF online."
-      sections={[
-        { heading: "Types of PDF signatures", steps: [
-          { title: "Electronic signature (e-signature)", body: "A digital representation of your signature — drawn, typed, or uploaded as an image. Legally valid for most everyday documents in most countries." },
-          { title: "Digital certificate signature", body: "A cryptographically verified signature linked to your identity certificate. Required for legal contracts in some industries. Needs Adobe Acrobat or specialized software." },
-          { title: "Simple typed name", body: "Typing your name with a signature-style font. Acceptable for many informal documents and internal approvals." },
-        ]},
-        { heading: "Method 1 — Sign PDF using your browser (Chrome, Edge, Safari)", steps: [
-          { title: "Open the PDF in Chrome or Edge", body: "Open your PDF in Chrome or Microsoft Edge by dragging it into the browser window." },
-          { title: "Use the fill and sign feature", body: "Chrome and Edge have a built-in fill and sign tool. Click the pen icon in the PDF toolbar." },
-          { title: "Draw or type your signature", body: "Draw your signature with your mouse or trackpad, or type your name. Position it on the signature line." },
-          { title: "Save the signed PDF", body: "Press Ctrl+P (or Cmd+P on Mac) and print to PDF to save the signed document." },
-        ]},
-        { heading: "Method 2 — Use DocuSign free plan", steps: [
-          { title: "Go to DocuSign.com", body: "DocuSign offers a free plan that allows you to sign up to 3 documents per month. Go to docusign.com and create a free account." },
-          { title: "Upload your PDF", body: "Upload the PDF you need to sign." },
-          { title: "Add your signature", body: "Draw or type your signature and place it on the document." },
-          { title: "Download the signed PDF", body: "Download the signed document. DocuSign provides a legally recognized e-signature." },
-        ]},
-        { heading: "Method 3 — Use Adobe Acrobat Reader (free)", steps: [
-          { title: "Download Adobe Acrobat Reader", body: "Adobe Acrobat Reader is free to download. It includes the Fill & Sign tool for adding signatures to PDFs." },
-          { title: "Open your PDF in Reader", body: "Open the PDF you need to sign in Adobe Acrobat Reader." },
-          { title: "Click Fill & Sign", body: "Go to Tools → Fill & Sign. Draw your signature or use a typed signature style." },
-          { title: "Place and save", body: "Position your signature on the document and save the signed PDF." },
-        ]},
-        { heading: "Method 4 — Sign on iPhone using Markup", steps: [
-          { title: "Open the PDF in Files or Mail on iPhone", body: "Find the PDF in the Files app or open it from an email attachment." },
-          { title: "Tap the Markup icon", body: "Tap the pen icon (Markup) to open Apple's built-in annotation tool." },
-          { title: "Add a signature", body: "Tap the + icon → Signature. Draw your signature with your finger on the screen." },
-          { title: "Place and save", body: "Drag the signature to the correct position and tap Done to save." },
-        ]},
-        { tip: "For legally binding contracts in business, use a dedicated e-signature service like DocuSign or HelloSign which provide audit trails and legal certification. For everyday personal documents, browser-based signing is quick and perfectly acceptable." },
-      ]}
-      faqs={[
-        { q: "Is signing a PDF electronically legal?", a: "Yes. Electronic signatures are legally valid for most everyday documents in the US (under ESIGN Act), EU (under eIDAS), and most countries worldwide. For certain legal instruments like wills, notarized documents, or court filings, physical signatures may still be required." },
-        { q: "Can I sign a PDF for free without Adobe?", a: "Yes. Chrome and Edge have built-in PDF signing. Apple devices have Markup. DocuSign offers a free plan. All work without Adobe." },
-        { q: "Can I sign a PDF on my phone for free?", a: "Yes. iPhone users can use the Markup tool in the Files app. Android users can use Adobe Acrobat Reader free app." },
-        { q: "Does PDFcraft have a PDF signing tool?", a: "PDFcraft currently focuses on PDF manipulation tools. For signing, we recommend using your browser's built-in tools, Apple Markup on iPhone, or the free DocuSign plan." },
-        { q: "How do I add my actual handwritten signature to a PDF?", a: "Sign your name on white paper, photograph it, remove the background using a free tool, save as PNG, then insert it as an image into your PDF." },
-        { q: "Can I sign a PDF on Android for free?", a: "Yes. Download Adobe Acrobat Reader free on Android. Open your PDF and use Fill & Sign to draw your signature." },
-      ]}
-      ctaText="Prepare your PDF for signing — merge, compress, and more"
-      ctaHref="/"
-    />
-  );
+  return <BlogPost {...article} />;
 }

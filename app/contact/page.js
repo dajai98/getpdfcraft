@@ -1,6 +1,8 @@
 export const metadata = {
   title: "Contact PDFcraft — Get in Touch",
-  description: "Have a question, suggestion, or found a bug? Contact the PDFcraft team at support@getpdfcraft.com",
+  description: "Have a question, suggestion, or found a bug? Contact Rai Dajai at PDFcraft at support@getpdfcraft.com",
+  openGraph: { title: "Contact PDFcraft — Get in Touch", description: "Have a question, suggestion, or found a bug? Contact Rai Dajai at PDFcraft at support@getpdfcraft.com", url: "https://getpdfcraft.com/contact", type: "website", images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFcraft by Dajai Studio" }] },
+  twitter: { card: "summary_large_image", title: "Contact PDFcraft — Get in Touch", description: "Have a question, suggestion, or found a bug? Contact Rai Dajai at PDFcraft at support@getpdfcraft.com", images: ["/og.svg"] },
   alternates: { canonical: "https://getpdfcraft.com/contact" },
 };
 
@@ -15,7 +17,7 @@ export default function Contact() {
           Get in touch
         </h1>
         <p style={{ fontSize: 18, color: "#6b7280", lineHeight: 1.7 }}>
-          Have a question, suggestion, or found a bug? I'd love to hear from you.
+          Have a question, suggestion, or found a bug? I&apos;d love to hear from you.
           PDFcraft is built and maintained by one person, and I read every message.
         </p>
       </div>
@@ -45,8 +47,8 @@ export default function Contact() {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span style={{ fontSize: 24 }}>⚡</span>
           <div>
-            <p style={{ fontWeight: 700, color: "#15803D", fontSize: 15, marginBottom: 4 }}>We typically respond within 24-48 hours</p>
-            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>PDFcraft is built and run by one person. I read every message and do my best to respond quickly.</p>
+            <p style={{ fontWeight: 700, color: "#15803D", fontSize: 15, marginBottom: 4 }}>I&apos;ll reply as soon as I can</p>
+            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>PDFcraft is built and run by one person. I do my best to respond, but response times vary.</p>
           </div>
         </div>
       </div>
@@ -57,7 +59,7 @@ export default function Contact() {
           <span style={{ fontSize: 24 }}>💡</span>
           <div>
             <p style={{ fontWeight: 700, color: "#1d4ed8", fontSize: 15, marginBottom: 4 }}>Looking for quick answers?</p>
-            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>Each tool page has a detailed FAQ section. Check the tool you're using — your question may already be answered there.</p>
+            <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>Each tool page has a detailed FAQ section. Check <a href="/#tools" style={{ color: "#E8380D" }}>the tool you are using</a> — your question may already be answered there.</p>
           </div>
         </div>
       </div>

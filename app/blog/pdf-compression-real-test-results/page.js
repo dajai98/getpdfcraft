@@ -1,91 +1,136 @@
 import BlogPost from "@/components/ui/BlogPost";
 
 export const metadata = {
-  title: "How Much Can You Actually Compress a PDF? Real Test Results | PDFcraft",
-  description: "We ran PDFcraft's actual compression code against four different PDF types and measured the real results — no estimates. See exactly what compresses well and what doesn't, and why.",
-  keywords: "how much can you compress a pdf, pdf compression test results, does pdf compression actually work, pdf compression percentage real",
-  alternates: { canonical: "https://getpdfcraft.com/blog/pdf-compression-real-test-results" },
-  openGraph: {
-    title: "How Much Can You Actually Compress a PDF? Real Test Results | PDFcraft",
-    description: "We ran the actual compression code against four PDF types and measured the real results. No estimates, no marketing numbers.",
-    url: "https://getpdfcraft.com/blog/pdf-compression-real-test-results",
-    type: "article",
+  "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
+  "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/pdf-compression-real-test-results"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "How Much Can You Actually Compress a PDF? Real Test Results | PDFcraft",
-    description: "We ran the actual compression code against four PDF types and measured the real results.",
+  "openGraph": {
+    "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
+    "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks.",
+    "url": "https://getpdfcraft.com/blog/pdf-compression-real-test-results",
+    "type": "article"
   },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
+    "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks."
+  }
 };
 
 export default function Post() {
   return (
     <BlogPost
-      tag="Tested" tagColor="#CA8A04" tagBg="#FEFCE8"
-      title="How Much Can You Actually Compress a PDF? Real Test Results"
+      tag={"Guide"} tagColor="#CA8A04" tagBg="#FEFCE8"
+      title={"How Much Can You Compress a PDF? Measure Your Own Result"}
       date="August 2026" readTime="7 min read"
-      intro="Most compression tools quote a range like '20-50% smaller' without saying where that number came from. We didn't want to do that. Instead, we ran PDFcraft's actual compression code — the exact same function that runs when you click Compress PDF — against four realistic test files and recorded exactly what happened. Here are the real numbers, including the cases where compression barely helped at all."
+      intro={"Compression depends on the specific PDF. This guide explains how to measure your own input and output sizes using PDFcraft’s current implementation, without projecting a benchmark onto unrelated documents."}
       sections={[
-        {
-          heading: "What PDFcraft's Compress tool actually does",
-          text: "Before the results: PDFcraft's compressor works by calling one function from the pdf-lib library — PDFDocument.save({ useObjectStreams: true }). In plain terms, this reorganizes how the PDF stores its internal objects (fonts, text positions, page structure) into a more compact format. It does not recompress or downsample images. That single fact explains almost everything in the results below.",
-        },
-        {
-          heading: "Test setup",
-          text: "We built four test PDFs designed to represent common real-world document types, then ran the exact production compression call against each one and measured the file size before and after with Node.js. All four files and the test script are reproducible — this isn't a cherry-picked example.",
-          list: [
-            "Text-heavy: a 20-page report, mostly body text, one shared font",
-            "Image-heavy: 10 pages, each with one embedded photo or scan-style image",
-            "Repeated structure: a 30-page form-style document reusing the same logo image and layout on every page",
-            "Mixed: 16 pages alternating between text sections and embedded images",
-          ],
-        },
-        {
-          heading: "The results",
-          table: {
-            headers: ["Test file", "Original size", "After compression", "Change", "Time"],
-            rows: [
-              ["Text-heavy (20 pages)", "31 KB", "19 KB", "−39%", "58 ms"],
-              ["Image-heavy (10 pages)", "1,210 KB", "1,207 KB", "≈0% (−0.2%)", "14 ms"],
-              ["Repeated structure (30 pages)", "256 KB", "248 KB", "−3%", "26 ms"],
-              ["Mixed (16 pages)", "636 KB", "631 KB", "−1%", "20 ms"],
-            ],
-          },
-        },
-        {
-          heading: "What this actually shows",
-          steps: [
-            { title: "Text-heavy documents compress the most — by a wide margin", body: "The 20-page text report shrank 39%. This is the file type object-stream optimization is genuinely good at: lots of small internal objects (text positions, font references) that compact well when reorganized. If your PDF is mostly text — reports, letters, contracts — this tool will make a real, meaningful difference." },
-            { title: "Image-heavy PDFs barely change — because images aren't touched", body: "The image-heavy file shrank by 0.2%, which rounds to nothing. This matches exactly what the code does: it doesn't recompress images, so a file that's large because of its images stays large. If your PDF is a scan, a photo album, or full of screenshots, don't expect much from this tool alone." },
-            { title: "The 'repeated structure' result surprised us", body: "We expected the 30-page form (reusing the same logo on every page) to show the biggest gains, since object-stream compaction is specifically about deduplicating repeated objects. It only shrank 3%. The likely reason: pdf-lib already avoids storing duplicate copies of the same embedded image when you reuse the same reference across pages, the way our test file — and most well-built PDFs — does. There simply wasn't much duplication left for the compressor to remove. Carelessly assembled PDFs (for example, ones built by combining many separately-scanned pages) may have more real duplication and see a bigger benefit than our test — but we can't quantify that without a real-world example of one, and won't guess at a number." },
-            { title: "Compressing an already-compressed file does nothing further", body: "We also ran the compressor twice on the same file. The first pass took it from 31KB to 19KB. Running it again on that already-compressed result produced an identical file — 0% additional change. If you compress a PDF twice, you're not leaving anything on the table by only doing it once." },
-          ],
-        },
-        {
-          heading: "What this means for you",
-          text: "If you're compressing a text-based document — a report, a form, a contract — PDFcraft's Compress tool will likely help, and our test suggests the benefit can be substantial. If you're trying to shrink a scanned document or a PDF full of photos, this specific tool is the wrong lever to pull: deleting pages you don't need, or re-exporting the original at a lower image resolution before making the PDF, will do far more than compressing the PDF afterward.",
-        },
-        {
-          heading: "Methodology and limitations, honestly stated",
-          list: [
-            "These are synthetic test files built specifically for this test, not real user documents — we chose them to represent common patterns (text report, photo scan, repeated form, mixed content), but any individual real-world PDF may behave differently depending on how it was originally created.",
-            "Files exported from Word, Acrobat, or a phone scanner app can have different internal structure than files built directly with pdf-lib, which may change results in either direction.",
-            "We tested on one machine; processing time will vary by device, especially on phones.",
-            "We're not claiming these four numbers apply to every PDF — we're showing you exactly how the tool behaves on four specific, reproducible files so you can reason about where your own file is likely to land.",
-          ],
-        },
-        {
-          tip: "The fastest way to know how much your specific PDF will compress is still to just try it — PDFcraft shows you the exact before-and-after size immediately, for free, with nothing to install.",
-        },
-      ]}
+  {
+    "heading": "What PDFcraft's Compress tool actually does",
+    "text": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
+  },
+  {
+    "heading": "Set up a useful comparison",
+    "text": "Keep the original and select a copy in Compress PDF. Processing starts after selection. Record the input and output byte counts shown by the tool; use the same file when comparing runs.",
+    "list": [
+      "Use a non-sensitive document representative of your real task.",
+      "Keep text-based, scan-based, and mixed documents separate in your notes.",
+      "Record any errors as well as completed outputs.",
+      "Inspect content and required features before replacing a file."
+    ]
+  },
+  {
+    "heading": "Read the result honestly",
+    "table": {
+      "headers": [
+        "Observed result",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "Output has fewer bytes",
+          "A size reduction for this particular input; still inspect the output."
+        ],
+        [
+          "Output has the same size",
+          "No measured saving."
+        ],
+        [
+          "Output has more bytes",
+          "Not a successful size reduction; keep the original if size is the goal."
+        ],
+        [
+          "Processing fails",
+          "No verified output; investigate the error before retrying."
+        ]
+      ]
+    }
+  },
+  {
+    "heading": "What the result can tell you",
+    "steps": [
+      {
+        "title": "Internal structure matters",
+        "body": "Loading and saving with object streams can change size; it is not an explicit image-downsampling or deduplication pipeline."
+      },
+      {
+        "title": "Image-heavy files may shrink little",
+        "body": "Embedded image data can dominate the size. The current compressor does not explicitly recompress it."
+      },
+      {
+        "title": "Repeated structure does not guarantee savings",
+        "body": "Do not infer a saving just because pages repeat a logo or form."
+      },
+      {
+        "title": "Repeated runs are not a promise",
+        "body": "Measure again if you retry; an already processed file is not guaranteed to get smaller."
+      }
+    ]
+  },
+  {
+    "heading": "What this means for you",
+    "text": "If the output does not meet your needs, consider explicit page ranges or source re-export settings. Those change different aspects of the document; verify the resulting content and quality."
+  },
+  {
+    "heading": "Limits of a measurement",
+    "list": [
+      "A result applies to that input and implementation, not every PDF of the same broad type.",
+      "Device and browser resources affect whether processing completes.",
+      "Byte savings do not establish preservation of signatures, forms, or other semantics.",
+      "No timing or percentage benchmark is asserted here."
+    ]
+  },
+  {
+    "tip": "Use the before-and-after byte counts to decide whether the output is useful, then review the document."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open compress pdf",
+        "href": "/tools/compress-pdf"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Why doesn't PDFcraft just add image compression?", a: "It's a real feature that could be added, and would help image-heavy files specifically. Today's tool optimizes file structure only — this article describes exactly what that means so you're not surprised by the result." },
-        { q: "Is a text-heavy PDF always going to shrink by 39%?", a: "Not necessarily — that was the result for our specific 20-page test file. The mechanism that produces the reduction (compacting internal object structure) applies broadly to text-heavy documents, but the exact percentage depends on your file's specific structure." },
-        { q: "My scanned PDF didn't get smaller at all. Is the tool broken?", a: "No — this matches our test results exactly. Compression doesn't currently touch image data, so a scan-heavy PDF may see close to zero reduction. Try deleting unnecessary pages instead, which our large-PDF guide covers." },
-        { q: "Can I reproduce this test myself?", a: "Yes — the compression logic is the same open function (pdf-lib's save with useObjectStreams) used across the tool, and you can test your own file directly by compressing it and comparing the before/after size PDFcraft shows you." },
-      ]}
-      ctaText="Try Compress PDF and see your file's real numbers"
-      ctaHref="/tools/compress-pdf"
+  {
+    "q": "How much will my PDF shrink?",
+    "a": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
+  },
+  {
+    "q": "Does a scan that does not shrink mean the tool is broken?",
+    "a": "Not necessarily. Image data can dominate the file and is not explicitly downsampled by this tool."
+  },
+  {
+    "q": "Can I measure the result myself?",
+    "a": "Yes. Compare the input and output byte counts, then inspect the downloaded file. Record failures and larger outputs rather than treating them as savings."
+  }
+]}
+      ctaText={"Try Compress PDF and see your file's real numbers"}
+      ctaHref={"/tools/compress-pdf"}
     />
   );
 }

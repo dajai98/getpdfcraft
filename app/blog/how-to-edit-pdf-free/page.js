@@ -1,51 +1,131 @@
 import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
-  description: "Edit PDFs for free online without Adobe Acrobat. Add text, merge, split, rotate, watermark and more. No sign up required.",
-  keywords: "edit pdf free online, how to edit pdf without adobe, free pdf editor online, edit pdf no sign up",
-  alternates: { canonical: "https://getpdfcraft.com/blog/how-to-edit-pdf-free" },
-  openGraph: { title: "How to Edit PDF Free Online | PDFcraft", description: "Edit PDFs for free without Adobe. Merge, split, rotate, watermark and more.", url: "https://getpdfcraft.com/blog/how-to-edit-pdf-free", type: "article" },
+  "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
+  "description": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/how-to-edit-pdf-free"
+  },
+  "openGraph": {
+    "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
+    "description": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool.",
+    "url": "https://getpdfcraft.com/blog/how-to-edit-pdf-free",
+    "type": "article"
+  }
 };
 export default function Post() {
   return (
-    <BlogPost tag="Guide" tagColor="#4F46E5" tagBg="#EEF2FF"
-      title="How to Edit PDF Free Online (No Adobe Needed)"
+    <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"
+      title={"How to Edit PDF Free Online (No Adobe Needed)"}
       date="February 2026" readTime="6 min read"
-      intro="You don't need Adobe Acrobat to edit PDFs. There are several free ways to modify PDF files online — from adding watermarks and page numbers to merging, splitting, rotating, and reordering pages. Here is everything you can do for free without any software."
+      intro={"PDFcraft can change page structure and add limited overlays. It does not edit existing PDF text, fill forms, or provide OCR. Choose the tool according to the actual change you need."}
       sections={[
-        { heading: "What do people mean by 'editing' a PDF?", text: "PDF editing covers a wide range of tasks. Some people want to add or change text (true text editing). Others just need to rearrange pages, add watermarks, merge files, or remove pages. The free tools available cover most of these needs — true text editing is the hardest to do for free." },
-        { heading: "What you can edit for free with PDFcraft", list: [
-          { text: "Merge PDFs — combine multiple files into one", href: "/tools/merge-pdf" },
-          { text: "Split PDF — remove pages or extract sections", href: "/tools/split-pdf" },
-          { text: "Delete Pages — remove specific pages", href: "/tools/delete-pages" },
-          { text: "Reorder Pages — rearrange page order", href: "/tools/reorder-pages" },
-          { text: "Rotate PDF — fix page orientation", href: "/tools/rotate-pdf" },
-          { text: "Watermark PDF — add text stamps", href: "/tools/watermark-pdf" },
-          { text: "Add Page Numbers — number your pages", href: "/tools/add-page-numbers" },
-          { text: "Compress PDF — reduce file size", href: "/tools/compress-pdf" },
-        ]},
-        { heading: "How to edit PDF text for free", steps: [
-          { title: "Use Google Docs (free)", body: "Upload your PDF to Google Drive, right-click it and open with Google Docs. Google converts the PDF to editable text. Edit the content and export back as PDF. Best for simple text edits." },
-          { title: "Use Microsoft Word (free if you have Office)", body: "Open Word, go to File → Open, and select your PDF. Word converts it to an editable document. Edit the text and save as PDF. Good for text-heavy documents." },
-          { title: "Use Adobe Acrobat online (limited free)", body: "Adobe's online tools allow limited free text editing. Go to acrobat.adobe.com for basic text changes." },
-        ]},
-        { heading: "How to add pages, remove pages, or reorder a PDF for free", steps: [
-          { title: "Delete unwanted pages", body: "Use PDFcraft's Delete Pages tool to remove specific pages from any PDF for free. No sign up needed." },
-          { title: "Reorder pages", body: "Use PDFcraft's Reorder Pages tool to drag and drop pages into any order you need." },
-          { title: "Add pages from another PDF", body: "Use PDFcraft's Merge PDF tool to combine your PDF with another — effectively adding pages from one document to another." },
-        ]},
-        { tip: "For most common PDF editing tasks — rearranging pages, removing pages, merging files, adding watermarks — PDFcraft handles everything for free with no sign up." },
-      ]}
+  {
+    "heading": "What do people mean by 'editing' a PDF?",
+    "text": "Editing may mean changing text, moving pages, adding overlays, or filling fields. These require different capabilities. PDFcraft provides page operations, text watermarks, and page-number overlays rather than a general editor."
+  },
+  {
+    "heading": "What you can edit for free with PDFcraft",
+    "list": [
+      {
+        "text": "Merge PDFs — combine multiple files into one",
+        "href": "/tools/merge-pdf"
+      },
+      {
+        "text": "Split PDF — create one file per page/range item",
+        "href": "/tools/split-pdf"
+      },
+      {
+        "text": "Delete Pages — remove visible pages; not secure redaction",
+        "href": "/tools/delete-pages"
+      },
+      {
+        "text": "Reorder Pages — move pages with Up/Down controls",
+        "href": "/tools/reorder-pages"
+      },
+      {
+        "text": "Rotate PDF — rotate all pages",
+        "href": "/tools/rotate-pdf"
+      },
+      {
+        "text": "Watermark PDF — text and opacity; fixed placement/angle/size",
+        "href": "/tools/watermark-pdf"
+      },
+      {
+        "text": "Add Page Numbers — number your pages",
+        "href": "/tools/add-page-numbers"
+      },
+      {
+        "text": "Compress PDF — try structural optimization; size may increase",
+        "href": "/tools/compress-pdf"
+      }
+    ]
+  },
+  {
+    "heading": "To edit existing text, use another workflow",
+    "steps": [
+      {
+        "title": "Return to the source when possible",
+        "body": "Edit the original document in its authoring application and export a new PDF if supported."
+      },
+      {
+        "title": "Otherwise evaluate a text editor or converter",
+        "body": "Check current PDF-import, OCR, cost, and upload behavior in your chosen tool. A conversion may change the layout; this guide does not promise specific third-party features."
+      },
+      {
+        "title": "Compare the result",
+        "body": "Check text, numbers, layout, and any interactive features against the original. Keep the source copy."
+      }
+    ]
+  },
+  {
+    "heading": "How to add pages, remove pages, or reorder a PDF for free",
+    "steps": [
+      {
+        "title": "Delete unwanted pages",
+        "body": "Delete Pages removes pages from the visible structure. It is not secure redaction or sanitization."
+      },
+      {
+        "title": "Reorder pages",
+        "body": "Reorder Pages uses Up/Down controls rather than drag and drop."
+      },
+      {
+        "title": "Add pages from another PDF",
+        "body": "Use PDFcraft's Merge PDF tool to combine your PDF with another — effectively adding pages from one document to another."
+      }
+    ]
+  },
+  {
+    "tip": "For most common PDF editing tasks — rearranging pages, removing pages, merging files, adding watermarks — PDFcraft handles everything for free with no sign up."
+  }
+]}
       faqs={[
-        { q: "Can I edit a PDF for free without Adobe?", a: "Yes. For page-level editing (merge, split, rotate, reorder, delete pages, watermark), PDFcraft does it all free. For text editing, Google Docs offers free PDF text editing." },
-        { q: "Can I add text to a PDF for free?", a: "Google Docs lets you add and edit text in PDFs for free. Upload to Google Drive, open with Google Docs, edit the text, and export back as PDF." },
-        { q: "Can I fill in a PDF form for free?", a: "Most modern browsers (Chrome, Edge, Firefox, Safari) can fill in PDF forms directly. Open the PDF in your browser and click on form fields to type in them." },
-        { q: "Is there a truly free PDF editor with no limits?", a: "PDFcraft offers 11 PDF tools completely free with no limits — but these cover page-level operations, not text editing. For free text editing with some limits, Google Docs is the best option." },
-        { q: "Can I edit a PDF on my phone for free?", a: "Yes. PDFcraft works on iPhone and Android for page operations. Google Docs works on mobile for text editing." },
-        { q: "Will editing a PDF change the original file?", a: "No. PDFcraft always creates a new file — your original is never modified. Download the edited version and keep your original safe." },
-      ]}
-      ctaText="Edit your PDF now — free, no sign up"
-      ctaHref="/"
+  {
+    "q": "Can I edit a PDF for free without Adobe?",
+    "a": "PDFcraft has 13 current tools for page operations and limited overlays/conversions. It does not edit existing PDF text. Text and opacity are Watermark’s user controls; size, position, and angle are not configurable."
+  },
+  {
+    "q": "Can I add text to a PDF for free?",
+    "a": "PDFcraft has 13 current tools for page operations and limited overlays/conversions. It does not edit existing PDF text. Text and opacity are Watermark’s user controls; size, position, and angle are not configurable."
+  },
+  {
+    "q": "Can I fill in a PDF form for free?",
+    "a": "PDFcraft is not a form-filling tool. Check your viewer’s support for the specific form and inspect the saved result."
+  },
+  {
+    "q": "Is there a free tool for PDF page operations?",
+    "a": "PDFcraft has 13 current tools for page operations and limited overlays/conversions. It does not edit existing PDF text. Text and opacity are Watermark’s user controls; size, position, and angle are not configurable."
+  },
+  {
+    "q": "Can I edit a PDF on my phone for free?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  },
+  {
+    "q": "Will editing a PDF change the original file?",
+    "a": "PDFcraft generates a new download instead of overwriting the selected source. Choose a different filename when saving to preserve the original."
+  }
+]}
+      ctaText={"Edit your PDF now — free, no sign up"}
+      ctaHref={"/"}
     />
   );
 }

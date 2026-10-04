@@ -1,62 +1,46 @@
 "use client";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { runQpdf } from "@/lib/qpdf";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
   { q: "Is removing a PDF password on PDFcraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed." },
-  { q: "Are my files safe when I remove a password?", a: "Absolutely. PDFcraft processes files entirely in your browser using WebAssembly. Your PDF and password never leave your device." },
+  { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Can PDFcraft crack or bypass a PDF password?", a: "No. PDFcraft requires the correct current password to remove protection. It cannot crack or bypass passwords on documents you are not authorized to access." },
-  { q: "Is it legal to remove a PDF password?", a: "Yes — if you own the document or have explicit permission from the owner. Only remove protection from PDFs you are authorized to modify." },
+  { q: "Is it legal to remove a PDF password?", a: "PDFcraft is intended for files you own or are authorized to modify. Laws, agreements, and permissions may vary; the tool does not determine whether a particular use is permitted." },
   { q: "What if I forgot the PDF password?", a: "If you do not know the current password, PDFcraft cannot help. You would need to contact whoever created the protected PDF." },
-  { q: "Does it work on iPhone and Android?", a: "Yes. PDFcraft works on any device with a modern browser including iPhone Safari and Android Chrome." },
+  { q: "Does it work on iPhone and Android?", a: "Use a current browser on desktop or mobile. Compatibility and practical file limits depend on your browser and device." },
 ];
 
 export default function UnlockPDF() {
-  const [file, setFile] = useState(null);
-  const [password, setPassword] = useState("");
-  const [processing, setProcessing] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState(null);
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult: invalidateOutput, isCurrentResult } = useGeneratedResult();
   const [error, setError] = useState("");
+  const invalidateResult = useCallback(() => { invalidateOutput(); setError(""); }, [invalidateOutput]);
+  const [file, setFile] = useResultInput(null, invalidateResult);
+  const [password, setPassword] = useResultInput("", invalidateResult);
+  const [processing, setProcessing] = useState(false);
 
-  const handleFile = (files) => { setFile(files[0]); setDownloadUrl(null); setError(""); };
+
+  const handleFile = (files) => { setFile(files[0]); setError(""); };
 
   const unlock = async () => {
     if (!file) return setError("Please select a PDF file.");
     if (!password) return setError("Please enter the current password.");
 
+    const resultVersion = beginResult();
     setProcessing(true);
     setError("");
 
     try {
-      const createModule = (await import("@neslinesli93/qpdf-wasm")).default;
-      const qpdf = await createModule({
-        locateFile: () => "https://cdn.jsdelivr.net/npm/@neslinesli93/qpdf-wasm@0.3.0/dist/qpdf.wasm",
-        noInitialRun: true,
-      });
-
-      const arrayBuffer = await file.arrayBuffer();
-      const uint8Array = new Uint8Array(arrayBuffer);
-
-      qpdf.FS.writeFile("/input.pdf", uint8Array);
-
-      qpdf.callMain([
-        "--password=" + password,
-        "/input.pdf",
-        "--decrypt",
-        "/output.pdf",
-      ]);
-
-      const output = qpdf.FS.readFile("/output.pdf");
-      qpdf.FS.unlink("/input.pdf");
-      qpdf.FS.unlink("/output.pdf");
+      const output = await runQpdf(file, ["--password=" + password, "/input.pdf", "--decrypt", "/output.pdf"], "unlock");
 
       const blob = new Blob([output], { type: "application/pdf" });
-      setDownloadUrl(URL.createObjectURL(blob));
+      setDownloadUrl(URL.createObjectURL(blob), resultVersion);
     } catch (e) {
-      console.error(e);
-      setError("Incorrect password or invalid PDF. Please check the password and try again.");
+      if (isCurrentResult(resultVersion)) setError(e instanceof Error ? e.message : "Could not unlock this PDF. Please try again.");
     }
     setProcessing(false);
   };
@@ -78,38 +62,38 @@ export default function UnlockPDF() {
       {/* Privacy notice */}
       <div style={{ background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 12, padding: "12px 16px", marginBottom: 20, display: "flex", alignItems: "center", gap: 10 }}>
         <span style={{ fontSize: 18 }}>🔒</span>
-        <p style={{ fontSize: 13, color: "#15803D", margin: 0, fontWeight: 500 }}>Your file and password never leave your device. 100% private.</p>
+        <p style={{ fontSize: 13, color: "#15803D", margin: 0, fontWeight: 500 }}>Your file and password are processed locally in your browser.</p>
       </div>
 
       <UploadZone onFiles={handleFile} multiple={false} label="Drop your password-protected PDF here or click to browse" />
 
       {file && (
         <div style={{ marginTop: 20, border: "1px solid #f3f4f6", borderRadius: 14, overflow: "hidden" }}>
-          <div style={{ padding: "12px 20px", display: "flex", alignItems: "center", gap: 12, background: "#f9fafb" }}>
+          <div className="tool-row" style={{ padding: "12px 20px", display: "flex", alignItems: "center", gap: 12, background: "#f9fafb" }}>
             <span style={{ fontSize: 22 }}>🔒</span>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ fontSize: 14, fontWeight: 500, color: "#374151", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{file.name}</p>
               <p style={{ fontSize: 12, color: "#6b7280" }}>{(file.size / 1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setDownloadUrl(null); setError(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
+            <button aria-label={"Remove selected file"} onClick={() => { setFile(null); setError(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 16, padding: "4px 8px" }}>✕</button>
           </div>
         </div>
       )}
 
       <div style={{ marginTop: 20 }}>
-        <label style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Current Password</label>
-        <input
+        <label htmlFor="unlock-pdf-field-1" style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 6 }}>Current Password</label>
+        <input id="unlock-pdf-field-1"
           type="password"
           value={password}
           onChange={e => setPassword(e.target.value)}
           placeholder="Enter the current PDF password"
-          style={{ width: "100%", padding: "12px 16px", border: "1px solid #e5e7eb", borderRadius: 10, fontSize: 15, fontFamily: "inherit", outline: "none", boxSizing: "border-box" }}
+          style={{ width: "100%", padding: "12px 16px", border: "1px solid #e5e7eb", borderRadius: 10, fontSize: 15, fontFamily: "inherit", boxSizing: "border-box" }}
         />
         <p style={{ fontSize: 12, color: "#6b7280", marginTop: 6 }}>Enter the password that is currently protecting this PDF.</p>
       </div>
 
       {error && (
-        <div style={{ marginTop: 12, background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 10, padding: "10px 16px" }}>
+        <div role="alert" style={{ marginTop: 12, background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 10, padding: "10px 16px" }}>
           <p style={{ fontSize: 13, color: "#DC2626", margin: 0 }}>⚠️ {error}</p>
         </div>
       )}
@@ -125,7 +109,7 @@ export default function UnlockPDF() {
       )}
 
       {downloadUrl && (
-        <div style={{ marginTop: 24, background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 28 }}>
+        <div role="status" style={{ marginTop: 24, background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 28 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20 }}>
             <span style={{ fontSize: 40 }}>✅</span>
             <div>

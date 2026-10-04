@@ -1,53 +1,149 @@
 import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Merge PDF on Mac Free (3 Easy Ways) | PDFcraft",
-  description: "Merge PDF files on Mac for free using Preview, PDFcraft, or Finder. Step by step guide for all Mac methods.",
-  keywords: "merge pdf on mac, combine pdf mac free, how to merge pdf mac, join pdf files mac",
-  alternates: { canonical: "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac" },
-  openGraph: { title: "How to Merge PDF on Mac Free | PDFcraft", description: "3 free ways to merge PDFs on Mac — Preview, PDFcraft, and Finder.", url: "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac", type: "article" },
+  "title": "How to Merge PDF on Mac Free (3 Easy Ways) | PDFcraft",
+  "description": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac"
+  },
+  "openGraph": {
+    "title": "How to Merge PDF on Mac Free (3 Easy Ways) | PDFcraft",
+    "description": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output.",
+    "url": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac",
+    "type": "article"
+  }
 };
 export default function Post() {
   return (
-    <BlogPost tag="Mac" tagColor="#374151" tagBg="#F9FAFB"
-      title="How to Merge PDF on Mac Free (3 Easy Ways)"
+    <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"
+      title={"How to Merge PDF on Mac Free (3 Easy Ways)"}
       date="February 2026" readTime="6 min read"
-      intro="Mac users have multiple free options for merging PDF files. You can use the built-in Preview app, use PDFcraft in your browser, or use a quick Finder shortcut. Here are all three methods explained step by step."
+      intro={"Mac users have multiple free options for merging PDF files. You can use the built-in Preview app, use PDFcraft in your browser, or use a quick Finder shortcut. Here are all three methods explained step by step."}
       sections={[
-        { heading: "Method 1 — PDFcraft (easiest, works on any Mac)", steps: [
-          { title: "Open Safari or Chrome on your Mac", body: "Go to getpdfcraft.com. No software installation needed — works in any browser." },
-          { title: "Click Merge PDF", body: "Select the Merge PDF tool from the homepage." },
-          { title: "Add your PDF files", body: "Click Select Files and choose all the PDFs you want to merge. Drag them into the correct order." },
-          { title: "Click Merge and download", body: "Click Merge PDFs and download the combined file. Done in seconds." },
-        ]},
-        { heading: "Method 2 — Mac Preview app (built-in, no download)", steps: [
-          { title: "Open the first PDF in Preview", body: "Double-click the first PDF file. It opens in Preview automatically." },
-          { title: "Show the Thumbnail panel", body: "Go to View → Thumbnails to show the page thumbnails panel on the left." },
-          { title: "Drag the second PDF into the thumbnail panel", body: "Open Finder, find the second PDF, and drag it into the thumbnail panel in Preview. Drop it where you want it to appear — before or after existing pages." },
-          { title: "Repeat for all PDFs", body: "Drag as many additional PDFs as you need into the thumbnail panel in the correct order." },
-          { title: "Save the merged PDF", body: "Go to File → Export as PDF and save the merged document. Important: use Export as PDF, not just Save, to avoid overwriting the original." },
-        ]},
-        { heading: "Method 3 — Quick Action in Finder (macOS Mojave and later)", steps: [
-          { title: "Select multiple PDFs in Finder", body: "Open Finder and select all the PDF files you want to merge by holding Command and clicking each one." },
-          { title: "Right-click and select Quick Actions", body: "Right-click the selected files and look for Quick Actions → Create PDF. This merges them into one PDF automatically." },
-          { title: "Find the merged PDF", body: "The merged PDF appears in the same folder as the original files, named after the first file." },
-        ]},
-        { heading: "Which method is best for Mac?", steps: [
-          { title: "Use PDFcraft for simplicity", body: "PDFcraft is the easiest — no software needed, works on any Mac, and lets you reorder files before merging." },
-          { title: "Use Preview for occasional use", body: "Preview is built into every Mac and works well for occasional merging without going online." },
-          { title: "Use Quick Action for speed", body: "The Finder Quick Action is fastest if you just need to quickly combine files without reordering." },
-        ]},
-        { tip: "When merging PDFs in Preview, always use File → Export as PDF to save. Using regular Save can overwrite your original file." },
-      ]}
+  {
+    "heading": "Method 1 — PDFcraft in your browser",
+    "steps": [
+      {
+        "title": "Open Safari or Chrome on your Mac",
+        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+      },
+      {
+        "title": "Click Merge PDF",
+        "body": "Select the Merge PDF tool from the homepage."
+      },
+      {
+        "title": "Add your PDF files",
+        "body": "Select your PDFs, adding them one by one if necessary to establish the displayed insertion order. Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+      },
+      {
+        "title": "Click Merge and download",
+        "body": "Click Merge PDFs, download the result, and check page count and order. Processing time depends on the files and device."
+      }
+    ]
+  },
+  {
+    "heading": "Method 2 — Mac Preview app (built-in, no download)",
+    "steps": [
+      {
+        "title": "Open the first PDF in Preview",
+        "body": "Choose Open With and select Preview if it is available. Work on duplicate files so a native app’s saving behavior cannot overwrite your originals."
+      },
+      {
+        "title": "Show the Thumbnail panel",
+        "body": "In Preview, look for View → Thumbnails; menus may vary by version."
+      },
+      {
+        "title": "Drag the second PDF into the thumbnail panel",
+        "body": "If your Preview version supports it, drag the second PDF into the thumbnail sidebar at the desired position. Check the resulting page count and order."
+      },
+      {
+        "title": "Repeat for all PDFs",
+        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+      },
+      {
+        "title": "Save the merged PDF",
+        "body": "Save or export a separate output using the options available in your Preview version. Confirm the destination and filename before saving."
+      }
+    ]
+  },
+  {
+    "heading": "Method 3 — Finder Quick Action, if available",
+    "steps": [
+      {
+        "title": "Select multiple PDFs in Finder",
+        "body": "Open Finder and select all the PDF files you want to merge by holding Command and clicking each one."
+      },
+      {
+        "title": "Right-click and select Quick Actions",
+        "body": "Look for Quick Actions → Create PDF on the selected files, if your macOS version offers it. Review the resulting page order."
+      },
+      {
+        "title": "Find the merged PDF",
+        "body": "Locate the output through Finder and check its name, location, and contents; do not assume a particular naming rule."
+      }
+    ]
+  },
+  {
+    "heading": "Choose a method that fits your workflow",
+    "steps": [
+      {
+        "title": "Use PDFcraft for simplicity",
+        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+      },
+      {
+        "title": "Use Preview for occasional use",
+        "body": "Preview may be useful for an available native workflow; use a copy and verify its output."
+      },
+      {
+        "title": "Use Quick Action for speed",
+        "body": "If the Quick Action is available, test its output and ordering with sample files."
+      }
+    ]
+  },
+  {
+    "tip": "Duplicate source files before using a native PDF app, and save the merged output under a separate name."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open merge pdf",
+        "href": "/tools/merge-pdf"
+      },
+      {
+        "text": "Adjust page order with Up/Down controls",
+        "href": "/tools/reorder-pages"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Can I merge PDFs on Mac for free?", a: "Yes. Mac has the built-in Preview app for free merging, and PDFcraft works in any Mac browser completely free." },
-        { q: "How do I merge PDFs on Mac without Preview?", a: "Use PDFcraft in your browser — go to getpdfcraft.com, click Merge PDF, add your files, and download the merged result." },
-        { q: "Why does Preview save my PDF merged with the original?", a: "When merging in Preview, always use File → Export as PDF to save as a new file. Regular Save overwrites the original document." },
-        { q: "Can I merge PDFs on a MacBook?", a: "Yes. All three methods work on MacBook Air, MacBook Pro, and all Mac models." },
-        { q: "Is there a limit to how many PDFs I can merge on Mac?", a: "Preview and PDFcraft both have no practical limit on how many PDFs you can merge." },
-        { q: "Can I merge PDFs on Mac without internet?", a: "Yes. Mac's built-in Preview app works offline. PDFcraft requires internet to load but once loaded can work offline." },
-      ]}
-      ctaText="Merge PDFs online now — free, no sign up"
-      ctaHref="/tools/merge-pdf"
+  {
+    "q": "Can I merge PDFs on Mac for free?",
+    "a": "PDFcraft Merge is free to use. Native app workflows depend on the software available on your Mac."
+  },
+  {
+    "q": "How do I merge PDFs on Mac without Preview?",
+    "a": "Use PDFcraft in your browser — go to getpdfcraft.com, click Merge PDF, add your files, and download the merged result."
+  },
+  {
+    "q": "Why does Preview save my PDF merged with the original?",
+    "a": "Native saving behavior depends on the app and version. Work on duplicates and choose a separate output filename."
+  },
+  {
+    "q": "Can I merge PDFs on a MacBook?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  },
+  {
+    "q": "Is there a limit to how many PDFs I can merge on Mac?",
+    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  },
+  {
+    "q": "Can I merge PDFs on Mac without internet?",
+    "a": "PDFcraft does not guarantee offline operation: processing code may still need to load after the page opens. If offline use is required, verify that workflow in your installed application."
+  }
+]}
+      ctaText={"Merge your PDFs — free to use"}
+      ctaHref={"/tools/merge-pdf"}
     />
   );
 }

@@ -4,46 +4,41 @@ import { AdLeaderboard } from "@/components/ui/Ads";
 const tools = [
   { icon: "⊕", name: "Merge PDF", desc: "Combine multiple PDFs into one file.", href: "/tools/merge-pdf", bg: "#FEF2F2", color: "#DC2626" },
   { icon: "⊘", name: "Split PDF", desc: "Split a PDF into separate pages or ranges.", href: "/tools/split-pdf", bg: "#FFF7ED", color: "#EA580C" },
-  { icon: "◎", name: "Compress PDF", desc: "Reduce PDF size without losing quality.", href: "/tools/compress-pdf", bg: "#FEFCE8", color: "#CA8A04" },
+  { icon: "◎", name: "Compress PDF", desc: "Try structural PDF compression; size reduction varies.", href: "/tools/compress-pdf", bg: "#FEFCE8", color: "#CA8A04" },
   { icon: "◈", name: "PDF to Image", desc: "Convert PDF pages to JPG or PNG.", href: "/tools/pdf-to-image", bg: "#F0FDF4", color: "#16A34A" },
   { icon: "↻", name: "Rotate PDF", desc: "Fix page orientation in one click.", href: "/tools/rotate-pdf", bg: "#EFF6FF", color: "#2563EB" },
   { icon: "✎", name: "Watermark PDF", desc: "Add a custom text watermark.", href: "/tools/watermark-pdf", bg: "#FAF5FF", color: "#9333EA" },
-  { icon: "🖼️", name: "JPG to PDF", desc: "Convert images to PDF instantly.", href: "/tools/jpg-to-pdf", bg: "#FEF2F2", color: "#DC2626" },
+  { icon: "🖼️", name: "JPG to PDF", desc: "Convert JPEG and PNG images to PDF.", href: "/tools/jpg-to-pdf", bg: "#FEF2F2", color: "#DC2626" },
   { icon: "🗑️", name: "Delete Pages", desc: "Remove unwanted pages from PDF.", href: "/tools/delete-pages", bg: "#FFF7ED", color: "#EA580C" },
   { icon: "#", name: "Page Numbers", desc: "Add page numbers to your PDF.", href: "/tools/add-page-numbers", bg: "#F0FDF4", color: "#16A34A" },
   { icon: "↕", name: "Reorder Pages", desc: "Rearrange PDF pages in any order.", href: "/tools/reorder-pages", bg: "#FAF5FF", color: "#9333EA" },
   { icon: "◑", name: "PDF to Grayscale", desc: "Convert color PDF to black and white.", href: "/tools/pdf-to-grayscale", bg: "#F9FAFB", color: "#374151" },
   { icon: "🔒", name: "Protect PDF", desc: "Add password protection to your PDF.", href: "/tools/protect-pdf", bg: "#FEF2F2", color: "#DC2626" },
-  { icon: "🔓", name: "Unlock PDF", desc: "Remove password from a PDF you own.", href: "/tools/unlock-pdf", bg: "#F0FDF4", color: "#16A34A" },
-];
-
-const comingSoon = [
-  { icon: "📝", name: "PDF to Word", desc: "Convert PDF to editable Word document.", bg: "#F9FAFB", color: "#6b7280" },
-  { icon: "📄", name: "Word to PDF", desc: "Convert Word documents to PDF.", bg: "#F9FAFB", color: "#6b7280" },
+  { icon: "🔓", name: "Unlock PDF", desc: "Unlock a PDF with its correct password.", href: "/tools/unlock-pdf", bg: "#F0FDF4", color: "#16A34A" },
 ];
 
 const features = [
-  { icon: "🔒", title: "100% Private", desc: "Files never leave your device. Everything is processed locally in your browser. We have no server to receive your files." },
-  { icon: "⚡", title: "Instant Results", desc: "No waiting, no queues. Processing happens on your device in seconds. Works offline once the page loads." },
-  { icon: "♾️", title: "Truly Free Forever", desc: "No sign up. No daily limits. No watermarks. All 13 tools, unlimited use, always free." },
+  { icon: "🔒", title: "Files processed locally", desc: "PDFcraft processes document contents in your browser, without a PDF-processing upload backend. Website and third-party resource requests are separate from document processing." },
+  { icon: "⚡", title: "Browser-based tools", desc: "Open a tool and select your files. Processing time and usable file size depend on your browser, device memory, and document complexity. Some tools load third-party processing resources." },
+  { icon: "✓", title: "Free to use", desc: "All 13 current tools are free to use with no account required. PDFcraft adds no branding watermark to your output." },
 ];
 
 const blogPosts = [
-  { tag: "Merge PDF", title: "How to Merge PDF Files Free — No Sign Up, Unlimited", href: "/blog/how-to-merge-pdf-free", color: "#DC2626", bg: "#FEF2F2" },
-  { tag: "Compress", title: "Compress PDF Without Losing Quality — Free & Instant", href: "/blog/compress-pdf-without-losing-quality", color: "#CA8A04", bg: "#FEFCE8" },
-  { tag: "Comparison", title: "Best Free iLovePDF Alternative in 2026 — No Uploads", href: "/blog/ilovepdf-alternative", color: "#7C3AED", bg: "#F5F3FF" },
+  { tag: "Merge PDF", title: "How to Merge PDF Files Free — No Sign Up", href: "/blog/how-to-merge-pdf-free", color: "#DC2626", bg: "#FEF2F2" },
+  { tag: "Compress", title: "PDF Compression — What It Can and Cannot Reduce", href: "/blog/compress-pdf-without-losing-quality", color: "#CA8A04", bg: "#FEFCE8" },
+  { tag: "Comparison", title: "An iLovePDF Alternative for Local PDF Workflows", href: "/blog/ilovepdf-alternative", color: "#7C3AED", bg: "#F5F3FF" },
   { tag: "iPhone", title: "How to Merge PDF on iPhone — No App Needed, Free", href: "/blog/merge-pdf-on-iphone", color: "#2563EB", bg: "#EFF6FF" },
   { tag: "Guide", title: "PDF vs Word — Which Format Is Better and When to Use Each?", href: "/blog/pdf-vs-word-which-is-better", color: "#4F46E5", bg: "#EEF2FF" },
-  { tag: "Guide", title: "Best Free PDF Tools Online in 2026 — No Sign Up, Actually Free", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
+  { tag: "Guide", title: "13 Free PDFcraft Tools: What Each One Actually Does", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
 ];
 
 const comparisonRows = [
-  ["Files stay on your device", "Files uploaded to servers"],
-  ["No sign up required", "Account required"],
-  ["Unlimited usage", "Daily limits on free plan"],
-  ["No watermarks on output", "Watermarked exports"],
-  ["Browser-based processing", "Cloud server processing"],
-  ["Works offline after loading", "Requires internet connection"],
+  ["Document processing", "In your browser; no PDFcraft processing backend upload"],
+  ["Account", "No account required"],
+  ["Current price", "All 13 tools are free to use"],
+  ["Output branding", "No PDFcraft branding watermark added"],
+  ["Practical limits", "Browser memory, device speed, and file complexity"],
+  ["Network access", "Website resources and some tool runtimes load over the internet"],
 ];
 
 export default function HomePage() {
@@ -93,10 +88,10 @@ export default function HomePage() {
         </h1>
         <p style={{ fontSize: 18, color: "#6b7280", maxWidth: 560, margin: "0 auto 36px", lineHeight: 1.65 }}>
           Merge, split, compress, convert and edit PDFs directly in your browser.
-          No uploads. No sign up. No watermarks. Your files never leave your device.
+          Local document processing. No account required. No PDFcraft branding watermarks.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginBottom: 48 }}>
-          {["✓ No sign up required", "✓ Files never uploaded", "✓ No file size limits", "✓ 100% free forever"].map(t => (
+          {["✓ No account required", "✓ Files processed locally", "✓ 13 browser-based tools", "✓ Free to use"].map(t => (
             <span key={t} style={{ background: "#f9fafb", border: "1px solid #e5e7eb", padding: "8px 16px", borderRadius: 100, fontSize: 13, color: "#6b7280", fontWeight: 500 }}>{t}</span>
           ))}
         </div>
@@ -106,35 +101,33 @@ export default function HomePage() {
       </section>
 
       {/* Ad */}
-      <div style={{ background: "#f9fafb", borderTop: "1px solid #f3f4f6", borderBottom: "1px solid #f3f4f6", padding: "16px 24px" }}>
-        <div style={{ maxWidth: 1152, margin: "0 auto" }}><AdLeaderboard /></div>
-      </div>
+      <AdLeaderboard />
 
       {/* What is PDFcraft */}
       <section style={{ maxWidth: 860, margin: "0 auto", padding: "64px 24px 0" }}>
         <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -1 }}>What is PDFcraft?</h2>
         <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 24 }}>
-          PDFcraft is a privacy-first PDF tools platform that processes files directly in your browser. Unlike traditional cloud PDF tools that upload your documents to remote servers, PDFcraft runs entirely on your device — your files never leave your browser, not even for a millisecond.
+          PDFcraft processes PDF contents directly in your browser without sending them to a PDFcraft processing backend. The website still requests web resources, and some tools download processing components from a third-party CDN.
         </p>
         <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 40 }}>
-          Built by Dajai Studio, PDFcraft gives everyone access to professional PDF tools for free — with no sign up, no watermarks, no daily limits, and complete privacy. Whether you are merging contracts, compressing reports, or protecting sensitive documents, PDFcraft handles it locally and instantly.
+          Built by Dajai Studio, PDFcraft provides 13 free tools with no account required. You can <Link href="/tools/merge-pdf">merge documents</Link>, <Link href="/tools/compress-pdf">try structural compression</Link>, or <Link href="/tools/protect-pdf">add password protection</Link> locally. Results and processing time depend on the file and your device. See the <Link href="/privacy">Privacy Policy</Link> for website and advertising data practices.
         </p>
 
         {/* Comparison table */}
-        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>Why PDFcraft is different</h3>
+        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>What to expect from PDFcraft</h3>
         <div style={{ overflowX: "auto", marginBottom: 48 }}>
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
             <thead>
               <tr style={{ background: "#111827" }}>
-                <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>PDFcraft</th>
-                <th style={{ padding: "12px 20px", textAlign: "left", color: "#6b7280", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>Typical PDF Sites</th>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>Feature</th>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "#6b7280", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>PDFcraft behavior</th>
               </tr>
             </thead>
             <tbody>
-              {comparisonRows.map(([ours, theirs], i) => (
+              {comparisonRows.map(([feature, behavior], i) => (
                 <tr key={i} style={{ background: i % 2 === 0 ? "#f9fafb" : "white" }}>
-                  <td style={{ padding: "11px 20px", color: "#15803D", fontWeight: 600, borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>✅ {ours}</td>
-                  <td style={{ padding: "11px 20px", color: "#6b7280", borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>❌ {theirs}</td>
+                  <td style={{ padding: "11px 20px", color: "#15803D", fontWeight: 600, borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{feature}</td>
+                  <td style={{ padding: "11px 20px", color: "#6b7280", borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{behavior}</td>
                 </tr>
               ))}
             </tbody>
@@ -146,8 +139,8 @@ export default function HomePage() {
       <section id="tools" style={{ padding: "64px 24px 80px" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools — Free Forever</h2>
-            <p style={{ fontSize: 16, color: "#6b7280" }}>Click any tool to get started. No sign up needed. Files never leave your device.</p>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools — Free to Use</h2>
+            <p style={{ fontSize: 16, color: "#6b7280" }}>Choose a tool to process files locally in your browser. No account needed.</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
             {tools.map(tool => (
@@ -159,28 +152,18 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-            {comingSoon.map(tool => (
-              <div key={tool.name} style={{ background: "#f9fafb", border: "1px dashed #e5e7eb", borderRadius: 18, padding: 24, height: "100%", opacity: 0.7, position: "relative" }}>
-                <div style={{ position: "absolute", top: 12, right: 12, background: "#111827", color: "white", fontSize: 10, fontWeight: 700, padding: "3px 8px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 0.5 }}>Coming Soon</div>
-                <div aria-hidden="true" style={{ width: 52, height: 52, background: tool.bg, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, marginBottom: 18, color: tool.color }}>{tool.icon}</div>
-                <h3 style={{ fontWeight: 700, fontSize: 16, color: "#6b7280", marginBottom: 8 }}>{tool.name}</h3>
-                <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6, margin: 0 }}>{tool.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Ad */}
-      <div style={{ background: "#f9fafb", borderTop: "1px solid #f3f4f6", borderBottom: "1px solid #f3f4f6", padding: "16px 24px" }}>
-        <div style={{ maxWidth: 1152, margin: "0 auto" }}><AdLeaderboard /></div>
-      </div>
+      <AdLeaderboard />
 
       {/* Features */}
       <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>Why PDFcraft?</h2>
-          <p style={{ fontSize: 16, color: "#6b7280" }}>Privacy-first. Browser-based. Genuinely free.</p>
+          <p style={{ fontSize: 16, color: "#6b7280" }}>Local document processing. Browser-based. Free to use.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
           {features.map(f => (
@@ -222,7 +205,7 @@ export default function HomePage() {
           <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 800, color: "white", letterSpacing: -1.5, marginBottom: 16 }}>
             Your files. Your device. Your privacy.
           </h2>
-          <p style={{ fontSize: 16, color: "#6b7280", marginBottom: 32 }}>13 free tools. No uploads. No sign up. No limits. Forever.</p>
+          <p style={{ fontSize: 16, color: "#6b7280", marginBottom: 32 }}>13 free tools. Local document processing. No account required.</p>
           <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 17, boxShadow: "0 4px 20px rgba(232,56,13,0.4)" }}>
             Start using PDFcraft free →
           </Link>
@@ -230,9 +213,7 @@ export default function HomePage() {
       </section>
 
       {/* Bottom ad */}
-      <div style={{ background: "#f9fafb", borderTop: "1px solid #f3f4f6", padding: "16px 24px" }}>
-        <div style={{ maxWidth: 1152, margin: "0 auto" }}><AdLeaderboard /></div>
-      </div>
+      <AdLeaderboard />
     </div>
   );
 }

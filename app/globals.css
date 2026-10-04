@@ -30,3 +30,14 @@ button:focus-visible, a:focus-visible {
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* Tool controls retain keyboard focus and fit narrow screens. */
+.tool-page input:focus-visible, .tool-page select:focus-visible, .tool-page textarea:focus-visible, .tool-page summary:focus-visible { outline: 2px solid #E8380D; outline-offset: 2px; }
+.tool-page input, .tool-page select, .tool-page button { max-width: 100%; }
+.tool-page input, .tool-page select { min-width: 0; }
+.tool-page p, .tool-page span { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .tool-page .tool-row { flex-wrap: wrap; padding: 12px !important; gap: 8px !important; }
+  .tool-page .tool-row > div { min-width: 0; }
+  .tool-page button { white-space: normal; }
+}

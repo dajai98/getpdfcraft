@@ -7,6 +7,7 @@ export default function UploadZone({ onFiles, multiple = false, label = "Drop yo
 
   const handleChange = (e) => {
     const files = Array.from(e.target.files || []);
+    e.target.value = "";
     if (files.length > 0) {
       onFiles(files);
     }
@@ -33,7 +34,7 @@ export default function UploadZone({ onFiles, multiple = false, label = "Drop yo
       style={{
         border: `2px dashed ${dragOver ? "#E8380D" : "#d1d5db"}`,
         borderRadius: 16,
-        padding: "60px 40px",
+        padding: "clamp(24px, 5vw, 40px) 16px",
         textAlign: "center",
         background: dragOver ? "#FEF0ED" : "#f9fafb",
         transition: "all 0.2s",

@@ -1,73 +1,126 @@
 import BlogPost from "@/components/ui/BlogPost";
 
 export const metadata = {
-  title: "How to Convert PDF to JPG Free Online — No Watermark | PDFcraft",
-  description: "Convert PDF pages to high quality JPG images for free. No watermark, no sign up, works in browser. Step by step guide.",
-  keywords: "convert pdf to jpg free, pdf to jpg no watermark, pdf to image online free, pdf to png free no sign up, convert pdf to picture",
-  alternates: { canonical: "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free" },
-  openGraph: {
-    title: "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
-    description: "Convert PDF pages to high quality JPG or PNG images for free. No watermark, no sign up.",
-    url: "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free",
-    type: "article",
+  "title": "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
+  "description": "Render PDF pages to JPG or PNG at a fixed 2x scale. Learn the raster-quality limits, password requirements, and download behavior.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free"
   },
+  "openGraph": {
+    "title": "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
+    "description": "Render PDF pages to JPG or PNG at a fixed 2x scale. Learn the raster-quality limits, password requirements, and download behavior.",
+    "url": "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free",
+    "type": "article"
+  }
 };
 
 export default function Post() {
   return (
     <BlogPost
-      tag="PDF to Image" tagColor="#16A34A" tagBg="#F0FDF4"
-      title="How to Convert PDF to JPG Free — No Watermark"
+      tag={"PDF to Image"} tagColor="#16A34A" tagBg="#F0FDF4"
+      title={"How to Convert PDF to JPG Free — No Watermark"}
       date="January 20, 2026" readTime="6 min read"
-      intro="Need to turn a PDF page into an image? Whether you want to share a document on social media, add a PDF page to a presentation, or extract a diagram as an image file — PDFcraft converts PDF to JPG or PNG for free with zero watermarks and no sign up required."
+      intro={"Need to turn a PDF page into an image? Whether you want to share a document on social media, add a PDF page to a presentation, or extract a diagram as an image file — PDFcraft converts PDF to JPG or PNG for free with zero watermarks and no sign up required."}
       sections={[
-        {
-          heading: "Why convert PDF to JPG?",
-          text: "PDF files are great for documents but images are more versatile for sharing. JPG and PNG images can be pasted into emails, shared on Instagram, WhatsApp, or Twitter, inserted into PowerPoint slides, uploaded to websites, and viewed on any device without special software. Converting a PDF page to an image gives you that flexibility instantly.",
-        },
-        {
-          heading: "JPG vs PNG — which format should you choose?",
-          steps: [
-            { title: "Choose JPG for photos and sharing", body: "JPG is the best choice when file size matters. It compresses images efficiently, making files smaller and faster to share online. Perfect for photos, scanned documents, and any PDF you want to share on social media or messaging apps. The trade-off is slight quality loss from compression." },
-            { title: "Choose PNG for text and diagrams", body: "PNG uses lossless compression so quality is never degraded. It also supports transparency. This makes it the best choice for PDFs containing text, charts, diagrams, logos, or anything where sharp edges matter. PNG files are larger than JPG but look perfect." },
-          ],
-        },
-        {
-          heading: "How to convert PDF to JPG or PNG — step by step",
-          steps: [
-            { title: "Open PDFcraft PDF to Image tool", body: "Go to PDFcraft and click PDF to Image. No account needed, no software to install. Works in any browser on any device." },
-            { title: "Select your PDF file", body: "Click Select File and choose your PDF. Works with any PDF — text documents, scanned files, presentations, and more. The file never leaves your device." },
-            { title: "Choose JPG or PNG format", body: "Select your output format. Pick JPG for photos and social sharing, or PNG for text documents and diagrams where quality must be perfect." },
-            { title: "Click Convert", body: "Your browser renders each PDF page as a high quality image using PDF.js. You will see a progress indicator for multi-page documents." },
-            { title: "Download your images", body: "Each page appears as a separate image. Click Download on individual pages, or Download All to get every page in one go. No watermarks added — ever." },
-          ],
-        },
-        {
-          heading: "Common uses for PDF to image conversion",
-          list: [
-            "Share a document page on Instagram or Twitter",
-            "Add a PDF chart or diagram to a PowerPoint presentation",
-            "Send a single page from a PDF on WhatsApp",
-            "Embed a PDF page as an image on a website",
-            "Extract a logo or diagram from a PDF",
-            "Create a thumbnail preview of a document",
-            "Convert a PDF certificate to an image for LinkedIn",
-          ],
-        },
-        {
-          tip: "For the sharpest text in your images, choose PNG format. For the smallest file size when sharing online, choose JPG.",
-        },
-      ]}
+  {
+    "heading": "Why convert PDF to JPG?",
+    "text": "A rendered page image can be useful in a presentation, website, or message. It captures page appearance rather than selectable text, links, forms, or other PDF behavior. Check the requirements of your destination."
+  },
+  {
+    "heading": "JPG vs PNG — which format should you choose?",
+    "steps": [
+      {
+        "title": "Choose JPG for photos and sharing",
+        "body": "JPG uses lossy image encoding. Compare artifacts and file size at the intended display size."
+      },
+      {
+        "title": "Choose PNG for text and diagrams",
+        "body": "PNG encodes rendered pixels without lossy image compression. The output is still a finite-resolution raster, not scalable PDF vectors."
+      }
+    ]
+  },
+  {
+    "heading": "How to convert PDF to JPG or PNG — step by step",
+    "steps": [
+      {
+        "title": "Open PDFcraft PDF to Image tool",
+        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+      },
+      {
+        "title": "Select your PDF file",
+        "body": "Choose a valid input file with the file selector. PDFcraft processes document contents locally; website resource requests are separate."
+      },
+      {
+        "title": "Choose JPG or PNG format",
+        "body": "JPG uses lossy image encoding. Compare artifacts and file size at the intended display size."
+      },
+      {
+        "title": "Click Convert",
+        "body": "The tool renders all pages using PDF.js at a fixed 2x scale. It loads a remote PDF.js worker from jsDelivr; conversion may fail if that resource is blocked."
+      },
+      {
+        "title": "Download your images",
+        "body": "Each page becomes a separate image. Download individual pages, or use Download All to trigger separate downloads; the browser may require permission. It does not create a ZIP archive."
+      }
+    ]
+  },
+  {
+    "heading": "Common uses for PDF to image conversion",
+    "list": [
+      "Share a document page on Instagram or Twitter",
+      "Add a PDF chart or diagram to a PowerPoint presentation",
+      "Send a single page from a PDF on WhatsApp",
+      "Embed a PDF page as an image on a website",
+      "Extract a logo or diagram from a PDF",
+      "Create a thumbnail preview of a document",
+      "Convert a PDF certificate to an image for LinkedIn"
+    ]
+  },
+  {
+    "tip": "Compare JPG and PNG at the intended display size. File size and visible artifacts depend on page content. Keep the original PDF when you need text search or interactive features."
+  },
+  {
+    "heading": "Password-protected inputs",
+    "text": "Unlock an authorized PDF with its correct password before converting. The image tool does not provide a password-entry workflow."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open pdf to image",
+        "href": "/tools/pdf-to-image"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Can I convert PDF to JPG for free with no watermark?", a: "Yes. PDFcraft converts PDF to JPG or PNG completely free with absolutely no watermarks. What you convert is exactly what you download." },
-        { q: "Does converting PDF to image reduce quality?", a: "JPG conversion applies slight compression which may reduce quality minimally. PNG conversion is lossless — zero quality loss. For text and diagrams, always choose PNG for perfect quality." },
-        { q: "Can I convert a multi-page PDF to images?", a: "Yes. PDFcraft converts every page in your PDF to a separate image. You can download individual pages or all pages at once." },
-        { q: "Is there a limit on how many pages I can convert?", a: "No. PDFcraft has no page limit. Convert PDFs with any number of pages for free." },
-        { q: "Can I convert PDF to image on iPhone?", a: "Yes. PDFcraft works in iPhone Safari. Open getpdfcraft.com, tap PDF to Image, select your PDF, and download the resulting images directly to your iPhone." },
-        { q: "What resolution are the output images?", a: "PDFcraft renders images at high quality. The exact resolution depends on the original PDF page size, but output is always sharp and suitable for professional use." },
-      ]}
-      ctaText="Convert PDF to image now — free, no watermark"
-      ctaHref="/tools/pdf-to-image"
+  {
+    "q": "Can I convert PDF to JPG for free with no watermark?",
+    "a": "Yes. The tool is currently free to use and adds no PDFcraft branding watermark. Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  },
+  {
+    "q": "Does converting PDF to image reduce quality?",
+    "a": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  },
+  {
+    "q": "Can I convert a multi-page PDF to images?",
+    "a": "All pages are rendered as separate images. Download All triggers individual downloads, subject to browser permissions."
+  },
+  {
+    "q": "Is there a limit on how many pages I can convert?",
+    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  },
+  {
+    "q": "Can I convert PDF to image on iPhone?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  },
+  {
+    "q": "What resolution are the output images?",
+    "a": "PDF to Image renders all pages at a fixed 2x scale. JPG uses lossy encoding; PNG losslessly encodes the rendered pixels, not the original PDF vectors or interactive features. Zooming cannot recover detail beyond that raster resolution. Transparency preservation is not promised."
+  }
+]}
+      ctaText={"Convert PDF to image now — free, no watermark"}
+      ctaHref={"/tools/pdf-to-image"}
     />
   );
 }

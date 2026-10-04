@@ -1,13 +1,13 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 
 const faqs = [
-  { q: "Which is better JPG or PNG?", a: "JPG is smaller and great for photos. PNG is lossless and better for text documents and diagrams." },
-  { q: "What resolution are the output images?", a: "PDFcraft renders at 2x scale for high quality output. Images are sharp and suitable for printing." },
+  { q: "Which is better JPG or PNG?", a: "JPG uses lossy compression. PNG uses lossless encoding for the rendered page image; file sizes depend on the content." },
+  { q: "What resolution are the output images?", a: "PDFcraft renders at a fixed 2x scale. Suitability for printing depends on the source content and intended print size." },
   { q: "Is there a watermark on the output images?", a: "No. PDFcraft never adds watermarks to your output files." },
-  { q: "Are my files safe?", a: "Yes. PDF rendering happens entirely in your browser. Nothing is uploaded." },
+  { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Can I convert just one page?", a: "All pages are converted. You can then download only the specific page images you need." },
 ];
 
@@ -19,38 +19,67 @@ export default function PDFToImage() {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState("");
 
-  const loadFile = (files) => { setFile(files[0]); setImages([]); setError(""); };
+  const request = useRef(0);
+  const activeTask = useRef(null);
+  const cancel = () => {
+    request.current += 1;
+    const task = activeTask.current;
+    activeTask.current = null;
+    if (task) void task.destroy().catch(() => {});
+  };
+  useEffect(() => cancel, []);
+  const resetOutput = () => { cancel(); setImages([]); setError(""); setProgress(0); setProcessing(false); };
+  const loadFile = files => { resetOutput(); setFile(files[0]); };
 
   const convert = async () => {
     if (!file) return;
     if (typeof window === "undefined") return;
-    setProcessing(true); setImages([]); setProgress(0); setError("");
+    resetOutput();
+    const token = request.current;
+    let loadingTask, canvas;
+    setProcessing(true);
     try {
       const pdfjsLib = await import("pdfjs-dist");
 
       // Use .mjs extension — required for pdfjs-dist v4+
       pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
-      const pdf = await pdfjsLib.getDocument({ data: await file.arrayBuffer() }).promise;
+      const bytes = await file.arrayBuffer();
+      if (token !== request.current) return;
+      loadingTask = pdfjsLib.getDocument({ data: bytes });
+      activeTask.current = loadingTask;
+      const pdf = await loadingTask.promise;
       const results = [];
       for (let i = 1; i <= pdf.numPages; i++) {
         const page = await pdf.getPage(i);
         const viewport = page.getViewport({ scale: 2 });
-        const canvas = document.createElement("canvas");
+        canvas = document.createElement("canvas");
         canvas.width = viewport.width; canvas.height = viewport.height;
-        await page.render({ canvasContext: canvas.getContext("2d"), viewport }).promise;
+        const ctx = canvas.getContext("2d");
+        if (!ctx || !canvas.width || !canvas.height) throw new Error("Canvas unavailable");
+        await page.render({ canvasContext: ctx, viewport }).promise;
+        if (token !== request.current) return;
+        const dataUrl = canvas.toDataURL(`image/${format}`, 0.92);
+        if (!dataUrl.startsWith(`data:image/${format}`)) throw new Error("Image encoding failed");
         results.push({
-          dataUrl: canvas.toDataURL(`image/${format}`, 0.92),
+          dataUrl,
           name: `page-${i}.${format === "jpeg" ? "jpg" : "png"}`
         });
+        canvas.width = canvas.height = 0;
+        page.cleanup();
         setProgress(Math.round((i / pdf.numPages) * 100));
       }
-      setImages(results);
+      if (token === request.current) setImages(results);
     } catch(e) {
-      console.error(e);
-      setError("Error converting PDF. Please try a different file or browser.");
+      if (token === request.current) setError(e.name === "PasswordException"
+        ? "This PDF requires a password. Unlock it with the correct password first, then convert the unlocked PDF."
+        : "Conversion failed. Try a valid PDF, a smaller file, or another browser. Check your connection if the rendering engine could not load.");
+    } finally {
+      if (canvas) canvas.width = canvas.height = 0;
+      try { await loadingTask?.destroy(); } catch { /* Preserve the processing error. */ }
+      if (activeTask.current === loadingTask) activeTask.current = null;
+      if (token === request.current) setProcessing(false);
     }
-    setProcessing(false);
   };
 
   return (
@@ -66,14 +95,14 @@ export default function PDFToImage() {
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
               <p style={{ fontSize: 12, color: "#6b7280" }}>{(file.size/1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setImages([]); setError(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button aria-label={"Remove selected file"} onClick={() => { resetOutput(); setFile(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Output format</p>
             <div style={{ display: "flex", gap: 10 }}>
               {["jpeg","png"].map(f => (
-                <button key={f} onClick={() => setFormat(f)} style={{ padding: "10px 28px", borderRadius: 10, fontWeight: 600, fontSize: 14, border: `1.5px solid ${format===f?"#E8380D":"#e5e7eb"}`, background: format===f?"#E8380D":"white", color: format===f?"white":"#6b7280", cursor: "pointer", fontFamily: "inherit" }}>{f.toUpperCase()}</button>
+                <button key={f} aria-pressed={format === f} onClick={() => { resetOutput(); setFormat(f); }} style={{ padding: "10px 28px", borderRadius: 10, fontWeight: 600, fontSize: 14, border: `1.5px solid ${format===f?"#E8380D":"#e5e7eb"}`, background: format===f?"#E8380D":"white", color: format===f?"white":"#6b7280", cursor: "pointer", fontFamily: "inherit" }}>{f.toUpperCase()}</button>
               ))}
             </div>
           </div>
@@ -83,13 +112,13 @@ export default function PDFToImage() {
           </button>
 
           {processing && (
-            <div style={{ marginTop: 12, background: "#f3f4f6", borderRadius: 100, height: 6, overflow: "hidden" }}>
+            <div role="progressbar" aria-label="Conversion progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} style={{ marginTop: 12, background: "#f3f4f6", borderRadius: 100, height: 6, overflow: "hidden" }}>
               <div style={{ height: "100%", width: `${progress}%`, background: "#E8380D", borderRadius: 100, transition: "width 0.3s" }} />
             </div>
           )}
 
           {error && (
-            <div style={{ marginTop: 12, background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 10, padding: "10px 16px" }}>
+            <div role="alert" style={{ marginTop: 12, background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 10, padding: "10px 16px" }}>
               <p style={{ fontSize: 13, color: "#DC2626", margin: 0 }}>⚠️ {error}</p>
             </div>
           )}
@@ -113,7 +142,7 @@ export default function PDFToImage() {
                 <img src={img.dataUrl} alt={`Page ${i+1}`} style={{ width: "100%", display: "block" }} />
                 <div style={{ padding: "10px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontSize: 11, color: "#6b7280", fontWeight: 600 }}>Page {i+1}</span>
-                  <a href={img.dataUrl} download={img.name} style={{ fontSize: 12, fontWeight: 700, color: "#E8380D", textDecoration: "none" }}>↓</a>
+                  <a aria-label={`Download page ${i+1} as ${format === "jpeg" ? "JPG" : "PNG"}`} href={img.dataUrl} download={img.name} style={{ fontSize: 12, fontWeight: 700, color: "#E8380D", textDecoration: "none" }}>↓</a>
                 </div>
               </div>
             ))}

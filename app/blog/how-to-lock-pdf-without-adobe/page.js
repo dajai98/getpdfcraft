@@ -1,59 +1,102 @@
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = {
-  title: "How to Lock a PDF Without Adobe Acrobat Free | PDFcraft",
-  description: "Lock any PDF without Adobe Acrobat. Free online tool, no sign up, no downloads. Password protect your PDF in seconds.",
-  keywords: "lock pdf without adobe, password protect pdf without adobe acrobat, lock pdf free no adobe, secure pdf without adobe",
-  alternates: { canonical: "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe" },
-  openGraph: { title: "How to Lock PDF Without Adobe — Free | PDFcraft", description: "Lock any PDF without Adobe Acrobat. Free, no sign up, files never uploaded.", url: "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe", type: "article" },
+  "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
+  "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe"
+  },
+  "openGraph": {
+    "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
+    "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures.",
+    "url": "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe",
+    "type": "article"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
+    "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures."
+  }
 };
+
+const article = {
+  "title": "How to Password-Protect a PDF Without Adobe",
+  "intro": "You can add password protection to an unencrypted PDF using PDFcraft without installing Adobe software or creating an account. The current tool uses AES-256 encryption and processes document contents locally. This is an opening-password workflow, not a way to prevent every later edit.",
+  "sections": [
+    {
+      "heading": "Protect, download, and verify",
+      "steps": [
+        {
+          "title": "Choose an unencrypted PDF",
+          "body": "Open Protect PDF and select your file. If it is already encrypted, first unlock an authorized copy with the correct password."
+        },
+        {
+          "title": "Enter and confirm a password",
+          "body": "The tool accepts a minimum of four characters. That is an input requirement, not a security recommendation. Choose a longer, unique password and store it somewhere you can retrieve it."
+        },
+        {
+          "title": "Protect and download",
+          "body": "Click Protect PDF and wait for the download to become available. The tested implementation creates password-based AES-256 encryption. Keep your original until you have checked the result."
+        },
+        {
+          "title": "Check the downloaded file",
+          "body": "Open a fresh copy in a viewer that supports encrypted PDFs. Check that the correct password opens it and an incorrect password fails. Review the pages and any interactive content you rely on."
+        }
+      ]
+    },
+    {
+      "heading": "Finish ordinary edits before protecting",
+      "text": "Complete the page operations you need on an unencrypted working copy, then protect the final document. Many PDFcraft tools reject encrypted inputs. If you need to change a protected copy later, Unlock requires the correct password."
+    },
+    {
+      "heading": "Troubleshoot a failed attempt",
+      "text": "A mismatched confirmation or a password shorter than four characters must be corrected before processing. A security-engine loading error points to a connection or browser problem. A qpdf failure may mean a damaged, unsupported, or already protected input. The tool does not offer a successful download after a nonzero qpdf status."
+    },
+    {
+      "heading": "What locking does and does not do",
+      "text": "The tested output uses password-based AES-256. It permits printing and extraction and uses the same supplied password for user and owner access. It is not a read-only restriction or an e-signature. Viewer support for encrypted PDFs varies; check the downloaded file in the viewer your recipient will use."
+    },
+    {
+      "heading": "Network dependencies",
+      "text": "Protect and Unlock download the qpdf WebAssembly runtime from jsDelivr. File contents and the supplied password are processed locally by the application. A blocked runtime download can prevent the operation from starting; loading this resource is separate from uploading a document."
+    },
+    {
+      "heading": "Next steps",
+      "list": [
+        {
+          "text": "Open Protect PDF",
+          "href": "/tools/protect-pdf"
+        },
+        {
+          "text": "Unlock an authorized copy with its password",
+          "href": "/tools/unlock-pdf"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need an Adobe subscription for this workflow?",
+      "a": "No. PDFcraft’s Protect tool is currently free to use and does not require an account. This does not compare the scope or pricing of Adobe products."
+    },
+    {
+      "q": "Can I protect several files at once?",
+      "a": "The current Protect interface processes one selected PDF at a time."
+    },
+    {
+      "q": "Can this prevent recipients from changing the document?",
+      "a": "No. Password-based access control is not a guarantee against changes by someone who can open the file."
+    }
+  ],
+  "ctaHref": "/tools/protect-pdf",
+  "ctaText": "Add a PDF password",
+  "tag": "Protect PDF",
+  "tagColor": "#DC2626",
+  "tagBg": "#FEF2F2",
+  "date": "May 2026",
+  "readTime": "3 min read"
+};
+
 export default function Post() {
-  return (
-    <BlogPost tag="Protect PDF" tagColor="#DC2626" tagBg="#FEF2F2"
-      title="How to Lock a PDF Without Adobe Acrobat Free"
-      date="May 2026" readTime="6 min read"
-      intro="Adobe Acrobat costs $239 per year — and most people only need it to lock a PDF occasionally. PDFcraft locks any PDF with a password for free, without Adobe, without any software installation, and without uploading your file to any server."
-      sections={[
-        { heading: "Why you don't need Adobe Acrobat to lock a PDF", text: "Adobe Acrobat has been the default PDF tool for decades, but it is overkill for most users. If you just need to add a password to a PDF, you don't need to pay $239/year. PDFcraft does the same job for free — with the same AES encryption Adobe uses — entirely in your browser." },
-        { heading: "PDFcraft vs Adobe Acrobat for PDF locking", table: {
-          headers: ["Feature", "PDFcraft", "Adobe Acrobat Pro"],
-          rows: [
-            ["Price", "Free forever", "$239/year"],
-            ["Installation", "None — browser based", "Heavy software download"],
-            ["Sign up required", "Never", "Adobe account required"],
-            ["File uploads", "Never — stays on device", "Cloud features upload files"],
-            ["Encryption type", "AES", "AES"],
-            ["Works on mobile", "Yes — any browser", "Mobile app required"],
-          ],
-        }},
-        { heading: "How to lock a PDF without Adobe — step by step", steps: [
-          { title: "Open PDFcraft in your browser", body: "Go to getpdfcraft.com. Works in Chrome, Safari, Firefox, Edge — on any device. No download, no account." },
-          { title: "Click Protect PDF", body: "Select the Protect PDF tool from the homepage." },
-          { title: "Select your PDF", body: "Choose the PDF you want to lock. It loads locally in your browser — never sent to any server." },
-          { title: "Enter your password", body: "Type a strong password. At least 12 characters with a mix of letters, numbers, and symbols." },
-          { title: "Click Protect and download", body: "PDFcraft locks the PDF with AES encryption instantly. Download the protected file." },
-        ]},
-        { heading: "Other free ways to lock a PDF without Adobe", steps: [
-          { title: "Mac Preview (built-in)", body: "On Mac, open the PDF in Preview → File → Export as PDF → check 'Encrypt' → enter a password. Free and built into every Mac." },
-          { title: "Microsoft Edge (Windows)", body: "Open the PDF in Edge → Print → Microsoft Print to PDF → set a password. Limited but free." },
-          { title: "LibreOffice (free desktop software)", body: "LibreOffice can open and re-export PDFs with password protection. Free to download and use." },
-        ]},
-        { heading: "When to use each method", steps: [
-          { title: "Use PDFcraft for quick online locking", body: "Fastest option — works on any device, no installation, completely private." },
-          { title: "Use Mac Preview for Mac users who work offline", body: "Great if you're on Mac and don't want to use a browser." },
-          { title: "Use LibreOffice for frequent offline use", body: "Best free desktop option if you regularly lock PDFs without internet." },
-        ]},
-        { tip: "PDFcraft is the most privacy-friendly option — your file never leaves your device. All other server-based tools upload your PDF to their servers." },
-      ]}
-      faqs={[
-        { q: "Can I lock a PDF without Adobe for free?", a: "Yes. PDFcraft locks PDFs with password protection for free without any Adobe software." },
-        { q: "Is PDFcraft encryption as strong as Adobe?", a: "Yes. Both PDFcraft and Adobe Acrobat use AES encryption for PDF password protection." },
-        { q: "Does locking a PDF without Adobe work on all devices?", a: "Yes. PDFcraft works on Windows, Mac, iPhone, Android, iPad, and Chromebook." },
-        { q: "Can I lock multiple PDFs without Adobe?", a: "Yes. PDFcraft has no limits — lock as many PDFs as you need for free." },
-        { q: "Will a PDF locked without Adobe open on any device?", a: "Yes. Password-protected PDFs are a universal standard. Any PDF viewer that supports passwords will work." },
-        { q: "Can I lock a PDF without Adobe on my phone?", a: "Yes. PDFcraft works on iPhone Safari and Android Chrome — no app needed." },
-      ]}
-      ctaText="Lock your PDF now — free, no Adobe needed"
-      ctaHref="/tools/protect-pdf"
-    />
-  );
+  return <BlogPost {...article} />;
 }

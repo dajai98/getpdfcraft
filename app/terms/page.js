@@ -1,6 +1,8 @@
 export const metadata = {
   title: "Terms of Service — PDFcraft",
   description: "PDFcraft terms of service. Free PDF tools by Dajai Studio.",
+  openGraph: { title: "Terms of Service — PDFcraft", description: "PDFcraft terms of service. Free PDF tools by Dajai Studio.", url: "https://getpdfcraft.com/terms", type: "website", images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFcraft by Dajai Studio" }] },
+  twitter: { card: "summary_large_image", title: "Terms of Service — PDFcraft", description: "PDFcraft terms of service. Free PDF tools by Dajai Studio.", images: ["/og.svg"] },
   alternates: { canonical: "https://getpdfcraft.com/terms" },
 };
 
@@ -12,7 +14,7 @@ export default function Terms() {
         <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>
           Terms of Service
         </h1>
-        <p style={{ fontSize: 15, color: "#6b7280" }}>Last updated: January 2026</p>
+        <p style={{ fontSize: 15, color: "#6b7280" }}>Last updated: October 2, 2026</p>
       </div>
 
       {[
@@ -29,7 +31,7 @@ export default function Terms() {
         {
           num: "03",
           title: "Your Files and Privacy",
-          body: "PDFcraft processes all files locally in your browser. We do not upload, store, or access your files in any way. You retain full ownership of all files you process using PDFcraft.",
+          body: "PDFcraft processes document contents locally in your browser without a PDF-processing backend upload. Website and third-party resource requests are separate, as explained in the Privacy Policy. You retain ownership of your documents. Keep original copies and review outputs before relying on them.",
         },
         {
           num: "04",
@@ -39,22 +41,22 @@ export default function Terms() {
         {
           num: "05",
           title: "Disclaimer of Warranties",
-          body: "PDFcraft is provided as-is without any warranties of any kind. We do not guarantee that the service will be error-free, uninterrupted, or suitable for your specific purpose. Use PDFcraft at your own risk.",
+          body: "To the extent permitted by applicable law, PDFcraft is provided as-is without warranties. We do not guarantee that the service will be error-free, uninterrupted, or suitable for your specific purpose. Use PDFcraft at your own risk.",
         },
         {
           num: "06",
           title: "Limitation of Liability",
-          body: "Dajai Studio shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of PDFcraft. This includes but is not limited to data loss, file corruption, or loss of business. Always keep backups of important documents.",
+          body: "To the extent permitted by applicable law, Dajai Studio shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of PDFcraft. This includes but is not limited to data loss, file corruption, or loss of business. Always keep backups of important documents.",
         },
         {
           num: "07",
           title: "Advertising",
-          body: "PDFcraft displays advertisements through Google AdSense to fund the free service. By using PDFcraft you agree to the display of these advertisements.",
+          body: "PDFcraft loads Google AdSense advertising resources only after acceptance in the cookie banner. Using PDFcraft does not itself constitute consent to personalized advertising. Declining advertising leaves the core tools available. See the Privacy Policy for details.",
         },
         {
           num: "08",
           title: "Intellectual Property",
-          body: "PDFcraft and all its content, design, and code are owned by Dajai Studio. You may not copy, reproduce, or distribute any part of PDFcraft without written permission.",
+          body: "Dajai Studio owns its original PDFcraft content, design, and code. Third-party and open-source components, trademarks, and user documents are excluded from this ownership claim and remain subject to their respective rights and licenses. Use of Dajai Studio’s original materials is subject to applicable law and any permission or license provided.",
         },
         {
           num: "09",
@@ -64,7 +66,7 @@ export default function Terms() {
         {
           num: "10",
           title: "Contact",
-          body: "Questions about these terms? Contact us through Dajai Studio.",
+          body: "Questions about these terms? Email support@getpdfcraft.com or visit the Contact page for Dajai Studio.",
         },
       ].map(s => (
         <div key={s.num} style={{ display: "flex", gap: 20, marginBottom: 28, alignItems: "flex-start" }}>
@@ -75,6 +77,7 @@ export default function Terms() {
           </div>
         </div>
       ))}
+      <p><a href="/privacy" style={{ color: "#E8380D" }}>Privacy Policy</a> · <a href="/contact" style={{ color: "#E8380D" }}>Contact</a></p>
     </div>
   );
 }

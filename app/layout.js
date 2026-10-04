@@ -1,5 +1,4 @@
 import "./globals.css";
-import Script from "next/script";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import Analytics from "@/components/ui/Analytics";
@@ -7,12 +6,13 @@ import CookieBanner from "@/components/ui/CookieBanner";
 
 export const metadata = {
   title: "Free PDF Tools Online — Merge, Split, Compress | PDFcraft",
-  description: "Privacy-first PDF tools that run directly in your browser. Merge, split, compress, convert and edit PDFs without uploads, sign up or watermarks. 13 free tools by Dajai Studio.",
+  description: "13 free PDF tools by Dajai Studio. Merge, split, compress, convert and edit with local document processing in your browser. No account required.",
   keywords: "free pdf tools online, merge pdf free, split pdf online, compress pdf, pdf to image, browser based pdf tools, pdf tools no upload no sign up",
+  icons: { icon: { url: "/icon.png", type: "image/png", sizes: "512x512" } },
   metadataBase: new URL("https://getpdfcraft.com"),
   openGraph: {
     title: "Free PDF Tools Online — No Uploads, No Sign Up | PDFcraft",
-    description: "Privacy-first PDF tools that run in your browser. Merge, split, compress, convert PDFs without uploads or sign up. 13 free tools.",
+    description: "13 free tools for local PDF processing in your browser. Merge, split, compress and convert documents with no account required.",
     type: "website",
     url: "https://getpdfcraft.com",
     siteName: "PDFcraft",
@@ -21,7 +21,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free PDF Tools Online — No Uploads, No Sign Up | PDFcraft",
-    description: "Privacy-first PDF tools in your browser. Merge, split, compress PDFs without uploads or sign up.",
+    description: "Free browser-based PDF tools with local document processing and no account required.",
     images: ["/og.svg"],
   },
   alternates: { canonical: "https://getpdfcraft.com" },
@@ -39,7 +39,7 @@ const websiteSchema = {
   "@type": "WebSite",
   "name": "PDFcraft",
   "url": "https://getpdfcraft.com",
-  "description": "Privacy-first PDF tools that run directly in your browser. Merge, split, compress, convert PDFs without uploads or sign up.",
+  "description": "Free browser-based PDF tools by Dajai Studio. Document contents are processed locally, with no account required.",
   "publisher": {
     "@type": "Organization",
     "name": "Dajai Studio",
@@ -66,12 +66,6 @@ export default function RootLayout({ children }) {
         <Footer />
         <CookieBanner />
         <Analytics />
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2531068099084515"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

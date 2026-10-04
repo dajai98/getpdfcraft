@@ -1,48 +1,98 @@
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = {
-  title: "How to Split PDF Into Two Parts Free | PDFcraft",
-  description: "Split a PDF into two separate files for free online. No sign up, no watermarks. Divide any PDF instantly in your browser.",
-  keywords: "split pdf into two, divide pdf in half free, split pdf two parts online, cut pdf in half free",
-  alternates: { canonical: "https://getpdfcraft.com/blog/split-pdf-into-two" },
-  openGraph: { title: "How to Split PDF Into Two Parts Free | PDFcraft", description: "Split a PDF into two files for free. No sign up, instant.", url: "https://getpdfcraft.com/blog/split-pdf-into-two", type: "article" },
+  "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
+  "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/split-pdf-into-two"
+  },
+  "openGraph": {
+    "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
+    "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes.",
+    "url": "https://getpdfcraft.com/blog/split-pdf-into-two",
+    "type": "article"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
+    "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes."
+  }
 };
+
+const article = {
+  "title": "How to Split a PDF into Two Files by Page Range",
+  "intro": "To divide one PDF into two files, choose where the first part should end and enter two page ranges in Split PDF. The current tool has no automatic equal-split control. You specify both ranges yourself.",
+  "sections": [
+    {
+      "heading": "Example: divide a 12-page PDF",
+      "steps": [
+        {
+          "title": "Choose the boundary",
+          "body": "Review the source and choose the last page of part one. To divide 12 pages into two six-page parts, use page 6 as the boundary."
+        },
+        {
+          "title": "Select Page Ranges",
+          "body": "Open Split PDF, select the file, and choose Page Ranges. Enter 1-6,7-12. Each comma-separated range produces a separate PDF."
+        },
+        {
+          "title": "Split and check both downloads",
+          "body": "Click Split PDF and download both outputs. Confirm that the first ends at page 6 and the second begins at page 7, with no accidental gap or overlap."
+        }
+      ]
+    },
+    {
+      "heading": "Odd page counts and chapter boundaries",
+      "text": "For 11 pages, 1-5,6-11 produces parts of five and six pages. A chapter boundary may be more useful than a numerical midpoint. The tool uses physical page positions starting at 1; printed page labels can differ. A one-page document cannot become two nonempty, non-overlapping page groups."
+    },
+    {
+      "heading": "Two files does not mean equal byte sizes",
+      "text": "A scan or large image can dominate the file size. Equal page counts may produce very different output sizes. If you are meeting a delivery limit, inspect each output and choose a different boundary if necessary. The tool does not target a byte size."
+    },
+    {
+      "heading": "Input validation and document limits",
+      "text": "Use ascending ranges within the source page count. Empty comma-separated items, reversed ranges, and invalid page values are rejected. Overlapping valid ranges can repeat pages across outputs, so check your selection. Unlock authorized encrypted input with the correct password before splitting."
+    },
+    {
+      "heading": "Keep the original",
+      "text": "Split produces new downloads instead of overwriting the source. Check any document features you need in the outputs. Splitting is not secure redaction, and modifying signed documents may affect their signatures. Browser memory and document complexity limit what can be processed."
+    },
+    {
+      "heading": "Choose the appropriate workflow",
+      "list": [
+        {
+          "text": "Create two range outputs with Split PDF",
+          "href": "/tools/split-pdf"
+        },
+        {
+          "text": "Extract selected non-consecutive pages instead",
+          "href": "/blog/how-to-extract-pages-from-pdf"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can PDFcraft automatically split into equal halves?",
+      "a": "No. Enter two explicit ranges in Page Ranges mode."
+    },
+    {
+      "q": "Does 1-6,7-12 produce two PDFs?",
+      "a": "Yes, for a source with at least 12 pages. It creates one output for each of the two ranges."
+    },
+    {
+      "q": "Will the two files have the same size?",
+      "a": "Not necessarily. Page content determines size, so equal page counts do not imply equal byte sizes."
+    }
+  ],
+  "ctaHref": "/tools/split-pdf",
+  "ctaText": "Split into two range outputs",
+  "tag": "Split PDF",
+  "tagColor": "#EA580C",
+  "tagBg": "#FFF7ED",
+  "date": "February 2026",
+  "readTime": "3 min read"
+};
+
 export default function Post() {
-  return (
-    <BlogPost tag="Split PDF" tagColor="#EA580C" tagBg="#FFF7ED"
-      title="How to Split PDF Into Two Parts Free"
-      date="February 2026" readTime="4 min read"
-      intro="Need to divide a PDF into two separate files? Whether you are splitting a document at a specific page, separating two chapters, or dividing a large file for easier sharing — PDFcraft splits any PDF into two parts for free with no sign up."
-      sections={[
-        { heading: "Why split a PDF into two parts?", steps: [
-          { title: "Document too large to email", body: "Split a large PDF into two smaller parts that each fit within email attachment limits (20-25MB)." },
-          { title: "Separate different sections", body: "A document may contain two distinct parts — for example, the main report and the appendix — that should be separate files." },
-          { title: "Share only part of a document", body: "Split to share only the relevant section with a specific person without giving them the entire document." },
-          { title: "Different recipients need different parts", body: "Split a document so each department or person only receives the section relevant to them." },
-        ]},
-        { heading: "How to split a PDF into two parts — step by step", steps: [
-          { title: "Open PDFcraft Split PDF tool", body: "Go to PDFcraft and click Split PDF. No sign up or software needed." },
-          { title: "Select your PDF", body: "Choose the PDF you want to split. The file stays on your device." },
-          { title: "Enter the split point", body: "Specify where to split — for example, 'pages 1-10' for the first part and 'pages 11-20' for the second part. Enter the first range and download, then repeat for the second range." },
-          { title: "Download first part", body: "Download the first PDF containing your specified pages." },
-          { title: "Repeat for the second part", body: "Go back to the Split tool, upload the original PDF again, enter the second page range, and download the second part." },
-        ]},
-        { heading: "How to decide where to split", steps: [
-          { title: "Split at a chapter or section break", body: "The most natural split point is at a chapter heading or major section break. This keeps each part logically complete." },
-          { title: "Split by file size", body: "If your goal is to fit within an email limit, calculate which page number gets each part under 20MB and split there." },
-          { title: "Split in half", body: "To divide equally, check the total page count and split at the midpoint. A 40-page PDF splits at page 20." },
-        ]},
-        { tip: "After splitting, use PDFcraft's Compress PDF tool on each part to further reduce file size before sending." },
-      ]}
-      faqs={[
-        { q: "Can I split a PDF into two files for free?", a: "Yes. PDFcraft's Split PDF tool is completely free with no sign up required." },
-        { q: "Can I split a PDF into more than two parts?", a: "Yes. Run the Split tool multiple times with different page ranges to create as many parts as you need." },
-        { q: "Does splitting a PDF reduce quality?", a: "No. Splitting only separates pages — there is no re-encoding or quality loss." },
-        { q: "Can I split a PDF on my phone?", a: "Yes. PDFcraft works on iPhone and Android browsers." },
-        { q: "Is there a page limit for splitting?", a: "No. PDFcraft handles PDFs of any length." },
-        { q: "How do I know what page number to split at?", a: "Open the PDF in your browser or PDF viewer, scroll to the section break, and note the page number. Use that number as your split point." },
-      ]}
-      ctaText="Split your PDF now — free, instant"
-      ctaHref="/tools/split-pdf"
-    />
-  );
+  return <BlogPost {...article} />;
 }

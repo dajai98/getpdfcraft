@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint --config eslint.config.mjs app components lib"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.7.1",

@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { pageNumberPlacement } from "@/lib/pageGeometry";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -8,52 +10,39 @@ const faqs = [
   { q: "Can I choose where the page number appears?", a: "Yes. Choose from bottom center, bottom right, bottom left, top center, top right, or top left." },
   { q: "Can I set a custom starting number?", a: "Yes. Set any starting number you want — useful if your PDF is a chapter that starts at page 50 for example." },
   { q: "Can I change the font size?", a: "Yes. Choose from small, medium, or large page numbers." },
-  { q: "Are my files safe?", a: "Yes. Page numbers are added locally in your browser. Files never leave your device." },
-  { q: "Will adding page numbers change anything else?", a: "No. Only page numbers are added. All existing content remains unchanged." },
+  { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
+  { q: "Will adding page numbers change anything else?", a: "The tool adds page numbers. Review the result and keep your original; PDF rewriting can affect signatures and other document features." },
 ];
 
 export default function AddPageNumbers() {
-  const [file, setFile] = useState(null);
-  const [position, setPosition] = useState("bottom-center");
-  const [startNum, setStartNum] = useState(1);
-  const [fontSize, setFontSize] = useState(12);
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const [file, setFile] = useResultInput(null, invalidateResult);
+  const [position, setPosition] = useResultInput("bottom-center", invalidateResult);
+  const [startNum, setStartNum] = useResultInput(1, invalidateResult);
+  const [fontSize, setFontSize] = useResultInput(12, invalidateResult);
   const [processing, setProcessing] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState(null);
 
-  const loadFile = (files) => { setFile(files[0]); setDownloadUrl(null); };
+  const loadFile = (files) => { setFile(files[0]); };
 
   const addNumbers = async () => {
+    const resultVersion = beginResult();
     setProcessing(true);
     try {
-      const { PDFDocument, rgb, StandardFonts } = await import("pdf-lib");
+      const { PDFDocument, rgb, StandardFonts, degrees } = await import("pdf-lib");
       const doc = await PDFDocument.load(await file.arrayBuffer());
       const font = await doc.embedFont(StandardFonts.Helvetica);
       const pages = doc.getPages();
 
       pages.forEach((page, i) => {
-        const { width, height } = page.getSize();
         const text = String(startNum + i);
-        const textWidth = font.widthOfTextAtSize(text, fontSize);
-        const margin = 20;
-
-        let x, y;
-        switch (position) {
-          case "bottom-center": x = (width - textWidth) / 2; y = margin; break;
-          case "bottom-right": x = width - textWidth - margin; y = margin; break;
-          case "bottom-left": x = margin; y = margin; break;
-          case "top-center": x = (width - textWidth) / 2; y = height - margin - fontSize; break;
-          case "top-right": x = width - textWidth - margin; y = height - margin - fontSize; break;
-          case "top-left": x = margin; y = height - margin - fontSize; break;
-          default: x = (width - textWidth) / 2; y = margin;
-        }
-
-        page.drawText(text, { x, y, size: fontSize, font, color: rgb(0.3, 0.3, 0.3) });
+        const { angle, ...placement } = pageNumberPlacement(page, font, text, fontSize, position);
+        page.drawText(text, { ...placement, rotate: degrees(angle), font, color: rgb(0.3, 0.3, 0.3) });
       });
 
       const blob = new Blob([await doc.save()], { type: "application/pdf" });
-      setDownloadUrl(URL.createObjectURL(blob));
+      setDownloadUrl(URL.createObjectURL(blob), resultVersion);
     } catch (e) {
-      alert("Error adding page numbers.");
+      alert(e.message || "Error adding page numbers.");
     }
     setProcessing(false);
   };
@@ -70,7 +59,7 @@ export default function AddPageNumbers() {
   return (
     <ToolLayout
       tag="Page Numbers" tagBg="#F0FDF4" tagColor="#16A34A"
-      title="Add Page Numbers to PDF" desc="Number your PDF pages with custom position, size, and starting number. Free and instant."
+      title="Add Page Numbers to PDF" desc="Number your PDF pages with custom position, size, and starting number. Free to use."
       current="/tools/add-page-numbers" faqs={faqs}
     >
       {/* 
@@ -99,7 +88,7 @@ export default function AddPageNumbers() {
             </p>
           </div>
           <button
-            onClick={() => { setFile(null); setDownloadUrl(null); }}
+            aria-label="Remove selected file" onClick={() => { setFile(null); }}
             style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}
           >
             ✕
@@ -120,7 +109,7 @@ export default function AddPageNumbers() {
               {positions.map(p => (
                 <button
                   key={p.val}
-                  onClick={() => setPosition(p.val)}
+                  aria-pressed={position === p.val} onClick={() => setPosition(p.val)}
                   style={{
                     padding: "10px 6px", borderRadius: 10, fontWeight: 600, fontSize: 12,
                     border: `1.5px solid ${position === p.val ? "#E8380D" : "#e5e7eb"}`,
@@ -138,34 +127,34 @@ export default function AddPageNumbers() {
           {/* Start number + font size */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             <div>
-              <label style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 8 }}>
+              <label htmlFor="add-page-numbers-field-1" style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 8 }}>
                 Start from page
               </label>
-              <input
+              <input id="add-page-numbers-field-1"
                 type="number" min="1" value={startNum}
                 onChange={e => setStartNum(parseInt(e.target.value) || 1)}
                 style={{
                   width: "100%", border: "1.5px solid #e5e7eb", borderRadius: 10,
                   padding: "10px 14px", fontSize: 14, fontFamily: "inherit",
-                  outline: "none", boxSizing: "border-box"
+                  boxSizing: "border-box"
                 }}
               />
             </div>
             <div>
-              <label style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 8 }}>
+              <label htmlFor="add-page-numbers-field-2" style={{ fontSize: 13, fontWeight: 600, color: "#374151", display: "block", marginBottom: 8 }}>
                 Font size
               </label>
-              <select
+              <select id="add-page-numbers-field-2"
                 value={fontSize} onChange={e => setFontSize(parseInt(e.target.value))}
                 style={{
                   width: "100%", border: "1.5px solid #e5e7eb", borderRadius: 10,
                   padding: "10px 14px", fontSize: 14, fontFamily: "inherit",
-                  outline: "none", background: "white", boxSizing: "border-box"
+                  background: "white", boxSizing: "border-box"
                 }}
               >
-                <option value={10}>Small (10px)</option>
-                <option value={12}>Medium (12px)</option>
-                <option value={16}>Large (16px)</option>
+                <option value={10}>Small (10pt)</option>
+                <option value={12}>Medium (12pt)</option>
+                <option value={16}>Large (16pt)</option>
               </select>
             </div>
           </div>
@@ -200,7 +189,7 @@ export default function AddPageNumbers() {
         minHeight: 130,
         visibility: downloadUrl ? "visible" : "hidden",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20 }}>
+        {downloadUrl && <div role="status" style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20 }}>
           <span style={{ fontSize: 40 }}>✅</span>
           <div>
             <p style={{ fontWeight: 700, color: "#111827", fontSize: 17, margin: 0 }}>
@@ -210,7 +199,7 @@ export default function AddPageNumbers() {
               Starting from {startNum}, positioned {position.replace("-", " ")}.
             </p>
           </div>
-        </div>
+        </div>}
         {downloadUrl && (
           <DownloadButton url={downloadUrl} filename="numbered.pdf" label="Download PDF" />
         )}

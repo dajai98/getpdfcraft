@@ -1,66 +1,58 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
+import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 export default function CompressPDF() {
-  const [file, setFile] = useState(null);
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult, isCurrentResult } = useGeneratedResult();
+  const [file, setFile] = useResultInput(null, invalidateResult);
   const [processing, setProcessing] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState("");
 
-  const compress = async (files) => {
-    const f = files[0]; setFile(f); setResult(null);
+  const compress = async files => {
+    const f = files[0];
+    if (!f) return;
+    setFile(f); setResult(null); setError("");
+    const token = beginResult();
     setProcessing(true);
     try {
       const { PDFDocument } = await import("pdf-lib");
       const compressed = await (await PDFDocument.load(await f.arrayBuffer())).save({ useObjectStreams: true });
-      setResult({ url: URL.createObjectURL(new Blob([compressed], { type: "application/pdf" })), originalSize: f.size, newSize: compressed.length });
-    } catch(e) { alert("Error compressing PDF."); }
-    setProcessing(false);
+      if (isCurrentResult(token)) {
+        setResult({ originalSize: f.size, newSize: compressed.length });
+        setDownloadUrl(URL.createObjectURL(new Blob([compressed], { type: "application/pdf" })), token);
+      }
+    } catch (e) {
+      if (isCurrentResult(token)) setError(pdfInputError(e));
+    } finally {
+      setProcessing(false);
+    }
   };
-
-  const savings = result ? Math.max(0, Math.round((1 - result.newSize / result.originalSize) * 100)) : 0;
+  const reset = () => { setFile(null); setResult(null); setError(""); };
+  const smaller = result && result.newSize < result.originalSize;
+  const larger = result && result.newSize > result.originalSize;
 
   return (
     <ToolLayout tag="Compress PDF" tagBg="#FEFCE8" tagColor="#CA8A04"
-      title="Compress PDF" desc="Reduce PDF file size while keeping quality. Free and instant."
+      title="Compress PDF" desc="Try structural/object-stream optimization and compare the output size. Files are processed locally in your browser."
       current="/tools/compress-pdf" faqs={[
-  { q: "Will compression reduce the quality of my PDF?", a: "No. PDFcraft doesn't currently recompress or downsample images — it only optimizes the file's internal structure. Text, images, and layout are visually unaffected." },
-  { q: "How much can PDFcraft compress a PDF?", a: "It varies a lot by file — you'll see your exact before-and-after size after compressing. PDFs with a lot of repeated internal structure (forms, multi-page documents) tend to shrink more than image-heavy scans, since PDFcraft doesn't currently recompress embedded images. For large scanned PDFs, deleting unnecessary pages is often more effective." },
-  { q: "Is there a file size limit?", a: "No artificial limit. Your device memory is the only constraint." },
-  { q: "Are my files safe?", a: "Yes. Files are processed locally. Nothing is uploaded to any server." },
-  { q: "Does it work on iPhone?", a: "Yes. Open PDFcraft in Safari on iPhone and it works immediately." },
-]}>
-
-      {!file || result ? (
-        <div>
-          <UploadZone onFiles={compress} label="Drop your PDF here to compress" />
-          {result && (
-            <div style={{ marginTop: 24, background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 28 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 8 }}>
-                <span style={{ fontSize: 40 }}>✅</span>
-                <div>
-                  <p style={{ fontWeight: 700, color: "#111827", fontSize: 17 }}>Compression complete!</p>
-                  <p style={{ fontSize: 13, color: "#6b7280" }}>
-                    {(result.originalSize/1024).toFixed(0)} KB → {(result.newSize/1024).toFixed(0)} KB
-                    {savings > 0 ? <strong style={{ color: "#16A34A" }}> ({savings}% smaller)</strong> : " (already optimized)"}
-                  </p>
-                </div>
-              </div>
-              <div style={{ marginTop: 16 }}>
-                <DownloadButton url={result.url} filename="compressed.pdf" label="Download compressed.pdf" />
-              </div>
-            </div>
-          )}
-        </div>
-      ) : (
-        <div style={{ textAlign: "center", padding: 40 }}>
-          <div style={{ fontSize: 48, marginBottom: 16 }}>⏳</div>
-          <p style={{ fontWeight: 600, color: "#374151", fontSize: 16 }}>Compressing {file.name}...</p>
-          <p style={{ color: "#6b7280", fontSize: 14, marginTop: 8 }}>This usually takes a few seconds.</p>
-        </div>
-      )}
+        { q: "Does this recompress images?", a: "No. It loads and saves the PDF with object streams; it does not explicitly downsample or recompress embedded images." },
+        { q: "Will the file get smaller?", a: "Not necessarily. The output may be smaller, unchanged or larger. Compare the sizes and keep your original." },
+        { q: "Is there a size limit?", a: "No app-level file-size quota; practical limits depend on your device and browser." },
+      ]}>
+      {processing ? <p role="status">Compressing {file?.name}...</p> : <UploadZone onFiles={compress} label="Drop your PDF here to process" />}
+      {error && <div role="alert"><p>{error}</p><button type="button" onClick={() => compress([file])}>Retry</button></div>}
+      {file && !processing && <button type="button" onClick={reset}>Reset / choose another PDF</button>}
+      {downloadUrl && result && <div role="status" style={{ marginTop: 24, background: "#f9fafb", border: "1px solid #e5e7eb", borderRadius: 16, padding: 28 }}>
+        <p style={{ fontWeight: 700 }}>{smaller ? "File size reduced" : larger ? "Output is larger — keep your original if size is your goal" : "No file-size reduction"}</p>
+        <p>{result.originalSize.toLocaleString()} bytes → {result.newSize.toLocaleString()} bytes</p>
+        <p>{smaller ? `${result.originalSize - result.newSize} bytes smaller` : larger ? `${result.newSize - result.originalSize} bytes larger` : "The size is unchanged."}</p>
+        <DownloadButton url={downloadUrl} filename="processed.pdf" label="Download processed PDF" />
+      </div>}
     </ToolLayout>
   );
 }

@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { usePdfInput } from "@/components/hooks/usePdfInput";
+import { pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -7,23 +10,18 @@ import DownloadButton from "@/components/ui/DownloadButton";
 const faqs = [
   { q: "How do I reorder pages?", a: "Use the Move Up and Move Down buttons next to each page to rearrange them in the order you want." },
   { q: "Can I move a page to any position?", a: "Yes. Keep clicking Move Up or Move Down to move a page to any position in the document." },
-  { q: "Is there a limit on pages?", a: "No. You can reorder PDFs of any length." },
-  { q: "Are my files safe?", a: "Yes. Reordering happens locally in your browser. Files never leave your device." },
+  { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
+  { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Is the original file changed?", a: "No. PDFcraft creates a new reordered file. Your original PDF is not affected." },
 ];
 
 export default function ReorderPages() {
-  const [file, setFile] = useState(null);
-  const [order, setOrder] = useState([]);
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const { file, loading, error, setError, loadFile: readFile, resetFile } = usePdfInput(invalidateResult);
+  const [order, setOrder] = useResultInput([], invalidateResult);
   const [processing, setProcessing] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState(null);
 
-  const loadFile = async (files) => {
-    const f = files[0]; setFile(f); setDownloadUrl(null);
-    const { PDFDocument } = await import("pdf-lib");
-    const doc = await PDFDocument.load(await f.arrayBuffer());
-    setOrder(Array.from({ length: doc.getPageCount() }, (_, i) => i));
-  };
+  const loadFile = async files => { setOrder([]); const count = await readFile(files); if (count !== null) setOrder(Array.from({ length: count }, (_, i) => i)); };
 
   const moveUp = (i) => {
     if (i === 0) return;
@@ -40,6 +38,9 @@ export default function ReorderPages() {
   };
 
   const reorder = async () => {
+    if (!file) return;
+    const resultVersion = beginResult();
+    setError("");
     setProcessing(true);
     try {
       const { PDFDocument } = await import("pdf-lib");
@@ -48,17 +49,19 @@ export default function ReorderPages() {
       const pages = await doc.copyPages(src, order);
       pages.forEach(p => doc.addPage(p));
       const blob = new Blob([await doc.save()], { type: "application/pdf" });
-      setDownloadUrl(URL.createObjectURL(blob));
-    } catch(e) { alert("Error reordering pages."); }
+      setDownloadUrl(URL.createObjectURL(blob), resultVersion);
+    } catch(e) { setError(pdfInputError(e)); }
     setProcessing(false);
   };
 
   return (
     <ToolLayout
       tag="Reorder Pages" tagBg="#FAF5FF" tagColor="#9333EA"
-      title="Reorder PDF Pages" desc="Rearrange pages in any order you want. Free, instant, private. No sign up needed."
+      title="Reorder PDF Pages" desc="Rearrange pages in any order you want. Free to use. Files are processed locally. No sign up needed."
       current="/tools/reorder-pages" faqs={faqs}
     >
+      {loading && <p role="status">Reading PDF...</p>}
+      {error && <p role="alert">{error}</p>}
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (
         <div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
@@ -67,14 +70,14 @@ export default function ReorderPages() {
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
               <p style={{ fontSize: 12, color: "#6b7280" }}>{order.length} pages</p>
             </div>
-            <button onClick={() => { setFile(null); setOrder([]); setDownloadUrl(null); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button aria-label={"Remove selected file"} onClick={() => { resetFile(); setOrder([]);  }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
-          <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Drag to reorder pages:</p>
+          <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Use Move Up and Move Down to reorder pages:</p>
 
           <div style={{ border: "1px solid #f3f4f6", borderRadius: 14, overflow: "hidden", marginBottom: 20 }}>
             {order.map((originalIndex, currentPos) => (
-              <div key={originalIndex} style={{ padding: "14px 20px", display: "flex", alignItems: "center", gap: 14, borderBottom: currentPos < order.length - 1 ? "1px solid #f9fafb" : "none", background: "white", transition: "background 0.15s" }}>
+              <div key={originalIndex} className="tool-row" style={{ padding: "14px 20px", display: "flex", alignItems: "center", gap: 14, borderBottom: currentPos < order.length - 1 ? "1px solid #f9fafb" : "none", background: "white", transition: "background 0.15s" }}>
                 <span style={{ fontSize: 18, color: "#6b7280" }}>⠿</span>
                 <div style={{ width: 36, height: 44, background: "#f9fafb", border: "1px solid #e5e7eb", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, color: "#6b7280", flexShrink: 0 }}>
                   {originalIndex + 1}
@@ -84,9 +87,9 @@ export default function ReorderPages() {
                   {currentPos !== originalIndex && <span style={{ fontSize: 12, color: "#9333EA", marginLeft: 8, fontWeight: 600 }}>→ position {currentPos + 1}</span>}
                 </span>
                 <div style={{ display: "flex", gap: 6 }}>
-                  <button onClick={() => moveUp(currentPos)} disabled={currentPos === 0}
+                  <button aria-label={`Move page ${originalIndex+1} up`} onClick={() => moveUp(currentPos)} disabled={currentPos === 0}
                     style={{ width: 32, height: 32, borderRadius: 8, border: "1px solid #e5e7eb", background: "white", color: currentPos === 0 ? "#e5e7eb" : "#374151", cursor: currentPos === 0 ? "not-allowed" : "pointer", fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>↑</button>
-                  <button onClick={() => moveDown(currentPos)} disabled={currentPos === order.length - 1}
+                  <button aria-label={`Move page ${originalIndex+1} down`} onClick={() => moveDown(currentPos)} disabled={currentPos === order.length - 1}
                     style={{ width: 32, height: 32, borderRadius: 8, border: "1px solid #e5e7eb", background: "white", color: currentPos === order.length - 1 ? "#e5e7eb" : "#374151", cursor: currentPos === order.length - 1 ? "not-allowed" : "pointer", fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>↓</button>
                 </div>
               </div>
@@ -100,7 +103,7 @@ export default function ReorderPages() {
       )}
 
       {downloadUrl && (
-        <div style={{ marginTop: 24, background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 28 }}>
+        <div role="status" style={{ marginTop: 24, background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 28 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20 }}>
             <span style={{ fontSize: 40 }}>✅</span>
             <div>

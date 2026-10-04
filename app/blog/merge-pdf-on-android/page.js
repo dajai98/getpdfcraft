@@ -1,48 +1,132 @@
 import BlogPost from "@/components/ui/BlogPost";
 export const metadata = {
-  title: "How to Merge PDF on Android Free (No App Needed) | PDFcraft",
-  description: "Merge PDF files on Android for free without downloading any app. Works in Chrome browser instantly. No sign up required.",
-  keywords: "merge pdf on android, combine pdf android free, merge pdf android no app, join pdf files android chrome",
-  alternates: { canonical: "https://getpdfcraft.com/blog/merge-pdf-on-android" },
-  openGraph: { title: "How to Merge PDF on Android Free | PDFcraft", description: "Merge PDFs on Android without any app. Works in Chrome, free, no sign up.", url: "https://getpdfcraft.com/blog/merge-pdf-on-android", type: "article" },
+  "title": "How to Merge PDF on Android Free (No App Needed) | PDFcraft",
+  "description": "Merge PDFs in insertion order using an Android browser. File selection and download locations depend on your system.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/merge-pdf-on-android"
+  },
+  "openGraph": {
+    "title": "How to Merge PDF on Android Free (No App Needed) | PDFcraft",
+    "description": "Merge PDFs in insertion order using an Android browser. File selection and download locations depend on your system.",
+    "url": "https://getpdfcraft.com/blog/merge-pdf-on-android",
+    "type": "article"
+  }
 };
 export default function Post() {
   return (
-    <BlogPost tag="Android" tagColor="#16A34A" tagBg="#F0FDF4"
-      title="How to Merge PDF on Android Free (No App Needed)"
+    <BlogPost tag={"Android"} tagColor="#16A34A" tagBg="#F0FDF4"
+      title={"How to Merge PDF on Android Free (No App Needed)"}
       date="February 2026" readTime="5 min read"
-      intro="You don't need to download an app to merge PDFs on Android. PDFcraft works directly in Chrome — combine unlimited PDF files for free in seconds, right on your Android phone. No account, no app, no uploads."
+      intro={"You don't need to download an app to merge PDFs on Android. Try PDFcraft in Chrome to combine PDF files locally in your browser. No account or PDFcraft app installation is required."}
       sections={[
-        { heading: "How to merge PDF on Android — step by step", steps: [
-          { title: "Open Chrome on your Android phone", body: "Go to getpdfcraft.com in Chrome. PDFcraft works fully in Android Chrome — no app download needed." },
-          { title: "Tap Merge PDF", body: "Tap the Merge PDF tool from the home screen." },
-          { title: "Select your PDF files", body: "Tap Select Files. Your Android file picker will open. Navigate to your PDFs — in Downloads, Google Drive, or internal storage. Select multiple files at once by long-pressing the first file then tapping others." },
-          { title: "Arrange the order", body: "Drag the files into the order you want them to appear in the merged document." },
-          { title: "Tap Merge PDFs", body: "Tap the Merge button. PDFcraft combines your PDFs entirely in your browser — never uploaded to any server." },
-          { title: "Download and save", body: "Tap Download. The merged PDF saves to your Android Downloads folder. Find it in the Files app or your downloads notification." },
-        ]},
-        { heading: "Where to find the merged PDF on Android", steps: [
-          { title: "Check your Downloads folder", body: "Open the Files app on your Android phone and go to Downloads. The merged PDF will be there." },
-          { title: "Check your notification bar", body: "When the download completes, a notification appears in your notification bar. Tap it to open the merged PDF directly." },
-          { title: "Share immediately from browser", body: "After downloading, Chrome shows a Share option at the bottom of the screen. Tap it to immediately share via WhatsApp, Gmail, or any other app." },
-        ]},
-        { heading: "Tips for merging PDFs on Android", steps: [
-          { title: "Access Google Drive PDFs", body: "When selecting files, tap Google Drive in the file picker to access PDFs stored in your Drive — not just local files." },
-          { title: "Bookmark PDFcraft for quick access", body: "In Chrome, tap the three dots menu → Add to Home Screen. PDFcraft will appear on your Android home screen for quick access." },
-          { title: "Merge then compress", body: "After merging, use PDFcraft's Compress PDF tool to reduce the merged file size before sending on WhatsApp or email." },
-        ]},
-        { tip: "PDFcraft works on all Android phones — Samsung, OnePlus, Xiaomi, Google Pixel, and any other brand. Just needs Chrome or any modern Android browser." },
-      ]}
+  {
+    "heading": "How to merge PDF on Android — step by step",
+    "steps": [
+      {
+        "title": "Open Chrome on your Android phone",
+        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+      },
+      {
+        "title": "Tap Merge PDF",
+        "body": "Tap the Merge PDF tool from the home screen."
+      },
+      {
+        "title": "Select your PDF files",
+        "body": "Use the tool’s file chooser to select a locally accessible file. Available locations and multi-select gestures depend on your system. If a cloud provider is offered, retrieving that file can involve a separate network transfer."
+      },
+      {
+        "title": "Arrange the order",
+        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+      },
+      {
+        "title": "Tap Merge PDFs",
+        "body": "Click Merge PDFs, wait for completion, and inspect the downloaded result. Document processing happens locally in the browser."
+      },
+      {
+        "title": "Download and save",
+        "body": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+      }
+    ]
+  },
+  {
+    "heading": "Where to find the merged PDF on Android",
+    "steps": [
+      {
+        "title": "Check your Downloads folder",
+        "body": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+      },
+      {
+        "title": "Check your notification bar",
+        "body": "If a completion notification appears, use it to locate the output. Otherwise check the browser’s download list."
+      },
+      {
+        "title": "Share immediately from browser",
+        "body": "After locating the saved output, use the sharing options your browser or file manager offers. Available apps and menus vary."
+      }
+    ]
+  },
+  {
+    "heading": "Tips for merging PDFs on Android",
+    "steps": [
+      {
+        "title": "Access Google Drive PDFs",
+        "body": "Use the tool’s file chooser to select a locally accessible file. Available locations and multi-select gestures depend on your system. If a cloud provider is offered, retrieving that file can involve a separate network transfer."
+      },
+      {
+        "title": "Bookmark PDFcraft for quick access",
+        "body": "If your browser offers a home-screen shortcut, you can use it for quick access. This does not install a native PDFcraft app or guarantee offline operation."
+      },
+      {
+        "title": "Merge then compress",
+        "body": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
+      }
+    ]
+  },
+  {
+    "tip": "You can try this browser-based workflow on your phone without installing a PDFcraft app. Compatibility and usable file size depend on your browser and device; no minimum OS version or universal support is guaranteed."
+  },
+  {
+    "heading": "Continue with the relevant tool",
+    "list": [
+      {
+        "text": "Open merge pdf",
+        "href": "/tools/merge-pdf"
+      },
+      {
+        "text": "Adjust page order with Up/Down controls",
+        "href": "/tools/reorder-pages"
+      }
+    ]
+  }
+]}
       faqs={[
-        { q: "Can I merge PDFs on Android without an app?", a: "Yes. PDFcraft works directly in Android Chrome. No app download needed." },
-        { q: "Where does the merged PDF save on Android?", a: "The merged PDF saves to your Downloads folder. Find it in the Files app under Downloads." },
-        { q: "Can I merge PDFs from Google Drive on Android?", a: "Yes. When selecting files in PDFcraft, choose Google Drive in the file picker to access your Drive PDFs." },
-        { q: "Is there a limit on how many PDFs I can merge on Android?", a: "No. PDFcraft has no limit on the number of files you can merge." },
-        { q: "Does merging PDFs on Android use mobile data?", a: "Only loading the PDFcraft page uses data. The actual PDF processing happens on your phone — no data is sent to any server." },
-        { q: "Does PDFcraft work on Samsung phones?", a: "Yes. PDFcraft works on Samsung, OnePlus, Xiaomi, Google Pixel, and all Android phones with Chrome or any modern browser." },
-      ]}
-      ctaText="Merge PDFs on Android now — free, no app"
-      ctaHref="/tools/merge-pdf"
+  {
+    "q": "Can I merge PDFs on Android without an app?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  },
+  {
+    "q": "Where does the merged PDF save on Android?",
+    "a": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+  },
+  {
+    "q": "Can I merge PDFs from Google Drive on Android?",
+    "a": "If that provider is available in your system file picker, you can retrieve a copy there. Cloud retrieval and backup are separate from PDFcraft’s local processing; provider availability varies."
+  },
+  {
+    "q": "Is there a limit on how many PDFs I can merge on Android?",
+    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+  },
+  {
+    "q": "Does merging PDFs on Android use mobile data?",
+    "a": "Loading the site uses network resources, and retrieving or saving a cloud file is a separate transfer. PDFcraft performs the merge locally; this is not a promise of zero network traffic."
+  },
+  {
+    "q": "Does PDFcraft work on Samsung phones?",
+    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+  }
+]}
+      ctaText={"Merge your PDFs — free to use"}
+      ctaHref={"/tools/merge-pdf"}
     />
   );
 }

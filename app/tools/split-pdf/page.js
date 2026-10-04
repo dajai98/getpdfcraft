@@ -1,63 +1,68 @@
 "use client";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { useObjectUrls } from "@/components/hooks/useObjectUrls";
+import { usePdfInput } from "@/components/hooks/usePdfInput";
+import { parsePageRanges } from "@/lib/splitRanges";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 export default function SplitPDF() {
-  const [file, setFile] = useState(null);
-  const [pageCount, setPageCount] = useState(0);
-  const [mode, setMode] = useState("all");
-  const [range, setRange] = useState("");
-  const [processing, setProcessing] = useState(false);
+  const { beginResult, isCurrentResult, invalidateResult: invalidateSingle } = useGeneratedResult();
+  const urls = useObjectUrls();
   const [downloads, setDownloads] = useState([]);
-
-  const loadFile = async (files) => {
-    const f = files[0]; setFile(f); setDownloads([]);
-    const { PDFDocument } = await import("pdf-lib");
-    const doc = await PDFDocument.load(await f.arrayBuffer());
-    setPageCount(doc.getPageCount());
-  };
+  const invalidateResult = useCallback(() => {
+    invalidateSingle(); urls.clear(); setDownloads([]);
+  }, [invalidateSingle, urls.clear]);
+  const { file, pageCount, loading, error, setError, loadFile, resetFile } = usePdfInput(invalidateResult);
+  const [mode, setMode] = useResultInput("all", invalidateResult);
+  const [range, setRange] = useResultInput("", invalidateResult);
+  const [processing, setProcessing] = useState(false);
 
   const split = async () => {
-    setProcessing(true); setDownloads([]);
+    if (!file) return;
+    invalidateResult();
+    const token = beginResult();
+    setProcessing(true); setError("");
+    const results = [];
+    let published = false;
     try {
+      const groups = mode === "all"
+        ? Array.from({ length: pageCount }, (_, i) => ({ name: `page-${i+1}.pdf`, indices: [i] }))
+        : parsePageRanges(range, pageCount);
       const { PDFDocument } = await import("pdf-lib");
       const src = await PDFDocument.load(await file.arrayBuffer());
-      let results = [];
-      if (mode === "all") {
-        for (let i = 0; i < pageCount; i++) {
-          const doc = await PDFDocument.create();
-          const [p] = await doc.copyPages(src, [i]);
-          doc.addPage(p);
-          results.push({ name: `page-${i+1}.pdf`, url: URL.createObjectURL(new Blob([await doc.save()], { type: "application/pdf" })) });
-        }
-      } else {
-        for (const part of range.split(",").map(s => s.trim())) {
-          const [s, e] = part.includes("-") ? part.split("-").map(n => parseInt(n)-1) : [parseInt(part)-1, parseInt(part)-1];
-          const indices = Array.from({ length: Math.min(e,pageCount-1)-s+1 }, (_, i) => s+i);
-          if (!indices.length) continue;
-          const doc = await PDFDocument.create();
-          (await doc.copyPages(src, indices)).forEach(p => doc.addPage(p));
-          results.push({ name: `pages-${part.replace("-","_")}.pdf`, url: URL.createObjectURL(new Blob([await doc.save()], { type: "application/pdf" })) });
-        }
+      for (const group of groups) {
+        if (!isCurrentResult(token)) return;
+        const doc = await PDFDocument.create();
+        (await doc.copyPages(src, group.indices)).forEach(page => doc.addPage(page));
+        const bytes = await doc.save();
+        if (!isCurrentResult(token)) return;
+        results.push({ name: group.name, url: urls.create(new Blob([bytes], { type: "application/pdf" })) });
       }
-      setDownloads(results);
-    } catch(e) { alert("Error splitting PDF."); }
-    setProcessing(false);
+      if (isCurrentResult(token)) { setDownloads(results); published = true; }
+    } catch (e) {
+      if (isCurrentResult(token)) setError(e.message || "Could not split this PDF. Select a valid PDF and try again.");
+    } finally {
+      if (!published) results.forEach(result => urls.retire(result.url));
+      setProcessing(false);
+    }
   };
 
   return (
     <ToolLayout tag="Split PDF" tagBg="#FFF7ED" tagColor="#EA580C"
-      title="Split PDF File" desc="Extract pages or split a PDF into individual files. Free and instant."
+      title="Split PDF File" desc="Extract pages or split a PDF into individual files. Free to use."
       current="/tools/split-pdf" faqs={[
   { q: "Can I split a PDF into individual pages?", a: "Yes. Select the Split All Pages option and every page becomes its own PDF file." },
   { q: "Can I extract specific pages?", a: "Yes. Use the Page Range option and enter pages like 1-3, 5, 7-10. Each range becomes a separate PDF." },
-  { q: "Is there a page limit?", a: "No. You can split PDFs of any length. There is no page count restriction." },
-  { q: "Are my files safe?", a: "Yes. Everything is processed locally in your browser. Files never leave your device." },
-  { q: "Does it work on mobile?", a: "Yes. PDFcraft works on iPhone and Android in the browser. No app needed." },
+  { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
+  { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
+  { q: "Does it work on mobile?", a: "Try a current browser on iPhone or Android. Compatibility and practical file limits depend on the browser, device, and document." },
 ]}>
 
+      {loading && <p role="status">Reading PDF...</p>}
+      {error && <p role="alert">{error}</p>}
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (
         <div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
@@ -66,7 +71,7 @@ export default function SplitPDF() {
               <p style={{ fontWeight: 600, fontSize: 14, color: "#374151" }}>{file.name}</p>
               <p style={{ fontSize: 12, color: "#6b7280" }}>{pageCount} pages · {(file.size/1024).toFixed(0)} KB</p>
             </div>
-            <button onClick={() => { setFile(null); setDownloads([]); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
+            <button aria-label={"Remove selected file"} onClick={() => { resetFile(); setRange(""); }} style={{ color: "#6b7280", background: "none", border: "none", cursor: "pointer", fontSize: 18 }}>✕</button>
           </div>
 
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: 20, marginBottom: 20 }}>
@@ -82,8 +87,8 @@ export default function SplitPDF() {
                 </label>
               ))}
               {mode === "range" && (
-                <input type="text" placeholder="e.g. 1-3, 5, 7-10" value={range} onChange={e => setRange(e.target.value)}
-                  style={{ marginLeft: 26, border: "1.5px solid #e5e7eb", borderRadius: 10, padding: "10px 14px", fontSize: 14, fontFamily: "inherit", outline: "none", width: "calc(100% - 26px)" }} />
+                <input aria-label="Pages and ranges" type="text" placeholder="e.g. 1-3, 5, 7-10" value={range} onChange={e => setRange(e.target.value)}
+                  style={{ marginLeft: 26, border: "1.5px solid #e5e7eb", borderRadius: 10, padding: "10px 14px", fontSize: 14, fontFamily: "inherit", width: "calc(100% - 26px)" }} />
               )}
             </div>
           </div>
@@ -104,7 +109,7 @@ export default function SplitPDF() {
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14 }}>✅ {downloads.length} files ready</p>
           </div>
           {downloads.map((d, i) => (
-            <div key={i} style={{ padding: "12px 20px", display: "flex", alignItems: "center", gap: 12, borderBottom: i < downloads.length-1 ? "1px solid #f9fafb" : "none" }}>
+            <div key={i} className="tool-row" style={{ padding: "12px 20px", display: "flex", alignItems: "center", gap: 12, borderBottom: i < downloads.length-1 ? "1px solid #f9fafb" : "none" }}>
               <span style={{ fontSize: 22 }}>📄</span>
               <span style={{ flex: 1, fontSize: 14, fontWeight: 500, color: "#374151" }}>{d.name}</span>
               <DownloadButton url={d.url} filename={d.name} label="Download" />

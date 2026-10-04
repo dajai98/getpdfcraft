@@ -1,6 +1,8 @@
 export const metadata = {
   title: "Privacy Policy — PDFcraft",
-  description: "PDFcraft privacy policy. Your files never leave your device. We never store, upload or share your documents.",
+  description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.",
+  openGraph: { title: "Privacy Policy — PDFcraft", description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", url: "https://getpdfcraft.com/privacy", type: "website", images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFcraft by Dajai Studio" }] },
+  twitter: { card: "summary_large_image", title: "Privacy Policy — PDFcraft", description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", images: ["/og.svg"] },
   alternates: { canonical: "https://getpdfcraft.com/privacy" },
 };
 
@@ -10,16 +12,13 @@ export default function Privacy() {
       <div style={{ marginBottom: 48 }}>
         <span style={{ background: "#FEF2F2", color: "#DC2626", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>Privacy Policy</span>
         <h1 style={{ fontSize: 48, fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 16, letterSpacing: -2, lineHeight: 1.1 }}>
-          We don't see<br />your files. Ever.
+          Your documents.<br />Your browser.
         </h1>
         <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.7 }}>
-          Last updated: January 2026. This policy explains exactly what data we collect, how we use it, and what we absolutely never do.
+          Last updated: October 2, 2026. This policy separates local document processing from website, infrastructure, and advertising data.
         </p>
         <p style={{ fontSize: 14, color: "#6b7280", marginTop: 12 }}>
-          Want the technical walkthrough behind the claim below?{" "}
-          <a href="/blog/how-browser-based-pdf-processing-works" style={{ color: "#E8380D", fontWeight: 600, textDecoration: "none" }}>
-            See exactly what happens to your file, step by step →
-          </a>
+          For privacy questions, <a href="/contact" style={{ color: "#E8380D" }}>contact Rai Dajai at Dajai Studio</a>.
         </p>
       </div>
 
@@ -27,44 +26,44 @@ export default function Privacy() {
         {[
           {
             num: "01",
-            title: "Your files stay on your device — guaranteed",
-            desc: "PDFcraft processes all PDF files entirely within your web browser using JavaScript. No file, page, or byte of your document is ever transmitted to our servers or any third-party server. This is not a policy promise — it is a technical fact. We have no server to receive your files.",
+            title: "Local document processing",
+            desc: "PDFcraft processes PDF and image contents locally in your browser. The current application does not use a PDF-processing backend to receive document contents. Processing uses browser memory and produces files for you to download. This describes document handling, not every network request made by the website.",
             highlight: true,
           },
           {
             num: "02",
-            title: "We collect zero personal information",
-            desc: "We do not ask for your name, email, phone number, or any personal details. There is no account system. You are completely anonymous when using PDFcraft. We have no idea who you are and no way to find out.",
+            title: "Website and connection data",
+            desc: "No account is required to use the tools. Loading the site and its resources involves requests to hosting and resource providers. Those providers may process connection data such as IP addresses, requested URLs, and browser information. Local document processing does not mean that visiting the website involves no data processing.",
           },
           {
             num: "03",
-            title: "Advertising — how we stay free",
-            desc: "PDFcraft uses Google AdSense to display advertisements. Google may use cookies to show you relevant ads based on your browsing history across the web. This is standard advertising technology used by millions of websites. You can opt out at any time via Google's Ad Settings at adssettings.google.com.",
+            title: "Third-party processing resources",
+            desc: "Some tools download code or runtime files from jsDelivr: PDF-to-image and grayscale load a PDF.js worker, and Protect and Unlock load a qpdf WebAssembly runtime. These downloads involve requests to the CDN. The application uses those resources to process document contents locally; it does not send the documents to the CDN for processing.",
           },
           {
             num: "04",
-            title: "Cookies",
-            desc: "We use only the cookies that Google AdSense requires to function. We do not set any cookies ourselves. We do not use cookies to track, identify, or build profiles of our users.",
+            title: "Advertising choices",
+            desc: "PDFcraft loads Google AdSense advertising resources only after an accepted choice in the cookie banner. Google may use cookies and process advertising or connection data when those resources load. Declining, or leaving the choice unanswered, prevents the consent-dependent advertising script from loading and does not block the core PDF tools. Using the site alone is not treated as acceptance.",
           },
           {
             num: "05",
-            title: "Third party services",
-            desc: "We use Google AdSense for advertising. Google's privacy policy applies to their services. We do not share any data with any other third parties because we do not collect any data to share.",
+            title: "Local consent storage",
+            desc: "PDFcraft stores the accepted or declined choice in this browser’s localStorage under cookies_accepted, when browser storage is available. If storage is unavailable, the choice applies while the current page remains open. Local storage for this preference is separate from cookies that advertising providers may use. Use Advertising preferences at the bottom of the page to revisit your choice. Withdrawing acceptance reloads the page to stop already-loaded advertising code, clearing selected files and unsaved results; download results first. It does not remove cookies already stored by third parties.",
           },
           {
             num: "06",
-            title: "Children",
-            desc: "PDFcraft does not knowingly collect information from children under 13. Our tools are general purpose and designed for adults and working professionals.",
+            title: "Contacting the creator",
+            desc: "If you choose to email support@getpdfcraft.com, your message and email address are shared with the support mailbox and its email infrastructure. Please do not send sensitive documents or passwords in support messages. Contacting support is separate from using the browser tools.",
           },
           {
             num: "07",
-            title: "Changes to this policy",
-            desc: "If we make changes to this privacy policy we will update the date at the top of this page. Continued use of PDFcraft after changes means you accept the updated policy.",
+            title: "Third-party policies",
+            desc: "Hosting, CDN, email, and advertising providers have their own data practices. Local document processing does not guarantee that those providers collect no data. Google’s privacy information is available at the link below.",
           },
           {
             num: "08",
-            title: "Contact",
-            desc: "Questions about this privacy policy? Contact us through Dajai Studio. We will respond to all legitimate privacy inquiries.",
+            title: "Policy updates",
+            desc: "Changes to this policy will be reflected in the revision date above. A policy update does not itself provide advertising consent. For questions about PDFcraft’s implementation or this policy, use the Contact page.",
           },
         ].map(section => (
           <div key={section.num} style={{
@@ -84,6 +83,7 @@ export default function Privacy() {
           </div>
         ))}
       </div>
+      <p><a href="https://policies.google.com/privacy" style={{ color: "#E8380D" }}>Google Privacy Policy</a> · <a href="/contact" style={{ color: "#E8380D" }}>Contact PDFcraft</a></p>
     </div>
   );
 }

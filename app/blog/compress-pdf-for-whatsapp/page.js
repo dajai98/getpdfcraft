@@ -1,67 +1,98 @@
 import BlogPost from "@/components/ui/BlogPost";
 
 export const metadata = {
-  title: "How to Compress PDF for WhatsApp (Under 100MB) Free | PDFcraft",
-  description: "WhatsApp limits PDF files to 100MB. Learn how to compress your PDF to send it on WhatsApp for free in seconds. No app needed.",
-  keywords: "compress pdf for whatsapp, reduce pdf size for whatsapp, pdf too large for whatsapp, send pdf on whatsapp free",
-  alternates: { canonical: "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp" },
-  openGraph: {
-    title: "How to Compress PDF for WhatsApp Free | PDFcraft",
-    description: "WhatsApp limits PDF files to 100MB. Compress your PDF for free in seconds — no app needed.",
-    url: "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp",
-    type: "article",
+  "title": "How to Compress a PDF for WhatsApp | PDFcraft",
+  "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp.",
+  "alternates": {
+    "canonical": "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp"
   },
+  "openGraph": {
+    "title": "How to Compress a PDF for WhatsApp | PDFcraft",
+    "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp.",
+    "url": "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp",
+    "type": "article"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "How to Compress a PDF for WhatsApp | PDFcraft",
+    "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp."
+  }
+};
+
+const article = {
+  "title": "How to Compress a PDF for WhatsApp",
+  "intro": "If a PDF will not send through WhatsApp, first check the current limit and error shown by your app. This guide does not assume a fixed attachment limit. PDFcraft can try structural compression or divide a document into smaller parts, but neither route guarantees that a particular file will be accepted.",
+  "sections": [
+    {
+      "heading": "Try compression and inspect the result",
+      "steps": [
+        {
+          "title": "Keep the original",
+          "body": "Save a copy before processing. Open Compress PDF and select the PDF; processing starts after selection."
+        },
+        {
+          "title": "Compare the displayed sizes",
+          "body": "The tool reports input and output bytes. If the result is unchanged or larger, keep the original when size is your goal."
+        },
+        {
+          "title": "Check and share the chosen file",
+          "body": "Download the useful result, open it to check the pages, then choose that file through your messaging app. Sending it through WhatsApp is a separate sharing action, outside PDFcraft’s local processing."
+        }
+      ]
+    },
+    {
+      "heading": "Why a scan may barely shrink",
+      "text": "Compress PDF loads and saves the document with object streams. It performs structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output can be smaller, unchanged, or larger. Keep the original and compare both size and usability before replacing it."
+    },
+    {
+      "heading": "Split by content if one file is still too large",
+      "text": "For a 12-page document, Page Ranges such as 1-6,7-12 create two separate PDFs. Page count does not predict byte size: a scanned page can be larger than several text pages. Check each output against the limit reported by your app. Do not split a form or signed workflow without checking what the recipient needs."
+    },
+    {
+      "heading": "Tools for this workflow",
+      "list": [
+        {
+          "text": "Try structural compression",
+          "href": "/tools/compress-pdf"
+        },
+        {
+          "text": "Split a PDF into ranges",
+          "href": "/tools/split-pdf"
+        }
+      ]
+    },
+    {
+      "heading": "If sending still fails",
+      "text": "Check the actual app error, connection, and selected file. If your recipient accepts another delivery method, agree on it with them and check its access settings. Repeated compression is not a substitute for diagnosing a non-size error."
+    },
+    {
+      "heading": "Processing on a phone",
+      "text": "PDFcraft processes document contents locally in your browser without a PDF-processing upload backend. That does not mean the page makes no network requests: website resources load over the internet, and some tools download processing components. Advertising resources load after acceptance in the consent banner. Practical limits depend on browser support, device memory, and document complexity."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is WhatsApp’s current PDF limit?",
+      "a": "Check the limit in your current app or the provider’s current documentation. This article does not assert a current number."
+    },
+    {
+      "q": "Will PDFcraft reduce image resolution?",
+      "a": "Compress PDF does not explicitly downsample embedded images. Image-heavy documents may show little reduction or become larger."
+    },
+    {
+      "q": "Does PDFcraft send the file for me?",
+      "a": "No. Download the result and choose how to share it yourself."
+    }
+  ],
+  "ctaHref": "/tools/compress-pdf",
+  "ctaText": "Try structural compression",
+  "tag": "Tips",
+  "tagColor": "#CA8A04",
+  "tagBg": "#FEFCE8",
+  "date": "February 6, 2026",
+  "readTime": "3 min read"
 };
 
 export default function Post() {
-  return (
-    <BlogPost
-      tag="Tips" tagColor="#CA8A04" tagBg="#FEFCE8"
-      title="How to Compress PDF for WhatsApp (Under 100MB) Free"
-      date="February 6, 2026" readTime="5 min read"
-      intro="WhatsApp only allows document files up to 100MB. If your PDF is too large to send, you need to compress it first. PDFcraft compresses PDFs for free in seconds — no app download, no sign up, and your file never leaves your device."
-      sections={[
-        {
-          heading: "WhatsApp PDF size limit explained",
-          text: "WhatsApp allows document files up to 100MB per message. Most PDFs are well under this limit — but scanned documents, presentation exports, image-heavy reports, and multi-page brochures can easily exceed 100MB. When this happens, WhatsApp will refuse to send the file and show a 'File too large' error.",
-        },
-        {
-          heading: "How to compress PDF for WhatsApp — step by step",
-          steps: [
-            { title: "Open PDFcraft Compress tool", body: "Go to PDFcraft and tap Compress PDF. Works on both phone and desktop browser — no app download needed." },
-            { title: "Select your large PDF", body: "Tap 'Select File' and choose the PDF you want to send on WhatsApp. The file is read locally on your device — never uploaded to any server." },
-            { title: "Click Compress PDF", body: "PDFcraft reduces the file size by optimizing images, removing duplicate data, and cleaning up the file structure. This happens instantly in your browser." },
-            { title: "Check the new file size", body: "After compression you will see both the original and new file size. If the compressed file is under 100MB, you are ready to send it on WhatsApp." },
-            { title: "Download the compressed file", body: "Click Download to save the compressed PDF to your device." },
-            { title: "Send on WhatsApp", body: "Open WhatsApp, go to your chat, tap the attachment icon (paperclip), select Document, and choose your compressed PDF. Send it!" },
-          ],
-        },
-        {
-          heading: "What if the PDF is still too large after compression?",
-          text: "If the compressed PDF is still over 100MB, the file likely contains very high resolution images that cannot be compressed further. In this case try splitting the PDF into smaller parts — send it as 2 or 3 separate messages instead of one.",
-        },
-        {
-          heading: "Other ways to send large PDFs on WhatsApp",
-          steps: [
-            { title: "Split the PDF into parts", body: "Use PDFcraft's Split PDF tool to divide your document into smaller sections. Send each part as a separate message. The recipient can merge them back together." },
-            { title: "Send via Google Drive link", body: "Upload the PDF to Google Drive, set sharing to 'Anyone with the link', and paste the link into WhatsApp. No file size limit this way." },
-            { title: "Send via email instead", body: "Gmail and Outlook allow attachments up to 25MB. For larger files they automatically create a Google Drive or OneDrive link." },
-          ],
-        },
-        {
-          tip: "If you need to split the PDF after compressing, use PDFcraft's Split PDF tool — it's completely free and works right in your browser.",
-        },
-      ]}
-      faqs={[
-        { q: "What is WhatsApp's PDF size limit?", a: "WhatsApp allows document files up to 100MB per message. If your PDF exceeds this, you will see a 'File too large' error and need to compress it first." },
-        { q: "Will compressing reduce the PDF quality?", a: "No. PDFcraft doesn't recompress images or text — it only optimizes internal file structure, so visible quality is never affected." },
-        { q: "How much can PDFcraft compress a PDF?", a: "It depends on the file — you'll see the exact size after compressing. PDFcraft optimizes the file's internal structure rather than recompressing images, so results vary; if you're still over 100MB afterward, splitting the file is usually the more reliable fix." },
-        { q: "Is it safe to compress PDFs on my phone?", a: "Yes — PDFcraft works entirely in your browser and never uploads your files. Your PDF stays on your device throughout the entire compression process." },
-        { q: "Can I compress a PDF on iPhone for WhatsApp?", a: "Yes. PDFcraft works on iPhone Safari. Open getpdfcraft.com in Safari, tap Compress PDF, select your file, compress it, and download it to your Photos or Files app. Then send via WhatsApp." },
-        { q: "What if WhatsApp still won't accept the file?", a: "Try splitting the PDF into smaller parts using PDFcraft's Split PDF tool. Send each part as a separate WhatsApp message. Alternatively, share the file via Google Drive link instead." },
-      ]}
-      ctaText="Compress PDF for WhatsApp now — free"
-      ctaHref="/tools/compress-pdf"
-    />
-  );
+  return <BlogPost {...article} />;
 }
