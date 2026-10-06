@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Rotate PDF Pages Free Online | PDFcraft",
-  "description": "Apply 90, 180, or 270 degrees of additional rotation to all pages. PDFcraft does not provide selected-page rotation.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-rotate-pdf"
-  },
-  "openGraph": {
-    "title": "How to Rotate PDF Pages Free Online | PDFcraft",
-    "description": "Apply 90, 180, or 270 degrees of additional rotation to all pages. PDFcraft does not provide selected-page rotation.",
-    "url": "https://getpdfcraft.com/blog/how-to-rotate-pdf",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-rotate-pdf");
 export default function Post() {
   return (
     <BlogPost tag={"Rotate PDF"} tagColor="#2563EB" tagBg="#EFF6FF"

@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
-  "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/split-pdf-into-two"
-  },
-  "openGraph": {
-    "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
-    "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes.",
-    "url": "https://getpdfcraft.com/blog/split-pdf-into-two",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Split a PDF into Two Files by Page Range | PDFcraft",
-    "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes."
-  }
-};
+export const metadata = blogMetadata("split-pdf-into-two");
 
 const article = {
   "title": "How to Split a PDF into Two Files by Page Range",

@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Convert JPG to PDF Free Online | PDFcraft",
-  "description": "Convert validated JPEG/JPG and PNG images into PDF pages. Check insertion order and physical page dimensions before sharing.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-convert-jpg-to-pdf"
-  },
-  "openGraph": {
-    "title": "How to Convert JPG to PDF Free Online | PDFcraft",
-    "description": "Convert validated JPEG/JPG and PNG images into PDF pages. Check insertion order and physical page dimensions before sharing.",
-    "url": "https://getpdfcraft.com/blog/how-to-convert-jpg-to-pdf",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-convert-jpg-to-pdf");
 export default function Post() {
   return (
     <BlogPost tag={"Convert"} tagColor="#DC2626" tagBg="#FEF2F2"

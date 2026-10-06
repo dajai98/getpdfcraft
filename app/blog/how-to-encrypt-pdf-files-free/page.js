@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Encrypt a PDF with Password-Based AES-256 | PDFcraft",
-  "description": "Use PDFcraft Protect PDF to create password-based AES-256 encryption, verify the output, and understand its limits.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-encrypt-pdf-files-free"
-  },
-  "openGraph": {
-    "title": "How to Encrypt a PDF with Password-Based AES-256 | PDFcraft",
-    "description": "Use PDFcraft Protect PDF to create password-based AES-256 encryption, verify the output, and understand its limits.",
-    "url": "https://getpdfcraft.com/blog/how-to-encrypt-pdf-files-free",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Encrypt a PDF with Password-Based AES-256 | PDFcraft",
-    "description": "Use PDFcraft Protect PDF to create password-based AES-256 encryption, verify the output, and understand its limits."
-  }
-};
+export const metadata = blogMetadata("how-to-encrypt-pdf-files-free");
 
 const article = {
   "title": "How to Encrypt a PDF with Password-Based AES-256",

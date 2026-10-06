@@ -32,7 +32,7 @@ export default function WatermarkPDF() {
 
   return (
     <ToolLayout tag="Watermark PDF" tagBg="#FAF5FF" tagColor="#9333EA"
-      title="Add Watermark to PDF" desc="Stamp your PDF with a custom text watermark. Free and private."
+      title="Add Watermark to PDF" desc="Add a text watermark with opacity control. Document processing happens locally in your browser."
       current="/tools/watermark-pdf" faqs={[
   { q: "Can I use any text for the watermark?", a: "Yes. Type text supported by the built-in font such as CONFIDENTIAL, DRAFT, your name, or company name." },
   { q: "Can I remove a watermark from a PDF?", a: "PDFcraft does not remove watermarks. Watermark removal requires specialized software." },

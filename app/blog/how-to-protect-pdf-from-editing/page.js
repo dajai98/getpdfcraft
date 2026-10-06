@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do | PDFcraft",
-  "description": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-protect-pdf-from-editing"
-  },
-  "openGraph": {
-    "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do | PDFcraft",
-    "description": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof.",
-    "url": "https://getpdfcraft.com/blog/how-to-protect-pdf-from-editing",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do | PDFcraft",
-    "description": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof."
-  }
-};
+export const metadata = blogMetadata("how-to-protect-pdf-from-editing");
 
 const article = {
   "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do",

@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Extract Selected PDF Pages and Ranges | PDFcraft",
-  "description": "Extract selected pages with Split PDF. Each comma-separated item creates a separate file; merge outputs when you need one combined selection.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-extract-pages-from-pdf"
-  },
-  "openGraph": {
-    "title": "How to Extract Selected PDF Pages and Ranges | PDFcraft",
-    "description": "Extract selected pages with Split PDF. Each comma-separated item creates a separate file; merge outputs when you need one combined selection.",
-    "url": "https://getpdfcraft.com/blog/how-to-extract-pages-from-pdf",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Extract Selected PDF Pages and Ranges | PDFcraft",
-    "description": "Extract selected pages with Split PDF. Each comma-separated item creates a separate file; merge outputs when you need one combined selection."
-  }
-};
+export const metadata = blogMetadata("how-to-extract-pages-from-pdf");
 
 const article = {
   "title": "How to Extract Selected PDF Pages and Ranges",

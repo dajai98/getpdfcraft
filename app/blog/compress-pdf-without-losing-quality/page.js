@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Compress PDF Without Losing Quality | PDFcraft",
-  "description": "Try structural PDF compression without explicit image downsampling. Compare sizes and inspect the output; savings are not guaranteed.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/compress-pdf-without-losing-quality"
-  },
-  "openGraph": {
-    "title": "How to Compress PDF Without Losing Quality | PDFcraft",
-    "description": "Try structural PDF compression without explicit image downsampling. Compare sizes and inspect the output; savings are not guaranteed.",
-    "url": "https://getpdfcraft.com/blog/compress-pdf-without-losing-quality",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("compress-pdf-without-losing-quality");
 
 export default function Post() {
   return (

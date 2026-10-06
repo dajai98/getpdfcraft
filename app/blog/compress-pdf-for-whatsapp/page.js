@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Compress a PDF for WhatsApp | PDFcraft",
-  "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp"
-  },
-  "openGraph": {
-    "title": "How to Compress a PDF for WhatsApp | PDFcraft",
-    "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp.",
-    "url": "https://getpdfcraft.com/blog/compress-pdf-for-whatsapp",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Compress a PDF for WhatsApp | PDFcraft",
-    "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp."
-  }
-};
+export const metadata = blogMetadata("compress-pdf-for-whatsapp");
 
 const article = {
   "title": "How to Compress a PDF for WhatsApp",

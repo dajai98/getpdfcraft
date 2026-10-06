@@ -32,7 +32,7 @@ export default function Layout({ children }) {
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>How to compress a PDF online — step by step</h2>
         <ol style={{ fontSize: 15, color: "#6b7280", lineHeight: 2, paddingLeft: 20, marginBottom: 16 }}>
           <li>Click <strong>Select File</strong> or drag your PDF into the upload area</li>
-          <li>Your PDF loads locally in the browser — never uploaded anywhere</li>
+          <li>Your PDF is processed locally in the browser, without a PDF-processing upload backend</li>
           <li>Processing starts automatically when you select a file</li>
           <li>See the original vs new file size comparison</li>
           <li>Click <strong>Download</strong> to save the compressed PDF</li>

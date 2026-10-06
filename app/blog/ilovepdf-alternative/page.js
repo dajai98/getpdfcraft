@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "An iLovePDF Alternative for Local PDF Workflows | PDFcraft",
-  "description": "Evaluate PDFcraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/ilovepdf-alternative"
-  },
-  "openGraph": {
-    "title": "An iLovePDF Alternative for Local PDF Workflows | PDFcraft",
-    "description": "Evaluate PDFcraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies.",
-    "url": "https://getpdfcraft.com/blog/ilovepdf-alternative",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "An iLovePDF Alternative for Local PDF Workflows | PDFcraft",
-    "description": "Evaluate PDFcraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies."
-  }
-};
+export const metadata = blogMetadata("ilovepdf-alternative");
 
 const article = {
   "title": "An iLovePDF Alternative for Local PDF Workflows",

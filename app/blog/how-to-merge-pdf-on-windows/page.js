@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Merge PDF on Windows Without Installing an App | PDFcraft",
-  "description": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows"
-  },
-  "openGraph": {
-    "title": "How to Merge PDF on Windows Without Installing an App | PDFcraft",
-    "description": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow.",
-    "url": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-windows",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-merge-pdf-on-windows");
 export default function Post() {
   return (
     <BlogPost tag={"Windows"} tagColor="#2563EB" tagBg="#EFF6FF"

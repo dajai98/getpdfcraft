@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Merge PDF on Mac Free (3 Easy Ways) | PDFcraft",
-  "description": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac"
-  },
-  "openGraph": {
-    "title": "How to Merge PDF on Mac Free (3 Easy Ways) | PDFcraft",
-    "description": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output.",
-    "url": "https://getpdfcraft.com/blog/how-to-merge-pdf-on-mac",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-merge-pdf-on-mac");
 export default function Post() {
   return (
     <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"

@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks | PDFcraft",
-  "description": "See which PDF tasks PDFcraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/adobe-acrobat-alternative-free"
-  },
-  "openGraph": {
-    "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks | PDFcraft",
-    "description": "See which PDF tasks PDFcraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence.",
-    "url": "https://getpdfcraft.com/blog/adobe-acrobat-alternative-free",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks | PDFcraft",
-    "description": "See which PDF tasks PDFcraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence."
-  }
-};
+export const metadata = blogMetadata("adobe-acrobat-alternative-free");
 
 const article = {
   "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks",

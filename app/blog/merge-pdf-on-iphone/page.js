@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Merge PDF on iPhone Free (No App Needed) | PDFcraft",
-  "description": "Merge PDFs in insertion order using an iPhone browser. Check browser support and locate downloads through your chosen settings.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/merge-pdf-on-iphone"
-  },
-  "openGraph": {
-    "title": "How to Merge PDF on iPhone Free (No App Needed) | PDFcraft",
-    "description": "Merge PDFs in insertion order using an iPhone browser. Check browser support and locate downloads through your chosen settings.",
-    "url": "https://getpdfcraft.com/blog/merge-pdf-on-iphone",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("merge-pdf-on-iphone");
 export default function Post() {
   return (
     <BlogPost tag={"iPhone"} tagColor="#2563EB" tagBg="#EFF6FF"

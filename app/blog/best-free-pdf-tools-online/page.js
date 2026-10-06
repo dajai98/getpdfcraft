@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "13 Free PDFcraft Tools: What Each One Actually Does | PDFcraft",
-  "description": "A practical guide to all 13 PDFcraft tools, supported formats, controls, and limitations.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/best-free-pdf-tools-online"
-  },
-  "openGraph": {
-    "title": "13 Free PDFcraft Tools: What Each One Actually Does | PDFcraft",
-    "description": "A practical guide to all 13 PDFcraft tools, supported formats, controls, and limitations.",
-    "url": "https://getpdfcraft.com/blog/best-free-pdf-tools-online",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "13 Free PDFcraft Tools: What Each One Actually Does | PDFcraft",
-    "description": "A practical guide to all 13 PDFcraft tools, supported formats, controls, and limitations."
-  }
-};
+export const metadata = blogMetadata("best-free-pdf-tools-online");
 
 const article = {
   "title": "13 Free PDFcraft Tools: What Each One Actually Does",

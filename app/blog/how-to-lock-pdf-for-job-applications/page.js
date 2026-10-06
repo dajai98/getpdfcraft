@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Lock PDF for Job Applications | PDFcraft",
-  "description": "Check submission requirements before password-protecting application PDFs. Verify format, size, and recipient access.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-lock-pdf-for-job-applications"
-  },
-  "openGraph": {
-    "title": "How to Lock PDF for Job Applications | PDFcraft",
-    "description": "Check submission requirements before password-protecting application PDFs. Verify format, size, and recipient access.",
-    "url": "https://getpdfcraft.com/blog/how-to-lock-pdf-for-job-applications",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-lock-pdf-for-job-applications");
 export default function Post() {
   return (
     <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"

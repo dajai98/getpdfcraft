@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Lock PDF on iPhone Free (No App Needed) | PDFcraft",
-  "description": "Try AES-256 password protection in your iPhone browser. Check runtime loading, the saved output, and device limitations.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/lock-pdf-on-iphone"
-  },
-  "openGraph": {
-    "title": "How to Lock PDF on iPhone Free (No App Needed) | PDFcraft",
-    "description": "Try AES-256 password protection in your iPhone browser. Check runtime loading, the saved output, and device limitations.",
-    "url": "https://getpdfcraft.com/blog/lock-pdf-on-iphone",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("lock-pdf-on-iphone");
 export default function Post() {
   return (
     <BlogPost tag={"iPhone"} tagColor="#2563EB" tagBg="#EFF6FF"

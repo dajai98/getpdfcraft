@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
-  "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-compression-real-test-results"
-  },
-  "openGraph": {
-    "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
-    "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks.",
-    "url": "https://getpdfcraft.com/blog/pdf-compression-real-test-results",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
-    "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks."
-  }
-};
+export const metadata = blogMetadata("pdf-compression-real-test-results");
 
 export default function Post() {
   return (

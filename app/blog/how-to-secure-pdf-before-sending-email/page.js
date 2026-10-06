@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Secure a PDF Before Sending by Email | PDFcraft",
-  "description": "Prepare an unencrypted copy, try compression if needed, then password-protect it. Check the recipient and final attachment requirements.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-secure-pdf-before-sending-email"
-  },
-  "openGraph": {
-    "title": "How to Secure a PDF Before Sending by Email | PDFcraft",
-    "description": "Prepare an unencrypted copy, try compression if needed, then password-protect it. Check the recipient and final attachment requirements.",
-    "url": "https://getpdfcraft.com/blog/how-to-secure-pdf-before-sending-email",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-secure-pdf-before-sending-email");
 export default function Post() {
   return (
     <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"

@@ -7,7 +7,7 @@ import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
   { q: "Why convert PDF to grayscale?", a: "Use this tool to create grayscale page images in a PDF. The output may be larger than the original." },
-  { q: "What does the conversion preserve?", a: "It preserves the visible page appearance in grayscale and the displayed physical page size. Pages become JPEG images: searchable text, interactive links, forms, bookmarks, digital signatures and other PDF semantics are not preserved." },
+  { q: "What does the conversion preserve?", a: "It renders visible pages as grayscale JPEG images at the displayed physical page size. Rendering and JPEG encoding can change detail; searchable text, interactive links, forms, bookmarks, digital signatures and other PDF semantics are not preserved." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
 ];

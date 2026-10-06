@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "PDF Security Guide — How to Protect Your Documents | PDFcraft",
-  "description": "Distinguish opening-password encryption, visible labels, and signatures. Understand PDFcraft’s security and redaction limitations.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-security-guide"
-  },
-  "openGraph": {
-    "title": "PDF Security Guide — How to Protect Your Documents | PDFcraft",
-    "description": "Distinguish opening-password encryption, visible labels, and signatures. Understand PDFcraft’s security and redaction limitations.",
-    "url": "https://getpdfcraft.com/blog/pdf-security-guide",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("pdf-security-guide");
 export default function Post() {
   return (
     <BlogPost tag={"Security"} tagColor="#DC2626" tagBg="#FEF2F2"

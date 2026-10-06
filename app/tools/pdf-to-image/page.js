@@ -84,7 +84,7 @@ export default function PDFToImage() {
 
   return (
     <ToolLayout tag="PDF to Image" tagBg="#F0FDF4" tagColor="#16A34A"
-      title="PDF to Image" desc="Convert every PDF page to JPG or PNG. High quality, free, no watermark."
+      title="PDF to Image" desc="Render every PDF page to JPG or PNG at a fixed 2x scale. Free to use; no PDFcraft branding watermark."
       current="/tools/pdf-to-image" faqs={faqs}>
 
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (

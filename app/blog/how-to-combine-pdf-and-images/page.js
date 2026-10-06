@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Combine PDF and Images Into One File Free | PDFcraft",
-  "description": "Convert JPEG/JPG and PNG images to PDF, merge in insertion order, then adjust pages with Up/Down controls.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-combine-pdf-and-images"
-  },
-  "openGraph": {
-    "title": "How to Combine PDF and Images Into One File Free | PDFcraft",
-    "description": "Convert JPEG/JPG and PNG images to PDF, merge in insertion order, then adjust pages with Up/Down controls.",
-    "url": "https://getpdfcraft.com/blog/how-to-combine-pdf-and-images",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-combine-pdf-and-images");
 
 export default function Post() {
   return (

@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Password-Protect a PDF on Mac | PDFcraft",
-  "description": "Try PDFcraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/secure-pdf-on-mac"
-  },
-  "openGraph": {
-    "title": "How to Password-Protect a PDF on Mac | PDFcraft",
-    "description": "Try PDFcraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility.",
-    "url": "https://getpdfcraft.com/blog/secure-pdf-on-mac",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("secure-pdf-on-mac");
 export default function Post() {
   return (
     <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"

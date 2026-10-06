@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How PDFcraft Processes Files Locally in Your Browser | PDFcraft",
-  "description": "Follow PDFcraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-browser-based-pdf-processing-works"
-  },
-  "openGraph": {
-    "title": "How PDFcraft Processes Files Locally in Your Browser | PDFcraft",
-    "description": "Follow PDFcraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests.",
-    "url": "https://getpdfcraft.com/blog/how-browser-based-pdf-processing-works",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How PDFcraft Processes Files Locally in Your Browser | PDFcraft",
-    "description": "Follow PDFcraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests."
-  }
-};
+export const metadata = blogMetadata("how-browser-based-pdf-processing-works");
 
 const article = {
   "title": "How PDFcraft Processes Files Locally in Your Browser",

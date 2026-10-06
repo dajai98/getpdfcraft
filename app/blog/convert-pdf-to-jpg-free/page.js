@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
-  "description": "Render PDF pages to JPG or PNG at a fixed 2x scale. Learn the raster-quality limits, password requirements, and download behavior.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free"
-  },
-  "openGraph": {
-    "title": "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
-    "description": "Render PDF pages to JPG or PNG at a fixed 2x scale. Learn the raster-quality limits, password requirements, and download behavior.",
-    "url": "https://getpdfcraft.com/blog/convert-pdf-to-jpg-free",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("convert-pdf-to-jpg-free");
 
 export default function Post() {
   return (

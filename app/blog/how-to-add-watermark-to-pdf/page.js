@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Add Watermark to PDF Free Online | PDFcraft",
-  "description": "Add a text watermark with opacity control. Placement, angle, and size follow fixed behavior; watermarking does not prevent editing.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-add-watermark-to-pdf"
-  },
-  "openGraph": {
-    "title": "How to Add Watermark to PDF Free Online | PDFcraft",
-    "description": "Add a text watermark with opacity control. Placement, angle, and size follow fixed behavior; watermarking does not prevent editing.",
-    "url": "https://getpdfcraft.com/blog/how-to-add-watermark-to-pdf",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-add-watermark-to-pdf");
 
 export default function Post() {
   return (

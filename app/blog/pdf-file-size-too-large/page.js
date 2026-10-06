@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "PDF File Size Too Large? How to Fix It Free | PDFcraft",
-  "description": "Diagnose a large PDF, compare structural compression, and consider page ranges or source export settings without promised savings.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-file-size-too-large"
-  },
-  "openGraph": {
-    "title": "PDF File Size Too Large? How to Fix It Free | PDFcraft",
-    "description": "Diagnose a large PDF, compare structural compression, and consider page ranges or source export settings without promised savings.",
-    "url": "https://getpdfcraft.com/blog/pdf-file-size-too-large",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("pdf-file-size-too-large");
 export default function Post() {
   return (
     <BlogPost tag={"Tips"} tagColor="#CA8A04" tagBg="#FEFCE8"

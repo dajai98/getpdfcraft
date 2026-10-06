@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Merge PDF Files Free Online — No Sign Up | PDFcraft",
-  "description": "Combine PDFs in insertion order with PDFcraft. Check page order, encrypted inputs, and practical browser limits.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-merge-pdf-free"
-  },
-  "openGraph": {
-    "title": "How to Merge PDF Files Free Online — No Sign Up | PDFcraft",
-    "description": "Combine PDFs in insertion order with PDFcraft. Check page order, encrypted inputs, and practical browser limits.",
-    "url": "https://getpdfcraft.com/blog/how-to-merge-pdf-free",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-merge-pdf-free");
 export default function Post() {
   return (
     <BlogPost tag={"Merge PDF"} tagColor="#DC2626" tagBg="#FEF2F2"

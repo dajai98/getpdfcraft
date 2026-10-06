@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "Why Is My PDF Locked? Diagnose the Actual Problem | PDFcraft",
-  "description": "Distinguish password prompts, editing restrictions, viewer limitations, and damaged files before trying to unlock a PDF.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/why-is-my-pdf-locked"
-  },
-  "openGraph": {
-    "title": "Why Is My PDF Locked? Diagnose the Actual Problem | PDFcraft",
-    "description": "Distinguish password prompts, editing restrictions, viewer limitations, and damaged files before trying to unlock a PDF.",
-    "url": "https://getpdfcraft.com/blog/why-is-my-pdf-locked",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "Why Is My PDF Locked? Diagnose the Actual Problem | PDFcraft",
-    "description": "Distinguish password prompts, editing restrictions, viewer limitations, and damaged files before trying to unlock a PDF."
-  }
-};
+export const metadata = blogMetadata("why-is-my-pdf-locked");
 
 const article = {
   "title": "Why Is My PDF Locked? Diagnose the Actual Problem",

@@ -10,7 +10,7 @@ import DownloadButton from "@/components/ui/DownloadButton";
 const faqs = [
   { q: "Can I delete multiple pages at once?", a: "Yes. Select as many pages as you want to delete and they will all be removed in one go." },
   { q: "Does this securely erase page content?", a: "No. This tool removes pages from the visible document structure. Removed content may remain recoverable in PDF objects. It is not a secure redaction or sanitization tool." },
-  { q: "Can I preview pages before deleting?", a: "You can see the page numbers and select which ones to delete. Preview thumbnails are on our roadmap." },
+  { q: "Can I preview pages before deleting?", a: "The tool shows page numbers for selection, not page thumbnails. Check the original in a PDF viewer before choosing pages." },
   { q: "Is the original file changed?", a: "No. PDFcraft creates a new file with the pages removed. Your original PDF is not affected." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "What if I delete the wrong page?", a: "Simply upload the original file again and start over. The original is never modified." },
@@ -52,7 +52,7 @@ export default function DeletePages() {
   return (
     <ToolLayout
       tag="Delete Pages" tagBg="#FEF2F2" tagColor="#DC2626"
-      title="Delete PDF Pages" desc="Remove unwanted pages from your PDF in your browser. Free, private, no sign up needed."
+      title="Delete PDF Pages" desc="Remove unwanted pages from the visible PDF document. Local processing; not secure redaction."
       current="/tools/delete-pages" faqs={faqs}
     >
       <p role="note">This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.</p>

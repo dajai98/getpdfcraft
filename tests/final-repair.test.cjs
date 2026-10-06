@@ -24,7 +24,7 @@ function loadModule(p,cache={}) {
   return m.exports;
 }
 (async()=>{
-  for(const p of [...walk('lib'),...walk('components/hooks'),...walk('app/tools').filter(p=>p.endsWith('/page.js')),'components/ui/CookieBanner.js']) {
+  for(const p of [...walk('lib').filter(p=>p.endsWith('.js')),...walk('components/hooks'),...walk('app/tools').filter(p=>p.endsWith('/page.js')),'components/ui/CookieBanner.js']) {
     compiled[p]=(await swc.transform(read(p),{filename:p,jsc:{parser:{syntax:'ecmascript',jsx:true},transform:{react:{runtime:'classic'}},target:'es2022'},module:{type:'commonjs'}})).code;
   }
   pdfjs=await import('file:///'+root+'/node_modules/pdfjs-dist/legacy/build/pdf.mjs');

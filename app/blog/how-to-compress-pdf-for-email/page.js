@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Compress a PDF for Email | PDFcraft",
-  "description": "Try structural compression for an email attachment, compare output sizes, and check the receiving service’s current limit.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-compress-pdf-for-email"
-  },
-  "openGraph": {
-    "title": "How to Compress a PDF for Email | PDFcraft",
-    "description": "Try structural compression for an email attachment, compare output sizes, and check the receiving service’s current limit.",
-    "url": "https://getpdfcraft.com/blog/how-to-compress-pdf-for-email",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-compress-pdf-for-email");
 
 export default function Post() {
   return (

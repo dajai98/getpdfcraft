@@ -8,7 +8,7 @@ import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
   { q: "Can I choose where the page number appears?", a: "Yes. Choose from bottom center, bottom right, bottom left, top center, top right, or top left." },
-  { q: "Can I set a custom starting number?", a: "Yes. Set any starting number you want — useful if your PDF is a chapter that starts at page 50 for example." },
+  { q: "Can I set a custom starting number?", a: "Yes. Choose a starting number for the sequence, for example 50 for a chapter. The default is 1." },
   { q: "Can I change the font size?", a: "Yes. Choose from small, medium, or large page numbers." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Will adding page numbers change anything else?", a: "The tool adds page numbers. Review the result and keep your original; PDF rewriting can affect signatures and other document features." },

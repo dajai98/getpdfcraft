@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Split PDF Online Free — No Sign Up | PDFcraft",
-  "description": "Split into individual pages or explicit ranges. Each comma-separated item creates a separate PDF; equal splitting is not automatic.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-split-pdf-online"
-  },
-  "openGraph": {
-    "title": "How to Split PDF Online Free — No Sign Up | PDFcraft",
-    "description": "Split into individual pages or explicit ranges. Each comma-separated item creates a separate PDF; equal splitting is not automatic.",
-    "url": "https://getpdfcraft.com/blog/how-to-split-pdf-online",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-split-pdf-online");
 export default function Post() {
   return (
     <BlogPost tag={"Split PDF"} tagColor="#EA580C" tagBg="#FFF7ED"

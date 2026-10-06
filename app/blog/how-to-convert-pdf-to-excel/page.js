@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Convert PDF to Excel: Options and Checks | PDFcraft",
-  "description": "Evaluate a separate PDF table-extraction workflow and verify spreadsheet data. PDFcraft does not provide PDF-to-Excel conversion or OCR.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-convert-pdf-to-excel"
-  },
-  "openGraph": {
-    "title": "How to Convert PDF to Excel: Options and Checks | PDFcraft",
-    "description": "Evaluate a separate PDF table-extraction workflow and verify spreadsheet data. PDFcraft does not provide PDF-to-Excel conversion or OCR.",
-    "url": "https://getpdfcraft.com/blog/how-to-convert-pdf-to-excel",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-convert-pdf-to-excel");
 export default function Post() {
   return (
     <BlogPost tag={"Convert"} tagColor="#16A34A" tagBg="#F0FDF4"

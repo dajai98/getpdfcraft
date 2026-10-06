@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Remove a PDF Password You Already Know | PDFcraft",
-  "description": "Unlock an authorized PDF with its correct password. Understand error messages, output checks, and what the tool cannot recover.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-remove-password-from-pdf"
-  },
-  "openGraph": {
-    "title": "How to Remove a PDF Password You Already Know | PDFcraft",
-    "description": "Unlock an authorized PDF with its correct password. Understand error messages, output checks, and what the tool cannot recover.",
-    "url": "https://getpdfcraft.com/blog/how-to-remove-password-from-pdf",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Remove a PDF Password You Already Know | PDFcraft",
-    "description": "Unlock an authorized PDF with its correct password. Understand error messages, output checks, and what the tool cannot recover."
-  }
-};
+export const metadata = blogMetadata("how-to-remove-password-from-pdf");
 
 const article = {
   "title": "How to Remove a PDF Password You Already Know",

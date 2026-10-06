@@ -99,7 +99,7 @@ export default function ProtectPDF() {
             style={{ width: "100%", padding: "12px 16px", border: "1px solid #e5e7eb", borderRadius: 10, fontSize: 15, fontFamily: "inherit", boxSizing: "border-box" }}
           />
         </div>
-        <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>💡 Use at least 8 characters with letters, numbers, and symbols for best security.</p>
+        <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.</p>
       </div>
 
       {error && (

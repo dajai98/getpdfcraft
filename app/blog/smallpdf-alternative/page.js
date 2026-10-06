@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task | PDFcraft",
-  "description": "Consider PDFcraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/smallpdf-alternative"
-  },
-  "openGraph": {
-    "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task | PDFcraft",
-    "description": "Consider PDFcraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability.",
-    "url": "https://getpdfcraft.com/blog/smallpdf-alternative",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task | PDFcraft",
-    "description": "Consider PDFcraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability."
-  }
-};
+export const metadata = blogMetadata("smallpdf-alternative");
 
 const article = {
   "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task",

@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "What is a PDF File? Complete Guide 2026 | PDFcraft",
-  "description": "Understand fixed-layout PDF pages, common features, viewer limitations, and PDFcraft’s available page tools.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/what-is-pdf"
-  },
-  "openGraph": {
-    "title": "What is a PDF File? Complete Guide 2026 | PDFcraft",
-    "description": "Understand fixed-layout PDF pages, common features, viewer limitations, and PDFcraft’s available page tools.",
-    "url": "https://getpdfcraft.com/blog/what-is-pdf",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("what-is-pdf");
 export default function Post() {
   return (
     <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"

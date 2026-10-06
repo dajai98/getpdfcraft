@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --config eslint.config.mjs app components lib"
+    "lint": "eslint --config eslint.config.mjs app components lib",
+    "prebuild": "node scripts/generate-sitemap.cjs --write",
+    "check:sitemap": "node scripts/generate-sitemap.cjs --check",
+    "test:content": "node tests/content-integrity.test.cjs"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.7.1",

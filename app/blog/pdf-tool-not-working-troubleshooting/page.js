@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "Why Isn't My PDF Tool Working? A Troubleshooting Guide | PDFcraft",
-  "description": "Check actual errors, input validity, encrypted documents, browser resources, runtime downloads, and output-download settings.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-tool-not-working-troubleshooting"
-  },
-  "openGraph": {
-    "title": "Why Isn't My PDF Tool Working? A Troubleshooting Guide | PDFcraft",
-    "description": "Check actual errors, input validity, encrypted documents, browser resources, runtime downloads, and output-download settings.",
-    "url": "https://getpdfcraft.com/blog/pdf-tool-not-working-troubleshooting",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "Why Isn't My PDF Tool Working? A Troubleshooting Guide | PDFcraft",
-    "description": "Check actual errors, input validity, encrypted documents, browser resources, runtime downloads, and output-download settings."
-  }
-};
+export const metadata = blogMetadata("pdf-tool-not-working-troubleshooting");
 
 export default function Post() {
   return (

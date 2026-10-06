@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
-  "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe"
-  },
-  "openGraph": {
-    "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
-    "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures.",
-    "url": "https://getpdfcraft.com/blog/how-to-lock-pdf-without-adobe",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Password-Protect a PDF Without Adobe | PDFcraft",
-    "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures."
-  }
-};
+export const metadata = blogMetadata("how-to-lock-pdf-without-adobe");
 
 const article = {
   "title": "How to Password-Protect a PDF Without Adobe",

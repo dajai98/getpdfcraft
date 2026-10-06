@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Password Protect PDF on Android Free | PDFcraft",
-  "description": "Try AES-256 PDF password protection in an Android browser. Confirm the password, runtime loading, and downloaded result.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/password-protect-pdf-on-android"
-  },
-  "openGraph": {
-    "title": "How to Password Protect PDF on Android Free | PDFcraft",
-    "description": "Try AES-256 PDF password protection in an Android browser. Confirm the password, runtime loading, and downloaded result.",
-    "url": "https://getpdfcraft.com/blog/password-protect-pdf-on-android",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("password-protect-pdf-on-android");
 export default function Post() {
   return (
     <BlogPost tag={"Android"} tagColor="#16A34A" tagBg="#F0FDF4"

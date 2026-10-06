@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "Reduce PDF Size Without Installing Software: A Decision Guide | PDFcraft",
-  "description": "Try structural compression, compare the output, and choose page extraction or source re-export when compression is not enough.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/reduce-pdf-size-without-software"
-  },
-  "openGraph": {
-    "title": "Reduce PDF Size Without Installing Software: A Decision Guide | PDFcraft",
-    "description": "Try structural compression, compare the output, and choose page extraction or source re-export when compression is not enough.",
-    "url": "https://getpdfcraft.com/blog/reduce-pdf-size-without-software",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "Reduce PDF Size Without Installing Software: A Decision Guide | PDFcraft",
-    "description": "Try structural compression, compare the output, and choose page extraction or source re-export when compression is not enough."
-  }
-};
+export const metadata = blogMetadata("reduce-pdf-size-without-software");
 
 const article = {
   "title": "Reduce PDF Size Without Installing Software: A Decision Guide",

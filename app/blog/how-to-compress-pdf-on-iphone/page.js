@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Compress PDF on iPhone Free (No App Needed) | PDFcraft",
-  "description": "Try browser-based PDF compression on iPhone. Compare actual byte counts and locate downloads using your browser’s settings.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-compress-pdf-on-iphone"
-  },
-  "openGraph": {
-    "title": "How to Compress PDF on iPhone Free (No App Needed) | PDFcraft",
-    "description": "Try browser-based PDF compression on iPhone. Compare actual byte counts and locate downloads using your browser’s settings.",
-    "url": "https://getpdfcraft.com/blog/how-to-compress-pdf-on-iphone",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-compress-pdf-on-iphone");
 export default function Post() {
   return (
     <BlogPost tag={"iPhone"} tagColor="#2563EB" tagBg="#EFF6FF"

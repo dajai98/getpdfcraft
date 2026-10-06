@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "PDF vs Word — Which Format Should You Use? | PDFcraft",
-  "description": "Choose fixed-layout PDF or an editable document format according to recipient needs, with realistic compatibility and security limits.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-vs-word-which-is-better"
-  },
-  "openGraph": {
-    "title": "PDF vs Word — Which Format Should You Use? | PDFcraft",
-    "description": "Choose fixed-layout PDF or an editable document format according to recipient needs, with realistic compatibility and security limits.",
-    "url": "https://getpdfcraft.com/blog/pdf-vs-word-which-is-better",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("pdf-vs-word-which-is-better");
 export default function Post() {
   return (
     <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"

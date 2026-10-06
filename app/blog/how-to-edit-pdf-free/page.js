@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
-  "description": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-edit-pdf-free"
-  },
-  "openGraph": {
-    "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
-    "description": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool.",
-    "url": "https://getpdfcraft.com/blog/how-to-edit-pdf-free",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-edit-pdf-free");
 export default function Post() {
   return (
     <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"

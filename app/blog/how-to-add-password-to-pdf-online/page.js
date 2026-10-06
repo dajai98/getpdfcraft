@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Add Password to PDF Online Free | PDFcraft",
-  "description": "Add tested AES-256 password encryption to an unencrypted PDF. Verify the output and understand access-control limitations.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-add-password-to-pdf-online"
-  },
-  "openGraph": {
-    "title": "How to Add Password to PDF Online Free | PDFcraft",
-    "description": "Add tested AES-256 password encryption to an unencrypted PDF. Verify the output and understand access-control limitations.",
-    "url": "https://getpdfcraft.com/blog/how-to-add-password-to-pdf-online",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("how-to-add-password-to-pdf-online");
 export default function Post() {
   return (
     <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"

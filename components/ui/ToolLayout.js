@@ -1,4 +1,5 @@
 "use client";
+import ToolGuides from "@/components/ui/ToolGuides";
 import RelatedTools from "@/components/ui/RelatedTools";
 import FAQSchema from "@/components/ui/FAQSchema";
 
@@ -50,6 +51,8 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
             }}>
               {children}
             </div>
+
+            <ToolGuides current={current} />
 
             {/* FAQ Section */}
             {faqs && faqs.length > 0 && (

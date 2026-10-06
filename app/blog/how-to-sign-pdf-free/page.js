@@ -1,23 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
-  "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/how-to-sign-pdf-free"
-  },
-  "openGraph": {
-    "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
-    "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature.",
-    "url": "https://getpdfcraft.com/blog/how-to-sign-pdf-free",
-    "type": "article"
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "How to Sign a PDF: Options Outside PDFcraft | PDFcraft",
-    "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature."
-  }
-};
+export const metadata = blogMetadata("how-to-sign-pdf-free");
 
 const article = {
   "title": "How to Sign a PDF: Options Outside PDFcraft",

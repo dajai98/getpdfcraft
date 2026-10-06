@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Merge PDF on Android Free (No App Needed) | PDFcraft",
-  "description": "Merge PDFs in insertion order using an Android browser. File selection and download locations depend on your system.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/merge-pdf-on-android"
-  },
-  "openGraph": {
-    "title": "How to Merge PDF on Android Free (No App Needed) | PDFcraft",
-    "description": "Merge PDFs in insertion order using an Android browser. File selection and download locations depend on your system.",
-    "url": "https://getpdfcraft.com/blog/merge-pdf-on-android",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("merge-pdf-on-android");
 export default function Post() {
   return (
     <BlogPost tag={"Android"} tagColor="#16A34A" tagBg="#F0FDF4"

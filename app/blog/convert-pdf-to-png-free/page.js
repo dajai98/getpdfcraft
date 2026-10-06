@@ -1,18 +1,7 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
 
-export const metadata = {
-  "title": "How to Convert PDF to PNG Free Online | PDFcraft",
-  "description": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/convert-pdf-to-png-free"
-  },
-  "openGraph": {
-    "title": "How to Convert PDF to PNG Free Online | PDFcraft",
-    "description": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised.",
-    "url": "https://getpdfcraft.com/blog/convert-pdf-to-png-free",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("convert-pdf-to-png-free");
 
 export default function Post() {
   return (

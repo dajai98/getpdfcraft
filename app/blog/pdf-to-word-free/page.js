@@ -1,17 +1,6 @@
+import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
-export const metadata = {
-  "title": "How to Convert PDF to Word: Options and Checks | PDFcraft",
-  "description": "Evaluate a separate PDF-to-Word conversion workflow and review its output. PDFcraft does not currently provide this conversion.",
-  "alternates": {
-    "canonical": "https://getpdfcraft.com/blog/pdf-to-word-free"
-  },
-  "openGraph": {
-    "title": "How to Convert PDF to Word: Options and Checks | PDFcraft",
-    "description": "Evaluate a separate PDF-to-Word conversion workflow and review its output. PDFcraft does not currently provide this conversion.",
-    "url": "https://getpdfcraft.com/blog/pdf-to-word-free",
-    "type": "article"
-  }
-};
+export const metadata = blogMetadata("pdf-to-word-free");
 export default function Post() {
   return (
     <BlogPost tag={"Convert"} tagColor="#2563EB" tagBg="#EFF6FF"
