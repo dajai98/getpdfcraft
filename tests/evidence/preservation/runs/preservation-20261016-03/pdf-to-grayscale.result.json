@@ -1,0 +1,49 @@
+{
+  "operation": "pdf-to-grayscale",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "scale": 1.5,
+    "jpegQuality": 0.9
+  },
+  "expected": "Rasterize visible pages to grayscale JPEG PDF; text, links, forms and outlines intentionally lost.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pdf-to-grayscale-1.pdf",
+      "sha256": "09f32e4763f014069683e3a6df58e8cedd21943aee8dad2eeda1ea8db93c6cf9",
+      "bytes": 31224,
+      "inspection": "pdf-to-grayscale-1.inspection.json",
+      "inspectionSha256": "caaf577b7b31d176e611ccb3d63922c897f501e44a80c80ffc3748dc2c56d545",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "NOT TESTED",
+        "text": "LOST",
+        "links": "LOST",
+        "annotations": "CHANGED",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "CHANGED",
+        "imageOperators": "PASS",
+        "vectorOperators": "LOST",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.📄features.pdf✕◑ Convert to Grayscale✅Converted to grayscale!"
+}

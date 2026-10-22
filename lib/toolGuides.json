@@ -40,11 +40,11 @@
     "Merging and checking page order"
   ],
   "pdf-to-grayscale": [
-    "reduce-pdf-size-without-software",
+    "pdf-file-size-too-large",
     "Grayscale and file-size tradeoffs"
   ],
   "protect-pdf": [
-    "how-to-encrypt-pdf-files-free",
+    "how-to-add-password-to-pdf-online",
     "Password encryption and its limits"
   ],
   "unlock-pdf": [

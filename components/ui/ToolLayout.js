@@ -2,8 +2,14 @@
 import ToolGuides from "@/components/ui/ToolGuides";
 import RelatedTools from "@/components/ui/RelatedTools";
 import FAQSchema from "@/components/ui/FAQSchema";
+import ToolDocumentation from "@/components/ui/ToolDocumentation";
+import toolDocumentation from "@/lib/toolDocumentation.json";
 
 export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children, current, faqs }) {
+  const documentation = toolDocumentation[current?.replace(/^\/tools\//, "")];
+  // Route documentation is the visible FAQ/schema source. Legacy page props
+  // remain a fallback for callers outside the documented production tools.
+  const visibleFaqs = documentation?.faqs ?? faqs;
   return (
     <div className="tool-page">
       <div style={{
@@ -45,6 +51,7 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
             </div>
 
             {/* Tool content */}
+            {documentation?.notice && <p role="note" style={{ padding: 16, background: "#fff7ed", border: "1px solid #fed7aa", borderRadius: 12, lineHeight: 1.7, color: "#7c2d12" }}>{documentation.notice}</p>}
             <div style={{
               background: "white", border: "1px solid #f3f4f6", borderRadius: 20,
               padding: "clamp(16px, 3vw, 32px)", boxShadow: "0 1px 3px rgba(0,0,0,0.04)"
@@ -52,17 +59,18 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
               {children}
             </div>
 
+            <ToolDocumentation documentation={documentation} />
             <ToolGuides current={current} />
 
             {/* FAQ Section */}
-            {faqs && faqs.length > 0 && (
+            {visibleFaqs && visibleFaqs.length > 0 && (
               <div style={{ marginTop: 48 }}>
-                <FAQSchema faqs={faqs} />
+                <FAQSchema faqs={visibleFaqs} />
                 <h2 style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>
                   Frequently asked questions
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {faqs.map((faq, i) => (
+                  {visibleFaqs.map((faq, i) => (
                     <details key={i} style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 12, overflow: "hidden" }}>
                       <summary style={{
                         padding: "16px 20px", fontWeight: 600, color: "#111827", fontSize: 15,

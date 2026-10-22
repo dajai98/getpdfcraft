@@ -1,0 +1,48 @@
+{
+  "operation": "compress-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "useObjectStreams": true
+  },
+  "expected": "Load/save using object streams; no guaranteed reduction or feature preservation.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "compress-pdf-1.pdf",
+      "sha256": "57c55d368df5309aff8bce50946e604027e9ff3d31e183cebb0ca066a88c34ec",
+      "bytes": 2988,
+      "inspection": "compress-pdf-1.inspection.json",
+      "inspectionSha256": "cf1711f88093cb669f76357bf0b343679e3ff7bd6328b9fe5f9aabd1eb1a56a9",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "PASS",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "Reset / choose another PDFOutput is larger — keep your original if size is your goal2,937 bytes → 2,988 bytes51 bytes larger"
+}

@@ -1,0 +1,22 @@
+{
+  "runId": "preservation-20261018-postrepair-02",
+  "fixtureId": "form",
+  "operation": "delete-pages",
+  "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+  "options": {
+    "remove": [
+      2
+    ]
+  },
+  "inputs": [
+    {
+      "path": "form.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+      "bytes": 2937
+    }
+  ],
+  "outputs": [],
+  "status": "UNSUPPORTED",
+  "handlerText": "This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created.📄form.pdf3 pages✕Select pages to delete (1 selected)1✕23⚠️ Pages 2 will be removed from the visible document.🗑️ Delete 1 Page",
+  "alerts": []
+}

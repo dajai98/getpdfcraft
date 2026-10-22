@@ -1,136 +1,113 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("how-to-merge-pdf-free");
-export default function Post() {
-  return (
-    <BlogPost tag={"Merge PDF"} tagColor="#DC2626" tagBg="#FEF2F2"
-      title={"How to Merge PDF Files Free Online — No Sign Up"}
-      date="February 2026" readTime="6 min read"
-      intro={"Combine chapters, invoices, scanned PDF pages, or a cover letter and resume using PDFcraft Merge. It is free to use with no account required. Check the displayed file order before processing and keep your original files."}
-      sections={[
-  {
-    "heading": "Why merge PDF files?",
-    "steps": [
-      {
-        "title": "Combine a multi-part document",
-        "body": "If a document was split into multiple PDF files — chapters, sections, or appendices — merge them into one complete document."
-      },
-      {
-        "title": "Join scanned pages",
-        "body": "Scanned documents often come out as separate page files. Merge them into one complete PDF."
-      },
-      {
-        "title": "Combine invoices or receipts",
-        "body": "Merge multiple invoice PDFs into one file for accounting submissions or expense reports."
-      },
-      {
-        "title": "Create a portfolio or presentation package",
-        "body": "Combine PDF documents into one portfolio. Convert supported JPEG/JPG or PNG images to PDF first; Merge does not directly accept arbitrary file formats."
-      },
-      {
-        "title": "Attach cover letters to resumes",
-        "body": "Merge your cover letter PDF with your resume PDF before emailing job applications."
+
+const article = {
+  "title": "How to Merge PDF Files Free Online — No Sign Up",
+
+  "readTime": "6 min read",
+  "tag": "Merge PDF",
+  "tagColor": "#DC2626",
+  "tagBg": "#FEF2F2",
+  "ctaHref": "/tools/merge-pdf",
+  "ctaText": "Merge your PDFs — free to use",
+  "intro": "A combined PDF is only useful if the pages arrive in the right order and its important links still work. PDFcraft appends two or more PDFs in insertion order, then reconstructs supported navigation. Start with an ordered set of originals rather than treating Merge as a full document editor.",
+  "sections": [
+    {
+      "heading": "Build a cover -> report -> appendix sequence",
+      "steps": [
+        {
+          "title": "Add the cover first",
+          "body": "Open Merge PDF and add the cover, report and appendix in that sequence. The displayed list is the append order; filenames are not used to sort it."
+        },
+        {
+          "title": "Correct the list before processing",
+          "body": "Remove and re-add a misplaced file. There is no drag-order control in Merge. Each input contributes all its pages, so use Split first if you only need part of a source."
+        },
+        {
+          "title": "Merge and check the boundaries",
+          "body": "Run Merge, download the result and inspect the first page of each source section. Existing printed page numbers stay in the page content; Merge does not replace them with a continuous numbering scheme."
+        }
+      ]
+    },
+    {
+      "heading": "Using Merge on a phone",
+      "text": "Available file-picker locations and multi-select gestures depend on your browser and device. Retrieving a cloud-hosted input is a separate transfer from the local merge. Locate the saved output through your browser's download controls; the storage location can vary.",
+      "list": [
+        {
+          "text": "Find and save files on iPhone",
+          "href": "/blog/merge-pdf-on-iphone"
+        }
+      ]
+    },
+    {
+      "heading": "What follows a page into the output",
+      "text": "Supported direct local destinations, named destinations, GoTo actions and bookmarks are rebuilt against the actual inserted pages. Repeated copies of one input are separate source occurrences. Their destination names are namespaced to avoid collisions, so external links into old named anchors are not guaranteed to keep working. Supported remote GoToR and web-link destinations keep their remote meaning."
+    },
+    {
+      "heading": "Opening instructions are deliberately different",
+      "text": "Source OpenActions are omitted rather than choosing one file's initial destination or action for the merged document. Bookmark hierarchies remain distinct. The output is serialized, reopened and structurally validated before a download is exposed; that check is not a visual review or a signature-validity test."
+    },
+    {
+      "heading": "When another workflow is needed",
+      "table": {
+        "headers": [
+          "Input or requirement",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "AcroForm document",
+            "The safe copy path rejects it. Use a workflow that explicitly supports the form structure rather than assuming visible fields were preserved."
+          ],
+          [
+            "Linked popup annotations, tagged structures or unsupported navigation",
+            "These can stop the merge. An unsupported-structure error is not a request to reorder files."
+          ],
+          [
+            "Encrypted or very large inputs",
+            "Use an authorized unencrypted copy; smaller groups may help with browser memory, but cannot resolve unsupported structures."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "How to merge PDF files for free — step by step",
-    "steps": [
-      {
-        "title": "Open PDFcraft Merge PDF tool",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
-      },
-      {
-        "title": "Add your PDF files",
-        "body": "Select your PDFs, adding them one by one if necessary to establish the displayed insertion order. Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Arrange the order",
-        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Click Merge PDFs",
-        "body": "Click Merge PDFs to combine the files locally. Processing time depends on the documents and device."
-      },
-      {
-        "title": "Download the merged PDF",
-        "body": "Download the result and check page order and any document features you need. PDFcraft adds no branding watermark."
-      }
-    ]
-  },
-  {
-    "heading": "Tips for merging PDFs",
-    "steps": [
-      {
-        "title": "Merge in the right order",
-        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Check practical limits",
-        "body": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
-      },
-      {
-        "title": "Combine with image PDFs",
-        "body": "Convert images to PDF first using PDFcraft's JPG to PDF tool, then merge everything together."
-      }
-    ]
-  },
-  {
-    "heading": "Common merge PDF use cases",
-    "list": [
-      "Combine resume + cover letter before applying for jobs",
-      "Merge monthly bank statements into one annual file",
-      "Join scanned contract pages into one document",
-      "Combine multiple reports into one presentation package",
-      "Merge photo PDFs with a written report",
-      "Combine invoices for accounting submissions"
-    ]
-  },
-  {
-    "tip": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-  },
-  {
-    "heading": "Continue with the relevant tool",
-    "list": [
-      {
-        "text": "Open merge pdf",
-        "href": "/tools/merge-pdf"
-      },
-      {
-        "text": "Adjust page order with Up/Down controls",
-        "href": "/tools/reorder-pages"
-      }
-    ]
-  }
-]}
-      faqs={[
-  {
-    "q": "Can I merge PDF files for free with no sign up?",
-    "a": "Yes. Merge is currently free to use with no account required. Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
-  },
-  {
-    "q": "Is there a limit on how many PDFs I can merge?",
-    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
-  },
-  {
-    "q": "Will merging PDFs reduce quality?",
-    "a": "Merge copies PDF pages without rasterizing them. Do not assume every form, link, bookmark, or signature survives; inspect the output and keep the original."
-  },
-  {
-    "q": "Can I merge PDFs on iPhone or Android?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "Are my files safe when merging?",
-    "a": "PDFcraft processes document contents locally without a processing upload backend. Website and third-party requests still occur. See the Privacy Policy; local processing is not a general safety guarantee."
-  },
-  {
-    "q": "Can I merge password protected PDFs?",
-    "a": "Unlock an authorized copy with the correct password before merging. PDFcraft does not crack unknown passwords."
-  }
-]}
-      ctaText={"Merge your PDFs — free to use"}
-      ctaHref={"/tools/merge-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "Check links as well as page count",
+      "text": "Try a bookmark and a cross-page link from each source. Controlled Node tests cover supported mappings, not every PDF feature or browser. The handler copies locally without a processing upload; website resources still load. Keep each original until the combined document meets its intended use."
+    },
+    {
+      "heading": "Choose the next operation",
+      "list": [
+        {
+          "text": "Combine the ordered inputs",
+          "href": "/tools/merge-pdf"
+        },
+        {
+          "text": "Move individual pages afterward",
+          "href": "/tools/reorder-pages"
+        },
+        {
+          "text": "Choose a Windows merge workflow",
+          "href": "/blog/how-to-merge-pdf-on-windows"
+        },
+        {
+          "text": "Compare Mac merge workflows",
+          "href": "/blog/how-to-merge-pdf-on-mac"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why are two copies of the same document treated separately?",
+      "a": "Each occurrence needs its own page mapping. A link in the second copy should target that copy's inserted pages, not jump into the first one."
+    },
+    {
+      "q": "Can Merge preserve every form and digital signature?",
+      "a": "No. AcroForm input is rejected, and this workflow does not establish signature preservation or complete document-level fidelity."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

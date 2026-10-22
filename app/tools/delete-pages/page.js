@@ -8,7 +8,7 @@ import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
-  { q: "Can I delete multiple pages at once?", a: "Yes. Select as many pages as you want to delete and they will all be removed in one go." },
+  { q: "Can I delete multiple pages at once?", a: "Yes. Select multiple pages to remove in one operation, but at least one page must remain." },
   { q: "Does this securely erase page content?", a: "No. This tool removes pages from the visible document structure. Removed content may remain recoverable in PDF objects. It is not a secure redaction or sanitization tool." },
   { q: "Can I preview pages before deleting?", a: "The tool shows page numbers for selection, not page thumbnails. Check the original in a PDF viewer before choosing pages." },
   { q: "Is the original file changed?", a: "No. PDFcraft creates a new file with the pages removed. Your original PDF is not affected." },
@@ -39,13 +39,12 @@ export default function DeletePages() {
     setProcessing(true);
     try {
       const { PDFDocument } = await import("pdf-lib");
+      const { copySelectedPagesWithNavigation } = await import("@/lib/copyPdfPagesSafe");
       const doc = await PDFDocument.load(await file.arrayBuffer());
-      // Remove pages in reverse order to preserve indices
-      const toDelete = Array.from(selected).sort((a, b) => b - a);
-      toDelete.forEach(i => doc.removePage(i));
-      const blob = new Blob([await doc.save()], { type: "application/pdf" });
+      const retained = doc.getPageIndices().filter(i => !selected.has(i));
+      const blob = new Blob([await copySelectedPagesWithNavigation(doc, retained)], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { setError(pdfInputError(e)); }
+    } catch(e) { setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
     setProcessing(false);
   };
 

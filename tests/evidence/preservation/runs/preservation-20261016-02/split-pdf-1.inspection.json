@@ -1,0 +1,85 @@
+{
+  "opens": true,
+  "pageCount": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "PAGE_1 selectable text",
+      "identities": [
+        "PAGE_1"
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        500
+      ],
+      "rotation": 0,
+      "physical": [
+        400,
+        500
+      ],
+      "annotations": [
+        {
+          "subtype": "Link",
+          "url": "https://example.com/",
+          "destination": null,
+          "fieldName": null,
+          "fieldValue": null
+        },
+        {
+          "subtype": "Link",
+          "url": null,
+          "destination": {
+            "page": 1,
+            "fit": "Fit"
+          },
+          "fieldName": null,
+          "fieldValue": null
+        },
+        {
+          "subtype": "Widget",
+          "url": null,
+          "destination": null,
+          "fieldName": "controlled_name",
+          "fieldValue": "Synthetic Alice"
+        }
+      ],
+      "imageOperators": 1,
+      "vectorPathOperators": 3
+    }
+  ],
+  "boxes": [
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "rotation": 0
+    }
+  ],
+  "fields": null,
+  "outlines": [],
+  "metadata": {
+    "PDFFormatVersion": "1.7",
+    "Language": null,
+    "EncryptFilterName": null,
+    "IsLinearized": false,
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "IsCollectionPresent": false,
+    "IsSignaturesPresent": false,
+    "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "ModDate": "D:20261016184112Z",
+    "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "CreationDate": "D:20261016184112Z"
+  }
+}

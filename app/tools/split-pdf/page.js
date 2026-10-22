@@ -32,15 +32,18 @@ export default function SplitPDF() {
         ? Array.from({ length: pageCount }, (_, i) => ({ name: `page-${i+1}.pdf`, indices: [i] }))
         : parsePageRanges(range, pageCount);
       const { PDFDocument } = await import("pdf-lib");
+      const { copySelectedPagesWithNavigation } = await import("@/lib/copyPdfPagesSafe");
       const src = await PDFDocument.load(await file.arrayBuffer());
+      const validated = [];
       for (const group of groups) {
         if (!isCurrentResult(token)) return;
-        const doc = await PDFDocument.create();
-        (await doc.copyPages(src, group.indices)).forEach(page => doc.addPage(page));
-        const bytes = await doc.save();
+        const bytes = await copySelectedPagesWithNavigation(src, group.indices);
         if (!isCurrentResult(token)) return;
-        results.push({ name: group.name, url: urls.create(new Blob([bytes], { type: "application/pdf" })) });
+        validated.push({ name: group.name, bytes });
       }
+      // Do not create even a partial set of download URLs until every output
+      // has passed its own serialized navigation validation.
+      for (const result of validated) results.push({ name: result.name, url: urls.create(new Blob([result.bytes], { type: "application/pdf" })) });
       if (isCurrentResult(token)) { setDownloads(results); published = true; }
     } catch (e) {
       if (isCurrentResult(token)) setError(e.message || "Could not split this PDF. Select a valid PDF and try again.");

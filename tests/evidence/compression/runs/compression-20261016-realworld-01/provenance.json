@@ -1,0 +1,15 @@
+{
+  "sourceUrl": "https://www.nasa.gov/wp-content/uploads/2021/12/nasa-ocs-public-access-plan-may-2023.pdf",
+  "resolvedUrl": "https://www.nasa.gov/wp-content/uploads/2021/12/nasa-ocs-public-access-plan-may-2023.pdf",
+  "retrievedAt": "2026-10-16T01:12:45.569Z",
+  "httpStatus": 200,
+  "contentType": "application/pdf",
+  "document": "NASA Public Access Plan, official published document; downloaded unmodified, not generated as a fixture.",
+  "permission": "Internal factual testing under NASA general educational/informational media-use guidance. Not a blanket public-domain declaration or permission to imply endorsement. Redistribution/publication not approved by this study.",
+  "permissionUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "permissionRetrievedAt": "2026-10-16T01:12:46.099Z",
+  "permissionSnapshot": "tests/evidence/compression/runs/compression-20261016-realworld-01/permission-source.html",
+  "permissionSha256": "c38bc15af08164b04819d02a571aa69c8580a5aa366d683791bb7db6e337e279",
+  "category": "REAL_WORLD published policy document. Office-export origin, physical scanning and photographic category NOT VERIFIED.",
+  "privateUserDocuments": false
+}

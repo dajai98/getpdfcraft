@@ -1,0 +1,58 @@
+{
+  "runId": "preservation-20261018-postrepair-02",
+  "fixtureId": "navigation",
+  "operation": "merge-pdf",
+  "expected": "Append tail, namespace names and omit source OpenAction",
+  "options": {},
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    },
+    {
+      "path": "tail.pdf",
+      "sha256": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075",
+      "bytes": 861
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-merge-pdf-1.pdf",
+      "sha256": "dd21c9707d515043f0ac19ab40562b17d587a2d1f8c13b6aabdb23663422605b",
+      "bytes": 3790,
+      "inspection": "navigation-merge-pdf-1.inspection.json",
+      "inspectionSha256": "f8fb6427b90623769598cf87d174bcbfa68d0b8770d51d8f8945e84f831df16e",
+      "pageCount": 4,
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "vectorSemantics": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorOperatorCounts": "PRESERVED",
+        "localNavigation": "PRESERVED",
+        "namedDestinations": "EXPECTED CHANGE",
+        "outlines": "PRESERVED",
+        "externalRemoteLinks": "PRESERVED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "2 files selectedClear all📄navigation.pdf3 KB✕📄tail.pdf1 KB✕✅merged.pdf is ready!Your PDFs have been merged successfully.",
+  "alerts": []
+}

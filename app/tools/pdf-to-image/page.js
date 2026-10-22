@@ -6,7 +6,7 @@ import ToolLayout from "@/components/ui/ToolLayout";
 const faqs = [
   { q: "Which is better JPG or PNG?", a: "JPG uses lossy compression. PNG uses lossless encoding for the rendered page image; file sizes depend on the content." },
   { q: "What resolution are the output images?", a: "PDFcraft renders at a fixed 2x scale. Suitability for printing depends on the source content and intended print size." },
-  { q: "Is there a watermark on the output images?", a: "No. PDFcraft never adds watermarks to your output files." },
+  { q: "Is there a watermark on the output images?", a: "No. This tool adds no PDFcraft branding watermark to the output images." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Can I convert just one page?", a: "All pages are converted. You can then download only the specific page images you need." },
 ];

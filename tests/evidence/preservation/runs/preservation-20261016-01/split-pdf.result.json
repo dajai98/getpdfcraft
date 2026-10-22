@@ -1,0 +1,94 @@
+{
+  "operation": "split-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {},
+  "expected": "Default all mode: three separate one-page outputs; document-level features may be lost.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "split-pdf-1.pdf",
+      "sha256": "bc7a3ba661462a13e4ba919ee3707d2677e76c1d41d34af5a566cb7c171713bc",
+      "bytes": 2117,
+      "inspection": "split-pdf-1.inspection.json",
+      "inspectionSha256": "74faf9de747a0d046a12908e9d3d3fc134d34720f27a6baf27bdae754fbf41e6",
+      "pageCount": 1,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "CHANGED",
+        "annotations": "CHANGED",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    },
+    {
+      "name": "split-pdf-2.pdf",
+      "sha256": "a8b1f7fcea8e2352a412ace859b667574cb36cbe7ecf6327415954e643226bde",
+      "bytes": 1160,
+      "inspection": "split-pdf-2.inspection.json",
+      "inspectionSha256": "fa36ea23c52737530ad2d8448ded73b786ba4745111d42ec4c6b5e4b2fc09842",
+      "pageCount": 1,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    },
+    {
+      "name": "split-pdf-3.pdf",
+      "sha256": "d423f43c04e97fb7cce3f958a2f19bfa8f546262e83853e79f9bd2538c75e6c2",
+      "bytes": 1144,
+      "inspection": "split-pdf-3.inspection.json",
+      "inspectionSha256": "67aae51114abdc511d52c1bac397f1958f0c8bbe27f206f14e6ae11ea623192c",
+      "pageCount": 1,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "📄features.pdf3 pages · 3 KB✕Split optionsExtract all pages as individual PDFsExtract specific page range⊘ Split PDF✅ 3 files ready📄page-1.pdf📄page-2.pdf📄page-3.pdf"
+}

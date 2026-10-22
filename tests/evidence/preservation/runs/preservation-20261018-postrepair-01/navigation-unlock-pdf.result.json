@@ -1,0 +1,53 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "unlock-pdf",
+  "expected": "Decrypt immediately preceding protected artifact with correct password",
+  "options": {
+    "publicTestPassword": "PublicSynthetic7E!"
+  },
+  "inputs": [
+    {
+      "path": "navigation-protect-pdf-1.pdf",
+      "sha256": "5d4cafaf4fb6dc15b329ffe53e8ffa1969866ed2355106ca7e161801c37b4371",
+      "bytes": 3778
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-unlock-pdf-1.pdf",
+      "sha256": "949a5989dc2680a7c28121192fc96dd57fc2208374efe36f0219407b5a88e6e1",
+      "bytes": 2987,
+      "inspection": "navigation-unlock-pdf-1.inspection.json",
+      "inspectionSha256": "57144253ec70092875380796ac55f3bc00c698e193d9f0b872cdfbf386b4055c",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "PRESERVED",
+        "namedDestinations": "PRESERVED",
+        "outlines": "PRESERVED",
+        "externalRemoteLinks": "PRESERVED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "⚠️ You must know the current passwordThis tool removes password protection from PDFs you already have the password for. PDFcraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.🔒Your file and password are processed locally in your browser.🔒navigation.pdf4 KB✕Current PasswordEnter the password that is currently protecting this PDF.✅unlocked.pdf is ready!Password protection has been removed successfully.",
+  "alerts": []
+}

@@ -1,0 +1,64 @@
+{
+  "reviewedAt": "2026-10-16T12:33:19.150Z",
+  "reviewer": "Codex visual inspection of emitted PNG contact sheets; not a human tester or browser session",
+  "renderManifest": "tests/evidence/compression/reviews/review-20261016-limited-02/render-manifest.json",
+  "renderManifestSha256": "8cee5c8aed11c8e5bc9e1f6a2cf7680b3502609dfa67b1400954d9e84db48d87",
+  "status": "LIMITED REPRESENTATIVE-PAGE VISUAL REVIEW COMPLETE",
+  "pages": [
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 1,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-realworld-01-page-1.png",
+      "imageSha256": "d1779e811fb0062351ac9fc45a8bd08d49c50d88f42c674a0860dff6b13bbace",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    },
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 14,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-realworld-01-page-14.png",
+      "imageSha256": "ca461914478b9bed2348c229d434f9a70499e0e9638cbefa8bdc651dd231b6a1",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    },
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 27,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-realworld-01-page-27.png",
+      "imageSha256": "d8483b116777123a69adfffd38f4262c5c9c098a36b4456df70ef14011a5eff2",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 1,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-scan-01-page-1.png",
+      "imageSha256": "e7ae738158ef73a66939efae5ab1e63942f5ca4656ff8750bbbb9242bbcdc7a1",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 127,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-scan-01-page-127.png",
+      "imageSha256": "11398778fbfb6f1f9ff12b294c33fd690d54d434831f925e10d7dca27f7212d7",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 254,
+      "image": "tests/evidence/compression/reviews/review-20261016-limited-02/compression-20261016-scan-01-page-254.png",
+      "imageSha256": "ede999d9c57a5fca90b2c0dbdbd4b65e1270a47ad292fac9a51eb14d0be9fc11",
+      "observation": "No obvious new clipping, missing content or visible corruption in the paired rendering at this review scale."
+    }
+  ],
+  "specificObservations": [
+    "NASA policy cover artwork, middle text page and final glossary page appear consistent between input/output. Existing dark link borders on cover are present in both.",
+    "Apollo cover has archival stamp/handwriting and scanned artwork. Middle page shows uneven typewritten/scanned text; final page shows a conversion table. Scan texture and existing imperfections appear in both input and output.",
+    "Acrobat Capture 3.0 / Searchable Image (Exact) metadata plus archival page appearance support classification as a genuine archival scan. Capture hardware/date not independently verified."
+  ],
+  "limitations": [
+    "Only 3 of 27 NASA policy pages and 3 of 254 Apollo pages visually reviewed.",
+    "750-pixel page-height rendering using one PDF.js/canvas combination. No pixel-perfect, universal or all-page fidelity claim.",
+    "No browser execution/download: browser inventory empty and createBrowserTab(iab) returned Browser is not available.",
+    "Interactive selection, forms and signature validity NOT TESTED.",
+    "Font warning TT undefined function 32 occurred during NASA rendering.",
+    "Review 01 failed due to canvas option mismatch and is retained; no successful visual result attributed to it."
+  ]
+}

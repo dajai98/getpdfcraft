@@ -1,0 +1,11 @@
+{
+  "node": "v24.15.0",
+  "os": "Windows_NT",
+  "release": "10.0.26200",
+  "arch": "x64",
+  "pdfLib": "1.17.1",
+  "pdfjs": "4.4.168",
+  "next": "14.2.5",
+  "browser": "NOT TESTED",
+  "tester": "Automated source-handler harness; no human tester asserted"
+}

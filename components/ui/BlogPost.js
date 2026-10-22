@@ -10,6 +10,7 @@ import FAQSchema from "@/components/ui/FAQSchema";
 // guessing a day/month that isn't supported by the visible content.
 const MONTHS = { January: "01", February: "02", March: "03", April: "04", May: "05", June: "06", July: "07", August: "08", September: "09", October: "10", November: "11", December: "12" };
 function toISODate(display) {
+  if (!display) return undefined;
   const withDay = display.match(/^(\w+)\s+(\d{1,2}),\s+(\d{4})$/);
   if (withDay && MONTHS[withDay[1]]) return `${withDay[3]}-${MONTHS[withDay[1]]}-${withDay[2].padStart(2, "0")}`;
   const monthOnly = display.match(/^(\w+)\s+(\d{4})$/);
@@ -43,7 +44,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         <span style={{ background: tagBg, color: tagColor, fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>{tag}</span>
         <h1 style={{ fontSize: "clamp(28px, 5vw, 46px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>{title}</h1>
         <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#6b7280", flexWrap: "wrap" }}>
-          <span>{date}</span><span>· {readTime}</span><span>· By PDFcraft</span>
+          {date && <span>{date}</span>}<span>{date ? "· " : ""}{readTime}</span><span>· Published by Dajai Studio</span>
         </div>
       </div>
 
@@ -155,9 +156,9 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         {/* CTA */}
         <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
           <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>{ctaText}</h3>
-          <p style={{ color: "#9ca3af", marginBottom: 24 }}>Free to use. Local document processing. No account required.</p>
+          <p style={{ color: "#9ca3af", marginBottom: 24 }}><Link href="/blog#how-it-works" style={{ color: "inherit" }}>Processing limits and troubleshooting</Link></p>
           <Link href={ctaHref} style={{ display: "inline-block", background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
-            Try it free →
+            {ctaHref.startsWith("/tools/") ? "Open this tool" : "Browse tools by task"}
           </Link>
         </div>
 

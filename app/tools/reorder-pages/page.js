@@ -43,14 +43,12 @@ export default function ReorderPages() {
     setError("");
     setProcessing(true);
     try {
+      const { copyPagesWithNavigation } = await import("@/lib/copyPdfPagesSafe");
       const { PDFDocument } = await import("pdf-lib");
       const src = await PDFDocument.load(await file.arrayBuffer());
-      const doc = await PDFDocument.create();
-      const pages = await doc.copyPages(src, order);
-      pages.forEach(p => doc.addPage(p));
-      const blob = new Blob([await doc.save()], { type: "application/pdf" });
+      const blob = new Blob([await copyPagesWithNavigation([{ doc: src, order }])], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { setError(pdfInputError(e)); }
+    } catch(e) { setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
     setProcessing(false);
   };
 

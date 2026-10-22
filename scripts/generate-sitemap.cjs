@@ -28,9 +28,10 @@ function generateSitemap() {
     throw new Error('Blog catalog and actual article routes differ. Review both before building.');
   }
   for (const post of catalog) {
-    for (const field of ['slug', 'title', 'description', 'date', 'tag', 'tagColor', 'tagBg']) {
+    for (const field of ['slug', 'title', 'description', 'tag', 'tagColor', 'tagBg']) {
       if (typeof post[field] !== 'string' || !post[field]) throw new Error('Missing catalog field: ' + post.slug + '.' + field);
     }
+    if (post.date !== undefined && (typeof post.date !== 'string' || !post.date.trim())) throw new Error('Invalid optional catalog date: ' + post.slug);
     if (!/^[a-z0-9-]+$/.test(post.slug)) throw new Error('Unsupported article slug: ' + post.slug);
   }
   const redirects = fs.readFileSync(path.join(root, 'public/_redirects'), 'utf8')

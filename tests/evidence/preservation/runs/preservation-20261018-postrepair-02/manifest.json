@@ -1,0 +1,1294 @@
+{
+  "schemaVersion": 1,
+  "runId": "preservation-20261018-postrepair-02",
+  "status": "COMPLETE",
+  "era": "POST_DESTINATION_REPAIR_PHASE_4",
+  "publicationStatus": "INTERNAL — NOT READY FOR PUBLICATION",
+  "startedAt": "2026-10-18T03:46:57.329Z",
+  "completedAt": "2026-10-18T03:47:00.300Z",
+  "gitHead": "6ccfbe45fbe6e671cd968a1e5bbe692aac736dc4",
+  "sourceHashes": {
+    "lib/blogCatalog.json": "7a05e7b82dc97547ca665cba90be5b4a080a7ed59ec1c7e951dc6e97135b7229",
+    "lib/blogMetadata.js": "163b2972c62333855b7ed6098d6bd822f1676dcb78bfd90a46cc77eb4525a697",
+    "lib/copyPdfPagesSafe.js": "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354",
+    "lib/imageInput.js": "d05a69cb30f3edc722b041fd91d6c52e7b7d4e89d9125dd01073104503926123",
+    "lib/jpegValidation.js": "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34",
+    "lib/pageGeometry.js": "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "lib/pdfNavigationModel.js": "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56",
+    "lib/pdfNavigationValidation.js": "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467",
+    "lib/qpdf.js": "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59",
+    "lib/siteConfig.json": "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264",
+    "lib/splitRanges.js": "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3",
+    "lib/toolGuides.json": "bcabed0042a769be676961a5bd501360c660dfed7fadcfdffb1f8231ce8358a6",
+    "lib/toolMetadata.js": "2ec282705140e83e138c7c4317f029f1fff4a705b4bb2b7cb67435efcd6bad92",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "components/hooks/useObjectUrls.js": "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca",
+    "components/hooks/usePdfInput.js": "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e",
+    "app/tools/add-page-numbers/layout.js": "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425",
+    "app/tools/add-page-numbers/page.js": "14d0572c09d1887720fe03fc6f8cc3737a8a2eb00ba1308a2bfdf613915a7a3c",
+    "app/tools/compress-pdf/layout.js": "f4834d2d35985c97b85ce9f463da202132e963414c6ce9303e8820fe632becaa",
+    "app/tools/compress-pdf/page.js": "1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce",
+    "app/tools/delete-pages/layout.js": "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38",
+    "app/tools/delete-pages/page.js": "18dca976ae0077854c6c36e064acd27b93797a7c06055fd1a714ed6072dc7021",
+    "app/tools/jpg-to-pdf/layout.js": "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920",
+    "app/tools/jpg-to-pdf/page.js": "113e74c7daf099207fe8f5138bc6bc1cebd033d886a2af05171acc24c8fe367c",
+    "app/tools/merge-pdf/layout.js": "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16",
+    "app/tools/merge-pdf/page.js": "789da8f73945a916e3f409adece1cd78f1d06e76c431041bcb2e34db3b1d2899",
+    "app/tools/pdf-to-grayscale/layout.js": "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c",
+    "app/tools/pdf-to-grayscale/page.js": "dbf89c14ac4c8caa591be161da6d11b056d034bf67945a8b788d409e39f97dd1",
+    "app/tools/pdf-to-image/layout.js": "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b",
+    "app/tools/pdf-to-image/page.js": "bb6aabffd0c26770f77513a77af044b7f4bb4a4ddb28a51a40dd42d037017b2e",
+    "app/tools/protect-pdf/layout.js": "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35",
+    "app/tools/protect-pdf/page.js": "f408d0289ab03c5489c239a60902b8a1357f7503581cc66ed2291032c47a8d08",
+    "app/tools/reorder-pages/layout.js": "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf",
+    "app/tools/reorder-pages/page.js": "def66815451827560c7db6cfca4c6db1773cdddeac48feca1e61714a3dee702d",
+    "app/tools/rotate-pdf/layout.js": "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c",
+    "app/tools/rotate-pdf/page.js": "4f933c3dfdd741bab7880329522ac33c2aadca14e7f146d8f3c6c392f2c3c5fb",
+    "app/tools/split-pdf/layout.js": "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834",
+    "app/tools/split-pdf/page.js": "b5f2232405fb34b66b1b791887340f970c6f4e955b94e7a85b2006546e430ac1",
+    "app/tools/unlock-pdf/layout.js": "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77",
+    "app/tools/unlock-pdf/page.js": "bb47c65fb10533dc452f0fb2365896406391320e657cf83f5cc69083ec761320",
+    "app/tools/watermark-pdf/layout.js": "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584",
+    "app/tools/watermark-pdf/page.js": "bf39f7e7f0a19e4a7e77530bbae1978ba52680648375a67eed509f593a93445e",
+    "tests/final-repair.test.cjs": "fac5048edacf890175a66f76bcc271e5a3e86040e50960356f215c5351a78fdf",
+    "scripts/lab/preservation.cjs": "c957f479381f11596b0919a25e7e757fb3611b39fefba15e6affb657b6991559",
+    "scripts/lab/preservation-postrepair.cjs": "7f0ab9bb9a1bf213e57b7c28fc4498221499f8a98e81da77b6be2a881e678ab6",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e"
+  },
+  "environment": {
+    "node": "v24.15.0",
+    "os": "Windows_NT",
+    "release": "10.0.26200",
+    "pdfLib": "1.17.1",
+    "pdfjs": "4.4.168",
+    "qpdfWasm": "0.3.0",
+    "canvas": "1.0.11",
+    "browser": "NOT TESTED"
+  },
+  "provenance": "Deterministic locally generated synthetic fixtures; no private documents. navigation removes the form from the legacy generator and adds supported direct/local/named/remote navigation. form retains controlled AcroForm. Neither fixture is real-world evidence.",
+  "limitations": [
+    "Actual production handler code executed in a Node simulated React/URL harness; no browser/download claim",
+    "PDF.js inspection is independent parsing, not interactive selection or visual fidelity",
+    "Grayscale uses Node canvas and local worker/fonts; no actual browser/CDN test",
+    "qpdf uses installed local WASM; CDN loading NOT TESTED",
+    "Signatures, interactive forms, visual review and browser behavior NOT TESTED",
+    "Image operator counts do not prove pixel preservation; vector operator counts do not prove vector equivalence",
+    "Encryption salts and tool metadata timestamps can vary across repetitions; retained artifacts immutable",
+    "AcroForm page-copy rejection is expected UNSUPPORTED, not a preservation defect"
+  ],
+  "records": [
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "merge-pdf",
+      "expected": "Append tail, namespace names and omit source OpenAction",
+      "options": {},
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        },
+        {
+          "path": "tail.pdf",
+          "sha256": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075",
+          "bytes": 861
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-merge-pdf-1.pdf",
+          "sha256": "dd21c9707d515043f0ac19ab40562b17d587a2d1f8c13b6aabdb23663422605b",
+          "bytes": 3790,
+          "inspection": "navigation-merge-pdf-1.inspection.json",
+          "inspectionSha256": "f8fb6427b90623769598cf87d174bcbfa68d0b8770d51d8f8945e84f831df16e",
+          "pageCount": 4,
+          "indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "2 files selectedClear all📄navigation.pdf3 KB✕📄tail.pdf1 KB✕✅merged.pdf is ready!Your PDFs have been merged successfully.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "split-pdf",
+      "expected": "One output per page; remove omitted targets/names/bookmarks/OpenAction",
+      "options": {
+        "mode": "all"
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-split-pdf-1.pdf",
+          "sha256": "3bfd193e2a7970c3f81c0e007e6ea6c3259233edec7df4fde8f4b37f95a4b1a9",
+          "bytes": 2786,
+          "inspection": "navigation-split-pdf-1.inspection.json",
+          "inspectionSha256": "1657b51c69cc8714dba7c215bf5825c0eece365d39540023ecbc41a9502cb4f7",
+          "pageCount": 1,
+          "indices": [
+            0
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "EXPECTED CHANGE",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "EXPECTED CHANGE",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        },
+        {
+          "path": "navigation-split-pdf-2.pdf",
+          "sha256": "1922ec686b43a95c0417e0999e9e0c71b29dd19a5bc1b86e96f741646e48d6b0",
+          "bytes": 2781,
+          "inspection": "navigation-split-pdf-2.inspection.json",
+          "inspectionSha256": "f0187469d10b5d17b41cc6a0a086a6a2a459d5c42b5f168445c0b3745c3941a5",
+          "pageCount": 1,
+          "indices": [
+            1
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "EXPECTED CHANGE",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "EXPECTED CHANGE",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        },
+        {
+          "path": "navigation-split-pdf-3.pdf",
+          "sha256": "e0761513db33955db85f6cd9cf95f6fcf37c2d5bb6907de6a04d14e3614133df",
+          "bytes": 2816,
+          "inspection": "navigation-split-pdf-3.inspection.json",
+          "inspectionSha256": "a843f22f1d8acdf4b6c46656c85ed5f121e1ef6050680eb84fcc401e8765219a",
+          "pageCount": 1,
+          "indices": [
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "EXPECTED CHANGE",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "EXPECTED CHANGE",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄navigation.pdf3 pages · 3 KB✕Split optionsExtract all pages as individual PDFsExtract specific page range⊘ Split PDF✅ 3 files ready📄page-1.pdf📄page-2.pdf📄page-3.pdf",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "reorder-pages",
+      "expected": "Move page 2 before page 1; retain logical navigation identity",
+      "options": {
+        "order": [
+          2,
+          1,
+          3
+        ]
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-reorder-pages-1.pdf",
+          "sha256": "c2b706baee365cf6ef4165008535c91d5652a7b692d211c970efe057f914aa79",
+          "bytes": 3363,
+          "inspection": "navigation-reorder-pages-1.inspection.json",
+          "inspectionSha256": "ea3aff5ce8e71101e5625c15ad2168d90808e105d477b8a6b9dd5b11ef86190d",
+          "pageCount": 3,
+          "indices": [
+            1,
+            0,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄navigation.pdf3 pages✕Use Move Up and Move Down to reorder pages:⠿2Page 2→ position 1↑↓⠿1Page 1→ position 2↑↓⠿3Page 3↑↓↕ Save New Order✅Pages reordered!Your PDF has been saved with the new page order.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "rotate-pdf",
+      "expected": "Add 90 degrees to each page",
+      "options": {
+        "additionalDegrees": 90
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-rotate-pdf-1.pdf",
+          "sha256": "cd6b951cc163dacd462fca5fbe59e42eb034d9cdf187fef642a73eab961c332d",
+          "bytes": 3587,
+          "inspection": "navigation-rotate-pdf-1.inspection.json",
+          "inspectionSha256": "5713c1816c1711d2c0827aa843e9017011c448269a589a37b5257a08819a87e3",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "EXPECTED CHANGE",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄navigation.pdf✕Rotation angle↻ 90° Right↕ 180°↺ 90° Left↻ Rotate 90°✅Rotation complete!All pages rotated by 90°",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "delete-pages",
+      "expected": "Remove page 2 and its navigation targets; not secure sanitization",
+      "options": {
+        "remove": [
+          2
+        ]
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-delete-pages-1.pdf",
+          "sha256": "b8b2147f4c3fbb950abec6dda38eddd9bd2e47831ebabe31d2d30ac4ea7c774b",
+          "bytes": 3313,
+          "inspection": "navigation-delete-pages-1.inspection.json",
+          "inspectionSha256": "fb5203b6e1092759c117fe2528faac08e3d4d25d4561e88c9a62d5657c5ad6f8",
+          "pageCount": 2,
+          "indices": [
+            0,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "EXPECTED CHANGE",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "EXPECTED CHANGE",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.📄navigation.pdf3 pages✕Select pages to delete (1 selected)1✕23⚠️ Pages 2 will be removed from the visible document.🗑️ Delete 1 Page✅Pages deleted!1 page removed. 2 pages remaining.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "add-page-numbers",
+      "expected": "Add 1,2,3 at bottom center; 12pt",
+      "options": {
+        "start": 1,
+        "position": "bottom-center",
+        "fontSize": 12
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-add-page-numbers-1.pdf",
+          "sha256": "b456eff3fd885e1f0cc4658c6cb9680ba407dcbcdf0ce381aa46641d0cedefc0",
+          "bytes": 4317,
+          "inspection": "navigation-add-page-numbers-1.inspection.json",
+          "inspectionSha256": "b1fecf8b071687e79ed61f488c5b1895c8438e18fb0bbf9a1333ae4466d30b77",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄navigation.pdf✕Position↓ Bottom Center↓ Bottom Right↓ Bottom Left↑ Top Center↑ Top Right↑ Top LeftStart from pageFont sizeSmall (10pt)Medium (12pt)Large (16pt)# Add Page Numbers✅Page numbers added!Starting from 1, positioned bottom center.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "watermark-pdf",
+      "expected": "Add CONFIDENTIAL at opacity 0.3; removable label, not security",
+      "options": {
+        "text": "CONFIDENTIAL",
+        "opacity": 0.3
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-watermark-pdf-1.pdf",
+          "sha256": "9d7c86da6fe576d30fbecc22dcfd13db19aff95400de64cc26f341cb7aad2703",
+          "bytes": 4549,
+          "inspection": "navigation-watermark-pdf-1.inspection.json",
+          "inspectionSha256": "9774cc8254fc8a390c5619bd7c5d63b9bd471b7735cf3c0930c1a81884be3818",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄navigation.pdf✕Watermark textOpacity: 30%LightStrong✎ Add Watermark✅Watermark added!Text \"CONFIDENTIAL\" applied to all pages.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "compress-pdf",
+      "expected": "Load/save with useObjectStreams:true; no guaranteed reduction",
+      "options": {
+        "useObjectStreams": true
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-compress-pdf-1.pdf",
+          "sha256": "2123fafbef7eba1e793b23673b79d481eec7ae459b164bf4d63d9ca3bd8ed5c7",
+          "bytes": 3586,
+          "inspection": "navigation-compress-pdf-1.inspection.json",
+          "inspectionSha256": "d265c07bda9db20fe8808d271e0e150abd3ad27c8e8cc983fe79fe2b6bf24952",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "Reset / choose another PDFOutput is larger — keep your original if size is your goal3,542 bytes → 3,586 bytes44 bytes larger",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "pdf-to-grayscale",
+      "expected": "Render 1.5x, grayscale JPEG quality 0.9; rasterize semantics",
+      "options": {
+        "scale": 1.5,
+        "jpegQuality": 0.9
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-pdf-to-grayscale-1.pdf",
+          "sha256": "19b7ab02c9135ea933d98757f41f7cd6a219635d550ef795967a95058aa1fa2f",
+          "bytes": 25805,
+          "inspection": "navigation-pdf-to-grayscale-1.inspection.json",
+          "inspectionSha256": "d3258d8b30cd1bff80748429cdd88b8d644ecc7bb43ba29791b146f87d0b0716",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "NOT TESTED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "EXPECTED CHANGE",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "EXPECTED CHANGE",
+            "localNavigation": "EXPECTED CHANGE",
+            "namedDestinations": "EXPECTED CHANGE",
+            "outlines": "EXPECTED CHANGE",
+            "externalRemoteLinks": "EXPECTED CHANGE",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "EXPECTED CHANGE",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.📄navigation.pdf✕◑ Convert to Grayscale✅Converted to grayscale!",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "protect-pdf",
+      "expected": "AES-256 with public test password; local installed qpdf WASM",
+      "options": {
+        "publicTestPassword": "PublicSynthetic7E!"
+      },
+      "inputs": [
+        {
+          "path": "navigation.pdf",
+          "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+          "bytes": 3542
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-protect-pdf-1.pdf",
+          "sha256": "250f8880d03b05d1e6c8414f3e3b42cf020d76f81627a17f11879b5efe6f434e",
+          "bytes": 3778,
+          "inspection": "navigation-protect-pdf-1.inspection.json",
+          "inspectionSha256": "560547569558bce1dc019d904bafe480d9f2e9004d5435a27611b102fe5c54b8",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "NOT TESTED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "🔒256-bit AES encryption. Your file and password are processed locally in your browser.📄navigation.pdf3 KB✕PasswordConfirm Password💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.✅protected.pdf is ready!Your PDF has been encrypted with 256-bit AES password protection.⚠️ Store your password safely — it cannot be recovered if lost.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "navigation",
+      "operation": "unlock-pdf",
+      "expected": "Decrypt immediately preceding protected artifact with correct password",
+      "options": {
+        "publicTestPassword": "PublicSynthetic7E!"
+      },
+      "inputs": [
+        {
+          "path": "navigation-protect-pdf-1.pdf",
+          "sha256": "250f8880d03b05d1e6c8414f3e3b42cf020d76f81627a17f11879b5efe6f434e",
+          "bytes": 3778
+        }
+      ],
+      "outputs": [
+        {
+          "path": "navigation-unlock-pdf-1.pdf",
+          "sha256": "f9d362b0dce13a373e2a1852a9c563b30a0ad29b3d26f80ebdf0f52196150ff5",
+          "bytes": 2987,
+          "inspection": "navigation-unlock-pdf-1.inspection.json",
+          "inspectionSha256": "57144253ec70092875380796ac55f3bc00c698e193d9f0b872cdfbf386b4055c",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "PRESERVED",
+            "namedDestinations": "PRESERVED",
+            "outlines": "PRESERVED",
+            "externalRemoteLinks": "PRESERVED",
+            "forms": "NOT TESTED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "⚠️ You must know the current passwordThis tool removes password protection from PDFs you already have the password for. PDFcraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.🔒Your file and password are processed locally in your browser.🔒navigation.pdf4 KB✕Current PasswordEnter the password that is currently protecting this PDF.✅unlocked.pdf is ready!Password protection has been removed successfully.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "merge-pdf",
+      "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+      "options": {},
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        },
+        {
+          "path": "tail.pdf",
+          "sha256": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075",
+          "bytes": 861
+        }
+      ],
+      "outputs": [],
+      "status": "UNSUPPORTED",
+      "handlerText": "2 files selectedClear all📄form.pdf3 KB✕📄tail.pdf1 KB✕⊕ Merge 2 PDFs",
+      "alerts": [
+        "Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created."
+      ]
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "split-pdf",
+      "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+      "options": {
+        "mode": "all"
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [],
+      "status": "UNSUPPORTED",
+      "handlerText": "Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created.📄form.pdf3 pages · 3 KB✕Split optionsExtract all pages as individual PDFsExtract specific page range⊘ Split PDF",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "reorder-pages",
+      "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+      "options": {
+        "order": [
+          2,
+          1,
+          3
+        ]
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [],
+      "status": "UNSUPPORTED",
+      "handlerText": "Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created.📄form.pdf3 pages✕Use Move Up and Move Down to reorder pages:⠿2Page 2→ position 1↑↓⠿1Page 1→ position 2↑↓⠿3Page 3↑↓↕ Save New Order",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "rotate-pdf",
+      "expected": "Add 90 degrees to each page",
+      "options": {
+        "additionalDegrees": 90
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-rotate-pdf-1.pdf",
+          "sha256": "83dd3baeffc22ea9f0cf78a2555c61b50d399dcf210ef6ea9d84474884d4a003",
+          "bytes": 2993,
+          "inspection": "form-rotate-pdf-1.inspection.json",
+          "inspectionSha256": "85e97344a9aaa4bcb18ab173d4a310a52e41c3ce0cef15dc749d98bb4cd3f52d",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "EXPECTED CHANGE",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄form.pdf✕Rotation angle↻ 90° Right↕ 180°↺ 90° Left↻ Rotate 90°✅Rotation complete!All pages rotated by 90°",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "delete-pages",
+      "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+      "options": {
+        "remove": [
+          2
+        ]
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [],
+      "status": "UNSUPPORTED",
+      "handlerText": "This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created.📄form.pdf3 pages✕Select pages to delete (1 selected)1✕23⚠️ Pages 2 will be removed from the visible document.🗑️ Delete 1 Page",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "add-page-numbers",
+      "expected": "Add 1,2,3 at bottom center; 12pt",
+      "options": {
+        "start": 1,
+        "position": "bottom-center",
+        "fontSize": 12
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-add-page-numbers-1.pdf",
+          "sha256": "215f04bc74fac1cea4c7a5ca9b0b1ed3f487ed21c087ce511c7cc7f5bc66e2d1",
+          "bytes": 3725,
+          "inspection": "form-add-page-numbers-1.inspection.json",
+          "inspectionSha256": "c6cd4c44316d36484643a8595522ee65f32bd687c36c2d936c8aa7320b0c3372",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄form.pdf✕Position↓ Bottom Center↓ Bottom Right↓ Bottom Left↑ Top Center↑ Top Right↑ Top LeftStart from pageFont sizeSmall (10pt)Medium (12pt)Large (16pt)# Add Page Numbers✅Page numbers added!Starting from 1, positioned bottom center.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "watermark-pdf",
+      "expected": "Add CONFIDENTIAL at opacity 0.3; removable label, not security",
+      "options": {
+        "text": "CONFIDENTIAL",
+        "opacity": 0.3
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-watermark-pdf-1.pdf",
+          "sha256": "9b3fb6843e50b7cdbd87ca3fd116692fcdeda244b7aec6795211115dbcefbe68",
+          "bytes": 3943,
+          "inspection": "form-watermark-pdf-1.inspection.json",
+          "inspectionSha256": "0cba34b1e7cc0d6d49dd87ad86c4c19ecf9d99db34299faf4f3a709fc03bf478",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "📄form.pdf✕Watermark textOpacity: 30%LightStrong✎ Add Watermark✅Watermark added!Text \"CONFIDENTIAL\" applied to all pages.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "compress-pdf",
+      "expected": "Load/save with useObjectStreams:true; no guaranteed reduction",
+      "options": {
+        "useObjectStreams": true
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-compress-pdf-1.pdf",
+          "sha256": "02d9142a6425f94e92e1eeede12125bb576b374c4bab9ecebfcd86d84bbb4a6f",
+          "bytes": 2988,
+          "inspection": "form-compress-pdf-1.inspection.json",
+          "inspectionSha256": "2ef1d35a94cfa51f92b8ff0bf2799140012d882eff2b2fd0ee04bafcd7164fdb",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "Reset / choose another PDFOutput is larger — keep your original if size is your goal2,937 bytes → 2,988 bytes51 bytes larger",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "pdf-to-grayscale",
+      "expected": "Render 1.5x, grayscale JPEG quality 0.9; rasterize semantics",
+      "options": {
+        "scale": 1.5,
+        "jpegQuality": 0.9
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-pdf-to-grayscale-1.pdf",
+          "sha256": "95ae5a86be693525724851a4c68ee725dd4c2023d8e649af914d0aeb3d0fa943",
+          "bytes": 31224,
+          "inspection": "form-pdf-to-grayscale-1.inspection.json",
+          "inspectionSha256": "5299b464ca39059c2c54220f7edc3e0fc208efd098d889498693a85704ffbdbb",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "NOT TESTED",
+            "text": "EXPECTED CHANGE",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "EXPECTED CHANGE",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "EXPECTED CHANGE",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "EXPECTED CHANGE",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "EXPECTED CHANGE",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.📄form.pdf✕◑ Convert to Grayscale✅Converted to grayscale!",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "protect-pdf",
+      "expected": "AES-256 with public test password; local installed qpdf WASM",
+      "options": {
+        "publicTestPassword": "PublicSynthetic7E!"
+      },
+      "inputs": [
+        {
+          "path": "form.pdf",
+          "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+          "bytes": 2937
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-protect-pdf-1.pdf",
+          "sha256": "322f26d0157e933a52393341c5ba51c704ff80d30d3866b6a20665d595fdfe78",
+          "bytes": 3436,
+          "inspection": "form-protect-pdf-1.inspection.json",
+          "inspectionSha256": "03bafff8e6504d2dbebcd576f6b45d3e79f7fd9741616b326f800bcdc474631f",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "NOT TESTED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "🔒256-bit AES encryption. Your file and password are processed locally in your browser.📄form.pdf3 KB✕PasswordConfirm Password💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.✅protected.pdf is ready!Your PDF has been encrypted with 256-bit AES password protection.⚠️ Store your password safely — it cannot be recovered if lost.",
+      "alerts": []
+    },
+    {
+      "runId": "preservation-20261018-postrepair-02",
+      "fixtureId": "form",
+      "operation": "unlock-pdf",
+      "expected": "Decrypt immediately preceding protected artifact with correct password",
+      "options": {
+        "publicTestPassword": "PublicSynthetic7E!"
+      },
+      "inputs": [
+        {
+          "path": "form-protect-pdf-1.pdf",
+          "sha256": "322f26d0157e933a52393341c5ba51c704ff80d30d3866b6a20665d595fdfe78",
+          "bytes": 3436
+        }
+      ],
+      "outputs": [
+        {
+          "path": "form-unlock-pdf-1.pdf",
+          "sha256": "6400e8580ab86055fff0ba2523dbad50d547ed228cfe5e82be9b1354669c0d46",
+          "bytes": 2737,
+          "inspection": "form-unlock-pdf-1.inspection.json",
+          "inspectionSha256": "4f4785aa7b859af885a4231bbb22bd74bb50a8dff064e658c76a36b920829a41",
+          "pageCount": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "matrix": {
+            "pageOrder": "PRESERVED",
+            "text": "PRESERVED",
+            "imageContent": "NOT TESTED",
+            "vectorSemantics": "NOT TESTED",
+            "imageOperatorCounts": "PRESERVED",
+            "vectorOperatorCounts": "PRESERVED",
+            "localNavigation": "NOT TESTED",
+            "namedDestinations": "NOT TESTED",
+            "outlines": "NOT TESTED",
+            "externalRemoteLinks": "NOT TESTED",
+            "forms": "PRESERVED",
+            "metadata": "EXPECTED CHANGE",
+            "geometry": "PRESERVED",
+            "visualFidelity": "NOT TESTED",
+            "interactiveTextSelection": "NOT TESTED",
+            "interactiveForms": "NOT TESTED",
+            "signatureValidity": "NOT TESTED",
+            "browserDownload": "NOT TESTED"
+          }
+        }
+      ],
+      "status": "MEASURED",
+      "handlerText": "⚠️ You must know the current passwordThis tool removes password protection from PDFs you already have the password for. PDFcraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.🔒Your file and password are processed locally in your browser.🔒form.pdf3 KB✕Current PasswordEnter the password that is currently protecting this PDF.✅unlocked.pdf is ready!Password protection has been removed successfully.",
+      "alerts": []
+    }
+  ],
+  "artifactHashes": {
+    "form-add-page-numbers-1.inspection.json": "c6cd4c44316d36484643a8595522ee65f32bd687c36c2d936c8aa7320b0c3372",
+    "form-add-page-numbers-1.pdf": "215f04bc74fac1cea4c7a5ca9b0b1ed3f487ed21c087ce511c7cc7f5bc66e2d1",
+    "form-add-page-numbers.result.json": "6e1d3bfd3430488592256a03cb0e1549154e27925f2cabb6a24e7ddf62dd8add",
+    "form-compress-pdf-1.inspection.json": "2ef1d35a94cfa51f92b8ff0bf2799140012d882eff2b2fd0ee04bafcd7164fdb",
+    "form-compress-pdf-1.pdf": "02d9142a6425f94e92e1eeede12125bb576b374c4bab9ecebfcd86d84bbb4a6f",
+    "form-compress-pdf.result.json": "fba9079fc39b7a0943e7840d3b86a1f470ed8f080940c1b4f633396ca83854b6",
+    "form-delete-pages.result.json": "232e58ec47ecfb603303641aa73c59defd0f932ce82e079ac02f9cd45d89177e",
+    "form-merge-pdf.result.json": "84c2ba0c09589c2c048a14d5d00096eb702ad8e3ff37d1fd975207f7d791571f",
+    "form-pdf-to-grayscale-1.inspection.json": "5299b464ca39059c2c54220f7edc3e0fc208efd098d889498693a85704ffbdbb",
+    "form-pdf-to-grayscale-1.pdf": "95ae5a86be693525724851a4c68ee725dd4c2023d8e649af914d0aeb3d0fa943",
+    "form-pdf-to-grayscale.result.json": "69b6fdfa4496ddc7e70dc266a9921017b6d942457e2120cba31761c0c1375a8e",
+    "form-protect-pdf-1.inspection.json": "03bafff8e6504d2dbebcd576f6b45d3e79f7fd9741616b326f800bcdc474631f",
+    "form-protect-pdf-1.pdf": "322f26d0157e933a52393341c5ba51c704ff80d30d3866b6a20665d595fdfe78",
+    "form-protect-pdf.result.json": "7453c6a0f38fcc06b552d9a7a8a30e0f18a99ff5e23721910f4efa68b1a46a8b",
+    "form-reorder-pages.result.json": "63fed0b86a4ee03acbf68ff7c2eb5f8c30b92d0fedb4d24ec8a524f49cf2a3e1",
+    "form-rotate-pdf-1.inspection.json": "85e97344a9aaa4bcb18ab173d4a310a52e41c3ce0cef15dc749d98bb4cd3f52d",
+    "form-rotate-pdf-1.pdf": "83dd3baeffc22ea9f0cf78a2555c61b50d399dcf210ef6ea9d84474884d4a003",
+    "form-rotate-pdf.result.json": "744389305b94886cbca7c13bd00fd08ba4ac96d019d7d97f4464e4c0d8372cc4",
+    "form-split-pdf.result.json": "ec916ea3df51664f348eb62e73f0f4787434cbb17ff59085803429d3433ba34e",
+    "form-unlock-pdf-1.inspection.json": "4f4785aa7b859af885a4231bbb22bd74bb50a8dff064e658c76a36b920829a41",
+    "form-unlock-pdf-1.pdf": "6400e8580ab86055fff0ba2523dbad50d547ed228cfe5e82be9b1354669c0d46",
+    "form-unlock-pdf.result.json": "c28fb6c3934a754f0dc186e661788f5d623c3355fb9f4a7ac7b24f0d9895c0d6",
+    "form-watermark-pdf-1.inspection.json": "0cba34b1e7cc0d6d49dd87ad86c4c19ecf9d99db34299faf4f3a709fc03bf478",
+    "form-watermark-pdf-1.pdf": "9b3fb6843e50b7cdbd87ca3fd116692fcdeda244b7aec6795211115dbcefbe68",
+    "form-watermark-pdf.result.json": "b8a8bfbd677a41c297aa908fc89dd9242f68da24a7a09915250695e10c34565d",
+    "form.inspection.json": "cef0ac94398ac14124f974759b16a4e56bb6c6d61cefca2b893faec9718af846",
+    "form.pdf": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+    "navigation-add-page-numbers-1.inspection.json": "b1fecf8b071687e79ed61f488c5b1895c8438e18fb0bbf9a1333ae4466d30b77",
+    "navigation-add-page-numbers-1.pdf": "b456eff3fd885e1f0cc4658c6cb9680ba407dcbcdf0ce381aa46641d0cedefc0",
+    "navigation-add-page-numbers.result.json": "f7df746ba44a5e8219a31047a3b07b4c6ac0c0f1c0f13593a1357ab98ba823e0",
+    "navigation-compress-pdf-1.inspection.json": "d265c07bda9db20fe8808d271e0e150abd3ad27c8e8cc983fe79fe2b6bf24952",
+    "navigation-compress-pdf-1.pdf": "2123fafbef7eba1e793b23673b79d481eec7ae459b164bf4d63d9ca3bd8ed5c7",
+    "navigation-compress-pdf.result.json": "b34daa03a6a66a615f3d56f5ac9ad1fe2244e201828b9da3d26877288b2c3862",
+    "navigation-delete-pages-1.inspection.json": "fb5203b6e1092759c117fe2528faac08e3d4d25d4561e88c9a62d5657c5ad6f8",
+    "navigation-delete-pages-1.pdf": "b8b2147f4c3fbb950abec6dda38eddd9bd2e47831ebabe31d2d30ac4ea7c774b",
+    "navigation-delete-pages.result.json": "d14b11eadfdfb2be21440d0be4256e2050e0c7e471d6f433a94e3ec4b3985a1f",
+    "navigation-merge-pdf-1.inspection.json": "f8fb6427b90623769598cf87d174bcbfa68d0b8770d51d8f8945e84f831df16e",
+    "navigation-merge-pdf-1.pdf": "dd21c9707d515043f0ac19ab40562b17d587a2d1f8c13b6aabdb23663422605b",
+    "navigation-merge-pdf.result.json": "f06f14d1006e74549e17bc4c13cf5ca23c16b78677491541001d3de1f79b1b3e",
+    "navigation-pdf-to-grayscale-1.inspection.json": "d3258d8b30cd1bff80748429cdd88b8d644ecc7bb43ba29791b146f87d0b0716",
+    "navigation-pdf-to-grayscale-1.pdf": "19b7ab02c9135ea933d98757f41f7cd6a219635d550ef795967a95058aa1fa2f",
+    "navigation-pdf-to-grayscale.result.json": "2e6f3611cc4d0d700c94e71e6bba3b0f8a6799cadd892bb35e56277b9e549f48",
+    "navigation-protect-pdf-1.inspection.json": "560547569558bce1dc019d904bafe480d9f2e9004d5435a27611b102fe5c54b8",
+    "navigation-protect-pdf-1.pdf": "250f8880d03b05d1e6c8414f3e3b42cf020d76f81627a17f11879b5efe6f434e",
+    "navigation-protect-pdf.result.json": "3332d24f9e6f535a5a25a87325f25fc42e7c7154cdd7875dd6094766f6a72b16",
+    "navigation-reorder-pages-1.inspection.json": "ea3aff5ce8e71101e5625c15ad2168d90808e105d477b8a6b9dd5b11ef86190d",
+    "navigation-reorder-pages-1.pdf": "c2b706baee365cf6ef4165008535c91d5652a7b692d211c970efe057f914aa79",
+    "navigation-reorder-pages.result.json": "aaf32315d9e69fb60f87eb51a07de2bcf7c934c3d33541673d57617d5fe5fe85",
+    "navigation-rotate-pdf-1.inspection.json": "5713c1816c1711d2c0827aa843e9017011c448269a589a37b5257a08819a87e3",
+    "navigation-rotate-pdf-1.pdf": "cd6b951cc163dacd462fca5fbe59e42eb034d9cdf187fef642a73eab961c332d",
+    "navigation-rotate-pdf.result.json": "cb78586cc307d8d6c7917ebf0a5a5b77ce797d286770c2830ac848bab36ebddb",
+    "navigation-split-pdf-1.inspection.json": "1657b51c69cc8714dba7c215bf5825c0eece365d39540023ecbc41a9502cb4f7",
+    "navigation-split-pdf-1.pdf": "3bfd193e2a7970c3f81c0e007e6ea6c3259233edec7df4fde8f4b37f95a4b1a9",
+    "navigation-split-pdf-2.inspection.json": "f0187469d10b5d17b41cc6a0a086a6a2a459d5c42b5f168445c0b3745c3941a5",
+    "navigation-split-pdf-2.pdf": "1922ec686b43a95c0417e0999e9e0c71b29dd19a5bc1b86e96f741646e48d6b0",
+    "navigation-split-pdf-3.inspection.json": "a843f22f1d8acdf4b6c46656c85ed5f121e1ef6050680eb84fcc401e8765219a",
+    "navigation-split-pdf-3.pdf": "e0761513db33955db85f6cd9cf95f6fcf37c2d5bb6907de6a04d14e3614133df",
+    "navigation-split-pdf.result.json": "b2a267bc758207156f70b35646fa5e5a867d556f99eb2745d80ec7a2ab55b450",
+    "navigation-unlock-pdf-1.inspection.json": "57144253ec70092875380796ac55f3bc00c698e193d9f0b872cdfbf386b4055c",
+    "navigation-unlock-pdf-1.pdf": "f9d362b0dce13a373e2a1852a9c563b30a0ad29b3d26f80ebdf0f52196150ff5",
+    "navigation-unlock-pdf.result.json": "1f2aec1bd61892cc6bf11c29a5d3b20faed209e823416dfc10a28067abcff23c",
+    "navigation-watermark-pdf-1.inspection.json": "9774cc8254fc8a390c5619bd7c5d63b9bd471b7735cf3c0930c1a81884be3818",
+    "navigation-watermark-pdf-1.pdf": "9d7c86da6fe576d30fbecc22dcfd13db19aff95400de64cc26f341cb7aad2703",
+    "navigation-watermark-pdf.result.json": "d8b2bc606fb0950722837fc91a3e7ccc9974170936c336b856419fa2a8fb2215",
+    "navigation.inspection.json": "f4aa0e05b0233adf608b07d43092aa8ef88e1f7a43c50d00d9620cd3441724ab",
+    "navigation.pdf": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+    "source-snapshots.json": "8659dca8e329b97e1abd1eda40a16914d265860c1e6961435f02b4f0079fefce",
+    "started.json": "cb1f0a06312600589d432ce0f10b75cf592e55d511e5e8df607c75ccae298398",
+    "tail.inspection.json": "17579beb2e4ce09b76148046e24ddf8ba88dfa49898a59459f0c7f1ce5ec1b73",
+    "tail.pdf": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075"
+  }
+}

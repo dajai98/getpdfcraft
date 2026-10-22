@@ -1,0 +1,53 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "compress-pdf",
+  "expected": "Load/save with useObjectStreams:true; no guaranteed reduction",
+  "options": {
+    "useObjectStreams": true
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-compress-pdf-1.pdf",
+      "sha256": "35cfacc70d1c9dc8577e1559f8008aa7593dae2a0acb8dbfe9c52a9505ba6e65",
+      "bytes": 3586,
+      "inspection": "navigation-compress-pdf-1.inspection.json",
+      "inspectionSha256": "a5bb8535560fb76ccdad0cfaa3dc2b76972e21bb5bf68b0fbb97bbde7662a21d",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "PRESERVED",
+        "namedDestinations": "PRESERVED",
+        "outlines": "PRESERVED",
+        "externalRemoteLinks": "PRESERVED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "Reset / choose another PDFOutput is larger — keep your original if size is your goal3,542 bytes → 3,586 bytes44 bytes larger",
+  "alerts": []
+}

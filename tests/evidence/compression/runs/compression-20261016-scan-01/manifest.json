@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 3,
+  "study": "compression",
+  "runId": "compression-20261016-scan-01",
+  "status": "COMPLETE",
+  "coverageStatus": "PARTIAL; BATCH 7C INCOMPLETE",
+  "startedAt": "2026-10-16T12:30:17.447Z",
+  "completedAt": "2026-10-16T12:30:42.211Z",
+  "publicationStatus": "INTERNAL — NOT READY FOR PUBLICATION",
+  "execution": "AUTOMATED NODE SOURCE-HANDLER; NOT REAL BROWSER",
+  "browserTested": false,
+  "visualReview": "NOT TESTED",
+  "gitHead": "6ccfbe45fbe6e671cd968a1e5bbe692aac736dc4",
+  "sourceHashes": {
+    "app/tools/compress-pdf/page.js": "1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "scripts/lab/collect-real-compression.cjs": "985750e803a697b881cd87d14d4c991a769291574731072723174b83f6cb8021"
+  },
+  "sourceSnapshots": {
+    "scripts/lab/collect-compression.cjs": "harness.cjs",
+    "scripts/lab/collect-real-compression.cjs": "collector.cjs"
+  },
+  "environment": {
+    "node": "v24.15.0",
+    "os": "Windows_NT",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "pdfLib": "1.17.1",
+    "pdfjs": "4.4.168",
+    "next": "14.2.5",
+    "browser": "NOT TESTED",
+    "tester": "Automated source-handler harness; no human tester asserted"
+  },
+  "results": [
+    {
+      "fixtureId": "apollo11-press-kit",
+      "fixtureKind": "REAL_WORLD",
+      "provenance": "Apollo 11 lunar landing mission press kit, NASA-NEWS-RELEASE-69-83K, July 6 1969; downloaded unmodified from NASA NTRS. Historical document, not generated as a fixture. Scan classification requires rendered-page review.",
+      "provenancePath": "tests/evidence/compression/runs/compression-20261016-scan-01/provenance.json",
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.input.pdf",
+      "inputSha256": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+      "inputBytes": 28028612,
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.output.pdf",
+      "outputSha256": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+      "outputBytes": 27891686,
+      "byteChange": -136926,
+      "percentChange": -0.4885222286426456,
+      "percentConvention": "positive=increase; negative=reduction",
+      "status": "SUCCESS",
+      "independentOutputOpens": true,
+      "error": null,
+      "inspectionError": null,
+      "warnings": [
+        "Warning: Cannot polyfill `DOMMatrix`, rendering may be broken.",
+        "Warning: Cannot polyfill `Path2D`, rendering may be broken."
+      ],
+      "rawInspectionPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.inspection.json",
+      "inspectionSha256": "48270bebdfa3cb2bd4e263ce9aa39dd9c37cae8f1b45ec893d155ecffb4032cb",
+      "textExtractionMatches": true,
+      "geometryMatches": true,
+      "formFieldsMatch": true,
+      "formAnnotationsMatch": true,
+      "metadataBefore": {
+        "PDFFormatVersion": "1.6",
+        "Language": null,
+        "EncryptFilterName": null,
+        "IsLinearized": true,
+        "IsAcroFormPresent": false,
+        "IsXFAPresent": false,
+        "IsCollectionPresent": false,
+        "IsSignaturesPresent": false,
+        "CreationDate": "D:20070312210124-04'00'",
+        "Custom": {
+          "Style": "Searchable Image (Exact)"
+        },
+        "Creator": "Acrobat Capture 3.0",
+        "Producer": "Adobe PDF Library 4.0",
+        "ModDate": "D:20070313124147-04'00'"
+      },
+      "metadataAfter": {
+        "PDFFormatVersion": "1.7",
+        "Language": null,
+        "EncryptFilterName": null,
+        "IsLinearized": false,
+        "IsAcroFormPresent": false,
+        "IsXFAPresent": false,
+        "IsCollectionPresent": false,
+        "IsSignaturesPresent": false,
+        "CreationDate": "D:20070312210124-04'00'",
+        "Custom": {
+          "Style": "Searchable Image (Exact)"
+        },
+        "Creator": "Acrobat Capture 3.0",
+        "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "ModDate": "D:20261016123030Z"
+      },
+      "browserVerification": "NOT TESTED",
+      "downloadSuccess": "NOT TESTED",
+      "visualQuality": "NOT TESTED",
+      "interactiveSelectability": "NOT TESTED",
+      "formInteraction": "NOT TESTED",
+      "signatureValidity": "NOT TESTED",
+      "displayedSummary": [
+        "File size reduced28,028,612 bytes → 27,891,686 bytes136926 bytes smaller"
+      ],
+      "downloadName": "processed.pdf"
+    }
+  ],
+  "missingCoverage": [
+    "Real photographic PDF NOT TESTED",
+    "Physical scan PDF NOT TESTED",
+    "Verified Office export NOT TESTED",
+    "Real mixed-content category NOT VERIFIED",
+    "Browser/download NOT TESTED: no browser surface; native pipe unavailable",
+    "Visual review NOT TESTED",
+    "Interactive selection/form/signature checks NOT TESTED"
+  ],
+  "artifactHashes": {
+    "collector.cjs": "985750e803a697b881cd87d14d4c991a769291574731072723174b83f6cb8021",
+    "environment.json": "7a6699f6740575b2f9d25dc951f35def8e374b3379882fec8fcce52dc95dc18d",
+    "harness.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "nasa-access-plan.input.pdf": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+    "nasa-access-plan.inspection.json": "48270bebdfa3cb2bd4e263ce9aa39dd9c37cae8f1b45ec893d155ecffb4032cb",
+    "nasa-access-plan.output.pdf": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+    "permission-source.html": "857333ea9cf2587fb8344d29a240d90807ccc4d9126987a9fc4ba403fdf5a335",
+    "provenance.json": "f5f62f9cc947847308544504a0b5b19557e86da7f52324cc353b016a5b09cea2",
+    "started.json": "f8cc6fc060c9f88b312d4577397f91f8e0c5d26106f6a2c983f559f4337bffda"
+  }
+}

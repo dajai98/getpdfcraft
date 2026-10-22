@@ -1,0 +1,284 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 1,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "SYNTHETIC FORM",
+        "textSha256": "881cae9c729041bb6ed89845b9f43c5beb7fc601b7ca4a3a781e8bf6d7a5d7ae",
+        "textCharacters": 14,
+        "operatorCount": 66,
+        "annotations": [
+          {
+            "subtype": "Widget",
+            "fieldName": "sampleName",
+            "fieldValue": "Benchmark Example"
+          },
+          {
+            "subtype": "Widget",
+            "fieldName": "sampleConsent",
+            "fieldValue": "Yes"
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "sampleName": [
+        {
+          "id": "8R",
+          "actions": null,
+          "name": "sampleName",
+          "strokeColor": null,
+          "fillColor": null,
+          "type": "",
+          "kidIds": [
+            "9R"
+          ],
+          "page": -1,
+          "rotation": 0
+        },
+        {
+          "id": "9R",
+          "value": "Benchmark Example",
+          "defaultValue": "",
+          "multiline": false,
+          "password": false,
+          "charLimit": 0,
+          "comb": false,
+          "editable": true,
+          "hidden": false,
+          "name": "sampleName",
+          "rect": [
+            39.5,
+            599.5,
+            300.5,
+            630.5
+          ],
+          "actions": null,
+          "page": 0,
+          "strokeColor": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          },
+          "fillColor": {
+            "0": 255,
+            "1": 255,
+            "2": 255
+          },
+          "rotation": 0,
+          "type": "text"
+        }
+      ],
+      "sampleConsent": [
+        {
+          "id": "12R",
+          "actions": null,
+          "name": "sampleConsent",
+          "strokeColor": null,
+          "fillColor": null,
+          "type": "",
+          "kidIds": [
+            "13R"
+          ],
+          "page": -1,
+          "rotation": 0
+        },
+        {
+          "id": "13R",
+          "value": "Yes",
+          "defaultValue": "Off",
+          "exportValues": "Yes",
+          "editable": true,
+          "name": "sampleConsent",
+          "rect": [
+            39.5,
+            539.5,
+            58.5,
+            558.5
+          ],
+          "hidden": false,
+          "actions": null,
+          "page": 0,
+          "strokeColor": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          },
+          "fillColor": {
+            "0": 255,
+            "1": 255,
+            "2": 255
+          },
+          "rotation": 0,
+          "type": "checkbox"
+        }
+      ]
+    },
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": true,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib 1.17.1 fixture generator",
+      "ModDate": "D:20200101000000Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 1,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "SYNTHETIC FORM",
+        "textSha256": "881cae9c729041bb6ed89845b9f43c5beb7fc601b7ca4a3a781e8bf6d7a5d7ae",
+        "textCharacters": 14,
+        "operatorCount": 66,
+        "annotations": [
+          {
+            "subtype": "Widget",
+            "fieldName": "sampleName",
+            "fieldValue": "Benchmark Example"
+          },
+          {
+            "subtype": "Widget",
+            "fieldName": "sampleConsent",
+            "fieldValue": "Yes"
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "sampleName": [
+        {
+          "id": "8R",
+          "actions": null,
+          "name": "sampleName",
+          "strokeColor": null,
+          "fillColor": null,
+          "type": "",
+          "kidIds": [
+            "9R"
+          ],
+          "page": -1,
+          "rotation": 0
+        },
+        {
+          "id": "9R",
+          "value": "Benchmark Example",
+          "defaultValue": "",
+          "multiline": false,
+          "password": false,
+          "charLimit": 0,
+          "comb": false,
+          "editable": true,
+          "hidden": false,
+          "name": "sampleName",
+          "rect": [
+            39.5,
+            599.5,
+            300.5,
+            630.5
+          ],
+          "actions": null,
+          "page": 0,
+          "strokeColor": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          },
+          "fillColor": {
+            "0": 255,
+            "1": 255,
+            "2": 255
+          },
+          "rotation": 0,
+          "type": "text"
+        }
+      ],
+      "sampleConsent": [
+        {
+          "id": "12R",
+          "actions": null,
+          "name": "sampleConsent",
+          "strokeColor": null,
+          "fillColor": null,
+          "type": "",
+          "kidIds": [
+            "13R"
+          ],
+          "page": -1,
+          "rotation": 0
+        },
+        {
+          "id": "13R",
+          "value": "Yes",
+          "defaultValue": "Off",
+          "exportValues": "Yes",
+          "editable": true,
+          "name": "sampleConsent",
+          "rect": [
+            39.5,
+            539.5,
+            58.5,
+            558.5
+          ],
+          "hidden": false,
+          "actions": null,
+          "page": 0,
+          "strokeColor": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          },
+          "fillColor": {
+            "0": 255,
+            "1": 255,
+            "2": 255
+          },
+          "rotation": 0,
+          "type": "checkbox"
+        }
+      ]
+    },
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": true,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "ModDate": "D:20261015193155Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "images": {
+    "before": [],
+    "after": []
+  },
+  "warnings": [],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

@@ -59,7 +59,7 @@ export default function About() {
           <p>So I built PDFcraft differently.</p>
           <p>PDFcraft processes document contents locally in your browser without uploading them to a PDFcraft processing backend. No account is required. The site and some tools still load resources over the internet.</p>
           <p>I wanted useful tools to be accessible without a subscription. PDFcraft’s 13 current tools are free to use without an account. What a tool can handle depends on the document and the browser or device running it.</p>
-          <p>My journey into development has been unconventional. I left college in 2019 when COVID disrupted everything. Since then, I&apos;ve been learning by building — experimenting with game development, Android apps, and web projects alongside friends.</p>
+          <p>My journey into development has been unconventional. I left college in 2019. Since then, I&apos;ve been learning by building — experimenting with game development, Android apps, and web projects alongside friends.</p>
           <p>Most of my work is published under Dajai Studio, where I build Android games and apps. One of my projects, BrainStorm Quiz, is available on Google Play.</p>
           <p>PDFcraft is my first serious web project, and I&apos;m proud of it.</p>
           <p>This project is still growing. I&apos;m continuing to improve the tools, add new features, and make the experience faster and more private over time. My goal is simple:</p>
@@ -68,6 +68,12 @@ export default function About() {
           <p style={{ fontWeight: 700, color: "#111827" }}>— Rai Dajai 🇳🇵</p>
         </div>
       </div>
+
+      <section style={{ marginBottom: 40, lineHeight: 1.8 }}>
+        <h2>Publishing and corrections</h2>
+        <p>Rai Dajai is the creator of PDFcraft. Its guides are published under Dajai Studio; the publisher label does not identify an individual article writer or tester.</p>
+        <p>Found an inaccurate explanation or a mismatch with a tool? Use the <a href="/contact">contact page</a> to send the page URL and the statement that needs review. Please do not send private documents or passwords.</p>
+      </section>
 
       {/* Core values */}
       <div style={{ display: "flex", flexDirection: "column", gap: 24, marginBottom: 48 }}>

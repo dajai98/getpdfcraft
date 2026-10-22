@@ -1,0 +1,202 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 6,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 5,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib 1.17.1 fixture generator",
+      "ModDate": "D:20200101000000Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 6,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 5,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "ModDate": "D:20261015193155Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "images": {
+    "before": [
+      {
+        "sha256": "874af34b6cbf318ee5470121a4efdae8bd3bb7b1d81c4457e9d198dd5ec8aa4d",
+        "bytes": 721136,
+        "width": "768",
+        "height": "1024"
+      }
+    ],
+    "after": [
+      {
+        "sha256": "874af34b6cbf318ee5470121a4efdae8bd3bb7b1d81c4457e9d198dd5ec8aa4d",
+        "bytes": 721136,
+        "width": "768",
+        "height": "1024"
+      }
+    ]
+  },
+  "warnings": [],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

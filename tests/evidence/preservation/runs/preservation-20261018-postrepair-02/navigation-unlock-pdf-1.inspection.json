@@ -1,0 +1,1089 @@
+{
+  "parser": {
+    "opens": true,
+    "pageCount": 3,
+    "pages": [
+      {
+        "page": 1,
+        "text": "PAGE_1 selectable text",
+        "identities": [
+          "PAGE_1"
+        ],
+        "viewBox": [
+          0,
+          0,
+          400,
+          500
+        ],
+        "rotation": 0,
+        "physical": [
+          400,
+          500
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      },
+      {
+        "page": 2,
+        "text": "PAGE_2 selectable text",
+        "identities": [
+          "PAGE_2"
+        ],
+        "viewBox": [
+          20,
+          30,
+          470,
+          370
+        ],
+        "rotation": 90,
+        "physical": [
+          340,
+          450
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      },
+      {
+        "page": 3,
+        "text": "PAGE_3 selectable text",
+        "identities": [
+          "PAGE_3"
+        ],
+        "viewBox": [
+          0,
+          0,
+          450,
+          550
+        ],
+        "rotation": 0,
+        "physical": [
+          450,
+          550
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      }
+    ],
+    "boxes": [
+      {
+        "media": {
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 500
+        },
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 500
+        },
+        "rotation": 0
+      },
+      {
+        "media": {
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 400
+        },
+        "crop": {
+          "x": 20,
+          "y": 30,
+          "width": 450,
+          "height": 340
+        },
+        "rotation": 90
+      },
+      {
+        "media": {
+          "x": 0,
+          "y": 0,
+          "width": 450,
+          "height": 550
+        },
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 450,
+          "height": 550
+        },
+        "rotation": 0
+      }
+    ],
+    "fields": null,
+    "outlines": [
+      {
+        "title": "PAGE_1",
+        "destination": null,
+        "children": []
+      },
+      {
+        "title": "PAGE_2",
+        "destination": null,
+        "children": []
+      },
+      {
+        "title": "PAGE_3",
+        "destination": null,
+        "children": []
+      }
+    ],
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Author": "Synthetic fixture generator",
+      "CreationDate": "D:20200101000000Z",
+      "Creator": "PDFcraft internal fixture",
+      "ModDate": "D:20200101000000Z",
+      "Producer": "pdf-lib controlled fixture",
+      "Title": "Synthetic preservation fixture"
+    }
+  },
+  "navigation": {
+    "status": "VERIFIED",
+    "lowLevel": {
+      "pageRefs": [
+        "6 0 R",
+        "7 0 R",
+        "8 0 R"
+      ],
+      "geometry": [
+        {
+          "size": {
+            "width": 400,
+            "height": 500
+          },
+          "media": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 500
+          },
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 500
+          },
+          "rotation": 0
+        },
+        {
+          "size": {
+            "width": 500,
+            "height": 400
+          },
+          "media": {
+            "x": 0,
+            "y": 0,
+            "width": 500,
+            "height": 400
+          },
+          "crop": {
+            "x": 20,
+            "y": 30,
+            "width": 450,
+            "height": 340
+          },
+          "rotation": 90
+        },
+        {
+          "size": {
+            "width": 450,
+            "height": 550
+          },
+          "media": {
+            "x": 0,
+            "y": 0,
+            "width": 450,
+            "height": 550
+          },
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 450,
+            "height": 550
+          },
+          "rotation": 0
+        }
+      ],
+      "destinations": [
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 0,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 1,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        },
+        {
+          "page": 2,
+          "view": [
+            "/XYZ",
+            "null",
+            "250",
+            "null"
+          ]
+        }
+      ],
+      "remoteActions": [
+        [
+          [
+            "/D",
+            [
+              "2",
+              "/Fit"
+            ]
+          ],
+          [
+            "/F",
+            "(external.pdf)"
+          ],
+          [
+            "/S",
+            "/GoToR"
+          ]
+        ],
+        [
+          [
+            "/D",
+            [
+              "2",
+              "/Fit"
+            ]
+          ],
+          [
+            "/F",
+            "(external.pdf)"
+          ],
+          [
+            "/S",
+            "/GoToR"
+          ]
+        ],
+        [
+          [
+            "/D",
+            [
+              "2",
+              "/Fit"
+            ]
+          ],
+          [
+            "/F",
+            "(external.pdf)"
+          ],
+          [
+            "/S",
+            "/GoToR"
+          ]
+        ]
+      ],
+      "outlines": [
+        {
+          "title": "(PAGE_1)",
+          "count": 0,
+          "children": []
+        },
+        {
+          "title": "(PAGE_2)",
+          "count": 0,
+          "children": []
+        },
+        {
+          "title": "(PAGE_3)",
+          "count": 0,
+          "children": []
+        }
+      ],
+      "hasOpenAction": true
+    },
+    "named": [
+      {
+        "id": "name:7061676530",
+        "target": "PAGE_1"
+      },
+      {
+        "id": "name:7061676531",
+        "target": "PAGE_2"
+      },
+      {
+        "id": "name:7061676532",
+        "target": "PAGE_3"
+      },
+      {
+        "id": "string:6c617374",
+        "target": "PAGE_3"
+      }
+    ],
+    "outlines": [
+      {
+        "title": "PAGE_1",
+        "target": "PAGE_1"
+      },
+      {
+        "title": "PAGE_2",
+        "target": "PAGE_2"
+      },
+      {
+        "title": "PAGE_3",
+        "target": "PAGE_3"
+      }
+    ],
+    "annotations": [
+      [
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": "PAGE_1",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_1",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": "PAGE_2",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_2",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_3",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": null,
+          "uri": "https://example.com/"
+        },
+        {
+          "owner": "PAGE_1",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": [
+            [
+              "/D",
+              [
+                "2",
+                "/Fit"
+              ]
+            ],
+            [
+              "/F",
+              "(external.pdf)"
+            ],
+            [
+              "/S",
+              "/GoToR"
+            ]
+          ],
+          "uri": null
+        }
+      ],
+      [
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": "PAGE_1",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_1",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": "PAGE_2",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_2",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_3",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": null,
+          "uri": "https://example.com/"
+        },
+        {
+          "owner": "PAGE_2",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": [
+            [
+              "/D",
+              [
+                "2",
+                "/Fit"
+              ]
+            ],
+            [
+              "/F",
+              "(external.pdf)"
+            ],
+            [
+              "/S",
+              "/GoToR"
+            ]
+          ],
+          "uri": null
+        }
+      ],
+      [
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": "PAGE_1",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_1",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": "PAGE_2",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_2",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": null,
+          "local": "PAGE_3",
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": "PAGE_3",
+          "local": null,
+          "remote": null,
+          "uri": null
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": null,
+          "uri": "https://example.com/"
+        },
+        {
+          "owner": "PAGE_3",
+          "ownerMatches": true,
+          "direct": null,
+          "local": null,
+          "remote": [
+            [
+              "/D",
+              [
+                "2",
+                "/Fit"
+              ]
+            ],
+            [
+              "/F",
+              "(external.pdf)"
+            ],
+            [
+              "/S",
+              "/GoToR"
+            ]
+          ],
+          "uri": null
+        }
+      ]
+    ],
+    "openAction": "PAGE_3"
+  },
+  "fieldValues": []
+}

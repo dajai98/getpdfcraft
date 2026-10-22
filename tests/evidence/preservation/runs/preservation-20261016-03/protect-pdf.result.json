@@ -1,0 +1,48 @@
+{
+  "operation": "protect-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "password": "PublicSynthetic7E!"
+  },
+  "expected": "AES-256, same user/owner password; print/extract allowed.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "protect-pdf-1.pdf",
+      "sha256": "ed2c921079e9160dd3c8fcdefd7ac3d3d56297b34666ad610f3694b72eab9130",
+      "bytes": 3436,
+      "inspection": "protect-pdf-1.inspection.json",
+      "inspectionSha256": "7adfa12b48ca9a86197fb6626a62cbca1eeb47fd7b93557bf722b3c3b85be653",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "CHANGED",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "🔒256-bit AES encryption. Your file and password are processed locally in your browser.📄features.pdf3 KB✕PasswordConfirm Password💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.✅protected.pdf is ready!Your PDF has been encrypted with 256-bit AES password protection.⚠️ Store your password safely — it cannot be recovered if lost."
+}

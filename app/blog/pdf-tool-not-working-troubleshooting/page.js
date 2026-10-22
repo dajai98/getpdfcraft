@@ -126,7 +126,7 @@ export default function Post() {
       faqs={[
   {
     "q": "Why doesn't the error message tell me exactly what went wrong?",
-    "a": "Error reporting varies by tool: some show inline messages, and some still use alerts. Protect/Unlock distinguish runtime-loading failures from qpdf status errors, but a status failure can still mean a wrong password, damaged PDF, or unsupported input."
+    "a": "A processing error can have several causes. For Protect/Unlock, a qpdf status failure alone cannot reliably distinguish a wrong password from a damaged or unsupported PDF."
   },
   {
     "q": "Is there a file size limit on PDFcraft?",

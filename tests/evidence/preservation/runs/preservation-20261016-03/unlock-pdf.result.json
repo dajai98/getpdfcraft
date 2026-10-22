@@ -1,0 +1,48 @@
+{
+  "operation": "unlock-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "password": "PublicSynthetic7E!"
+  },
+  "expected": "Decrypt previous protected output with supplied password.",
+  "inputs": [
+    {
+      "name": "protect-pdf-1.pdf",
+      "sha256": "ed2c921079e9160dd3c8fcdefd7ac3d3d56297b34666ad610f3694b72eab9130"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "unlock-pdf-1.pdf",
+      "sha256": "03668ccf023cb5023a6433e782c2ba7f7044322ae7a3b07b9abcebfb930d8c01",
+      "bytes": 2737,
+      "inspection": "unlock-pdf-1.inspection.json",
+      "inspectionSha256": "210cd012c6349f7fe43d15c0ee76dad539dd1343b7baf08947b7ae80b5884959",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "CHANGED",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "⚠️ You must know the current passwordThis tool removes password protection from PDFs you already have the password for. PDFcraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.🔒Your file and password are processed locally in your browser.🔒features.pdf3 KB✕Current PasswordEnter the password that is currently protecting this PDF.✅unlocked.pdf is ready!Password protection has been removed successfully."
+}

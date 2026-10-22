@@ -6,146 +6,114 @@ export default function Post() {
     <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"
       title={"PDF vs Word — Which Format Should You Use?"}
       date="February 2026" readTime="7 min read"
-      intro={"PDF and Word are both document formats, but they serve very different purposes. Choosing the wrong format can cause layout issues, editing problems, and compatibility headaches. Here is a clear guide on when to use PDF and when to use Word."}
+      intro={"Choose the format by what the next person must do: revise the wording, review a fixed page layout, or submit a file to a system with its own requirements. Keep the editable working document even when you deliver a PDF. PDFcraft can organize supported PDF pages, but it does not convert them into Word documents or edit their existing paragraphs."}
       sections={[
   {
-    "heading": "What is a PDF?",
-    "text": "PDF is a fixed-layout document format intended to preserve page appearance. Fonts, viewer support, interactive features, and print settings can still affect results. It is not automatically read-only."
-  },
-  {
-    "heading": "What is a Word document?",
-    "text": "Word documents (.docx) are created by Microsoft Word and are the standard format for editable documents. Word documents can be easily modified — text, formatting, images, and layout can all be changed. However, how a Word document looks can vary between devices, Word versions, and operating systems."
-  },
-  {
-    "heading": "PDF vs Word — side by side comparison",
+    "heading": "Keep a working source and a delivery copy",
+    "text": "A PDF stores a fixed page layout; it is not automatically read-only or a substitute for the editable source. A Word document is useful when the next task is changing paragraphs and layout in a compatible editor. The two files can serve different stages of the same job. Choose one authoritative working version so corrections do not become scattered between an old PDF and a newer draft.",
     "table": {
       "headers": [
-        "Feature",
-        "PDF",
-        "Word (.docx)"
+        "Next task",
+        "File to consider",
+        "Check before handing it over"
       ],
       "rows": [
         [
-          "Layout",
-          "Fixed page layout; viewer support matters",
-          "Editable layout may reflow"
+          "Revise wording or reorganize paragraphs",
+          "Editable working document",
+          "Recipient has a compatible editor and the current version"
         ],
         [
-          "Editing",
-          "Needs tools suited to the change",
-          "Designed for document editing"
+          "Review a particular page arrangement",
+          "PDF delivery copy",
+          "Pages, fonts and links appear as intended"
         ],
         [
-          "File size",
-          "Depends on content and export settings",
-          "Depends on content and export settings"
+          "Submit to a portal or employer",
+          "The explicitly requested format",
+          "Current format, size and encryption requirements"
         ],
         [
-          "Security",
-          "Depends on encryption and handling",
-          "Depends on encryption and handling"
-        ],
-        [
-          "Printing",
-          "Check print settings and output",
-          "Check print settings and output"
-        ],
-        [
-          "Compatibility",
-          "Needs a suitable PDF viewer",
-          "Needs a compatible document application"
-        ],
-        [
-          "Collaboration",
-          "Depends on tools and workflow",
-          "Depends on tools and workflow"
-        ],
-        [
-          "Typical use",
-          "Final-layout sharing",
-          "Drafting and revision"
+          "Reorder existing PDF pages only",
+          "PDF copy in a supported page tool",
+          "No paragraph editing or DOCX export is needed"
         ]
       ]
     }
   },
   {
-    "heading": "When to use PDF",
+    "heading": "Example: revise the report, then assemble the packet",
+    "text": "Suppose a reviewer asks you to correct a paragraph and add a separate PDF appendix. Correct the paragraph in the working document first, export a fresh PDF using your authoring application, and inspect that export. Only then assemble the PDF appendix. Appending pages does not apply a correction to the paragraph inside the old report.",
     "steps": [
       {
-        "title": "Final documents being shared",
-        "body": "PDF can be useful for sharing a final layout. Check what the recipient sees rather than promising identical rendering."
+        "title": "Send the editable source when revision is the task",
+        "body": "If a colleague must rewrite sections, agree on the editable format and version rather than sending only a flattened page image. Keep the previous delivery copy for comparison; label the new handoff clearly so the wrong version is not circulated."
       },
       {
-        "title": "Documents that should not be easily edited",
-        "body": "PDF is not inherently uneditable or tamper-proof. Choose access and signing controls for your actual requirements."
+        "title": "Use PDFcraft only for the supported page task",
+        "body": "Merge appends PDFs in displayed insertion order; Reorder Pages changes the page sequence with Up/Down controls. Those operations do not reconstruct editable Word paragraphs. Check the tool limitations before using documents with interactive features."
+      }
+    ],
+    "list": [
+      {
+        "text": "Check which PDF edits are supported",
+        "href": "/blog/how-to-edit-pdf-free"
       },
       {
-        "title": "Printing",
-        "body": "Review print settings and a test output; fixed layout is not a guarantee of correct printing."
-      },
-      {
-        "title": "Forms and official submissions",
-        "body": "Follow the receiving organization’s required format."
-      },
-      {
-        "title": "Long-term archiving",
-        "body": "Archival requirements depend on the document and workflow. Do not assume an ordinary PDF remains usable indefinitely."
+        "text": "Assemble supported PDF pages",
+        "href": "/tools/merge-pdf"
       }
     ]
   },
   {
-    "heading": "When to use Word",
+    "heading": "If only the PDF remains, conversion is a separate job",
+    "text": "Do not rename a .pdf file to .docx or use a page-image export as an editable-document recovery method. Microsoft documents that opening a PDF in Word converts a copy and attempts to reconstruct its layout; the result may differ, and a graphics-heavy page may remain an image. That is documented Word behavior, not a PDFcraft feature or a locally tested conversion result.",
     "steps": [
       {
-        "title": "Documents still being drafted",
-        "body": "Word is designed for editing. Use it while writing, reviewing, and revising documents before they are finalized."
-      },
+        "title": "Check the result you actually need",
+        "body": "If the source is a scan, recovering its words requires a text-recognition workflow; a visible image of those words is not recognized text. PDFcraft has no PDF-to-Word or OCR tool. For a separate conversion workflow, compare paragraphs, tables and reading order against the original rather than treating a successful save as proof of accuracy."
+      }
+    ],
+    "list": [
       {
-        "title": "Collaborative editing",
-        "body": "Word's Track Changes and Comments features make it ideal for multiple people reviewing and editing the same document."
-      },
-      {
-        "title": "Documents that will need updates",
-        "body": "If a document will be regularly updated — a policy document, a template, a report — keep it in Word for easy future editing."
-      },
-      {
-        "title": "Mail merge and form letters",
-        "body": "If your authoring application supports templates or mail merge, prepare the editable document there and export the final format required by your workflow."
+        "text": "Microsoft: opening PDFs in Word",
+        "href": "https://support.microsoft.com/en-us/word/opening-pdfs-in-word"
       }
     ]
   },
   {
-    "heading": "The best workflow",
-    "text": "Keep an editable source for future changes and export a PDF when fixed-layout sharing fits the recipient’s needs. Check the exported result."
-  },
-  {
-    "tip": "Keep the editable source and choose the shared format according to the recipient’s requirements."
+    "heading": "Let the recipient requirement override your preference",
+    "text": "A fixed-layout file is not automatically the accepted submission format. Check the receiving instructions before exporting, merging or encrypting anything. If the recipient wants an editable document, ask whether the original source is suitable. If they require a PDF, inspect the saved delivery file in the intended viewer; fixed layout is not a guarantee that every viewer or print setup produces an identical result.",
+    "steps": [
+      {
+        "title": "Review the handoff, not a format score",
+        "body": "Confirm the file version, required attachments and whether recipients need working links or interactive fields. A smaller file or a familiar extension does not prove the handoff meets those needs. Keep the source for future corrections instead of repeatedly converting between formats."
+      }
+    ],
+    "list": [
+      {
+        "text": "Check application-specific document requirements",
+        "href": "/blog/how-to-lock-pdf-for-job-applications"
+      }
+    ]
   }
 ]}
       faqs={[
   {
-    "q": "Is PDF better than Word?",
-    "a": "Neither is better — they serve different purposes. PDF is better for sharing and final documents. Word is better for editing and collaboration. Use both together for the best results."
+    "q": "Should I send both the Word source and a PDF?",
+    "a": "Only if the recipient needs both roles: an editable working file and a layout reference. Agree which version is authoritative; sending two unexplained versions can create avoidable revision confusion."
   },
   {
-    "q": "Can I convert Word to PDF for free?",
-    "a": "Check the Save, Export, or Print options in your installed application. Available features and prices depend on the product and version."
+    "q": "Does a PDF prevent a recipient from editing the document?",
+    "a": "No. The format is not inherently tamper-proof. Format choice, opening access and signature validation are separate decisions; this guide does not promise editing prevention."
   },
   {
-    "q": "Why do PDF files look different on different devices?",
-    "a": "Missing fonts, viewer support, and document features can affect rendering. Check the actual output instead of assuming every device displays it identically."
+    "q": "Can PDFcraft turn a PDF into an editable Word file?",
+    "a": "No. PDFcraft provides supported page operations and image output, not DOC or DOCX generation, existing-text editing or OCR. Use the editable source or a separate conversion workflow."
   },
   {
-    "q": "Can I edit a PDF like a Word document?",
-    "a": "Text changes require a suitable editor or conversion workflow. PDFcraft provides page operations, not existing-text editing."
-  },
-  {
-    "q": "Which format is better for job applications?",
-    "a": "Use the format requested by the employer or portal. PDF is not always the required choice."
-  },
-  {
-    "q": "Which format is better for email attachments?",
-    "a": "PDF for final documents you want to look consistent. Word if you want the recipient to be able to edit the content."
+    "q": "When should I avoid converting back from PDF?",
+    "a": "When you still have the current editable source, revise that source and export a new delivery copy. Reconstruction from PDF can require layout corrections and is not a replacement for keeping the working document."
   }
 ]}
       ctaText={"Work with your PDFs — free tools from PDFcraft"}

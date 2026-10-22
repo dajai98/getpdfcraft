@@ -1,0 +1,54 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "watermark-pdf",
+  "expected": "Add CONFIDENTIAL at opacity 0.3; removable label, not security",
+  "options": {
+    "text": "CONFIDENTIAL",
+    "opacity": 0.3
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-watermark-pdf-1.pdf",
+      "sha256": "49327b6a5bfe2e3aa4f54742c332e48f9234c272d24f6243f17ff82bb222088d",
+      "bytes": 4549,
+      "inspection": "navigation-watermark-pdf-1.inspection.json",
+      "inspectionSha256": "5c99970c3619d14839a8c99670ed0c5377fd646338f7bf8d570164719a1a7c06",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "EXPECTED CHANGE",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "PRESERVED",
+        "namedDestinations": "PRESERVED",
+        "outlines": "PRESERVED",
+        "externalRemoteLinks": "PRESERVED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "📄navigation.pdf✕Watermark textOpacity: 30%LightStrong✎ Add Watermark✅Watermark added!Text \"CONFIDENTIAL\" applied to all pages.",
+  "alerts": []
+}

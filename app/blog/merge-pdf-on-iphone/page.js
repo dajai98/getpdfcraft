@@ -6,14 +6,14 @@ export default function Post() {
     <BlogPost tag={"iPhone"} tagColor="#2563EB" tagBg="#EFF6FF"
       title={"How to Merge PDF on iPhone Free (No App Needed)"}
       date="February 2026" readTime="5 min read"
-      intro={"Merging PDFs on iPhone is easy without downloading any app. Try PDFcraft in Safari to combine PDF files locally in your browser. No sign up, no account, document contents are processed locally."}
+      intro={"To combine PDFs on iPhone without installing a PDFcraft app, open Merge PDF in your browser and add files in the order you need. The merge runs locally, but website resources still load over the network. This guide explains the controls and checks to make; it does not establish tested compatibility with every iPhone or Safari version."}
       sections={[
   {
     "heading": "How to merge PDF on iPhone — step by step",
     "steps": [
       {
         "title": "Open Safari on your iPhone",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+        "body": "Open getpdfcraft.com in Safari. If the page or file chooser fails to load, first check your connection and browser restrictions. No PDFcraft account is required."
       },
       {
         "title": "Tap Merge PDF",
@@ -29,7 +29,7 @@ export default function Post() {
       },
       {
         "title": "Tap Merge PDFs",
-        "body": "Click Merge PDFs, wait for completion, and inspect the downloaded result. Document processing happens locally in the browser."
+        "body": "Tap Merge PDFs after checking the list. For example, add a cover PDF before a report PDF to place the cover first. The handler appends every page from each file; it does not sort by filename."
       },
       {
         "title": "Download the merged PDF",
@@ -41,16 +41,16 @@ export default function Post() {
     "heading": "How to find the merged PDF on iPhone",
     "steps": [
       {
-        "title": "Open the Files app",
-        "body": "Tap the Files app on your iPhone home screen."
+        "title": "Confirm that a download completed",
+        "body": "A successful merge and a saved download are separate steps. Use the tool's download button, then inspect your browser's download status. If no file was saved, keep the original inputs available rather than treating the success message as proof of a completed download."
       },
       {
-        "title": "Go to Downloads",
-        "body": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+        "title": "Open the saved copy",
+        "body": "Locate the downloaded PDF through the browser or Files app. Check its first page, the boundary between input files, and its final page. Printed page numbers from the source documents are not automatically replaced with one new sequence."
       },
       {
-        "title": "Share immediately",
-        "body": "Long press the merged PDF in Files to share it via AirDrop, WhatsApp, Gmail, or any other app on your iPhone."
+        "title": "Share the checked copy",
+        "body": "Use an available sharing option for the saved PDF after checking it. Confirm that you selected the merged output rather than one of the originals; the receiving app or service has its own file requirements."
       }
     ]
   },
@@ -63,12 +63,17 @@ export default function Post() {
       },
       {
         "title": "Save merged PDF to iCloud",
-        "body": "After downloading, move the merged PDF from Downloads to iCloud Drive using the Files app for automatic backup and cross-device access."
+        "body": "If you choose to store the result with a cloud provider, use the storage options available on your device and verify that the upload completes. PDFcraft's local merge does not itself confirm cloud synchronization or create a backup."
       }
     ]
   },
   {
-    "tip": "If your browser offers a home-screen shortcut, you can use it for quick access. PDFcraft remains a website, and loading a shortcut does not guarantee offline operation."
+    "heading": "If Safari stops before a result appears",
+    "text": "Try a smaller pair of PDFs to separate a document problem from a resource problem. Merge holds document data in browser memory; a large or complex input can fail without a fixed file-size threshold. A password-protected input needs an authorized unencrypted copy. If the error names unsupported navigation or AcroForm, changing the file order will not fix that structure. Keep the originals and do not assume another browser will preserve an unsupported feature."
+  },
+  {
+    "heading": "What happens to links, bookmarks and forms",
+    "text": "PDFcraft rebuilds supported local links, named destinations and bookmarks so their targets follow the inserted pages. Repeated inputs have separate destination namespaces. Source opening actions are deliberately omitted, and external links to old named anchors may no longer work. AcroForm inputs, linked popup annotations and unsupported navigation are rejected. The saved PDF is reopened and structurally checked before a download is offered; that is not proof of visual fidelity, working interactive forms or signature preservation."
   },
   {
     "heading": "Continue with the relevant tool",
@@ -87,11 +92,11 @@ export default function Post() {
       faqs={[
   {
     "q": "Can I merge PDFs on iPhone without an app?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+    "a": "No PDFcraft app installation is required. Open the tool in your browser; the site and processing code still need to load, and completion depends on the document and device."
   },
   {
     "q": "Where does the merged PDF save on iPhone?",
-    "a": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+    "a": "PDFcraft does not choose a universal iPhone folder. Start with the browser's download status to identify the saved file, then use the location available on your device. A merge success message alone does not confirm it was saved."
   },
   {
     "q": "Can I merge PDFs from iCloud Drive on iPhone?",
@@ -99,15 +104,15 @@ export default function Post() {
   },
   {
     "q": "Can I merge more than 2 PDFs on iPhone?",
-    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
+    "a": "The Merge handler accepts two or more files and appends them in insertion order. There is no fixed file-count control, but available memory and document complexity can limit how many finish successfully."
   },
   {
     "q": "Does merging PDFs on iPhone use iCloud storage?",
-    "a": "Loading the site uses network resources, and retrieving or saving a cloud file is a separate transfer. PDFcraft performs the merge locally; this is not a promise of zero network traffic."
+    "a": "The merge handler does not write to iCloud. Cloud storage is involved only if your own file-selection or saving workflow uses it. Loading PDFcraft and retrieving cloud inputs can still require network requests."
   },
   {
     "q": "Does PDFcraft work on iPad too?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
+    "a": "This guide does not establish iPad compatibility from an iPhone workflow. Check file selection, processing and the saved output in your iPad browser before relying on it."
   }
 ]}
       ctaText={"Merge your PDFs — free to use"}

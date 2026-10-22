@@ -1,0 +1,52 @@
+{
+  "operation": "reorder-pages",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "order": [
+      2,
+      1,
+      3
+    ]
+  },
+  "expected": "Move page 2 up; copyPages may lose document-level features.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "reorder-pages-1.pdf",
+      "sha256": "d3117be388054d7efbb4ce22eb010f571581d5b4f01cb82a46aca954bb10e0b6",
+      "bytes": 2460,
+      "inspection": "reorder-pages-1.inspection.json",
+      "inspectionSha256": "2c5b66a623bdd780818908b07794348054972bc77cd8e988d0575945c4736757",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "CHANGED",
+        "annotations": "CHANGED",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "📄features.pdf3 pages✕Use Move Up and Move Down to reorder pages:⠿2Page 2→ position 1↑↓⠿1Page 1→ position 2↑↓⠿3Page 3↑↓↕ Save New Order✅Pages reordered!Your PDF has been saved with the new page order."
+}

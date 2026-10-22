@@ -1,158 +1,136 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("pdf-security-guide");
-export default function Post() {
-  return (
-    <BlogPost tag={"Security"} tagColor="#DC2626" tagBg="#FEF2F2"
-      title={"PDF Security Guide — How to Protect Your Documents"}
-      date="February 2026" readTime="8 min read"
-      intro={"PDF security depends on the goal: controlling opening, labeling a document, or verifying signatures are different tasks. PDFcraft provides password-based encryption and text watermarks, not a complete security or compliance system."}
-      sections={[
-  {
-    "heading": "Types of PDF security",
-    "steps": [
-      {
-        "title": "Password protection — open password",
-        "body": "An opening password is used to decrypt an encrypted PDF. Strength and handling of the password matter; viewer behavior varies."
-      },
-      {
-        "title": "Password protection — permissions password",
-        "body": "Permissions describe allowed operations to a viewer, but are not a guarantee against changes. PDFcraft does not offer a permissions-only restriction workflow."
-      },
-      {
-        "title": "Watermarks — visual deterrent",
-        "body": "Visible text can label document status. It does not prevent copying, removal, or redistribution."
-      },
-      {
-        "title": "Digital signatures",
-        "body": "A properly validated digital signature can help detect changes, subject to the signing and trust workflow. PDFcraft has no signing or signature-validation tool."
+
+const article = {
+  "title": "PDF Security Guide — How to Protect Your Documents",
+  "date": "February 2026",
+  "readTime": "8 min read",
+  "tag": "Security",
+  "tagColor": "#DC2626",
+  "tagBg": "#FEF2F2",
+  "ctaHref": "/tools/protect-pdf",
+  "ctaText": "Protect your PDF now — free",
+  "intro": "Choose a protection method by the problem it addresses. Controlling opening access, communicating confidentiality, validating a signature and removing sensitive content are different tasks. PDFcraft does not supply one operation that proves all of them.",
+  "sections": [
+    {
+      "heading": "Do not treat these controls as interchangeable",
+      "table": {
+        "headers": [
+          "Concept",
+          "PDFcraft behavior",
+          "What it does not establish"
+        ],
+        "rows": [
+          [
+            "Encryption and opening password",
+            "Protect applies AES-256 using a supplied password.",
+            "Perfect security or a strong password merely because encryption is enabled."
+          ],
+          [
+            "Permissions",
+            "Current Protect uses the same user/owner password and permits printing/extraction.",
+            "A read-only or copy-proof file."
+          ],
+          [
+            "Signatures/certification",
+            "No signing, identity-verification or signature-repair workflow is provided.",
+            "That a rewritten document retains a valid signature."
+          ],
+          [
+            "Watermark",
+            "Draws a visible text label.",
+            "Access control, permanence or evidence that content cannot be copied."
+          ],
+          [
+            "Page deletion",
+            "Removes selected visible pages and cleans supported navigation.",
+            "Secure sanitization of every recoverable object."
+          ],
+          [
+            "Unlocking",
+            "Decrypts supported input using a known password.",
+            "Cracking, recovering or guessing an unknown password."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "How to password protect a PDF for free",
-    "steps": [
-      {
-        "title": "Go to PDFcraft",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
-      },
-      {
-        "title": "Select Protect PDF",
-        "body": "Click the Protect PDF tool."
-      },
-      {
-        "title": "Choose your PDF and set a password",
-        "body": "Select an unencrypted PDF, enter and confirm a longer, unique password, then click Protect PDF. The input minimum is four characters, not a security recommendation. Verify the downloaded result in a compatible viewer."
-      },
-      {
-        "title": "Download and share securely",
-        "body": "Share the protected PDF file through your normal channel. Send the password through a separate channel — never in the same email as the file."
-      }
-    ]
-  },
-  {
-    "heading": "How to add a watermark to a PDF for free",
-    "steps": [
-      {
-        "title": "Open PDFcraft Watermark tool",
-        "body": "Go to PDFcraft and click Watermark PDF."
-      },
-      {
-        "title": "Select your PDF and enter watermark text",
-        "body": "Choose your PDF and type the watermark text — CONFIDENTIAL, DRAFT, your company name, or any text."
-      },
-      {
-        "title": "Adjust opacity",
-        "body": "Text and opacity are the available controls. Placement, angle, and size follow fixed implementation behavior; check readability on the output."
-      },
-      {
-        "title": "Download watermarked PDF",
-        "body": "The watermark appears on every page of the downloaded PDF."
-      }
-    ]
-  },
-  {
-    "heading": "Best practices for PDF security",
-    "steps": [
-      {
-        "title": "Use strong passwords",
-        "body": "Use at least 12 characters with a mix of uppercase, lowercase, numbers, and symbols. Store passwords in a password manager."
-      },
-      {
-        "title": "Never send password in the same message as the file",
-        "body": "Send the PDF by email, then send the password via a different channel — SMS, phone call, or a separate messaging app."
-      },
-      {
-        "title": "Combine watermark and password",
-        "body": "Apply a watermark before password protection when both are wanted. Neither makes the document tamper-proof."
-      },
-      {
-        "title": "Use secure file sharing",
-        "body": "Use a sharing method appropriate for the document and check its current access controls. No provider is assumed secure merely by name."
-      },
-      {
-        "title": "Set expiry on shared links",
-        "body": "If your chosen sharing service offers expiry, consider it alongside recipient access settings. Expiry cannot recall copies already downloaded."
-      }
-    ]
-  },
-  {
-    "heading": "What PDFcraft can help you with",
-    "list": [
-      {
-        "text": "Protect PDF — add password protection",
-        "href": "/tools/protect-pdf"
-      },
-      {
-        "text": "Watermark PDF — add CONFIDENTIAL or custom text",
-        "href": "/tools/watermark-pdf"
-      },
-      {
-        "text": "Merge PDF — combine before protecting",
-        "href": "/tools/merge-pdf"
-      },
-      {
-        "text": "Compress PDF — reduce size before secure sharing",
-        "href": "/tools/compress-pdf"
-      }
-    ]
-  },
-  {
-    "tip": "Choose controls for a specific goal. PDFcraft’s page deletion is not secure redaction, and passwords or watermarks do not establish legal compliance."
-  },
-  {
-    "heading": "Protection limits and runtime loading",
-    "text": "Protect applies tested password-based AES-256 encryption. Enter and confirm a longer, unique password; four characters is only the minimum validation requirement. The same password is used for user and owner access, with printing and extraction allowed. This is not a read-only or tamper-proof mechanism. Protect and Unlock load remote qpdf WASM from jsDelivr. Document contents and passwords are processed locally, but runtime downloads make network requests. PDFcraft cannot recover an unknown password."
-  }
-]}
-      faqs={[
-  {
-    "q": "What is the best way to secure a PDF for free?",
-    "a": "Use password encryption for opening access and a watermark for a visible label. Neither prevents later changes, screenshots, or redistribution by someone who can open the document."
-  },
-  {
-    "q": "Can a password protected PDF be hacked?",
-    "a": "Use password encryption for opening access and a watermark for a visible label. Neither prevents later changes, screenshots, or redistribution by someone who can open the document."
-  },
-  {
-    "q": "Is watermarking enough to protect a PDF?",
-    "a": "Use password encryption for opening access and a watermark for a visible label. Neither prevents later changes, screenshots, or redistribution by someone who can open the document."
-  },
-  {
-    "q": "How do I securely share a PDF by email?",
-    "a": "Password protect the PDF, send it by email, then send the password through a different channel like SMS or phone call."
-  },
-  {
-    "q": "Can I protect a PDF on my phone for free?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "What happens if someone screenshots a protected PDF?",
-    "a": "Use password encryption for opening access and a watermark for a visible label. Neither prevents later changes, screenshots, or redistribution by someone who can open the document."
-  }
-]}
-      ctaText={"Protect your PDF now — free"}
-      ctaHref={"/tools/protect-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "Start with the recipient and the original",
+      "text": "Confirm what the recipient accepts before encrypting or rewriting a document. Keep an appropriate original, especially for signed files. If a viewer reports certification or signature restrictions, examine that status and ask the issuer for a suitable copy; do not use Unlock as a signature-repair method."
+    },
+    {
+      "heading": "Choose a signing workflow before preparing the final copy",
+      "text": "PDFcraft has no electronic-signature placement or certificate-based signing workflow. Ask whether the recipient requires a visible mark, a particular signing service or a certificate-based signature; these are not interchangeable requirements. Finalize the unsigned document before using the agreed signing method elsewhere. Reopen the returned file in an appropriate viewer, check its signature status and confirm recipient acceptance. A watermark or opening password is not a substitute for signing. Avoid later page edits unless their effect on the signature is understood; PDFcraft does not validate or guarantee signature preservation."
+    },
+    {
+      "heading": "Separate preparation from distribution",
+      "steps": [
+        {
+          "title": "Minimize what is necessary",
+          "body": "Prepare only the content the recipient needs. Removing pages can reduce visible scope, but confidential-data purging requires a workflow designed and verified for sanitization."
+        },
+        {
+          "title": "Finish edits before protection",
+          "body": "Complete ordering, overlays and size checks on an unencrypted copy. Page-copy tools reject AcroForm input and may reject other unsupported structures."
+        },
+        {
+          "title": "Protect and verify access",
+          "body": "Choose a non-predictable password, confirm it, save the encrypted output and test opening it. The four-character minimum is not a strength assessment."
+        },
+        {
+          "title": "Check delivery access",
+          "body": "Verify the address or sharing-link permissions. Where appropriate, provide the password through a separate channel; putting it beside the file offers little separation from whoever receives that message."
+        }
+      ],
+      "list": [
+        {
+          "text": "Set an opening password",
+          "href": "/blog/how-to-add-password-to-pdf-online"
+        },
+        {
+          "text": "Prepare a protected copy on Mac",
+          "href": "/blog/secure-pdf-on-mac"
+        }
+      ]
+    },
+    {
+      "heading": "Local processing has a specific meaning",
+      "text": "The document operations run in browser memory without a PDF-processing upload backend. Website requests still occur; qpdf WASM and PDF.js workers load remotely for the relevant tools. This is not a claim that every network request is absent, that memory is securely erased or that every device has been tested."
+    },
+    {
+      "heading": "Evidence is narrower than a security certification",
+      "text": "Controlled tests observed password acceptance/rejection and some parsed document features. Interactive forms, signature preservation and universal browser behavior are not established. A file that reopens successfully can still require checks for the particular property you rely on. Visible labels and rasterization do not make a document uneditable."
+    },
+    {
+      "heading": "Continue with the appropriate tool",
+      "list": [
+        {
+          "text": "Add an opening password",
+          "href": "/tools/protect-pdf"
+        },
+        {
+          "text": "Decrypt with an authorized known password",
+          "href": "/tools/unlock-pdf"
+        },
+        {
+          "text": "Diagnose a locked-looking document",
+          "href": "/blog/why-is-my-pdf-locked"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a confidentiality watermark evidence that a file is encrypted?",
+      "a": "No. It is visible content and can exist in an unencrypted document. Check opening access separately from labels."
+    },
+    {
+      "q": "Can Delete Pages certify that confidential information is gone?",
+      "a": "No. PDFcraft does not provide a sanitization certificate or secure-redaction guarantee. Page visibility and complete data removal are separate concerns."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

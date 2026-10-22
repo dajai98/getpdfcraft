@@ -5,121 +5,74 @@ export default function Post() {
   return (
     <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"
       title={"How to Lock PDF for Job Applications"}
-      date="May 2026" readTime="5 min read"
-      intro={"Before sending application documents, check what the employer actually requests and which submission formats it accepts. Password protection may be appropriate for an agreed sensitive-document workflow, but can prevent a portal or recipient from opening a file."}
+      readTime="5 min read"
+      intro={"There is no universal rule that job-application PDFs should be locked. Encryption may be inappropriate when a portal rejects protected files or a reviewer cannot obtain the password. Start with the employer or portal requirements, then decide whether protection helps that specific submission. If the instructions are unclear, confirm with the recipient before changing the files."}
       sections={[
   {
-    "heading": "Should you password protect your resume PDF?",
-    "text": "Follow the employer’s submission instructions. Ask before encrypting a resume or supporting attachment; a password may make it unusable in the recipient’s workflow. Send only information that is actually needed."
-  },
-  {
-    "heading": "Documents to protect in job applications",
+    "heading": "Make the submission decision before using a PDF tool",
+    "text": "Work through the following questions for this application, not a generic packet reused for every employer. Keep your editable resume and original supporting documents separate from the files you prepare for submission. A protected attachment that cannot be opened does not satisfy a request for a readable document.",
     "steps": [
       {
-        "title": "Cover letter and resume — confirm the recipient’s requirements",
-        "body": "Confirm that this document is needed and agree on the delivery method before sharing. If password protection is requested or appropriate, check that the recipient can open it."
+        "title": "What documents were explicitly requested?",
+        "body": "Read the announcement and required-document list. Prepare those items rather than adding identity, financial or other sensitive records just because you already have them. If a later hiring stage requires another document, follow that request through the agreed channel."
       },
       {
-        "title": "Identity documents — confirm the recipient’s requirements",
-        "body": "Confirm that this document is needed and agree on the delivery method before sharing. If password protection is requested or appropriate, check that the recipient can open it."
+        "title": "What format is required?",
+        "body": "Check whether the recipient requests PDF, an editable document or a portal form, and whether attachments must remain separate. Do not merge a cover letter and resume unless a combined packet is accepted. PDFcraft does not provide PDF-to-Word conversion; retain the editable source for that requirement."
       },
       {
-        "title": "Bank details or tax forms — confirm the recipient’s requirements",
-        "body": "Confirm that this document is needed and agree on the delivery method before sharing. If password protection is requested or appropriate, check that the recipient can open it."
+        "title": "Are encrypted PDFs accepted?",
+        "body": "Look for explicit instructions about passwords or protected attachments. If encryption is rejected, do not add an opening password to the submission. USAJOBS resume guidance, for example, lists encrypted and digitally signed documents among items not to include. That is a scoped USAJOBS example, not a rule for every employer or ATS."
       },
       {
-        "title": "Reference letters — confirm the recipient’s requirements",
-        "body": "Confirm that this document is needed and agree on the delivery method before sharing. If password protection is requested or appropriate, check that the recipient can open it."
+        "title": "If protection is requested, how will the password arrive?",
+        "body": "Agree on a password-delivery method with the intended recipient before sending. Confirm who needs access and whether an automated intake system can use the protected attachment. Do not assume that a separate message will automatically reach every reviewer who needs the file."
+      },
+      {
+        "title": "Is unnecessary sensitive information included?",
+        "body": "Review identifiers and extra documents against the request. Remove unnecessary information in the editable source where possible, then export a fresh copy. A visible rectangle or watermark is not verified redaction, and adding a confidentiality label does not make disclosure harmless."
+      },
+      {
+        "title": "Is there an actual size constraint?",
+        "body": "Measure the final saved attachment against the current stated requirement. Compression is conditional on a real size problem, not a mandatory preparation step. PDFcraft structural compression may increase size and cannot promise a target. If needed, compare an unencrypted working copy before applying any accepted password protection."
+      },
+      {
+        "title": "Have you reopened the final submission files?",
+        "body": "Open the exact attachments you intend to send, check page order and readable text, and use the portal preview if offered. For an accepted encrypted workflow, test the intended password. Follow filename instructions when supplied; otherwise use a clear name that helps identify the document without unnecessary sensitive details."
       }
-    ]
-  },
-  {
-    "heading": "How to secure job application PDFs",
-    "steps": [
-      {
-        "title": "Add a professional watermark if needed",
-        "body": "For sensitive documents, use PDFcraft's Watermark tool to add CONFIDENTIAL or your name."
-      },
-      {
-        "title": "Password protect sensitive documents",
-        "body": "Use PDFcraft's Protect PDF tool for identity documents and financial forms."
-      },
-      {
-        "title": "Compress all PDFs before sending",
-        "body": "If size is an issue, try structural compression on the unencrypted working copy first, compare the result, then protect it. Compression may increase size. Check the recipient’s current attachment limit."
-      },
-      {
-        "title": "Send password separately",
-        "body": "Email the protected PDF, then send the password via SMS or phone call."
-      }
-    ]
-  },
-  {
-    "heading": "Format and naming tips for applications",
-    "steps": [
-      {
-        "title": "Use the requested format",
-        "body": "Submit the format requested by the employer. A PDF is useful for fixed-layout sharing, but appearance and acceptance still need checking."
-      },
-      {
-        "title": "Check the actual upload limit",
-        "body": "Use the current limit in the application portal. Compression does not guarantee a target size."
-      },
-      {
-        "title": "Name your files professionally",
-        "body": "Name: FirstName-LastName-Resume.pdf or FirstName-LastName-CV-2026.pdf. Never: document1.pdf or resume-FINAL-v3.pdf."
-      }
-    ]
-  },
-  {
-    "heading": "Prepare your job application PDFs",
+    ],
     "list": [
       {
-        "text": "Compress PDF — reduce size before emailing",
-        "href": "/tools/compress-pdf"
+        "text": "USAJOBS: resume requirements and exclusions",
+        "href": "https://usajobshelp.opm.gov/hc/en-us/articles/52839989720851-How-do-I-write-a-resume-for-a-federal-job"
       },
       {
-        "text": "Protect PDF — secure sensitive documents",
-        "href": "/tools/protect-pdf"
+        "text": "If opening-password protection is accepted",
+        "href": "/blog/how-to-add-password-to-pdf-online"
       },
       {
-        "text": "Merge PDF — combine cover letter and resume",
-        "href": "/tools/merge-pdf"
+        "text": "If the actual file is too large",
+        "href": "/blog/pdf-file-size-too-large"
       }
     ]
-  },
-  {
-    "tip": "Confirm the required file type, size, and encryption policy with the recipient instead of assuming one rule fits all applications."
-  },
-  {
-    "heading": "Protection limits and runtime loading",
-    "text": "Protect applies tested password-based AES-256 encryption. Enter and confirm a longer, unique password; four characters is only the minimum validation requirement. The same password is used for user and owner access, with printing and extraction allowed. This is not a read-only or tamper-proof mechanism. Protect and Unlock load remote qpdf WASM from jsDelivr. Document contents and passwords are processed locally, but runtime downloads make network requests. PDFcraft cannot recover an unknown password."
   }
 ]}
       faqs={[
   {
-    "q": "Should I password protect my resume PDF?",
-    "a": "Follow the employer’s current submission instructions for format, size, and password protection. Ask when encryption would prevent the recipient from opening it."
+    "q": "Should I lock my resume before uploading it?",
+    "a": "Only use encryption when the receiving workflow accepts or requests it. If the portal rejects protected files, submit according to its instructions rather than treating a password as a universal improvement. Ask the recipient when the rule is unclear."
   },
   {
-    "q": "How do I combine my cover letter and resume into one PDF?",
-    "a": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
+    "q": "Does the USAJOBS example apply to every application system?",
+    "a": "No. It illustrates why blanket encryption advice is unsafe. Read the current instructions for the particular employer, portal and document type; this guide makes no universal ATS compatibility claim."
   },
   {
-    "q": "What size should my resume PDF be?",
-    "a": "Follow the employer’s current submission instructions for format, size, and password protection. Ask when encryption would prevent the recipient from opening it."
+    "q": "Should I compress a file that already meets the requirement?",
+    "a": "There is no size-driven reason to require that step. Keep a readable, accepted file rather than rewriting it automatically. If you do compare compression, inspect the actual output and final byte count before submission."
   },
   {
-    "q": "Should I send my resume as PDF or Word?",
-    "a": "Follow the employer’s current submission instructions for format, size, and password protection. Ask when encryption would prevent the recipient from opening it."
-  },
-  {
-    "q": "Can I lock a PDF on my phone before applying?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "How do I make my PDF resume professional?",
-    "a": "Use a clear filename and readable layout. Follow submission instructions and inspect the file."
+    "q": "What if a recruiter requests a protected supporting document?",
+    "a": "Confirm the request and delivery channel, send only the requested information, and agree how the recipient will receive the password. Reopen the protected output first. This does not establish that the same file will be accepted by a separate application portal."
   }
 ]}
       ctaText={"Prepare your job application PDFs — free"}

@@ -1,0 +1,15 @@
+{
+  "sourceUrl": "https://ntrs.nasa.gov/api/citations/19690022248/downloads/19690022248.pdf",
+  "resolvedUrl": "https://ntrs.nasa.gov/api/citations/19690022248/downloads/19690022248.pdf",
+  "retrievedAt": "2026-10-16T12:30:15.993Z",
+  "httpStatus": 200,
+  "contentType": "application/pdf",
+  "document": "Apollo 11 lunar landing mission press kit, NASA-NEWS-RELEASE-69-83K, July 6 1969; downloaded unmodified from NASA NTRS. Historical document, not generated as a fixture. Scan classification requires rendered-page review.",
+  "permission": "Internal factual testing under NASA general educational/informational media-use guidance. Not a blanket public-domain declaration or permission to imply endorsement. Redistribution/publication not approved by this study.",
+  "permissionUrl": "https://ntrs.nasa.gov/citations/19690022248",
+  "permissionRetrievedAt": "2026-10-16T12:30:17.444Z",
+  "permissionSnapshot": "tests/evidence/compression/runs/compression-20261016-scan-01/permission-source.html",
+  "permissionSha256": "857333ea9cf2587fb8344d29a240d90807ccc4d9126987a9fc4ba403fdf5a335",
+  "category": "REAL_WORLD historical document; NTRS copyright: Work of the US Gov. Public Use Permitted. Exact capture hardware/date NOT VERIFIED. Legacy artifact basename nasa-access-plan retained; use provenance for identity.",
+  "privateUserDocuments": false
+}

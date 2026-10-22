@@ -1,0 +1,50 @@
+{
+  "operation": "merge-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {},
+  "expected": "Append tail after pages 1,2,3; copyPages may lose document-level features.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    },
+    {
+      "name": "tail.pdf",
+      "sha256": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "merge-pdf-1.pdf",
+      "sha256": "858afd4d37b030db1df482dff83bd5f910d9141cd65ed3900fd180a35e2df20f",
+      "bytes": 2687,
+      "inspection": "merge-pdf-1.inspection.json",
+      "inspectionSha256": "5076ca9b02997e6990418f09ef90a13df8669b855f65b873f5f37899e236da60",
+      "pageCount": 4,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "CHANGED",
+        "annotations": "CHANGED",
+        "forms": "LOST",
+        "outlines": "LOST",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "2 files selectedClear all📄features.pdf3 KB✕📄tail.pdf1 KB✕✅merged.pdf is ready!Your PDFs have been merged successfully."
+}

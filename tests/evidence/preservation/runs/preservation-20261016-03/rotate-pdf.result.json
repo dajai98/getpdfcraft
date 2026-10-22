@@ -1,0 +1,48 @@
+{
+  "operation": "rotate-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "additionalDegrees": 90
+  },
+  "expected": "Add 90 degrees to every page rotation.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "rotate-pdf-1.pdf",
+      "sha256": "ff20cfc4bc84ade536f07eef155f6f0d1b04d2730605eec4a4451dd0707f3c12",
+      "bytes": 2993,
+      "inspection": "rotate-pdf-1.inspection.json",
+      "inspectionSha256": "be280588504dbb601e32372260fe073f3b29aaf47bc63648d411fea5edd0398e",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "PASS",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "CHANGED",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "📄features.pdf✕Rotation angle↻ 90° Right↕ 180°↺ 90° Left↻ Rotate 90°✅Rotation complete!All pages rotated by 90°"
+}

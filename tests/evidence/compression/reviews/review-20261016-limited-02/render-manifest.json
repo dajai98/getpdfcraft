@@ -1,0 +1,99 @@
+{
+  "reviewId": "review-20261016-limited-02",
+  "createdAt": "2026-10-16T12:32:02.207Z",
+  "renderer": "PDF.js 4.4.168",
+  "canvas": "1.0.11",
+  "node": "v24.15.0",
+  "os": "Windows_NT 10.0.26200",
+  "browser": "NOT TESTED: inventory empty; iab browser unavailable",
+  "visualReview": "PENDING; rendered images require inspection",
+  "items": [
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 1,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.input.pdf",
+      "inputSha256": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.output.pdf",
+      "outputSha256": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-realworld-01/manifest.json",
+      "runManifestSha256": "3e568167348ee696e41f5c5a7133910b465a9a769115dd50af66f7ebeb76e4c0",
+      "image": "compression-20261016-realworld-01-page-1.png",
+      "imageSha256": "d1779e811fb0062351ac9fc45a8bd08d49c50d88f42c674a0860dff6b13bbace",
+      "renderHeight": 750
+    },
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 14,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.input.pdf",
+      "inputSha256": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.output.pdf",
+      "outputSha256": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-realworld-01/manifest.json",
+      "runManifestSha256": "3e568167348ee696e41f5c5a7133910b465a9a769115dd50af66f7ebeb76e4c0",
+      "image": "compression-20261016-realworld-01-page-14.png",
+      "imageSha256": "ca461914478b9bed2348c229d434f9a70499e0e9638cbefa8bdc651dd231b6a1",
+      "renderHeight": 750
+    },
+    {
+      "runId": "compression-20261016-realworld-01",
+      "page": 27,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.input.pdf",
+      "inputSha256": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.output.pdf",
+      "outputSha256": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-realworld-01/manifest.json",
+      "runManifestSha256": "3e568167348ee696e41f5c5a7133910b465a9a769115dd50af66f7ebeb76e4c0",
+      "image": "compression-20261016-realworld-01-page-27.png",
+      "imageSha256": "d8483b116777123a69adfffd38f4262c5c9c098a36b4456df70ef14011a5eff2",
+      "renderHeight": 750
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 1,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.input.pdf",
+      "inputSha256": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.output.pdf",
+      "outputSha256": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-scan-01/manifest.json",
+      "runManifestSha256": "9bc22aabc985ed1720bea06378ccd1e321d2fa1e07e7d256b4628ce9834636cd",
+      "image": "compression-20261016-scan-01-page-1.png",
+      "imageSha256": "e7ae738158ef73a66939efae5ab1e63942f5ca4656ff8750bbbb9242bbcdc7a1",
+      "renderHeight": 750
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 127,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.input.pdf",
+      "inputSha256": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.output.pdf",
+      "outputSha256": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-scan-01/manifest.json",
+      "runManifestSha256": "9bc22aabc985ed1720bea06378ccd1e321d2fa1e07e7d256b4628ce9834636cd",
+      "image": "compression-20261016-scan-01-page-127.png",
+      "imageSha256": "11398778fbfb6f1f9ff12b294c33fd690d54d434831f925e10d7dca27f7212d7",
+      "renderHeight": 750
+    },
+    {
+      "runId": "compression-20261016-scan-01",
+      "page": 254,
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.input.pdf",
+      "inputSha256": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-scan-01/nasa-access-plan.output.pdf",
+      "outputSha256": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+      "runManifest": "tests/evidence/compression/runs/compression-20261016-scan-01/manifest.json",
+      "runManifestSha256": "9bc22aabc985ed1720bea06378ccd1e321d2fa1e07e7d256b4628ce9834636cd",
+      "image": "compression-20261016-scan-01-page-254.png",
+      "imageSha256": "ede999d9c57a5fca90b2c0dbdbd4b65e1270a47ad292fac9a51eb14d0be9fc11",
+      "renderHeight": 750
+    }
+  ],
+  "artifactHashes": {
+    "compression-20261016-realworld-01-page-1.png": "d1779e811fb0062351ac9fc45a8bd08d49c50d88f42c674a0860dff6b13bbace",
+    "compression-20261016-realworld-01-page-14.png": "ca461914478b9bed2348c229d434f9a70499e0e9638cbefa8bdc651dd231b6a1",
+    "compression-20261016-realworld-01-page-27.png": "d8483b116777123a69adfffd38f4262c5c9c098a36b4456df70ef14011a5eff2",
+    "compression-20261016-scan-01-page-1.png": "e7ae738158ef73a66939efae5ab1e63942f5ca4656ff8750bbbb9242bbcdc7a1",
+    "compression-20261016-scan-01-page-127.png": "11398778fbfb6f1f9ff12b294c33fd690d54d434831f925e10d7dca27f7212d7",
+    "compression-20261016-scan-01-page-254.png": "ede999d9c57a5fca90b2c0dbdbd4b65e1270a47ad292fac9a51eb14d0be9fc11",
+    "renderer.cjs": "cb7b1eba3c424bab81178d027b6f50d622d7a7ff04861d34b76b4f10a4ca124e"
+  }
+}

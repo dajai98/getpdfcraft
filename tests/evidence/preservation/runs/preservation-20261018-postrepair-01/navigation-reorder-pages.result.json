@@ -1,0 +1,57 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "reorder-pages",
+  "expected": "Move page 2 before page 1; retain logical navigation identity",
+  "options": {
+    "order": [
+      2,
+      1,
+      3
+    ]
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-reorder-pages-1.pdf",
+      "sha256": "3156cc4378dfde27719f664a4e90ce237efcd312dbee9d6961862f5e0ed33c12",
+      "bytes": 3363,
+      "inspection": "navigation-reorder-pages-1.inspection.json",
+      "inspectionSha256": "ac575f2b47f1aa24bca85fb53623a825dcd3ccb76e09f2ffb64cbf2b7412fc58",
+      "pageCount": 3,
+      "indices": [
+        1,
+        0,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "PRESERVED",
+        "namedDestinations": "PRESERVED",
+        "outlines": "PRESERVED",
+        "externalRemoteLinks": "PRESERVED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "📄navigation.pdf3 pages✕Use Move Up and Move Down to reorder pages:⠿2Page 2→ position 1↑↓⠿1Page 1→ position 2↑↓⠿3Page 3↑↓↕ Save New Order✅Pages reordered!Your PDF has been saved with the new page order.",
+  "alerts": []
+}

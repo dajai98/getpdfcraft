@@ -1,0 +1,111 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "split-pdf",
+  "expected": "One output per page; remove omitted targets/names/bookmarks/OpenAction",
+  "options": {
+    "mode": "all"
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-split-pdf-1.pdf",
+      "sha256": "bf76e72ebb2c4197fcc32ad59197c60288f9b376a8f02780d98d742d16f7c74e",
+      "bytes": 2786,
+      "inspection": "navigation-split-pdf-1.inspection.json",
+      "inspectionSha256": "d5e6df3cef12799e1d61bd280c6e5d1ff724ad0dca38ca7a7a5d72c74cefe2fd",
+      "pageCount": 1,
+      "indices": [
+        0
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "EXPECTED CHANGE",
+        "namedDestinations": "EXPECTED CHANGE",
+        "outlines": "EXPECTED CHANGE",
+        "externalRemoteLinks": "EXPECTED CHANGE",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    },
+    {
+      "path": "navigation-split-pdf-2.pdf",
+      "sha256": "ad2594aad81bb088fb45450b8bc649b4cb1170f1ed4fa60f021786128c5c8b27",
+      "bytes": 2780,
+      "inspection": "navigation-split-pdf-2.inspection.json",
+      "inspectionSha256": "2fde4bfcf8f23df0d42cd350eb61a28c44b6fe89f2825d74aab9008b4bcffba8",
+      "pageCount": 1,
+      "indices": [
+        1
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "EXPECTED CHANGE",
+        "namedDestinations": "EXPECTED CHANGE",
+        "outlines": "EXPECTED CHANGE",
+        "externalRemoteLinks": "EXPECTED CHANGE",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    },
+    {
+      "path": "navigation-split-pdf-3.pdf",
+      "sha256": "c95ce20bae7fe72e0c5a280dbaaf75f4a5207aa046f76a5ab2d58f22a215c0f1",
+      "bytes": 2816,
+      "inspection": "navigation-split-pdf-3.inspection.json",
+      "inspectionSha256": "6d6b49e841826fbba06b6dbbafccc8149da52d059e80e0c5c5983e68016c7336",
+      "pageCount": 1,
+      "indices": [
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "EXPECTED CHANGE",
+        "namedDestinations": "EXPECTED CHANGE",
+        "outlines": "EXPECTED CHANGE",
+        "externalRemoteLinks": "EXPECTED CHANGE",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "📄navigation.pdf3 pages · 3 KB✕Split optionsExtract all pages as individual PDFsExtract specific page range⊘ Split PDF✅ 3 files ready📄page-1.pdf📄page-2.pdf📄page-3.pdf",
+  "alerts": []
+}

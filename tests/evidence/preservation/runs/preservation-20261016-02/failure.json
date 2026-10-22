@@ -1,0 +1,6 @@
+{
+  "runId": "preservation-20261016-02",
+  "status": "INCOMPLETE",
+  "error": "AssertionError [ERR_ASSERTION]: control missing: app/tools/rotate-pdf/page.js\n    at Object.find (<anonymous>:16:137)\n    at Object.click (<anonymous>:16:307)\n    at collect (C:\\web\\pdfcraft\\scripts\\lab\\preservation.cjs:94:35)",
+  "failedAt": "2026-10-16T18:41:12.823Z"
+}

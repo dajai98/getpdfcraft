@@ -1,0 +1,50 @@
+{
+  "operation": "add-page-numbers",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "start": 1,
+    "position": "bottom-center",
+    "fontSize": 12
+  },
+  "expected": "Add page-number text 1,2,3; original text remains.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "add-page-numbers-1.pdf",
+      "sha256": "ddc43980e2a60c1479039c9a924476811702aeba27a8e29cbc75d13d6cdb6571",
+      "bytes": 3726,
+      "inspection": "add-page-numbers-1.inspection.json",
+      "inspectionSha256": "531c8dbb2e1a43b84848a99e8d722a1fc53d4644c9f15591daf112d3bfd71330",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "CHANGED",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "PASS",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "📄features.pdf✕Position↓ Bottom Center↓ Bottom Right↓ Bottom Left↑ Top Center↑ Top Right↑ Top LeftStart from pageFont sizeSmall (10pt)Medium (12pt)Large (16pt)# Add Page Numbers✅Page numbers added!Starting from 1, positioned bottom center."
+}

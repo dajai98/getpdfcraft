@@ -15,7 +15,7 @@ export default function Privacy() {
           Your documents.<br />Your browser.
         </h1>
         <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.7 }}>
-          Last updated: October 2, 2026. This policy separates local document processing from website, infrastructure, and advertising data.
+          Last updated: October 22, 2026. This policy separates local document processing from website, infrastructure, and advertising data.
         </p>
         <p style={{ fontSize: 14, color: "#6b7280", marginTop: 12 }}>
           For privacy questions, <a href="/contact" style={{ color: "#E8380D" }}>contact Rai Dajai at Dajai Studio</a>.
@@ -43,7 +43,7 @@ export default function Privacy() {
           {
             num: "04",
             title: "Advertising choices",
-            desc: "PDFcraft loads Google AdSense advertising resources only after an accepted choice in the cookie banner. Google may use cookies and process advertising or connection data when those resources load. Declining, or leaving the choice unanswered, prevents the consent-dependent advertising script from loading and does not block the core PDF tools. Using the site alone is not treated as acceptance.",
+            desc: "PDFcraft loads Google AdSense advertising resources only after an accepted choice in the cookie banner. Google and third-party advertising vendors may use cookies or similar identifiers and process advertising or connection data when those resources load. Where personalized advertising is enabled, Google and its partners may serve ads based on prior visits to this site or other sites. You can manage or opt out of personalized Google advertising through Google Ads Settings, linked below. Declining, or leaving the choice unanswered, prevents the consent-dependent advertising script from loading and does not block the core PDF tools. Using the site alone is not treated as acceptance.",
           },
           {
             num: "05",
@@ -83,7 +83,7 @@ export default function Privacy() {
           </div>
         ))}
       </div>
-      <p><a href="https://policies.google.com/privacy" style={{ color: "#E8380D" }}>Google Privacy Policy</a> · <a href="/contact" style={{ color: "#E8380D" }}>Contact PDFcraft</a></p>
+      <p><a href="https://policies.google.com/privacy" style={{ color: "#E8380D" }}>Google Privacy Policy</a> · <a href="https://www.google.com/settings/ads" style={{ color: "#E8380D" }}>Google Ads Settings</a> · <a href="/contact" style={{ color: "#E8380D" }}>Contact PDFcraft</a></p>
     </div>
   );
 }

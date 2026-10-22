@@ -6,129 +6,125 @@ export default function Post() {
     <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"
       title={"How to Merge PDF on Mac Free (3 Easy Ways)"}
       date="February 2026" readTime="6 min read"
-      intro={"Mac users have multiple free options for merging PDF files. You can use the built-in Preview app, use PDFcraft in your browser, or use a quick Finder shortcut. Here are all three methods explained step by step."}
+      intro={"A Mac user has three different decisions here: assemble pages in Preview, combine selected Finder files, or append PDFs using PDFcraft in a browser. Choose based on how you need to control the pages, not a claim that one method is universally fastest. The native steps below describe Apple documentation, not a locally executed Mac test. Check the help for your installed macOS version."}
       sections={[
   {
-    "heading": "Method 1 — PDFcraft in your browser",
+    "heading": "Preview: assemble whole documents or selected pages",
+    "text": "Apple documents combining entire PDFs or selected pages in Preview. It also warns that changes are saved automatically, so duplicate originals before editing. This matters when a source is an approved document that you must retain separately from a new packet. Give the working copy a distinct name before adding anything.",
     "steps": [
       {
-        "title": "Open Safari or Chrome on your Mac",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
+        "title": "Show the page thumbnails",
+        "body": "Open the working PDFs in Preview and choose View > Thumbnails. Use the sidebars to identify the pages you intend to copy, rather than relying only on the currently displayed page."
       },
       {
-        "title": "Click Merge PDF",
-        "body": "Select the Merge PDF tool from the homepage."
+        "title": "Insert the required material",
+        "body": "Drag selected thumbnails between document sidebars; Command-click can select nonadjacent pages. For a whole PDF, Apple documents dragging its Finder icon into an open PDF sidebar. Place pages at the intended insertion point, then drag thumbnails to adjust their order."
       },
       {
-        "title": "Add your PDF files",
-        "body": "Select your PDFs, adding them one by one if necessary to establish the displayed insertion order. Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Click Merge and download",
-        "body": "Click Merge PDFs, download the result, and check page count and order. Processing time depends on the files and device."
+        "title": "Check the assembled copy",
+        "body": "Compare the first page, the joins between documents and the final page with your intended packet. Save or retain the combined copy separately. An expected page count alone cannot show that the right pages were selected."
       }
-    ]
-  },
-  {
-    "heading": "Method 2 — Mac Preview app (built-in, no download)",
-    "steps": [
-      {
-        "title": "Open the first PDF in Preview",
-        "body": "Choose Open With and select Preview if it is available. Work on duplicate files so a native app’s saving behavior cannot overwrite your originals."
-      },
-      {
-        "title": "Show the Thumbnail panel",
-        "body": "In Preview, look for View → Thumbnails; menus may vary by version."
-      },
-      {
-        "title": "Drag the second PDF into the thumbnail panel",
-        "body": "If your Preview version supports it, drag the second PDF into the thumbnail sidebar at the desired position. Check the resulting page count and order."
-      },
-      {
-        "title": "Repeat for all PDFs",
-        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Save the merged PDF",
-        "body": "Save or export a separate output using the options available in your Preview version. Confirm the destination and filename before saving."
-      }
-    ]
-  },
-  {
-    "heading": "Method 3 — Finder Quick Action, if available",
-    "steps": [
-      {
-        "title": "Select multiple PDFs in Finder",
-        "body": "Open Finder and select all the PDF files you want to merge by holding Command and clicking each one."
-      },
-      {
-        "title": "Right-click and select Quick Actions",
-        "body": "Look for Quick Actions → Create PDF on the selected files, if your macOS version offers it. Review the resulting page order."
-      },
-      {
-        "title": "Find the merged PDF",
-        "body": "Locate the output through Finder and check its name, location, and contents; do not assume a particular naming rule."
-      }
-    ]
-  },
-  {
-    "heading": "Choose a method that fits your workflow",
-    "steps": [
-      {
-        "title": "Use PDFcraft for simplicity",
-        "body": "Merge uses the displayed insertion order. Add files in the required order and check the list; there is no drag-to-reorder control. Use Reorder Pages with Up/Down controls afterward if needed."
-      },
-      {
-        "title": "Use Preview for occasional use",
-        "body": "Preview may be useful for an available native workflow; use a copy and verify its output."
-      },
-      {
-        "title": "Use Quick Action for speed",
-        "body": "If the Quick Action is available, test its output and ordering with sample files."
-      }
-    ]
-  },
-  {
-    "tip": "Duplicate source files before using a native PDF app, and save the merged output under a separate name."
-  },
-  {
-    "heading": "Continue with the relevant tool",
+    ],
     "list": [
       {
-        "text": "Open merge pdf",
+        "text": "Apple: combine PDFs in Preview",
+        "href": "https://support.apple.com/en-ie/guide/preview/prvw43696/mac"
+      }
+    ]
+  },
+  {
+    "heading": "Finder: combine selected files with Create PDF",
+    "text": "Apple documents selecting files in Finder, then Control-clicking and choosing Quick Actions > Create PDF. Its guide says the PDF uses the order in which files were selected and is created automatically. The linked guide is for macOS 27; menu availability and placement can differ on another version. Check the version selector and your actual interface rather than assuming every Mac presents identical controls.",
+    "steps": [
+      {
+        "title": "Decide whether file-level selection is enough",
+        "body": "This route fits a task defined by selected files. If you need to inspect individual page thumbnails or insert only a few pages from a longer PDF, consider Preview first. Do not confuse a file selection with a verified final page sequence."
+      },
+      {
+        "title": "Inspect the newly created file",
+        "body": "Locate the output, give it an identifiable name and reopen it. Check the content at each file boundary. If the order is wrong, correct the selection or use an appropriate page-organizing workflow; do not send the packet merely because creation completed."
+      }
+    ],
+    "list": [
+      {
+        "text": "Apple: combine files into a PDF in Finder",
+        "href": "https://support.apple.com/en-ie/guide/mac-help/mchl21ac2368/27/mac/27"
+      }
+    ]
+  },
+  {
+    "heading": "PDFcraft: append PDFs in the displayed source order",
+    "text": "PDFcraft Merge uses the displayed insertion order of source PDFs. Add the files in the required order, inspect the list, then merge and download. It has no drag-to-reorder file control. To change individual page positions afterward, Reorder Pages offers Up/Down controls. This browser workflow is distinct from dragging native Preview thumbnails or running a Finder Quick Action.",
+    "steps": [
+      {
+        "title": "Check the append boundary",
+        "body": "For a two-page cover file followed by a three-page report, expect five pages with the report beginning after the cover file ends. Inspect that join as well as the first and final pages. Do not assume filenames alone establish the selected order."
+      },
+      {
+        "title": "Check whether the inputs fit",
+        "body": "The general merge guide explains supported navigation and structural limitations, including rejected AcroForm inputs. A document with important interactive features needs more than a visual page-count check. No method here is claimed to preserve every form or signature."
+      }
+    ],
+    "list": [
+      {
+        "text": "Open Merge PDF",
         "href": "/tools/merge-pdf"
       },
       {
-        "text": "Adjust page order with Up/Down controls",
+        "text": "Adjust pages with Up/Down controls",
         "href": "/tools/reorder-pages"
+      },
+      {
+        "text": "Read the structural merge limitations",
+        "href": "/blog/how-to-merge-pdf-free"
       }
     ]
+  },
+  {
+    "heading": "Choose by the control you need",
+    "text": "Keep the source documents until the recipient has the intended result. Native and browser workflows are alternatives, not interchangeable guarantees. If you need offline work, verify the installed native workflow with locally available files; PDFcraft does not guarantee offline availability and may still need website or processing resources. No browser/device compatibility test is implied by this guide.",
+    "table": {
+      "headers": [
+        "Need",
+        "Workflow to consider",
+        "Check before sharing"
+      ],
+      "rows": [
+        [
+          "Native page-by-page assembly",
+          "Preview",
+          "Chosen thumbnails and insertion points"
+        ],
+        [
+          "Combine selected Finder files",
+          "Create PDF where documented",
+          "Selection order and resulting pages"
+        ],
+        [
+          "PDFcraft supported browser append",
+          "Merge, then Reorder if needed",
+          "Input limitations and final sequence"
+        ]
+      ]
+    }
   }
 ]}
       faqs={[
   {
-    "q": "Can I merge PDFs on Mac for free?",
-    "a": "PDFcraft Merge is free to use. Native app workflows depend on the software available on your Mac."
+    "q": "Should I use Preview or Finder for only part of a PDF?",
+    "a": "Preview thumbnail selection is the documented page-level route. Finder Create PDF starts from selected files; do not treat it as proof that only particular pages were included."
   },
   {
-    "q": "How do I merge PDFs on Mac without Preview?",
-    "a": "Use PDFcraft in your browser — go to getpdfcraft.com, click Merge PDF, add your files, and download the merged result."
+    "q": "Why should I duplicate the PDFs before using Preview?",
+    "a": "Apple warns that Preview saves changes automatically. A separate working copy keeps the original available when you need to redo or compare the assembly."
   },
   {
-    "q": "Why does Preview save my PDF merged with the original?",
-    "a": "Native saving behavior depends on the app and version. Work on duplicates and choose a separate output filename."
+    "q": "What if Create PDF is missing from Quick Actions?",
+    "a": "Check Apple help for your installed macOS version and the selected files. Use an available documented workflow instead of assuming a missing menu means the PDF is damaged."
   },
   {
-    "q": "Can I merge PDFs on a MacBook?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "Is there a limit to how many PDFs I can merge on Mac?",
-    "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
-  },
-  {
-    "q": "Can I merge PDFs on Mac without internet?",
-    "a": "PDFcraft does not guarantee offline operation: processing code may still need to load after the page opens. If offline use is required, verify that workflow in your installed application."
+    "q": "Does choosing a native tool guarantee preservation of every PDF feature?",
+    "a": "No such guarantee is established here. Reopen the result and check the features your recipient needs, especially interactive fields, links and signatures."
   }
 ]}
       ctaText={"Merge your PDFs — free to use"}

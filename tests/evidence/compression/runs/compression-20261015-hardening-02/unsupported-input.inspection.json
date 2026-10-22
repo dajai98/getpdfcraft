@@ -1,0 +1,18 @@
+{
+  "before": {
+    "opens": false,
+    "error": "InvalidPDFException: Invalid PDF structure."
+  },
+  "after": null,
+  "images": null,
+  "warnings": [
+    "Warning: Indexing all PDF objects"
+  ],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

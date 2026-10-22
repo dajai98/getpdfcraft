@@ -60,7 +60,7 @@ const article = {
   "tag": "Protect PDF",
   "tagColor": "#DC2626",
   "tagBg": "#FEF2F2",
-  "date": "May 2026",
+
   "readTime": "3 min read"
 };
 

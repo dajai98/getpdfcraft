@@ -31,7 +31,7 @@ export default function Contact() {
           <div style={{ fontSize: 28, flexShrink: 0 }}>📧</div>
           <div>
             <p style={{ fontWeight: 700, color: "#111827", fontSize: 15, marginBottom: 4 }}>Support</p>
-            <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>Questions, feedback, bug reports</p>
+            <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>Questions, factual corrections, feedback, bug reports</p>
             <a
               href="mailto:support@getpdfcraft.com"
               style={{ color: "#E8380D", fontWeight: 600, fontSize: 15, textDecoration: "none" }}
@@ -41,6 +41,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <p style={{ lineHeight: 1.7, marginBottom: 32 }}>For a factual correction, include the page URL, the wording in question, and any supporting source. For a tool problem, include the tool name and error message. Do not email private documents or passwords.</p>
 
       {/* Response time */}
       <div style={{ background: "#F0FDF4", border: "1px solid #bbf7d0", borderRadius: 16, padding: 24, marginBottom: 32 }}>

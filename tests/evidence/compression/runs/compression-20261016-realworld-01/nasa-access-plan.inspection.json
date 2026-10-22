@@ -1,0 +1,1024 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 27,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "NASA’S PUBLIC ACCESS PLAN\n\nIncreasing Access to the Results of\nScientific Research\n\nDigital scientific data, software, and peer\n-\nreviewed publications\n\nwww.nasa.gov",
+        "textSha256": "28cb3fcff55247393508e2ae58089ac4a7d5a1404a62e617a6f3204d29158cf7",
+        "textCharacters": 165,
+        "operatorCount": 175,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 1\n\nContents\n\nRevisions ....................................................................................................................................................... 2\n\nIntroduction .................................................................................................................................................. 2\n\nPrinciples\n \n....................................................................................................................................................... 4\n\nApplicability................................................................................................................................................... 5\n\nPART A: Digital Scientific Data...................................................................................................................... 5\n\nPART B: Peer-Reviewed Publications ......................................................................................................... 12\n\nPART C: Software ........................................................................................................................................ 16\n\nImplementation Process ............................................................................................................................. 22\n\nWaiver Process............................................................................................................................................ 23\n\nTimeline....................................................................................................................................................... 23\n\nSummary ..................................................................................................................................................... 24\n\nContributors to this plan\n \n............................................................................................................................. 25\n\nGlossary\n \n....................................................................................................................................................... 25",
+        "textSha256": "6670244a25a702eba333fe68aca740171e8b8bcf1dbca90c58e11a5c5c040a82",
+        "textCharacters": 2095,
+        "operatorCount": 446,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 2\n\nNASA’s Public Access Plan\n\nfor Increasing Access to the\n\nResults of Scientific Research\n\n(Digital Scientific Data, Software, and Peer-Reviewed Publications)\n\nFebruary 21, 2023\n\nRevisions\n\nThis section highlights the significant changes to this document since the original plan was\nreleased in 2014. To wit:\n\n•\n \nThere shall be no publication embargo period for peer-reviewed publications\n\n•\n \nData that support peer-reviewed publications shall be made available in a public archive\nat the time of publication\n\n•\n \nSoftware should be included as part of Open Access, , subject to NASA software release\nrequirements\n\n•\n \nSoftware used to generate research findings/results should be made available in a public\narchive at the time of publication\n\n•\n \nOther data products beyond peer-reviewed publications and software should be\nconsidered as part of Open Access\n\nIntroduction\n\nThis plan was originally issued in response to the February 2013 White House Office of Science\nand Technology Policy (OSTP) Memorandum for the Heads of Executive Departments and\nAgencies titled, “Increasing Access to the Results of Federally Funded Scientific Research.”\nThrough this memorandum, OSTP directed all agencies with greater than $100 million in\nresearch and development expenditures each year to prepare a plan for improving the public’s\naccess to the results of federally funded research.\n\nIn August 2022, OSTP issued an updated memo to federal agencies titled, “Ensuring Free,\nImmediate, and Equitable Access to Federally Funded Research,” with new guidance. This\nrevision to the NASA public access plan responds to the new 2022 guidance.",
+        "textSha256": "14fed8f9e223c8a3643c82807e29a994fead4fc64d908e4dcd1b899c51b94f85",
+        "textCharacters": 1634,
+        "operatorCount": 585,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 3\n\nNASA invests over $3 billion annually in fundamental and applied research and technology\ndevelopment\n1\n \nacross a broad range of topics, including space and Earth sciences, life and\nphysical sciences, human health research, aeronautics, human and robotic exploration, and\ntechnology development. Promoting the full and open sharing of data with research\ncommunities, private industry, academia, and the general public is a longstanding core value of\nNASA. For example, NASA space and suborbital missions routinely process, archive, and\ndistribute their data to researchers around the globe.\n\nThis plan establishes objectives to ensure public access to publications and digital data sets\narising from National Aeronautics and Space Administration (NASA) research, development,\nand technology (RD&T) programs:\n\n•\n \nAffirm and enhance NASA’s commitment to public access to scientific research results\n\n•\n \nEnsure access to and reliable preservation of NASA-funded scholarly publications and\ndigital data sets for research, development, commercialization, and educational\npurposes, within available resources\n\n•\n \nPreserve and increase the use of scientific research results to enhance scientific\ndiscovery and application of research results\n\n•\n \nAffirm NASA’s commitment to its scientific integrity policy and support the\nreproducibility of scientific research results\n\n•\n \nEnsure that all extramural researchers receiving NASA grants, cooperative agreements,\nand contracts for scientific research and intramural researchers develop data\nmanagement plans, as appropriate, describing how they will provide for long-term\npreservation of, and access to, scientific data in digital format\n\n•\n \nEnsure NASA-funded documents are presented in machine readable formats\n\n•\n \nProvide for the NASA-funded data sets underlying publications to be available with\nappropriate DOIs\n\n•\n \nOptimize archival and dissemination of data and publications, including long-term\nstewardship\n\n•\n \nSupport training, education, and workforce development related to scientific data\nmanagement, analysis, storage, preservation, and stewardship\n\n•\n \nSupport governance of and best practices for managing public access to peer-reviewed\nscholarly publications and digital data across NASA\n\nThe February 2013 OSTP Memorandum’s objectives were provided in two distinct areas—\n\n1\n \nReport Regarding\n \nAmerica Competes Act\n \nPursuant to Section 1008(c) of the America Competes Act (P.L. 110-69)",
+        "textSha256": "236c4cfba8a9e51f3092823224ce92360f7f58e49bd06e0fb024d352e8abfe35",
+        "textCharacters": 2462,
+        "operatorCount": 526,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 4\n\ndigital scientific data and peer-reviewed publications. NASA’s original Open Access plan\naddressed these objectives separately, in Parts A and B below, respectively. The 2022 OSTP\nMemorandum extends the original objectives and NASA has amended this plan accordingly.\n\nIt is the position of NASA, aligned with that of OSTP, that all Americans must be able to\nequitably benefit from broad and expeditious sharing of the results of NASA-funded research\nand development investments, without delay. Free and open access to such data strengthens\nNASA’s ability to be a critical leader and partner on issues of open science around the world,\nand enables more rapid adoption of innovative ideas throughout the nation. Improving public\naccess to promote the rapid sharing of federally-funded research data with appropriate\nprotections and accountability measures will allow for greater validity of research results and\nmore equitable access to data resources aligned with these ideals.\n\nPrinciples\n\nThis plan is based on the following set of principles:\n\n•\n \nOpen Access to federally-funded scientific research has the potential to increase the\npace of scientific discovery, advance technology development, speed up exploration,\nand promote more efficient and effective use of government funding and resources\n\n•\n \nSharing and preserving publications, data, and software are central to protecting the\nintegrity of science by facilitating validation of results, as well as advancing science by\nbroadening the value of research data to disciplines other than the originating one and\nto society at large\n\n•\n \nData management and software sharing should be an integral part of research planning\n\n•\n \nThe degree to which research data needs to be shared or preserved varies across and\nwithin scientific disciplines; flexibility must be allowed for program-specific\nneeds/requirements and consideration of benefits and costs, including preserving and\npromoting U.S. competitiveness\n\n•\n \nProprietary interests, business confidential information, intellectual property rights, and\nother relevant rights will continue to be recognized and appropriately protected.\nHowever, NASA encourages researchers to provide a releasable version of all federally-\nfunded data after removing any proprietary and/or confidential information\n\n•\n \nProtecting confidentiality and personal privacy are paramount, and no change will be\nmade to existing policies that would reduce current protections.\n\n•\n \nResearchers should always follow the requirements listed in their research grant and\nnothing in this document contradicts that.",
+        "textSha256": "59b10ede102d72e4f3167952a8c87a7de86f35238e89b9219208b44770e4ec2c",
+        "textCharacters": 2603,
+        "operatorCount": 470,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 5\n\nApplicability\n\nThis NASA Public Access research policy will apply to the following individuals:\n\n•\n \nAll NASA employees, including full- and part-time employees; as well as support service\ncontract employees, consultants, and temporary and special government employees.\n\n•\n \nAwardees from non-NASA organizations that publish scientific research or compile\ndigital data sets resulting from research, development and technology programs funded\nthrough a NASA grant, contract, or other agreement. This includes but is not limited to\nnon-profit organizations, contractors, cooperative agreement holders, grantees,\nintergovernmental organizations, universities, and other educational institutions.\n\nAdditionally, the policy will apply to:\n\n•\n \nBasic and applied research across all NASA organizations\n\n•\n \nAll research proposals or project plans submitted after this plan becomes effective\n\n•\n \nBoth intramural and extramural research projects, regardless of funding mechanism\n(grants, cooperative agreements, or contracts)\n\nExceptions for data and software\n\nAll researchers receiving federal funding will be required to submit Data Management Plans\n(DMPs), however in some cases it is expected that some data will not be made public. This\nincludes but is not limited to the following categories:\n\n•\n \nEducational grants and grants to individual students\n\n•\n \nWork that is proprietary, confidential, or contains trade secrets\n\n•\n \nWork which results in Personally Identifiable Information (PII) (i.e. human subject data)\n\n•\n \nITAR or EAR controlled data\n\n•\n \nCUI – Controlled Unclassified Information\n\n•\n \nNational Security classified data\n\n•\n \nSmall Business Innovative Research/Small Business Technology Transfer (SBIR/STTR)\ncontracts\n\n•\n \nSoftware, if prohibited by an underlying license or patent rights\n\nPART A: Digital Scientific Data\n\n1.0\n \nPurpose and Background",
+        "textSha256": "701aac5d0d594025bdef6b949c847c1141a8f188e80dca9eee4d3f9b0934f089",
+        "textCharacters": 1873,
+        "operatorCount": 583,
+        "annotations": []
+      },
+      {
+        "page": 7,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 6\n\nThe sections that follow comprise the data component of the\n \nNASA Public Access Plan for\nIncreasing Access to the Results of Scientific Research\n. The purpose of Part A of the plan is to\nincrease the accessibility of digital data produced by NASA intramural researchers and by\nrecipients of NASA grants, cooperative agreements, and contracts.\n\nNASA is committed to following federal guidelines that all data from federally-funded research\nshould be made as widely and freely available as possible while safeguarding the privacy of\nparticipants and protecting confidential and proprietary data. To facilitate increased access to\nsuch data, NASA will update its research data policy to require all researchers submitting a\nresearch proposal or research project plan\n2\n \nto NASA to include a plan for managing and\nproviding access to final research data or to state why their data cannot be made publicly\navailable.\n\nNASA conducts and supports research across a broad range of topics, including space and Earth\nsciences, life and physical sciences, human health research, aeronautics, human and robotic\nexploration, and technology development. As one might imagine, the types of data and the\nneed to share and preserve data across the fields vary considerably and may change over time.\nFor this reason, NASA has taken the approach of developing a high-level, overarching policy,\nallowing flexibility within the research program areas to determine their own specific\nrequirements and needs.\n\nNASA has a long-standing culture of promoting the full and open sharing of data with the\nresearch communities, private industry, academia, and the general public. NASA space and\nairborne missions routinely process, archive, and distribute their data to researchers around\nthe globe. Data from all NASA spacecraft are currently available through the individual mission\nand theme archives, e.g., the Earth Observing System Data and Information System (EOS-DIS),\nwhich is one of the largest repositories of earth science data in the world, over seven\npetabytes, and to which new data are added at a rate of five terabytes per day. Similarly, the\nHuman Research Program shares its astronaut crew medical data (adhering to appropriate\nprivacy restrictions) with the medical research community. Information on all NASA-funded\ntechnology investments, including the benefits and results (with the appropriate controls) of\nsuch investments, are available to the general public through\n \nTechPort\n. This plan extends\nNASA’s culture of open data access to all NASA funded research.\n\nThis plan also extends NASA’s culture of open data access to all NASA-funded research,\nincluding data products that are not part of peer-reviewed and published research papers, such\nas closeout reports, which are subject to existing law, policy and third-party rights as may be\napplicable. Providing these data products assists other researchers in the same discipline and\nacross disciplines through modification and re-use of data, analyses, and software, reducing the\namount of time, effort, and resources required to recreate these independently\n.\n\n2.0\n \nScope\n\n2\n \nIn the case of directed, intramural research, project plans are submitted rather than proposals.",
+        "textSha256": "f7f820948c5087e52b0ac20715776865e82c00c254c8664ced0908f6cd145e30",
+        "textCharacters": 3234,
+        "operatorCount": 723,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 7\n\nPart A of the plan focuses on digital unclassified scientific research data, which are research\ndata that can be stored digitally and accessed electronically. It follows the OMB Circular A110\ndefinition of research data:\n\n“Research data are defined as the recorded factual material commonly accepted in the\nscientific community as necessary to validate research findings, but not any of the\nfollowing: preliminary analyses, drafts of scientific papers, plans for future research, peer\nreviews, or communications with colleagues. This 'recorded' material excludes physical\nobjects (e.g., laboratory samples).\n\nResearch data also do not include:\n\n(A) Trade secrets, commercial information, materials necessary to be held confidential by\na researcher until they are published, or similar information which is protected under\nlaw; and\n\n(B) Personal and medical information and similar information the disclosure of which\nwould constitute a clearly unwarranted invasion of personal privacy, such as information\nthat could be used to identify a particular person in a research study.”\n\nData are understood to include not only the recorded technical information, but also metadata\n(describing the data), software, descriptions of the software required to read and use the data,\nand associated software documentation, and associated data (e.g., calibrations).\n\nExclusion: NASA creates and provides a large suite of scientific and engineering “data products”\nwhose dissemination to the research community and the general public advance the Agency's\ncore mission objectives. These “data products” come from NASA missions, instruments, and\nprojects, and typically have well-established scientific or technological goals and requirements.\nSubject to Federal laws regarding sensitive data and privacy, these data products are captured\nand archived by NASA for public access and use and are thus already compliant with the 2013\nOSTP Memorandum on public access to research results. This plan therefore excludes these\ntypes of data.\n\nImplementation of this plan will be prospective and will not apply to any digital data set\nestablished before this plan’s effective date, unless that digital data set is augmented by\nfederally-funded research activities undertaken on or after this plan becomes effective.\n\n3.0\n \nRequirements\n\nThis plan expands on the existing policy and will impose requirements on all NASA scientific\nprograms and intramural and extramural researchers. The Implementation section below\nprovides the detail, but the conceptual requirements are as follows:\n\n•\n \nScientific data\n \nunderlying peer-reviewed scholarly publications resulting from federally\nfunded research shall be made freely available and publicly accessible by default\n \nat the",
+        "textSha256": "3289fcbefb86b2090451761918f4be1879f4132c59f4a2183bf01d16de4aa3f2",
+        "textCharacters": 2753,
+        "operatorCount": 562,
+        "annotations": []
+      },
+      {
+        "page": 9,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 8\n\ntime of publication\n, and no embargo by a publisher or others should be imposed nor will\nsuch be recognized by NASA.\n\n•\n \nUnique digital object identifiers (DOIs) must be assigned to all datasets supporting peer-\nreviewed publications\n\n•\n \nAll proposals or project plans submitted to NASA for scientific research funding shall\ninclude a Data Management Plan (DMP) that describes whether and how data\ngenerated through the course of the proposed research\n3\n \nwill be shared and preserved\n(including timeframe) or explains why data sharing and/or preservation are not possible\nor scientifically appropriate. At a minimum, DMPs shall describe how data sharing and\npreservation will enable validation of published results, or how such results could be\nvalidated if data are not shared or preserved.\n\n•\n \nDMPs shall provide a plan for making research data that underlie the results and\nfindings in peer-reviewed publications digitally accessible at the time of publication.\nThis includes data (or how to access data) that are displayed in charts and figures. This\ndoes not include preliminary data, laboratory notebooks, drafts of scientific papers,\nplans for research, peer review reports, communications with colleagues or physical\nobjects, such as laboratory specimens. This requirement can be met by including the\ndata as supplementary information to the published article, through NASA archives\n(such as NTRS (\nntrs.nasa.gov\n),\n \ndata.nasa.gov\n4\n, or other repositories such as Zenodo, or\nOSF), or other means. The published article should indicate how these data can be\naccessed.\n\n•\n \nDMPs will be reviewed as part of the overall NASA research proposal/project plan or\ncontract review process. The NASA Guidebook for Proposers will include information on\nthe requirements for DMPs in grant proposals. NASA will provide guidance on contract\nlanguage for DMPs.\n\n•\n \nNASA program managers and Contracting Officers Technical Representatives will\nprovide guidance to proposers and awardees.\n\n4.0\n \nImplementation\n\n3\n \nPer the scope (section 3) and definition of data, only the data used to support, validate, and corroborate\npublished research findings are required to be shared, per this plan. Preliminary data, trial data, notebooks, emails,\netc. are not included\n\n4\n \nInstructions for contributing a dataset on data.nasa.gov are outlined in the Proposers Guide (2/22), Appendix K,\nPublishing Datasets on the NASA Open Data Portal.",
+        "textSha256": "69e2f404a02f8212def935c2f591cbfbc18425b6d33d9744e0249dd3d25b0565",
+        "textCharacters": 2437,
+        "operatorCount": 689,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 10,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 9\n\nThis section outlines the steps to be taken to implement this plan, addressing the processes and\nprocedures to be followed by proposers as well as by program managers and reviewers.\n\n4.1 NASA Research Data Policy\n\nNASA will expand upon its existing data policies as follows:\n\n•\n \nInclude a requirement for all research proposers, intramural and extramural, to\nsubmit Data Management Plans (DMPs) with their proposals or project plans. DMPs\nwill describe how the proposed research plan conforms to NASA policy on the\ndissemination and sharing of research results and will address:\n\no\n \nThe types of data to be produced during the project\n5\n\no\n \nThe standards to be used for data and metadata format and content\n\no\n \nPolicies for accessing and sharing the data, including provisions for\nappropriate protection of privacy, confidentiality, security, intellectual\nproperty, and other rights or requirements\n\no\n \nThe policies and provisions for re-use, re-distribution, and the production of\nderivatives.\n\no\n \nPlans for providing access to the data used in any federal funded scientific /\nresearch publication\n\no\n \nPlans for archiving and preserving of the data, as appropriate (use of existing\ndatabases or public repositories will be strongly encouraged), including how\nlong the data will be preserved\n\no\n \nPlans for making publicly available appropriate metadata describing the data\nand data formats\n\no\n \nPlans for ensuring that the DMP and metadata are in machine readable\nformats.\n\n•\n \nExplicitly state that reasonable costs of data sharing (including archiving) may be\nincluded in the proposal or project plan budget.\n\n•\n \nRequire all researchers to share their data and analysis code at the time of\npublication (see Part C of this plan), as defined in the DMP. This includes data that\nare displayed in charts and figures. This requirement could be met by including the\ndata as supplementary information to the published article, or through other means.\nThe published article should indicate how these data can be accessed.\n\n•\n \nEncourage the abundant use of community-based standards to ensure widest\npossible application. NASA policy will encourage all supported researchers to make\nuse of existing data and metadata standards (format and content standards), to the\nextent feasible.\n\n5\n \nRefer to Section 2, page 6.",
+        "textSha256": "3a1a2d0fad0a286976a1f696b7f270255a61d45736b98527395a8d98945793c3",
+        "textCharacters": 2326,
+        "operatorCount": 677,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 11,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 10\n\n•\n \nRequire that NASA program managers include in announcements of research\nopportunities (1) specific data requirements and expectations; and (2) an example\nDMP or outline for the specific type of data likely to result from the funded projects;\nor (3) a statement that a DMP is not required because of the nature of the activity\n(e.g., no data is expected or proprietary data or personally-identifiable information\nare expected).\n\n4.2 Guidance and Training\n\nNASA has developed guidance, including an overarching DMP template, to assist\nresearchers in developing and implementing their DMPs. Example DMPs will be made\navailable whenever possible, and users may refer to third party sites\n6\n \nfor additional\nexamples.\n\nAdditionally, specific guidance will be provided by program managers in research\nsolicitations. A few examples of such specific guidance include:\n\n•\n \nMinimum metadata requirements, including appropriate attribution (owner of the\ndata and funding source) and conformance/interoperability with the common core\nresearch metadata required under the recent Open Data Policy.\n7\n\n•\n \nExpectations for planned repositories, including the ability of a repository to provide\npersistent identifiers for digital data, the standards that a repository should follow\nfor implementation of those identifiers, and the ability of the repository to provide\nfor appropriate-term access.\n\n•\n \nHow to obtain a DOI for datasets\n\nFinally, NASA will provide guidance for reviewers to enable them to assess and monitor\nDMPs in their programs effectively and efficiently. NASA believes that having\nknowledgeable and proactive reviewers will be key to successful implementation of this\nplan. The evaluation of the DMPs will consider the relative value of long-term preservation\nand access, and the associated costs and administrative burden.\n\n4.3 Current Documents/Policies/Websites\n\nThe revised research data policy will be added to NASA Procedural Requirement, 1080.1 A,\n\nRequirements for the Conduct of NASA Research and Technology (R&T).\n \nNASA will also\namend its\n \nNASA Grants Handbook, NASA Headquarters Science Mission Directorate\n\nManagement Handbook,\n \nand any other relevant documents or policies to reflect the revised\nresearch data policy, e.g. NPD 2230.1,\n \nResearch Data and Publication Acces\ns. Released\nNASA Software can be found at\n \nhttps://software.nasa.gov/\n.\n\n6\n \nSuch as https://dmptool.org/\n\n7\n \nOMB Memorandum M-13-13, available at:\nhttp://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf",
+        "textSha256": "2416c30ea364aa55c384703fa9101731294bd3ad097d84fd85c316ed1c10611e",
+        "textCharacters": 2534,
+        "operatorCount": 692,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 12,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 11\n\n4.4 Stakeholder and Public Involvement\n\nAppropriate training and guidance related to data management, storage, and preservation\nwill be conducted in coordination with other federal agencies and according to NASA best\npractices. The development of NASA’s final Public Access Plan will be conducted in a\ntransparent manner, with solicitation of views from stakeholders and full disclosure to the\nscience community and other interested parties. Stakeholders include libraries, federally\nfunded researchers and users of their research results, and civil society groups. NASA will\nsolicit opportunities for implementing public-private partnerships and will participate in\nrelevant multi-agency public-private partnerships and stakeholder engagement activities.\n\n4.5 Public Access to Scientific Data\n\nNASA’s Open Data portal at\n \ndata.nasa.gov\n \nis a registry of NASA dataset metadata, which\nenables machine-readable dataset discovery. Making information resources accessible,\ndiscoverable, and usable by the public can help fuel entrepreneurship, innovation, and\nscientific discovery.\n\nThis portal is a collection of descriptions of datasets; each description is a metadata record.\nThe intention of a data catalog is to facilitate data access by users who are searching for\nparticular types of data. The portal hosts both metadata records and/or original datasets.\n\nData.nasa.gov can support any file type (machine-readable formats are preferable). NASA\nmay limit file size in some cases. For certain types of data, NASA may specify a more\nappropriate archive. The portal offers the capability to create visualization and RESTFUL\nAPIs if your data is in a tabular format.\n\nThe Science Mission Directorate has developed a\n \ndata portal\n \nto make Earth, heliophysics,\nplanetary, and astrophysics observations and data freely accessible to all, including NASA’s\nmany partners in the United States, international organizations and governments, the\nscientific community, the private sector, and the general public.\n\nFor Open Science for Life in Space, NASA has developed the\n \nOpen Science Data Repository\n\n(OSDR). OSDR curates data from GeneLab, the Biological Biospecimen Sharing Program\n(BSP), the Ames Life Sciences Archives (ALSA),and the NASA Biological Institutional Scientific\nCollection (NBISC). NASA’s Open Science Data Repositories expands scientists' access to\nspace-related experiments that explore the biological response of terrestrial biology to\nspaceflight environments.\n\n4.6 Compliance Process and Metrics\n\nAppropriate mechanisms and metrics will be developed to ensure that funding recipients\nare made aware of their obligations, and to monitor whether awardees have complied with\ntheir DMPs. Compliance will be verified by the program officer by evaluation of required\nproject reports and, if necessary, continuing funds may be withheld in cases of\nnoncompliance.",
+        "textSha256": "20e4a5055b5f678bd9e52ce203c8fa62ac124be83b4aba2842cc56072ca2d1db",
+        "textCharacters": 2882,
+        "operatorCount": 597,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 13,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 12\n\nPART B: Peer-Reviewed Publications\n\n1.0\n \nPurpose and Background\n\nNASA’s strategy for planning and executing its implementation of the 2022 OSTP\nMemorandum’s provisions for research publications must respond to several goals and\nconstraints.\n\nFirst, the systems and processes developed and deployed must meet the 2022 OSTP\nMemorandum’s requirements; more generally, the solution will make information easily\ndiscoverable, accessible, and usable by researchers and other users and effective in meeting\ntheir diverse needs. Through doing so, it will also enhance innovation and competitiveness.\n\nSecond, the information management environment for scientific publications, as complex as it\nis, is evolving dynamically as these plans are being developed. Public and private institutions,\nas well as consortia among them, are developing repository and access services for their own\nneeds; many of these could be directly applicable to the objectives of the 2022 OSTP\nMemorandum and consistent with its endorsement of public-private partnership arrangements.\n\nThird, the 2022 OSTP Memorandum makes clear that agencies should not expect additional\nresources for execution of their implementations. Since support for the initiative must\ntherefore be subtracted from agencies’ program budgets, cost must be diligently managed and\nminimized. Since implementation risk translates into increased costs, a corollary is that risk also\nmust be held to a minimum.\n\nThe plan is subject to law, agency mission, resource constraints, U.S. national, homeland, and\neconomic security, and objectives laid out in the 2022 OSTP Memorandum.\n\nThus, NASA’s strategy has led to an implementation that (1) is responsive to the 2022 OSTP\nMemorandum and truly useful, (2) incorporates flexibility to take advantage of ongoing\ndevelopments in publishing, research literature utilization, and mass information access, and\n(3) minimizes both cost and risk.\n\n•\n \nResearchers can publish in journals that are part of the Clearinghouse for the Open\nResearch of the United States (\nCHORUS\n) publishing group. These publications will be\nmade automatically accessible through the PubSpace collection within the NASA\nScientific and Technical Information (STI) repository. NASA will coordinate with\npublisher members of CHORUS to expand the release of NASA-funded articles without\nembargo. Researchers should inquire with publishers as to their embargo policies.\nResearchers can ensure immediate release and policy compliance by following options\nlisted below.",
+        "textSha256": "222f40906353f2354517cc912c23bb0dcf9fcab33d2df18bf366d6c2bb1dd330",
+        "textCharacters": 2527,
+        "operatorCount": 555,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 14,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 13\n\n•\n \nNASA intends for researchers to pay reasonable costs to publish an article as open\naccess, and that grant proceeds may be used for such purposes.\n\n•\n \nResearchers will be required to submit or plan to submit (e.g., by publishing through a\nCHORUS publisher or similar) NASA-funded publications to the NASA Technical Report\nService (NTRS) (formerly\n \nPubSpace\n).\n \nIntramural researchers can submit to the NASA\nSTRIVES (the NF-1676). Extramural researchers can submit to NTRS (formerly\n\nPubSpace\n) via the “Submit and Publication” form.\n\n•\n \nAdditionally, a publication can be indexed in the NASA\n \nAstrophysics Data System\n \n(ADS)\nwhich is being expanded to all NASA science disciplines.\n\n2.0\n \nScope\n\nThe scope of applicability of this plan includes all peer-reviewed scientific research publications\nauthored or co-authored by researchers receiving NASA-appropriated funds. This includes both\ncivil servant and non-civil servant researchers, both intramural and extramural researchers.\n\nPublications that contain material governed by personal privacy, export control, proprietary\nrestrictions, trade secrets, or national security law or regulations are excluded. Patents are\nexcluded.\n\nThe policy and required implementation actions are expected to go into effect first for\npublications authored or co-authored by civil servant researchers. Since full implementation\nfor publications without civil servant authorship depends on establishment of necessary\ncopyright licenses to be incorporated into awards, implementation of the policy for these\npublications will take effect for research conducted and publications developed with support by\nawards that establish those licenses. For non-civil servants, publications from research funded\nby awards prior to necessary copyright and license modifications will not be subject to the\npolicy.\n\n3.0\n \nRequirements\n\nResponsibility for submission of a publication and metadata to a designated repository will be\nthe responsibility of the lead author, or NASA-funded co-author if not the lead author (herein,\nthe “corresponding author”). The metadata standard will conform to requirements of the\ndesignated repository. These responsibilities will be established in provisions of the award that\nsupports the investigation. The corresponding author may satisfy this requirement either by\nsubmitting, or by their NASA Center STI office submitting, an exact copy of the accepted\nmanuscript on acceptance by the publisher, or, if the publisher has an agreement in place with\nthe repository to later transmit the edited and formatted Version of Record (VoR) to the\nrepository, by this means without other action.\n\nAwards of NASA funding by any instrument (e.g., grant, contract, or cooperative agreement)\nmay be made conditional upon the recipient’s granting to the Government a broad license that\nenables the repository to transfer more limited rights to users of publications drawn from the",
+        "textSha256": "2eb2888221020a0ef23a6ceedd00fb9b122c06126feae9704703d21c0c3f05fd",
+        "textCharacters": 2940,
+        "operatorCount": 684,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 15,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 14\n\nrepository. An alternative would be an award requirement for the recipient to ensure that any\npublishing agreement would allow the as-accepted manuscript to be posted to PubSpace\ncollection within NTRS, NASA’s designated repository, under its Terms of Service.\n\nIn addition to imposition at the time of initial award, any license provisions can be changed\nwhen incremental funding is released to awardees.\n\nRequired annual and final reporting requirements for awardees regarding publications will be\ndefined in the award instrument.\n\n5.0\n \nImplementation\n\nThis section discusses issues around how NASA will implement this policy.\n\n•\n \nPolicy\n\nIt is NASA’s policy (per 2022 OSTP Memorandum) that peer-reviewed publications be\nmade freely available at the time of publication. This supersedes NASA’s previous\nguidance which allowed for a one-year embargo on publications.\n\n•\n \nSubmission\n\nThe submission process for publications will comply with NASA standard practices and\nfollow all accepted protocols. Options are provided in section B.1.0 (above).\n\n•\n \nManagement\n\nThe development and operation of the NASA research publication access program\nderiving from this plan will be managed by the NASA Office of the Chief Information\nOfficer (OCIO). The Agency has established a governance steering committee (formerly\nknown as a “Board of Advisors”) with representation from NASA’s five research-\nconducting Mission Directorates, the Office of the Chief Scientist, the Office of the Chief\nTechnologist, and the Office of the General Counsel. Other organizations such as the\nOffice of Procurement will be engaged as required.\n\nThis plan lays out a provisional program structure which may be modified in\nconsultation with the steering committee in response to new information, technology,\nor user requirements.\n\nTechnological evolution of repository hardware and software will be the responsibility\nof the repository manager. Standards for metadata and citations associated with NASA\nfunded research will conform to prevailing Government-wide standards.\n\nFinal peer-reviewed manuscripts or final published documents publications cataloged in\nthe NTRS (PubSpace) collection will be made available to the public without charge and\nthe public will be able to be read, download, and analyze in digital form. Texts and",
+        "textSha256": "4b10a0f3cc85dccedf0504990d8abd297002d88191e9fd919a101e8ac996085b",
+        "textCharacters": 2316,
+        "operatorCount": 656,
+        "annotations": []
+      },
+      {
+        "page": 16,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 15\n\nassociated content (images, video, and supporting data) will be stored in non-\nproprietary or widely distributed and machine-readable formats.\n\n•\n \nAccess and discoverability\n\no\n \nEmbargos.\n \nMetadata should be made accessible in parallel with final acceptance\nof a paper. The metadata should be coded so that it can be crawled by\nautomated search engines in order to facilitate discovery. Metadata will be\navailable promptly and without charge and will provide a link to the full text and\nsupplemental materials when possible.\n\nThe full text of peer-reviewed publications shall be available without delay upon\npublication. The 12-month embargo period that was previously in place is now\nremoved.\n\nFor authors who wish to publish in an open access journal, NASA allows all\nArticle Processing Charges (APCs) to be included in the grant proposal budget.\nThe final published article may appear in the CHORUS repository (where\nappropriate), the ADS archive, or the STI repository. Options are provided in\nsection B 1.0 (above).\n\no\n \nSearch.\n \nNASA recognizes that search capabilities are important. The approaches\nto optimization of accessibility and interoperability, while ensuring long-term\nstewardship of publications, will continue to be assessed and enhancements will\nbe implemented where practicable.\n\nIt is expected that some provision will be identified or developed to support\ncross-repository discovery and aggregated retrieval of multiple items identified\nin response to a single query.\n\no\n \nAcceptable use policies.\n \nDocuments available from the PubSpace collection on\nNTRS are not protected by copyright unless noted. If not copyrighted, documents\nmay be reproduced and distributed, without further permission from NASA.\nHowever, some documents or portions of documents available from this site\nmay have been contributed by private individuals or organizations and may be\ncopyrighted. If copyrighted, permission should be obtained from the copyright\nowner prior to use (e.g., modification, reproduction, or redistribution).\n\no\n \nBulk downloads for research and managing the restriction on unauthorized bulk\ndownloads.\n \nNASA intends for NTRS to accommodate bulk downloads for\nresearch purposes and for creation of derivative products and/or commercial\npurposes.",
+        "textSha256": "a4ad4fd50a133866ed8b3cd9e30981aff32af22652217d0d81561c317c90a869",
+        "textCharacters": 2281,
+        "operatorCount": 546,
+        "annotations": []
+      },
+      {
+        "page": 17,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 16\n\no\n \nExposure to third party services.\n \nAccess to the corpus of publications by\nautomated web crawlers for third party search engines is supported by\nNTRS. Since this can amplify access by interested users, it is in NASA’s interest to\nsupport access by search engines.\n\no\n \n508 Compliance.\n \nNASA’s NTRS is Section 508 compliant.\n\n•\n \nPreservation\n\nPublications and metadata are stored for long term preservation in NTRS in machine-\nreadable format. An advantage of storage in machine-readable format is its technology\nindependence and reliable migration as technology evolves.\n\n•\n \nIntegration into other systems\n\n•\n \nNTRS supports content ingest from CHORUS and NIH PubMed archives. NTRS allows for\nmetadata exports via APIs. (\nhttps://sti.nasa.gov/harvesting-data-from-ntrs/\n)\n\nPART C: Software\n\n1.0\n \nPurpose and Background\n\nThe sections that follow comprise the software component of\n \nNASA’s Public Access Plan for\nIncreasing Access to the Results of Scientific Research\n. The purpose of Part C of the plan is to\nincrease the accessibility of software produced by NASA intramural researchers and by\nrecipients of NASA grants, cooperative agreements, and contracts, when such accessibility is in\naccordance with existing requirements, contractual and agreement obligations, applicable laws,\nand other Agency-wide policies and mandates governing release of software.\n\nA key tenet of all research is the ability for the results attained in the specific research and\nexperiments to be repeatable by others. For that to occur, the objectives, methods, data, and\ntools used in scientific experiments must be clearly documented and/or provided so that others\nmay examine the evidence and repeat specific experiments to validate results. Software has\nbecome a critical component to scientific analysis and a key product produced as part of the\nscientific process. Access to scientific software enables for the work described in scholarly\npublications to be fully reproducible.\n\nAccess to scientific software provides for a range of benefits. It increases transparency into the\nscientific process and access to information that may be critical to understanding and\nreproducing the results of the scholarly publication. The insights gained from reviewing the\nsoftware will help those looking to immediately reproduce the results, as scientific manuscripts\ndo not always capture the details of the analysis, but the software always provides insight into\nthe algorithms and the scientific process. Furthermore, scientific software can be reused for\nother projects, which increases the efficiency of the scientific process, and scientific software\ncan be extended, advanced, or adapted to further extend the impact of the original work.",
+        "textSha256": "61181814e7ba1d5c7ffcb84e0474a50a0fdb21ebe74d52f1b5d42c0f242450af",
+        "textCharacters": 2738,
+        "operatorCount": 650,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 18,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 17\n\nAs the 2013 OSTP Memorandum requires scientific data underlying peer-reviewed scholarly\npublications resulting from federally funded research be made freely available and publicly\naccessible by default at the time of publication, the scientific software that produced that data\nshould be made publicly available to better understand that data. The steps necessary to\ncreate that data can only be fully understood if the methods, algorithms, processes, and other\ntransformations are made available. As such, software used to generate research findings\nassociated with a scholarly publication should be released with the scientific data where\npossible, if not otherwise restricted or detrimental to national security.\n\nThere is a range of different types of scientific software that are produced as part of the\nscientific process. These might include scripts for managing data or producing plots, extensive\npackages for simulations and models, or libraries for data analysis. The expectations on\nmaintenance, documentation, and testing of scientific software vary depending on the type and\nfield. The effort to support the software, beyond the goals of reproducibility, may be beyond\nthe scope of what is reasonable. The expectations for releasing of the scientific software\npresented here balance openness with level of effort.\n\nWhile openness is the goal, existing Agency requirements, contractual and agreement\nobligations, applicable laws, and other Agency-wide policies and mandates governing release of\nsoftware (including security and intellectual property considerations) are also taken into\nconsideration when determining the releasability of scientific software. The plan presented\nhere balances these considerations and assures that any such restricted software is never\nreleased, and that intellectual property is respected. This includes the licenses in underlying\nsoftware packages and preserving patent protection for innovative software development.\n\nBy including scientific software in this plan, NASA recognizes the importance of a key\ncomponent of the scientific process. The release of scientific software will enable greater\nreproducibility of scientific results, transparency into the scientific process, and reuse of\nscientific products.\n\n2.0\n \nScope\n\nPart C of the plan focuses on digital unclassified scientific software. The scope of this section\nincludes the following:\n\nComputer programs in source and object code that provide users some degree of scientific\nutility or produce a scientific result or service. This includes the software that is necessary to\nvalidate research findings, associated with scholarly publications. This does not include\nsoftware developed only for preliminary analysis, plans for future research, or communication\nwith colleagues.\n\nScientific Software does not include:\n\n•\n \nSoftware restricted from release due to law or security considerations. This would\ninclude, but not limited to, export Control, ITAR, CUI, materials necessary to be held",
+        "textSha256": "94cb5db2b8faba806c59af527ef969d746d0317d4e5aa51aff68a6f37c31edd7",
+        "textCharacters": 3007,
+        "operatorCount": 381,
+        "annotations": []
+      },
+      {
+        "page": 19,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 18\n\nconfidential, privacy or medical information, or materials with limited release due to\nsecurity concerns.\n\n•\n \nSoftware restricted from release due to intellectual property considerations. This would\ninclude, but not limited to, copyright, trade secrets, commercial information, patent\nprotected software, or similar information which is protected under law.\n\n•\n \nCommercial software, which would be software produced for the purposes of sale. This\nincludes software that would be classified as commercial-off-the-shelf (CoTS) and\nsoftware that NASA does not have a license to distribute.\n\nSoftware may also include not only the source code, but also metadata describing the software,\ndescriptions of how to use the software, and associated software documentation.\n\nThis plan applies to unrestricted, scientific software that is developed to support the scientific\nprocessing and analysis of data produced as part of the mission. Restricted software, whether\ndue to Agency, Federal, or security policy, shall not be released. Technical software with no\ninherent scientific utility is not included in the scope of this policy, but this software can be\nreleased openly to ensure the widest distribution of NASA information to the extent allowed by\napplicable law and existing NASA policies.\n\nImplementation of this plan will be prospective and will not apply to any scientific software\nestablished before this plan’s effective date, unless that scientific software is augmented by\nfederally-funded research activities undertaken on or after this plan becomes effective.\n\n3.0\n \nRequirements\n\nThis plan expands the existing policy and seeks to impose requirements on all NASA scientific\nprograms and intramural and extramural researchers. The Implementation section below\nprovides the detail, but the conceptual requirements are as follows:\n\n•\n \nNASA’s software development is governed by multiple NPDs and NPRs, which provide\nguidance for when they apply (e.g., mission software) and classifications for the various\ntypes of software. Scientific software (for research purposes as is most common with\ngrants) is usually not covered by these NPDs and NPRs, and researchers should always\ncheck with their program managers for specific guidance.\n\n•\n \nScientific software underlying peer-reviewed scholarly publications resulting from\nfederally-funded research must be made freely available and publicly accessible by\ndefault\n \nat the time of publication\n\n•\n \nUnrestricted, scientific software developed to support the scientific processing and\nanalysis of data that is produced\n \nas part of Missions, including software underlying\ntechnical reports if practical, must be made freely available at the time of publication of\nthe product that it supports.",
+        "textSha256": "6382fcb51b2c9050c28c8c61cd89a0ca084b2098c8f4ec4af46f36f767c4fc3f",
+        "textCharacters": 2755,
+        "operatorCount": 442,
+        "annotations": []
+      },
+      {
+        "page": 20,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 19\n\n•\n \nAll proposals or project plans submitted to NASA for scientific research funding will be\nrequired to include a Software Management Plan (SMP) that describes whether and\nhow software generated through the course of the proposed research will be shared\nand preserved (including timeframe), or explains why software sharing and/or\npreservation are not possible or scientifically appropriate. At a minimum, SMPs must\ndescribe how software sharing and preservation will enable validation of published\nresults, or how such results could be validated if software are not shared or preserved.\n\n•\n \nSMPs must provide a plan for making scientific software that underlie the results and\nfindings in peer-reviewed publications digitally accessible at the time of publication.\nThis does not include software developed only for preliminary analysis, plans for future\nresearch, or communication with colleagues. This requirement could be met by\nincluding the software as supplementary information to the published article, through\nNASA-recognized archives (such as NTRS or Zenodo), or other means. The published\narticle should indicate how the software can be accessed.\n\n•\n \nSoftware released independently from the peer-reviewed manuscript must be assigned\na Unique Digital Object Identifier (DOI) to enable preservation, discovery, and citation of\nthe software.\n\n•\n \nSoftware should be released with documentation that enables reuse and supports\nreproducibility. This includes the version of the software and how the software was run.\n\n•\n \nSMPs will be reviewed as part of the overall NASA research proposal/project plan review\nprocess.\n\n•\n \nWhen released and if there are no other restrictions on the software, scientific software\nshould be made publicly available and will be released in accordance with NASA policies.\nRestrictions that may prevent release under a permissive license include, but are not\nlimited by, software governed by incompatible licenses or inclusion of restricted\ncomputer software.\n\n•\n \nNASA employees, contractors, and grantees are encouraged to contribute and\nparticipate in open-source software projects that would further advance the scientific\ngoals of NASA.\n\n4.0\n \nImplementation\n\nThis section outlines the steps to be taken to implement this plan, addressing the processes and\nprocedures to be followed by proposers as well as by program managers and reviewers.\n\n4.1 NASA Research Software Policy\n\nNASA will expand upon its existing software policies as follows:",
+        "textSha256": "36996b6746cca277977974ba38366cfcd8c62ac11cfe03e8a071d33ca7083ce0",
+        "textCharacters": 2495,
+        "operatorCount": 389,
+        "annotations": []
+      },
+      {
+        "page": 21,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 20\n\n•\n \nInclude a requirement for all research proposers, intramural and extramural, to\nsubmit Software Management Plans (SMPs) with their proposals or project\nplans. SMPs will describe how the proposed research plan conforms to NASA\npolicy on the dissemination and sharing of research results and will address:\n\no\n \nThe types of software to be produced in the course of the project\n\no\n \nThe standards to be used for software development\n\no\n \nPolicies for accessing and sharing the software, including provisions for\nappropriate protection of privacy, confidentiality, security, intellectual\nproperty, and other rights or requirements\n\no\n \nPolicies and provisions for re-use, re-distribution, and the production of\nderivatives\n\no\n \nPlans for providing access to the software used in any science publication\n\no\n \nPlans for archiving and preserving of the software, as appropriate (use of\nexisting databases or public repositories will be strongly encouraged),\nincluding how long the software will be preserved or maintained\n\no\n \nMake publicly available appropriate metadata describing the software\n\n•\n \nExplicitly state that reasonable costs of software development and sharing may\nbe included in the proposal or project plan budget.\n\n•\n \nRequire all researchers to share their scientific software developed to support a\nscholarly publication\n \nat the time of publication. This includes the scientific\nsoftware that are displayed in charts and figures or needed to validate the\nscientific conclusions of the publication. This requirement could be met by\nincluding the software as supplementary information to the published article, or\nthrough other means. The published article should indicate how the software\ncan be accessed.\n[1]\n\n•\n \nEncourage the abundant use of community-based standards to ensure widest\npossible application. NASA policy encourages all supported researchers to make\nuse of existing data and metadata standards (format and content standards), to\nthe extent feasible.\n\n•\n \nRequire that NASA program managers include in announcements of research\nopportunities (1) specific software requirements and expectations; (2) an\nexample SMP or outline for the specific type of software likely to result from the\nfunded projects; or (3) a statement that SMP is not required because of the\nnature of the activity (e.g., no software is expected, or proprietary software are\nexpected).\n\n4.2 Guidance and Training",
+        "textSha256": "f2abc75affbe8e82d2fc77cc4f039230efc682c3129401a87fca61fd5dd91086",
+        "textCharacters": 2423,
+        "operatorCount": 491,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 22,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 21\n\nNASA has developed guidance, including an overarching SMP template, to assist\nresearchers in developing and implementing their SMPs. Example SMPS will be made\navailable whenever possible.\n\nAdditionally specific guidance will be provided by program managers in the research\nsolicitations posted on NSPIRES. A few examples of such specific guidance include:\n\n•\n \nMinimum requirements for sharing software, including appropriate attribution,\nlicense, and additional metadata to make the software discoverable.\n\n•\n \nExpectations for planned repositories, including the ability of a repository to\nprovide persistent identifiers for software, the standards that a repository\nshould follow for implementation of those identifiers, and the ability of the\nrepository to provide for appropriate-term access.\n\n•\n \nHow to obtain a DOI for software.\n\nFinally, NASA will provide guidance for reviewers to enable them to effectively and\nefficiently assess SMPs in their programs. NASA believes that having knowledgeable\nreviewers will be key to successful implementation of this plan. The evaluation of the\nSMPs will consider the relative value of long-term preservation and access and the\nassociated costs and administrative burden.\n\n4.3 Current Documents/Policies/Websites\n\nThe revised research software policy will be added to NASA Procedural Requirement,\n1080.1 A,\n \nRequirements for the Conduct of NASA Research and Technology (R&T).\n \nNASA\nwill also amend its\n \nNASA Grants Handbook, NASA Headquarters Science Mission\nDirectorate\n \nManagement Handbook,\n \nand any other relevant documents or policies to\nreflect the revised research software policy.\n\n4.4 Stakeholder and Public Involvement\n\nAppropriate training and guidance related to software management, storage, and\npreservation will be conducted in coordination with other federal agencies and\naccording to NASA best practices. The development of NASA’s final Public Access Plan\nwill be conducted in a transparent manner, with solicitation of views from stakeholders\nand full disclosure to the science community and other interested parties. Stakeholders\ninclude libraries, federally funded researchers and users of their research results, and\ncivil society groups. NASA will solicit opportunities for implementing public-private\npartnerships and will participate in relevant multi-agency public-private partnerships\nand stakeholder engagement activities.\n\n4.5 Public Access to Scientific Software",
+        "textSha256": "c88861ddc197e4d75745faa7836dd88c185912e2d973c9e1d2ac68f63d24036a",
+        "textCharacters": 2451,
+        "operatorCount": 433,
+        "annotations": []
+      },
+      {
+        "page": 23,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 22\n\nNASA will list scientific software in appropriate NASA designated repositories. This can\ninclude the NASA catalog of software, the Science Discovery Engine, and the\nAstrophysics Data System. NASA will identify software to be curated as part of these\ncatalogs. The catalog of scientific software will begin at the time of implementation of\nthe policy. The public will have access to the catalog and associated data free of charge.\n\nNASA will continue to identify additional approaches, involving public and private sector\nentities, and will continue efforts to improve public access to research data.\n\n4.6 Compliance Process and Metrics\n\nAppropriate mechanisms and metrics will be developed to ensure that funding\nrecipients are made aware of their obligations and to monitor whether awardees have\ncomplied with their SMPs. Compliance will be verified by the program officer by\nevaluation of required project reports and, if necessary, continuing funds may be\nwithheld in cases of noncompliance.\n\nImplementation Process\n\nMetrics, compliance and evaluation\n\nCompliance requirements and consequences for noncompliance with publications will be\nclearly detailed in award instruments and enforced. Publications cited in required reports (e.g.,\nannual progress and final reports) must be present in the PubSpace collection in the NTRS\nrepository. Publications absent from the repository will result in a request to the corresponding\nauthor to remedy the defect. Ongoing evaluation of compliance and alerting noncompliant\nauthors will be accomplished using these progress and final reports.\n\nCompliance with the requirement for deposition of as-accepted papers and metadata into the\nNTRS for NASA authors will be strengthened via clear promulgation and vigorous enforcement\nof an appropriate Agency NASA Policy Directive (NPD) and NASA Procedural Requirement\n(NPR).\n\nPublic consultation\n\nNASA will use its established Federal Advisory Committee Act (FACA)-chartered advisory\ncommittees and its standing committees at the National Research Council to inform its\nconstituent communities and obtain guidance relevant to open access policies and plans.\n\nInteragency coordination\n\nNASA has participated in discussions with other agencies through OSTP’s Subcommittee on\nOpen Science (SOS) and will continue to collaborate to ensure a consistent government-wide\napproach is achieved.",
+        "textSha256": "5d5f5e0707cd3079f0606bd2af69ea50e7e460a66f704369719998d254cb19c0",
+        "textCharacters": 2378,
+        "operatorCount": 454,
+        "annotations": []
+      },
+      {
+        "page": 24,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 23\n\nPublic notice\n\nNASA will adhere to established standards for formal public notice of implementation of the\nopen access plan. Funded researchers will be informed and bound by provisions in their award\ninstruments as described in the Grants and Cooperative Agreements Manual.\n\nWaiver Process\n\nNASA recognizes that there may be extenuating circumstances that require waivers to the steps\noutlined in this plan. In all cases the researcher may apply for a waiver to bypass any or all\nthese requirements. The Mission Directorate Associate Administrator (MD AA) shall be the final\nauthority for any such decisions. The process of obtaining a waiver consists of these steps:\n\n•\n \nRequests for waivers should be submitted in writing to the appropriate program or\nproject manager who, after consulting with appropriate stakeholders including OCIO\nand OGC, will make a determination or forward the request on to the MD AA\n\n•\n \nIf the program/project manager rejects the waiver request, then an appeal may be\nmade directly to the MD AA\n\n•\n \nRationales for waivers may be due to (but are not limited to) the following:\n\no\n \nSickness or accident to the requestor or an immediate family member\n\no\n \nPregnancy\n\no\n \nNatural disaster such as flood, wildfire, earthquake, etc.\n\no\n \nUnplanned lack of resources (failed equipment) or budget shortfalls\n\no\n \nWorker shortage, student needs\n\no\n \nConsideration for MSI, PUI, protected class, DEIA, etc.\n\nTimeline\n\nMilestones for the development of the final Public Access plan are shown in this graphic from\nOSTP.",
+        "textSha256": "c167584628fea70be7a6d86f3aeca5bac5a588917ad2136ab7e5abcd15336fbe",
+        "textCharacters": 1548,
+        "operatorCount": 396,
+        "annotations": []
+      },
+      {
+        "page": 25,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 24\n\nSummary\n\nOpen access to the results of NASA-funded research can have dramatic benefits to the larger\nscientific community and, by extension, the general public. As laid out in this plan, NASA\ncontinues to provide full support for open access to scientific and technical publications, data,\nand software, to enable new discoveries.\n\nUpdates and Re-evaluation of this Plan\n\nImplementation of this plan will involve continued support from both program managers and\nresearch investigators. To ensure that the lessons learned are captured and that NASA\ncontinually improves its procedures/policies with respect to research data management, a\nsteering committee comprising all the research organizations and the OCIO, as well as other\nstakeholders, has been established. This steering committee will meet on a regular basis to\nshare experiences and will conduct an annual assessment of the policy and its implementation\nfor the first five years after the policy takes effect.\n\nRecognizing that extensive data management will require funding, NASA has developed a cost\nmodel consistent with the plan (as outlined above) and incorporated these needs into the on-\ngoing agency’s annual budget development process.",
+        "textSha256": "342f5236a61c08a93b1665459c3326be4df2efc7af7d490fd338d133125d6755",
+        "textCharacters": 1213,
+        "operatorCount": 283,
+        "annotations": []
+      },
+      {
+        "page": 26,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 25\n\nContributors to this plan\n\nA team of individuals from across NASA developed this plan, including representatives of the\nOffice of the Chief Scientist, the Office of the Chief Engineer, the Office of Technology, Policy,\nand Strategy, the Office of the Chief Information Officer, the Office of the General Counsel, the\nAeronautics Mission Directorate, the Science Mission Directorate, the Space Operations\nMission Directorate, and the Space Technology Mission Directorate. The Office of the Chief\nScientist is responsible for management of this plan, updates to the plan, and responding to\ninquiries on the plan from interested parties, including OSTP.\n\nGlossary\n\nDefinitions\n\n1.\n \nResearch –\n \nProduces scientific or technical information to advance the state of the art\nor the range of knowledge of a discipline\n\n2.\n \nData –\n \nInformation produced by instruments, observations, or analysis that contribute\nto research\n\n3.\n \nSoftware –\n \nCommercial (requires purchase of a license) or open-source (freely available\nwithout purchase) code used in the analysis of data or production of data products.\n\n4.\n \nPersistent Identifier –\n \nA permanent, digital code that references a digital object (such as\na publication, presentation, dataset, or software package)\n\nAcronyms\n\nAAU\n \nAssociation of American Universities\n\nAPLU\n \nAssociation of Public and Land-grant Universities\n\nARL\n \nAssociate of Research Libraries\n\nCDC\n \nCenters for Disease Control and Prevention\n\nCHORUS\n \nClearinghouse for the Open Research of the United States\n\nCUI\n \nControlled Unclassified Information\n\nDMP\n \nData Management Plan\n\nDOI\n \nDigital Object Identifier\n\nEAR\n \nExport Administration Regulations\n\nFACA\n \nFederal Advisory Committee Act\n\nNDAA\n \nNASA Document Availability Authorization\n\nNIHMS\n \nNIH Manuscript Submission system\n\nNPD\n \nNASA Policy Directive\n\nNPR\n \nNASA Procedural Requirement\n\nNTRS\n \nNASA Technical Report Server (NASA)\n\nOCIO\n \nOffice of the Chief Information Officer",
+        "textSha256": "5c4b33c14c4e65bf4584c71c210ac414d1431057064023354da5167309caeca5",
+        "textCharacters": 1964,
+        "operatorCount": 720,
+        "annotations": []
+      },
+      {
+        "page": 27,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 26\n\nOSTP\n \nOffice of Science and Technology Policy\n\nPAGES\n \nPublic Access Gateway for Energy and Science (DOE)\n\nPDF-SIE\n \nPortable Document Format—Searchable Image Exact\n\nPMC\n \nPubMed Central (National Institutes of Health)\n\nSBIR\n \nSmall Business Innovative Research\n\nSBU\n \nSensitive But Unclassified\n\nScholar\n \nNot an acronym (Google)\n\nSHARE\n \nSHared Access Research Ecosystem (AAU, APLU, ARL)\n\nSMP\n \nSoftware Management Plan\n\nStacks\n \nNot an acronym (CDC)\n\nSTI\n \nScientific and Technical Information (NASA)\nSTTR\n \nSmall Business Technology Transfer Research\n\nPAGES\n \nPublic Access Gateway for Energy and Science (Department of Energy)\n\nUSG\n \nUnited States Government\n\nVoR\n \nVersion of Record\n\nXML\n \nExtensible Markup Language",
+        "textSha256": "7974b4475fe5fbf829876ac3fa6afc42329192b84a4429fadb9ed42aad3d2a13",
+        "textCharacters": 732,
+        "operatorCount": 418,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.6",
+      "Language": "EN-US",
+      "EncryptFilterName": null,
+      "IsLinearized": true,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Author": "Amy Friedlander",
+      "Custom": {
+        "Company": "HP",
+        "ContentTypeId": "0x0101002B61AEA350961D489479B783C9628802",
+        "SourceModified": "D:20230501130202",
+        "_NewReviewCycle": ""
+      },
+      "CreationDate": "D:20230504144644-04'00'",
+      "Creator": "Acrobat PDFMaker 20 for Word",
+      "Keywords": "",
+      "ModDate": "D:20230504144650-04'00'",
+      "Producer": "Adobe PDF Library 20.5.3",
+      "Subject": "Increasing Access to the Results of Scientific Research",
+      "Title": "NASA’s public access plan"
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 27,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "NASA’S PUBLIC ACCESS PLAN\n\nIncreasing Access to the Results of\nScientific Research\n\nDigital scientific data, software, and peer\n-\nreviewed publications\n\nwww.nasa.gov",
+        "textSha256": "28cb3fcff55247393508e2ae58089ac4a7d5a1404a62e617a6f3204d29158cf7",
+        "textCharacters": 165,
+        "operatorCount": 175,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 1\n\nContents\n\nRevisions ....................................................................................................................................................... 2\n\nIntroduction .................................................................................................................................................. 2\n\nPrinciples\n \n....................................................................................................................................................... 4\n\nApplicability................................................................................................................................................... 5\n\nPART A: Digital Scientific Data...................................................................................................................... 5\n\nPART B: Peer-Reviewed Publications ......................................................................................................... 12\n\nPART C: Software ........................................................................................................................................ 16\n\nImplementation Process ............................................................................................................................. 22\n\nWaiver Process............................................................................................................................................ 23\n\nTimeline....................................................................................................................................................... 23\n\nSummary ..................................................................................................................................................... 24\n\nContributors to this plan\n \n............................................................................................................................. 25\n\nGlossary\n \n....................................................................................................................................................... 25",
+        "textSha256": "6670244a25a702eba333fe68aca740171e8b8bcf1dbca90c58e11a5c5c040a82",
+        "textCharacters": 2095,
+        "operatorCount": 446,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 2\n\nNASA’s Public Access Plan\n\nfor Increasing Access to the\n\nResults of Scientific Research\n\n(Digital Scientific Data, Software, and Peer-Reviewed Publications)\n\nFebruary 21, 2023\n\nRevisions\n\nThis section highlights the significant changes to this document since the original plan was\nreleased in 2014. To wit:\n\n•\n \nThere shall be no publication embargo period for peer-reviewed publications\n\n•\n \nData that support peer-reviewed publications shall be made available in a public archive\nat the time of publication\n\n•\n \nSoftware should be included as part of Open Access, , subject to NASA software release\nrequirements\n\n•\n \nSoftware used to generate research findings/results should be made available in a public\narchive at the time of publication\n\n•\n \nOther data products beyond peer-reviewed publications and software should be\nconsidered as part of Open Access\n\nIntroduction\n\nThis plan was originally issued in response to the February 2013 White House Office of Science\nand Technology Policy (OSTP) Memorandum for the Heads of Executive Departments and\nAgencies titled, “Increasing Access to the Results of Federally Funded Scientific Research.”\nThrough this memorandum, OSTP directed all agencies with greater than $100 million in\nresearch and development expenditures each year to prepare a plan for improving the public’s\naccess to the results of federally funded research.\n\nIn August 2022, OSTP issued an updated memo to federal agencies titled, “Ensuring Free,\nImmediate, and Equitable Access to Federally Funded Research,” with new guidance. This\nrevision to the NASA public access plan responds to the new 2022 guidance.",
+        "textSha256": "14fed8f9e223c8a3643c82807e29a994fead4fc64d908e4dcd1b899c51b94f85",
+        "textCharacters": 1634,
+        "operatorCount": 585,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 3\n\nNASA invests over $3 billion annually in fundamental and applied research and technology\ndevelopment\n1\n \nacross a broad range of topics, including space and Earth sciences, life and\nphysical sciences, human health research, aeronautics, human and robotic exploration, and\ntechnology development. Promoting the full and open sharing of data with research\ncommunities, private industry, academia, and the general public is a longstanding core value of\nNASA. For example, NASA space and suborbital missions routinely process, archive, and\ndistribute their data to researchers around the globe.\n\nThis plan establishes objectives to ensure public access to publications and digital data sets\narising from National Aeronautics and Space Administration (NASA) research, development,\nand technology (RD&T) programs:\n\n•\n \nAffirm and enhance NASA’s commitment to public access to scientific research results\n\n•\n \nEnsure access to and reliable preservation of NASA-funded scholarly publications and\ndigital data sets for research, development, commercialization, and educational\npurposes, within available resources\n\n•\n \nPreserve and increase the use of scientific research results to enhance scientific\ndiscovery and application of research results\n\n•\n \nAffirm NASA’s commitment to its scientific integrity policy and support the\nreproducibility of scientific research results\n\n•\n \nEnsure that all extramural researchers receiving NASA grants, cooperative agreements,\nand contracts for scientific research and intramural researchers develop data\nmanagement plans, as appropriate, describing how they will provide for long-term\npreservation of, and access to, scientific data in digital format\n\n•\n \nEnsure NASA-funded documents are presented in machine readable formats\n\n•\n \nProvide for the NASA-funded data sets underlying publications to be available with\nappropriate DOIs\n\n•\n \nOptimize archival and dissemination of data and publications, including long-term\nstewardship\n\n•\n \nSupport training, education, and workforce development related to scientific data\nmanagement, analysis, storage, preservation, and stewardship\n\n•\n \nSupport governance of and best practices for managing public access to peer-reviewed\nscholarly publications and digital data across NASA\n\nThe February 2013 OSTP Memorandum’s objectives were provided in two distinct areas—\n\n1\n \nReport Regarding\n \nAmerica Competes Act\n \nPursuant to Section 1008(c) of the America Competes Act (P.L. 110-69)",
+        "textSha256": "236c4cfba8a9e51f3092823224ce92360f7f58e49bd06e0fb024d352e8abfe35",
+        "textCharacters": 2462,
+        "operatorCount": 526,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 4\n\ndigital scientific data and peer-reviewed publications. NASA’s original Open Access plan\naddressed these objectives separately, in Parts A and B below, respectively. The 2022 OSTP\nMemorandum extends the original objectives and NASA has amended this plan accordingly.\n\nIt is the position of NASA, aligned with that of OSTP, that all Americans must be able to\nequitably benefit from broad and expeditious sharing of the results of NASA-funded research\nand development investments, without delay. Free and open access to such data strengthens\nNASA’s ability to be a critical leader and partner on issues of open science around the world,\nand enables more rapid adoption of innovative ideas throughout the nation. Improving public\naccess to promote the rapid sharing of federally-funded research data with appropriate\nprotections and accountability measures will allow for greater validity of research results and\nmore equitable access to data resources aligned with these ideals.\n\nPrinciples\n\nThis plan is based on the following set of principles:\n\n•\n \nOpen Access to federally-funded scientific research has the potential to increase the\npace of scientific discovery, advance technology development, speed up exploration,\nand promote more efficient and effective use of government funding and resources\n\n•\n \nSharing and preserving publications, data, and software are central to protecting the\nintegrity of science by facilitating validation of results, as well as advancing science by\nbroadening the value of research data to disciplines other than the originating one and\nto society at large\n\n•\n \nData management and software sharing should be an integral part of research planning\n\n•\n \nThe degree to which research data needs to be shared or preserved varies across and\nwithin scientific disciplines; flexibility must be allowed for program-specific\nneeds/requirements and consideration of benefits and costs, including preserving and\npromoting U.S. competitiveness\n\n•\n \nProprietary interests, business confidential information, intellectual property rights, and\nother relevant rights will continue to be recognized and appropriately protected.\nHowever, NASA encourages researchers to provide a releasable version of all federally-\nfunded data after removing any proprietary and/or confidential information\n\n•\n \nProtecting confidentiality and personal privacy are paramount, and no change will be\nmade to existing policies that would reduce current protections.\n\n•\n \nResearchers should always follow the requirements listed in their research grant and\nnothing in this document contradicts that.",
+        "textSha256": "59b10ede102d72e4f3167952a8c87a7de86f35238e89b9219208b44770e4ec2c",
+        "textCharacters": 2603,
+        "operatorCount": 470,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 5\n\nApplicability\n\nThis NASA Public Access research policy will apply to the following individuals:\n\n•\n \nAll NASA employees, including full- and part-time employees; as well as support service\ncontract employees, consultants, and temporary and special government employees.\n\n•\n \nAwardees from non-NASA organizations that publish scientific research or compile\ndigital data sets resulting from research, development and technology programs funded\nthrough a NASA grant, contract, or other agreement. This includes but is not limited to\nnon-profit organizations, contractors, cooperative agreement holders, grantees,\nintergovernmental organizations, universities, and other educational institutions.\n\nAdditionally, the policy will apply to:\n\n•\n \nBasic and applied research across all NASA organizations\n\n•\n \nAll research proposals or project plans submitted after this plan becomes effective\n\n•\n \nBoth intramural and extramural research projects, regardless of funding mechanism\n(grants, cooperative agreements, or contracts)\n\nExceptions for data and software\n\nAll researchers receiving federal funding will be required to submit Data Management Plans\n(DMPs), however in some cases it is expected that some data will not be made public. This\nincludes but is not limited to the following categories:\n\n•\n \nEducational grants and grants to individual students\n\n•\n \nWork that is proprietary, confidential, or contains trade secrets\n\n•\n \nWork which results in Personally Identifiable Information (PII) (i.e. human subject data)\n\n•\n \nITAR or EAR controlled data\n\n•\n \nCUI – Controlled Unclassified Information\n\n•\n \nNational Security classified data\n\n•\n \nSmall Business Innovative Research/Small Business Technology Transfer (SBIR/STTR)\ncontracts\n\n•\n \nSoftware, if prohibited by an underlying license or patent rights\n\nPART A: Digital Scientific Data\n\n1.0\n \nPurpose and Background",
+        "textSha256": "701aac5d0d594025bdef6b949c847c1141a8f188e80dca9eee4d3f9b0934f089",
+        "textCharacters": 1873,
+        "operatorCount": 583,
+        "annotations": []
+      },
+      {
+        "page": 7,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 6\n\nThe sections that follow comprise the data component of the\n \nNASA Public Access Plan for\nIncreasing Access to the Results of Scientific Research\n. The purpose of Part A of the plan is to\nincrease the accessibility of digital data produced by NASA intramural researchers and by\nrecipients of NASA grants, cooperative agreements, and contracts.\n\nNASA is committed to following federal guidelines that all data from federally-funded research\nshould be made as widely and freely available as possible while safeguarding the privacy of\nparticipants and protecting confidential and proprietary data. To facilitate increased access to\nsuch data, NASA will update its research data policy to require all researchers submitting a\nresearch proposal or research project plan\n2\n \nto NASA to include a plan for managing and\nproviding access to final research data or to state why their data cannot be made publicly\navailable.\n\nNASA conducts and supports research across a broad range of topics, including space and Earth\nsciences, life and physical sciences, human health research, aeronautics, human and robotic\nexploration, and technology development. As one might imagine, the types of data and the\nneed to share and preserve data across the fields vary considerably and may change over time.\nFor this reason, NASA has taken the approach of developing a high-level, overarching policy,\nallowing flexibility within the research program areas to determine their own specific\nrequirements and needs.\n\nNASA has a long-standing culture of promoting the full and open sharing of data with the\nresearch communities, private industry, academia, and the general public. NASA space and\nairborne missions routinely process, archive, and distribute their data to researchers around\nthe globe. Data from all NASA spacecraft are currently available through the individual mission\nand theme archives, e.g., the Earth Observing System Data and Information System (EOS-DIS),\nwhich is one of the largest repositories of earth science data in the world, over seven\npetabytes, and to which new data are added at a rate of five terabytes per day. Similarly, the\nHuman Research Program shares its astronaut crew medical data (adhering to appropriate\nprivacy restrictions) with the medical research community. Information on all NASA-funded\ntechnology investments, including the benefits and results (with the appropriate controls) of\nsuch investments, are available to the general public through\n \nTechPort\n. This plan extends\nNASA’s culture of open data access to all NASA funded research.\n\nThis plan also extends NASA’s culture of open data access to all NASA-funded research,\nincluding data products that are not part of peer-reviewed and published research papers, such\nas closeout reports, which are subject to existing law, policy and third-party rights as may be\napplicable. Providing these data products assists other researchers in the same discipline and\nacross disciplines through modification and re-use of data, analyses, and software, reducing the\namount of time, effort, and resources required to recreate these independently\n.\n\n2.0\n \nScope\n\n2\n \nIn the case of directed, intramural research, project plans are submitted rather than proposals.",
+        "textSha256": "f7f820948c5087e52b0ac20715776865e82c00c254c8664ced0908f6cd145e30",
+        "textCharacters": 3234,
+        "operatorCount": 723,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 7\n\nPart A of the plan focuses on digital unclassified scientific research data, which are research\ndata that can be stored digitally and accessed electronically. It follows the OMB Circular A110\ndefinition of research data:\n\n“Research data are defined as the recorded factual material commonly accepted in the\nscientific community as necessary to validate research findings, but not any of the\nfollowing: preliminary analyses, drafts of scientific papers, plans for future research, peer\nreviews, or communications with colleagues. This 'recorded' material excludes physical\nobjects (e.g., laboratory samples).\n\nResearch data also do not include:\n\n(A) Trade secrets, commercial information, materials necessary to be held confidential by\na researcher until they are published, or similar information which is protected under\nlaw; and\n\n(B) Personal and medical information and similar information the disclosure of which\nwould constitute a clearly unwarranted invasion of personal privacy, such as information\nthat could be used to identify a particular person in a research study.”\n\nData are understood to include not only the recorded technical information, but also metadata\n(describing the data), software, descriptions of the software required to read and use the data,\nand associated software documentation, and associated data (e.g., calibrations).\n\nExclusion: NASA creates and provides a large suite of scientific and engineering “data products”\nwhose dissemination to the research community and the general public advance the Agency's\ncore mission objectives. These “data products” come from NASA missions, instruments, and\nprojects, and typically have well-established scientific or technological goals and requirements.\nSubject to Federal laws regarding sensitive data and privacy, these data products are captured\nand archived by NASA for public access and use and are thus already compliant with the 2013\nOSTP Memorandum on public access to research results. This plan therefore excludes these\ntypes of data.\n\nImplementation of this plan will be prospective and will not apply to any digital data set\nestablished before this plan’s effective date, unless that digital data set is augmented by\nfederally-funded research activities undertaken on or after this plan becomes effective.\n\n3.0\n \nRequirements\n\nThis plan expands on the existing policy and will impose requirements on all NASA scientific\nprograms and intramural and extramural researchers. The Implementation section below\nprovides the detail, but the conceptual requirements are as follows:\n\n•\n \nScientific data\n \nunderlying peer-reviewed scholarly publications resulting from federally\nfunded research shall be made freely available and publicly accessible by default\n \nat the",
+        "textSha256": "3289fcbefb86b2090451761918f4be1879f4132c59f4a2183bf01d16de4aa3f2",
+        "textCharacters": 2753,
+        "operatorCount": 562,
+        "annotations": []
+      },
+      {
+        "page": 9,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 8\n\ntime of publication\n, and no embargo by a publisher or others should be imposed nor will\nsuch be recognized by NASA.\n\n•\n \nUnique digital object identifiers (DOIs) must be assigned to all datasets supporting peer-\nreviewed publications\n\n•\n \nAll proposals or project plans submitted to NASA for scientific research funding shall\ninclude a Data Management Plan (DMP) that describes whether and how data\ngenerated through the course of the proposed research\n3\n \nwill be shared and preserved\n(including timeframe) or explains why data sharing and/or preservation are not possible\nor scientifically appropriate. At a minimum, DMPs shall describe how data sharing and\npreservation will enable validation of published results, or how such results could be\nvalidated if data are not shared or preserved.\n\n•\n \nDMPs shall provide a plan for making research data that underlie the results and\nfindings in peer-reviewed publications digitally accessible at the time of publication.\nThis includes data (or how to access data) that are displayed in charts and figures. This\ndoes not include preliminary data, laboratory notebooks, drafts of scientific papers,\nplans for research, peer review reports, communications with colleagues or physical\nobjects, such as laboratory specimens. This requirement can be met by including the\ndata as supplementary information to the published article, through NASA archives\n(such as NTRS (\nntrs.nasa.gov\n),\n \ndata.nasa.gov\n4\n, or other repositories such as Zenodo, or\nOSF), or other means. The published article should indicate how these data can be\naccessed.\n\n•\n \nDMPs will be reviewed as part of the overall NASA research proposal/project plan or\ncontract review process. The NASA Guidebook for Proposers will include information on\nthe requirements for DMPs in grant proposals. NASA will provide guidance on contract\nlanguage for DMPs.\n\n•\n \nNASA program managers and Contracting Officers Technical Representatives will\nprovide guidance to proposers and awardees.\n\n4.0\n \nImplementation\n\n3\n \nPer the scope (section 3) and definition of data, only the data used to support, validate, and corroborate\npublished research findings are required to be shared, per this plan. Preliminary data, trial data, notebooks, emails,\netc. are not included\n\n4\n \nInstructions for contributing a dataset on data.nasa.gov are outlined in the Proposers Guide (2/22), Appendix K,\nPublishing Datasets on the NASA Open Data Portal.",
+        "textSha256": "69e2f404a02f8212def935c2f591cbfbc18425b6d33d9744e0249dd3d25b0565",
+        "textCharacters": 2437,
+        "operatorCount": 689,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 10,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 9\n\nThis section outlines the steps to be taken to implement this plan, addressing the processes and\nprocedures to be followed by proposers as well as by program managers and reviewers.\n\n4.1 NASA Research Data Policy\n\nNASA will expand upon its existing data policies as follows:\n\n•\n \nInclude a requirement for all research proposers, intramural and extramural, to\nsubmit Data Management Plans (DMPs) with their proposals or project plans. DMPs\nwill describe how the proposed research plan conforms to NASA policy on the\ndissemination and sharing of research results and will address:\n\no\n \nThe types of data to be produced during the project\n5\n\no\n \nThe standards to be used for data and metadata format and content\n\no\n \nPolicies for accessing and sharing the data, including provisions for\nappropriate protection of privacy, confidentiality, security, intellectual\nproperty, and other rights or requirements\n\no\n \nThe policies and provisions for re-use, re-distribution, and the production of\nderivatives.\n\no\n \nPlans for providing access to the data used in any federal funded scientific /\nresearch publication\n\no\n \nPlans for archiving and preserving of the data, as appropriate (use of existing\ndatabases or public repositories will be strongly encouraged), including how\nlong the data will be preserved\n\no\n \nPlans for making publicly available appropriate metadata describing the data\nand data formats\n\no\n \nPlans for ensuring that the DMP and metadata are in machine readable\nformats.\n\n•\n \nExplicitly state that reasonable costs of data sharing (including archiving) may be\nincluded in the proposal or project plan budget.\n\n•\n \nRequire all researchers to share their data and analysis code at the time of\npublication (see Part C of this plan), as defined in the DMP. This includes data that\nare displayed in charts and figures. This requirement could be met by including the\ndata as supplementary information to the published article, or through other means.\nThe published article should indicate how these data can be accessed.\n\n•\n \nEncourage the abundant use of community-based standards to ensure widest\npossible application. NASA policy will encourage all supported researchers to make\nuse of existing data and metadata standards (format and content standards), to the\nextent feasible.\n\n5\n \nRefer to Section 2, page 6.",
+        "textSha256": "3a1a2d0fad0a286976a1f696b7f270255a61d45736b98527395a8d98945793c3",
+        "textCharacters": 2326,
+        "operatorCount": 677,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 11,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 10\n\n•\n \nRequire that NASA program managers include in announcements of research\nopportunities (1) specific data requirements and expectations; and (2) an example\nDMP or outline for the specific type of data likely to result from the funded projects;\nor (3) a statement that a DMP is not required because of the nature of the activity\n(e.g., no data is expected or proprietary data or personally-identifiable information\nare expected).\n\n4.2 Guidance and Training\n\nNASA has developed guidance, including an overarching DMP template, to assist\nresearchers in developing and implementing their DMPs. Example DMPs will be made\navailable whenever possible, and users may refer to third party sites\n6\n \nfor additional\nexamples.\n\nAdditionally, specific guidance will be provided by program managers in research\nsolicitations. A few examples of such specific guidance include:\n\n•\n \nMinimum metadata requirements, including appropriate attribution (owner of the\ndata and funding source) and conformance/interoperability with the common core\nresearch metadata required under the recent Open Data Policy.\n7\n\n•\n \nExpectations for planned repositories, including the ability of a repository to provide\npersistent identifiers for digital data, the standards that a repository should follow\nfor implementation of those identifiers, and the ability of the repository to provide\nfor appropriate-term access.\n\n•\n \nHow to obtain a DOI for datasets\n\nFinally, NASA will provide guidance for reviewers to enable them to assess and monitor\nDMPs in their programs effectively and efficiently. NASA believes that having\nknowledgeable and proactive reviewers will be key to successful implementation of this\nplan. The evaluation of the DMPs will consider the relative value of long-term preservation\nand access, and the associated costs and administrative burden.\n\n4.3 Current Documents/Policies/Websites\n\nThe revised research data policy will be added to NASA Procedural Requirement, 1080.1 A,\n\nRequirements for the Conduct of NASA Research and Technology (R&T).\n \nNASA will also\namend its\n \nNASA Grants Handbook, NASA Headquarters Science Mission Directorate\n\nManagement Handbook,\n \nand any other relevant documents or policies to reflect the revised\nresearch data policy, e.g. NPD 2230.1,\n \nResearch Data and Publication Acces\ns. Released\nNASA Software can be found at\n \nhttps://software.nasa.gov/\n.\n\n6\n \nSuch as https://dmptool.org/\n\n7\n \nOMB Memorandum M-13-13, available at:\nhttp://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf",
+        "textSha256": "2416c30ea364aa55c384703fa9101731294bd3ad097d84fd85c316ed1c10611e",
+        "textCharacters": 2534,
+        "operatorCount": 692,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 12,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 11\n\n4.4 Stakeholder and Public Involvement\n\nAppropriate training and guidance related to data management, storage, and preservation\nwill be conducted in coordination with other federal agencies and according to NASA best\npractices. The development of NASA’s final Public Access Plan will be conducted in a\ntransparent manner, with solicitation of views from stakeholders and full disclosure to the\nscience community and other interested parties. Stakeholders include libraries, federally\nfunded researchers and users of their research results, and civil society groups. NASA will\nsolicit opportunities for implementing public-private partnerships and will participate in\nrelevant multi-agency public-private partnerships and stakeholder engagement activities.\n\n4.5 Public Access to Scientific Data\n\nNASA’s Open Data portal at\n \ndata.nasa.gov\n \nis a registry of NASA dataset metadata, which\nenables machine-readable dataset discovery. Making information resources accessible,\ndiscoverable, and usable by the public can help fuel entrepreneurship, innovation, and\nscientific discovery.\n\nThis portal is a collection of descriptions of datasets; each description is a metadata record.\nThe intention of a data catalog is to facilitate data access by users who are searching for\nparticular types of data. The portal hosts both metadata records and/or original datasets.\n\nData.nasa.gov can support any file type (machine-readable formats are preferable). NASA\nmay limit file size in some cases. For certain types of data, NASA may specify a more\nappropriate archive. The portal offers the capability to create visualization and RESTFUL\nAPIs if your data is in a tabular format.\n\nThe Science Mission Directorate has developed a\n \ndata portal\n \nto make Earth, heliophysics,\nplanetary, and astrophysics observations and data freely accessible to all, including NASA’s\nmany partners in the United States, international organizations and governments, the\nscientific community, the private sector, and the general public.\n\nFor Open Science for Life in Space, NASA has developed the\n \nOpen Science Data Repository\n\n(OSDR). OSDR curates data from GeneLab, the Biological Biospecimen Sharing Program\n(BSP), the Ames Life Sciences Archives (ALSA),and the NASA Biological Institutional Scientific\nCollection (NBISC). NASA’s Open Science Data Repositories expands scientists' access to\nspace-related experiments that explore the biological response of terrestrial biology to\nspaceflight environments.\n\n4.6 Compliance Process and Metrics\n\nAppropriate mechanisms and metrics will be developed to ensure that funding recipients\nare made aware of their obligations, and to monitor whether awardees have complied with\ntheir DMPs. Compliance will be verified by the program officer by evaluation of required\nproject reports and, if necessary, continuing funds may be withheld in cases of\nnoncompliance.",
+        "textSha256": "20e4a5055b5f678bd9e52ce203c8fa62ac124be83b4aba2842cc56072ca2d1db",
+        "textCharacters": 2882,
+        "operatorCount": 597,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 13,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 12\n\nPART B: Peer-Reviewed Publications\n\n1.0\n \nPurpose and Background\n\nNASA’s strategy for planning and executing its implementation of the 2022 OSTP\nMemorandum’s provisions for research publications must respond to several goals and\nconstraints.\n\nFirst, the systems and processes developed and deployed must meet the 2022 OSTP\nMemorandum’s requirements; more generally, the solution will make information easily\ndiscoverable, accessible, and usable by researchers and other users and effective in meeting\ntheir diverse needs. Through doing so, it will also enhance innovation and competitiveness.\n\nSecond, the information management environment for scientific publications, as complex as it\nis, is evolving dynamically as these plans are being developed. Public and private institutions,\nas well as consortia among them, are developing repository and access services for their own\nneeds; many of these could be directly applicable to the objectives of the 2022 OSTP\nMemorandum and consistent with its endorsement of public-private partnership arrangements.\n\nThird, the 2022 OSTP Memorandum makes clear that agencies should not expect additional\nresources for execution of their implementations. Since support for the initiative must\ntherefore be subtracted from agencies’ program budgets, cost must be diligently managed and\nminimized. Since implementation risk translates into increased costs, a corollary is that risk also\nmust be held to a minimum.\n\nThe plan is subject to law, agency mission, resource constraints, U.S. national, homeland, and\neconomic security, and objectives laid out in the 2022 OSTP Memorandum.\n\nThus, NASA’s strategy has led to an implementation that (1) is responsive to the 2022 OSTP\nMemorandum and truly useful, (2) incorporates flexibility to take advantage of ongoing\ndevelopments in publishing, research literature utilization, and mass information access, and\n(3) minimizes both cost and risk.\n\n•\n \nResearchers can publish in journals that are part of the Clearinghouse for the Open\nResearch of the United States (\nCHORUS\n) publishing group. These publications will be\nmade automatically accessible through the PubSpace collection within the NASA\nScientific and Technical Information (STI) repository. NASA will coordinate with\npublisher members of CHORUS to expand the release of NASA-funded articles without\nembargo. Researchers should inquire with publishers as to their embargo policies.\nResearchers can ensure immediate release and policy compliance by following options\nlisted below.",
+        "textSha256": "222f40906353f2354517cc912c23bb0dcf9fcab33d2df18bf366d6c2bb1dd330",
+        "textCharacters": 2527,
+        "operatorCount": 555,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 14,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 13\n\n•\n \nNASA intends for researchers to pay reasonable costs to publish an article as open\naccess, and that grant proceeds may be used for such purposes.\n\n•\n \nResearchers will be required to submit or plan to submit (e.g., by publishing through a\nCHORUS publisher or similar) NASA-funded publications to the NASA Technical Report\nService (NTRS) (formerly\n \nPubSpace\n).\n \nIntramural researchers can submit to the NASA\nSTRIVES (the NF-1676). Extramural researchers can submit to NTRS (formerly\n\nPubSpace\n) via the “Submit and Publication” form.\n\n•\n \nAdditionally, a publication can be indexed in the NASA\n \nAstrophysics Data System\n \n(ADS)\nwhich is being expanded to all NASA science disciplines.\n\n2.0\n \nScope\n\nThe scope of applicability of this plan includes all peer-reviewed scientific research publications\nauthored or co-authored by researchers receiving NASA-appropriated funds. This includes both\ncivil servant and non-civil servant researchers, both intramural and extramural researchers.\n\nPublications that contain material governed by personal privacy, export control, proprietary\nrestrictions, trade secrets, or national security law or regulations are excluded. Patents are\nexcluded.\n\nThe policy and required implementation actions are expected to go into effect first for\npublications authored or co-authored by civil servant researchers. Since full implementation\nfor publications without civil servant authorship depends on establishment of necessary\ncopyright licenses to be incorporated into awards, implementation of the policy for these\npublications will take effect for research conducted and publications developed with support by\nawards that establish those licenses. For non-civil servants, publications from research funded\nby awards prior to necessary copyright and license modifications will not be subject to the\npolicy.\n\n3.0\n \nRequirements\n\nResponsibility for submission of a publication and metadata to a designated repository will be\nthe responsibility of the lead author, or NASA-funded co-author if not the lead author (herein,\nthe “corresponding author”). The metadata standard will conform to requirements of the\ndesignated repository. These responsibilities will be established in provisions of the award that\nsupports the investigation. The corresponding author may satisfy this requirement either by\nsubmitting, or by their NASA Center STI office submitting, an exact copy of the accepted\nmanuscript on acceptance by the publisher, or, if the publisher has an agreement in place with\nthe repository to later transmit the edited and formatted Version of Record (VoR) to the\nrepository, by this means without other action.\n\nAwards of NASA funding by any instrument (e.g., grant, contract, or cooperative agreement)\nmay be made conditional upon the recipient’s granting to the Government a broad license that\nenables the repository to transfer more limited rights to users of publications drawn from the",
+        "textSha256": "2eb2888221020a0ef23a6ceedd00fb9b122c06126feae9704703d21c0c3f05fd",
+        "textCharacters": 2940,
+        "operatorCount": 684,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 15,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 14\n\nrepository. An alternative would be an award requirement for the recipient to ensure that any\npublishing agreement would allow the as-accepted manuscript to be posted to PubSpace\ncollection within NTRS, NASA’s designated repository, under its Terms of Service.\n\nIn addition to imposition at the time of initial award, any license provisions can be changed\nwhen incremental funding is released to awardees.\n\nRequired annual and final reporting requirements for awardees regarding publications will be\ndefined in the award instrument.\n\n5.0\n \nImplementation\n\nThis section discusses issues around how NASA will implement this policy.\n\n•\n \nPolicy\n\nIt is NASA’s policy (per 2022 OSTP Memorandum) that peer-reviewed publications be\nmade freely available at the time of publication. This supersedes NASA’s previous\nguidance which allowed for a one-year embargo on publications.\n\n•\n \nSubmission\n\nThe submission process for publications will comply with NASA standard practices and\nfollow all accepted protocols. Options are provided in section B.1.0 (above).\n\n•\n \nManagement\n\nThe development and operation of the NASA research publication access program\nderiving from this plan will be managed by the NASA Office of the Chief Information\nOfficer (OCIO). The Agency has established a governance steering committee (formerly\nknown as a “Board of Advisors”) with representation from NASA’s five research-\nconducting Mission Directorates, the Office of the Chief Scientist, the Office of the Chief\nTechnologist, and the Office of the General Counsel. Other organizations such as the\nOffice of Procurement will be engaged as required.\n\nThis plan lays out a provisional program structure which may be modified in\nconsultation with the steering committee in response to new information, technology,\nor user requirements.\n\nTechnological evolution of repository hardware and software will be the responsibility\nof the repository manager. Standards for metadata and citations associated with NASA\nfunded research will conform to prevailing Government-wide standards.\n\nFinal peer-reviewed manuscripts or final published documents publications cataloged in\nthe NTRS (PubSpace) collection will be made available to the public without charge and\nthe public will be able to be read, download, and analyze in digital form. Texts and",
+        "textSha256": "4b10a0f3cc85dccedf0504990d8abd297002d88191e9fd919a101e8ac996085b",
+        "textCharacters": 2316,
+        "operatorCount": 656,
+        "annotations": []
+      },
+      {
+        "page": 16,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 15\n\nassociated content (images, video, and supporting data) will be stored in non-\nproprietary or widely distributed and machine-readable formats.\n\n•\n \nAccess and discoverability\n\no\n \nEmbargos.\n \nMetadata should be made accessible in parallel with final acceptance\nof a paper. The metadata should be coded so that it can be crawled by\nautomated search engines in order to facilitate discovery. Metadata will be\navailable promptly and without charge and will provide a link to the full text and\nsupplemental materials when possible.\n\nThe full text of peer-reviewed publications shall be available without delay upon\npublication. The 12-month embargo period that was previously in place is now\nremoved.\n\nFor authors who wish to publish in an open access journal, NASA allows all\nArticle Processing Charges (APCs) to be included in the grant proposal budget.\nThe final published article may appear in the CHORUS repository (where\nappropriate), the ADS archive, or the STI repository. Options are provided in\nsection B 1.0 (above).\n\no\n \nSearch.\n \nNASA recognizes that search capabilities are important. The approaches\nto optimization of accessibility and interoperability, while ensuring long-term\nstewardship of publications, will continue to be assessed and enhancements will\nbe implemented where practicable.\n\nIt is expected that some provision will be identified or developed to support\ncross-repository discovery and aggregated retrieval of multiple items identified\nin response to a single query.\n\no\n \nAcceptable use policies.\n \nDocuments available from the PubSpace collection on\nNTRS are not protected by copyright unless noted. If not copyrighted, documents\nmay be reproduced and distributed, without further permission from NASA.\nHowever, some documents or portions of documents available from this site\nmay have been contributed by private individuals or organizations and may be\ncopyrighted. If copyrighted, permission should be obtained from the copyright\nowner prior to use (e.g., modification, reproduction, or redistribution).\n\no\n \nBulk downloads for research and managing the restriction on unauthorized bulk\ndownloads.\n \nNASA intends for NTRS to accommodate bulk downloads for\nresearch purposes and for creation of derivative products and/or commercial\npurposes.",
+        "textSha256": "a4ad4fd50a133866ed8b3cd9e30981aff32af22652217d0d81561c317c90a869",
+        "textCharacters": 2281,
+        "operatorCount": 546,
+        "annotations": []
+      },
+      {
+        "page": 17,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 16\n\no\n \nExposure to third party services.\n \nAccess to the corpus of publications by\nautomated web crawlers for third party search engines is supported by\nNTRS. Since this can amplify access by interested users, it is in NASA’s interest to\nsupport access by search engines.\n\no\n \n508 Compliance.\n \nNASA’s NTRS is Section 508 compliant.\n\n•\n \nPreservation\n\nPublications and metadata are stored for long term preservation in NTRS in machine-\nreadable format. An advantage of storage in machine-readable format is its technology\nindependence and reliable migration as technology evolves.\n\n•\n \nIntegration into other systems\n\n•\n \nNTRS supports content ingest from CHORUS and NIH PubMed archives. NTRS allows for\nmetadata exports via APIs. (\nhttps://sti.nasa.gov/harvesting-data-from-ntrs/\n)\n\nPART C: Software\n\n1.0\n \nPurpose and Background\n\nThe sections that follow comprise the software component of\n \nNASA’s Public Access Plan for\nIncreasing Access to the Results of Scientific Research\n. The purpose of Part C of the plan is to\nincrease the accessibility of software produced by NASA intramural researchers and by\nrecipients of NASA grants, cooperative agreements, and contracts, when such accessibility is in\naccordance with existing requirements, contractual and agreement obligations, applicable laws,\nand other Agency-wide policies and mandates governing release of software.\n\nA key tenet of all research is the ability for the results attained in the specific research and\nexperiments to be repeatable by others. For that to occur, the objectives, methods, data, and\ntools used in scientific experiments must be clearly documented and/or provided so that others\nmay examine the evidence and repeat specific experiments to validate results. Software has\nbecome a critical component to scientific analysis and a key product produced as part of the\nscientific process. Access to scientific software enables for the work described in scholarly\npublications to be fully reproducible.\n\nAccess to scientific software provides for a range of benefits. It increases transparency into the\nscientific process and access to information that may be critical to understanding and\nreproducing the results of the scholarly publication. The insights gained from reviewing the\nsoftware will help those looking to immediately reproduce the results, as scientific manuscripts\ndo not always capture the details of the analysis, but the software always provides insight into\nthe algorithms and the scientific process. Furthermore, scientific software can be reused for\nother projects, which increases the efficiency of the scientific process, and scientific software\ncan be extended, advanced, or adapted to further extend the impact of the original work.",
+        "textSha256": "61181814e7ba1d5c7ffcb84e0474a50a0fdb21ebe74d52f1b5d42c0f242450af",
+        "textCharacters": 2738,
+        "operatorCount": 650,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 18,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 17\n\nAs the 2013 OSTP Memorandum requires scientific data underlying peer-reviewed scholarly\npublications resulting from federally funded research be made freely available and publicly\naccessible by default at the time of publication, the scientific software that produced that data\nshould be made publicly available to better understand that data. The steps necessary to\ncreate that data can only be fully understood if the methods, algorithms, processes, and other\ntransformations are made available. As such, software used to generate research findings\nassociated with a scholarly publication should be released with the scientific data where\npossible, if not otherwise restricted or detrimental to national security.\n\nThere is a range of different types of scientific software that are produced as part of the\nscientific process. These might include scripts for managing data or producing plots, extensive\npackages for simulations and models, or libraries for data analysis. The expectations on\nmaintenance, documentation, and testing of scientific software vary depending on the type and\nfield. The effort to support the software, beyond the goals of reproducibility, may be beyond\nthe scope of what is reasonable. The expectations for releasing of the scientific software\npresented here balance openness with level of effort.\n\nWhile openness is the goal, existing Agency requirements, contractual and agreement\nobligations, applicable laws, and other Agency-wide policies and mandates governing release of\nsoftware (including security and intellectual property considerations) are also taken into\nconsideration when determining the releasability of scientific software. The plan presented\nhere balances these considerations and assures that any such restricted software is never\nreleased, and that intellectual property is respected. This includes the licenses in underlying\nsoftware packages and preserving patent protection for innovative software development.\n\nBy including scientific software in this plan, NASA recognizes the importance of a key\ncomponent of the scientific process. The release of scientific software will enable greater\nreproducibility of scientific results, transparency into the scientific process, and reuse of\nscientific products.\n\n2.0\n \nScope\n\nPart C of the plan focuses on digital unclassified scientific software. The scope of this section\nincludes the following:\n\nComputer programs in source and object code that provide users some degree of scientific\nutility or produce a scientific result or service. This includes the software that is necessary to\nvalidate research findings, associated with scholarly publications. This does not include\nsoftware developed only for preliminary analysis, plans for future research, or communication\nwith colleagues.\n\nScientific Software does not include:\n\n•\n \nSoftware restricted from release due to law or security considerations. This would\ninclude, but not limited to, export Control, ITAR, CUI, materials necessary to be held",
+        "textSha256": "94cb5db2b8faba806c59af527ef969d746d0317d4e5aa51aff68a6f37c31edd7",
+        "textCharacters": 3007,
+        "operatorCount": 381,
+        "annotations": []
+      },
+      {
+        "page": 19,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 18\n\nconfidential, privacy or medical information, or materials with limited release due to\nsecurity concerns.\n\n•\n \nSoftware restricted from release due to intellectual property considerations. This would\ninclude, but not limited to, copyright, trade secrets, commercial information, patent\nprotected software, or similar information which is protected under law.\n\n•\n \nCommercial software, which would be software produced for the purposes of sale. This\nincludes software that would be classified as commercial-off-the-shelf (CoTS) and\nsoftware that NASA does not have a license to distribute.\n\nSoftware may also include not only the source code, but also metadata describing the software,\ndescriptions of how to use the software, and associated software documentation.\n\nThis plan applies to unrestricted, scientific software that is developed to support the scientific\nprocessing and analysis of data produced as part of the mission. Restricted software, whether\ndue to Agency, Federal, or security policy, shall not be released. Technical software with no\ninherent scientific utility is not included in the scope of this policy, but this software can be\nreleased openly to ensure the widest distribution of NASA information to the extent allowed by\napplicable law and existing NASA policies.\n\nImplementation of this plan will be prospective and will not apply to any scientific software\nestablished before this plan’s effective date, unless that scientific software is augmented by\nfederally-funded research activities undertaken on or after this plan becomes effective.\n\n3.0\n \nRequirements\n\nThis plan expands the existing policy and seeks to impose requirements on all NASA scientific\nprograms and intramural and extramural researchers. The Implementation section below\nprovides the detail, but the conceptual requirements are as follows:\n\n•\n \nNASA’s software development is governed by multiple NPDs and NPRs, which provide\nguidance for when they apply (e.g., mission software) and classifications for the various\ntypes of software. Scientific software (for research purposes as is most common with\ngrants) is usually not covered by these NPDs and NPRs, and researchers should always\ncheck with their program managers for specific guidance.\n\n•\n \nScientific software underlying peer-reviewed scholarly publications resulting from\nfederally-funded research must be made freely available and publicly accessible by\ndefault\n \nat the time of publication\n\n•\n \nUnrestricted, scientific software developed to support the scientific processing and\nanalysis of data that is produced\n \nas part of Missions, including software underlying\ntechnical reports if practical, must be made freely available at the time of publication of\nthe product that it supports.",
+        "textSha256": "6382fcb51b2c9050c28c8c61cd89a0ca084b2098c8f4ec4af46f36f767c4fc3f",
+        "textCharacters": 2755,
+        "operatorCount": 442,
+        "annotations": []
+      },
+      {
+        "page": 20,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 19\n\n•\n \nAll proposals or project plans submitted to NASA for scientific research funding will be\nrequired to include a Software Management Plan (SMP) that describes whether and\nhow software generated through the course of the proposed research will be shared\nand preserved (including timeframe), or explains why software sharing and/or\npreservation are not possible or scientifically appropriate. At a minimum, SMPs must\ndescribe how software sharing and preservation will enable validation of published\nresults, or how such results could be validated if software are not shared or preserved.\n\n•\n \nSMPs must provide a plan for making scientific software that underlie the results and\nfindings in peer-reviewed publications digitally accessible at the time of publication.\nThis does not include software developed only for preliminary analysis, plans for future\nresearch, or communication with colleagues. This requirement could be met by\nincluding the software as supplementary information to the published article, through\nNASA-recognized archives (such as NTRS or Zenodo), or other means. The published\narticle should indicate how the software can be accessed.\n\n•\n \nSoftware released independently from the peer-reviewed manuscript must be assigned\na Unique Digital Object Identifier (DOI) to enable preservation, discovery, and citation of\nthe software.\n\n•\n \nSoftware should be released with documentation that enables reuse and supports\nreproducibility. This includes the version of the software and how the software was run.\n\n•\n \nSMPs will be reviewed as part of the overall NASA research proposal/project plan review\nprocess.\n\n•\n \nWhen released and if there are no other restrictions on the software, scientific software\nshould be made publicly available and will be released in accordance with NASA policies.\nRestrictions that may prevent release under a permissive license include, but are not\nlimited by, software governed by incompatible licenses or inclusion of restricted\ncomputer software.\n\n•\n \nNASA employees, contractors, and grantees are encouraged to contribute and\nparticipate in open-source software projects that would further advance the scientific\ngoals of NASA.\n\n4.0\n \nImplementation\n\nThis section outlines the steps to be taken to implement this plan, addressing the processes and\nprocedures to be followed by proposers as well as by program managers and reviewers.\n\n4.1 NASA Research Software Policy\n\nNASA will expand upon its existing software policies as follows:",
+        "textSha256": "36996b6746cca277977974ba38366cfcd8c62ac11cfe03e8a071d33ca7083ce0",
+        "textCharacters": 2495,
+        "operatorCount": 389,
+        "annotations": []
+      },
+      {
+        "page": 21,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 20\n\n•\n \nInclude a requirement for all research proposers, intramural and extramural, to\nsubmit Software Management Plans (SMPs) with their proposals or project\nplans. SMPs will describe how the proposed research plan conforms to NASA\npolicy on the dissemination and sharing of research results and will address:\n\no\n \nThe types of software to be produced in the course of the project\n\no\n \nThe standards to be used for software development\n\no\n \nPolicies for accessing and sharing the software, including provisions for\nappropriate protection of privacy, confidentiality, security, intellectual\nproperty, and other rights or requirements\n\no\n \nPolicies and provisions for re-use, re-distribution, and the production of\nderivatives\n\no\n \nPlans for providing access to the software used in any science publication\n\no\n \nPlans for archiving and preserving of the software, as appropriate (use of\nexisting databases or public repositories will be strongly encouraged),\nincluding how long the software will be preserved or maintained\n\no\n \nMake publicly available appropriate metadata describing the software\n\n•\n \nExplicitly state that reasonable costs of software development and sharing may\nbe included in the proposal or project plan budget.\n\n•\n \nRequire all researchers to share their scientific software developed to support a\nscholarly publication\n \nat the time of publication. This includes the scientific\nsoftware that are displayed in charts and figures or needed to validate the\nscientific conclusions of the publication. This requirement could be met by\nincluding the software as supplementary information to the published article, or\nthrough other means. The published article should indicate how the software\ncan be accessed.\n[1]\n\n•\n \nEncourage the abundant use of community-based standards to ensure widest\npossible application. NASA policy encourages all supported researchers to make\nuse of existing data and metadata standards (format and content standards), to\nthe extent feasible.\n\n•\n \nRequire that NASA program managers include in announcements of research\nopportunities (1) specific software requirements and expectations; (2) an\nexample SMP or outline for the specific type of software likely to result from the\nfunded projects; or (3) a statement that SMP is not required because of the\nnature of the activity (e.g., no software is expected, or proprietary software are\nexpected).\n\n4.2 Guidance and Training",
+        "textSha256": "f2abc75affbe8e82d2fc77cc4f039230efc682c3129401a87fca61fd5dd91086",
+        "textCharacters": 2423,
+        "operatorCount": 491,
+        "annotations": [
+          {
+            "subtype": "Link",
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ]
+      },
+      {
+        "page": 22,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 21\n\nNASA has developed guidance, including an overarching SMP template, to assist\nresearchers in developing and implementing their SMPs. Example SMPS will be made\navailable whenever possible.\n\nAdditionally specific guidance will be provided by program managers in the research\nsolicitations posted on NSPIRES. A few examples of such specific guidance include:\n\n•\n \nMinimum requirements for sharing software, including appropriate attribution,\nlicense, and additional metadata to make the software discoverable.\n\n•\n \nExpectations for planned repositories, including the ability of a repository to\nprovide persistent identifiers for software, the standards that a repository\nshould follow for implementation of those identifiers, and the ability of the\nrepository to provide for appropriate-term access.\n\n•\n \nHow to obtain a DOI for software.\n\nFinally, NASA will provide guidance for reviewers to enable them to effectively and\nefficiently assess SMPs in their programs. NASA believes that having knowledgeable\nreviewers will be key to successful implementation of this plan. The evaluation of the\nSMPs will consider the relative value of long-term preservation and access and the\nassociated costs and administrative burden.\n\n4.3 Current Documents/Policies/Websites\n\nThe revised research software policy will be added to NASA Procedural Requirement,\n1080.1 A,\n \nRequirements for the Conduct of NASA Research and Technology (R&T).\n \nNASA\nwill also amend its\n \nNASA Grants Handbook, NASA Headquarters Science Mission\nDirectorate\n \nManagement Handbook,\n \nand any other relevant documents or policies to\nreflect the revised research software policy.\n\n4.4 Stakeholder and Public Involvement\n\nAppropriate training and guidance related to software management, storage, and\npreservation will be conducted in coordination with other federal agencies and\naccording to NASA best practices. The development of NASA’s final Public Access Plan\nwill be conducted in a transparent manner, with solicitation of views from stakeholders\nand full disclosure to the science community and other interested parties. Stakeholders\ninclude libraries, federally funded researchers and users of their research results, and\ncivil society groups. NASA will solicit opportunities for implementing public-private\npartnerships and will participate in relevant multi-agency public-private partnerships\nand stakeholder engagement activities.\n\n4.5 Public Access to Scientific Software",
+        "textSha256": "c88861ddc197e4d75745faa7836dd88c185912e2d973c9e1d2ac68f63d24036a",
+        "textCharacters": 2451,
+        "operatorCount": 433,
+        "annotations": []
+      },
+      {
+        "page": 23,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 22\n\nNASA will list scientific software in appropriate NASA designated repositories. This can\ninclude the NASA catalog of software, the Science Discovery Engine, and the\nAstrophysics Data System. NASA will identify software to be curated as part of these\ncatalogs. The catalog of scientific software will begin at the time of implementation of\nthe policy. The public will have access to the catalog and associated data free of charge.\n\nNASA will continue to identify additional approaches, involving public and private sector\nentities, and will continue efforts to improve public access to research data.\n\n4.6 Compliance Process and Metrics\n\nAppropriate mechanisms and metrics will be developed to ensure that funding\nrecipients are made aware of their obligations and to monitor whether awardees have\ncomplied with their SMPs. Compliance will be verified by the program officer by\nevaluation of required project reports and, if necessary, continuing funds may be\nwithheld in cases of noncompliance.\n\nImplementation Process\n\nMetrics, compliance and evaluation\n\nCompliance requirements and consequences for noncompliance with publications will be\nclearly detailed in award instruments and enforced. Publications cited in required reports (e.g.,\nannual progress and final reports) must be present in the PubSpace collection in the NTRS\nrepository. Publications absent from the repository will result in a request to the corresponding\nauthor to remedy the defect. Ongoing evaluation of compliance and alerting noncompliant\nauthors will be accomplished using these progress and final reports.\n\nCompliance with the requirement for deposition of as-accepted papers and metadata into the\nNTRS for NASA authors will be strengthened via clear promulgation and vigorous enforcement\nof an appropriate Agency NASA Policy Directive (NPD) and NASA Procedural Requirement\n(NPR).\n\nPublic consultation\n\nNASA will use its established Federal Advisory Committee Act (FACA)-chartered advisory\ncommittees and its standing committees at the National Research Council to inform its\nconstituent communities and obtain guidance relevant to open access policies and plans.\n\nInteragency coordination\n\nNASA has participated in discussions with other agencies through OSTP’s Subcommittee on\nOpen Science (SOS) and will continue to collaborate to ensure a consistent government-wide\napproach is achieved.",
+        "textSha256": "5d5f5e0707cd3079f0606bd2af69ea50e7e460a66f704369719998d254cb19c0",
+        "textCharacters": 2378,
+        "operatorCount": 454,
+        "annotations": []
+      },
+      {
+        "page": 24,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 23\n\nPublic notice\n\nNASA will adhere to established standards for formal public notice of implementation of the\nopen access plan. Funded researchers will be informed and bound by provisions in their award\ninstruments as described in the Grants and Cooperative Agreements Manual.\n\nWaiver Process\n\nNASA recognizes that there may be extenuating circumstances that require waivers to the steps\noutlined in this plan. In all cases the researcher may apply for a waiver to bypass any or all\nthese requirements. The Mission Directorate Associate Administrator (MD AA) shall be the final\nauthority for any such decisions. The process of obtaining a waiver consists of these steps:\n\n•\n \nRequests for waivers should be submitted in writing to the appropriate program or\nproject manager who, after consulting with appropriate stakeholders including OCIO\nand OGC, will make a determination or forward the request on to the MD AA\n\n•\n \nIf the program/project manager rejects the waiver request, then an appeal may be\nmade directly to the MD AA\n\n•\n \nRationales for waivers may be due to (but are not limited to) the following:\n\no\n \nSickness or accident to the requestor or an immediate family member\n\no\n \nPregnancy\n\no\n \nNatural disaster such as flood, wildfire, earthquake, etc.\n\no\n \nUnplanned lack of resources (failed equipment) or budget shortfalls\n\no\n \nWorker shortage, student needs\n\no\n \nConsideration for MSI, PUI, protected class, DEIA, etc.\n\nTimeline\n\nMilestones for the development of the final Public Access plan are shown in this graphic from\nOSTP.",
+        "textSha256": "c167584628fea70be7a6d86f3aeca5bac5a588917ad2136ab7e5abcd15336fbe",
+        "textCharacters": 1548,
+        "operatorCount": 396,
+        "annotations": []
+      },
+      {
+        "page": 25,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 24\n\nSummary\n\nOpen access to the results of NASA-funded research can have dramatic benefits to the larger\nscientific community and, by extension, the general public. As laid out in this plan, NASA\ncontinues to provide full support for open access to scientific and technical publications, data,\nand software, to enable new discoveries.\n\nUpdates and Re-evaluation of this Plan\n\nImplementation of this plan will involve continued support from both program managers and\nresearch investigators. To ensure that the lessons learned are captured and that NASA\ncontinually improves its procedures/policies with respect to research data management, a\nsteering committee comprising all the research organizations and the OCIO, as well as other\nstakeholders, has been established. This steering committee will meet on a regular basis to\nshare experiences and will conduct an annual assessment of the policy and its implementation\nfor the first five years after the policy takes effect.\n\nRecognizing that extensive data management will require funding, NASA has developed a cost\nmodel consistent with the plan (as outlined above) and incorporated these needs into the on-\ngoing agency’s annual budget development process.",
+        "textSha256": "342f5236a61c08a93b1665459c3326be4df2efc7af7d490fd338d133125d6755",
+        "textCharacters": 1213,
+        "operatorCount": 283,
+        "annotations": []
+      },
+      {
+        "page": 26,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 25\n\nContributors to this plan\n\nA team of individuals from across NASA developed this plan, including representatives of the\nOffice of the Chief Scientist, the Office of the Chief Engineer, the Office of Technology, Policy,\nand Strategy, the Office of the Chief Information Officer, the Office of the General Counsel, the\nAeronautics Mission Directorate, the Science Mission Directorate, the Space Operations\nMission Directorate, and the Space Technology Mission Directorate. The Office of the Chief\nScientist is responsible for management of this plan, updates to the plan, and responding to\ninquiries on the plan from interested parties, including OSTP.\n\nGlossary\n\nDefinitions\n\n1.\n \nResearch –\n \nProduces scientific or technical information to advance the state of the art\nor the range of knowledge of a discipline\n\n2.\n \nData –\n \nInformation produced by instruments, observations, or analysis that contribute\nto research\n\n3.\n \nSoftware –\n \nCommercial (requires purchase of a license) or open-source (freely available\nwithout purchase) code used in the analysis of data or production of data products.\n\n4.\n \nPersistent Identifier –\n \nA permanent, digital code that references a digital object (such as\na publication, presentation, dataset, or software package)\n\nAcronyms\n\nAAU\n \nAssociation of American Universities\n\nAPLU\n \nAssociation of Public and Land-grant Universities\n\nARL\n \nAssociate of Research Libraries\n\nCDC\n \nCenters for Disease Control and Prevention\n\nCHORUS\n \nClearinghouse for the Open Research of the United States\n\nCUI\n \nControlled Unclassified Information\n\nDMP\n \nData Management Plan\n\nDOI\n \nDigital Object Identifier\n\nEAR\n \nExport Administration Regulations\n\nFACA\n \nFederal Advisory Committee Act\n\nNDAA\n \nNASA Document Availability Authorization\n\nNIHMS\n \nNIH Manuscript Submission system\n\nNPD\n \nNASA Policy Directive\n\nNPR\n \nNASA Procedural Requirement\n\nNTRS\n \nNASA Technical Report Server (NASA)\n\nOCIO\n \nOffice of the Chief Information Officer",
+        "textSha256": "5c4b33c14c4e65bf4584c71c210ac414d1431057064023354da5167309caeca5",
+        "textCharacters": 1964,
+        "operatorCount": 720,
+        "annotations": []
+      },
+      {
+        "page": 27,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "Page 26\n\nOSTP\n \nOffice of Science and Technology Policy\n\nPAGES\n \nPublic Access Gateway for Energy and Science (DOE)\n\nPDF-SIE\n \nPortable Document Format—Searchable Image Exact\n\nPMC\n \nPubMed Central (National Institutes of Health)\n\nSBIR\n \nSmall Business Innovative Research\n\nSBU\n \nSensitive But Unclassified\n\nScholar\n \nNot an acronym (Google)\n\nSHARE\n \nSHared Access Research Ecosystem (AAU, APLU, ARL)\n\nSMP\n \nSoftware Management Plan\n\nStacks\n \nNot an acronym (CDC)\n\nSTI\n \nScientific and Technical Information (NASA)\nSTTR\n \nSmall Business Technology Transfer Research\n\nPAGES\n \nPublic Access Gateway for Energy and Science (Department of Energy)\n\nUSG\n \nUnited States Government\n\nVoR\n \nVersion of Record\n\nXML\n \nExtensible Markup Language",
+        "textSha256": "7974b4475fe5fbf829876ac3fa6afc42329192b84a4429fadb9ed42aad3d2a13",
+        "textCharacters": 732,
+        "operatorCount": 418,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": "EN-US",
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Author": "Amy Friedlander",
+      "Custom": {
+        "Company": "HP",
+        "ContentTypeId": "0x0101002B61AEA350961D489479B783C9628802",
+        "SourceModified": "D:20230501130202",
+        "_NewReviewCycle": ""
+      },
+      "CreationDate": "D:20230504144644-04'00'",
+      "Creator": "Acrobat PDFMaker 20 for Word",
+      "Keywords": "",
+      "ModDate": "D:20261016011247Z",
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "Subject": "Increasing Access to the Results of Scientific Research",
+      "Title": "NASA’s public access plan"
+    }
+  },
+  "warnings": [
+    "Warning: Cannot polyfill `DOMMatrix`, rendering may be broken.",
+    "Warning: Cannot polyfill `Path2D`, rendering may be broken.",
+    "Warning: TT: undefined function: 32",
+    "Warning: TT: undefined function: 32"
+  ],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Browser execution/download",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "before": {
+    "opens": false,
+    "error": "InvalidPDFException: Invalid PDF structure."
+  },
+  "after": null,
+  "images": null,
+  "warnings": [
+    "Warning: Indexing all PDF objects"
+  ]
+}

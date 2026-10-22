@@ -1,151 +1,114 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("pdf-file-size-too-large");
-export default function Post() {
-  return (
-    <BlogPost tag={"Tips"} tagColor="#CA8A04" tagBg="#FEFCE8"
-      title={"PDF File Size Too Large? How to Fix It Free"}
-      date="February 2026" readTime="7 min read"
-      intro={"Need a smaller PDF for sharing or storage? Try structural compression and compare the result before using it. PDFcraft processes the document locally without an account; output may be smaller, unchanged, or larger."}
-      sections={[
-  {
-    "heading": "Why is your PDF so large?",
-    "steps": [
-      {
-        "title": "High resolution images embedded",
-        "body": "The source’s images, fonts, object structure, and export settings affect file size. PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-      },
-      {
-        "title": "Scanned document at high DPI",
-        "body": "The source’s images, fonts, object structure, and export settings affect file size. PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-      },
-      {
-        "title": "Exported from PowerPoint or design software",
-        "body": "The source’s images, fonts, object structure, and export settings affect file size. PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-      },
-      {
-        "title": "Embedded fonts and metadata",
-        "body": "Full font embedding and unnecessary metadata can add significant file size."
+
+const article = {
+  "title": "PDF File Size Too Large? How to Fix It Free",
+  "date": "February 2026",
+  "readTime": "7 min read",
+  "tag": "Tips",
+  "tagColor": "#CA8A04",
+  "tagBg": "#FEFCE8",
+  "ctaHref": "/tools/compress-pdf",
+  "ctaText": "Try structural compression and compare the result",
+  "intro": "A large PDF is a symptom, not a single problem. Decide first whether you must keep every page, every image detail and every interactive feature. Then measure one change at a time instead of repeatedly saving the same file and hoping it becomes smaller. You can use the browser tool without installing a desktop application. Local processing does not guarantee offline availability.",
+  "sections": [
+    {
+      "heading": "Identify the likely source of bytes",
+      "table": {
+        "headers": [
+          "Document pattern",
+          "Why a structural rewrite may be limited",
+          "Next useful experiment"
+        ],
+        "rows": [
+          [
+            "Photographs or scanned pages",
+            "Already-compressed image streams can dominate the file.",
+            "Review image/export settings in the source workflow if lower detail is acceptable."
+          ],
+          [
+            "Text and vector report",
+            "Object organization can contribute overhead, but embedded images/fonts may also be substantial.",
+            "Compare one Compress result without assuming a fixed saving."
+          ],
+          [
+            "Already optimized document",
+            "There may be little structural overhead left to remove.",
+            "Keep the original if the new serialization grows."
+          ],
+          [
+            "Large packet with unneeded sections",
+            "Page count may be reducible without changing retained page detail.",
+            "Extract only the required ranges, while checking navigation and confidentiality needs."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "Fix 1 — Try structural compression",
-    "steps": [
-      {
-        "title": "Go to PDFcraft Compress PDF",
-        "body": "Open getpdfcraft.com and click Compress PDF. No sign up needed."
-      },
-      {
-        "title": "Select your large PDF",
-        "body": "Choose the file you want to shrink. It stays on your device."
-      },
-      {
-        "title": "Wait for processing after selection",
-        "body": "Compression starts when you select the file; there is no separate Compress button. PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-      }
-    ]
-  },
-  {
-    "list": [
-      {
-        "text": "Learn how to measure compression results for your own file",
-        "href": "/blog/pdf-compression-real-test-results"
-      }
-    ]
-  },
-  {
-    "heading": "Fix 2 — Remove pages you don't need",
-    "steps": [
-      {
-        "title": "Identify unnecessary pages",
-        "body": "Are there blank pages, cover pages, or appendices that don't need to be in the shared version?"
-      },
-      {
-        "title": "Delete unwanted pages",
-        "body": "Delete Pages removes visible pages, but does not securely purge content and may leave objects in the PDF. Do not assume fewer visible pages means a smaller file; compare actual sizes."
-      }
-    ]
-  },
-  {
-    "heading": "Fix 3 — Split and send in parts",
-    "steps": [
-      {
-        "title": "Split into smaller sections",
-        "body": "If the PDF must stay large, use PDFcraft's Split PDF tool to divide it into 2-3 smaller parts."
-      },
-      {
-        "title": "Send each part separately",
-        "body": "Send each part as a separate email attachment or WhatsApp message. Let the recipient know to expect multiple files."
-      }
-    ]
-  },
-  {
-    "heading": "Fix 4 — Agree on a sharing link",
-    "text": "If the recipient accepts a sharing link, check the provider’s current limits and set access appropriately. Cloud uploads are separate from local PDFcraft processing; avoid broad access for sensitive material."
-  },
-  {
-    "heading": "Fix 5 — Re-export the original at a lower resolution",
-    "steps": [
-      {
-        "title": "Go back to the source file",
-        "body": "If you have the source document or scans, review the source application’s export settings. They may offer image controls that PDFcraft Compress does not provide."
-      },
-      {
-        "title": "Review source export resolution",
-        "body": "If your source application offers image-resolution settings, choose an appropriate value and inspect readability. There is no resolution suitable for every document."
-      }
-    ]
-  },
-  {
-    "heading": "Choose a size target from the receiving service",
-    "text": "Use the current limit reported by the recipient’s email, messaging, or upload service. PDFcraft cannot guarantee a chosen output size."
-  },
-  {
-    "tip": "Try a copy, compare byte counts, and inspect the output. Repeated processing does not guarantee further reduction."
-  },
-  {
-    "heading": "Continue with the relevant tool",
-    "list": [
-      {
-        "text": "Open compress pdf",
-        "href": "/tools/compress-pdf"
-      }
-    ]
-  }
-]}
-      faqs={[
-  {
-    "q": "How do I reduce a PDF file size quickly?",
-    "a": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use."
-  },
-  {
-    "q": "Why is my PDF still large after compression?",
-    "a": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use. Structural rewriting is not a guarantee that every document feature is preserved."
-  },
-  {
-    "q": "What is the maximum PDF size for email?",
-    "a": "Compare actual bytes and the current delivery requirements. Page removal is not secure sanitization and may not reduce size; structural compression can produce a larger output."
-  },
-  {
-    "q": "Can I reduce PDF size on my phone?",
-    "a": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use. Structural rewriting is not a guarantee that every document feature is preserved."
-  },
-  {
-    "q": "How do I send a 100MB PDF?",
-    "a": "Check the recipient’s current attachment limit. If using a transfer link, agree on the service and access settings first; this guide does not assert a provider’s free allowance."
-  },
-  {
-    "q": "Will reducing PDF size affect quality?",
-    "a": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use. Structural rewriting is not a guarantee that every document feature is preserved."
-  },
-  {
-    "q": "Can I make a password-protected PDF smaller?",
-    "a": "Compare actual bytes and the current delivery requirements. Page removal is not secure sanitization and may not reduce size; structural compression can produce a larger output."
-  }
-]}
-      ctaText={"Try structural compression and compare the result"}
-      ctaHref={"/tools/compress-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "Make a size decision from bytes",
+      "steps": [
+        {
+          "title": "Record the receiving requirement",
+          "body": "For email, check both the sending and receiving services' current attachment requirements, and agree with the recipient on an acceptable delivery method. Do not assume a universal email attachment limit."
+        },
+        {
+          "title": "Run one structural comparison",
+          "body": "Compress loads and saves using object streams. It has no target-size or image-quality control; note the displayed input/output bytes. It cannot promise a result below 1 MB."
+        },
+        {
+          "title": "Choose the next change deliberately",
+          "body": "If the result is still too large, decide between fewer pages, a different source export or an approved sharing link. Verify link access rather than assuming any recipient can open it."
+        }
+      ]
+    },
+    {
+      "heading": "A larger output is not a hidden success",
+      "text": "Small PDFs can gain serialization overhead; already-packed inputs can also grow. The audited sample includes both outcomes. A large percentage increase on a tiny control and a small percentage reduction on a large scan have very different byte consequences. Compare absolute bytes as well as percentages."
+    },
+    {
+      "heading": "Do not rasterize blindly",
+      "text": "Grayscale renders whole pages as JPEG images. It can lose selectable text, links, forms, bookmarks and vector semantics while increasing file size. Converting a text report into images solely to make it smaller can exchange useful features for no saving.",
+      "list": [
+        {
+          "text": "Compare compression and quality tradeoffs",
+          "href": "/blog/compress-pdf-without-losing-quality"
+        }
+      ]
+    },
+    {
+      "heading": "When the size problem is actually a processing failure",
+      "text": "An encrypted input needs an authorized unencrypted copy for Compress. Damaged input or memory pressure can prevent parsing/saving. Failure is not a measured zero-percent reduction. Keep the source and record the error separately from successful outputs."
+    },
+    {
+      "heading": "Separate delivery failures from size problems",
+      "text": "If a PDF will not send through WhatsApp or another messaging service, first determine whether the reported failure is actually size-related. Check that service's current documented requirements rather than choosing an arbitrary target. Verify the compressed output opens and compare its actual bytes with the original. If PDF processing succeeded but delivery still fails, compression alone has not diagnosed the delivery problem. Confirm the accepted attachment workflow before making further document changes."
+    },
+    {
+      "heading": "Continue with the appropriate tool",
+      "list": [
+        {
+          "text": "Measure a structural rewrite",
+          "href": "/tools/compress-pdf"
+        },
+        {
+          "text": "Extract only required ranges",
+          "href": "/tools/split-pdf"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I compress the same PDF repeatedly?",
+      "a": "There is no repeated-pass target-size algorithm here. Compare each actual output, but do not assume another structural save will progressively remove image bytes."
+    },
+    {
+      "q": "Is a sharing link always the solution?",
+      "a": "Only if that delivery method is acceptable and the intended recipient can access it. Check permissions and any sign-in requirement before sending."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

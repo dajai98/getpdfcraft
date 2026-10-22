@@ -3,121 +3,93 @@ import BlogPost from "@/components/ui/BlogPost";
 
 export const metadata = blogMetadata("how-to-add-watermark-to-pdf");
 
-export default function Post() {
-  return (
-    <BlogPost
-      tag={"Guide"} tagColor="#9333EA" tagBg="#FAF5FF"
-      title={"How to Add Watermark to PDF Free Online"}
-      date="February 2026" readTime="5 min read"
-      intro={"A text watermark can label a document CONFIDENTIAL, DRAFT, or SAMPLE. It is a visible label, not access control or proof against editing. PDFcraft offers text and opacity controls with fixed placement, angle, and size behavior."}
-      sections={[
-  {
-    "heading": "Why add a watermark to a PDF?",
-    "steps": [
-      {
-        "title": "Mark documents as confidential",
-        "body": "Stamping CONFIDENTIAL on sensitive documents like contracts, proposals, or HR files makes the document's sensitivity clear to anyone who receives it."
-      },
-      {
-        "title": "Identify draft documents",
-        "body": "DRAFT labels a work in progress; it cannot prevent someone treating the document as final."
-      },
-      {
-        "title": "Protect intellectual property",
-        "body": "A name or URL can provide visible attribution. It does not prevent removal, copying, or redistribution."
-      },
-      {
-        "title": "Mark samples and previews",
-        "body": "If you share document samples with potential clients, a SAMPLE watermark makes clear they are getting a preview, not the full deliverable."
+const article = {
+  "title": "How to Add Watermark to PDF Free Online",
+  "date": "February 2026",
+  "readTime": "5 min read",
+  "tag": "Guide",
+  "tagColor": "#9333EA",
+  "tagBg": "#FAF5FF",
+  "ctaHref": "/tools/watermark-pdf",
+  "ctaText": "Add watermark to your PDF now — free",
+  "intro": "A visible watermark is not a security control. Use a label such as DRAFT or REVIEW COPY to communicate status, not to prevent copying, editing or removal. PDFcraft adds text across every page rather than encrypting the document.",
+  "sections": [
+    {
+      "heading": "Controls versus fixed behavior",
+      "table": {
+        "headers": [
+          "You choose",
+          "The tool determines"
+        ],
+        "rows": [
+          [
+            "Text",
+            "Helvetica Bold font and gray color; unsupported characters can cause an encoding error."
+          ],
+          [
+            "Opacity: 10%-80%, in 5% steps",
+            "Default 30%; no independent color or image-logo setting."
+          ],
+          [
+            "The input PDF",
+            "One label on each page at a displayed 45-degree angle, fitted to its visible area."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "How to add a watermark to a PDF — step by step",
-    "steps": [
-      {
-        "title": "Open PDFcraft Watermark tool",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
-      },
-      {
-        "title": "Select your PDF",
-        "body": "Choose a valid input file with the file selector. PDFcraft processes document contents locally; website resource requests are separate."
-      },
-      {
-        "title": "Enter your watermark text",
-        "body": "Enter text supported by the built-in font, such as CONFIDENTIAL or DRAFT. Some characters cannot be encoded and may cause conversion to fail."
-      },
-      {
-        "title": "Adjust opacity",
-        "body": "Only text and opacity are user-controlled. Placement, 45° angle, font size calculation, and grey color are set by the implementation."
-      },
-      {
-        "title": "Click Add Watermark",
-        "body": "PDFcraft applies the watermark to every page of your PDF in your browser."
-      },
-      {
-        "title": "Download the watermarked PDF",
-        "body": "Click Download to save the watermarked PDF to your device. The watermark appears on every page."
-      }
-    ]
-  },
-  {
-    "heading": "Common watermark text examples",
-    "list": [
-      "CONFIDENTIAL — for sensitive business documents",
-      "DRAFT — for documents under review",
-      "SAMPLE — for preview documents",
-      "DO NOT DISTRIBUTE — for restricted documents",
-      "FOR INTERNAL USE ONLY — for internal documents",
-      "Your company name or website URL",
-      "Copyright notice — © 2026 Your Company"
-    ]
-  },
-  {
-    "heading": "Tips for effective watermarks",
-    "text": "Choose opacity by checking readability on the actual output. The fixed angled placement may not suit every page size or long text; review all pages."
-  },
-  {
-    "tip": "If you also need password-based access control, watermark the unencrypted copy first, then Protect it. Neither feature makes the result tamper-proof."
-  },
-  {
-    "heading": "Continue with the relevant tool",
-    "list": [
-      {
-        "text": "Open watermark pdf",
-        "href": "/tools/watermark-pdf"
-      }
-    ]
-  }
-]}
-      faqs={[
-  {
-    "q": "Can I add a watermark to a PDF for free?",
-    "a": "Yes. Watermark is currently free to use with no account required. Valid, supported inputs are subject to browser resources and font limitations."
-  },
-  {
-    "q": "Can I add a logo as a watermark?",
-    "a": "PDFcraft Watermark supports text only, not image or logo watermarks."
-  },
-  {
-    "q": "Will the watermark appear on every page?",
-    "a": "Yes. PDFcraft applies the watermark to every page of your PDF automatically."
-  },
-  {
-    "q": "Can the watermark be removed?",
-    "a": "A watermark can be removed or edited by someone with suitable tools. It is not proof of integrity or a security guarantee."
-  },
-  {
-    "q": "Is my file safe when adding a watermark?",
-    "a": "PDFcraft processes document contents locally without a processing upload backend. Website and third-party requests still occur. See the Privacy Policy; local processing is not a general safety guarantee."
-  },
-  {
-    "q": "Can I add a watermark on mobile?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  }
-]}
-      ctaText={"Add watermark to your PDF now — free"}
-      ctaHref={"/tools/watermark-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "Label a review copy",
+      "steps": [
+        {
+          "title": "Start with a short status label",
+          "body": "DRAFT is easier to inspect than a long paragraph. The default is CONFIDENTIAL, but the wording itself creates no access restriction."
+        },
+        {
+          "title": "Choose opacity for the underlying content",
+          "body": "A dense diagram needs a different readability check from a mostly blank page. There is no preview-based placement control; inspect the saved result."
+        },
+        {
+          "title": "Check varied pages",
+          "body": "Review a portrait page, a landscape page and any unusually cropped page. Keep the original if the label obscures content or becomes too small."
+        }
+      ]
+    },
+    {
+      "heading": "Why long text shrinks",
+      "text": "Placement uses the crop/media intersection and existing rotation. Font size begins from the visible page dimensions and is reduced to fit the diagonal text box. There is no fixed character-count limit, but that does not imply every character or arbitrarily long text will be usable. Very long labels can become tiny; invalid page geometry can stop processing."
+    },
+    {
+      "heading": "What is added - and what is not removed",
+      "text": "The label is drawn into page content. Existing text is not redacted, and there is no image-logo import, tiled pattern, manual angle or font picker. Geometry and extraction tests observed placement and added text on controlled inputs, not universal visual fidelity. An editor may be able to remove the overlay."
+    },
+    {
+      "heading": "Keep the labeling workflow separate from access control",
+      "text": "For an opening password, use Protect after labeling and verification. Neither a watermark nor a successful save proves signature preservation. Watermarking runs locally; loading the website still requires web resources."
+    },
+    {
+      "heading": "Tools for this task",
+      "list": [
+        {
+          "text": "Draw the text watermark",
+          "href": "/tools/watermark-pdf"
+        },
+        {
+          "text": "Understand labeling versus encryption",
+          "href": "/blog/pdf-security-guide"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does the same label have different sizes on different pages?",
+      "a": "The fitting calculation depends on each visible page area and the length of the text. It is not a fixed font-size setting shared by every page."
+    },
+    {
+      "q": "Can I use the label to hide a confidential paragraph?",
+      "a": "No. Drawing over a paragraph is not secure redaction. The underlying content is not purged by adding a watermark."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

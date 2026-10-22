@@ -1,0 +1,25 @@
+{
+  "runId": "preservation-20261018-postrepair-02",
+  "fixtureId": "form",
+  "operation": "merge-pdf",
+  "expected": "AcroForm explicitly unsupported by page-copy slice; no output expected",
+  "options": {},
+  "inputs": [
+    {
+      "path": "form.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+      "bytes": 2937
+    },
+    {
+      "path": "tail.pdf",
+      "sha256": "92d4c3b1bd2104340604e6ecec481e9d61fa45a4d2d92b919bcfebae62b3d075",
+      "bytes": 861
+    }
+  ],
+  "outputs": [],
+  "status": "UNSUPPORTED",
+  "handlerText": "2 files selectedClear all📄form.pdf3 KB✕📄tail.pdf1 KB✕⊕ Merge 2 PDFs",
+  "alerts": [
+    "Unsupported or invalid PDF navigation: linked annotation Parent is unsupported in this repair phase. No output was created."
+  ]
+}

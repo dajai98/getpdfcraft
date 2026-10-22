@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import navigation from "@/lib/siteNavigation.json";
 
 const allTools = [
   { icon: "⊕", name: "Merge PDF", href: "/tools/merge-pdf", bg: "#FEF2F2", color: "#DC2626" },
@@ -18,19 +19,15 @@ const allTools = [
 ];
 
 export default function RelatedTools({ current }) {
-  const others = allTools.filter(t => t.href !== current);
-  // Rotate the starting point based on which tool this is, so every tool
-  // (not just the first 6 in the array) gets surfaced in the "Other Free
-  // PDF Tools" list depending on which page the visitor is on.
-  const startIndex = Math.abs(allTools.findIndex(t => t.href === current)) % others.length;
-  const related = [...others.slice(startIndex), ...others.slice(0, startIndex)].slice(0, 6);
+  const related = (navigation.relatedTools[current?.replace("/tools/", "")] || []).map(slug => allTools.find(tool => tool.href === "/tools/" + slug));
 
   return (
     <div style={{ background: "#f9fafb", borderTop: "1px solid #f3f4f6", padding: "48px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
-        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>
-          Other Free PDF Tools
-        </h3>
+        <Link href="/#tools">Browse all tools by task</Link>
+        <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>
+          Related operations
+        </h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 12 }}>
           {related.map(tool => (
             <Link key={tool.name} href={tool.href} style={{ textDecoration: "none" }}>

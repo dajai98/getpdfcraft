@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "INTERNAL — NOT READY FOR PUBLICATION",
+  "studies": [
+    {
+      "name": "compression",
+      "evidenceStatus": "PARTIAL INTERNAL NODE EVIDENCE; SYNTHETIC ACTIVE RUN AND REAL-DOCUMENT SUPPLEMENT; NOT A COMPLETED BENCHMARK",
+      "activeRunId": "compression-20261015-hardening-02",
+      "browserTested": false,
+      "visualReview": "LIMITED REPRESENTATIVE PAGES; SEE REVIEW RECORD",
+      "fixtureKinds": [
+        "SYNTHETIC",
+        "REAL_WORLD"
+      ],
+      "knownMissingCoverage": [
+        "Real photographic-heavy PDF NOT TESTED; archival scan used instead.",
+        "Browser execution/download NOT TESTED: no available browser surface.",
+        "Interactive text selection NOT TESTED; extraction is not interaction.",
+        "Form interaction and signature validity NOT TESTED.",
+        "All-page visual fidelity NOT TESTED; only recorded representative pages reviewed.",
+        "Independent Office export session NOT TESTED; creator metadata only.",
+        "Cross-browser/device compatibility and performance benchmarks NOT TESTED."
+      ],
+      "runs": [
+        {
+          "runId": "legacy-compression-20261015T123732716Z",
+          "manifestPath": "data/lab/compression.json",
+          "manifestSha256": "e912b6c45a2864357b742b6dc1e404fdff8d34d26ec6f34f4d74a00d9fcfc027",
+          "evidenceStatus": "PRESERVED HISTORICAL RUN",
+          "collectionEnvironment": {
+            "node": "v24.15.0",
+            "os": "Windows_NT",
+            "release": "10.0.26200",
+            "arch": "x64",
+            "pdfLib": "1.17.1",
+            "pdfjs": "4.4.168",
+            "next": "14.2.5"
+          },
+          "fixtureKinds": [
+            "SYNTHETIC"
+          ],
+          "browserTested": false,
+          "visualReview": "NOT TESTED",
+          "sourceSnapshots": {
+            "scripts/lab/collect-compression.cjs": "tests/evidence/compression/legacy-collector.cjs"
+          },
+          "artifactHashes": {
+            "data/lab/compression.json": "e912b6c45a2864357b742b6dc1e404fdff8d34d26ec6f34f4d74a00d9fcfc027",
+            "tests/fixtures/compression/manifest.json": "c8271561636173bbdb9afa52090b49aea810d92a453e77f2717aa6b91de977ec",
+            "tests/evidence/compression/README.md": "8293c8eebed0ca8746bb82a1a5ce8d8ccdca2a7ae21a6a4d8bdaf80455b3613d",
+            "tests/fixtures/compression/text-heavy.pdf": "2c5562135e5e775bee7b7a39b582f1c070d7e82f8e00ff1dad37a47952266f33",
+            "tests/evidence/compression/text-heavy.pdf": "73dc418a507ed513dcf26264426ff43af70f94ead21f6c988d6511dd1787ec4a",
+            "tests/evidence/compression/text-heavy.inspection.json": "9cb196faf79a925d26d459e37f4d2b016fe709da85eac9135962b2faa91ace91",
+            "tests/fixtures/compression/image-heavy-synthetic.pdf": "2825b0105c9bd012f6a999f07d93cd409c1b7d9b26915e6d30587a7c5da82060",
+            "tests/evidence/compression/image-heavy-synthetic.pdf": "0cfe901ea1253ef13f0f3bd51591b756edc2946b1b35f9961776a071d193e7c2",
+            "tests/evidence/compression/image-heavy-synthetic.inspection.json": "18eab871ee04f8a332dcdf9a98a63a0e6d232385331c63579a41178fda1d194c",
+            "tests/fixtures/compression/scan-style-synthetic.pdf": "0c7be06a9bfa36f6389120ff58433c3918c5dffb7b9679c47b7361111fd55fdc",
+            "tests/evidence/compression/scan-style-synthetic.pdf": "d99dc3aab8da273608240a9bc90b79264348cdc787c1fb726bba858b69321372",
+            "tests/evidence/compression/scan-style-synthetic.inspection.json": "bf8aaaf5c2fc15387f79fd0fa7aeb0b857349453614265f80df55cb63cb293b7",
+            "tests/fixtures/compression/mixed.pdf": "eebe510e12ed377212ebf5d74bc39429e5d08efd8fd8b86c467c5ba53b5026ad",
+            "tests/evidence/compression/mixed.pdf": "23c2ebd12b9d3f4e56b545a00092e78a92ec6ac5b3764ba9a206530011c6ef00",
+            "tests/evidence/compression/mixed.inspection.json": "eb0f36dd7360c535eff322aa6eb92591bacc330dc6d297894cfffb0322435e3f",
+            "tests/fixtures/compression/presentation-style.pdf": "d3537e6d395a3a67391ce897ff3ede532c2dda213ae22dda662f0f409ab0b5fc",
+            "tests/evidence/compression/presentation-style.pdf": "54c5a370d964993b20f0b25763757589a413ae12204889803371047b8c057291",
+            "tests/evidence/compression/presentation-style.inspection.json": "c3f520b26965ec89e33aa0852886016be059a12fbb739bd7089df44d409d7246",
+            "tests/fixtures/compression/form.pdf": "45925bb5d244370e131bca1ca555fd232b45b055f7c2b17b16858aa25ad36f42",
+            "tests/evidence/compression/form.pdf": "61112ab6b712e4ae38dce3086c48a547500892de3c5f8e913df4356852186003",
+            "tests/evidence/compression/form.inspection.json": "ad5c7e29ed043cdac718d68a20c961892237b469f441d98547854db296dfb16f",
+            "tests/fixtures/compression/already-object-streams.pdf": "ef7ce96812ffbec0902e78d4220072c7c5000bc9b50c9dca41acd1fee4236322",
+            "tests/evidence/compression/already-object-streams.pdf": "0a14ac331a74216a6343adb59fd3e71891ad5facb3ed3eb0162a6d8dd9aed3b3",
+            "tests/evidence/compression/already-object-streams.inspection.json": "7d1986d9f54ffebcd42f8a977ff39d6ec34392d47c88cfedb7a9b9782496e647",
+            "tests/fixtures/compression/minimal-control.pdf": "f1d0c456e44a191fd3a907b8808cfcbb5acf2e3127101459e0da83311bd1afbf",
+            "tests/evidence/compression/minimal-control.pdf": "e8e4e89d6a1aa2501b9a2e359d157f2c4bed2bcb15033c82eff28b2a14dbd10c",
+            "tests/evidence/compression/minimal-control.inspection.json": "6fd3b19fd3b00164ec564f2d14a41e7404c99ad82cd33f4c27187349e5f88532",
+            "tests/fixtures/compression/unsupported-input.pdf": "f11658239f1405b6271e236992e773c87ee255f3f5adf606bc319b9571fbb536",
+            "tests/evidence/compression/unsupported-input.inspection.json": "4a28d0cd3115ec1fb880f0ac2db6c186a3464127d5795042123e9c84702605d5"
+          }
+        },
+        {
+          "runId": "compression-20261015-hardening-01",
+          "manifestPath": "tests/evidence/compression/runs/compression-20261015-hardening-01/manifest.json",
+          "manifestSha256": "ea6304104fa808df6a8690408c30dabfb39027f3d1610b4d99a20046fc3889f2",
+          "evidenceStatus": "SUPERSEDED: publication-status em dash was encoded as a question mark; numerical evidence retained",
+          "collectionEnvironment": {
+            "node": "v24.15.0",
+            "os": "Windows_NT",
+            "release": "10.0.26200",
+            "arch": "x64",
+            "totalMemoryBytes": 14938353664,
+            "pdfLib": "1.17.1",
+            "pdfjs": "4.4.168",
+            "next": "14.2.5",
+            "qpdfWasm": "0.3.0",
+            "browser": "NOT TESTED",
+            "network": "No network resources requested by collector; installed local libraries/WASM"
+          },
+          "fixtureKinds": [
+            "SYNTHETIC"
+          ],
+          "browserTested": false,
+          "visualReview": "NOT TESTED"
+        },
+        {
+          "runId": "compression-20261015-hardening-02",
+          "manifestPath": "tests/evidence/compression/runs/compression-20261015-hardening-02/manifest.json",
+          "manifestSha256": "db79af3b4dbd0129f5bfe5fe609983ddbe199b40ce5422a9ed438643d6b724de",
+          "evidenceStatus": "COLLECTED: synthetic Node evidence only",
+          "collectionEnvironment": {
+            "node": "v24.15.0",
+            "os": "Windows_NT",
+            "release": "10.0.26200",
+            "arch": "x64",
+            "totalMemoryBytes": 14938353664,
+            "pdfLib": "1.17.1",
+            "pdfjs": "4.4.168",
+            "next": "14.2.5",
+            "qpdfWasm": "0.3.0",
+            "browser": "NOT TESTED",
+            "network": "No network resources requested by collector; installed local libraries/WASM"
+          },
+          "fixtureKinds": [
+            "SYNTHETIC"
+          ],
+          "browserTested": false,
+          "visualReview": "NOT TESTED"
+        },
+        {
+          "runId": "compression-20261016-realworld-01",
+          "manifestPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/manifest.json",
+          "manifestSha256": "3e568167348ee696e41f5c5a7133910b465a9a769115dd50af66f7ebeb76e4c0",
+          "evidenceStatus": "SUPPLEMENTAL: real public document; Node only; partial 7C coverage, not active",
+          "collectionEnvironment": {
+            "node": "v24.15.0",
+            "os": "Windows_NT",
+            "release": "10.0.26200",
+            "arch": "x64",
+            "pdfLib": "1.17.1",
+            "pdfjs": "4.4.168",
+            "next": "14.2.5",
+            "browser": "NOT TESTED",
+            "tester": "Automated source-handler harness; no human tester asserted"
+          },
+          "fixtureKinds": [
+            "REAL_WORLD"
+          ],
+          "browserTested": false,
+          "visualReview": "NOT TESTED"
+        },
+        {
+          "runId": "compression-20261016-scan-01",
+          "manifestPath": "tests/evidence/compression/runs/compression-20261016-scan-01/manifest.json",
+          "manifestSha256": "9bc22aabc985ed1720bea06378ccd1e321d2fa1e07e7d256b4628ce9834636cd",
+          "evidenceStatus": "SUPPLEMENTAL: real archival scan; Node only; not active",
+          "collectionEnvironment": {
+            "node": "v24.15.0",
+            "os": "Windows_NT",
+            "release": "10.0.26200",
+            "arch": "x64",
+            "pdfLib": "1.17.1",
+            "pdfjs": "4.4.168",
+            "next": "14.2.5",
+            "browser": "NOT TESTED",
+            "tester": "Automated source-handler harness; no human tester asserted"
+          },
+          "fixtureKinds": [
+            "REAL_WORLD"
+          ],
+          "browserTested": false,
+          "visualReview": "See separate append-only review; run unchanged"
+        }
+      ],
+      "completionStatus": "BATCH 7C LIMITED TARGET COMPLETE; BROWSER BLOCKED/NOT TESTED; NOT PUBLICATION READY",
+      "reviews": [
+        {
+          "path": "tests/evidence/compression/reviews/review-20261016-limited-02/observations.json",
+          "sha256": "644c8ccd23f5fed6b7dbb21cc635445a7a5bf6b6b498386314206d3c06df5b87",
+          "status": "LIMITED REPRESENTATIVE-PAGE VISUAL REVIEW COMPLETE"
+        }
+      ]
+    },
+    {
+      "name": "browser-compatibility",
+      "evidenceStatus": "NOT STARTED",
+      "runs": [],
+      "browserTested": false,
+      "visualReview": "NOT TESTED",
+      "knownMissingCoverage": [
+        "Entire study NOT TESTED"
+      ]
+    },
+    {
+      "name": "document-preservation",
+      "evidenceStatus": "NOT STARTED",
+      "runs": [],
+      "browserTested": false,
+      "visualReview": "NOT TESTED",
+      "knownMissingCoverage": [
+        "Entire study NOT TESTED"
+      ]
+    }
+  ]
+}

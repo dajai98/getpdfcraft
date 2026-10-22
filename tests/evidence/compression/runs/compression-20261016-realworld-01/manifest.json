@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 3,
+  "study": "compression",
+  "runId": "compression-20261016-realworld-01",
+  "status": "COMPLETE",
+  "coverageStatus": "PARTIAL; BATCH 7C INCOMPLETE",
+  "startedAt": "2026-10-16T01:12:46.100Z",
+  "completedAt": "2026-10-16T01:12:48.273Z",
+  "publicationStatus": "INTERNAL — NOT READY FOR PUBLICATION",
+  "execution": "AUTOMATED NODE SOURCE-HANDLER; NOT REAL BROWSER",
+  "browserTested": false,
+  "visualReview": "NOT TESTED",
+  "gitHead": "6ccfbe45fbe6e671cd968a1e5bbe692aac736dc4",
+  "sourceHashes": {
+    "app/tools/compress-pdf/page.js": "1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "scripts/lab/collect-real-compression.cjs": "ffb6694f49bb9ba02b57fadf02ec498332f7b84decb502a9fc866bcca1889a71"
+  },
+  "sourceSnapshots": {
+    "scripts/lab/collect-compression.cjs": "harness.cjs",
+    "scripts/lab/collect-real-compression.cjs": "collector.cjs"
+  },
+  "environment": {
+    "node": "v24.15.0",
+    "os": "Windows_NT",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "pdfLib": "1.17.1",
+    "pdfjs": "4.4.168",
+    "next": "14.2.5",
+    "browser": "NOT TESTED",
+    "tester": "Automated source-handler harness; no human tester asserted"
+  },
+  "results": [
+    {
+      "fixtureId": "nasa-access-plan",
+      "fixtureKind": "REAL_WORLD",
+      "provenance": "NASA Public Access Plan, official published document; downloaded unmodified, not generated as a fixture.",
+      "provenancePath": "tests/evidence/compression/runs/compression-20261016-realworld-01/provenance.json",
+      "inputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.input.pdf",
+      "inputSha256": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+      "inputBytes": 1081214,
+      "outputPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.output.pdf",
+      "outputSha256": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+      "outputBytes": 1077480,
+      "byteChange": -3734,
+      "percentChange": -0.3453525389053416,
+      "percentConvention": "positive=increase; negative=reduction",
+      "status": "SUCCESS",
+      "independentOutputOpens": true,
+      "error": null,
+      "inspectionError": null,
+      "warnings": [
+        "Warning: Cannot polyfill `DOMMatrix`, rendering may be broken.",
+        "Warning: Cannot polyfill `Path2D`, rendering may be broken.",
+        "Warning: TT: undefined function: 32",
+        "Warning: TT: undefined function: 32"
+      ],
+      "rawInspectionPath": "tests/evidence/compression/runs/compression-20261016-realworld-01/nasa-access-plan.inspection.json",
+      "inspectionSha256": "77b1aebdf968f33baebb918242e016185375e14642ea3c14efdc27d5814f8e8e",
+      "textExtractionMatches": true,
+      "geometryMatches": true,
+      "formFieldsMatch": true,
+      "formAnnotationsMatch": true,
+      "metadataBefore": {
+        "PDFFormatVersion": "1.6",
+        "Language": "EN-US",
+        "EncryptFilterName": null,
+        "IsLinearized": true,
+        "IsAcroFormPresent": false,
+        "IsXFAPresent": false,
+        "IsCollectionPresent": false,
+        "IsSignaturesPresent": false,
+        "Author": "Amy Friedlander",
+        "Custom": {
+          "Company": "HP",
+          "ContentTypeId": "0x0101002B61AEA350961D489479B783C9628802",
+          "SourceModified": "D:20230501130202",
+          "_NewReviewCycle": ""
+        },
+        "CreationDate": "D:20230504144644-04'00'",
+        "Creator": "Acrobat PDFMaker 20 for Word",
+        "Keywords": "",
+        "ModDate": "D:20230504144650-04'00'",
+        "Producer": "Adobe PDF Library 20.5.3",
+        "Subject": "Increasing Access to the Results of Scientific Research",
+        "Title": "NASA’s public access plan"
+      },
+      "metadataAfter": {
+        "PDFFormatVersion": "1.7",
+        "Language": "EN-US",
+        "EncryptFilterName": null,
+        "IsLinearized": false,
+        "IsAcroFormPresent": false,
+        "IsXFAPresent": false,
+        "IsCollectionPresent": false,
+        "IsSignaturesPresent": false,
+        "Author": "Amy Friedlander",
+        "Custom": {
+          "Company": "HP",
+          "ContentTypeId": "0x0101002B61AEA350961D489479B783C9628802",
+          "SourceModified": "D:20230501130202",
+          "_NewReviewCycle": ""
+        },
+        "CreationDate": "D:20230504144644-04'00'",
+        "Creator": "Acrobat PDFMaker 20 for Word",
+        "Keywords": "",
+        "ModDate": "D:20261016011247Z",
+        "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "Subject": "Increasing Access to the Results of Scientific Research",
+        "Title": "NASA’s public access plan"
+      },
+      "browserVerification": "NOT TESTED",
+      "downloadSuccess": "NOT TESTED",
+      "visualQuality": "NOT TESTED",
+      "interactiveSelectability": "NOT TESTED",
+      "formInteraction": "NOT TESTED",
+      "signatureValidity": "NOT TESTED",
+      "displayedSummary": [
+        "File size reduced1,081,214 bytes → 1,077,480 bytes3734 bytes smaller"
+      ],
+      "downloadName": "processed.pdf"
+    }
+  ],
+  "missingCoverage": [
+    "Real photographic PDF NOT TESTED",
+    "Physical scan PDF NOT TESTED",
+    "Verified Office export NOT TESTED",
+    "Real mixed-content category NOT VERIFIED",
+    "Browser/download NOT TESTED: no browser surface; native pipe unavailable",
+    "Visual review NOT TESTED",
+    "Interactive selection/form/signature checks NOT TESTED"
+  ],
+  "artifactHashes": {
+    "collector.cjs": "ffb6694f49bb9ba02b57fadf02ec498332f7b84decb502a9fc866bcca1889a71",
+    "environment.json": "7a6699f6740575b2f9d25dc951f35def8e374b3379882fec8fcce52dc95dc18d",
+    "harness.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "nasa-access-plan.input.pdf": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+    "nasa-access-plan.inspection.json": "77b1aebdf968f33baebb918242e016185375e14642ea3c14efdc27d5814f8e8e",
+    "nasa-access-plan.output.pdf": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+    "permission-source.html": "c38bc15af08164b04819d02a571aa69c8580a5aa366d683791bb7db6e337e279",
+    "provenance.json": "2fb903c0bf1964ae807881a72c3a1815c8a6208fbd8d54f5ad4eb5e08a9ae661",
+    "started.json": "16b1124ef88bb46d65165dfe78b6bd5b2576240b27efde14f2ccb098571b471c"
+  }
+}

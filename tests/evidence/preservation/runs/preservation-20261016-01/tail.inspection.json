@@ -1,0 +1,60 @@
+{
+  "opens": true,
+  "pageCount": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "PAGE_4 merge tail",
+      "identities": [
+        "PAGE_4"
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        500
+      ],
+      "rotation": 0,
+      "physical": [
+        400,
+        500
+      ],
+      "annotations": [],
+      "imageOperators": 0,
+      "vectorPathOperators": 0
+    }
+  ],
+  "boxes": [
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "rotation": 0
+    }
+  ],
+  "fields": null,
+  "outlines": [],
+  "metadata": {
+    "PDFFormatVersion": "1.7",
+    "Language": null,
+    "EncryptFilterName": null,
+    "IsLinearized": false,
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "IsCollectionPresent": false,
+    "IsSignaturesPresent": false,
+    "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "ModDate": "D:20200101000000Z",
+    "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "CreationDate": "D:20200101000000Z"
+  }
+}

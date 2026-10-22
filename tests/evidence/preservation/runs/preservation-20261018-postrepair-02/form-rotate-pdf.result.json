@@ -1,0 +1,54 @@
+{
+  "runId": "preservation-20261018-postrepair-02",
+  "fixtureId": "form",
+  "operation": "rotate-pdf",
+  "expected": "Add 90 degrees to each page",
+  "options": {
+    "additionalDegrees": 90
+  },
+  "inputs": [
+    {
+      "path": "form.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+      "bytes": 2937
+    }
+  ],
+  "outputs": [
+    {
+      "path": "form-rotate-pdf-1.pdf",
+      "sha256": "83dd3baeffc22ea9f0cf78a2555c61b50d399dcf210ef6ea9d84474884d4a003",
+      "bytes": 2993,
+      "inspection": "form-rotate-pdf-1.inspection.json",
+      "inspectionSha256": "85e97344a9aaa4bcb18ab173d4a310a52e41c3ce0cef15dc749d98bb4cd3f52d",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "vectorSemantics": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorOperatorCounts": "PRESERVED",
+        "localNavigation": "NOT TESTED",
+        "namedDestinations": "NOT TESTED",
+        "outlines": "NOT TESTED",
+        "externalRemoteLinks": "NOT TESTED",
+        "forms": "PRESERVED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "EXPECTED CHANGE",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "📄form.pdf✕Rotation angle↻ 90° Right↕ 180°↺ 90° Left↻ Rotate 90°✅Rotation complete!All pages rotated by 90°",
+  "alerts": []
+}

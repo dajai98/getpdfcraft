@@ -1,4 +1,5 @@
 import Link from "next/link";
+import navigation from "@/lib/siteNavigation.json";
 import { AdLeaderboard } from "@/components/ui/Ads";
 
 const tools = [
@@ -87,7 +88,7 @@ export default function HomePage() {
           <span style={{ color: "#E8380D" }}>Private by design.</span>
         </h1>
         <p style={{ fontSize: 18, color: "#6b7280", maxWidth: 560, margin: "0 auto 36px", lineHeight: 1.65 }}>
-          Merge, split, compress, convert and edit PDFs directly in your browser.
+          Merge, split, arrange and render PDF pages directly in your browser.
           Local document processing. No account required. No PDFcraft branding watermarks.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginBottom: 48 }}>
@@ -120,7 +121,7 @@ export default function HomePage() {
             <thead>
               <tr style={{ background: "#111827" }}>
                 <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>Feature</th>
-                <th style={{ padding: "12px 20px", textAlign: "left", color: "#6b7280", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>PDFcraft behavior</th>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "#9ca3af", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>PDFcraft behavior</th>
               </tr>
             </thead>
             <tbody>
@@ -140,19 +141,25 @@ export default function HomePage() {
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools — Free to Use</h2>
-            <p style={{ fontSize: 16, color: "#6b7280" }}>Choose a tool to process files locally in your browser. No account needed.</p>
+            <p style={{ fontSize: 16, color: "#6b7280" }}>Choose the operation you need. These tools do not edit existing text, perform OCR or convert PDFs to Word.</p>
           </div>
+          <nav aria-label="Tool categories"><ul>{navigation.toolGroups.map(group => <li key={group.id}><Link href={`/#tools-${group.id}`}>{group.label}</Link></li>)}</ul></nav>
+          {navigation.toolGroups.map(group => (
+          <section key={group.id} id={`tools-${group.id}`} style={{ marginTop: 32 }}>
+          <h3 style={{ fontSize: 22, marginBottom: 16 }}>{group.label}</h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
-            {tools.map(tool => (
+            {group.tools.map(slug => tools.find(tool => tool.href === "/tools/" + slug)).map(tool => (
               <Link key={tool.name} href={tool.href} style={{ textDecoration: "none" }}>
                 <div className="tool-card">
                   <div aria-hidden="true" style={{ width: 52, height: 52, background: tool.bg, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, marginBottom: 18, color: tool.color }}>{tool.icon}</div>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, color: "#111827", marginBottom: 8 }}>{tool.name}</h3>
+                  <h4 style={{ fontWeight: 700, fontSize: 16, color: "#111827", marginBottom: 8 }}>{tool.name}</h4>
                   <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.6, margin: 0 }}>{tool.desc}</p>
                 </div>
               </Link>
             ))}
           </div>
+          </section>
+          ))}
         </div>
       </section>
 
@@ -181,13 +188,14 @@ export default function HomePage() {
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, flexWrap: "wrap", gap: 16 }}>
             <div>
-              <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#111827", letterSpacing: -1, marginBottom: 8 }}>Latest PDF Guides</h2>
-              <p style={{ fontSize: 15, color: "#6b7280" }}>Tips, tutorials and guides for working with PDFs privately and efficiently.</p>
+              <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#111827", letterSpacing: -1, marginBottom: 8 }}>Find a guide for your next decision</h2>
+              <p style={{ fontSize: 15, color: "#6b7280" }}>Browse guides by task, or learn how processing and result checks work.</p>
             </div>
             <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "white", border: "1px solid #e5e7eb", color: "#374151", textDecoration: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 600, fontSize: 14 }}>
-              View all guides →
+              Browse guides by topic →
             </Link>
           </div>
+          <p><Link href="/blog/pdf-security-guide">Choose a security control</Link> · <Link href="/blog#how-it-works">How processing and result checks work</Link></p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
             {blogPosts.map(post => (
               <Link key={post.title} href={post.href} className="blog-card">
@@ -205,7 +213,7 @@ export default function HomePage() {
           <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 800, color: "white", letterSpacing: -1.5, marginBottom: 16 }}>
             Your files. Your device. Your privacy.
           </h2>
-          <p style={{ fontSize: 16, color: "#6b7280", marginBottom: 32 }}>13 free tools. Local document processing. No account required.</p>
+          <p style={{ fontSize: 16, color: "#9ca3af", marginBottom: 32 }}>13 free tools. Local document processing. No account required.</p>
           <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 17, boxShadow: "0 4px 20px rgba(232,56,13,0.4)" }}>
             Start using PDFcraft free →
           </Link>

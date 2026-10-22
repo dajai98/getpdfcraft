@@ -1,0 +1,13 @@
+{
+  "node": "v24.15.0",
+  "os": "Windows_NT",
+  "release": "10.0.26200",
+  "arch": "x64",
+  "totalMemoryBytes": 14938353664,
+  "pdfLib": "1.17.1",
+  "pdfjs": "4.4.168",
+  "next": "14.2.5",
+  "qpdfWasm": "0.3.0",
+  "browser": "NOT TESTED",
+  "network": "No network resources requested by collector; installed local libraries/WASM"
+}

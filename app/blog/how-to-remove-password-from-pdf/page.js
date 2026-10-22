@@ -5,71 +5,86 @@ export const metadata = blogMetadata("how-to-remove-password-from-pdf");
 
 const article = {
   "title": "How to Remove a PDF Password You Already Know",
-  "intro": "PDFcraft Unlock PDF removes encryption using a supplied password. Use it only for a document you are authorized to modify. It does not guess or crack an unknown password, and this guide does not make legal guarantees about your circumstances.",
+  "intro": "Unlock is appropriate when you know the password and need an authorized unencrypted copy. It is not a way to discover a forgotten password or repair every PDF that a viewer describes as locked.",
   "sections": [
     {
-      "heading": "Unlock and verify your copy",
+      "heading": "Verify access before removing encryption",
       "steps": [
         {
-          "title": "Select the protected PDF",
-          "body": "Open Unlock PDF and choose the document. Keep the protected original until you have checked the result."
+          "title": "Check the original",
+          "body": "Confirm the password opens the source in your viewer and that you are authorized to modify it. Keep that original available."
         },
         {
           "title": "Enter the current password",
-          "body": "Use the password that works for the document. The interface requires a nonempty password before processing."
+          "body": "Select the file in Unlock PDF and enter the known password. The interface requires a nonempty password; it does not try guesses or a recovery service."
         },
         {
-          "title": "Unlock and download",
-          "body": "Click Unlock PDF. On success, download unlocked.pdf. The application rejects nonzero qpdf status rather than treating a failed operation as success."
-        },
-        {
-          "title": "Open the downloaded file afresh",
-          "body": "Check that it opens without a password, then inspect pages and any interactive content you need. Store the unencrypted copy appropriately because it no longer has this password barrier."
+          "title": "Save and reopen the result",
+          "body": "After success, download the copy and open it afresh without a password. Check the pages and required features before distributing an unencrypted document."
         }
       ]
     },
     {
-      "heading": "Wrong password and damaged-file errors",
-      "text": "The qpdf status message may indicate an incorrect password, damaged PDF, or unsupported input. It cannot always distinguish these cases precisely. Confirm the password against the original in a compatible viewer; if that also fails, ask the sender for a valid copy or the correct password."
+      "heading": "What the engine does",
+      "text": "The handler passes the supplied password and a decrypt instruction to qpdf WebAssembly. It requires a successful exit status and a nonempty output before exposing a download. Removing supported encryption removes that password barrier from the copy; it does not turn image-based text into editable paragraphs or repair signatures."
     },
     {
-      "heading": "If you have forgotten the password",
-      "text": "PDFcraft cannot recover it. Check your own saved records or request access from the document owner. The tool is not a password-recovery service."
+      "heading": "Separate access errors from other failures",
+      "table": {
+        "headers": [
+          "Symptom",
+          "Useful next check"
+        ],
+        "rows": [
+          [
+            "Security engine cannot load",
+            "Check connectivity and restrictions affecting the jsDelivr WASM download."
+          ],
+          [
+            "Nonzero qpdf status",
+            "The password may be wrong, or the input damaged or unsupported. The wrapper cannot always distinguish the cause."
+          ],
+          [
+            "File opens but editing is unavailable",
+            "Check the viewer and document structure. Unlock does not provide a text editor or form designer."
+          ],
+          [
+            "No known password",
+            "Ask the sender or consult your records; PDFcraft provides no cracking or recovery path."
+          ]
+        ]
+      }
     },
     {
-      "heading": "Unencrypted files and permissions",
-      "text": "An unencrypted PDF does not need decryption. The current interface still requires a password entry, so do not use Unlock merely to troubleshoot a file that already opens without a password. Inability to edit may instead reflect viewer functionality or document permissions; a successful open alone does not diagnose the cause."
+      "heading": "The output needs different handling",
+      "text": "An unencrypted copy should not be distributed on the assumption that the old opening password still protects it. Decide where to store it and who may receive it. Controlled Node checks exercised a Protect-to-Unlock workflow and observed text/field values, not interactive form behavior, signature preservation or universal compatibility."
     },
     {
-      "heading": "Runtime and privacy",
-      "text": "Protect and Unlock download the qpdf WebAssembly runtime from jsDelivr. File contents and the supplied password are processed locally by the application. A blocked runtime download can prevent the operation from starting; loading this resource is separate from uploading a document."
+      "heading": "Local decryption still loads a runtime",
+      "text": "The document and password are supplied to the local qpdf runtime rather than a PDF-upload service. The runtime is downloaded from jsDelivr. Temporary runtime files are removed and the input buffer cleared afterward, without a guarantee of erasing every copy from browser memory."
     },
     {
-      "heading": "Relevant tools",
+      "heading": "Choose the next operation",
       "list": [
         {
-          "text": "Unlock with a known password",
+          "text": "Decrypt using your known password",
           "href": "/tools/unlock-pdf"
         },
         {
-          "text": "Protect a revised unencrypted copy",
-          "href": "/tools/protect-pdf"
+          "text": "Diagnose a PDF that only appears locked",
+          "href": "/blog/why-is-my-pdf-locked"
         }
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Can I unlock a PDF without knowing its password?",
-      "a": "This PDFcraft workflow requires a supplied correct password for password-protected input. It does not crack unknown passwords."
+      "q": "Should I enter a made-up password for an unencrypted PDF?",
+      "a": "No. That is not a repair procedure. Identify why the file cannot be edited or saved instead of treating every restriction as encryption."
     },
     {
-      "q": "Does every error mean my password is wrong?",
-      "a": "No. A damaged or unsupported PDF can also cause qpdf failure. Runtime-loading errors are reported separately."
-    },
-    {
-      "q": "Is the downloaded copy still password protected?",
-      "a": "A successful Unlock operation removes encryption. Check the downloaded result independently before relying on it."
+      "q": "Will the unlocked copy retain a valid digital signature?",
+      "a": "Signature preservation is not verified. Keep the signed original and use a workflow that explicitly validates signatures when that matters."
     }
   ],
   "ctaHref": "/tools/unlock-pdf",
@@ -77,10 +92,8 @@ const article = {
   "tag": "Unlock PDF",
   "tagColor": "#16A34A",
   "tagBg": "#F0FDF4",
-  "date": "May 2026",
+
   "readTime": "3 min read"
 };
 
-export default function Post() {
-  return <BlogPost {...article} />;
-}
+export default function Post() { return <BlogPost {...article} />; }

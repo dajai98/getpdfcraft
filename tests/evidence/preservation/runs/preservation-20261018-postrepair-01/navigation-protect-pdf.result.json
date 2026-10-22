@@ -1,0 +1,53 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "protect-pdf",
+  "expected": "AES-256 with public test password; local installed qpdf WASM",
+  "options": {
+    "publicTestPassword": "PublicSynthetic7E!"
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-protect-pdf-1.pdf",
+      "sha256": "5d4cafaf4fb6dc15b329ffe53e8ffa1969866ed2355106ca7e161801c37b4371",
+      "bytes": 3778,
+      "inspection": "navigation-protect-pdf-1.inspection.json",
+      "inspectionSha256": "560547569558bce1dc019d904bafe480d9f2e9004d5435a27611b102fe5c54b8",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "PRESERVED",
+        "localNavigation": "NOT TESTED",
+        "namedDestinations": "NOT TESTED",
+        "outlines": "NOT TESTED",
+        "externalRemoteLinks": "NOT TESTED",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "NOT TESTED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "🔒256-bit AES encryption. Your file and password are processed locally in your browser.📄navigation.pdf3 KB✕PasswordConfirm Password💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.✅protected.pdf is ready!Your PDF has been encrypted with 256-bit AES password protection.⚠️ Store your password safely — it cannot be recovered if lost.",
+  "alerts": []
+}

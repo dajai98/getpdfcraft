@@ -1,0 +1,1260 @@
+[
+  {
+    "route": "/",
+    "links": [
+      "/#tools",
+      "/tools/merge-pdf",
+      "/tools/compress-pdf",
+      "/tools/protect-pdf",
+      "/privacy",
+      "/tools/split-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/unlock-pdf",
+      "/blog",
+      "/blog/how-to-merge-pdf-free",
+      "/blog/compress-pdf-without-losing-quality",
+      "/blog/ilovepdf-alternative",
+      "/blog/merge-pdf-on-iphone",
+      "/blog/pdf-vs-word-which-is-better",
+      "/blog/best-free-pdf-tools-online"
+    ],
+    "incoming": [
+      "/blog/how-to-edit-pdf-free",
+      "/blog/pdf-vs-word-which-is-better"
+    ],
+    "type": "navigation/trust",
+    "purpose": "Find a PDF operation",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/about",
+    "links": [
+      "/contact",
+      "/privacy",
+      "/terms"
+    ],
+    "incoming": [],
+    "type": "navigation/trust",
+    "purpose": "Understand the publisher",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "No main-content incoming link; inspect sitewide navigation",
+    "nextAction": "/contact",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/blog",
+    "links": [
+      "/blog/how-browser-based-pdf-processing-works",
+      "/blog/pdf-compression-real-test-results",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-to-merge-pdf-free",
+      "/blog/compress-pdf-without-losing-quality",
+      "/blog/convert-pdf-to-jpg-free",
+      "/blog/how-to-split-pdf-online",
+      "/blog/how-to-remove-password-from-pdf",
+      "/blog/ilovepdf-alternative",
+      "/blog/smallpdf-alternative",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/merge-pdf-on-iphone",
+      "/blog/pdf-vs-word-which-is-better",
+      "/blog/how-to-add-password-to-pdf-online",
+      "/blog/how-to-add-watermark-to-pdf",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-convert-jpg-to-pdf",
+      "/blog/how-to-edit-pdf-free",
+      "/blog/pdf-file-size-too-large",
+      "/blog/how-to-rotate-pdf",
+      "/blog/convert-pdf-to-png-free",
+      "/blog/how-to-merge-pdf-on-mac",
+      "/blog/how-to-merge-pdf-on-windows",
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/pdf-security-guide",
+      "/blog/how-to-combine-pdf-and-images",
+      "/blog/why-is-my-pdf-locked",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/blog/how-to-secure-pdf-before-sending-email",
+      "/blog/how-to-protect-pdf-from-editing",
+      "/blog/secure-pdf-on-mac"
+    ],
+    "incoming": [
+      "/",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/compress-pdf-without-losing-quality",
+      "/blog/convert-pdf-to-jpg-free",
+      "/blog/convert-pdf-to-png-free",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/blog/how-to-add-password-to-pdf-online",
+      "/blog/how-to-add-watermark-to-pdf",
+      "/blog/how-to-combine-pdf-and-images",
+      "/blog/how-to-convert-jpg-to-pdf",
+      "/blog/how-to-edit-pdf-free",
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/blog/how-to-merge-pdf-free",
+      "/blog/how-to-merge-pdf-on-mac",
+      "/blog/how-to-merge-pdf-on-windows",
+      "/blog/how-to-protect-pdf-from-editing",
+      "/blog/how-to-remove-password-from-pdf",
+      "/blog/how-to-rotate-pdf",
+      "/blog/how-to-secure-pdf-before-sending-email",
+      "/blog/how-to-split-pdf-online",
+      "/blog/ilovepdf-alternative",
+      "/blog/merge-pdf-on-iphone",
+      "/blog/pdf-compression-real-test-results",
+      "/blog/pdf-file-size-too-large",
+      "/blog/pdf-security-guide",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/pdf-vs-word-which-is-better",
+      "/blog/secure-pdf-on-mac",
+      "/blog/smallpdf-alternative",
+      "/blog/why-is-my-pdf-locked"
+    ],
+    "type": "navigation/trust",
+    "purpose": "Find a guide",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/blog/how-browser-based-pdf-processing-works",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/blog/adobe-acrobat-alternative-free",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/pdf-to-image",
+      "/blog/how-to-edit-pdf-free",
+      "/tools/protect-pdf",
+      "/blog/how-to-add-password-to-pdf-online",
+      "/#tools"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "See which PDF tasks PDFcraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/best-free-pdf-tools-online",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image",
+      "/tools/jpg-to-pdf",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/#tools"
+    ],
+    "incoming": [
+      "/",
+      "/blog",
+      "/tools/add-page-numbers"
+    ],
+    "type": "article",
+    "purpose": "A practical guide to all 13 PDFcraft tools, supported formats, controls, and limitations.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/compress-pdf-without-losing-quality",
+    "links": [
+      "/blog",
+      "/tools/compress-pdf",
+      "/blog/pdf-compression-real-test-results"
+    ],
+    "incoming": [
+      "/",
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Try structural PDF compression without explicit image downsampling. Compare sizes and inspect the output; savings are not guaranteed.",
+    "pillar": "Compression and file size",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/convert-pdf-to-jpg-free",
+    "links": [
+      "/blog",
+      "/tools/pdf-to-image"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/pdf-to-image"
+    ],
+    "type": "article",
+    "purpose": "Render PDF pages to JPG or PNG at a fixed 2x scale. Learn the raster-quality limits, password requirements, and download behavior.",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/pdf-to-image",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/convert-pdf-to-png-free",
+    "links": [
+      "/blog",
+      "/tools/pdf-to-image"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised.",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/pdf-to-image",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-browser-based-pdf-processing-works",
+    "links": [
+      "/blog",
+      "/privacy",
+      "/tools/protect-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/compress-pdf",
+      "/#tools"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/ilovepdf-alternative",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/tools/add-page-numbers",
+      "/tools/compress-pdf",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/pdf-to-image",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages",
+      "/tools/rotate-pdf",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "article",
+    "purpose": "Follow PDFcraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests.",
+    "pillar": "How it works and measured results",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-add-password-to-pdf-online",
+    "links": [
+      "/blog",
+      "/tools/protect-pdf",
+      "/blog/how-to-secure-pdf-before-sending-email"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/blog/secure-pdf-on-mac",
+      "/tools/protect-pdf"
+    ],
+    "type": "article",
+    "purpose": "Add tested AES-256 password encryption to an unencrypted PDF. Verify the output and understand access-control limitations.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-add-watermark-to-pdf",
+    "links": [
+      "/blog",
+      "/tools/watermark-pdf",
+      "/blog/pdf-security-guide"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/watermark-pdf"
+    ],
+    "type": "article",
+    "purpose": "Add a text watermark with opacity control. Placement, angle, and size follow fixed behavior; watermarking does not prevent editing.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/watermark-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-combine-pdf-and-images",
+    "links": [
+      "/blog",
+      "/tools/jpg-to-pdf",
+      "/tools/merge-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-convert-jpg-to-pdf"
+    ],
+    "type": "article",
+    "purpose": "Convert JPEG/JPG and PNG images to PDF, merge in insertion order, then adjust pages with Up/Down controls.",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/jpg-to-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-convert-jpg-to-pdf",
+    "links": [
+      "/blog",
+      "/tools/jpg-to-pdf",
+      "/blog/how-to-combine-pdf-and-images"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/jpg-to-pdf"
+    ],
+    "type": "article",
+    "purpose": "Convert validated JPEG/JPG and PNG images into PDF pages. Check insertion order and physical page dimensions before sharing.",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/jpg-to-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-edit-pdf-free",
+    "links": [
+      "/blog",
+      "/tools/reorder-pages",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/pdf-vs-word-which-is-better"
+    ],
+    "type": "article",
+    "purpose": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/reorder-pages",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-extract-pages-from-pdf",
+    "links": [
+      "/blog",
+      "/tools/split-pdf",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-split-pdf-online",
+      "/tools/delete-pages"
+    ],
+    "type": "article",
+    "purpose": "Extract selected pages with Split PDF. Each comma-separated item creates a separate file; merge outputs when you need one combined selection.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/split-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-lock-pdf-for-job-applications",
+    "links": [
+      "/blog",
+      "/blog/how-to-add-password-to-pdf-online",
+      "/blog/pdf-file-size-too-large",
+      "/tools/protect-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/pdf-vs-word-which-is-better"
+    ],
+    "type": "article",
+    "purpose": "Check submission requirements before password-protecting application PDFs. Verify format, size, and recipient access.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-merge-pdf-free",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages"
+    ],
+    "incoming": [
+      "/",
+      "/blog",
+      "/blog/how-to-merge-pdf-on-mac",
+      "/blog/how-to-merge-pdf-on-windows",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages"
+    ],
+    "type": "article",
+    "purpose": "Combine PDFs in insertion order with PDFcraft. Check page order, encrypted inputs, and practical browser limits.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-merge-pdf-on-mac",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages",
+      "/blog/how-to-merge-pdf-free"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-merge-pdf-on-windows",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages",
+      "/blog/how-to-merge-pdf-free"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-protect-pdf-from-editing",
+    "links": [
+      "/blog",
+      "/tools/protect-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/why-is-my-pdf-locked"
+    ],
+    "type": "article",
+    "purpose": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-remove-password-from-pdf",
+    "links": [
+      "/blog",
+      "/tools/unlock-pdf",
+      "/blog/why-is-my-pdf-locked"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/unlock-pdf"
+    ],
+    "type": "article",
+    "purpose": "Unlock an authorized PDF with its correct password. Understand error messages, output checks, and what the tool cannot recover.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/unlock-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-rotate-pdf",
+    "links": [
+      "/blog",
+      "/tools/rotate-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/rotate-pdf"
+    ],
+    "type": "article",
+    "purpose": "Apply 90, 180, or 270 degrees of additional rotation to all pages. PDFcraft does not provide selected-page rotation.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/rotate-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-secure-pdf-before-sending-email",
+    "links": [
+      "/blog",
+      "/tools/compress-pdf",
+      "/tools/protect-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-add-password-to-pdf-online"
+    ],
+    "type": "article",
+    "purpose": "Prepare an unencrypted copy, try compression if needed, then password-protect it. Check the recipient and final attachment requirements.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/how-to-split-pdf-online",
+    "links": [
+      "/blog",
+      "/tools/split-pdf",
+      "/blog/how-to-extract-pages-from-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/split-pdf"
+    ],
+    "type": "article",
+    "purpose": "Split into individual pages or explicit ranges. Each comma-separated item creates a separate PDF; equal splitting is not automatic.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/split-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/ilovepdf-alternative",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/pdf-to-image",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/#tools"
+    ],
+    "incoming": [
+      "/",
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Evaluate PDFcraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/merge-pdf-on-iphone",
+    "links": [
+      "/blog",
+      "/tools/merge-pdf",
+      "/tools/reorder-pages"
+    ],
+    "incoming": [
+      "/",
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Merge PDFs in insertion order using an iPhone browser. Check browser support and locate downloads through your chosen settings.",
+    "pillar": "Merge and page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/pdf-compression-real-test-results",
+    "links": [
+      "/blog",
+      "/tools/compress-pdf",
+      "/blog/pdf-file-size-too-large"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/compress-pdf-without-losing-quality",
+      "/tools/compress-pdf"
+    ],
+    "type": "article",
+    "purpose": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks.",
+    "pillar": "How it works and measured results",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/pdf-file-size-too-large",
+    "links": [
+      "/blog",
+      "/tools/compress-pdf",
+      "/tools/split-pdf"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/blog/pdf-compression-real-test-results",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/tools/pdf-to-grayscale"
+    ],
+    "type": "article",
+    "purpose": "Diagnose a large PDF, compare structural compression, and consider page ranges or source export settings without promised savings.",
+    "pillar": "Compression and file size",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/pdf-security-guide",
+    "links": [
+      "/blog",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/blog/why-is-my-pdf-locked"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-add-watermark-to-pdf"
+    ],
+    "type": "article",
+    "purpose": "Distinguish opening-password encryption, visible labels, and signatures. Understand PDFcraft’s security and redaction limitations.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/pdf-tool-not-working-troubleshooting",
+    "links": [
+      "/blog",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/unlock-pdf",
+      "/blog/why-is-my-pdf-locked",
+      "/blog/pdf-file-size-too-large",
+      "/#tools"
+    ],
+    "incoming": [
+      "/blog",
+      "/tools/add-page-numbers",
+      "/tools/compress-pdf",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/pdf-to-image",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages",
+      "/tools/rotate-pdf",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "article",
+    "purpose": "Check actual errors, input validity, encrypted documents, browser resources, runtime downloads, and output-download settings.",
+    "pillar": "How it works and measured results",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/unlock-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/pdf-vs-word-which-is-better",
+    "links": [
+      "/blog",
+      "/blog/how-to-edit-pdf-free",
+      "/tools/merge-pdf",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/"
+    ],
+    "incoming": [
+      "/",
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Choose fixed-layout PDF or an editable document format according to recipient needs, with realistic compatibility and security limits.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/secure-pdf-on-mac",
+    "links": [
+      "/blog",
+      "/tools/protect-pdf",
+      "/blog/how-to-add-password-to-pdf-online"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Try PDFcraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/smallpdf-alternative",
+    "links": [
+      "/blog",
+      "/tools/compress-pdf",
+      "/tools/rotate-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-image",
+      "/privacy"
+    ],
+    "incoming": [
+      "/blog"
+    ],
+    "type": "article",
+    "purpose": "Consider PDFcraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability.",
+    "pillar": "Choose a tool or document workflow",
+    "orphanRisk": "Blog index only",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/blog/why-is-my-pdf-locked",
+    "links": [
+      "/blog",
+      "/tools/unlock-pdf",
+      "/blog/how-to-protect-pdf-from-editing"
+    ],
+    "incoming": [
+      "/blog",
+      "/blog/how-to-remove-password-from-pdf",
+      "/blog/pdf-security-guide",
+      "/blog/pdf-tool-not-working-troubleshooting"
+    ],
+    "type": "article",
+    "purpose": "Distinguish password prompts, editing restrictions, viewer limitations, and damaged files before trying to unlock a PDF.",
+    "pillar": "Security and sharing",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/unlock-pdf",
+    "pattern": "Shared generic CTA; task-specific body retained"
+  },
+  {
+    "route": "/contact",
+    "links": [
+      "/#tools"
+    ],
+    "incoming": [
+      "/about",
+      "/privacy",
+      "/terms"
+    ],
+    "type": "navigation/trust",
+    "purpose": "Contact or report a correction",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/#tools",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/privacy",
+    "links": [
+      "/contact"
+    ],
+    "incoming": [
+      "/",
+      "/about",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/blog/smallpdf-alternative",
+      "/terms"
+    ],
+    "type": "navigation/trust",
+    "purpose": "Understand data practices",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/contact",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/terms",
+    "links": [
+      "/privacy",
+      "/contact"
+    ],
+    "incoming": [
+      "/about"
+    ],
+    "type": "navigation/trust",
+    "purpose": "Read service terms",
+    "pillar": "PDF Tools / site information",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/privacy",
+    "pattern": "Index/site navigation"
+  },
+  {
+    "route": "/tools/add-page-numbers",
+    "links": [
+      "/blog/best-free-pdf-tools-online",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/tools/merge-pdf",
+      "/tools/split-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-edit-pdf-free",
+      "/tools/compress-pdf",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Draw sequential numbers onto the pages",
+    "pillar": "Size and output appearance",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/reorder-pages",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/compress-pdf",
+    "links": [
+      "/blog/pdf-compression-real-test-results",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/protect-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/compress-pdf-without-losing-quality",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/blog/how-to-secure-pdf-before-sending-email",
+      "/blog/pdf-compression-real-test-results",
+      "/blog/pdf-file-size-too-large",
+      "/blog/smallpdf-alternative",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "What this compressor actually changes",
+    "pillar": "Size and output appearance",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/pdf-to-image",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/delete-pages",
+    "links": [
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/tools/merge-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-edit-pdf-free",
+      "/tools/compress-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/split-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Remove selected page positions and clean their navigation",
+    "pillar": "Page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/add-page-numbers",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/jpg-to-pdf",
+    "links": [
+      "/blog/how-to-convert-jpg-to-pdf",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-combine-pdf-and-images",
+      "/blog/how-to-convert-jpg-to-pdf",
+      "/tools/compress-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/split-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Turn supported images into PDF pages",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/delete-pages",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/merge-pdf",
+    "links": [
+      "/blog/how-to-merge-pdf-free",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/split-pdf",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-combine-pdf-and-images",
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/how-to-merge-pdf-free",
+      "/blog/how-to-merge-pdf-on-mac",
+      "/blog/how-to-merge-pdf-on-windows",
+      "/blog/ilovepdf-alternative",
+      "/blog/merge-pdf-on-iphone",
+      "/blog/pdf-vs-word-which-is-better",
+      "/blog/smallpdf-alternative",
+      "/tools/add-page-numbers",
+      "/tools/compress-pdf",
+      "/tools/delete-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Combining pages without losing their place",
+    "pillar": "Page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/split-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/pdf-to-grayscale",
+    "links": [
+      "/blog/pdf-file-size-too-large",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/add-page-numbers",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/reorder-pages",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Grayscale through rendered page images",
+    "pillar": "Size and output appearance",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/protect-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/pdf-to-image",
+    "links": [
+      "/blog/convert-pdf-to-jpg-free",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages"
+    ],
+    "incoming": [
+      "/",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/convert-pdf-to-jpg-free",
+      "/blog/convert-pdf-to-png-free",
+      "/blog/ilovepdf-alternative",
+      "/blog/smallpdf-alternative",
+      "/tools/compress-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Render complete PDF pages as images",
+    "pillar": "Image rendering and PDF creation",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/rotate-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/protect-pdf",
+    "links": [
+      "/blog/how-to-add-password-to-pdf-online",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/unlock-pdf",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/blog/how-to-add-password-to-pdf-online",
+      "/blog/how-to-lock-pdf-for-job-applications",
+      "/blog/how-to-protect-pdf-from-editing",
+      "/blog/how-to-secure-pdf-before-sending-email",
+      "/blog/pdf-security-guide",
+      "/blog/secure-pdf-on-mac",
+      "/tools/add-page-numbers",
+      "/tools/compress-pdf",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/reorder-pages",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Add an opening password with qpdf",
+    "pillar": "Password access",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/unlock-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/reorder-pages",
+    "links": [
+      "/blog/how-to-merge-pdf-free",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/unlock-pdf",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/compress-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-edit-pdf-free",
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/how-to-merge-pdf-free",
+      "/blog/how-to-merge-pdf-on-mac",
+      "/blog/how-to-merge-pdf-on-windows",
+      "/blog/merge-pdf-on-iphone",
+      "/tools/add-page-numbers",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Move pages while keeping supported targets attached",
+    "pillar": "Page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/pdf-to-grayscale",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/rotate-pdf",
+    "links": [
+      "/blog/how-to-rotate-pdf",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-rotate-pdf",
+      "/blog/smallpdf-alternative",
+      "/tools/compress-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-image",
+      "/tools/protect-pdf",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Change page orientation without rendering new page images",
+    "pillar": "Page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/watermark-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/split-pdf",
+    "links": [
+      "/blog/how-to-split-pdf-online",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages"
+    ],
+    "incoming": [
+      "/",
+      "/blog/adobe-acrobat-alternative-free",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-extract-pages-from-pdf",
+      "/blog/how-to-split-pdf-online",
+      "/blog/ilovepdf-alternative",
+      "/blog/pdf-file-size-too-large",
+      "/tools/add-page-numbers",
+      "/tools/compress-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Choose exactly which pages each output contains",
+    "pillar": "Page management",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/compress-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/unlock-pdf",
+    "links": [
+      "/blog/how-to-remove-password-from-pdf",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/merge-pdf",
+      "/tools/split-pdf",
+      "/tools/compress-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/watermark-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-remove-password-from-pdf",
+      "/blog/pdf-security-guide",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/why-is-my-pdf-locked",
+      "/tools/add-page-numbers",
+      "/tools/delete-pages",
+      "/tools/jpg-to-pdf",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf",
+      "/tools/reorder-pages"
+    ],
+    "type": "tool",
+    "purpose": "Remove encryption using a password you know",
+    "pillar": "Password access",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/merge-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  },
+  {
+    "route": "/tools/watermark-pdf",
+    "links": [
+      "/blog/how-to-add-watermark-to-pdf",
+      "/blog/pdf-tool-not-working-troubleshooting",
+      "/blog/how-browser-based-pdf-processing-works",
+      "/tools/jpg-to-pdf",
+      "/tools/delete-pages",
+      "/tools/add-page-numbers",
+      "/tools/reorder-pages",
+      "/tools/pdf-to-grayscale",
+      "/tools/protect-pdf"
+    ],
+    "incoming": [
+      "/",
+      "/blog/best-free-pdf-tools-online",
+      "/blog/how-to-add-watermark-to-pdf",
+      "/blog/how-to-protect-pdf-from-editing",
+      "/tools/compress-pdf",
+      "/tools/merge-pdf",
+      "/tools/pdf-to-image",
+      "/tools/rotate-pdf",
+      "/tools/split-pdf",
+      "/tools/unlock-pdf"
+    ],
+    "type": "tool",
+    "purpose": "Place a text label across each page",
+    "pillar": "Size and output appearance",
+    "orphanRisk": "Discovered through contextual or index links",
+    "nextAction": "/tools/jpg-to-pdf",
+    "pattern": "Same two generic help links and six array-position-selected tools"
+  }
+]

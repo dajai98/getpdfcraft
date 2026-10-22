@@ -26,16 +26,16 @@ export default function MergePDF() {
     const resultVersion = beginResult();
     setProcessing(true);
     try {
+      const { copyPagesWithNavigation } = await import("@/lib/copyPdfPagesSafe");
       const { PDFDocument } = await import("pdf-lib");
-      const merged = await PDFDocument.create();
+      const sources = [];
       for (const file of files) {
         const doc = await PDFDocument.load(await file.arrayBuffer());
-        const pages = await merged.copyPages(doc, doc.getPageIndices());
-        pages.forEach(p => merged.addPage(p));
+        sources.push({ doc, order: doc.getPageIndices() });
       }
-      const blob = new Blob([await merged.save()], { type: "application/pdf" });
+      const blob = new Blob([await copyPagesWithNavigation(sources)], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { alert("Error merging. Make sure files are not password protected."); }
+    } catch(e) { alert(e.code === "PDF_NAVIGATION" ? e.message : "Error merging. Make sure files are not password protected."); }
     setProcessing(false);
   };
 

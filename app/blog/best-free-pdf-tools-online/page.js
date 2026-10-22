@@ -5,10 +5,123 @@ export const metadata = blogMetadata("best-free-pdf-tools-online");
 
 const article = {
   "title": "13 Free PDFcraft Tools: What Each One Actually Does",
-  "intro": "Choose a PDF tool by the result you need. PDFcraft currently offers 13 free tools with no account required. This guide describes their actual scope rather than ranking them against other products.",
+  "intro": "The useful tool is the one that produces the result you need without losing a feature you rely on. This is a task map for PDFcraft's 13 tools, not an objective ranking of competing products or a claim that one site covers every PDF workflow.",
   "sections": [
     {
-      "heading": "Choose one of the 13 tools",
+      "heading": "Organize the document",
+      "table": {
+        "headers": [
+          "Task",
+          "Tool and control",
+          "Boundary"
+        ],
+        "rows": [
+          [
+            "Append complete files",
+            "Merge: insertion order",
+            "Supported navigation is rebuilt; AcroForm and other unsupported structures are rejected."
+          ],
+          [
+            "Create separate page groups",
+            "Split: individual pages or explicit ranges",
+            "One file per comma-separated item, not one combined selection."
+          ],
+          [
+            "Change sequence",
+            "Reorder: Up/Down controls",
+            "No thumbnail or drag-order interface."
+          ],
+          [
+            "Remove visible pages",
+            "Delete: numbered selection",
+            "At least one page remains; not sanitization."
+          ],
+          [
+            "Turn every page",
+            "Rotate: additional 90/180/270 degrees",
+            "No selected-page rotation."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Change representation or add content",
+      "table": {
+        "headers": [
+          "Task",
+          "Tool",
+          "Trade-off"
+        ],
+        "rows": [
+          [
+            "Compare byte size",
+            "Compress",
+            "Object-stream rewrite; may grow and has no target-size control."
+          ],
+          [
+            "Make page pictures",
+            "PDF to Image",
+            "JPG/PNG at scale 2; text and vectors become pixels."
+          ],
+          [
+            "Collect pictures as pages",
+            "JPG to PDF",
+            "JPEG/PNG only; one image per page using its dimensions."
+          ],
+          [
+            "Make image-based gray pages",
+            "Grayscale",
+            "Rasterization and JPEG encoding lose text/link/form/vector semantics."
+          ],
+          [
+            "Draw a sequence",
+            "Add Page Numbers",
+            "Visible overlays do not update page-label metadata."
+          ],
+          [
+            "Label document status",
+            "Watermark",
+            "Text/opacity controls with automatic fitting; not security."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Control an opening password",
+      "table": {
+        "headers": [
+          "Tool",
+          "Implemented behavior",
+          "Not provided"
+        ],
+        "rows": [
+          [
+            "Protect",
+            "AES-256 with the same user/owner password; printing and extraction allowed.",
+            "Separate permissions controls or tamper-proof output."
+          ],
+          [
+            "Unlock",
+            "qpdf decryption with the supplied known password.",
+            "Unknown-password recovery or signature repair."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Choose by the feature you cannot afford to lose",
+      "text": "A form requiring interaction is a poor input for page-copy tools that reject AcroForm. A searchable report should not be converted to Grayscale merely because a smaller file is desired: full-page JPEGs can grow. If you need existing-paragraph editing, font replacement, OCR, Word/Excel conversion or signing, PDFcraft is not enough."
+    },
+    {
+      "heading": "Build a short workflow rather than running every tool",
+      "text": "For a cover plus report, merge first and inspect boundaries. Add numbering only if the printed sequence needs changing. For a photo attachment, decide whether the recipient wants an image or a PDF before converting. Every extra rewrite creates another output to verify."
+    },
+    {
+      "heading": "No account does not mean no dependencies",
+      "text": "The current tools are free with no account requirement. Document operations run locally, while website resources and some runtimes load over the network. Browser memory and input complexity impose practical limits. Internal Node evidence is not a universal device-compatibility test."
+    },
+    {
+      "heading": "Open the tool you selected",
       "list": [
         {
           "text": "Merge PDF: combines PDFs in insertion order; no drag reordering",
@@ -35,7 +148,7 @@ const article = {
           "href": "/tools/rotate-pdf"
         },
         {
-          "text": "Watermark PDF: text and opacity controls; fixed placement/angle/size behavior",
+          "text": "Watermark PDF: text and opacity with automatic fitting",
           "href": "/tools/watermark-pdf"
         },
         {
@@ -63,36 +176,16 @@ const article = {
           "href": "/tools/unlock-pdf"
         }
       ]
-    },
-    {
-      "heading": "Keep the distinction between pages and document semantics",
-      "text": "Page operations and conversions are not a full PDF editor. Grayscale rasterizes pages, so searchable/selectable text, links, forms, bookmarks, signatures, and other PDF semantics are not preserved as such. Its output may grow. Delete Pages removes pages from the visible structure; it is not secure content purging."
-    },
-    {
-      "heading": "Watch output size and password requirements",
-      "text": "Compress PDF loads and saves the document with object streams. It performs structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output can be smaller, unchanged, or larger. Keep the original and compare both size and usability before replacing it. Protect is not a read-only or tamper-proof mechanism. Unlock does not crack unknown passwords."
-    },
-    {
-      "heading": "What free and local mean here",
-      "text": "PDFcraft processes document contents locally in your browser without a PDF-processing upload backend. That does not mean the page makes no network requests: website resources load over the internet, and some tools download processing components. Advertising resources load after acceptance in the consent banner. Practical limits depend on browser support, device memory, and document complexity. PDFcraft adds no branding watermark, although Watermark PDF adds the text you explicitly request."
-    },
-    {
-      "heading": "Before relying on an output",
-      "text": "Keep the original. Open the result, count pages, inspect orientation and content, and check any features you need. A successful download does not establish that a complex document retained every feature."
     }
   ],
   "faqs": [
     {
-      "q": "Does PDFcraft have a signing or OCR tool?",
-      "a": "No. It does not currently provide an e-signature tool, OCR, or editing of existing PDF text."
+      "q": "Which tool is best for a smaller email attachment?",
+      "a": "First compare Compress output with the original. If the saving is insufficient, decide whether you can omit pages or re-export from the source; rasterizing a document is not a reliable size shortcut."
     },
     {
-      "q": "Can any file size be processed?",
-      "a": "Browser and device resources impose practical limits. Large or complex files may fail, even without an application-level size quota."
-    },
-    {
-      "q": "Which image inputs does JPG to PDF accept?",
-      "a": "JPEG/JPG and PNG only. Other formats need conversion elsewhere before using that tool."
+      "q": "Does choosing a free tool remove the need to inspect the result?",
+      "a": "No. Check the property relevant to your task: page order, target links, image detail or password access. Price does not establish feature preservation."
     }
   ],
   "ctaHref": "/#tools",
@@ -104,6 +197,4 @@ const article = {
   "readTime": "3 min read"
 };
 
-export default function Post() {
-  return <BlogPost {...article} />;
-}
+export default function Post() { return <BlogPost {...article} />; }

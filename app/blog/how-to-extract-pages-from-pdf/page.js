@@ -5,54 +5,54 @@ export const metadata = blogMetadata("how-to-extract-pages-from-pdf");
 
 const article = {
   "title": "How to Extract Selected PDF Pages and Ranges",
-  "intro": "If you need only selected pages from a larger document, use Split PDF in Page Ranges mode. The key detail is how the list is interpreted: each comma-separated page or range becomes its own PDF. Non-consecutive selections are not automatically combined into one file.",
+  "intro": "Extraction in PDFcraft uses Split PDF, not a separate extraction engine. Use it to prepare a focused packet from a longer source, then decide whether you need separate excerpts or one combined PDF.",
   "sections": [
     {
-      "heading": "Extract a selection",
+      "heading": "Example: a cover plus two evidence sections",
       "steps": [
         {
-          "title": "Choose the source PDF",
-          "body": "Open Split PDF and select a valid, unencrypted PDF. Use the document’s page count to check your selection."
+          "title": "Map labels to physical positions",
+          "body": "Suppose the cover is page 1 and the required sections occupy positions 4-6 and 12-14. Count from the first physical page, not from printed chapter numbering."
         },
         {
-          "title": "Choose Page Ranges",
-          "body": "Enter 2-5 for one four-page PDF. Enter 1,3-5,9 for three outputs: page 1, pages 3 through 5, and page 9."
+          "title": "Extract the groups",
+          "body": "Enter 1,4-6,12-14 in range mode. This produces three outputs containing one, three and three pages; it does not create one seven-page file."
         },
         {
-          "title": "Split and download each result",
-          "body": "Click Split PDF. Download the required output files individually and check their visible pages against your source."
+          "title": "Assemble only if needed",
+          "body": "To make one packet, add those three PDFs to Merge in the desired order. The insertion sequence controls the result. Reopen it and inspect each join."
         }
       ]
     },
     {
-      "heading": "Combine non-consecutive pages into one file",
-      "text": "For one PDF containing pages 1, 3, and 7, first split with 1,3,7. Then add the three resulting PDFs to Merge in the order you want. Merge uses insertion order and has no drag reordering; use Reorder Pages with Up/Down controls afterward if needed."
+      "heading": "Selection order has two levels",
+      "text": "Comma-separated groups follow the order you enter. Pages inside a range remain in ascending source order. Entering 6-4 is rejected, not interpreted as reverse order. If a final packet needs another sequence, use Reorder with its Up/Down controls after assembly."
     },
     {
-      "heading": "Use physical page positions",
-      "text": "Enter page positions starting at 1, not a printed chapter number or Roman-numeral label. Blank items, reversed ranges, non-integer values, and pages beyond the document count are rejected. For example, 5-2 is not a way to reverse pages."
+      "heading": "A removed destination does not return when you merge excerpts",
+      "text": "Split retains a local navigation target only when it exists in that particular output. Targets outside it are cleaned; the tool does not invent a link to another output. Merging those extracts later does not reconstruct links that were already removed. If navigation between separated sections is essential, evaluate that requirement before splitting."
     },
     {
-      "heading": "Check content before sharing",
-      "text": "The source file is not overwritten by the tool. However, extraction is not a secure-redaction or sanitization guarantee. Check the output for the content and document features you intend to share; page selection alone is not evidence that all sensitive information has been purged."
+      "heading": "Forms and unusual navigation need a different plan",
+      "text": "The safe page-copy path rejects AcroForm input, linked annotations and unsupported structures. An action chain that includes an omitted local target may fail closed rather than being partially retained. All split outputs must pass serialization/reopen validation before downloads are exposed."
     },
     {
-      "heading": "Encrypted and large documents",
-      "text": "Unlock an authorized encrypted input with its correct password before splitting. Large or complex inputs may exceed browser resources; there is no promise of processing any document."
+      "heading": "A focused packet is not proof of sanitization",
+      "text": "Selecting fewer pages reduces visible scope, not necessarily every recoverable copy of information in PDF objects. Inspect the output for intended content and use a separately verified redaction workflow where irreversible removal is required. Preserve the complete original and do not assume signature validity survives extraction."
     },
     {
-      "heading": "Tools for selective extraction",
+      "heading": "Continue with the appropriate tool",
       "list": [
         {
-          "text": "Extract with Split PDF",
+          "text": "Extract the selected ranges",
           "href": "/tools/split-pdf"
         },
         {
-          "text": "Combine the extracted files with Merge",
+          "text": "Join the extracted PDFs",
           "href": "/tools/merge-pdf"
         },
         {
-          "text": "Change page order with Up/Down controls",
+          "text": "Move pages in the assembled packet",
           "href": "/tools/reorder-pages"
         }
       ]
@@ -60,16 +60,12 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "Does 1,3,7 create a single three-page PDF?",
-      "a": "No. It creates three separate one-page PDFs. Merge those outputs if you need a single combined file."
+      "q": "Will 12-14,1 put the cover last?",
+      "a": "It creates the three-page range output first and a separate page-1 output second. To obtain one PDF with that order, merge those outputs in the same sequence."
     },
     {
-      "q": "Can I extract a consecutive range as one PDF?",
-      "a": "Yes. A single range such as 2-5 produces one PDF containing those four pages."
-    },
-    {
-      "q": "Does extraction securely remove excluded confidential material?",
-      "a": "Do not rely on it for that purpose. PDFcraft does not provide a secure-redaction or sanitization guarantee."
+      "q": "Why is a cross-section bookmark missing after assembly?",
+      "a": "Its target may have been omitted from the individual split output and cleaned there. A later merge cannot recover navigation absent from its input."
     }
   ],
   "ctaHref": "/tools/split-pdf",
@@ -81,6 +77,4 @@ const article = {
   "readTime": "2 min read"
 };
 
-export default function Post() {
-  return <BlogPost {...article} />;
-}
+export default function Post() { return <BlogPost {...article} />; }

@@ -1,0 +1,126 @@
+{
+  "opens": true,
+  "pageCount": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "identities": [],
+      "viewBox": [
+        0,
+        0,
+        400,
+        500
+      ],
+      "rotation": 0,
+      "physical": [
+        400,
+        500
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 0
+    },
+    {
+      "page": 2,
+      "text": "",
+      "identities": [],
+      "viewBox": [
+        0,
+        0,
+        340,
+        450
+      ],
+      "rotation": 0,
+      "physical": [
+        340,
+        450
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 0
+    },
+    {
+      "page": 3,
+      "text": "",
+      "identities": [],
+      "viewBox": [
+        0,
+        0,
+        450,
+        550
+      ],
+      "rotation": 0,
+      "physical": [
+        450,
+        550
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 0
+    }
+  ],
+  "boxes": [
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "rotation": 0
+    },
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 340,
+        "height": 450
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 340,
+        "height": 450
+      },
+      "rotation": 0
+    },
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "rotation": 0
+    }
+  ],
+  "fields": null,
+  "outlines": [],
+  "metadata": {
+    "PDFFormatVersion": "1.7",
+    "Language": null,
+    "EncryptFilterName": null,
+    "IsLinearized": false,
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "IsCollectionPresent": false,
+    "IsSignaturesPresent": false,
+    "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "ModDate": "D:20261016184132Z",
+    "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "CreationDate": "D:20261016184132Z"
+  }
+}

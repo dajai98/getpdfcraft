@@ -1,0 +1,54 @@
+{
+  "runId": "preservation-20261018-postrepair-02",
+  "fixtureId": "form",
+  "operation": "compress-pdf",
+  "expected": "Load/save with useObjectStreams:true; no guaranteed reduction",
+  "options": {
+    "useObjectStreams": true
+  },
+  "inputs": [
+    {
+      "path": "form.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7",
+      "bytes": 2937
+    }
+  ],
+  "outputs": [
+    {
+      "path": "form-compress-pdf-1.pdf",
+      "sha256": "02d9142a6425f94e92e1eeede12125bb576b374c4bab9ecebfcd86d84bbb4a6f",
+      "bytes": 2988,
+      "inspection": "form-compress-pdf-1.inspection.json",
+      "inspectionSha256": "2ef1d35a94cfa51f92b8ff0bf2799140012d882eff2b2fd0ee04bafcd7164fdb",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "PRESERVED",
+        "text": "PRESERVED",
+        "imageContent": "NOT TESTED",
+        "vectorSemantics": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorOperatorCounts": "PRESERVED",
+        "localNavigation": "NOT TESTED",
+        "namedDestinations": "NOT TESTED",
+        "outlines": "NOT TESTED",
+        "externalRemoteLinks": "NOT TESTED",
+        "forms": "PRESERVED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "PRESERVED",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "Reset / choose another PDFOutput is larger — keep your original if size is your goal2,937 bytes → 2,988 bytes51 bytes larger",
+  "alerts": []
+}

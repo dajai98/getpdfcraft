@@ -1,0 +1,67 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 1,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 300,
+        "heightPoints": 300,
+        "rotation": 0,
+        "text": "MINIMAL SIZE CONTROL",
+        "textSha256": "d317d5804e0305c1925a29f1c1b2c38211f13bbedc7c6678dd8ce6ae992ff134",
+        "textCharacters": 20,
+        "operatorCount": 6,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.4",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 1,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 300,
+        "heightPoints": 300,
+        "rotation": 0,
+        "text": "MINIMAL SIZE CONTROL",
+        "textSha256": "d317d5804e0305c1925a29f1c1b2c38211f13bbedc7c6678dd8ce6ae992ff134",
+        "textCharacters": 20,
+        "operatorCount": 6,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "ModDate": "D:20261015123735Z",
+      "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "CreationDate": "D:20261015123735Z"
+    }
+  },
+  "images": {
+    "before": [],
+    "after": []
+  },
+  "warnings": []
+}

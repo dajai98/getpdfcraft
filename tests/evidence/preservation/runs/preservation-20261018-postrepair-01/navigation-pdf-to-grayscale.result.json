@@ -1,0 +1,54 @@
+{
+  "runId": "preservation-20261018-postrepair-01",
+  "fixtureId": "navigation",
+  "operation": "pdf-to-grayscale",
+  "expected": "Render 1.5x, grayscale JPEG quality 0.9; rasterize semantics",
+  "options": {
+    "scale": 1.5,
+    "jpegQuality": 0.9
+  },
+  "inputs": [
+    {
+      "path": "navigation.pdf",
+      "sha256": "92a3fd5dcb440b3d82763d3b4409ca4c0bb83cc2ae53181d4d4513d50d45d438",
+      "bytes": 3542
+    }
+  ],
+  "outputs": [
+    {
+      "path": "navigation-pdf-to-grayscale-1.pdf",
+      "sha256": "3a7778cc14bd16bc8165ba28b91b57940d47b64e6a32d67da47d5dc79995d7f6",
+      "bytes": 25805,
+      "inspection": "navigation-pdf-to-grayscale-1.inspection.json",
+      "inspectionSha256": "da5b94eff7051df9a11755e04a0f7fa987367afbacf1a02c26a60c02d190d8ab",
+      "pageCount": 3,
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "matrix": {
+        "pageOrder": "NOT TESTED",
+        "text": "EXPECTED CHANGE",
+        "imageContent": "NOT TESTED",
+        "imageOperatorCounts": "PRESERVED",
+        "vectorSemantics": "EXPECTED CHANGE",
+        "localNavigation": "EXPECTED CHANGE",
+        "namedDestinations": "EXPECTED CHANGE",
+        "outlines": "EXPECTED CHANGE",
+        "externalRemoteLinks": "EXPECTED CHANGE",
+        "forms": "NOT TESTED",
+        "metadata": "EXPECTED CHANGE",
+        "geometry": "EXPECTED CHANGE",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED",
+        "browserDownload": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "handlerText": "Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.📄navigation.pdf✕◑ Convert to Grayscale✅Converted to grayscale!",
+  "alerts": []
+}

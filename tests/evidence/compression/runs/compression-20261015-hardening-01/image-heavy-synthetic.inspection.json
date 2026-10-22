@@ -1,0 +1,158 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 4,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib 1.17.1 fixture generator",
+      "ModDate": "D:20200101000000Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 4,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 612,
+        "heightPoints": 792,
+        "rotation": 0,
+        "text": "",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "operatorCount": 8,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "ModDate": "D:20261015193116Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "images": {
+    "before": [
+      {
+        "sha256": "2eac462433dea0f910cbe5f49e237c256a931326b83a3510ad2c390a6370fad6",
+        "bytes": 2360022,
+        "width": "768",
+        "height": "1024"
+      }
+    ],
+    "after": [
+      {
+        "sha256": "2eac462433dea0f910cbe5f49e237c256a931326b83a3510ad2c390a6370fad6",
+        "bytes": 2360022,
+        "width": "768",
+        "height": "1024"
+      }
+    ]
+  },
+  "warnings": [],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

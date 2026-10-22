@@ -1,0 +1,232 @@
+{
+  "before": {
+    "opens": true,
+    "pageCount": 8,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 1\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "95f4bec83ce5bf40c59742b6588b675ae99c4b821372cd939f219289eedd554d",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 2\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "36d3a387a688d4358f7fe58409a9dcdb1743c5f4069f90d65febb3a378e9f187",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 3\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "a240f2e6d01df5a21f9eabf5b8a16efa28865291be5b124b7cde0097aad21c11",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 4\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "c6052b3c5a6b2892180df5b7a544b1737867a5db1fb242ef31cc57d98badfd45",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 5,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 5\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "9410e3e3e3e24ec6278b3c33f18d081002ece2e16c4c42fd6612d351cec6d511",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 6\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "eef9f7645f7063192f56a6916659c686def2c2ecf740f2ea14ed9052976855d6",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 7,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 7\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "7d15f9b5b88c92415c747576d4149b993954a86544e2371cc90ae53f2027c0ce",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 8,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 8\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "fc155bb1e263fae39967240ec6deb324a82d73a37abba23abbfa07da0566f5df",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib 1.17.1 fixture generator",
+      "ModDate": "D:20200101000000Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "after": {
+    "opens": true,
+    "pageCount": 8,
+    "pages": [
+      {
+        "page": 1,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 1\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "95f4bec83ce5bf40c59742b6588b675ae99c4b821372cd939f219289eedd554d",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 2,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 2\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "36d3a387a688d4358f7fe58409a9dcdb1743c5f4069f90d65febb3a378e9f187",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 3,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 3\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "a240f2e6d01df5a21f9eabf5b8a16efa28865291be5b124b7cde0097aad21c11",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 4,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 4\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "c6052b3c5a6b2892180df5b7a544b1737867a5db1fb242ef31cc57d98badfd45",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 5,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 5\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "9410e3e3e3e24ec6278b3c33f18d081002ece2e16c4c42fd6612d351cec6d511",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 6,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 6\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "eef9f7645f7063192f56a6916659c686def2c2ecf740f2ea14ed9052976855d6",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 7,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 7\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "7d15f9b5b88c92415c747576d4149b993954a86544e2371cc90ae53f2027c0ce",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      },
+      {
+        "page": 8,
+        "widthPoints": 960,
+        "heightPoints": 540,
+        "rotation": 0,
+        "text": "SYNTHETIC SLIDE 8\n\nPoint 1: sample benchmark content\n\nPoint 2: sample benchmark content\n\nPoint 3: sample benchmark content\n\nPoint 4: sample benchmark content\n\nPoint 5: sample benchmark content",
+        "textSha256": "fc155bb1e263fae39967240ec6deb324a82d73a37abba23abbfa07da0566f5df",
+        "textCharacters": 192,
+        "operatorCount": 111,
+        "annotations": []
+      }
+    ],
+    "fields": null,
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": null,
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "ModDate": "D:20261015193116Z",
+      "Creator": "PDFcraft synthetic benchmark fixture generator",
+      "CreationDate": "D:20200101000000Z"
+    }
+  },
+  "images": {
+    "before": [],
+    "after": []
+  },
+  "warnings": [],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

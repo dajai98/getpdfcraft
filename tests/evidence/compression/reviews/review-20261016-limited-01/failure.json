@@ -1,0 +1,5 @@
+{
+  "status": "FAILED RENDER ATTEMPT; NOT VISUAL EVIDENCE",
+  "error": "PDF.js used its default NodeCanvasFactory and failed reading createCanvas. No successful comparison images were produced.",
+  "resolution": "Retained untouched renderer snapshot. Correct canvasFactory option supplied in separate review attempt 02."
+}

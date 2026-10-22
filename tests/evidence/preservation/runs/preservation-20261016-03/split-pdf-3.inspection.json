@@ -1,0 +1,60 @@
+{
+  "opens": true,
+  "pageCount": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "PAGE_3 selectable text",
+      "identities": [
+        "PAGE_3"
+      ],
+      "viewBox": [
+        0,
+        0,
+        450,
+        550
+      ],
+      "rotation": 0,
+      "physical": [
+        450,
+        550
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 1
+    }
+  ],
+  "boxes": [
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "rotation": 0
+    }
+  ],
+  "fields": null,
+  "outlines": [],
+  "metadata": {
+    "PDFFormatVersion": "1.7",
+    "Language": null,
+    "EncryptFilterName": null,
+    "IsLinearized": false,
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "IsCollectionPresent": false,
+    "IsSignaturesPresent": false,
+    "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "ModDate": "D:20261016184131Z",
+    "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "CreationDate": "D:20261016184131Z"
+  }
+}

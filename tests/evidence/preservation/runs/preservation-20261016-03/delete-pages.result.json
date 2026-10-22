@@ -1,0 +1,50 @@
+{
+  "operation": "delete-pages",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "deletePages": [
+      2
+    ]
+  },
+  "expected": "Remove page 2 from visible page tree; not sanitization.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "delete-pages-1.pdf",
+      "sha256": "86216bd941b084d56e211966d3a772280874bae4bc4dfa09c547d76cc6952f13",
+      "bytes": 2985,
+      "inspection": "delete-pages-1.inspection.json",
+      "inspectionSha256": "15d56f7c8089556d61bf2904ad566accfd9cf9c1043626ee371fd52355b14507",
+      "pageCount": 2,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "PASS",
+        "links": "CHANGED",
+        "annotations": "CHANGED",
+        "forms": "PASS",
+        "outlines": "CHANGED",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.📄features.pdf3 pages✕Select pages to delete (1 selected)1✕23⚠️ Pages 2 will be removed from the visible document.🗑️ Delete 1 Page✅Pages deleted!1 page removed. 2 pages remaining."
+}

@@ -1,0 +1,338 @@
+{
+  "parser": {
+    "opens": true,
+    "pageCount": 3,
+    "pages": [
+      {
+        "page": 1,
+        "text": "PAGE_1 selectable text",
+        "identities": [
+          "PAGE_1"
+        ],
+        "viewBox": [
+          0,
+          0,
+          400,
+          500
+        ],
+        "rotation": 0,
+        "physical": [
+          400,
+          500
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      },
+      {
+        "page": 2,
+        "text": "PAGE_2 selectable text",
+        "identities": [
+          "PAGE_2"
+        ],
+        "viewBox": [
+          20,
+          30,
+          470,
+          370
+        ],
+        "rotation": 90,
+        "physical": [
+          340,
+          450
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      },
+      {
+        "page": 3,
+        "text": "PAGE_3 selectable text",
+        "identities": [
+          "PAGE_3"
+        ],
+        "viewBox": [
+          0,
+          0,
+          450,
+          550
+        ],
+        "rotation": 0,
+        "physical": [
+          450,
+          550
+        ],
+        "annotations": [
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 1,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 2,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": {
+              "page": 3,
+              "fit": "XYZ"
+            },
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": "https://example.com/",
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          },
+          {
+            "subtype": "Link",
+            "url": null,
+            "destination": null,
+            "fieldName": null,
+            "fieldValue": null
+          }
+        ],
+        "imageOperators": 1,
+        "vectorPathOperators": 1
+      }
+    ],
+    "boxes": null,
+    "fields": null,
+    "outlines": [
+      {
+        "title": "PAGE_1",
+        "destination": null,
+        "children": []
+      },
+      {
+        "title": "PAGE_2",
+        "destination": null,
+        "children": []
+      },
+      {
+        "title": "PAGE_3",
+        "destination": null,
+        "children": []
+      }
+    ],
+    "metadata": {
+      "PDFFormatVersion": "1.7",
+      "Language": null,
+      "EncryptFilterName": "Standard",
+      "IsLinearized": false,
+      "IsAcroFormPresent": false,
+      "IsXFAPresent": false,
+      "IsCollectionPresent": false,
+      "IsSignaturesPresent": false,
+      "Author": "Synthetic fixture generator",
+      "CreationDate": "D:20200101000000Z",
+      "Creator": "PDFcraft internal fixture",
+      "ModDate": "D:20200101000000Z",
+      "Producer": "pdf-lib controlled fixture",
+      "Title": "Synthetic preservation fixture"
+    }
+  },
+  "navigation": {
+    "status": "NOT TESTED",
+    "reason": "Encrypted bytes; PDF.js password reopen only"
+  }
+}

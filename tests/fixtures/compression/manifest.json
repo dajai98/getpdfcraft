@@ -1,0 +1,88 @@
+{
+  "generator": "scripts/lab/collect-compression.cjs",
+  "metadataDate": "2020-01-01T00:00:00.000Z",
+  "generationVerifiedTwice": true,
+  "fixtures": [
+    {
+      "fixtureId": "text-heavy",
+      "type": "text-heavy",
+      "provenance": "24 synthetic text pages; uncompressed object serialization; no user data.",
+      "inputPath": "tests/fixtures/compression/text-heavy.pdf",
+      "inputSha256": "2c5562135e5e775bee7b7a39b582f1c070d7e82f8e00ff1dad37a47952266f33",
+      "inputBytes": 55978,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "image-heavy-synthetic",
+      "type": "image-heavy proxy",
+      "provenance": "Seeded RGB noise raster reused on four pages. NOT a photograph and NOT representative of JPEG camera compression.",
+      "inputPath": "tests/fixtures/compression/image-heavy-synthetic.pdf",
+      "inputSha256": "2825b0105c9bd012f6a999f07d93cd409c1b7d9b26915e6d30587a7c5da82060",
+      "inputBytes": 2362383,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "scan-style-synthetic",
+      "type": "scan-style proxy",
+      "provenance": "Raster line patterns with seeded background noise; no OCR layer. NOT a physical scanner capture or readable document scan.",
+      "inputPath": "tests/fixtures/compression/scan-style-synthetic.pdf",
+      "inputSha256": "0c7be06a9bfa36f6389120ff58433c3918c5dffb7b9679c47b7361111fd55fdc",
+      "inputBytes": 724227,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "mixed",
+      "type": "mixed text/image/vector",
+      "provenance": "Five generated text/image/vector pages using the same synthetic noise image.",
+      "inputPath": "tests/fixtures/compression/mixed.pdf",
+      "inputSha256": "eebe510e12ed377212ebf5d74bc39429e5d08efd8fd8b86c467c5ba53b5026ad",
+      "inputBytes": 2363673,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "presentation-style",
+      "type": "presentation-style proxy",
+      "provenance": "Eight generated landscape slides. NOT exported from PowerPoint, Keynote or another presentation application.",
+      "inputPath": "tests/fixtures/compression/presentation-style.pdf",
+      "inputSha256": "d3537e6d395a3a67391ce897ff3ede532c2dda213ae22dda662f0f409ab0b5fc",
+      "inputBytes": 6969,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "form",
+      "type": "AcroForm",
+      "provenance": "Generated text field and checked checkbox with explicit appearances; synthetic values only.",
+      "inputPath": "tests/fixtures/compression/form.pdf",
+      "inputSha256": "45925bb5d244370e131bca1ca555fd232b45b055f7c2b17b16858aa25ad36f42",
+      "inputBytes": 4237,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "already-object-streams",
+      "type": "already object-stream serialized",
+      "provenance": "Same text fixture serialized with object streams. Optimized only in this specific sense; not globally optimal.",
+      "inputPath": "tests/fixtures/compression/already-object-streams.pdf",
+      "inputSha256": "ef7ce96812ffbec0902e78d4220072c7c5000bc9b50c9dca41acd1fee4236322",
+      "inputBytes": 28309,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "minimal-control",
+      "type": "small valid PDF growth control",
+      "provenance": "Hand-built valid one-page PDF with a short text stream and no Info metadata.",
+      "inputPath": "tests/fixtures/compression/minimal-control.pdf",
+      "inputSha256": "f1d0c456e44a191fd3a907b8808cfcbb5acf2e3127101459e0da83311bd1afbf",
+      "inputBytes": 595,
+      "expectedStatus": "SUCCESS"
+    },
+    {
+      "fixtureId": "unsupported-input",
+      "type": "invalid/unsupported negative",
+      "provenance": "Plain text saved with .pdf extension to exercise parser rejection; no user data.",
+      "inputPath": "tests/fixtures/compression/unsupported-input.pdf",
+      "inputSha256": "f11658239f1405b6271e236992e773c87ee255f3f5adf606bc319b9571fbb536",
+      "inputBytes": 58,
+      "expectedStatus": "FAILURE"
+    }
+  ]
+}

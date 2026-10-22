@@ -1,0 +1,164 @@
+{
+  "merge-pdf": {
+    "heading": "Combining pages without losing their place",
+    "sections": [
+      {"title":"Choose the file sequence","paragraphs":["Add at least two PDFs in the order you want them combined. Merge appends each file's pages in insertion order; the file list has removal controls, not drag-to-reorder controls. To change the finished page sequence, use Reorder Pages.","PDFcraft uses pdf-lib to copy pages into a new document. Adding the same PDF twice creates two distinct source occurrences, each with its own mapping to the inserted pages."]},
+      {"title":"Links and bookmarks in the combined file","paragraphs":["Supported direct destinations, local GoTo links, named destinations and bookmark trees are rebuilt against actual output pages. Supported action chains and annotation actions are checked too. Names are separated by source occurrence to avoid collisions; external links to the original named anchors are not guaranteed to work after merging.","Source bookmark hierarchies remain distinct. Source OpenActions, which specify an initial destination or action on opening, are deliberately omitted. Supported remote GoToR and web links retain their destinations. The output is saved, reopened and checked before a download is offered."]},
+      {"title":"When Merge stops","paragraphs":["AcroForm documents, tagged structure trees, linked popup annotations, JavaScript navigation and other unsupported or malformed navigation are rejected rather than partially preserved. Page copying does not promise transfer of every document-level structure, metadata item or signature. Merging is not sanitization.","Controlled Node handler tests retained text and supported navigation on synthetic documents, including repeated inputs. They do not establish visual fidelity, interactive form behavior or browser compatibility. Reopen the result and check page order and important links."]},
+      {"title":"Local work and practical limits","paragraphs":["Selected file bytes are read and combined in browser memory; the merge handler has no document-upload step. The website still loads web resources. Combining large documents can exhaust available memory, so retain the originals and try smaller groups if processing fails."]}
+    ],
+    "faqs":[
+      {"q":"Why does a form PDF fail to merge?","a":"The safe page-copy path currently rejects AcroForm structures. A visible form page and its document-level field tree are different things; copying only the page would not prove that the form still works."},
+      {"q":"Will the merged file open at the same bookmark as a source file?","a":"Not necessarily. Source OpenActions are omitted to avoid importing competing opening instructions. Supported bookmarks remain available for navigation inside the combined document."}
+    ]
+  },
+  "split-pdf": {
+    "heading":"Choose exactly which pages each output contains",
+    "sections":[
+      {"title":"Ranges create separate files","paragraphs":["Split All Pages makes one PDF per physical page. In range mode, 1-3, 5, 7-10 creates three PDFs: pages 1 through 3, page 5, and pages 7 through 10. Each comma-separated item is a separate output, not one combined selection. Page numbers refer to positions in the input, not printed labels.","Ranges run from lower to higher page numbers. Empty items, reversed ranges and out-of-bounds numbers are rejected. Output groups follow the entered sequence, and pages within a range retain their original order. Downloads are individual PDFs; this tool does not create a ZIP or split by target file size."]},
+      {"title":"Navigation is scoped to each output","paragraphs":["Each output has its own source-to-output page mapping. Links to retained pages are remapped; local navigation to omitted pages is removed rather than redirected to another page or another file. Named destinations and bookmarks survive only where their targets remain valid.","A bookmark whose target is omitted is removed unless surviving children need its title as a non-clickable heading. A supported local OpenAction is retained only when its target survives; supported remote actions remain remote. Ambiguous chains containing omitted local targets stop processing."]},
+      {"title":"Checks before downloads","paragraphs":["Every output is serialized, reopened and validated before any download URLs are exposed. Unsupported forms, linked annotations and malformed navigation can stop the entire batch. Splitting extracts page groups; it is not a general editor for form fields, tags or all document structures.","Synthetic Node tests checked single-page and range outputs, navigation cleanup and page geometry. Browser downloads and visual fidelity remain unverified. Inspect every output you intend to send, particularly links near a range boundary."]},
+      {"title":"Memory and file handling","paragraphs":["Splitting reads the input and builds the output groups locally. Holding several validated PDFs in memory can be demanding. There is no processing-server upload in this handler, but loading the site requires web resources; local processing does not mean offline availability."]}
+    ],
+    "faqs":[
+      {"q":"How do I make one PDF containing pages 1-3 and 7-10?","a":"Split those two ranges, then merge the resulting PDFs in the desired order. Entering 1-3, 7-10 in Split creates two files rather than one nonconsecutive selection."},
+      {"q":"Why can one problematic range prevent every download?","a":"Split validates the full requested batch before exposing results. If a range leaves an unsupported action chain or fails navigation validation, no partial batch is offered."}
+    ]
+  },
+  "compress-pdf": {
+    "heading":"What this compressor actually changes",
+    "sections":[
+      {"title":"A structural rewrite","paragraphs":["Compress parses the PDF with pdf-lib, then saves it with useObjectStreams enabled. This can pack eligible PDF objects more efficiently. It does not explicitly downsample or recompress images, offer a quality slider, or target a specified number of kilobytes.","The result can be smaller, nearly unchanged or larger. Image-heavy files may have little structural overhead to remove, while a small file can gain overhead during rewriting. Compare the original and resulting byte sizes shown by the tool rather than assuming that every download is smaller."]},
+      {"title":"What our limited checks show","paragraphs":["Internal Node tests observed a substantial reduction for one text-heavy synthetic fixture, much smaller changes for two real documents, and growth for small or already-optimized controls. These are individual file observations, not typical savings or a promise about your PDF.","Reopening and text/geometry checks are not proof of universal lossless preservation. Rewriting can change producer/modification metadata, PDF version or linearization. Signatures, interactive behavior and whole-document visual fidelity were not established by those checks."]},
+      {"title":"Decide whether to keep the result","paragraphs":["Keep the original, inspect the reported sizes, and reopen the output. Check critical pages, text and document features before replacing a working copy. If an attachment is still too large, choose fewer pages with Split or change export settings in the source application; Compress has no target-size setting.","Parsing, saving and the size comparison occur locally without a compression-backend upload. Website resources still load over the network. Encrypted, damaged or memory-intensive PDFs can fail; use an unencrypted copy you are authorized to process."]}
+    ],
+    "faqs":[
+      {"q":"Why did my compressed PDF become larger?","a":"Saving with object streams can add overhead or reorganize an already-efficient file. A larger result is valid evidence that this structural rewrite did not help that input; keep the smaller original if it meets your needs."},
+      {"q":"Can I request a PDF below 500 KB?","a":"There is no target-byte-size control. The tool reports the size it actually produced; it does not repeatedly reduce image quality until a limit is reached."}
+    ]
+  },
+  "pdf-to-image": {
+    "heading":"Render complete PDF pages as images",
+    "sections":[
+      {"title":"Page rendering, not embedded-image extraction","paragraphs":["PDF.js renders each page into a browser canvas at a fixed scale of 2. Canvas dimensions follow that rendered page viewport, including its orientation. Text, vectors and existing images are combined into one raster image per page; original embedded photographs are not simply extracted.","Choose JPG or PNG. JPG uses the canvas encoder with quality 0.92; PNG encodes the rendered raster without JPG's lossy encoding. Neither format retains selectable PDF text, vector paths, links or form interaction. There is no OCR, custom resolution or selected-page conversion control."]},
+      {"title":"Choose and check downloads","paragraphs":["All pages are rendered, then you can download the particular page images you need. Download All initiates separate image downloads rather than a ZIP; browser multiple-download permissions can affect the result. The tool adds no PDFcraft branding watermark, but visible marks already in the PDF are part of the rendered page.","A fixed rendering scale does not guarantee print suitability or recover detail missing from the source. Inspect fine text and diagrams at the intended display or print size. Browser/download execution and universal rendering fidelity are not established by the internal structural PDF tests."]},
+      {"title":"Rendering failures and network dependencies","paragraphs":["Document bytes are rendered locally. The PDF.js worker loads from jsDelivr, so a blocked worker request can prevent conversion even though the file is not uploaded to a conversion server. A password-required PDF must first be unlocked with its known password. Large page dimensions or many pages can exceed canvas or memory limits."]}
+    ],
+    "faqs":[
+      {"q":"Why can I no longer select words in the downloaded JPG?","a":"The JPG contains page pixels, not PDF text objects. Use the original PDF when selectable text matters; this image exporter does not perform OCR."},
+      {"q":"Will PNG give me the original vector artwork?","a":"No. PNG is still a rasterized page at the tool's fixed rendering scale. Lossless PNG encoding does not turn the exported pixels back into vectors."},
+      {"q":"Can I download just page 4?","a":"Conversion processes the whole document, but each resulting image has its own download control. Choose page 4's image after rendering finishes."}
+    ]
+  },
+  "jpg-to-pdf": {
+    "heading":"Turn supported images into PDF pages",
+    "sections":[
+      {"title":"One image, one page","paragraphs":["Add JPEG/JPG or PNG files in the intended sequence. The handler validates image bytes, embeds each supported image with pdf-lib, and draws it across one PDF page. The output follows insertion order; there is no automatic collage, margin, paper-size or layout selection.","Page width and height are set to the embedded image's pixel dimensions as PDF page units. For example, a 1200 by 800 image produces a 1200 by 800 point page, not an automatically fitted A4 sheet. Check print scaling in your viewer."]},
+      {"title":"Input validation and output limits","paragraphs":["Changing a filename extension does not make an unsupported image valid. The checks inspect image structure and attempt embedding; truncated or malformed inputs can be rejected. HEIC, WebP and GIF are not supported by this converter.","Image text stays inside the embedded picture. No OCR or editable text reconstruction is performed, and higher-resolution source images do not imply smaller PDF files. Image validation tests cover supported samples and malformed/truncated cases; they do not prove every camera format or device works."]},
+      {"title":"Before sharing the PDF","paragraphs":["Reopen the result to check page sequence, cropping expectations and physical print dimensions. Conversion reads selected image bytes and creates the PDF in the browser; there is no image-processing upload endpoint in this workflow. Site code still loads from the web, and large images can consume substantial memory."]}
+    ],
+    "faqs":[
+      {"q":"Why is my PDF page much larger than a sheet of paper?","a":"Image dimensions are used directly as PDF page dimensions. Choose a print scaling option in your viewer, or prepare images at the dimensions your workflow requires; this tool has no A4 or Letter fitting control."},
+      {"q":"Can renaming a HEIC photo to JPG make it work?","a":"No. The input must contain valid JPEG or PNG data. Convert it to a supported image format before using this tool."}
+    ]
+  },
+  "rotate-pdf": {
+    "heading":"Change page orientation without rendering new page images",
+    "sections":[
+      {"title":"Additional rotation on every page","paragraphs":["Choose 90 degrees right, 180 degrees, or 90 degrees left (270 degrees). PDFcraft adds that angle to each page's existing rotation modulo 360. A page already rotated 90 degrees becomes 180 degrees when you add another 90.","The handler changes PDF page rotation with pdf-lib and saves a new file. It does not intentionally rasterize text or images, resize the page boxes, or rotate just a selected page. Visual orientation and the underlying media/crop dimensions are different properties."]},
+      {"title":"What to verify","paragraphs":["Controlled Node checks confirmed the requested rotation and retained extracted text on the tested fixture. That is not a guarantee for signatures, every PDF structure or every viewer. Check mixed-orientation pages in the saved file; adding the same angle to every page may not be what each page needs.","Rotation runs on the selected PDF in browser memory without a document-processing upload. Web assets still load, and encrypted or malformed files can fail parsing. Keep the original so you can try another angle without repeatedly rewriting the only copy."]}
+    ],
+    "faqs":[
+      {"q":"Will a 90-degree rotation make every page portrait?","a":"No. The same additional angle is applied to every page. Existing orientation and page dimensions determine whether each resulting page appears portrait or landscape."},
+      {"q":"Does rotation change the order of my pages?","a":"The rotation handler visits the current pages in place and does not reorder them. It changes their rotation values, then saves another PDF."}
+    ]
+  },
+  "watermark-pdf": {
+    "notice":"A visible watermark is not a security control. It does not prevent copying, editing or removal, and it does not prove protection.",
+    "heading":"Place a text label across each page",
+    "sections":[
+      {"title":"Text and opacity are the controls","paragraphs":["Enter text supported by the built-in Helvetica Bold font and choose opacity from 10% to 80% in 5% steps. The default is CONFIDENTIAL at 30%. This is a text-only watermark; there is no image-logo upload, font picker, color picker or manual position/angle control.","PDFcraft draws one gray label per page at a displayed 45-degree angle. Placement accounts for existing rotation and the crop/media intersection. Font size starts from the visible page size and is reduced when necessary to fit longer text; it is not a tiled/repeated pattern."]},
+      {"title":"Fit and readability","paragraphs":["The input has no fixed character-count limit, but the font cannot encode every character and very long text may become tiny. Invalid visible page geometry or unsupported characters can stop the operation. Try a short label and check it on every distinct page size.","Node geometry tests checked positioning on cropped and rotated pages; extraction checks observed the added text. Those checks do not prove universal visual fidelity. A label may discourage casual reuse, but someone able to edit the PDF may remove it."]},
+      {"title":"A new copy with visible additions","paragraphs":["The overlay is drawn into page content rather than used as encryption or access control. It does not remove existing text. The browser loads and rewrites the PDF locally; the watermark handler does not send it to a processing service. Website loading can still make network requests."]}
+    ],
+    "faqs":[
+      {"q":"Why did my long watermark become very small?","a":"Automatic fitting reduces the font size so the diagonal label fits the visible page area. Shorten the wording if readability matters more than including a long statement."},
+      {"q":"Can I use an image logo or choose a different angle?","a":"Those controls are not implemented. This tool draws text using Helvetica Bold, gray coloring and a fixed displayed 45-degree angle."}
+    ]
+  },
+  "delete-pages": {
+    "notice":"Deleting visible pages is not secure sanitization. It does not prove that sensitive information is irrecoverably removed from every PDF object or structure.",
+    "heading":"Remove selected page positions and clean their navigation",
+    "sections":[
+      {"title":"Select physical page numbers","paragraphs":["The numbered buttons refer to positions in the input PDF, not its printed page labels. Select the pages to delete; at least one page must remain. There are no preview thumbnails, so compare the selection with the original in a viewer before proceeding.","The handler copies retained pages into a new PDF in their original relative order. It remaps navigation to retained pages and removes local destinations to deleted pages rather than substituting a different target."]},
+      {"title":"What happens to bookmarks and opening actions","paragraphs":["Valid retained names and bookmarks are rebuilt. A dead bookmark is pruned, or kept only as a non-clickable heading when it has surviving children. A local OpenAction targeting a deleted page is removed; supported remote actions retain their remote meaning. Annotation ownership is checked against the retained pages.","The saved output is reopened and validated before download. AcroForm structures, linked annotations and unsupported or ambiguous navigation can cause rejection. Chains involving deleted local targets are not silently shortened."]},
+      {"title":"Check the result, keep the original","paragraphs":["Synthetic Node tests covered first, middle and last deletions, a one-page remaining output, geometry and target cleanup. They do not establish secure erasure, signature validity or visual fidelity. Reopen the result to verify both page selection and links.","Removal is processed in local browser memory with no delete-pages server upload. The site still requests web resources. Memory limits and damaged or encrypted inputs can prevent completion."]}
+    ],
+    "faqs":[
+      {"q":"Can this redact confidential information?","a":"No. It removes selected visible pages, not every recoverable copy of their information. Use a workflow specifically designed and verified for secure redaction when irreversible removal is required."},
+      {"q":"Why does a link disappear after I delete a page?","a":"If its local destination was on the deleted page, the navigation is removed. Redirecting it to the next page would invent a destination and could mislead readers."}
+    ]
+  },
+  "add-page-numbers": {
+    "heading":"Draw sequential numbers onto the pages",
+    "sections":[
+      {"title":"Choose a starting number and placement","paragraphs":["Set the starting number, choose top or bottom combined with left, center or right, and select 10, 12 or 16 point text. The default is 1, bottom center, 12 point. The current input parses an integer and falls back to 1 for an empty or zero value.","PDFcraft draws each number with Helvetica in dark gray, incrementing it across all pages. Placement uses the visible crop/media intersection and existing rotation. A page too small for the chosen number and font size causes an error rather than a promised fit."]},
+      {"title":"Printed numbers are not PDF page labels","paragraphs":["This is a visible text overlay. It does not change the page count/order, rewrite PDF page-label metadata, or renumber internal object identities and navigation targets. Existing printed numbers are not detected or erased, so a second set can overlap them.","Controlled checks found the expected text additions and tested placement on cropped and rotated pages. They do not guarantee appearance in every viewer or signature preservation. Inspect the first, last and smallest pages after downloading."]},
+      {"title":"Processing and preparation","paragraphs":["Use an unencrypted PDF that can be parsed and choose a clear margin for the overlay. The numbering code works locally and does not upload the document for stamping. Network access may still be needed to load the website; keeping the original lets you retry placement without accumulating overlays."]}
+    ],
+    "faqs":[
+      {"q":"Will numbering replace the numbers already printed in my PDF?","a":"No. New text is drawn on top of the pages. Existing numbers stay in the content and may overlap the additions unless you choose another position."},
+      {"q":"Why do my viewer's page labels still differ from the added numbers?","a":"Viewer labels come from page positions or PDF page-label metadata. This tool adds visible numbers only; it does not update that metadata."}
+    ]
+  },
+  "reorder-pages": {
+    "heading":"Move pages while keeping supported targets attached",
+    "sections":[
+      {"title":"Use Up and Down to build the sequence","paragraphs":["Move Up and Move Down swap neighboring entries in the page list. Repeated moves can place a page elsewhere in the document. The list identifies page numbers; it has no thumbnails or drag-and-drop ordering. Save New Order copies the full sequence into another PDF.","Page count stays the same, while positions change intentionally. Check the list against the original document before saving, especially when printed page labels do not match physical positions."]},
+      {"title":"Targets follow logical pages","paragraphs":["Supported direct links, local GoTo actions, named destinations and bookmarks are mapped to the inserted copies of their original target pages. Valid original names are retained for this single-document operation. A supported OpenAction is remapped as well; remote GoToR destinations stay remote.","Actions and ownership are validated, then the serialized file is reopened and checked again. AcroForm input, linked popup annotations, JavaScript and malformed or unsupported structures are rejected. Reordering is not a promise to preserve every document-level feature or digital signature."]},
+      {"title":"Evidence and final checks","paragraphs":["Synthetic Node tests moved pages into a last/first/middle order and checked supported target identity, bookmarks and geometry. Browser interaction and visual fidelity were not established. Test important links in the saved copy rather than relying only on its page count.","Page copying happens in browser memory; the reorder handler has no document-upload request. The surrounding website still loads resources. Large documents can exceed memory, and encrypted inputs need an appropriate unencrypted copy first."]}
+    ],
+    "faqs":[
+      {"q":"Will a link to the old third page still reach that content?","a":"For supported local navigation, the target follows the original logical page into its new position. The repair maps page identities rather than keeping the old numeric position."},
+      {"q":"Can I drag page thumbnails into a new order?","a":"No thumbnail or drag-order interface is implemented. Use the Up and Down controls beside the numbered entries, then save the new sequence."}
+    ]
+  },
+  "pdf-to-grayscale": {
+    "notice":"This makes an image-based PDF. Selectable text, links, interactive forms, bookmarks and vector semantics are not retained by the rasterization workflow.",
+    "heading":"Grayscale through rendered page images",
+    "sections":[
+      {"title":"A raster conversion, not a semantic color edit","paragraphs":["PDF.js renders each visible page to a canvas at 1.5 times its displayed physical scale. The handler converts RGB pixels to gray and encodes them as JPEG at quality 0.9, then embeds one JPEG on each new PDF page.","Output pages use the displayed physical width and height, including source crop and rotation effects. They are new image pages, not the original text, vector and annotation objects with different colors. JPEG encoding and rendering can change detail."]},
+      {"title":"What you give up","paragraphs":["Searchable/selectable text, links, editable forms, bookmarks and vector semantics can be lost. Accessibility and searchability may degrade. Signatures are not preserved by creating these new raster pages, and the tool does not add OCR or reconstruct accessible text.","The PDF can grow because whole-page images replace compact text/vector content. Synthetic Node checks observed the expected absence of extracted text and interactive structures, and checked displayed page sizes. Those observations do not prove pixel-perfect fidelity or browser compatibility."]},
+      {"title":"When to use a different workflow","paragraphs":["Keep the original if you need selectable text, working links or form fields. For a visual-only copy, inspect fine text, charts and cropped pages before sharing. Do not use Grayscale as secure redaction or assume it makes a document uneditable.","Pixels are processed locally, but the PDF.js worker is fetched from jsDelivr. A worker-loading failure, password requirement, canvas limit or insufficient memory can stop conversion. No grayscale processing-server upload is used."]}
+    ],
+    "faqs":[
+      {"q":"Why is my grayscale PDF no longer searchable?","a":"Its pages are newly embedded JPEG images. The original text objects are not transferred, and this converter does not run OCR to recreate them."},
+      {"q":"Why did converting to grayscale increase the file size?","a":"Rendering a page into a JPEG can require more bytes than its original text and vector instructions. Removing color does not guarantee a smaller PDF."}
+    ]
+  },
+  "protect-pdf": {
+    "heading":"Add an opening password with qpdf",
+    "sections":[
+      {"title":"Encryption and permissions","paragraphs":["Protect passes an unencrypted PDF to qpdf WebAssembly with 256-bit AES encryption. It uses the entered password as both user and owner password and permits full printing and content extraction. It does not offer separate owner-password or permission controls.","The two password entries must match and contain at least four characters. That minimum is an input rule, not a strength guarantee: encryption does not make a weak password hard to guess. Save the password securely and verify the recipient's access and delivery requirements."]},
+      {"title":"Check access, not just the success message","paragraphs":["The wrapper checks qpdf's exit status and requires a nonempty output. Damaged, unsupported or already-protected inputs can fail. If the security engine cannot load, check connectivity and browser restrictions before retrying.","Controlled Node tests reopened the encrypted fixture with the known password and rejected missing/wrong passwords; extracted text and observed field values were checked. This does not establish form interaction, signature preservation or universal security. Password protection does not replace careful distribution."]},
+      {"title":"Where the file and password are used","paragraphs":["The file and password are supplied to the local qpdf runtime, not a PDF-processing upload service. Its WASM engine loads from jsDelivr. Temporary input/output files are removed from the runtime filesystem and the input byte buffer is cleared afterward; that is not a guarantee of secure erasure from all browser memory."]}
+    ],
+    "faqs":[
+      {"q":"Does Protect prevent a recipient from printing or extracting content?","a":"No. The current qpdf options explicitly allow full printing and extraction. Anyone given the opening password should be treated as able to access the document's contents."},
+      {"q":"Can I set a different owner password?","a":"This interface uses the same entered value for the user and owner passwords. Separate password and permission settings are not available here."},
+      {"q":"Can PDFcraft recover a forgotten protection password?","a":"There is no password recovery feature. Retain an original copy and store the password before relying on the encrypted output."}
+    ]
+  },
+  "unlock-pdf": {
+    "heading":"Remove encryption using a password you know",
+    "sections":[
+      {"title":"Decryption, not password recovery","paragraphs":["Select an encrypted PDF you are authorized to modify and enter its current password. Unlock passes that password and the decrypt option to qpdf WebAssembly, then offers the resulting PDF only after a successful exit and nonempty output.","The tool does not crack, guess, bypass or recover unknown passwords. It also does not repair unrelated PDF damage. A nonzero qpdf status can indicate a wrong password, damaged data or an unsupported file; the wrapper cannot always distinguish these causes."]},
+      {"title":"Review the unencrypted copy","paragraphs":["Removing encryption means the saved copy no longer has that password barrier. Check where you store or share it. Reopen it without a password and verify important pages rather than assuming decryption preserved every feature.","A controlled Protect-to-Unlock Node test checked reopening, extracted text and observable form values. Interactive fields, signatures and visual fidelity were not proven. Do not rely on this operation to preserve a digital signature's validity."]},
+      {"title":"Runtime and local handling","paragraphs":["qpdf runs locally with the supplied document and password. The WASM engine must first load from jsDelivr, so local document processing still has a network dependency. The wrapper removes its virtual input/output files and clears the input buffer, but does not promise complete memory erasure or offline operation."]}
+    ],
+    "faqs":[
+      {"q":"Why can the correct password still produce an error?","a":"The encryption or PDF structure may be unsupported or damaged, or the runtime may fail to load. The qpdf status alone does not reliably identify every cause. Confirm the original opens in your viewer before retrying."},
+      {"q":"Will Unlock repair broken pages or a damaged signature?","a":"No. Its purpose is decryption with the supplied password. It provides no page-repair or signature-repair workflow, and signature preservation is not verified."}
+    ]
+  }
+}

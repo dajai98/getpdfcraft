@@ -16,7 +16,7 @@ const article = {
         },
         {
           "title": "Check the available control",
-          "body": "Rotate affects all pages. Watermark lets you set text and opacity, with fixed placement/angle/size behavior. Neither offers a full page editor."
+          "body": "Rotate affects all pages. Watermark offers text and opacity with a fixed displayed angle and automatic text fitting, not manual placement or size controls. Neither offers a full page editor."
         },
         {
           "title": "Inspect the downloaded output",
@@ -25,12 +25,25 @@ const article = {
       ]
     },
     {
+      "heading": "Match the replacement to the job",
+      "table": {
+        "headers": ["Your task", "PDFcraft workflow", "Check before switching"],
+        "rows": [
+          ["Combine or rearrange PDFs", "Merge appends files; Reorder uses Up/Down controls.", "Supported navigation is rebuilt, but AcroForm input and unsupported structures are rejected. There is no thumbnail-based page organizer."],
+          ["Extract or remove pages", "Split creates separate files for comma-separated ranges; Delete retains at least one page.", "Links to omitted pages are cleaned rather than redirected. Page removal is not secure sanitization."],
+          ["Export pages as pictures", "PDF to Image renders complete pages as JPG or PNG at a fixed scale of 2.", "Text and vectors become pixels. There is no OCR or custom resolution control."],
+          ["Create a PDF from pictures", "JPG to PDF embeds JPEG/PNG inputs, one image per page in insertion order.", "Page dimensions follow the images; there is no paper-size fitting or HEIC/WebP support."],
+          ["Add visible labels", "Page Numbers draws sequential text; Watermark draws a diagonal label.", "Neither edits existing text. A watermark is not encryption or a copying restriction."]
+        ]
+      }
+    },
+    {
       "heading": "Compression may not be the replacement you expect",
       "text": "Compress PDF loads and saves the PDF with object streams. It performs structural/object-stream optimization, without explicitly downsampling or recompressing embedded images. Output may be smaller, unchanged, or larger. Compare the result and retain the original until you have checked it. There is no image-quality slider or target file-size control in the current Compress tool."
     },
     {
       "heading": "Password protection has a narrow purpose",
-      "text": "Protect applies password-based AES-256 encryption, not read-only or tamper-proof restrictions. Unlock requires a supplied correct password for protected PDFs and does not crack an unknown password. Neither tool provides signing or identity verification."
+      "text": "Protect applies password-based AES-256 encryption using the same user and owner password. Its current configuration permits printing and extraction; there are no separate permission controls. Unlock requires a supplied correct password for protected PDFs and does not crack an unknown password. Neither tool provides signing or identity verification."
     },
     {
       "heading": "Local document processing is separate from web requests",
@@ -38,7 +51,7 @@ const article = {
     },
     {
       "heading": "Evaluate missing capabilities explicitly",
-      "text": "If you need OCR, existing-text editing, Word/Excel conversion, or e-signatures, choose a tool that documents that capability. Larger suites may cover more workflows, but verify their current offering directly. This guide does not assert current Smallpdf prices, quotas, account rules, or upload policies."
+      "text": "If your Smallpdf workflow depends on OCR, existing-text editing, Word/Excel conversion or e-signatures, PDFcraft cannot replace that step. Verify those requirements against Smallpdf's current documentation or another provider before switching. This is a PDFcraft capability checklist, not a verified current Smallpdf feature or price comparison. No current Smallpdf prices, quotas, account rules or upload policies are asserted here."
     },
     {
       "heading": "Start with a supported task",
@@ -50,6 +63,14 @@ const article = {
         {
           "text": "Rotate every page in a PDF",
           "href": "/tools/rotate-pdf"
+        },
+        {
+          "text": "Combine files with the supported navigation checks",
+          "href": "/tools/merge-pdf"
+        },
+        {
+          "text": "Export whole pages to JPG or PNG",
+          "href": "/tools/pdf-to-image"
         },
         {
           "text": "Read about document and website data",
@@ -68,8 +89,8 @@ const article = {
       "a": "No. The current tool has no target-size control, and the output can grow."
     },
     {
-      "q": "Is every device supported?",
-      "a": "Compatibility and usable document size depend on browser capabilities and device resources. Test the workflow you need."
+      "q": "What should I compare in a trial document?",
+      "a": "Choose a sample containing the features you actually need: a bookmarked report, a form, or fine text in a diagram. Check the relevant output feature as well as file size. An unsupported-form error is a reason to keep a different workflow, not evidence that the original PDF is defective. Browser/device behavior also needs checking in your own environment."
     }
   ],
   "ctaHref": "/tools/compress-pdf",

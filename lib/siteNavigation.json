@@ -1,0 +1,239 @@
+{
+  "articleGroups": [
+    {
+      "id": "pages",
+      "label": "Merge and page management",
+      "articles": [
+        "how-to-merge-pdf-free",
+        "how-to-merge-pdf-on-windows",
+        "how-to-merge-pdf-on-mac",
+        "merge-pdf-on-iphone",
+        "how-to-split-pdf-online",
+        "how-to-extract-pages-from-pdf",
+        "how-to-rotate-pdf"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Security and sharing",
+      "articles": [
+        "pdf-security-guide",
+        "how-to-add-password-to-pdf-online",
+        "how-to-remove-password-from-pdf",
+        "why-is-my-pdf-locked",
+        "how-to-protect-pdf-from-editing",
+        "how-to-add-watermark-to-pdf",
+        "how-to-secure-pdf-before-sending-email",
+        "how-to-lock-pdf-for-job-applications",
+        "secure-pdf-on-mac"
+      ]
+    },
+    {
+      "id": "optimization",
+      "label": "Compression and file size",
+      "articles": [
+        "pdf-file-size-too-large",
+        "compress-pdf-without-losing-quality"
+      ]
+    },
+    {
+      "id": "rendering",
+      "label": "Image rendering and PDF creation",
+      "articles": [
+        "convert-pdf-to-jpg-free",
+        "convert-pdf-to-png-free",
+        "how-to-convert-jpg-to-pdf",
+        "how-to-combine-pdf-and-images"
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "Choose a tool or document workflow",
+      "articles": [
+        "best-free-pdf-tools-online",
+        "pdf-vs-word-which-is-better",
+        "how-to-edit-pdf-free",
+        "ilovepdf-alternative",
+        "adobe-acrobat-alternative-free",
+        "smallpdf-alternative"
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "label": "How it works and measured results",
+      "articles": [
+        "how-browser-based-pdf-processing-works",
+        "pdf-compression-real-test-results",
+        "pdf-tool-not-working-troubleshooting"
+      ]
+    }
+  ],
+  "toolGroups": [
+    {
+      "id": "pages",
+      "label": "Page management",
+      "tools": [
+        "merge-pdf",
+        "split-pdf",
+        "reorder-pages",
+        "delete-pages",
+        "rotate-pdf"
+      ]
+    },
+    {
+      "id": "optimization",
+      "label": "Size and output appearance",
+      "tools": [
+        "compress-pdf",
+        "pdf-to-grayscale",
+        "add-page-numbers",
+        "watermark-pdf"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Password access",
+      "tools": [
+        "protect-pdf",
+        "unlock-pdf"
+      ]
+    },
+    {
+      "id": "rendering",
+      "label": "Image rendering and PDF creation",
+      "tools": [
+        "pdf-to-image",
+        "jpg-to-pdf"
+      ]
+    }
+  ],
+  "secondaryGuides": {
+    "merge-pdf": [
+      [
+        "how-to-combine-pdf-and-images",
+        "Include images in a PDF packet"
+      ]
+    ],
+    "split-pdf": [
+      [
+        "how-to-extract-pages-from-pdf",
+        "Choose a subset of pages"
+      ]
+    ],
+    "compress-pdf": [
+      [
+        "compress-pdf-without-losing-quality",
+        "Understand compression and quality"
+      ],
+      [
+        "pdf-file-size-too-large",
+        "Choose another size strategy"
+      ]
+    ],
+    "pdf-to-image": [
+      [
+        "convert-pdf-to-png-free",
+        "Decide when to use PNG"
+      ]
+    ],
+    "jpg-to-pdf": [
+      [
+        "how-to-combine-pdf-and-images",
+        "Append the image PDF to a document"
+      ]
+    ],
+    "rotate-pdf": [],
+    "watermark-pdf": [
+      [
+        "pdf-security-guide",
+        "Distinguish labels from protection"
+      ]
+    ],
+    "delete-pages": [
+      [
+        "how-to-edit-pdf-free",
+        "Page removal versus editing existing text"
+      ]
+    ],
+    "add-page-numbers": [
+      [
+        "how-to-edit-pdf-free",
+        "Overlays versus existing-text editing"
+      ]
+    ],
+    "reorder-pages": [
+      [
+        "how-to-extract-pages-from-pdf",
+        "Select pages before arranging them"
+      ]
+    ],
+    "pdf-to-grayscale": [
+      [
+        "compress-pdf-without-losing-quality",
+        "Compare structural compression and rasterization"
+      ]
+    ],
+    "protect-pdf": [
+      [
+        "pdf-security-guide",
+        "Choose the appropriate security control"
+      ]
+    ],
+    "unlock-pdf": [
+      [
+        "why-is-my-pdf-locked",
+        "Identify the kind of restriction"
+      ]
+    ]
+  },
+  "relatedTools": {
+    "merge-pdf": [
+      "reorder-pages",
+      "split-pdf"
+    ],
+    "split-pdf": [
+      "merge-pdf",
+      "delete-pages"
+    ],
+    "compress-pdf": [
+      "split-pdf",
+      "pdf-to-grayscale"
+    ],
+    "pdf-to-image": [
+      "jpg-to-pdf",
+      "rotate-pdf"
+    ],
+    "jpg-to-pdf": [
+      "merge-pdf",
+      "rotate-pdf"
+    ],
+    "rotate-pdf": [
+      "reorder-pages"
+    ],
+    "watermark-pdf": [
+      "protect-pdf",
+      "add-page-numbers"
+    ],
+    "delete-pages": [
+      "split-pdf",
+      "reorder-pages"
+    ],
+    "add-page-numbers": [
+      "reorder-pages",
+      "watermark-pdf"
+    ],
+    "reorder-pages": [
+      "merge-pdf",
+      "delete-pages"
+    ],
+    "pdf-to-grayscale": [
+      "compress-pdf"
+    ],
+    "protect-pdf": [
+      "unlock-pdf"
+    ],
+    "unlock-pdf": [
+      "protect-pdf"
+    ]
+  }
+}

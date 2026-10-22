@@ -1,0 +1,216 @@
+{
+  "opens": true,
+  "pageCount": 3,
+  "pages": [
+    {
+      "page": 1,
+      "text": "PAGE_1 selectable text||1",
+      "identities": [
+        "PAGE_1"
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        500
+      ],
+      "rotation": 0,
+      "physical": [
+        400,
+        500
+      ],
+      "annotations": [
+        {
+          "subtype": "Link",
+          "url": "https://example.com/",
+          "destination": null,
+          "fieldName": null,
+          "fieldValue": null
+        },
+        {
+          "subtype": "Link",
+          "url": null,
+          "destination": {
+            "page": 3,
+            "fit": "Fit"
+          },
+          "fieldName": null,
+          "fieldValue": null
+        },
+        {
+          "subtype": "Widget",
+          "url": null,
+          "destination": null,
+          "fieldName": "controlled_name",
+          "fieldValue": "Synthetic Alice"
+        }
+      ],
+      "imageOperators": 1,
+      "vectorPathOperators": 3
+    },
+    {
+      "page": 2,
+      "text": "PAGE_2 selectable text||2",
+      "identities": [
+        "PAGE_2"
+      ],
+      "viewBox": [
+        20,
+        30,
+        470,
+        370
+      ],
+      "rotation": 90,
+      "physical": [
+        340,
+        450
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 1
+    },
+    {
+      "page": 3,
+      "text": "PAGE_3 selectable text||3",
+      "identities": [
+        "PAGE_3"
+      ],
+      "viewBox": [
+        0,
+        0,
+        450,
+        550
+      ],
+      "rotation": 0,
+      "physical": [
+        450,
+        550
+      ],
+      "annotations": [],
+      "imageOperators": 1,
+      "vectorPathOperators": 1
+    }
+  ],
+  "boxes": [
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 500
+      },
+      "rotation": 0
+    },
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 400
+      },
+      "crop": {
+        "x": 20,
+        "y": 30,
+        "width": 450,
+        "height": 340
+      },
+      "rotation": 90
+    },
+    {
+      "media": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 550
+      },
+      "rotation": 0
+    }
+  ],
+  "fields": {
+    "controlled_name": [
+      {
+        "id": "15R",
+        "actions": null,
+        "name": "controlled_name",
+        "strokeColor": null,
+        "fillColor": null,
+        "type": "",
+        "kidIds": [
+          "16R"
+        ],
+        "page": -1,
+        "rotation": 0
+      },
+      {
+        "id": "16R",
+        "value": "Synthetic Alice",
+        "defaultValue": "",
+        "multiline": false,
+        "password": false,
+        "charLimit": 0,
+        "comb": false,
+        "editable": true,
+        "hidden": false,
+        "name": "controlled_name",
+        "rect": [
+          49.5,
+          349.5,
+          250.5,
+          380.5
+        ],
+        "actions": null,
+        "page": 0,
+        "strokeColor": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "fillColor": {
+          "0": 255,
+          "1": 255,
+          "2": 255
+        },
+        "rotation": 0,
+        "type": "text"
+      }
+    ]
+  },
+  "outlines": [
+    {
+      "title": "Third page",
+      "destination": {
+        "page": 3,
+        "fit": "Fit"
+      },
+      "children": []
+    }
+  ],
+  "metadata": {
+    "PDFFormatVersion": "1.7",
+    "Language": null,
+    "EncryptFilterName": null,
+    "IsLinearized": false,
+    "IsAcroFormPresent": true,
+    "IsXFAPresent": false,
+    "IsCollectionPresent": false,
+    "IsSignaturesPresent": false,
+    "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+    "ModDate": "D:20261016184132Z",
+    "Creator": "PDFcraft internal fixture",
+    "CreationDate": "D:20200101000000Z",
+    "Title": "Synthetic preservation fixture",
+    "Author": "Synthetic fixture generator"
+  }
+}

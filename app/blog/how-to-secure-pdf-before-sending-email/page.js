@@ -1,129 +1,99 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("how-to-secure-pdf-before-sending-email");
-export default function Post() {
-  return (
-    <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"
-      title={"How to Secure a PDF Before Sending by Email"}
-      date="May 2026" readTime="6 min read"
-      intro={"Before emailing a sensitive PDF, check the recipient, the delivery method, and whether an encrypted attachment fits the workflow. Password-based encryption can control opening a file; it does not guarantee the security of email accounts or prevent redistribution after opening."}
-      sections={[
-  {
-    "heading": "Why you should secure PDFs before emailing",
-    "steps": [
-      {
-        "title": "Email is not secure by default",
-        "body": "Check the security and sharing requirements for the actual delivery method. Do not assume every email service has the same protections."
-      },
-      {
-        "title": "Emails get forwarded",
-        "body": "A recipient may forward the file or an unencrypted copy. Password protection does not control all later sharing."
-      },
-      {
-        "title": "Email accounts get hacked",
-        "body": "If an account or device is compromised, encryption alone is not a guarantee that the document remains protected."
-      },
-      {
-        "title": "Compliance and professional standards",
-        "body": "This article does not establish compliance with legal or organizational requirements. Follow the requirements that apply to your work."
+
+const article = {
+  "title": "How to Secure a PDF Before Sending by Email",
+
+  "readTime": "6 min read",
+  "tag": "Protect PDF",
+  "tagColor": "#DC2626",
+  "tagBg": "#FEF2F2",
+  "ctaHref": "/tools/protect-pdf",
+  "ctaText": "Secure your PDF for email now — free",
+  "intro": "Prepare the attachment and its delivery separately. Password protection can add an opening barrier to the PDF, but it does not secure the email service, verify the recipient or make a sharing link private.",
+  "sections": [
+    {
+      "heading": "A practical pre-send sequence",
+      "steps": [
+        {
+          "title": "Confirm submission requirements",
+          "body": "Check whether the recipient accepts encrypted PDFs and what size or delivery method is permitted. An attachment that cannot be opened may be unusable even if encryption succeeded."
+        },
+        {
+          "title": "Prepare the minimum required document",
+          "body": "Remove unnecessary visible pages or return to the source document to remove unneeded material. Delete Pages is not secure sanitization; use a verified redaction process for confidential data that must be irrecoverable."
+        },
+        {
+          "title": "Compare size before encryption",
+          "body": "Run Compress on the unencrypted copy if useful. It rewrites object structure, not image quality, and output may grow. Retain the smaller suitable version rather than assuming the processed file is better."
+        },
+        {
+          "title": "Add only useful labeling",
+          "body": "A visible confidentiality watermark can communicate handling expectations. It can be edited or removed and does not provide cryptographic protection."
+        },
+        {
+          "title": "Protect and reopen",
+          "body": "Use a password that is not easy to predict or reused for unrelated access, confirm it and test the saved encrypted file. The minimum length in the form is not a strength guarantee."
+        }
+      ]
+    },
+    {
+      "heading": "Attachment or sharing link?",
+      "table": {
+        "headers": [
+          "Delivery choice",
+          "Before sending"
+        ],
+        "rows": [
+          [
+            "Email attachment",
+            "Check the actual file selected, recipient address and current service/recipient requirements. No universal attachment threshold is assumed here."
+          ],
+          [
+            "Sharing link",
+            "Verify permissions, required sign-in and that the intended recipient can access the file. A link is not automatically private."
+          ],
+          [
+            "Password delivery",
+            "Where appropriate, use a separate channel from the file. Confirm the recipient knows which document it opens without placing the password in a revealing filename."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "PDF preparation checklist before emailing",
-    "steps": [
-      {
-        "title": "Step 1 — Add a watermark",
-        "body": "If useful, add a visible label to the unencrypted copy. Text and opacity are configurable; a watermark is not proof of authenticity or protection from copying."
-      },
-      {
-        "title": "Step 2 — Try compression if needed",
-        "body": "PDFcraft uses structural/object-stream optimization and does not explicitly downsample or recompress embedded images. Output may be smaller, unchanged, or larger. Compare the displayed byte counts, keep the original if size increases, and inspect any result you choose to use. Do this before encryption."
-      },
-      {
-        "title": "Step 3 — Add password protection",
-        "body": "Protect the final unencrypted copy. Enter and confirm the password, download the result, and test it in the recipient’s viewer."
-      },
-      {
-        "title": "Step 4 — Send the file and password separately",
-        "body": "Email the PDF attachment first. Then send the password via SMS, phone call, or a separate messaging app. Never in the same email."
-      },
-      {
-        "title": "Step 5 — Confirm receipt",
-        "body": "Follow up to confirm the recipient received and could open the PDF with the password."
-      }
-    ]
-  },
-  {
-    "heading": "What types of PDFs need securing before emailing?",
-    "list": [
-      "Contracts and legal agreements",
-      "Financial statements and invoices",
-      "Medical records and test results",
-      "Personal identification documents",
-      "HR documents and payslips",
-      "Bank statements",
-      "Tax returns and financial filings",
-      "Business proposals and confidential reports"
-    ]
-  },
-  {
-    "heading": "Check delivery size after protection",
-    "text": "Check the final file against the current receiving service’s limit. PDFcraft Compress rejects encrypted inputs; if needed, return to your unencrypted working copy, revise it, then protect it again. Do not treat encryption itself as the reason all compression is impossible."
-  },
-  {
-    "heading": "PDFcraft tools for email security",
-    "list": [
-      {
-        "text": "Watermark PDF — stamp CONFIDENTIAL before sending",
-        "href": "/tools/watermark-pdf"
-      },
-      {
-        "text": "Protect PDF — add password encryption",
-        "href": "/tools/protect-pdf"
-      },
-      {
-        "text": "Compress PDF — reduce size for email",
-        "href": "/tools/compress-pdf"
-      }
-    ]
-  },
-  {
-    "tip": "Keep an unencrypted working copy privately until the encrypted output has been verified. Complete ordinary page operations and compression attempts before protecting."
-  },
-  {
-    "heading": "Protection limits and runtime loading",
-    "text": "Protect applies tested password-based AES-256 encryption. Enter and confirm a longer, unique password; four characters is only the minimum validation requirement. The same password is used for user and owner access, with printing and extraction allowed. This is not a read-only or tamper-proof mechanism. Protect and Unlock load remote qpdf WASM from jsDelivr. Document contents and passwords are processed locally, but runtime downloads make network requests. PDFcraft cannot recover an unknown password."
-  }
-]}
-      faqs={[
-  {
-    "q": "Should I password protect PDFs before emailing?",
-    "a": "Agree on the recipient’s requirements. Password encryption can control opening, but does not guarantee that only the intended person will ever access the content."
-  },
-  {
-    "q": "How do I send the PDF password securely?",
-    "a": "Send the PDF by email, then send the password through a different channel — SMS, phone call, WhatsApp, or a separate email sent to a different address."
-  },
-  {
-    "q": "Can I protect a PDF for email on my phone?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "Does PDF password protection work with Gmail?",
-    "a": "Check your current mail service’s attachment rules and the recipient’s encrypted-PDF viewer support."
-  },
-  {
-    "q": "What if the email attachment is too large after protecting?",
-    "a": "Check the final file against the current receiving service’s limit. PDFcraft Compress rejects encrypted inputs; if needed, return to your unencrypted working copy, revise it, then protect it again. Do not treat encryption itself as the reason all compression is impossible."
-  },
-  {
-    "q": "Is PDFcraft safe for confidential documents?",
-    "a": "PDFcraft processes document contents locally without a processing upload backend. Website and third-party requests still occur. See the Privacy Policy; local processing is not a general safety guarantee."
-  }
-]}
-      ctaText={"Secure your PDF for email now — free"}
-      ctaHref={"/tools/protect-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "Understand what the recipient can do",
+      "text": "Protect uses AES-256 with the same user and owner password and allows printing and extraction. It is not a read-only control. A recipient who knows the password should be treated as able to access the contents. No signature or identity-verification service is supplied."
+    },
+    {
+      "heading": "Keep the final check about this exact file",
+      "text": "Reopen the attachment you intend to send, not an earlier draft. Check page count, sensitive visible content and password access. PDFcraft runs these document operations locally; site resources and the qpdf runtime still require network loading. Neither successful processing nor these checks establish email security or universal PDF compatibility."
+    },
+    {
+      "heading": "Continue with the appropriate tool",
+      "list": [
+        {
+          "text": "Compare the prepared file's size",
+          "href": "/tools/compress-pdf"
+        },
+        {
+          "text": "Encrypt the final copy",
+          "href": "/tools/protect-pdf"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I put the password in the same email?",
+      "a": "That gives anyone who receives that message both the file and password. Consider a separate appropriate channel and verify the recipient, while recognizing that this does not certify the security of either channel."
+    },
+    {
+      "q": "Can I compress after adding the password?",
+      "a": "The Compress handler expects an input it can parse and can reject encrypted PDFs. Prepare and compare size first, then protect the chosen final copy."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

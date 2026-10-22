@@ -2,7 +2,6 @@
   {
     "slug": "how-to-merge-pdf-free",
     "title": "How to Merge PDF Files Free Online — No Sign Up",
-    "date": "Jan 15, 2026",
     "tag": "Merge PDF",
     "tagColor": "#DC2626",
     "tagBg": "#FEF2F2",
@@ -29,7 +28,6 @@
   {
     "slug": "how-to-split-pdf-online",
     "title": "How to Split PDF Online Free — No Sign Up",
-    "date": "Jan 22, 2026",
     "tag": "Split PDF",
     "tagColor": "#EA580C",
     "tagBg": "#FFF7ED",
@@ -38,7 +36,6 @@
   {
     "slug": "how-to-remove-password-from-pdf",
     "title": "How to Remove a PDF Password You Already Know",
-    "date": "Jan 25, 2026",
     "tag": "Unlock PDF",
     "tagColor": "#4F46E5",
     "tagBg": "#EEF2FF",
@@ -81,42 +78,6 @@
     "description": "Merge PDFs in insertion order using an iPhone browser. Check browser support and locate downloads through your chosen settings."
   },
   {
-    "slug": "merge-pdf-on-android",
-    "title": "How to Merge PDF on Android Free (No App Needed)",
-    "date": "Feb 5, 2026",
-    "tag": "Android",
-    "tagColor": "#16A34A",
-    "tagBg": "#F0FDF4",
-    "description": "Merge PDFs in insertion order using an Android browser. File selection and download locations depend on your system."
-  },
-  {
-    "slug": "compress-pdf-for-whatsapp",
-    "title": "How to Compress a PDF for WhatsApp",
-    "date": "Feb 6, 2026",
-    "tag": "Tips",
-    "tagColor": "#CA8A04",
-    "tagBg": "#FEFCE8",
-    "description": "Try structural PDF compression, compare the result, and split large documents when needed before sharing through WhatsApp."
-  },
-  {
-    "slug": "what-is-pdf",
-    "title": "What is a PDF File? Complete Guide 2026",
-    "date": "Feb 7, 2026",
-    "tag": "Guide",
-    "tagColor": "#4F46E5",
-    "tagBg": "#EEF2FF",
-    "description": "Understand fixed-layout PDF pages, common features, viewer limitations, and PDFcraft’s available page tools."
-  },
-  {
-    "slug": "how-to-compress-pdf-for-email",
-    "title": "How to Compress a PDF for Email",
-    "date": "Feb 8, 2026",
-    "tag": "Tips",
-    "tagColor": "#CA8A04",
-    "tagBg": "#FEFCE8",
-    "description": "Try structural compression for an email attachment, compare output sizes, and check the receiving service’s current limit."
-  },
-  {
     "slug": "pdf-vs-word-which-is-better",
     "title": "PDF vs Word — Which Format Should You Use?",
     "date": "Feb 9, 2026",
@@ -128,7 +89,6 @@
   {
     "slug": "how-to-add-password-to-pdf-online",
     "title": "How to Add Password to PDF Online Free",
-    "date": "Feb 10, 2026",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
@@ -189,33 +149,6 @@
     "description": "Apply 90, 180, or 270 degrees of additional rotation to all pages. PDFcraft does not provide selected-page rotation."
   },
   {
-    "slug": "pdf-to-word-free",
-    "title": "How to Convert PDF to Word: Options and Checks",
-    "date": "Feb 18, 2026",
-    "tag": "Convert",
-    "tagColor": "#16A34A",
-    "tagBg": "#F0FDF4",
-    "description": "Evaluate a separate PDF-to-Word conversion workflow and review its output. PDFcraft does not currently provide this conversion."
-  },
-  {
-    "slug": "how-to-sign-pdf-free",
-    "title": "How to Sign a PDF: Options Outside PDFcraft",
-    "date": "Feb 19, 2026",
-    "tag": "Guide",
-    "tagColor": "#DB2777",
-    "tagBg": "#FDF2F8",
-    "description": "PDFcraft has no e-signature tool. Learn what to check when choosing a signing method and how to prepare a PDF without implying a signature."
-  },
-  {
-    "slug": "split-pdf-into-two",
-    "title": "How to Split a PDF into Two Files by Page Range",
-    "date": "Feb 20, 2026",
-    "tag": "Split PDF",
-    "tagColor": "#EA580C",
-    "tagBg": "#FFF7ED",
-    "description": "Choose a boundary and create two PDFs using explicit ranges. Learn why equal page counts do not guarantee equal file sizes."
-  },
-  {
     "slug": "convert-pdf-to-png-free",
     "title": "How to Convert PDF to PNG Free Online",
     "date": "Feb 22, 2026",
@@ -243,15 +176,6 @@
     "description": "Merge PDFs in a supported Windows browser using insertion order. Separate browser-tab print jobs are not a merge workflow."
   },
   {
-    "slug": "how-to-compress-pdf-on-iphone",
-    "title": "How to Compress PDF on iPhone Free (No App Needed)",
-    "date": "Feb 25, 2026",
-    "tag": "iPhone",
-    "tagColor": "#1D4ED8",
-    "tagBg": "#EFF6FF",
-    "description": "Try browser-based PDF compression on iPhone. Compare actual byte counts and locate downloads using your browser’s settings."
-  },
-  {
     "slug": "how-to-extract-pages-from-pdf",
     "title": "How to Extract Selected PDF Pages and Ranges",
     "date": "Feb 26, 2026",
@@ -270,27 +194,8 @@
     "description": "Distinguish opening-password encryption, visible labels, and signatures. Understand PDFcraft’s security and redaction limitations."
   },
   {
-    "slug": "how-to-convert-pdf-to-excel",
-    "title": "How to Convert PDF to Excel: Options and Checks",
-    "date": "Feb 28, 2026",
-    "tag": "Convert",
-    "tagColor": "#16A34A",
-    "tagBg": "#F0FDF4",
-    "description": "Evaluate a separate PDF table-extraction workflow and verify spreadsheet data. PDFcraft does not provide PDF-to-Excel conversion or OCR."
-  },
-  {
-    "slug": "reduce-pdf-size-without-software",
-    "title": "Reduce PDF Size Without Installing Software: A Decision Guide",
-    "date": "Mar 1, 2026",
-    "tag": "Tips",
-    "tagColor": "#CA8A04",
-    "tagBg": "#FEFCE8",
-    "description": "Try structural compression, compare the output, and choose page extraction or source re-export when compression is not enough."
-  },
-  {
     "slug": "how-to-combine-pdf-and-images",
     "title": "How to Combine PDF and Images Into One File Free",
-    "date": "Mar 2, 2026",
     "tag": "Guide",
     "tagColor": "#DC2626",
     "tagBg": "#FEF2F2",
@@ -299,43 +204,22 @@
   {
     "slug": "why-is-my-pdf-locked",
     "title": "Why Is My PDF Locked? Diagnose the Actual Problem",
-    "date": "Mar 3, 2026",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
     "description": "Distinguish password prompts, editing restrictions, viewer limitations, and damaged files before trying to unlock a PDF."
   },
   {
-    "slug": "how-to-encrypt-pdf-files-free",
-    "title": "How to Encrypt a PDF with Password-Based AES-256",
-    "date": "Mar 4, 2026",
-    "tag": "Security",
-    "tagColor": "#DB2777",
-    "tagBg": "#FDF2F8",
-    "description": "Use PDFcraft Protect PDF to create password-based AES-256 encryption, verify the output, and understand its limits."
-  },
-  {
     "slug": "how-to-lock-pdf-for-job-applications",
     "title": "How to Lock PDF for Job Applications",
-    "date": "Mar 5, 2026",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
     "description": "Check submission requirements before password-protecting application PDFs. Verify format, size, and recipient access."
   },
   {
-    "slug": "how-to-lock-pdf-without-adobe",
-    "title": "How to Password-Protect a PDF Without Adobe",
-    "date": "Mar 6, 2026",
-    "tag": "Security",
-    "tagColor": "#DB2777",
-    "tagBg": "#FDF2F8",
-    "description": "Add an opening password with PDFcraft, check the encrypted output, and troubleshoot runtime or input failures."
-  },
-  {
     "slug": "how-to-secure-pdf-before-sending-email",
     "title": "How to Secure a PDF Before Sending by Email",
-    "date": "Mar 7, 2026",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
@@ -344,34 +228,14 @@
   {
     "slug": "how-to-protect-pdf-from-editing",
     "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do",
-    "date": "Mar 8, 2026",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
     "description": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof."
   },
   {
-    "slug": "password-protect-pdf-on-android",
-    "title": "How to Password Protect PDF on Android Free",
-    "date": "Mar 9, 2026",
-    "tag": "Android",
-    "tagColor": "#16A34A",
-    "tagBg": "#F0FDF4",
-    "description": "Try AES-256 PDF password protection in an Android browser. Confirm the password, runtime loading, and downloaded result."
-  },
-  {
-    "slug": "lock-pdf-on-iphone",
-    "title": "How to Lock PDF on iPhone Free (No App Needed)",
-    "date": "Mar 10, 2026",
-    "tag": "iPhone",
-    "tagColor": "#1D4ED8",
-    "tagBg": "#EFF6FF",
-    "description": "Try AES-256 password protection in your iPhone browser. Check runtime loading, the saved output, and device limitations."
-  },
-  {
     "slug": "secure-pdf-on-mac",
     "title": "How to Password-Protect a PDF on Mac",
-    "date": "Mar 11, 2026",
     "tag": "Mac",
     "tagColor": "#374151",
     "tagBg": "#F9FAFB",

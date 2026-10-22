@@ -1,175 +1,84 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("how-to-add-password-to-pdf-online");
-export default function Post() {
-  return (
-    <BlogPost tag={"Protect PDF"} tagColor="#DC2626" tagBg="#FEF2F2"
-      title={"How to Add Password to PDF Online Free"}
-      date="May 2026" readTime="7 min read"
-      intro={"Use Protect PDF to add password-based AES-256 encryption to an unencrypted PDF. The current tool is free to use with no account required. Check the downloaded result and store the password before sharing."}
-      sections={[
-  {
-    "heading": "What happens when you add a password to a PDF?",
-    "text": "A compatible PDF viewer needs the correct password to decrypt a file created by Protect. Viewer prompts vary. An opening password is access control, not a restriction against later edits by someone who can open the file."
-  },
-  {
-    "heading": "How to add a password to a PDF online — step by step",
-    "steps": [
-      {
-        "title": "Open PDFcraft in your browser",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
-      },
-      {
-        "title": "Select Protect PDF",
-        "body": "Click the Protect PDF tool from the homepage tools list."
-      },
-      {
-        "title": "Select your PDF",
-        "body": "Choose a valid input file with the file selector. PDFcraft processes document contents locally; website resource requests are separate."
-      },
-      {
-        "title": "Type your password",
-        "body": "Select an unencrypted PDF, enter and confirm a longer, unique password, then click Protect PDF. The input minimum is four characters, not a security recommendation. Verify the downloaded result in a compatible viewer."
-      },
-      {
-        "title": "Click Protect PDF",
-        "body": "Click Protect PDF and wait for completion. The remote security runtime must load successfully before local encryption can run."
-      },
-      {
-        "title": "Download and share",
-        "body": "Download the password-protected PDF. Share the file through one channel and the password through a separate channel."
-      }
-    ]
-  },
-  {
-    "heading": "Types of PDF passwords explained",
-    "steps": [
-      {
-        "title": "Open password (user password)",
-        "body": "An opening password is used by a viewer to decrypt the document. PDFcraft’s Protect output uses password-based AES-256."
-      },
-      {
-        "title": "Permissions password (owner password)",
-        "body": "PDF permissions are distinct from opening-password access. PDFcraft uses the same password for user and owner access and allows printing and extraction; it has no permissions-only selector."
-      }
-    ]
-  },
-  {
-    "heading": "How to create a strong PDF password",
-    "steps": [
-      {
-        "title": "Use at least 12 characters",
-        "body": "Use a longer, unique password rather than the minimum accepted length. Length alone does not make a predictable password strong."
-      },
-      {
-        "title": "Mix character types",
-        "body": "Combine uppercase letters, lowercase letters, numbers, and symbols. Avoid single dictionary words or simple substitutions (like swapping 'a' for '@') — these are the first patterns automated cracking tools check."
-      },
-      {
-        "title": "Avoid personal information",
-        "body": "Never use your name, birthday, phone number, or common words — these are the first things attackers try."
-      },
-      {
-        "title": "Use a password manager",
-        "body": "Store a unique password in a password manager you trust. This guide does not assert current product prices or recommend a specific provider."
-      }
-    ]
-  },
-  {
-    "heading": "Password protection vs. encryption — what's the difference?",
-    "text": "Password protection and encryption are related but different. Password protection controls access — it requires a password to open the file. Encryption scrambles the data inside the file so it cannot be read without the correct key. PDFcraft uses AES encryption when adding password protection, so your PDF is both password protected and encrypted at the same time."
-  },
-  {
-    "heading": "Best practices when adding a PDF password online",
-    "steps": [
-      {
-        "title": "Use a unique password for each document",
-        "body": "Use a unique password rather than reusing one across documents. This reduces shared exposure without guaranteeing the safety of other files."
-      },
-      {
-        "title": "Choose a private tool",
-        "body": "Choose a valid input file with the file selector. PDFcraft processes document contents locally; website resource requests are separate."
-      },
-      {
-        "title": "Test before sending",
-        "body": "Always open the password-protected PDF yourself first to confirm the password works before sending to someone else."
-      },
-      {
-        "title": "Combine with a watermark for extra security",
-        "body": "Add a CONFIDENTIAL watermark first, then password protect. If someone ever bypasses the password, the watermark still marks the document as protected."
-      }
-    ]
-  },
-  {
-    "heading": "Related tools you might need",
-    "list": [
-      {
-        "text": "Remove PDF password when no longer needed",
-        "href": "/tools/unlock-pdf"
-      },
-      {
-        "text": "Add a watermark before password protecting",
-        "href": "/tools/watermark-pdf"
-      },
-      {
-        "text": "Compress the PDF before sending",
-        "href": "/tools/compress-pdf"
-      },
-      {
-        "text": "Merge PDFs before protecting",
-        "href": "/tools/merge-pdf"
-      }
-    ]
-  },
-  {
-    "tip": "Protect processes the supplied file and password locally. Loading qpdf WASM still makes a network request; this does not establish a general safety guarantee."
-  },
-  {
-    "heading": "Protection limits and runtime loading",
-    "text": "Protect applies tested password-based AES-256 encryption. Enter and confirm a longer, unique password; four characters is only the minimum validation requirement. The same password is used for user and owner access, with printing and extraction allowed. This is not a read-only or tamper-proof mechanism. Protect and Unlock load remote qpdf WASM from jsDelivr. Document contents and passwords are processed locally, but runtime downloads make network requests. PDFcraft cannot recover an unknown password."
-  },
-  {
-    "heading": "Continue with the relevant tool",
-    "list": [
-      {
-        "text": "Open protect pdf",
-        "href": "/tools/protect-pdf"
-      }
-    ]
-  }
-]}
-      faqs={[
-  {
-    "q": "Can I add a password to a PDF online for free?",
-    "a": "Yes. PDFcraft adds passwords to PDFs completely free online — no sign up, no software, no file uploads."
-  },
-  {
-    "q": "Is adding a PDF password online safe?",
-    "a": "PDFcraft processes document contents locally without a processing upload backend. Website and third-party requests still occur. See the Privacy Policy; local processing is not a general safety guarantee."
-  },
-  {
-    "q": "Can I add a password to a PDF on my phone?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "How strong is the password protection?",
-    "a": "The tested implementation uses password-based AES-256. Password strength and handling still matter; this is not a security or compliance guarantee."
-  },
-  {
-    "q": "Can I add different passwords to different pages?",
-    "a": "No. PDF password protection applies to the entire document, not individual pages."
-  },
-  {
-    "q": "What if the recipient can't open the password-protected PDF?",
-    "a": "Use a viewer that supports the output encryption, check the password, and test the downloaded copy. Support varies by viewer."
-  },
-  {
-    "q": "What happens if I forget the PDF password?",
-    "a": "PDFcraft cannot recover an unknown password. Check your own saved records or contact the sender for authorized access."
-  }
-]}
-      ctaText={"Add password to your PDF now — free online"}
-      ctaHref={"/tools/protect-pdf"}
-    />
-  );
-}
+
+const article = {
+  "title": "How to Add Password to PDF Online Free",
+
+  "readTime": "7 min read",
+  "tag": "Protect PDF",
+  "tagColor": "#DC2626",
+  "tagBg": "#FEF2F2",
+  "ctaHref": "/tools/protect-pdf",
+  "ctaText": "Add password to your PDF now — free online",
+  "intro": "An opening password controls access to an encrypted copy; it does not make a PDF read-only. Before using Protect, confirm that the recipient can accept an encrypted attachment and that you can retain the password independently of the file.",
+  "sections": [
+    {
+      "heading": "The settings PDFcraft actually applies",
+      "text": "Protect uses qpdf WebAssembly with AES-256 encryption. The entered value is both the user and owner password, and the configuration permits full printing and content extraction. There are no separate owner-password or permissions controls. Someone you give the password to should be treated as able to access the contents. The password is used in password-based key handling; it is not itself a 256-bit encryption key."
+    },
+    {
+      "heading": "Create and verify a protected copy",
+      "steps": [
+        {
+          "title": "Finish the document first",
+          "body": "Prepare an unencrypted PDF and complete page selection, ordering and size checks before protection. The other processing tools may reject encrypted input."
+        },
+        {
+          "title": "Enter and confirm a password",
+          "body": "Both entries must match and be at least four characters long. That minimum is an input rule, not evidence of strength. Use a password that is not predictable or reused for unrelated access."
+        },
+        {
+          "title": "Check the saved file",
+          "body": "After downloading, reopen the copy with the password. Verify that access and the pages meet your needs; keep the unencrypted original in an appropriate location."
+        }
+      ]
+    },
+    {
+      "heading": "A successful operation is a limited result",
+      "text": "The qpdf wrapper checks its exit status and requires a nonempty output. Controlled Node tests exercised correct, missing and wrong passwords. They did not establish universal security, signature preservation or interactive form behavior. An encryption algorithm does not make a weak password hard to guess. Strong encryption alone does not establish that a workflow meets legal or compliance requirements."
+    },
+    {
+      "heading": "Add a visible confidentiality label",
+      "text": "A watermark can communicate how you want a document handled, but it is removable and does not prevent copying or editing. It supplies neither cryptographic security nor proof of protection. Add such a label before encryption if it is useful to your recipient."
+    },
+    {
+      "heading": "When protection fails",
+      "text": "Already-protected, damaged or unsupported inputs can fail. The engine also needs its WASM resource from jsDelivr; a loading failure is different from an encryption failure. Processing uses the local runtime, not a document-upload backend, but site/runtime network requests still occur."
+    },
+    {
+      "heading": "Tools for this task",
+      "list": [
+        {
+          "text": "Set an opening password",
+          "href": "/tools/protect-pdf"
+        },
+        {
+          "text": "Plan delivery of the protected attachment",
+          "href": "/blog/how-to-secure-pdf-before-sending-email"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does the four-character minimum make a password safe?",
+      "a": "No. It is only the current form validation. Password choice and how you disclose it remain important; the interface does not certify password strength."
+    },
+    {
+      "q": "Can I block printing while letting someone open the file?",
+      "a": "Not through PDFcraft Protect. Its current qpdf options allow printing and extraction, and this interface provides no alternate permissions policy."
+    },
+    {
+      "q": "Do I need Adobe software or a subscription for this workflow?",
+      "a": "PDFcraft Protect requires neither an Adobe installation nor an Adobe subscription. It handles one PDF per operation."
+    },
+    {
+      "q": "How do I access and save a PDF in a mobile browser?",
+      "a": "Available file locations depend on your browser, device and where the file is stored. Locate the output through browser download controls; the save location can vary. Retrieving a cloud file and storing the result in a chosen cloud service are separate transfers from local encryption."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

@@ -1,0 +1,49 @@
+{
+  "operation": "watermark-pdf",
+  "fixtureId": "synthetic-features-v1",
+  "options": {
+    "text": "CONFIDENTIAL",
+    "opacity": 0.3
+  },
+  "expected": "Add removable visible text; not a security mechanism.",
+  "inputs": [
+    {
+      "name": "feature.pdf",
+      "sha256": "6745e776a102af4d535aac635fd74868fe5e2aadad2f8ef5e25d6d00f208c0c7"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "watermark-pdf-1.pdf",
+      "sha256": "8801543d93bd8041cdb3839803357e9942b858b43b43779ae4d9b4e5a6ae022d",
+      "bytes": 3944,
+      "inspection": "watermark-pdf-1.inspection.json",
+      "inspectionSha256": "c743508f37ee49b714c42c1c4db307011060cbfacccc4d44e0774b42713449b1",
+      "pageCount": 3,
+      "comparison": {
+        "pageOrder": "PASS",
+        "text": "CHANGED",
+        "links": "PASS",
+        "annotations": "PASS",
+        "forms": "PASS",
+        "outlines": "PASS",
+        "metadata": "CHANGED",
+        "geometry": "PASS",
+        "imageOperators": "PASS",
+        "vectorOperators": "PASS",
+        "visualFidelity": "NOT TESTED",
+        "interactiveTextSelection": "NOT TESTED",
+        "interactiveForms": "NOT TESTED",
+        "signatureValidity": "NOT TESTED"
+      }
+    }
+  ],
+  "status": "MEASURED",
+  "limitations": [
+    "Node source-handler with simulated React/URL; no browser/download test",
+    "Parser/operator observations are not visual or interactive preservation",
+    "No valid signed fixture; signatures NOT TESTED"
+  ],
+  "alerts": [],
+  "handlerText": "📄features.pdf✕Watermark textOpacity: 30%LightStrong✎ Add Watermark✅Watermark added!Text \"CONFIDENTIAL\" applied to all pages."
+}

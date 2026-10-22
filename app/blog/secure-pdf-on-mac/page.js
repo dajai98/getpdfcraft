@@ -5,100 +5,94 @@ export default function Post() {
   return (
     <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"
       title={"How to Password-Protect a PDF on Mac"}
-      date="May 2026" readTime="6 min read"
-      intro={"Try PDFcraft’s browser-based Protect tool or review the password options available in your installed PDF app. Preserve the original and verify the downloaded or exported file before sharing it."}
+      readTime="6 min read"
+      intro={"Before choosing a Mac PDF protection method, separate two needs: requiring a password to open the document, and managing permissions after it opens. Preview documents controls for both. PDFcraft provides a narrower opening-password workflow. Pick the capability your recipient actually needs rather than treating every password dialog as the same security feature."}
       sections={[
   {
-    "heading": "Method 1 — PDFcraft in your browser",
+    "heading": "Preview separates opening access from permissions",
+    "text": "Apple documents an opening password and an owner password for managing permissions such as printing, copying text and annotations. In the documented workflow, open a copy, choose File > Export, then Permissions. Set the opening-password requirement if needed, choose the permissions, enter the owner password and save. Apple says changes apply when the PDF is reopened; an existing protected file also has an Edit Permissions route.",
     "steps": [
       {
-        "title": "Open Safari or Chrome on Mac",
-        "body": "Go to getpdfcraft.com. No software installation needed."
+        "title": "Choose the control deliberately",
+        "body": "If the goal is a password prompt before reading, check the opening-password setting. A permission setting is a different decision about permitted operations. Do not assume that selecting a printing restriction alone creates the opening prompt you intended."
       },
       {
-        "title": "Click Protect PDF",
-        "body": "Select the Protect PDF tool."
-      },
-      {
-        "title": "Select your PDF and set password",
-        "body": "Select an unencrypted PDF, enter and confirm a longer, unique password, then click Protect PDF. The input minimum is four characters, not a security recommendation. Verify the downloaded result in a compatible viewer."
-      },
-      {
-        "title": "Download the secured PDF",
-        "body": "Download the encrypted PDF and test it with the correct password and an incorrect password in a compatible viewer."
+        "title": "Treat the help page as a control guide",
+        "body": "Menu labels are version-sensitive. Apple documents the controls, but that does not establish a specific encryption algorithm or equivalence to another tool. This guide does not report a local Preview execution or a comparison of cipher strength."
       }
-    ]
-  },
-  {
-    "heading": "Method 2 — Mac Preview (built-in, no download needed)",
-    "steps": [
-      {
-        "title": "Open a copy in Preview if available",
-        "body": "Choose Preview through Open With rather than assuming it is your default viewer."
-      },
-      {
-        "title": "Find the current password controls",
-        "body": "Look for export or permissions options in your Preview version. The exact menu and dialog labels vary; check the application’s current help if needed."
-      },
-      {
-        "title": "Save a separate output",
-        "body": "Apply the intended opening password if the option is available and save under a new name."
-      },
-      {
-        "title": "Verify the result",
-        "body": "Close and reopen the output, check the password requirement, and inspect its contents. Do not infer the encryption algorithm from the app name."
-      }
-    ]
-  },
-  {
-    "heading": "Command-line workflows require separate verification",
-    "text": "If you need automation, use a documented tool and check its current encryption arguments and output. Do not place a real password directly into a shell command where it may enter command history. No unverified installation or encryption command is supplied here."
-  },
-  {
-    "heading": "Choose based on the task",
-    "text": "PDFcraft avoids a separate desktop installation but needs web resources. For offline or automated processing, verify those capabilities in your chosen installed tool."
-  },
-  {
-    "tip": "Work on copies and verify password behavior. Native app menu labels and encryption behavior must be checked for your version."
-  },
-  {
-    "heading": "Protection limits and runtime loading",
-    "text": "Protect applies tested password-based AES-256 encryption. Enter and confirm a longer, unique password; four characters is only the minimum validation requirement. The same password is used for user and owner access, with printing and extraction allowed. This is not a read-only or tamper-proof mechanism. Protect and Unlock load remote qpdf WASM from jsDelivr. Document contents and passwords are processed locally, but runtime downloads make network requests. PDFcraft cannot recover an unknown password."
-  },
-  {
-    "heading": "Continue with the relevant tool",
+    ],
     "list": [
       {
-        "text": "Open protect pdf",
+        "text": "Apple: password-protect a PDF in Preview",
+        "href": "https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac"
+      }
+    ]
+  },
+  {
+    "heading": "PDFcraft provides a narrower opening-password workflow",
+    "text": "Protect PDF accepts an unencrypted PDF and asks you to enter and confirm a password. Its current processing applies password-based AES-256 encryption using the same password for user and owner access, with printing and extraction allowed. It does not expose all Preview permission controls. A successfully protected file is not thereby read-only, tamper-proof or a signed document.",
+    "steps": [
+      {
+        "title": "Use it when the narrower requirement fits",
+        "body": "If an agreed recipient needs an opening password and accepts the output, the browser workflow may fit. If you need separate permission choices, do not infer them from the Protect button. Review a tool that explicitly supports those choices instead."
+      },
+      {
+        "title": "Keep the source and the password available",
+        "body": "Work from an authorized original or an authorized unencrypted copy. Retain the source separately, choose a longer unique password and store it safely. PDFcraft does not recover an unknown password, and its input minimum is not a recommendation for password strength."
+      }
+    ],
+    "list": [
+      {
+        "text": "Open Protect PDF",
         "href": "/tools/protect-pdf"
+      },
+      {
+        "text": "Opening-password workflow and its limits",
+        "href": "/blog/how-to-add-password-to-pdf-online"
+      }
+    ]
+  },
+  {
+    "heading": "Choose native controls or browser protection",
+    "text": "For a native workflow, check whether the installed Preview controls meet the opening and permission requirements. For offline work, make the source available locally and verify that workflow on your Mac. For PDFcraft, document processing is local but the website and processing runtime still load web resources; local processing does not promise offline availability.",
+    "steps": [
+      {
+        "title": "Agree on access before applying protection",
+        "body": "Ask whether the receiving system accepts encrypted PDFs and how the recipient will obtain the password. If a portal cannot accept a protected file, adding encryption can prevent delivery. Do not substitute a permission checkbox for that conversation."
+      },
+      {
+        "title": "Do not rely on permissions as universal enforcement",
+        "body": "Permission restrictions are not a guarantee against every viewer or later use of the content. Once an authorized recipient can read the document, this guide does not promise that copying or redistribution is impossible. Share only the information needed for the task."
+      }
+    ]
+  },
+  {
+    "heading": "Verify the saved copy, not just the dialog",
+    "text": "Close and reopen the actual output in a compatible viewer. Check that the intended password opens it and that an incorrect password does not. Inspect page count and readable content, then check recipient compatibility using the intended viewing workflow. A password prompt alone is not evidence that forms, signatures or every document feature survived.",
+    "steps": [
+      {
+        "title": "Keep the verification result specific",
+        "body": "Record which file you opened and which viewer you used for your own checks. Success on one Mac viewer does not establish universal Windows, mobile or browser compatibility. If the recipient cannot open it, confirm the password and supported workflow before replacing or weakening protection."
       }
     ]
   }
 ]}
       faqs={[
   {
-    "q": "Can I secure a PDF on Mac for free?",
-    "a": "PDFcraft Protect is currently free to use in a supported browser. Native tool options depend on the app and version."
+    "q": "Is an owner password the same as requiring a password to open?",
+    "a": "They are different controls in Preview documentation. Choose the opening requirement explicitly when a password prompt before reading is the goal."
   },
   {
-    "q": "How do I password protect a PDF on Mac without software?",
-    "a": "PDFcraft Protect is currently free to use in a supported browser. Native tool options depend on the app and version."
+    "q": "Can PDFcraft reproduce all Preview permission settings?",
+    "a": "No. Its Protect workflow adds opening-password encryption and permits printing and extraction; it is not an equivalent permission-management interface."
   },
   {
-    "q": "Does Mac Preview encryption use strong encryption?",
-    "a": "This guide does not assert a particular encryption algorithm for Preview. Check the exported file independently."
+    "q": "Does this comparison establish which encryption algorithm Preview uses?",
+    "a": "No. The Apple help page supports the documented controls, not a cipher-equivalence or security-strength comparison with PDFcraft."
   },
   {
-    "q": "Can I secure PDFs on a MacBook?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "Can I secure a PDF on Mac without internet?",
-    "a": "PDFcraft does not guarantee offline availability. Verify the installed tool and workflow if offline use is required."
-  },
-  {
-    "q": "Will a PDF secured on Mac open on Windows?",
-    "a": "Use a viewer that supports the output encryption and test it with the recipient. Universal compatibility is not guaranteed."
+    "q": "What should I check before sending the protected copy?",
+    "a": "Reopen the saved output with the intended password, inspect its contents and confirm that the recipient accepts encrypted files and can obtain the password."
   }
 ]}
       ctaText={"Secure PDF on Mac now — free"}

@@ -1,117 +1,128 @@
 import { blogMetadata } from "@/lib/blogMetadata";
 import BlogPost from "@/components/ui/BlogPost";
+
 export const metadata = blogMetadata("how-to-rotate-pdf");
-export default function Post() {
-  return (
-    <BlogPost tag={"Rotate PDF"} tagColor="#2563EB" tagBg="#EFF6FF"
-      title={"How to Rotate PDF Pages Free Online"}
-      date="February 2026" readTime="4 min read"
-      intro={"For a document whose pages all need the same rotation, PDFcraft Rotate applies the chosen angle to every page. It has no selected-page control. Keep the source if only some pages need changing."}
-      sections={[
-  {
-    "heading": "Why do PDF pages need rotating?",
-    "steps": [
-      {
-        "title": "Scanned documents",
-        "body": "When scanning physical documents, pages are often placed incorrectly in the scanner — coming out sideways or upside down in the PDF."
-      },
-      {
-        "title": "Mobile phone scans",
-        "body": "Photos taken of documents on a phone can have incorrect orientation if the phone was held sideways."
-      },
-      {
-        "title": "Mixed orientation documents",
-        "body": "A PDF may have a mix of portrait and landscape pages that need to match a consistent orientation."
-      },
-      {
-        "title": "Incorrectly exported PDFs",
-        "body": "Some software exports PDFs with the wrong page rotation metadata, causing them to display incorrectly in PDF viewers."
+
+const article = {
+  "title": "How to Rotate PDF Pages Free Online",
+  "date": "February 2026",
+  "readTime": "4 min read",
+  "tag": "Rotate PDF",
+  "tagColor": "#2563EB",
+  "tagBg": "#EFF6FF",
+  "ctaHref": "/tools/rotate-pdf",
+  "ctaText": "Rotate your PDF pages now — free",
+  "intro": "PDFcraft Rotate changes the page rotation value rather than rendering a new image of each page. The important control is the additional angle: every page receives the same change, including pages that already have rotation.",
+  "sections": [
+    {
+      "heading": "Predict the resulting rotation",
+      "table": {
+        "headers": [
+          "Existing rotation",
+          "Selected change",
+          "Result modulo 360"
+        ],
+        "rows": [
+          [
+            "0 degrees",
+            "90 degrees right",
+            "90 degrees"
+          ],
+          [
+            "90 degrees",
+            "90 degrees right",
+            "180 degrees"
+          ],
+          [
+            "270 degrees",
+            "90 degrees right",
+            "0 degrees"
+          ],
+          [
+            "0 degrees",
+            "90 degrees left (270 degrees)",
+            "270 degrees"
+          ],
+          [
+            "180 degrees",
+            "180 degrees",
+            "0 degrees"
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "How to rotate PDF pages — step by step",
-    "steps": [
-      {
-        "title": "Open PDFcraft Rotate PDF tool",
-        "body": "Open getpdfcraft.com in a supported browser and choose the relevant tool. No account is required; browser and device limitations still apply."
-      },
-      {
-        "title": "Select your PDF",
-        "body": "Choose the PDF with pages that need rotating. The file stays on your device."
-      },
-      {
-        "title": "Choose an angle for all pages",
-        "body": "Select 90°, 180°, or 270°. The tool adds that rotation to every page’s existing rotation. 270° is equivalent to a quarter-turn counter-clockwise."
-      },
-      {
-        "title": "Click Rotate PDF",
-        "body": "Click Rotate PDF, wait for the result, then inspect the downloaded pages."
-      },
-      {
-        "title": "Download the rotated PDF",
-        "body": "Download your fixed PDF. Pages are now in the correct orientation."
+    },
+    {
+      "heading": "Correct a consistently sideways document",
+      "steps": [
+        {
+          "title": "Inspect more than the first page",
+          "body": "If the document mixes upright and sideways pages, applying one angle to all pages may fix some and disturb others. This tool has no selected-page control."
+        },
+        {
+          "title": "Choose 90, 180 or 270 degrees",
+          "body": "Use the available angle buttons and process the PDF. This is relative to the existing page rotation, not an absolute portrait/landscape setting."
+        },
+        {
+          "title": "Check the saved orientation",
+          "body": "Reopen the downloaded copy and inspect pages with different dimensions or crop areas. Keep the original so the next attempt does not depend on remembering earlier rotations."
+        }
+      ]
+    },
+    {
+      "heading": "Page rotation is not the same as rotating an embedded picture",
+      "text": "The handler updates each page with pdf-lib and saves the file. It does not intentionally rerasterize content or resize media/crop boxes. If a photograph is sideways inside an otherwise correct page, this rotates the entire page, not just that photograph."
+    },
+    {
+      "heading": "Troubleshoot the result",
+      "table": {
+        "headers": [
+          "Observation",
+          "Explanation"
+        ],
+        "rows": [
+          [
+            "Some pages now look wrong",
+            "The input may have mixed orientations. One global additional angle cannot independently correct them."
+          ],
+          [
+            "Viewer labels have not changed",
+            "Rotation does not renumber or reorder pages."
+          ],
+          [
+            "The page is landscape but text is still awkward",
+            "Page dimensions, rotation and the orientation of drawn content are different properties."
+          ],
+          [
+            "Input cannot be parsed",
+            "Encrypted or malformed inputs can fail; an orientation control is not a file-repair tool."
+          ]
+        ]
       }
-    ]
-  },
-  {
-    "heading": "Rotation options explained",
-    "steps": [
-      {
-        "title": "90° clockwise",
-        "body": "Rotates pages to the right. Use this if pages appear sideways leaning left — you need to turn them right to read them."
-      },
-      {
-        "title": "90° counter-clockwise",
-        "body": "Rotates pages to the left. Use this if pages appear sideways leaning right."
-      },
-      {
-        "title": "180°",
-        "body": "Flips pages upside down. Use this if pages appear completely inverted."
-      }
-    ]
-  },
-  {
-    "tip": "For mixed-orientation pages needing different changes, use a tool with selected-page rotation. Reorder Pages changes order, not orientation."
-  },
-  {
-    "heading": "Continue with the relevant tool",
-    "list": [
-      {
-        "text": "Open rotate pdf",
-        "href": "/tools/rotate-pdf"
-      }
-    ]
-  }
-]}
-      faqs={[
-  {
-    "q": "Can I rotate PDF pages for free?",
-    "a": "Yes. PDFcraft's Rotate PDF tool is completely free with no sign up required."
-  },
-  {
-    "q": "Can I rotate only specific pages in a PDF?",
-    "a": "No. PDFcraft Rotate applies the selected angle to all pages."
-  },
-  {
-    "q": "Will rotating a PDF reduce its quality?",
-    "a": "The tool changes page rotation metadata rather than rasterizing the pages. Check the output and document features before relying on it."
-  },
-  {
-    "q": "Can I rotate a PDF on my phone?",
-    "a": "You can try this browser-based workflow without installing a PDFcraft app. Browser compatibility and usable file sizes depend on the device; universal support is not guaranteed."
-  },
-  {
-    "q": "What if my PDF opens sideways in the viewer but prints correctly?",
-    "a": "Viewer and print behavior can differ. Inspect both on a copy; rotating the PDF is not a guarantee of identical behavior in every viewer."
-  },
-  {
-    "q": "Can I undo a rotation?",
-    "a": "PDFcraft does not modify your original file. If you rotate in the wrong direction, just rotate the downloaded file again in the opposite direction."
-  }
-]}
-      ctaText={"Rotate your PDF pages now — free"}
-      ctaHref={"/tools/rotate-pdf"}
-    />
-  );
-}
+    },
+    {
+      "heading": "What the checks support",
+      "text": "Controlled Node evidence observed the requested rotation and extracted text on the fixture. It does not certify signatures, universal viewer behavior or every document structure. Rotation executes locally, while site resources still load from the web."
+    },
+    {
+      "heading": "Continue with the appropriate tool",
+      "list": [
+        {
+          "text": "Apply an additional rotation to all pages",
+          "href": "/tools/rotate-pdf"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I set every page to portrait with one click?",
+      "a": "No. The control adds an angle; it does not inspect content and choose a different correction for each page."
+    },
+    {
+      "q": "Will rotating make a scanned page searchable?",
+      "a": "No. Rotating an image-based page does not add OCR or create text objects."
+    }
+  ]
+};
+
+export default function Post() { return <BlogPost {...article} />; }

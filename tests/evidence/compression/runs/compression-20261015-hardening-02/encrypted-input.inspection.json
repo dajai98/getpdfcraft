@@ -1,0 +1,16 @@
+{
+  "before": {
+    "opens": false,
+    "error": "PasswordException: No password given"
+  },
+  "after": null,
+  "images": null,
+  "warnings": [],
+  "unsupported": [
+    "Visual fidelity",
+    "Interactive selection",
+    "Form interaction",
+    "Signature validity",
+    "Links/bookmarks/attachments behavior"
+  ]
+}

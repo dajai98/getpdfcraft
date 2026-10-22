@@ -28,11 +28,23 @@ const article = {
             "Obtain a fresh copy and check it in a compatible viewer before treating it as a password problem."
           ],
           [
+            "Viewer reports a signature or certification restriction",
+            "Read the viewer's signature status and ask the sender for an editable copy if needed. Unlock does not verify or repair signatures."
+          ],
+          [
+            "Cannot save changes, but the PDF opens",
+            "Check whether the app supports editing and whether the chosen storage location allows saving a copy. Do not assume an opening-password problem."
+          ],
+          [
             "PDFcraft security engine cannot load",
             "Check the connection and browser restrictions affecting the remote qpdf runtime."
           ]
         ]
       }
+    },
+    {
+      "heading": "Opening passwords and permissions answer different questions",
+      "text": "An opening-password prompt asks for access to encrypted content. An editing or printing restriction concerns permitted operations and may appear after a document opens. Encryption is the protection mechanism, not a diagnosis for every disabled button. Check the viewer's document-security information and the sender's instructions before deciding whether decryption matches the problem. PDFcraft Unlock requires a password you know; it is not a password-cracking or general restriction-bypass workflow."
     },
     {
       "heading": "Use Unlock only for a matching problem",
@@ -71,7 +83,7 @@ const article = {
     },
     {
       "q": "Why does a PDF open but remain difficult to edit?",
-      "a": "It may be the viewer, document permissions, or how the content was created. PDFcraft does not edit existing PDF text."
+      "a": "First check whether your viewer offers editing and what its security panel reports. If the page is a scanned image, opening it does not create editable text. PDFcraft Unlock only decrypts; PDFcraft has no OCR or existing-text editor."
     },
     {
       "q": "Does Unlock repair a damaged PDF?",
@@ -83,7 +95,7 @@ const article = {
   "tag": "Unlock PDF",
   "tagColor": "#16A34A",
   "tagBg": "#F0FDF4",
-  "date": "May 2026",
+
   "readTime": "3 min read"
 };
 
