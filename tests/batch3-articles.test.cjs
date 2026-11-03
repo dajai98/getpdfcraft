@@ -65,8 +65,8 @@ const expected = {
     "date": "February 2026"
   },
   "how-to-edit-pdf-free": {
-    "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
-    "h1": "How to Edit PDF Free Online (No Adobe Needed)",
+    "title": "Edit PDF Pages Free: Reorder, Rotate and Add Labels | PDFcraft",
+    "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-edit-pdf-free\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-edit-pdf-free\"/>",
     "date": "February 2026"

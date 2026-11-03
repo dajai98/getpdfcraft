@@ -1,0 +1,3907 @@
+{
+  "run": "final-verified-retry",
+  "timestamp": "2026-11-03T00:15:28.635Z",
+  "scope": "Local static export, headless Edge; no physical mobile-device claim",
+  "responsive": [
+    {
+      "route": "/",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Free PDF tools.Private by design."
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/about",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/about",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Built to be useful.Free to use."
+    },
+    {
+      "route": "/blog",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Tips & Guides"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/adobe-acrobat-alternative-free",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Free Adobe Acrobat Alternative for Core PDF Tasks"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/best-free-pdf-tools-online",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "13 Free PDFcraft Tools: What Each One Actually Does"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/compress-pdf-without-losing-quality",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Compress PDF Without Losing Quality"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-jpg-free",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to JPG Free — No Watermark"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/convert-pdf-to-png-free",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert PDF to PNG Free Online"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-browser-based-pdf-processing-works",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How PDFcraft Processes Files Locally in Your Browser"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-password-to-pdf-online",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Password to PDF Online Free"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-add-watermark-to-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Add Watermark to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-combine-pdf-and-images",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Combine PDF and Images Into One File Free"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-convert-jpg-to-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Convert JPG to PDF Free Online"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-edit-pdf-free",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-extract-pages-from-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Extract Selected PDF Pages and Ranges"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-lock-pdf-for-job-applications",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Lock PDF for Job Applications"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-free",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF Files Free Online — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-mac",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Mac Free (3 Easy Ways)"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-merge-pdf-on-windows",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on Windows Without Installing an App"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-protect-pdf-from-editing",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-remove-password-from-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Remove a PDF Password You Already Know"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-rotate-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Rotate PDF Pages Free Online"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-secure-pdf-before-sending-email",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Secure a PDF Before Sending by Email"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/how-to-split-pdf-online",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Split PDF Online Free — No Sign Up"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/ilovepdf-alternative",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "An iLovePDF Alternative for Local PDF Workflows"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/merge-pdf-on-iphone",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Merge PDF on iPhone Free (No App Needed)"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-compression-real-test-results",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How Much Can You Compress a PDF? Measure Your Own Result"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-file-size-too-large",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF File Size Too Large? How to Fix It Free"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-security-guide",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF Security Guide — How to Protect Your Documents"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-tool-not-working-troubleshooting",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Isn't My PDF Tool Working? A Troubleshooting Guide"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/pdf-vs-word-which-is-better",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF vs Word — Which Format Should You Use?"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/secure-pdf-on-mac",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "How to Password-Protect a PDF on Mac"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/smallpdf-alternative",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "A Smallpdf Alternative: Check PDFcraft Against Your Task"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/blog/why-is-my-pdf-locked",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Why Is My PDF Locked? Diagnose the Actual Problem"
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/contact",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/contact",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Get in touch"
+    },
+    {
+      "route": "/privacy",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/privacy",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/privacy",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/privacy",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/privacy",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Your documents.Your browser."
+    },
+    {
+      "route": "/terms",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/terms",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/terms",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/terms",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/terms",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/terms",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Terms of Service"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/add-page-numbers",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Page Numbers to PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/compress-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Compress PDF"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/delete-pages",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Delete PDF Pages"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/jpg-to-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "JPG to PDF"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/merge-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Merge PDF Files"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-grayscale",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Grayscale"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/pdf-to-image",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "PDF to Image"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/protect-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Protect PDF with Password"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/reorder-pages",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Reorder PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/rotate-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Rotate PDF Pages"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/split-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Split PDF File"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/unlock-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Unlock PDF — Remove Password"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 1280,
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    },
+    {
+      "route": "/tools/watermark-pdf",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflow": false,
+      "offscreen": [],
+      "h1": "Add Watermark to PDF"
+    }
+  ],
+  "workflows": [
+    {
+      "tool": "merge-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "merged.pdf",
+          "bytes": 2220,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          },
+          {
+            "page": 4,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 5,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 6,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Merge PDF Files"
+      }
+    },
+    {
+      "tool": "split-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "page-1.pdf",
+          "bytes": 936,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        }
+      ],
+      "additionalPages": [
+        {
+          "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+          "pages": [
+            {
+              "page": 1,
+              "rotation": 90,
+              "view": [
+                0,
+                0,
+                300,
+                400
+              ],
+              "text": "SYNTHETIC PAGE 2"
+            }
+          ]
+        },
+        {
+          "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+          "pages": [
+            {
+              "page": 1,
+              "rotation": 0,
+              "view": [
+                0,
+                0,
+                300,
+                400
+              ],
+              "text": "SYNTHETIC PAGE 3"
+            }
+          ]
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Split PDF File"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "compress-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "processed.pdf",
+          "bytes": 1455,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Compress PDF"
+      }
+    },
+    {
+      "tool": "rotate-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "rotated.pdf",
+          "bytes": 1456,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 180,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11390,
+          "colored": 11521
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11539,
+          "colored": 11539
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11547,
+          "colored": 11595
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Rotate PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "watermark-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "watermarked.pdf",
+          "bytes": 2414,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1  SYNTHETIC"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2  SYNTHETIC"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3  SYNTHETIC"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 12189,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 12600,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 12248,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Add Watermark to PDF"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "protect-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "protected.pdf",
+          "bytes": 2303,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "encryption": "AESV3 256; missing and wrong passwords rejected",
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Protect PDF with Password"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "unlock-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "unlocked.pdf",
+          "bytes": 1630,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Unlock PDF — Remove Password"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "jpg-to-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "images.pdf",
+          "bytes": 2420,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              100,
+              80
+            ],
+            "text": ""
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              100,
+              80
+            ],
+            "text": ""
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 100,
+          "height": 80,
+          "nonWhite": 8000,
+          "colored": 8000
+        },
+        {
+          "width": 100,
+          "height": 80,
+          "nonWhite": 8000,
+          "colored": 8000
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "JPG to PDF"
+      }
+    },
+    {
+      "tool": "pdf-to-image",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "page-1.jpg",
+          "bytes": 9614,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "imageMagic": "ffd8ffe000104a4649460001",
+      "rendering": [
+        {
+          "width": 600,
+          "height": 800,
+          "complete": true
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "complete": true
+        },
+        {
+          "width": 600,
+          "height": 800,
+          "complete": true
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "PDF to Image"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "delete-pages",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "edited.pdf",
+          "bytes": 1198,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Delete PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "add-page-numbers",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "numbered.pdf",
+          "bytes": 2199,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1  1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2  2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3  3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11488,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11582,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11553,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Add Page Numbers to PDF"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "reorder-pages",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "reordered.pdf",
+          "bytes": 1451,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "Reorder PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "pdf-to-grayscale",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "grayscale.pdf",
+          "bytes": 21216,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": ""
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              400,
+              300
+            ],
+            "text": ""
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": ""
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11605,
+          "colored": 0
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11581,
+          "colored": 0
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11566,
+          "colored": 0
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "overflow": false,
+        "offscreen": [],
+        "h1": "PDF to Grayscale"
+      },
+      "removeClearedDownload": true
+    }
+  ],
+  "supplemental": [
+    {
+      "name": "mobile-navbar-keyboard",
+      "status": "PASS",
+      "keyboard": "Enter, Tab, Escape/focus restore, Space, toggle close, link navigation",
+      "accessibleNames": [
+        "Menu",
+        "Close menu",
+        "Menu"
+      ],
+      "linksAccessible": 5,
+      "desktopLinksAccessible": 5
+    },
+    {
+      "name": "pdf-to-image-png",
+      "status": "PASS",
+      "sizes": [
+        [
+          600,
+          800
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          600,
+          800
+        ]
+      ]
+    },
+    {
+      "name": "protect-unlock-unicode-wrong-password-retry",
+      "status": "PASS",
+      "encryptedBytes": 2303,
+      "unlockedBytes": 1630,
+      "pageIdentities": [
+        "SYNTHETIC PAGE 1",
+        "SYNTHETIC PAGE 2",
+        "SYNTHETIC PAGE 3"
+      ],
+      "wrongPasswordRejected": true
+    },
+    {
+      "name": "pdf-to-grayscale-remove-replace-cancel-retry",
+      "status": "PASS",
+      "method": "Held File.arrayBuffer; remove, replace, reject old read, assert no stale error/progress/download; successful retry",
+      "retry": true
+    },
+    {
+      "name": "pdf-to-image-remove-replace-cancel-retry",
+      "status": "PASS",
+      "method": "Held File.arrayBuffer; remove, replace, reject old read, assert no stale error/progress/download; successful retry",
+      "retry": true
+    },
+    {
+      "name": "pdf-to-grayscale-active-worker-cancel-retry",
+      "status": "PASS",
+      "workers": {
+        "started": 2,
+        "terminated": 2,
+        "heldDocumentRequests": 1,
+        "holdNext": false
+      },
+      "method": "Allow worker handshake, hold first GetDocRequest, remove source, observe initialized worker terminate, replace and retry",
+      "retry": true
+    },
+    {
+      "name": "pdf-to-image-active-worker-cancel-retry",
+      "status": "PASS",
+      "workers": {
+        "started": 2,
+        "terminated": 2,
+        "heldDocumentRequests": 1,
+        "holdNext": false
+      },
+      "method": "Allow worker handshake, hold first GetDocRequest, remove source, observe initialized worker terminate, replace and retry",
+      "retry": true
+    },
+    {
+      "name": "rotate-pdf-zero-malformed-one-page",
+      "status": "PASS",
+      "rejected": [
+        "zero-pages.pdf",
+        "invalid.pdf"
+      ],
+      "validOnePage": true,
+      "validThreePage": "covered by primary workflow"
+    },
+    {
+      "name": "watermark-pdf-zero-malformed-one-page",
+      "status": "PASS",
+      "rejected": [
+        "zero-pages.pdf",
+        "invalid.pdf"
+      ],
+      "validOnePage": true,
+      "validThreePage": "covered by primary workflow"
+    },
+    {
+      "name": "add-page-numbers-zero-malformed-one-page",
+      "status": "PASS",
+      "rejected": [
+        "zero-pages.pdf",
+        "invalid.pdf"
+      ],
+      "validOnePage": true,
+      "validThreePage": "covered by primary workflow"
+    },
+    {
+      "name": "compress-pdf-zero-malformed-one-page",
+      "status": "PASS",
+      "rejected": [
+        "zero-pages.pdf",
+        "invalid.pdf"
+      ],
+      "validOnePage": true,
+      "validThreePage": "covered by primary workflow"
+    },
+    {
+      "name": "pdf-to-grayscale-raster-guard",
+      "status": "PASS",
+      "pagePoints": [
+        3000,
+        3000
+      ],
+      "noDownload": true,
+      "guard": "16 million pixels before canvas allocation"
+    },
+    {
+      "name": "pdf-to-image-raster-guard",
+      "status": "PASS",
+      "pagePoints": [
+        3000,
+        3000
+      ],
+      "noDownload": true,
+      "guard": "16 million pixels before canvas allocation"
+    },
+    {
+      "name": "pdf-to-image-repeated-20-pages-url-canvas-cleanup",
+      "status": "PASS",
+      "pagesPerRun": 20,
+      "runs": 2,
+      "repeated": {
+        "created": 40,
+        "revoked": 20,
+        "liveCanvases": 0
+      },
+      "revokedAfterRemove": 40,
+      "scope": "Small synthetic pages at a mobile viewport; no physical device memory claim"
+    },
+    {
+      "name": "grayscale-repeated-url-canvas-cleanup",
+      "status": "PASS",
+      "pagesPerRun": 3,
+      "runs": 2,
+      "repeated": {
+        "created": 2,
+        "revoked": 1,
+        "liveCanvases": 0
+      },
+      "revokedAfterRemove": 2
+    }
+  ],
+  "consent": {
+    "beforeChoiceAds": 0,
+    "declinedValue": "declined",
+    "afterDeclineAds": 0,
+    "afterAcceptAds": 2,
+    "afterWithdrawalValue": "declined",
+    "afterWithdrawalAds": 2,
+    "status": "PASS"
+  },
+  "errors": [],
+  "consoleErrors": [
+    {
+      "url": "http://127.0.0.1:61586/tools/unlock-pdf",
+      "text": "this.program: /input.pdf: invalid password"
+    }
+  ],
+  "harnessSha256": "c9f35369c716ad2e956b67b0fabc4d1ab79cd0eac495de01cb6740b04a6f9a01",
+  "candidateFiles": {
+    "out/index.html": {
+      "sha256": "e1901b64806b2c0bb9bb313f3ded8ce4968c7dab18f85f7b0d281cfc3eac21ec",
+      "modified": "2026-11-03T00:10:31.580Z"
+    },
+    "out/contact.html": {
+      "sha256": "4f6132b8835b1b801bdfd090b3c5bb7df6090350a561c6d1cf5b80044e41421a",
+      "modified": "2026-11-03T00:10:31.572Z"
+    },
+    "out/tools/pdf-to-image.html": {
+      "sha256": "cd86bf71af7b3d908222931332644d27bce972ec1045a1611b8bd63b808d8ebc",
+      "modified": "2026-11-03T00:10:32.046Z"
+    },
+    "out/tools/pdf-to-grayscale.html": {
+      "sha256": "85df496fb68e3a9e71f4c11fce25ca7cf23109b4b80a560d399a53cd5902d025",
+      "modified": "2026-11-03T00:10:32.034Z"
+    }
+  },
+  "browser": "156.0.4314.58",
+  "summary": {
+    "responsiveChecks": 300,
+    "responsiveFailures": 0,
+    "workflowPass": 13,
+    "workflowFail": 0,
+    "supplementalPass": 15,
+    "supplementalFail": 0
+  }
+}

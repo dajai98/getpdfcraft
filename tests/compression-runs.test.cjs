@@ -1,3 +1,4 @@
+const { historicalSource } = require('../scripts/lab/reviewed-source.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const os = require('node:os');
@@ -26,7 +27,7 @@ async function check(name, fn) { await fn(); passed++; console.log('PASS '+name)
  });
  await check('Historical files and collector snapshot remain byte-identical',()=>{
   const legacy=study.runs[0];for(const [p,h]of Object.entries(legacy.artifactHashes))assert.equal(sha(read(p)),h,p);
-  const report=parse(legacy.manifestPath);for(const[p,h]of Object.entries(report.sourceHashes))assert.equal(sha(read(legacy.sourceSnapshots[p]||p)),h,p);
+  const report=parse(legacy.manifestPath);for(const[p,h]of Object.entries(report.sourceHashes))assert.equal(sha(historicalSource(read,legacy.sourceSnapshots[p]||p,h)),h,p);
  });
  await check('Duplicate IDs, path traversal and file overwrite are rejected',()=>{
   const base=fs.mkdtempSync(path.join(os.tmpdir(),'pdfcraft-immutable-test-'));
@@ -45,7 +46,7 @@ async function check(name, fn) { await fn(); passed++; console.log('PASS '+name)
    assert.deepEqual(r.environment,parse(dir+'/environment.json'));assert(r.environment.qpdfWasm);assert(r.gitHead);
    for(const[p,h]of Object.entries(r.artifactHashes))assert.equal(sha(read(dir+'/'+p)),h,p);
    assert.deepEqual(fs.readdirSync(path.join(root,dir)).sort(),[...Object.keys(r.artifactHashes),'manifest.json'].sort());
-   for(const[p,h]of Object.entries(r.sourceHashes))assert.equal(sha(read(p==='scripts/lab/collect-compression.cjs'?dir+'/collector.cjs':p)),h,p);
+   for(const[p,h]of Object.entries(r.sourceHashes))assert.equal(sha(historicalSource(read,p==='scripts/lab/collect-compression.cjs'?dir+'/collector.cjs':p,h)),h,p);
    if(entry.runId===study.activeRunId){assert.equal(r.publicationStatus,index.publicationStatus);assert.equal(sha(read('scripts/lab/collect-compression.cjs')),r.sourceHashes['scripts/lab/collect-compression.cjs']);}
    else assert(entry.evidenceStatus.startsWith('SUPERSEDED'));
    assert(r.results.filter(x=>x.byteChange>0).length>=2);assert.equal(r.results.filter(x=>x.status==='FAILURE').length,2);

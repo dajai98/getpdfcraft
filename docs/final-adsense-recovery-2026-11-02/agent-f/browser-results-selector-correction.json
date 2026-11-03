@@ -1,0 +1,74 @@
+{
+  "at": "2026-11-03T05:16:39.992Z",
+  "checks": [
+    {
+      "name": "latest Page Numbers export, empty320 and corrected instructions",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "exportSha256": "7a926edc3fa102c13be27997dbdadc41d03bd59ad107146c3146af07b99267d8"
+      }
+    },
+    {
+      "name": "mobile menu keyboard and Contact320",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "compress-pdf zero-page rejection browser",
+      "status": "FAIL",
+      "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('main p[role=\"alert\"]') to be visible\u001b[22m\n"
+    },
+    {
+      "name": "rotate-pdf zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": "This PDF could not be read. Select a valid, undamaged PDF and try again."
+      }
+    },
+    {
+      "name": "watermark-pdf zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": "This PDF could not be read. Select a valid, undamaged PDF and try again."
+      }
+    },
+    {
+      "name": "add-page-numbers zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": "This PDF could not be read. Select a valid, undamaged PDF and try again."
+      }
+    },
+    {
+      "name": "Page Numbers loaded320 standard name",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "Page Numbers long real-world filename320",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "Page Numbers invalid start, retry and real download",
+      "status": "PASS",
+      "data": {
+        "text": "AGENT F ONE PAGE  3",
+        "bytes": 1231
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.58"
+}

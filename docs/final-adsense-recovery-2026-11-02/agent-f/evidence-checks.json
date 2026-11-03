@@ -1,0 +1,53 @@
+{
+  "at": "2026-11-03T05:20:35.864Z",
+  "checks": [
+    {
+      "name": "historical fixtures/data/lockfile/redirects unchanged from baseline",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed lib/pdfInput.js",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed lib/rasterLimits.js",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed components/hooks/useGeneratedResult.js",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed app/tools/pdf-to-grayscale/page.js",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed lib/toolDocumentation.json",
+      "status": "PASS"
+    },
+    {
+      "name": "binder rejects changed package-lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "12 public historical rows match original artifacts and arithmetic",
+      "status": "PASS"
+    },
+    {
+      "name": "D raw row counts agree with summary",
+      "status": "PASS"
+    },
+    {
+      "name": "C raw route/asset outcomes agree with summary",
+      "status": "PASS"
+    },
+    {
+      "name": "current replay report hashes/rows/source bytes independently match",
+      "status": "PASS"
+    },
+    {
+      "name": "installed Next version remains affected baseline14.2.5;27package entries persist",
+      "status": "PASS"
+    }
+  ]
+}

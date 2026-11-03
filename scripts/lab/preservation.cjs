@@ -10,7 +10,7 @@ const base='tests/evidence/preservation/runs';
 const slugs=['merge-pdf','split-pdf','reorder-pages','rotate-pdf','delete-pages','add-page-numbers','watermark-pdf','compress-pdf','pdf-to-grayscale','protect-pdf','unlock-pdf'];
 const password='PublicSynthetic7E!';
 async function runtime() {
- const canvasPath=path.join(os.tmpdir(),'pdfcraft-7c-render/node_modules/@napi-rs/canvas');
+ const canvasPath=process.env.PDFCRAFT_REVIEW_CANVAS||path.join(os.tmpdir(),'pdfcraft-7c-render/node_modules/@napi-rs/canvas');
  let canvas=null;try{canvas=require(canvasPath);global.DOMMatrix=canvas.DOMMatrix;global.Path2D=canvas.Path2D;global.ImageData=canvas.ImageData;}catch{}
  const pdfjs=await import(pathToFileURL(path.join(root,'node_modules/pdfjs-dist/legacy/build/pdf.mjs')).href);
  class Factory {create(w,h){const c=canvas.createCanvas(w,h);return {canvas:c,context:c.getContext('2d')};}reset(o,w,h){o.canvas.width=w;o.canvas.height=h;}destroy(o){o.canvas.width=o.canvas.height=0;}}

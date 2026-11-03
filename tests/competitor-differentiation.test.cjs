@@ -39,7 +39,7 @@ function validate(slug, source, html) {
   assert.equal(plain(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), spec.title);
   for (const prefix of ['rel="canonical" href="', 'property="og:url" content="']) assert(html.includes(prefix + 'https://getpdfcraft.com/blog/' + slug + '"'));
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
-  assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, spec.iso);
+  assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, undefined);
   assert.equal(a.faqs.length, 4);
   assert.deepEqual(schemas.find(x => x['@type'] === 'FAQPage').mainEntity.map(x => ({q:x.name,a:x.acceptedAnswer.text})), a.faqs);
   for (const faq of a.faqs) { assert(visible.includes(faq.q)); assert(visible.includes(faq.a)); }

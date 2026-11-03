@@ -19,13 +19,12 @@ for (const slug of undated) {
   assert.throws(() => dates(post, source + '\ndate="January 2026"', html));
   assert.throws(() => dates(post, source, html.replace('"@type":"BlogPosting"', '"@type":"BlogPosting","datePublished":"2026-01"')));
 }
-// Every remaining dated listing must agree at month precision with its export.
-for (const post of catalog.filter(p => p.date)) {
-  const html = read('out/blog/' + post.slug + '.html');
-  const published = JSON.parse([...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].find(m => m[1].includes('"BlogPosting"'))[1]).datePublished;
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const month = String(months.indexOf(post.date.slice(0, 3)) + 1).padStart(2, '0');
-  assert.equal(post.date.match(/\d{4}/)[0] + '-' + month, published.slice(0, 7), post.slug);
+// Historical source labels are retained but must never become publication claims.
+for (const post of catalog) {
+ const html = read('out/blog/' + post.slug + '.html');
+ const article = JSON.parse([...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].find(m=>m[1].includes('"BlogPosting"'))[1]);
+ assert(!Object.hasOwn(article,'datePublished'),post.slug);
+ assert(!Object.hasOwn(article,'dateModified'),post.slug);
 }
 function contrast(fg, bg) {
   const lum = hex => hex.match(/[a-f\d]{2}/gi).map(v => parseInt(v, 16) / 255).map(v => v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4).reduce((sum, v, i) => sum + v * [.2126, .7152, .0722][i], 0);

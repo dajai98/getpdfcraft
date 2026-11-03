@@ -20,7 +20,7 @@ for (const pattern of ['rel="canonical" href="', 'property="og:url" content="'])
   assert(html.includes(pattern + 'https://getpdfcraft.com/blog/' + slug + '"'));
 }
 const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
-assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, '2026-02');
+assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, undefined);
 assert.equal(sections.length, 4);
 assert.equal(faqs.length, 4);
 assert.deepEqual(schemas.find(x => x['@type'] === 'FAQPage').mainEntity.map(x => ({ q: x.name, a: x.acceptedAnswer.text })), faqs);

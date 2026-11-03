@@ -57,7 +57,7 @@ function validate(slug, source, html) {
   assert.equal(plain(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), spec.title);
   for (const key of ['rel="canonical" href="', 'property="og:url" content="']) assert(html.includes(key + origin + '/blog/' + slug + '"'));
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
-  assert.equal(schemas.find(s => s['@type'] === 'BlogPosting').datePublished, spec.iso);
+  assert.equal(schemas.find(s => s['@type'] === 'BlogPosting').datePublished, undefined);
   assert.equal(a.faqs.length, spec.faqs);
   assert.deepEqual(schemas.find(s => s['@type'] === 'FAQPage').mainEntity.map(q => ({ q: q.name, a: q.acceptedAnswer.text })), a.faqs);
   for (const f of a.faqs) { assert(plain(html).includes(f.q)); assert(plain(html).includes(f.a)); }

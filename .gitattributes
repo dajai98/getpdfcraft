@@ -1,0 +1,3 @@
+# Preserve literal stdout in recovery logs (including empty-value test labels).
+# Keep normal whitespace checks for source, scripts, JSON and Markdown.
+docs/final-adsense-recovery-2026-11-02/**/*.log whitespace=-blank-at-eol
