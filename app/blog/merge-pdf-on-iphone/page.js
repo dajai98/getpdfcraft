@@ -6,14 +6,14 @@ export default function Post() {
     <BlogPost tag={"iPhone"} tagColor="#2563EB" tagBg="#EFF6FF"
       title={"How to Merge PDF on iPhone Free (No App Needed)"}
       date="February 2026" readTime="5 min read"
-      intro={"To combine PDFs on iPhone without installing a PDFcraft app, open Merge PDF in your browser and add files in the order you need. The merge runs locally, but website resources still load over the network. This guide explains the controls and checks to make; it does not establish tested compatibility with every iPhone or Safari version."}
+      intro={"To combine PDFs on iPhone without installing a GetPDFCraft app, open Merge PDF in your browser and add files in the order you need. The merge runs locally, but website resources still load over the network. This guide explains the controls and checks to make; it does not establish tested compatibility with every iPhone or Safari version."}
       sections={[
   {
     "heading": "How to merge PDF on iPhone — step by step",
     "steps": [
       {
         "title": "Open Safari on your iPhone",
-        "body": "Open getpdfcraft.com in Safari. If the page or file chooser fails to load, first check your connection and browser restrictions. No PDFcraft account is required."
+        "body": "Open getpdfcraft.com in Safari. If the page or file chooser fails to load, first check your connection and browser restrictions. No GetPDFCraft account is required."
       },
       {
         "title": "Tap Merge PDF",
@@ -33,12 +33,13 @@ export default function Post() {
       },
       {
         "title": "Download the merged PDF",
-        "body": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+        "body": "After tapping Download, check Safari's Downloads button beside its search field. Apple's download guide also describes Files > Browse > iCloud Drive > Downloads. If you configured another save location, use that location instead. This is Apple's documented workflow, not a claim that this guide was tested on your iPhone."
       }
     ]
   },
   {
     "heading": "How to find the merged PDF on iPhone",
+    "list": [{ "text": "Apple: where to find iPhone and iPad downloads (checked November 2, 2026)", "href": "https://support.apple.com/en-us/102440" }],
     "steps": [
       {
         "title": "Confirm that a download completed",
@@ -63,7 +64,7 @@ export default function Post() {
       },
       {
         "title": "Save merged PDF to iCloud",
-        "body": "If you choose to store the result with a cloud provider, use the storage options available on your device and verify that the upload completes. PDFcraft's local merge does not itself confirm cloud synchronization or create a backup."
+        "body": "If you choose to store the result with a cloud provider, use the storage options available on your device and verify that the upload completes. GetPDFCraft's local merge does not itself confirm cloud synchronization or create a backup."
       }
     ]
   },
@@ -73,7 +74,7 @@ export default function Post() {
   },
   {
     "heading": "What happens to links, bookmarks and forms",
-    "text": "PDFcraft rebuilds supported local links, named destinations and bookmarks so their targets follow the inserted pages. Repeated inputs have separate destination namespaces. Source opening actions are deliberately omitted, and external links to old named anchors may no longer work. AcroForm inputs, linked popup annotations and unsupported navigation are rejected. The saved PDF is reopened and structurally checked before a download is offered; that is not proof of visual fidelity, working interactive forms or signature preservation."
+    "text": "GetPDFCraft rebuilds supported local links, named destinations and bookmarks so their targets follow the inserted pages. Repeated inputs have separate destination namespaces. Source opening actions are deliberately omitted, and external links to old named anchors may no longer work. AcroForm inputs, linked popup annotations and unsupported navigation are rejected. The saved PDF is reopened and structurally checked before a download is offered; that is not proof of visual fidelity, working interactive forms or signature preservation."
   },
   {
     "heading": "Continue with the relevant tool",
@@ -92,15 +93,15 @@ export default function Post() {
       faqs={[
   {
     "q": "Can I merge PDFs on iPhone without an app?",
-    "a": "No PDFcraft app installation is required. Open the tool in your browser; the site and processing code still need to load, and completion depends on the document and device."
+    "a": "No GetPDFCraft app installation is required. Open the tool in your browser; the site and processing code still need to load, and completion depends on the document and device."
   },
   {
     "q": "Where does the merged PDF save on iPhone?",
-    "a": "PDFcraft does not choose a universal iPhone folder. Start with the browser's download status to identify the saved file, then use the location available on your device. A merge success message alone does not confirm it was saved."
+    "a": "GetPDFCraft does not choose a universal iPhone folder. Start with the browser's download status to identify the saved file, then use the location available on your device. A merge success message alone does not confirm it was saved."
   },
   {
     "q": "Can I merge PDFs from iCloud Drive on iPhone?",
-    "a": "If that provider is available in your system file picker, you can retrieve a copy there. Cloud retrieval and backup are separate from PDFcraft’s local processing; provider availability varies."
+    "a": "If that provider is available in your system file picker, you can retrieve a copy there. Cloud retrieval and backup are separate from GetPDFCraft’s local processing; provider availability varies."
   },
   {
     "q": "Can I merge more than 2 PDFs on iPhone?",
@@ -108,10 +109,10 @@ export default function Post() {
   },
   {
     "q": "Does merging PDFs on iPhone use iCloud storage?",
-    "a": "The merge handler does not write to iCloud. Cloud storage is involved only if your own file-selection or saving workflow uses it. Loading PDFcraft and retrieving cloud inputs can still require network requests."
+    "a": "The merge handler does not write to iCloud. Cloud storage is involved only if your own file-selection or saving workflow uses it. Loading GetPDFCraft and retrieving cloud inputs can still require network requests."
   },
   {
-    "q": "Does PDFcraft work on iPad too?",
+    "q": "Does GetPDFCraft work on iPad too?",
     "a": "This guide does not establish iPad compatibility from an iPhone workflow. Check file selection, processing and the saved output in your iPad browser before relying on it."
   }
 ]}

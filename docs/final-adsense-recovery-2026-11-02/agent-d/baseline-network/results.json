@@ -1,0 +1,1235 @@
+{
+  "run": "baseline-network",
+  "timestamp": "2026-11-02T11:47:57.676Z",
+  "scope": "Local static export, headless Edge; no physical mobile-device claim",
+  "responsive": [],
+  "workflows": [
+    {
+      "tool": "merge-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "merged.pdf",
+          "bytes": 2219,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          },
+          {
+            "page": 4,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 5,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 6,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Merge PDF Files"
+      }
+    },
+    {
+      "tool": "split-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "page-1.pdf",
+          "bytes": 936,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "PPDFcraftby Dajai Studio",
+            "x": -49,
+            "width": 126.3125
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 350.875,
+            "width": 73.90625
+          },
+          {
+            "tag": "INPUT",
+            "text": "",
+            "x": -19,
+            "width": 16
+          },
+          {
+            "tag": "INPUT",
+            "text": "",
+            "x": -19,
+            "width": 16
+          },
+          {
+            "tag": "BUTTON",
+            "text": "⊘ Split PDF",
+            "x": -40,
+            "width": 324
+          },
+          {
+            "tag": "A",
+            "text": "Pages and range outputs",
+            "x": -37,
+            "width": 178.8125
+          },
+          {
+            "tag": "A",
+            "text": "Choose a subset of pages",
+            "x": -37,
+            "width": 185.90625
+          },
+          {
+            "tag": "A",
+            "text": "Browse all tools by task",
+            "x": -49,
+            "width": 167.1875
+          },
+          {
+            "tag": "A",
+            "text": "⊕Merge PDF",
+            "x": -49,
+            "width": 342
+          },
+          {
+            "tag": "A",
+            "text": "🗑️Delete Pages",
+            "x": -49,
+            "width": 342
+          }
+        ],
+        "h1": "Split PDF File"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "compress-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "processed.pdf",
+          "bytes": 1454,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Compress PDF"
+      }
+    },
+    {
+      "tool": "rotate-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "rotated.pdf",
+          "bytes": 1455,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 180,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11390,
+          "colored": 11521
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11539,
+          "colored": 11539
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11547,
+          "colored": 11595
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Rotate PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "watermark-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "watermarked.pdf",
+          "bytes": 2414,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1  SYNTHETIC"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2  SYNTHETIC"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3  SYNTHETIC"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 12189,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 12600,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 12248,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Add Watermark to PDF"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "protect-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "protected.pdf",
+          "bytes": 2303,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "encryption": "AESV3 256; missing and wrong passwords rejected",
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Protect PDF with Password"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "unlock-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "unlocked.pdf",
+          "bytes": 1628,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Unlock PDF — Remove Password"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "jpg-to-pdf",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "images.pdf",
+          "bytes": 2420,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              100,
+              80
+            ],
+            "text": ""
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              100,
+              80
+            ],
+            "text": ""
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 100,
+          "height": 80,
+          "nonWhite": 8000,
+          "colored": 8000
+        },
+        {
+          "width": 100,
+          "height": 80,
+          "nonWhite": 8000,
+          "colored": 8000
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "JPG to PDF"
+      }
+    },
+    {
+      "tool": "pdf-to-image",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "page-1.jpg",
+          "bytes": 9614,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "imageMagic": "ffd8ffe000104a4649460001",
+      "rendering": [
+        {
+          "width": 600,
+          "height": 800,
+          "complete": true
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "complete": true
+        },
+        {
+          "width": 600,
+          "height": 800,
+          "complete": true
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "PDF to Image"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "delete-pages",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "edited.pdf",
+          "bytes": 1198,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Delete PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "add-page-numbers",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "numbered.pdf",
+          "bytes": 2199,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1  1"
+          },
+          {
+            "page": 2,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2  2"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3  3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11488,
+          "colored": 11517
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11582,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11553,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Add Page Numbers to PDF"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "reorder-pages",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "reordered.pdf",
+          "bytes": 1452,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 90,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 2"
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 1"
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": "SYNTHETIC PAGE 3"
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11555,
+          "colored": 11555
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11467,
+          "colored": 11517
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11526,
+          "colored": 11628
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "Reorder PDF Pages"
+      },
+      "removeClearedDownload": true
+    },
+    {
+      "tool": "pdf-to-grayscale",
+      "status": "PASS",
+      "downloads": [
+        {
+          "filename": "grayscale.pdf",
+          "bytes": 21216,
+          "error": null
+        }
+      ],
+      "networkFailures": [],
+      "inspection": {
+        "parser": "PDF.js 4.4.168 (independent from pdf-lib output producer)",
+        "pages": [
+          {
+            "page": 1,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": ""
+          },
+          {
+            "page": 2,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              400,
+              300
+            ],
+            "text": ""
+          },
+          {
+            "page": 3,
+            "rotation": 0,
+            "view": [
+              0,
+              0,
+              300,
+              400
+            ],
+            "text": ""
+          }
+        ]
+      },
+      "rendering": [
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11605,
+          "colored": 0
+        },
+        {
+          "width": 400,
+          "height": 300,
+          "nonWhite": 11581,
+          "colored": 0
+        },
+        {
+          "width": 300,
+          "height": 400,
+          "nonWhite": 11566,
+          "colored": 0
+        }
+      ],
+      "mobile": {
+        "clientWidth": 390,
+        "scrollWidth": 498,
+        "overflow": true,
+        "offscreen": [
+          {
+            "tag": "A",
+            "text": "Contact",
+            "x": 343.625,
+            "width": 76.25
+          },
+          {
+            "tag": "A",
+            "text": "Privacy",
+            "x": 423.875,
+            "width": 73.90625
+          }
+        ],
+        "h1": "PDF to Grayscale"
+      },
+      "removeClearedDownload": true
+    }
+  ],
+  "supplemental": [
+    {
+      "name": "mobile-navbar-keyboard",
+      "status": "FAIL",
+      "error": "locator.waitFor: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu', exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "name": "pdf-to-image-png",
+      "status": "PASS",
+      "sizes": [
+        [
+          600,
+          800
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          600,
+          800
+        ]
+      ]
+    },
+    {
+      "name": "protect-unlock-unicode-wrong-password-retry",
+      "status": "PASS",
+      "encryptedBytes": 2303,
+      "unlockedBytes": 1628,
+      "pageIdentities": [
+        "SYNTHETIC PAGE 1",
+        "SYNTHETIC PAGE 2",
+        "SYNTHETIC PAGE 3"
+      ],
+      "wrongPasswordRejected": true
+    }
+  ],
+  "consent": {
+    "beforeChoiceAds": 0,
+    "declinedValue": "declined",
+    "afterDeclineAds": 0,
+    "afterAcceptAds": 2,
+    "afterWithdrawalValue": "declined",
+    "afterWithdrawalAds": 2,
+    "status": "PASS"
+  },
+  "errors": [],
+  "browser": "156.0.4314.58",
+  "summary": {
+    "responsiveChecks": 0,
+    "responsiveFailures": 0,
+    "workflowPass": 13,
+    "workflowFail": 0,
+    "supplementalFail": 1
+  }
+}

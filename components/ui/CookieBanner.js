@@ -66,7 +66,7 @@ export default function CookieBanner() {
                 Google AdSense advertising resources load only after you accept. Google may use cookies for advertising.
                 Declining keeps the core PDF tools available. Your choice is stored locally in this browser when storage is available.
                 Document contents are processed locally; website requests are separate.{" "}
-                <Link href="/privacy" style={{ color: "#E8380D", fontWeight: 600 }}>Privacy Policy</Link>
+                <Link href="/privacy" style={{ color: "#C92F0A", fontWeight: 600 }}>Privacy Policy</Link>
               </p>
               {saveError && <p role="alert">{saveError}</p>}
               {consent === "accepted" && (
@@ -82,7 +82,7 @@ export default function CookieBanner() {
                 {consent === "accepted" ? "Decline and reload" : "Decline"}
               </button>
               <button type="button" onClick={() => choose("accepted")}
-                style={{ background: "#E8380D", border: "none", color: "white", padding: "9px 20px", borderRadius: 10, fontWeight: 700, cursor: "pointer" }}>
+                style={{ background: "#C92F0A", border: "none", color: "white", padding: "9px 20px", borderRadius: 10, fontWeight: 700, cursor: "pointer" }}>
                 Accept
               </button>
               {editing && consent !== null && <button type="button" onClick={() => setEditing(false)}>Keep current choice</button>}

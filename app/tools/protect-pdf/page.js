@@ -7,11 +7,11 @@ import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
-  { q: "Is password protecting a PDF on PDFcraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
+  { q: "Is password protecting a PDF on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
-  { q: "What type of encryption does PDFcraft use?", a: "PDFcraft uses 256-bit AES encryption via QPDF WebAssembly — password-based encryption." },
-  { q: "Can I remove the password later?", a: "Yes. Use PDFcraft's Unlock PDF tool to remove the password. You will need to enter the current password to do so." },
-  { q: "What happens if I forget the password?", a: "PDFcraft cannot recover a forgotten PDF password. Always store your passwords safely in a password manager before protecting a document." },
+  { q: "What type of encryption does GetPDFCraft use?", a: "GetPDFCraft uses 256-bit AES encryption via QPDF WebAssembly — password-based encryption." },
+  { q: "Can I remove the password later?", a: "Yes. Use GetPDFCraft's Unlock PDF tool to remove the password. You will need to enter the current password to do so." },
+  { q: "What happens if I forget the password?", a: "GetPDFCraft cannot recover a forgotten PDF password. Always store your passwords safely in a password manager before protecting a document." },
   { q: "Does it work on iPhone and Android?", a: "Use a current browser on desktop or mobile. Compatibility and practical file limits depend on your browser and device." },
 ];
 
@@ -99,7 +99,7 @@ export default function ProtectPDF() {
             style={{ width: "100%", padding: "12px 16px", border: "1px solid #e5e7eb", borderRadius: 10, fontSize: 15, fontFamily: "inherit", boxSizing: "border-box" }}
           />
         </div>
-        <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>💡 At least 4 characters are required. Keep the password; PDFcraft cannot recover it.</p>
+        <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>💡 At least 4 characters are required. Keep the password; GetPDFCraft cannot recover it.</p>
       </div>
 
       {error && (
@@ -112,7 +112,7 @@ export default function ProtectPDF() {
         <button
           onClick={protect}
           disabled={processing}
-          style={{ marginTop: 20, width: "100%", background: processing ? "#d1d5db" : "#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}
+          style={{ marginTop: 20, width: "100%", background: processing ? "#d1d5db" : "#C92F0A", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}
         >
           {processing ? "⏳ Encrypting your PDF..." : "🔒 Protect PDF"}
         </button>

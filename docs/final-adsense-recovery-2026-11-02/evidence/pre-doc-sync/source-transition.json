@@ -1,0 +1,273 @@
+{
+  "status": "PASS",
+  "reviewedAt": "2026-11-03T00:11:56.133Z",
+  "reason": "Strict nonempty PDF validation, stale-result suppression, raster cancellation and allocation guards. Historical source lookup preserves immutable byte hashes. Legacy collector differs in whitespace and now accepts explicit isolated canvas runtime path. Current retained-input replays separately verify semantics; historical measurements are unchanged.",
+  "oldHashes": {
+    "lib/blogCatalog.json": [
+      "7a05e7b82dc97547ca665cba90be5b4a080a7ed59ec1c7e951dc6e97135b7229"
+    ],
+    "lib/blogMetadata.js": [
+      "163b2972c62333855b7ed6098d6bd822f1676dcb78bfd90a46cc77eb4525a697"
+    ],
+    "lib/copyPdfPagesSafe.js": [
+      "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354"
+    ],
+    "lib/imageInput.js": [
+      "d05a69cb30f3edc722b041fd91d6c52e7b7d4e89d9125dd01073104503926123"
+    ],
+    "lib/jpegValidation.js": [
+      "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34"
+    ],
+    "lib/pageGeometry.js": [
+      "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff"
+    ],
+    "lib/pdfInput.js": [
+      "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5"
+    ],
+    "lib/pdfNavigationModel.js": [
+      "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56"
+    ],
+    "lib/pdfNavigationValidation.js": [
+      "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467"
+    ],
+    "lib/qpdf.js": [
+      "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59"
+    ],
+    "lib/siteConfig.json": [
+      "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264"
+    ],
+    "lib/splitRanges.js": [
+      "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3"
+    ],
+    "lib/toolGuides.json": [
+      "bcabed0042a769be676961a5bd501360c660dfed7fadcfdffb1f8231ce8358a6"
+    ],
+    "lib/toolMetadata.js": [
+      "2ec282705140e83e138c7c4317f029f1fff4a705b4bb2b7cb67435efcd6bad92"
+    ],
+    "components/hooks/useGeneratedResult.js": [
+      "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5"
+    ],
+    "components/hooks/useObjectUrls.js": [
+      "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca"
+    ],
+    "components/hooks/usePdfInput.js": [
+      "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e"
+    ],
+    "app/tools/add-page-numbers/layout.js": [
+      "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425"
+    ],
+    "app/tools/add-page-numbers/page.js": [
+      "14d0572c09d1887720fe03fc6f8cc3737a8a2eb00ba1308a2bfdf613915a7a3c"
+    ],
+    "app/tools/compress-pdf/layout.js": [
+      "f4834d2d35985c97b85ce9f463da202132e963414c6ce9303e8820fe632becaa"
+    ],
+    "app/tools/compress-pdf/page.js": [
+      "1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce"
+    ],
+    "app/tools/delete-pages/layout.js": [
+      "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38"
+    ],
+    "app/tools/delete-pages/page.js": [
+      "18dca976ae0077854c6c36e064acd27b93797a7c06055fd1a714ed6072dc7021"
+    ],
+    "app/tools/jpg-to-pdf/layout.js": [
+      "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920"
+    ],
+    "app/tools/jpg-to-pdf/page.js": [
+      "113e74c7daf099207fe8f5138bc6bc1cebd033d886a2af05171acc24c8fe367c"
+    ],
+    "app/tools/merge-pdf/layout.js": [
+      "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16"
+    ],
+    "app/tools/merge-pdf/page.js": [
+      "789da8f73945a916e3f409adece1cd78f1d06e76c431041bcb2e34db3b1d2899"
+    ],
+    "app/tools/pdf-to-grayscale/layout.js": [
+      "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c"
+    ],
+    "app/tools/pdf-to-grayscale/page.js": [
+      "dbf89c14ac4c8caa591be161da6d11b056d034bf67945a8b788d409e39f97dd1"
+    ],
+    "app/tools/pdf-to-image/layout.js": [
+      "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b"
+    ],
+    "app/tools/pdf-to-image/page.js": [
+      "bb6aabffd0c26770f77513a77af044b7f4bb4a4ddb28a51a40dd42d037017b2e"
+    ],
+    "app/tools/protect-pdf/layout.js": [
+      "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35"
+    ],
+    "app/tools/protect-pdf/page.js": [
+      "f408d0289ab03c5489c239a60902b8a1357f7503581cc66ed2291032c47a8d08"
+    ],
+    "app/tools/reorder-pages/layout.js": [
+      "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf"
+    ],
+    "app/tools/reorder-pages/page.js": [
+      "def66815451827560c7db6cfca4c6db1773cdddeac48feca1e61714a3dee702d"
+    ],
+    "app/tools/rotate-pdf/layout.js": [
+      "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c"
+    ],
+    "app/tools/rotate-pdf/page.js": [
+      "4f933c3dfdd741bab7880329522ac33c2aadca14e7f146d8f3c6c392f2c3c5fb"
+    ],
+    "app/tools/split-pdf/layout.js": [
+      "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834"
+    ],
+    "app/tools/split-pdf/page.js": [
+      "b5f2232405fb34b66b1b791887340f970c6f4e955b94e7a85b2006546e430ac1"
+    ],
+    "app/tools/unlock-pdf/layout.js": [
+      "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77"
+    ],
+    "app/tools/unlock-pdf/page.js": [
+      "bb47c65fb10533dc452f0fb2365896406391320e657cf83f5cc69083ec761320"
+    ],
+    "app/tools/watermark-pdf/layout.js": [
+      "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584"
+    ],
+    "app/tools/watermark-pdf/page.js": [
+      "bf39f7e7f0a19e4a7e77530bbae1978ba52680648375a67eed509f593a93445e"
+    ],
+    "tests/final-repair.test.cjs": [
+      "fac5048edacf890175a66f76bcc271e5a3e86040e50960356f215c5351a78fdf"
+    ],
+    "scripts/lab/preservation.cjs": [
+      "c957f479381f11596b0919a25e7e757fb3611b39fefba15e6affb657b6991559"
+    ],
+    "scripts/lab/preservation-postrepair.cjs": [
+      "7f0ab9bb9a1bf213e57b7c28fc4498221499f8a98e81da77b6be2a881e678ab6"
+    ],
+    "package-lock.json": [
+      "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e"
+    ],
+    "scripts/lab/collect-compression.cjs": [
+      "c87334efe3aa70b352ac45856b672cb3260515af49a9b4263061eff300ff58ba",
+      "6f2b9e866d8fe20375d464efc87d2696e1e0fc3046205e0ef6ca7b24ad5cb625",
+      "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4"
+    ],
+    "scripts/lab/collect-real-compression.cjs": [
+      "ffb6694f49bb9ba02b57fadf02ec498332f7b84decb502a9fc866bcca1889a71",
+      "985750e803a697b881cd87d14d4c991a769291574731072723174b83f6cb8021"
+    ]
+  },
+  "currentLfHashes": {
+    "app/tools/compress-pdf/page.js": "c2b66ff79af8277ce811933b537c8cac74f58db1b5da3a29b9fed78a5f6ec8fa",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "lib/blogMetadata.js": "163b2972c62333855b7ed6098d6bd822f1676dcb78bfd90a46cc77eb4525a697",
+    "lib/copyPdfPagesSafe.js": "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354",
+    "lib/imageInput.js": "a4bad04484637a84ff06d834189f429ba6da44171afbacac76f5faa522e4822b",
+    "lib/jpegValidation.js": "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34",
+    "lib/pageGeometry.js": "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff",
+    "lib/pdfNavigationModel.js": "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56",
+    "lib/pdfNavigationValidation.js": "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467",
+    "lib/qpdf.js": "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59",
+    "lib/rasterLimits.js": "a3fda6a9e9ceb7ff78aff745d364b706d5c40b011c1bf70519ab118251ab9cc9",
+    "lib/siteConfig.json": "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264",
+    "lib/siteNavigation.json": "b86c4ebca5198a9f2c948c8838b5d80c6f83762f625fbb7571949c9ff3fd1fcd",
+    "lib/splitRanges.js": "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3",
+    "lib/toolDocumentation.json": "764c6cd63c1805e413dd7e439be3e99096abb10b6606a10530a9e3480bc7ddbf",
+    "lib/toolMetadata.js": "2ec282705140e83e138c7c4317f029f1fff4a705b4bb2b7cb67435efcd6bad92",
+    "components/hooks/useObjectUrls.js": "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca",
+    "components/hooks/usePdfInput.js": "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e",
+    "app/tools/add-page-numbers/layout.js": "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425",
+    "app/tools/add-page-numbers/page.js": "69fab7c82d43d2860429f37ab4aaf9a3420e9110dffdc485104f03da2da7add2",
+    "app/tools/compress-pdf/layout.js": "f4834d2d35985c97b85ce9f463da202132e963414c6ce9303e8820fe632becaa",
+    "app/tools/delete-pages/layout.js": "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38",
+    "app/tools/delete-pages/page.js": "ca028bd99d7522c5a92115c0ff7ce7dcbf3c6eca89057224856f61d08de38e3e",
+    "app/tools/jpg-to-pdf/layout.js": "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920",
+    "app/tools/jpg-to-pdf/page.js": "113e74c7daf099207fe8f5138bc6bc1cebd033d886a2af05171acc24c8fe367c",
+    "app/tools/merge-pdf/layout.js": "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16",
+    "app/tools/merge-pdf/page.js": "80327277eff33fc1c14bd613a3a2cad9c3490a8f82bdbfc8d8cbe80d84b137a3",
+    "app/tools/pdf-to-grayscale/layout.js": "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c",
+    "app/tools/pdf-to-grayscale/page.js": "14fb4822304a3bd1bccf7df20c1785b2fc6589f70159aa576db963b9b3dc84bc",
+    "app/tools/pdf-to-image/layout.js": "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b",
+    "app/tools/pdf-to-image/page.js": "bf74f75151b23b1f3ab8ebff58015e8653bfc2126c4abc0edccdebd5b21b5c60",
+    "app/tools/protect-pdf/layout.js": "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35",
+    "app/tools/protect-pdf/page.js": "f408d0289ab03c5489c239a60902b8a1357f7503581cc66ed2291032c47a8d08",
+    "app/tools/reorder-pages/layout.js": "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf",
+    "app/tools/reorder-pages/page.js": "de9649a681b57e918938501b062da061b32a69560b99adfb7e315e0f9f2a8865",
+    "app/tools/rotate-pdf/layout.js": "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c",
+    "app/tools/rotate-pdf/page.js": "c8980644f8b8ea270049485de9a8b9f537def6b36c61b55ead98504d9e493438",
+    "app/tools/split-pdf/layout.js": "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834",
+    "app/tools/split-pdf/page.js": "b5f2232405fb34b66b1b791887340f970c6f4e955b94e7a85b2006546e430ac1",
+    "app/tools/unlock-pdf/layout.js": "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77",
+    "app/tools/unlock-pdf/page.js": "bb47c65fb10533dc452f0fb2365896406391320e657cf83f5cc69083ec761320",
+    "app/tools/watermark-pdf/layout.js": "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584",
+    "app/tools/watermark-pdf/page.js": "ac3b91ab71a53e1bf160107c06241e8cf42a236d1dab48a8e443df1164c747a6",
+    "tests/final-repair.test.cjs": "fac5048edacf890175a66f76bcc271e5a3e86040e50960356f215c5351a78fdf",
+    "scripts/lab/preservation.cjs": "9f3e9a369dc8411433e7ac72dd57aeeb02772adfa85c9e9540a3ce8369643fe2",
+    "scripts/lab/preservation-postrepair.cjs": "266ad7fa1955f2b729285ed7e920acfc17a208bd7c34ab923427dc12b907f50c",
+    "docs/final-adsense-recovery-2026-11-02/agent-a/replay-preservation-current.cjs": "a05d83b00c41527a37e300d0fb05361ec6d18f2fc94da2a4d646a44a9009480c",
+    "docs/final-adsense-recovery-2026-11-02/agent-a/replay-compression-current.cjs": "f5f0225ef262f264939d7d8b7595e6a9b2bb1e8b2cac6084fd26d733cb682608"
+  },
+  "replayedSourceHashes": {
+    "app/tools/compress-pdf/page.js": "f5122ff9337600b5d2fc63ce0d53aaa8e97e23be73401b94dde1a3371fa9f7c2",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "lib/blogMetadata.js": "163b2972c62333855b7ed6098d6bd822f1676dcb78bfd90a46cc77eb4525a697",
+    "lib/copyPdfPagesSafe.js": "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354",
+    "lib/imageInput.js": "d05a69cb30f3edc722b041fd91d6c52e7b7d4e89d9125dd01073104503926123",
+    "lib/jpegValidation.js": "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34",
+    "lib/pageGeometry.js": "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff",
+    "lib/pdfNavigationModel.js": "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56",
+    "lib/pdfNavigationValidation.js": "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467",
+    "lib/qpdf.js": "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59",
+    "lib/rasterLimits.js": "a3fda6a9e9ceb7ff78aff745d364b706d5c40b011c1bf70519ab118251ab9cc9",
+    "lib/siteConfig.json": "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264",
+    "lib/siteNavigation.json": "b86c4ebca5198a9f2c948c8838b5d80c6f83762f625fbb7571949c9ff3fd1fcd",
+    "lib/splitRanges.js": "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3",
+    "lib/toolDocumentation.json": "764c6cd63c1805e413dd7e439be3e99096abb10b6606a10530a9e3480bc7ddbf",
+    "lib/toolMetadata.js": "2ec282705140e83e138c7c4317f029f1fff4a705b4bb2b7cb67435efcd6bad92",
+    "components/hooks/useObjectUrls.js": "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca",
+    "components/hooks/usePdfInput.js": "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e",
+    "app/tools/add-page-numbers/layout.js": "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425",
+    "app/tools/add-page-numbers/page.js": "69fab7c82d43d2860429f37ab4aaf9a3420e9110dffdc485104f03da2da7add2",
+    "app/tools/compress-pdf/layout.js": "f4834d2d35985c97b85ce9f463da202132e963414c6ce9303e8820fe632becaa",
+    "app/tools/delete-pages/layout.js": "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38",
+    "app/tools/delete-pages/page.js": "ca028bd99d7522c5a92115c0ff7ce7dcbf3c6eca89057224856f61d08de38e3e",
+    "app/tools/jpg-to-pdf/layout.js": "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920",
+    "app/tools/jpg-to-pdf/page.js": "113e74c7daf099207fe8f5138bc6bc1cebd033d886a2af05171acc24c8fe367c",
+    "app/tools/merge-pdf/layout.js": "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16",
+    "app/tools/merge-pdf/page.js": "80327277eff33fc1c14bd613a3a2cad9c3490a8f82bdbfc8d8cbe80d84b137a3",
+    "app/tools/pdf-to-grayscale/layout.js": "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c",
+    "app/tools/pdf-to-grayscale/page.js": "14fb4822304a3bd1bccf7df20c1785b2fc6589f70159aa576db963b9b3dc84bc",
+    "app/tools/pdf-to-image/layout.js": "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b",
+    "app/tools/pdf-to-image/page.js": "bf74f75151b23b1f3ab8ebff58015e8653bfc2126c4abc0edccdebd5b21b5c60",
+    "app/tools/protect-pdf/layout.js": "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35",
+    "app/tools/protect-pdf/page.js": "f408d0289ab03c5489c239a60902b8a1357f7503581cc66ed2291032c47a8d08",
+    "app/tools/reorder-pages/layout.js": "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf",
+    "app/tools/reorder-pages/page.js": "de9649a681b57e918938501b062da061b32a69560b99adfb7e315e0f9f2a8865",
+    "app/tools/rotate-pdf/layout.js": "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c",
+    "app/tools/rotate-pdf/page.js": "c8980644f8b8ea270049485de9a8b9f537def6b36c61b55ead98504d9e493438",
+    "app/tools/split-pdf/layout.js": "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834",
+    "app/tools/split-pdf/page.js": "b5f2232405fb34b66b1b791887340f970c6f4e955b94e7a85b2006546e430ac1",
+    "app/tools/unlock-pdf/layout.js": "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77",
+    "app/tools/unlock-pdf/page.js": "bb47c65fb10533dc452f0fb2365896406391320e657cf83f5cc69083ec761320",
+    "app/tools/watermark-pdf/layout.js": "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584",
+    "app/tools/watermark-pdf/page.js": "ac3b91ab71a53e1bf160107c06241e8cf42a236d1dab48a8e443df1164c747a6",
+    "tests/final-repair.test.cjs": "fac5048edacf890175a66f76bcc271e5a3e86040e50960356f215c5351a78fdf",
+    "scripts/lab/preservation.cjs": "02d2082b48dafb7f32e150e95d347a7c3f33d798bddc273472590031f3090426",
+    "scripts/lab/preservation-postrepair.cjs": "266ad7fa1955f2b729285ed7e920acfc17a208bd7c34ab923427dc12b907f50c"
+  },
+  "evidence": [
+    {
+      "path": "docs/final-adsense-recovery-2026-11-02/agent-a/compression-current-replay.json",
+      "sha256": "73fe118d0ec504c6710e03b37bf731a2f402e57edf0fc6a3a1432832b6021748",
+      "expectedPasses": 12
+    },
+    {
+      "path": "docs/final-adsense-recovery-2026-11-02/agent-a/preservation-current-replay.json",
+      "sha256": "4223e8cfe46fbd61c1a1f3a501883c6f3ba3a5df7b5ca058ee9a91201f43cc66",
+      "expectedPasses": 22
+    }
+  ]
+}

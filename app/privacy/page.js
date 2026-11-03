@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Privacy Policy — PDFcraft",
-  description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.",
-  openGraph: { title: "Privacy Policy — PDFcraft", description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", url: "https://getpdfcraft.com/privacy", type: "website", images: [{ url: "/og.svg", width: 1200, height: 630, alt: "PDFcraft by Dajai Studio" }] },
-  twitter: { card: "summary_large_image", title: "Privacy Policy — PDFcraft", description: "How PDFcraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", images: ["/og.svg"] },
+  title: "Privacy Policy — GetPDFCraft",
+  description: "How GetPDFCraft processes documents locally, uses third-party web resources, and stores advertising consent choices.",
+  openGraph: { title: "Privacy Policy — GetPDFCraft", description: "How GetPDFCraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", url: "https://getpdfcraft.com/privacy", type: "website", siteName: "GetPDFCraft", images: [{ url: "/og.svg", width: 1200, height: 630, alt: "GetPDFCraft by Dajai Studio" }] },
+  twitter: { card: "summary_large_image", title: "Privacy Policy — GetPDFCraft", description: "How GetPDFCraft processes documents locally, uses third-party web resources, and stores advertising consent choices.", images: ["/og.svg"] },
   alternates: { canonical: "https://getpdfcraft.com/privacy" },
 };
 
@@ -18,7 +18,7 @@ export default function Privacy() {
           Last updated: October 22, 2026. This policy separates local document processing from website, infrastructure, and advertising data.
         </p>
         <p style={{ fontSize: 14, color: "#6b7280", marginTop: 12 }}>
-          For privacy questions, <a href="/contact" style={{ color: "#E8380D" }}>contact Rai Dajai at Dajai Studio</a>.
+          For privacy questions, <a href="/contact" style={{ color: "#C92F0A" }}>contact Rai Dajai at Dajai Studio</a>.
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function Privacy() {
           {
             num: "01",
             title: "Local document processing",
-            desc: "PDFcraft processes PDF and image contents locally in your browser. The current application does not use a PDF-processing backend to receive document contents. Processing uses browser memory and produces files for you to download. This describes document handling, not every network request made by the website.",
+            desc: "GetPDFCraft processes PDF and image contents locally in your browser. The current application does not use a PDF-processing backend to receive document contents. Processing uses browser memory and produces files for you to download. This describes document handling, not every network request made by the website.",
             highlight: true,
           },
           {
@@ -43,12 +43,12 @@ export default function Privacy() {
           {
             num: "04",
             title: "Advertising choices",
-            desc: "PDFcraft loads Google AdSense advertising resources only after an accepted choice in the cookie banner. Google and third-party advertising vendors may use cookies or similar identifiers and process advertising or connection data when those resources load. Where personalized advertising is enabled, Google and its partners may serve ads based on prior visits to this site or other sites. You can manage or opt out of personalized Google advertising through Google Ads Settings, linked below. Declining, or leaving the choice unanswered, prevents the consent-dependent advertising script from loading and does not block the core PDF tools. Using the site alone is not treated as acceptance.",
+            desc: "GetPDFCraft loads Google AdSense advertising resources only after an accepted choice in the cookie banner. Google and third-party advertising vendors may use cookies or similar identifiers and process advertising or connection data when those resources load. Where personalized advertising is enabled, Google and its partners may serve ads based on prior visits to this site or other sites. You can manage or opt out of personalized Google advertising through Google Ads Settings, linked below. Declining, or leaving the choice unanswered, prevents the consent-dependent advertising script from loading and does not block the core PDF tools. Using the site alone is not treated as acceptance.",
           },
           {
             num: "05",
             title: "Local consent storage",
-            desc: "PDFcraft stores the accepted or declined choice in this browser’s localStorage under cookies_accepted, when browser storage is available. If storage is unavailable, the choice applies while the current page remains open. Local storage for this preference is separate from cookies that advertising providers may use. Use Advertising preferences at the bottom of the page to revisit your choice. Withdrawing acceptance reloads the page to stop already-loaded advertising code, clearing selected files and unsaved results; download results first. It does not remove cookies already stored by third parties.",
+            desc: "GetPDFCraft stores the accepted or declined choice in this browser’s localStorage under cookies_accepted, when browser storage is available. If storage is unavailable, the choice applies while the current page remains open. Local storage for this preference is separate from cookies that advertising providers may use. Use Advertising preferences at the bottom of the page to revisit your choice. Withdrawing acceptance reloads the page to stop already-loaded advertising code, clearing selected files and unsaved results; download results first. It does not remove cookies already stored by third parties.",
           },
           {
             num: "06",
@@ -63,7 +63,7 @@ export default function Privacy() {
           {
             num: "08",
             title: "Policy updates",
-            desc: "Changes to this policy will be reflected in the revision date above. A policy update does not itself provide advertising consent. For questions about PDFcraft’s implementation or this policy, use the Contact page.",
+            desc: "Changes to this policy will be reflected in the revision date above. A policy update does not itself provide advertising consent. For questions about GetPDFCraft’s implementation or this policy, use the Contact page.",
           },
         ].map(section => (
           <div key={section.num} style={{
@@ -74,7 +74,7 @@ export default function Privacy() {
             marginBottom: 12,
           }}>
             <div style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
-              <span style={{ fontSize: 12, fontWeight: 800, color: section.highlight ? "#E8380D" : "#6b7280", letterSpacing: 1, flexShrink: 0, marginTop: 3 }}>{section.num}</span>
+              <span style={{ fontSize: 12, fontWeight: 800, color: section.highlight ? "#C92F0A" : "#6b7280", letterSpacing: 1, flexShrink: 0, marginTop: 3 }}>{section.num}</span>
               <div>
                 <h2 style={{ fontSize: 17, fontWeight: 700, color: section.highlight ? "white" : "#111827", marginBottom: 8 }}>{section.title}</h2>
                 <p style={{ fontSize: 15, color: section.highlight ? "#9ca3af" : "#6b7280", lineHeight: 1.7, margin: 0 }}>{section.desc}</p>
@@ -83,7 +83,7 @@ export default function Privacy() {
           </div>
         ))}
       </div>
-      <p><a href="https://policies.google.com/privacy" style={{ color: "#E8380D" }}>Google Privacy Policy</a> · <a href="https://www.google.com/settings/ads" style={{ color: "#E8380D" }}>Google Ads Settings</a> · <a href="/contact" style={{ color: "#E8380D" }}>Contact PDFcraft</a></p>
+      <p><a href="https://policies.google.com/privacy" style={{ color: "#C92F0A" }}>Google Privacy Policy</a> · <a href="https://www.google.com/settings/ads" style={{ color: "#C92F0A" }}>Google Ads Settings</a> · <a href="/contact" style={{ color: "#C92F0A" }}>Contact GetPDFCraft</a></p>
     </div>
   );
 }

@@ -4,9 +4,27 @@ import BlogPost from "@/components/ui/BlogPost";
 export const metadata = blogMetadata("smallpdf-alternative");
 
 const article = {
-  "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task",
-  "intro": "When choosing a Smallpdf alternative, test the particular job you need done. PDFcraft offers 13 free browser-based tools with no account required, but its available controls and output behavior may differ from the workflow you already use.",
+  "title": "A Smallpdf Alternative: Check GetPDFCraft Against Your Task",
+  "intro": "When choosing a Smallpdf alternative, test the particular job you need done. GetPDFCraft offers 13 free browser-based tools with no account required, but its available controls and output behavior may differ from the workflow you already use.",
   "sections": [
+    {
+      "heading": "Documented differences to check before switching",
+      "text": "These distinctions come from Smallpdf's public product documentation checked on November 2, 2026, and GetPDFCraft's current controls. They are not a hands-on Smallpdf benchmark or a comparison of output quality. Features and account requirements can change.",
+      "table": {
+        "headers": ["Decision", "Smallpdf documentation", "GetPDFCraft behavior"],
+        "rows": [
+          ["Organize before merging", "The Merge page describes thumbnail previews and rearranging pages before finishing.", "Merge follows file insertion order. Reorder is a separate tool with Up/Down controls and no thumbnails."],
+          ["Where merging runs", "Its online Merge page describes cloud-based processing.", "Document bytes are processed locally; loading the website and some runtimes still makes network requests."],
+          ["Choose compression strength", "The Compress page lists Basic, Moderate (Pro) and Strong (Pro).", "One structural optimization pass, with no compression-level or target-size control. The output can grow."],
+          ["Change existing wording", "Its editor documentation offers existing-text editing, with Pro requirements described in its FAQ.", "Page operations and drawn labels only. Existing paragraphs cannot be edited."]
+        ]
+      },
+      "list": [
+        { "text": "Smallpdf Merge documentation", "href": "https://smallpdf.com/merge-pdf" },
+        { "text": "Smallpdf Compress documentation", "href": "https://smallpdf.com/compress-pdf" },
+        { "text": "Smallpdf Edit documentation and account requirements", "href": "https://smallpdf.com/edit-pdf" }
+      ]
+    },
     {
       "heading": "A short evaluation workflow",
       "steps": [
@@ -27,7 +45,7 @@ const article = {
     {
       "heading": "Match the replacement to the job",
       "table": {
-        "headers": ["Your task", "PDFcraft workflow", "Check before switching"],
+        "headers": ["Your task", "GetPDFCraft workflow", "Check before switching"],
         "rows": [
           ["Combine or rearrange PDFs", "Merge appends files; Reorder uses Up/Down controls.", "Supported navigation is rebuilt, but AcroForm input and unsupported structures are rejected. There is no thumbnail-based page organizer."],
           ["Extract or remove pages", "Split creates separate files for comma-separated ranges; Delete retains at least one page.", "Links to omitted pages are cleaned rather than redirected. Page removal is not secure sanitization."],
@@ -47,11 +65,11 @@ const article = {
     },
     {
       "heading": "Local document processing is separate from web requests",
-      "text": "PDFcraft processes document contents locally in the browser without a PDF-processing upload backend. Website requests still occur. Protect and Unlock load a remote qpdf WebAssembly runtime; PDF-to-image and Grayscale load PDF.js workers from jsDelivr. Advertising resources load after acceptance in the consent banner. Browser and device resources impose practical limits."
+      "text": "GetPDFCraft processes document contents locally in the browser without a PDF-processing upload backend. Website requests still occur. Protect and Unlock load a remote qpdf WebAssembly runtime; PDF-to-image and Grayscale load PDF.js workers from jsDelivr. Advertising resources load after acceptance in the consent banner. Browser and device resources impose practical limits."
     },
     {
       "heading": "Evaluate missing capabilities explicitly",
-      "text": "If your Smallpdf workflow depends on OCR, existing-text editing, Word/Excel conversion or e-signatures, PDFcraft cannot replace that step. Verify those requirements against Smallpdf's current documentation or another provider before switching. This is a PDFcraft capability checklist, not a verified current Smallpdf feature or price comparison. No current Smallpdf prices, quotas, account rules or upload policies are asserted here."
+      "text": "If your workflow depends on OCR, existing-text editing, Word/Excel conversion or e-signatures, GetPDFCraft cannot replace that step. The documented comparison above covers specific controls, not subscription prices, total usage quotas or a claim that either product produces better PDFs. Confirm any required feature in the provider's current documentation before switching."
     },
     {
       "heading": "Start with a supported task",
@@ -81,11 +99,11 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "Are PDFcraft’s current tools free?",
+      "q": "Are GetPDFCraft’s current tools free?",
       "a": "Yes, and no account is required. This describes the current tools, not a promise about future pricing."
     },
     {
-      "q": "Can PDFcraft compress a PDF to a chosen size?",
+      "q": "Can GetPDFCraft compress a PDF to a chosen size?",
       "a": "No. The current tool has no target-size control, and the output can grow."
     },
     {

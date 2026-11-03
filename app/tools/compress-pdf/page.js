@@ -1,7 +1,7 @@
 ﻿"use client";
 import { useState } from "react";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
-import { pdfInputError } from "@/lib/pdfInput";
+import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -20,8 +20,8 @@ export default function CompressPDF() {
     const token = beginResult();
     setProcessing(true);
     try {
-      const { PDFDocument } = await import("pdf-lib");
-      const compressed = await (await PDFDocument.load(await f.arrayBuffer())).save({ useObjectStreams: true });
+
+      const compressed = await (await loadPdf(f)).save({ useObjectStreams: true });
       if (isCurrentResult(token)) {
         setResult({ originalSize: f.size, newSize: compressed.length });
         setDownloadUrl(URL.createObjectURL(new Blob([compressed], { type: "application/pdf" })), token);
@@ -29,7 +29,7 @@ export default function CompressPDF() {
     } catch (e) {
       if (isCurrentResult(token)) setError(pdfInputError(e));
     } finally {
-      setProcessing(false);
+      if (isCurrentResult(token)) setProcessing(false);
     }
   };
   const reset = () => { setFile(null); setResult(null); setError(""); };

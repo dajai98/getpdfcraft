@@ -2,119 +2,119 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const expected = {
   "how-to-merge-pdf-free": {
-    "title": "How to Merge PDF Files Free Online — No Sign Up | PDFcraft",
+    "title": "How to Merge PDF Files Free Online — No Sign Up | GetPDFCraft",
     "h1": "How to Merge PDF Files Free Online — No Sign Up",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-merge-pdf-free\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-merge-pdf-free\"/>",
     "date": null
   },
   "compress-pdf-without-losing-quality": {
-    "title": "How to Compress PDF Without Losing Quality | PDFcraft",
+    "title": "How to Compress PDF Without Losing Quality | GetPDFCraft",
     "h1": "How to Compress PDF Without Losing Quality",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/compress-pdf-without-losing-quality\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/compress-pdf-without-losing-quality\"/>",
     "date": "January 18, 2026"
   },
   "convert-pdf-to-jpg-free": {
-    "title": "How to Convert PDF to JPG Free — No Watermark | PDFcraft",
+    "title": "How to Convert PDF to JPG Free — No Watermark | GetPDFCraft",
     "h1": "How to Convert PDF to JPG Free — No Watermark",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/convert-pdf-to-jpg-free\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/convert-pdf-to-jpg-free\"/>",
     "date": "January 20, 2026"
   },
   "how-to-split-pdf-online": {
-    "title": "How to Split PDF Online Free — No Sign Up | PDFcraft",
+    "title": "How to Split PDF Online Free — No Sign Up | GetPDFCraft",
     "h1": "How to Split PDF Online Free — No Sign Up",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-split-pdf-online\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-split-pdf-online\"/>",
     "date": null
   },
   "how-to-remove-password-from-pdf": {
-    "title": "How to Remove a PDF Password You Already Know | PDFcraft",
+    "title": "How to Remove a PDF Password You Already Know | GetPDFCraft",
     "h1": "How to Remove a PDF Password You Already Know",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-remove-password-from-pdf\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-remove-password-from-pdf\"/>",
     "date": null
   },
   "how-to-add-password-to-pdf-online": {
-    "title": "How to Add Password to PDF Online Free | PDFcraft",
+    "title": "How to Add Password to PDF Online Free | GetPDFCraft",
     "h1": "How to Add Password to PDF Online Free",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-add-password-to-pdf-online\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-add-password-to-pdf-online\"/>",
     "date": null
   },
   "how-to-add-watermark-to-pdf": {
-    "title": "How to Add Watermark to PDF Free Online | PDFcraft",
+    "title": "How to Add Watermark to PDF Free Online | GetPDFCraft",
     "h1": "How to Add Watermark to PDF Free Online",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-add-watermark-to-pdf\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-add-watermark-to-pdf\"/>",
     "date": "February 2026"
   },
   "best-free-pdf-tools-online": {
-    "title": "13 Free PDFcraft Tools: What Each One Actually Does | PDFcraft",
-    "h1": "13 Free PDFcraft Tools: What Each One Actually Does",
+    "title": "13 Free GetPDFCraft Tools: What Each One Actually Does | GetPDFCraft",
+    "h1": "13 Free GetPDFCraft Tools: What Each One Actually Does",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/best-free-pdf-tools-online\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/best-free-pdf-tools-online\"/>",
     "date": "February 2026"
   },
   "how-to-convert-jpg-to-pdf": {
-    "title": "How to Convert JPG to PDF Free Online | PDFcraft",
+    "title": "How to Convert JPG to PDF Free Online | GetPDFCraft",
     "h1": "How to Convert JPG to PDF Free Online",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-convert-jpg-to-pdf\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-convert-jpg-to-pdf\"/>",
     "date": "February 2026"
   },
   "how-to-edit-pdf-free": {
-    "title": "How to Edit PDF Free Online (No Adobe Needed) | PDFcraft",
-    "h1": "How to Edit PDF Free Online (No Adobe Needed)",
+    "title": "Edit PDF Pages Free: Reorder, Rotate and Add Labels | GetPDFCraft",
+    "h1": "Edit PDF Pages Free: Reorder, Rotate and Add Labels",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-edit-pdf-free\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-edit-pdf-free\"/>",
     "date": "February 2026"
   },
   "pdf-file-size-too-large": {
-    "title": "PDF File Size Too Large? How to Fix It Free | PDFcraft",
+    "title": "PDF File Size Too Large? How to Fix It Free | GetPDFCraft",
     "h1": "PDF File Size Too Large? How to Fix It Free",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/pdf-file-size-too-large\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/pdf-file-size-too-large\"/>",
     "date": "February 2026"
   },
   "how-to-rotate-pdf": {
-    "title": "How to Rotate PDF Pages Free Online | PDFcraft",
+    "title": "How to Rotate PDF Pages Free Online | GetPDFCraft",
     "h1": "How to Rotate PDF Pages Free Online",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-rotate-pdf\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-rotate-pdf\"/>",
     "date": "February 2026"
   },
   "how-to-extract-pages-from-pdf": {
-    "title": "How to Extract Selected PDF Pages and Ranges | PDFcraft",
+    "title": "How to Extract Selected PDF Pages and Ranges | GetPDFCraft",
     "h1": "How to Extract Selected PDF Pages and Ranges",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-extract-pages-from-pdf\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-extract-pages-from-pdf\"/>",
     "date": "February 2026"
   },
   "pdf-security-guide": {
-    "title": "PDF Security Guide — How to Protect Your Documents | PDFcraft",
+    "title": "PDF Security Guide — How to Protect Your Documents | GetPDFCraft",
     "h1": "PDF Security Guide — How to Protect Your Documents",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/pdf-security-guide\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/pdf-security-guide\"/>",
     "date": "February 2026"
   },
   "how-to-combine-pdf-and-images": {
-    "title": "How to Combine PDF and Images Into One File Free | PDFcraft",
+    "title": "How to Combine PDF and Images Into One File Free | GetPDFCraft",
     "h1": "How to Combine PDF and Images Into One File Free",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-combine-pdf-and-images\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-combine-pdf-and-images\"/>",
     "date": null
   },
   "how-to-secure-pdf-before-sending-email": {
-    "title": "How to Secure a PDF Before Sending by Email | PDFcraft",
+    "title": "How to Secure a PDF Before Sending by Email | GetPDFCraft",
     "h1": "How to Secure a PDF Before Sending by Email",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/how-to-secure-pdf-before-sending-email\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/how-to-secure-pdf-before-sending-email\"/>",
     "date": null
   },
   "pdf-compression-real-test-results": {
-    "title": "How Much Can You Compress a PDF? Measure Your Own Result | PDFcraft",
+    "title": "How Much Can You Compress a PDF? Measure Your Own Result | GetPDFCraft",
     "h1": "How Much Can You Compress a PDF? Measure Your Own Result",
     "canonical": "<link rel=\"canonical\" href=\"https://getpdfcraft.com/blog/pdf-compression-real-test-results\"/>",
     "og": "<meta property=\"og:url\" content=\"https://getpdfcraft.com/blog/pdf-compression-real-test-results\"/>",
@@ -256,7 +256,7 @@ rejects('limitation list item missing', () => {
   const re = new RegExp('<li\\b[^>]*>' + escaped + '</li>');
   assert(re.test(evidenceHtml)); return evidenceHtml.replace(re, '');
 }, html => checkStructuredExport(results, html));
-for (const bad of ["file?s", 'PDFcraft?s', 'NASA?s', 'cover?report?appendix', '10%?80%', '4?6', '12?14', '1200 ? 800', '90? right', '?Without losing quality?', '(output bytes ? input bytes) ? input bytes ? 100', 'broken\uFFFDtext']) {
+for (const bad of ["file?s", 'GetPDFCraft?s', 'NASA?s', 'cover?report?appendix', '10%?80%', '4?6', '12?14', '1200 ? 800', '90? right', '?Without losing quality?', '(output bytes ? input bytes) ? input bytes ? 100', 'broken\uFFFDtext']) {
   rejects('encoding: ' + bad, () => bad, checkEncoding);
 }
 const validEncoding = [
@@ -264,7 +264,7 @@ const validEncoding = [
   'Does this preserve every feature? No.', '90 degrees right', '10%-80%',
   'Why does the PDF open on page 1?', 'What is the output size in bytes?',
   'Can I merge more than two PDFs?', 'Why did my compressed file get larger?',
-  'Does PDFcraft preserve bookmarks?', 'What happens if the output is larger?',
+  'Does GetPDFCraft preserve bookmarks?', 'What happens if the output is larger?',
   'Should I start on page 27? Yes.', 'Is the size measured in bytes? Check the file properties.',
 ];
 for (const value of validEncoding) {

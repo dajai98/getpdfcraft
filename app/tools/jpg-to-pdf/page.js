@@ -7,7 +7,7 @@ import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
-  { q: "Which image formats does PDFcraft support?", a: "PDFcraft supports JPEG/JPG and PNG images. Other image formats are not supported." },
+  { q: "Which image formats does GetPDFCraft support?", a: "GetPDFCraft supports JPEG/JPG and PNG images. Other image formats are not supported." },
   { q: "Can I combine multiple images into one PDF?", a: "Selected images become one PDF page each. The practical number of images depends on available browser memory." },
   { q: "Can I control the order of images?", a: "Yes. Images appear in the order you add them. Remove and re-add to change the order." },
   { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
@@ -91,7 +91,7 @@ export default function JPGtoPDF() {
         <div style={{ fontSize: 48, marginBottom: 12 }}>🖼️</div>
         <p style={{ fontWeight: 700, fontSize: 18, color: "#111827", marginBottom: 8 }}>Drop images here or click to browse</p>
         <p style={{ fontSize: 14, color: "#6b7280", marginBottom: 20 }}>JPEG/JPG and PNG supported</p>
-        <button type="button" style={{ background: "#E8380D", color: "white", border: "none", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, cursor: "pointer", fontFamily: "inherit" }}>
+        <button type="button" style={{ background: "#C92F0A", color: "white", border: "none", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, cursor: "pointer", fontFamily: "inherit" }}>
           Select Images
         </button>
       </div>
@@ -115,7 +115,7 @@ export default function JPGtoPDF() {
             ))}
           </div>
 
-          <button onClick={convert} disabled={processing || validating} style={{ width: "100%", background: processing ? "#d1d5db" : "#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
+          <button onClick={convert} disabled={processing || validating} style={{ width: "100%", background: processing ? "#d1d5db" : "#C92F0A", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
             {processing ? "⏳ Converting..." : `🖼️ Convert ${images.length} Image${images.length > 1 ? "s" : ""} to PDF`}
           </button>
         </div>

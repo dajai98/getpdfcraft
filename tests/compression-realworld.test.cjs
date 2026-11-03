@@ -1,3 +1,4 @@
+const { historicalSource } = require('../scripts/lab/reviewed-source.cjs');
 // Reparse persisted real-world evidence; no network, collection or artifact writes.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -22,7 +23,7 @@ const plain = x => JSON.parse(JSON.stringify(x));
   assert.equal(m.coverageStatus,'PARTIAL; BATCH 7C INCOMPLETE');
   assert.equal(m.browserTested,false); assert.equal(m.visualReview,'NOT TESTED');
   assert.deepEqual(m.environment,parse(dir+'/environment.json'));
-  for(const [p,h] of Object.entries(m.sourceHashes)) assert.equal(sha(read(m.sourceSnapshots[p]?dir+'/'+m.sourceSnapshots[p]:p)),h);
+  for(const [p,h] of Object.entries(m.sourceHashes)) assert.equal(sha(historicalSource(read,m.sourceSnapshots[p]?dir+'/'+m.sourceSnapshots[p]:p,h)),h);
   for (const r of m.results) {
    assert.equal(r.fixtureKind,'REAL_WORLD');
    const p=parse(r.provenancePath);

@@ -12,8 +12,8 @@ export default function Post() {
       intro={"Choose PNG when you need a picture of a PDF page, not a replacement for the PDF itself. The useful question is whether a finite pixel image meets the receiving task: a slide illustration, a page preview or a layout reference. Keep the original when recipients need to search text, follow links or complete fields."}
       sections={[
   {
-    "heading": "What PDFcraft renders into a PNG",
-    "text": "PDFcraft renders whole pages with PDF.js; it does not extract original embedded images. A page containing a photograph, a caption and a border becomes one composed page image. You cannot use this output to recover the untouched photograph or an independently editable logo. Request the source asset when that is the deliverable you need.",
+    "heading": "What GetPDFCraft renders into a PNG",
+    "text": "GetPDFCraft renders whole pages with PDF.js; it does not extract original embedded images. A page containing a photograph, a caption and a border becomes one composed page image. You cannot use this output to recover the untouched photograph or an independently editable logo. Request the source asset when that is the deliverable you need.",
     "steps": [
       {
         "title": "Dimensions come from the rendered page",
@@ -41,7 +41,7 @@ export default function Post() {
       },
       {
         "title": "Do not infer a PNG quality setting",
-        "body": "The rendering code passes 0.92 to canvas export, but that argument is not a PNG quality control. PDFcraft does not offer a PNG quality slider or a target-byte-size setting. Choose the output format for the task rather than expecting that number to tune PNG size."
+        "body": "The rendering code passes 0.92 to canvas export, but that argument is not a PNG quality control. GetPDFCraft does not offer a PNG quality slider or a target-byte-size setting. Choose the output format for the task rather than expecting that number to tune PNG size."
       }
     ]
   },
@@ -77,7 +77,7 @@ export default function Post() {
   },
   {
     "q": "Can the recipient search or select the words in the PNG?",
-    "a": "Visible words are pixels. PDFcraft does not perform OCR here; keep the PDF or use a separate text-recognition workflow if searchable text is required."
+    "a": "Visible words are pixels. GetPDFCraft does not perform OCR here; keep the PDF or use a separate text-recognition workflow if searchable text is required."
   },
   {
     "q": "Which format should I choose for a page illustration?",

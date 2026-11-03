@@ -8,7 +8,7 @@ const origin = 'https://getpdfcraft.com';
 const specs = {
   'convert-pdf-to-png-free': {
     title: 'How to Convert PDF to PNG Free Online', date: 'February 2026', iso: '2026-02', max: 850,
-    headings: ['What PDFcraft renders into a PNG', 'Choose PNG or JPG for the receiving task', 'What a page image leaves behind', 'Multi-page output and download checks'],
+    headings: ['What GetPDFCraft renders into a PNG', 'Choose PNG or JPG for the receiving task', 'What a page image leaves behind', 'Multi-page output and download checks'],
     required: [
       ['renders whole pages', 'does not extract original embedded images', 'scale 2', 'not a controlled browser pixel test'],
       ['Neither format is always smaller or better', 'not a PNG quality control'],
@@ -28,26 +28,26 @@ const specs = {
   },
   'how-to-merge-pdf-on-mac': {
     title: 'How to Merge PDF on Mac Free (3 Easy Ways)', date: 'February 2026', iso: '2026-02', max: 950,
-    headings: ['Preview: assemble whole documents or selected pages', 'Finder: combine selected files with Create PDF', 'PDFcraft: append PDFs in the displayed source order', 'Choose by the control you need'],
+    headings: ['Preview: assemble whole documents or selected pages', 'Finder: combine selected files with Create PDF', 'GetPDFCraft: append PDFs in the displayed source order', 'Choose by the control you need'],
     required: [
       ['saved automatically', 'duplicate originals', 'View > Thumbnails', 'Command-click', 'drag thumbnails'],
       ['Quick Actions > Create PDF', 'order in which files were selected', 'macOS 27'],
       ['displayed insertion order', 'no drag-to-reorder', 'Up/Down', 'AcroForm'],
-      ['Native page-by-page assembly', 'Combine selected Finder files', 'PDFcraft supported browser append'],
+      ['Native page-by-page assembly', 'Combine selected Finder files', 'GetPDFCraft supported browser append'],
     ],
     links: ['/tools/merge-pdf', '/tools/reorder-pages', '/blog/how-to-merge-pdf-free', 'https://support.apple.com/en-ie/guide/preview/prvw43696/mac', 'https://support.apple.com/en-ie/guide/mac-help/mchl21ac2368/27/mac/27'],
     forbidden: [
-      /Preview\s+uses\s+PDFcraft\s+Merge/i,
-      /PDFcraft\s+is\s+always\s+(?:better|faster|easier)/i,
+      /Preview\s+uses\s+GetPDFCraft\s+Merge/i,
+      /GetPDFCraft\s+is\s+always\s+(?:better|faster|easier)/i,
       /Finder\s+preserves?\s+every\s+PDF\s+feature/i,
       /\bwe\s+(?:(?:locally|personally)\s+)?tested\b/i,
-      /(?:Preview|Finder|PDFcraft)\s+is\s+(?:the\s+)?(?:fastest|easiest|best)\b/i,
+      /(?:Preview|Finder|GetPDFCraft)\s+is\s+(?:the\s+)?(?:fastest|easiest|best)\b/i,
     ],
-    mutations: ['Preview uses PDFcraft Merge.', 'PDFcraft is always better than Preview.', 'Finder preserves every PDF feature.', 'We locally tested Preview on a Mac.', 'Finder is the fastest method.'],
+    mutations: ['Preview uses GetPDFCraft Merge.', 'GetPDFCraft is always better than Preview.', 'Finder preserves every PDF feature.', 'We locally tested Preview on a Mac.', 'Finder is the fastest method.'],
   },
   'secure-pdf-on-mac': {
     title: 'How to Password-Protect a PDF on Mac', date: undefined, iso: undefined, max: 800,
-    headings: ['Preview separates opening access from permissions', 'PDFcraft provides a narrower opening-password workflow', 'Choose native controls or browser protection', 'Verify the saved copy, not just the dialog'],
+    headings: ['Preview separates opening access from permissions', 'GetPDFCraft provides a narrower opening-password workflow', 'Choose native controls or browser protection', 'Verify the saved copy, not just the dialog'],
     required: [
       ['opening password', 'owner password', 'Permissions', 'does not establish a specific encryption algorithm'],
       ['unencrypted PDF', 'printing and extraction allowed', 'does not expose all Preview permission controls'],
@@ -56,11 +56,11 @@ const specs = {
     ],
     links: ['/tools/protect-pdf', '/blog/how-to-add-password-to-pdf-online', 'https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac'],
     forbidden: [
-      /Preview\s+and\s+PDFcraft\s+use\s+(?:identical|the same)\s+encryption/i,
+      /Preview\s+and\s+GetPDFCraft\s+use\s+(?:identical|the same)\s+encryption/i,
       /PDF\s+permissions\s+(?:cannot|can never)\s+be\s+bypassed/i,
-      /PDFcraft\s+exposes?\s+all\s+Preview\s+permission\s+controls/i,
+      /GetPDFCraft\s+exposes?\s+all\s+Preview\s+permission\s+controls/i,
     ],
-    mutations: ['Preview and PDFcraft use identical encryption.', 'PDF permissions cannot be bypassed.', 'PDFcraft exposes all Preview permission controls.'],
+    mutations: ['Preview and GetPDFCraft use identical encryption.', 'PDF permissions cannot be bypassed.', 'GetPDFCraft exposes all Preview permission controls.'],
   },
   'how-to-lock-pdf-for-job-applications': {
     title: 'How to Lock PDF for Job Applications', date: undefined, iso: undefined, max: 800,
@@ -101,11 +101,11 @@ function validate(slug, source, html) {
   claims(slug, text); claims(slug, visible(html));
   assert.equal(a.title, spec.title); assert.equal(a.date, spec.date);
   assert(source.includes('metadata = blogMetadata("' + slug + '")'));
-  assert.equal(visible(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | PDFcraft');
+  assert.equal(visible(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | GetPDFCraft');
   assert.equal(visible(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), spec.title);
   for (const prefix of ['rel="canonical" href="', 'property="og:url" content="']) assert(html.includes(prefix + origin + '/blog/' + slug + '"'));
   const schema = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
-  assert.equal(schema.find(x => x['@type'] === 'BlogPosting').datePublished, spec.iso);
+  assert.equal(schema.find(x => x['@type'] === 'BlogPosting').datePublished, undefined);
   assert.equal(a.faqs.length, 4);
   assert.deepEqual(schema.find(x => x['@type'] === 'FAQPage').mainEntity.map(x => ({ q: x.name, a: x.acceptedAnswer.text })), a.faqs);
   const rendered = visible(html);
@@ -128,8 +128,8 @@ function validate(slug, source, html) {
     leaves(a.sections[i]);
   }
   if (slug === 'how-to-merge-pdf-on-mac') {
-    assert(!/PDFcraft/.test(prose(a.sections[0])), 'Browser instructions in Preview procedure');
-    assert(!/PDFcraft/.test(exported.find(b => b.heading === spec.headings[0]).text));
+    assert(!/GetPDFCraft/.test(prose(a.sections[0])), 'Browser instructions in Preview procedure');
+    assert(!/GetPDFCraft/.test(exported.find(b => b.heading === spec.headings[0]).text));
   }
   if (slug === 'how-to-lock-pdf-for-job-applications') {
     assert.equal(a.sections[0].steps.length, 7);

@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
+const { reviewedCurrentSource, historicalSource } = require('./reviewed-source.cjs');
 const { validateCompressionIndex } = require('./validate-compression-index.cjs');
 const rootDefault = path.resolve(__dirname, '../..');
 const approved = {
@@ -45,7 +46,8 @@ function prepareInternal({ root = rootDefault, io = fs, index } = {}) {
       assert(approval[1] === 'ACTIVE' ? entry.runId === state.activeRunId : entry.evidenceStatus.startsWith('SUPPLEMENTAL:'), 'supplemental role changed');
       assert.equal(m.browserTested, false);
       for (const p of ['app/tools/compress-pdf/page.js', 'components/hooks/useGeneratedResult.js', 'lib/pdfInput.js', 'package-lock.json']) {
-        assert.equal(sha(read(p)), m.sourceHashes[p], 'current implementation/dependencies differ from measured source');
+        historicalSource(read, p, m.sourceHashes[p]);
+        reviewedCurrentSource(read, p, m.sourceHashes[p]);
       }
     }
     for (const r of m.results) {

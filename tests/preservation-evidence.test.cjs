@@ -1,3 +1,4 @@
+const { reviewedCurrentSource } = require('../scripts/lab/reviewed-source.cjs');
 // Reopen actual artifacts; compare raw observations and derived classifications.
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const collector=require('../scripts/lab/preservation-postrepair.cjs'),legacy=require('../scripts/lab/preservation.cjs'),{validate,validateRunContract}=require('../scripts/lab/validate-preservation.cjs');
@@ -10,7 +11,7 @@ function currentDependencies(m,read=p=>fs.readFileSync(path.join(root,p))){
   // The collector was separately corrected after this immutable run; its current
   // transformation assertions are exercised below, not equated to old bytes.
   if(editorialSources.has(p)||p==='scripts/lab/preservation-postrepair.cjs')continue;
-  assert.equal(legacy.sha(read(p)),hash,'Processing dependency requires review: '+p);
+  try { reviewedCurrentSource(read,p,hash); } catch (e) { throw new Error('Processing dependency requires review: '+p+'; '+e.message); }
  }
 }
 // Independent oracle: does not call collector.matrix/assertTransformation.
@@ -60,8 +61,9 @@ async function adversarial(m,dir,before,test){
 (async()=>{
  const {index,manifest:m,dir}=validate(),rt=await legacy.runtime(),h=await collector.harness(rt),fixtures=await collector.fixtures();
  await test('historical registration/artifacts/snapshots and current processing dependencies',()=>{validate();currentDependencies(m);});
- await test('editorial-only mutations do not invalidate historical evidence',()=>{
-  currentDependencies(m,p=>editorialSources.has(p)?Buffer.from('changed editorial text'):fs.readFileSync(path.join(root,p)));
+ await test('editorial-only mutations preserve historical evidence but invalidate current source review',()=>{
+  validate();
+  assert.throws(()=>currentDependencies(m,p=>editorialSources.has(p)?Buffer.from('changed editorial text'):fs.readFileSync(path.join(root,p))),/current implementation review dependency changed/);
   validate();
  });
  await test('processing mutations require review',()=>{

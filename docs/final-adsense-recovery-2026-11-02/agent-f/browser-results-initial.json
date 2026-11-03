@@ -1,0 +1,71 @@
+{
+  "at": "2026-11-03T00:22:08.168Z",
+  "checks": [
+    {
+      "name": "latest Page Numbers export, empty320 and corrected instructions",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "exportSha256": "7a926edc3fa102c13be27997dbdadc41d03bd59ad107146c3146af07b99267d8"
+      }
+    },
+    {
+      "name": "mobile menu keyboard and Contact320",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "compress-pdf zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": ""
+      }
+    },
+    {
+      "name": "rotate-pdf zero-page rejection browser",
+      "status": "FAIL",
+      "error": "locator.waitFor: Error: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\">This PDF could not be read. Select a valid, undam…</p> aka getByText('This PDF could not be read.')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - waiting for getByRole('alert') to be visible\u001b[22m\n"
+    },
+    {
+      "name": "watermark-pdf zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": ""
+      }
+    },
+    {
+      "name": "add-page-numbers zero-page rejection browser",
+      "status": "PASS",
+      "data": {
+        "alert": ""
+      }
+    },
+    {
+      "name": "Page Numbers loaded320 standard name",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "Page Numbers long real-world filename320",
+      "status": "PASS",
+      "data": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "Page Numbers invalid start, retry and real download",
+      "status": "FAIL",
+      "error": "The input did not match the regular expression /positive whole/. Input:\n\n''\n"
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.58"
+}

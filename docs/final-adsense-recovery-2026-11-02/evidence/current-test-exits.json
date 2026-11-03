@@ -1,0 +1,78 @@
+[
+    {
+        "command":  "node tests/batch3-articles.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/batch4b-final-differentiation.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/batch5-low-value-capability.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/batch8-navigation.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/batch9c-corrections.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/competitor-differentiation.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/compression-evidence.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/compression-index.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/compression-publication.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/compression-realworld.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/compression-review.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/compression-runs.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/content-integrity.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/final-recovery.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/final-repair.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/navigation-repair.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/preservation-evidence.test.cjs",
+        "exitCode":  1
+    },
+    {
+        "command":  "node tests/tool-documentation.test.cjs",
+        "exitCode":  0
+    },
+    {
+        "command":  "node tests/windows-differentiation.test.cjs",
+        "exitCode":  1
+    }
+]

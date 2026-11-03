@@ -18,7 +18,7 @@ export default function Post() {
       },
       {
         "title": "What format is required?",
-        "body": "Check whether the recipient requests PDF, an editable document or a portal form, and whether attachments must remain separate. Do not merge a cover letter and resume unless a combined packet is accepted. PDFcraft does not provide PDF-to-Word conversion; retain the editable source for that requirement."
+        "body": "Check whether the recipient requests PDF, an editable document or a portal form, and whether attachments must remain separate. Do not merge a cover letter and resume unless a combined packet is accepted. GetPDFCraft does not provide PDF-to-Word conversion; retain the editable source for that requirement."
       },
       {
         "title": "Are encrypted PDFs accepted?",
@@ -34,7 +34,7 @@ export default function Post() {
       },
       {
         "title": "Is there an actual size constraint?",
-        "body": "Measure the final saved attachment against the current stated requirement. Compression is conditional on a real size problem, not a mandatory preparation step. PDFcraft structural compression may increase size and cannot promise a target. If needed, compare an unencrypted working copy before applying any accepted password protection."
+        "body": "Measure the final saved attachment against the current stated requirement. Compression is conditional on a real size problem, not a mandatory preparation step. GetPDFCraft structural compression may increase size and cannot promise a target. If needed, compare an unencrypted working copy before applying any accepted password protection."
       },
       {
         "title": "Have you reopened the final submission files?",
@@ -75,7 +75,7 @@ export default function Post() {
     "a": "Confirm the request and delivery channel, send only the requested information, and agree how the recipient will receive the password. Reopen the protected output first. This does not establish that the same file will be accepted by a separate application portal."
   }
 ]}
-      ctaText={"Prepare your job application PDFs — free"}
+      ctaText={"Add a password only when the recipient accepts it"}
       ctaHref={"/tools/protect-pdf"}
     />
   );

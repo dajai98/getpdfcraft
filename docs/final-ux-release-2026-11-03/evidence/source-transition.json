@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "reviewedAt": "2026-11-03T12:26:15.253Z",
+  "reason": "Current-source UX, accessible action/link contrast, and public GetPDFCraft branding review. Tool handlers differ only in public brand copy and visual orange color tokens. Fresh retained-input replays check 12 compression and 22 preservation cases. The historical review, source archive, manifests and numeric measurements remain unchanged. Current UI, metadata, documentation, tests, and icon bytes are bound by hashes.",
+  "previousReview": {
+    "path": "docs/final-adsense-recovery-2026-11-02/evidence/source-transition.json",
+    "sha256": "beeea4af757aff69ed25ca8091a2984ad75241a0962952fa4bef0f0f50162961"
+  },
+  "oldHashes": {
+    "lib/blogCatalog.json": [
+      "7a05e7b82dc97547ca665cba90be5b4a080a7ed59ec1c7e951dc6e97135b7229"
+    ],
+    "lib/blogMetadata.js": [
+      "163b2972c62333855b7ed6098d6bd822f1676dcb78bfd90a46cc77eb4525a697"
+    ],
+    "lib/copyPdfPagesSafe.js": [
+      "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354"
+    ],
+    "lib/imageInput.js": [
+      "d05a69cb30f3edc722b041fd91d6c52e7b7d4e89d9125dd01073104503926123"
+    ],
+    "lib/jpegValidation.js": [
+      "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34"
+    ],
+    "lib/pageGeometry.js": [
+      "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff"
+    ],
+    "lib/pdfInput.js": [
+      "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5"
+    ],
+    "lib/pdfNavigationModel.js": [
+      "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56"
+    ],
+    "lib/pdfNavigationValidation.js": [
+      "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467"
+    ],
+    "lib/qpdf.js": [
+      "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59"
+    ],
+    "lib/siteConfig.json": [
+      "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264"
+    ],
+    "lib/splitRanges.js": [
+      "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3"
+    ],
+    "lib/toolGuides.json": [
+      "bcabed0042a769be676961a5bd501360c660dfed7fadcfdffb1f8231ce8358a6"
+    ],
+    "lib/toolMetadata.js": [
+      "2ec282705140e83e138c7c4317f029f1fff4a705b4bb2b7cb67435efcd6bad92"
+    ],
+    "components/hooks/useGeneratedResult.js": [
+      "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5"
+    ],
+    "components/hooks/useObjectUrls.js": [
+      "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca"
+    ],
+    "components/hooks/usePdfInput.js": [
+      "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e"
+    ],
+    "app/tools/add-page-numbers/layout.js": [
+      "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425"
+    ],
+    "app/tools/add-page-numbers/page.js": [
+      "14d0572c09d1887720fe03fc6f8cc3737a8a2eb00ba1308a2bfdf613915a7a3c"
+    ],
+    "app/tools/compress-pdf/layout.js": [
+      "f4834d2d35985c97b85ce9f463da202132e963414c6ce9303e8820fe632becaa"
+    ],
+    "app/tools/compress-pdf/page.js": [
+      "1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce"
+    ],
+    "app/tools/delete-pages/layout.js": [
+      "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38"
+    ],
+    "app/tools/delete-pages/page.js": [
+      "18dca976ae0077854c6c36e064acd27b93797a7c06055fd1a714ed6072dc7021"
+    ],
+    "app/tools/jpg-to-pdf/layout.js": [
+      "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920"
+    ],
+    "app/tools/jpg-to-pdf/page.js": [
+      "113e74c7daf099207fe8f5138bc6bc1cebd033d886a2af05171acc24c8fe367c"
+    ],
+    "app/tools/merge-pdf/layout.js": [
+      "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16"
+    ],
+    "app/tools/merge-pdf/page.js": [
+      "789da8f73945a916e3f409adece1cd78f1d06e76c431041bcb2e34db3b1d2899"
+    ],
+    "app/tools/pdf-to-grayscale/layout.js": [
+      "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c"
+    ],
+    "app/tools/pdf-to-grayscale/page.js": [
+      "dbf89c14ac4c8caa591be161da6d11b056d034bf67945a8b788d409e39f97dd1"
+    ],
+    "app/tools/pdf-to-image/layout.js": [
+      "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b"
+    ],
+    "app/tools/pdf-to-image/page.js": [
+      "bb6aabffd0c26770f77513a77af044b7f4bb4a4ddb28a51a40dd42d037017b2e"
+    ],
+    "app/tools/protect-pdf/layout.js": [
+      "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35"
+    ],
+    "app/tools/protect-pdf/page.js": [
+      "f408d0289ab03c5489c239a60902b8a1357f7503581cc66ed2291032c47a8d08"
+    ],
+    "app/tools/reorder-pages/layout.js": [
+      "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf"
+    ],
+    "app/tools/reorder-pages/page.js": [
+      "def66815451827560c7db6cfca4c6db1773cdddeac48feca1e61714a3dee702d"
+    ],
+    "app/tools/rotate-pdf/layout.js": [
+      "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c"
+    ],
+    "app/tools/rotate-pdf/page.js": [
+      "4f933c3dfdd741bab7880329522ac33c2aadca14e7f146d8f3c6c392f2c3c5fb"
+    ],
+    "app/tools/split-pdf/layout.js": [
+      "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834"
+    ],
+    "app/tools/split-pdf/page.js": [
+      "b5f2232405fb34b66b1b791887340f970c6f4e955b94e7a85b2006546e430ac1"
+    ],
+    "app/tools/unlock-pdf/layout.js": [
+      "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77"
+    ],
+    "app/tools/unlock-pdf/page.js": [
+      "bb47c65fb10533dc452f0fb2365896406391320e657cf83f5cc69083ec761320"
+    ],
+    "app/tools/watermark-pdf/layout.js": [
+      "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584"
+    ],
+    "app/tools/watermark-pdf/page.js": [
+      "bf39f7e7f0a19e4a7e77530bbae1978ba52680648375a67eed509f593a93445e"
+    ],
+    "tests/final-repair.test.cjs": [
+      "fac5048edacf890175a66f76bcc271e5a3e86040e50960356f215c5351a78fdf"
+    ],
+    "scripts/lab/preservation.cjs": [
+      "c957f479381f11596b0919a25e7e757fb3611b39fefba15e6affb657b6991559"
+    ],
+    "scripts/lab/preservation-postrepair.cjs": [
+      "7f0ab9bb9a1bf213e57b7c28fc4498221499f8a98e81da77b6be2a881e678ab6"
+    ],
+    "package-lock.json": [
+      "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e"
+    ],
+    "scripts/lab/collect-compression.cjs": [
+      "c87334efe3aa70b352ac45856b672cb3260515af49a9b4263061eff300ff58ba",
+      "6f2b9e866d8fe20375d464efc87d2696e1e0fc3046205e0ef6ca7b24ad5cb625",
+      "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4"
+    ],
+    "scripts/lab/collect-real-compression.cjs": [
+      "ffb6694f49bb9ba02b57fadf02ec498332f7b84decb502a9fc866bcca1889a71",
+      "985750e803a697b881cd87d14d4c991a769291574731072723174b83f6cb8021"
+    ]
+  },
+  "currentLfHashes": {
+    "app/about/page.js": "91cb6b649f2ef5bf1b470fd8763b5846d9b46b63406f4fe13e48a586191e2265",
+    "app/blog/adobe-acrobat-alternative-free/page.js": "5bfcbd0f712fda9d73a2d4cb03ee1851e42200dafb767bc2c617186da8a0fdeb",
+    "app/blog/best-free-pdf-tools-online/page.js": "e567c1f352b82e86ce76b487042ee09223f587d6f99bc9bb76a607abfed5937b",
+    "app/blog/compress-pdf-without-losing-quality/page.js": "7720c2f93d955bd750872e2ad3c5b82eddee5c74d4da6c3e83946811a4f45395",
+    "app/blog/convert-pdf-to-jpg-free/page.js": "d6f3a6fba5dae3465b41eabb040fe0130f823c427f07b4e5ac3d9f7af6cce9db",
+    "app/blog/convert-pdf-to-png-free/page.js": "626572558fcf4cb7aa5ee07817ac2e4f1d65462a8f975bd15f548c5a83351314",
+    "app/blog/how-browser-based-pdf-processing-works/page.js": "9117f0eca2d96e7596c4dda47da9e283966c36ddb7dbae696a312d8f5b56c925",
+    "app/blog/how-to-add-password-to-pdf-online/page.js": "e2adb3aa33b0069eb7f7f96c96f64cd64db46fc662d4500ff875c4f9465f278a",
+    "app/blog/how-to-add-watermark-to-pdf/page.js": "4a76ad38fa0e7343980a33ff67fd7c0c97b936733bf33e6ed768d0b47a613979",
+    "app/blog/how-to-combine-pdf-and-images/page.js": "cc9d96859b68abd91531cb8d46f9a218c8618628e0c0248d8539416e11d25cee",
+    "app/blog/how-to-convert-jpg-to-pdf/page.js": "4c9a5b5766e50d1ff2f6e6871b821806bdbcc83ec8c9100ee25e53962196d0bb",
+    "app/blog/how-to-edit-pdf-free/page.js": "411659aa5a3da075b40ed7ae82a904cb9100b59b43ca1281927bfeacf73f0464",
+    "app/blog/how-to-extract-pages-from-pdf/page.js": "41cf0448b9b999dd83dfdfb372f34e8368170312971a0f8a8cda17e53804bcf8",
+    "app/blog/how-to-lock-pdf-for-job-applications/page.js": "c6ba04d600e66e4f61a9bb012a79c4113818186d1932af7be00574100d27a348",
+    "app/blog/how-to-merge-pdf-free/page.js": "02b7b4fc244c4f17b84af624dad06e225973b43accf228e7b44d1ab95904e243",
+    "app/blog/how-to-merge-pdf-on-mac/page.js": "1c484d5a932cc9a38031d0e5129c3a13d556f7d76fd462c67619c3022960cbd1",
+    "app/blog/how-to-merge-pdf-on-windows/page.js": "7831d1f123f380c204895ab6d240113dcf3268121262a4003890235954bb5468",
+    "app/blog/how-to-protect-pdf-from-editing/page.js": "5b8e258d41e611bd5a43c32bfbe49e5c1d1c3d646942195b3ab340f7b06a21ac",
+    "app/blog/how-to-remove-password-from-pdf/page.js": "cbdc76ddd8fad0b786b5ace6930a33c30a4f4ec7c4315a845161fc27461e2a6e",
+    "app/blog/how-to-rotate-pdf/page.js": "f5394217dbf9c24c44564e001a8299ab8103fd80afdbb81b591669019c1a5bdc",
+    "app/blog/how-to-secure-pdf-before-sending-email/page.js": "3cf9150de2f8d9def266faa4f828a405c24efe3d57c134861088c3bef863ffc6",
+    "app/blog/how-to-split-pdf-online/page.js": "3746163c6feb3e451ea26a0a99d05009fa97105aa1e3a0f9f05117804937e5b7",
+    "app/blog/ilovepdf-alternative/page.js": "f724226ae48736a384cdd1dadefee39a5b6436096bf83d9227c81437d8a467cb",
+    "app/blog/layout.js": "441fb146b7c6d73fbf0ae91c1db182a673a8cb5903990a6776a5ec7f18fef87d",
+    "app/blog/merge-pdf-on-iphone/page.js": "570f59a33ae1b75195686b62c1d7960f3f3dad84459bf4e4e6a508e55ff11ee9",
+    "app/blog/page.js": "02dd5c156bc0e04635829e3d961257798ef62414558ae1dbf88999dfdb11a721",
+    "app/blog/pdf-compression-real-test-results/page.js": "8fcec20713b94eb7a077e800f1325c099cd403624e0e3d1ea0dc03db4745692c",
+    "app/blog/pdf-security-guide/page.js": "19e686fe87b5ef48414279e1b8eb9cbbc44b19d005ac28906cd7615c909c469f",
+    "app/blog/pdf-tool-not-working-troubleshooting/page.js": "bd5bba2130d8852083dd4cdacd9765e61517461549152eeec6616c27067c0c4c",
+    "app/blog/pdf-vs-word-which-is-better/page.js": "997ffd0ebba1c7575155fa9c06327cd39b128acd3f9ea41abbc73805f4ff9598",
+    "app/blog/secure-pdf-on-mac/page.js": "7f693803fad0d5ff320d4f775493eaf172601b676a881a27aa89fd1373a367fa",
+    "app/blog/smallpdf-alternative/page.js": "2bebdc145df926d04dafbbff45c0292af568f6e303cdf448d37b3cd060ab3786",
+    "app/blog/why-is-my-pdf-locked/page.js": "9d5606811abb24fdc02760fab86be24ad09785e67350d374e31f0b887286ba18",
+    "app/contact/page.js": "85f59b5ffaeb828d34867a21b7b0cd440860f356adeba2dfe6d8473cdbd916b0",
+    "app/globals.css": "343e12ef222ac77a07e02007678a11f8f39baa9115dff5cb9ff7583f14436673",
+    "app/layout.js": "86912d2744e6459f12ff70e23561913db60d56a52aa01a1aba013ee7492630ed",
+    "app/not-found.js": "37b9f884305deff46b6e9dd4b2129c673e4c8cdebf11fb1dcb8e729aa4cceab3",
+    "app/page.js": "f7db0295ebe572c8b51c47bf063e7b7299c0009a34901f89479b97023853c520",
+    "app/privacy/page.js": "a1fbb84b4be022dfb29de7c5ab72c8b5314c4f38fd91170eb1e50ce20b7b1aae",
+    "app/terms/page.js": "4abcadbab24109b8df331db985dd7a4f3e862cb23a2738e94d5c97d207237e2f",
+    "app/tools/add-page-numbers/layout.js": "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425",
+    "app/tools/add-page-numbers/page.js": "187795ac8b7869ac6045e30a2a672d22541963dd55a7ff3c8babb290b79a48de",
+    "app/tools/compress-pdf/layout.js": "7c399613e41d7a386d7aa8693ac69856763e4bf98bddaea2ed94d2b490ed2f92",
+    "app/tools/compress-pdf/page.js": "c2b66ff79af8277ce811933b537c8cac74f58db1b5da3a29b9fed78a5f6ec8fa",
+    "app/tools/delete-pages/layout.js": "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38",
+    "app/tools/delete-pages/page.js": "7976c6390e4affda31fd32b37236dbac889d345409841f6674dbff40c5e17fc6",
+    "app/tools/jpg-to-pdf/layout.js": "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920",
+    "app/tools/jpg-to-pdf/page.js": "b0c43ac3b9021bab521278c44415b1e5b020794a61a546eec316a0ac19befd45",
+    "app/tools/merge-pdf/layout.js": "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16",
+    "app/tools/merge-pdf/page.js": "fd644df25cf5ebc9f8fe24f6ac3dc82c4dedfc884f50e37b81706e6dac6e6a6f",
+    "app/tools/pdf-to-grayscale/layout.js": "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c",
+    "app/tools/pdf-to-grayscale/page.js": "7345e465f75d66bda62f52df48c15fe92d0ff019ff45ecb23308c8dea2d593d8",
+    "app/tools/pdf-to-image/layout.js": "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b",
+    "app/tools/pdf-to-image/page.js": "d2e33db5c661c050aea00934968e69336ea41749e02db3f57ce1f48aaa101f57",
+    "app/tools/protect-pdf/layout.js": "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35",
+    "app/tools/protect-pdf/page.js": "081dbda7b705839bad13059c7964545eefe929ea20943f36a9ed2bbd6c864d69",
+    "app/tools/reorder-pages/layout.js": "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf",
+    "app/tools/reorder-pages/page.js": "51fc878b0c1d7f5db46fdf8954b0bf4e244427e1e54d7383c2dfb520fdba33b6",
+    "app/tools/rotate-pdf/layout.js": "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c",
+    "app/tools/rotate-pdf/page.js": "f4392b416feddd47748f74ead919abb3716a73ce54c2c46fafb3f1092b2344a9",
+    "app/tools/split-pdf/layout.js": "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834",
+    "app/tools/split-pdf/page.js": "bf9a7a67f3856410cc2c4d80f0787b162b443466d628b16a8dd7347bf3f025d3",
+    "app/tools/unlock-pdf/layout.js": "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77",
+    "app/tools/unlock-pdf/page.js": "1c12a139be5e55119ece8ac3415084b4fa76935d8c6c65697d7f1ad29e1cdf1f",
+    "app/tools/watermark-pdf/layout.js": "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584",
+    "app/tools/watermark-pdf/page.js": "fcc1abb89e002f5a0383490e74b4ad2a2b04afdb5c799f7d3a15e19965fba21d",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "components/hooks/useObjectUrls.js": "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca",
+    "components/hooks/usePdfInput.js": "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e",
+    "components/ui/BlogPost.js": "386050841a3f331c32a4cbec0eb288c3e13b6011b4699e720cfa561359ed8cc0",
+    "components/ui/CategoryIcon.js": "2a46b2305baf40169b729a345f7512db14cddf5a734147549c9f3c7856108700",
+    "components/ui/CookieBanner.js": "6423c0698e1e1023630c2f269f93e8c4e041c55e5135684a98b2b65f2bb03bb6",
+    "components/ui/DownloadButton.js": "1bf10507c3e8df9c253b19f52487e193751fe60c0c5fb9006dcccf4e929431b6",
+    "components/ui/Footer.js": "eeca91cb527866b2ee2728671f7819b87e221c3832b90fa86e9a3c5c06b53888",
+    "components/ui/Navbar.js": "cc733979e8a428b00d519488417364005568fed30a89fac092c6402156122a55",
+    "components/ui/UploadZone.js": "d1739cea1ca86f9f8005e4ab53aa828980fcc6818528048a03752bbcdf5d416b",
+    "docs/final-adsense-recovery-2026-11-02/agent-a/replay-compression-current.cjs": "f5f0225ef262f264939d7d8b7595e6a9b2bb1e8b2cac6084fd26d733cb682608",
+    "docs/final-adsense-recovery-2026-11-02/agent-a/replay-preservation-current.cjs": "a05d83b00c41527a37e300d0fb05361ec6d18f2fc94da2a4d646a44a9009480c",
+    "lib/blogCatalog.json": "c82c225705541da24bbc2591f22a872c21e8970c4380f0a36c4e29ad8163b7b4",
+    "lib/blogMetadata.js": "f08b69de22f4e199a77f86b0b2daea7ca5422c7703600e1627031bf3c2805e06",
+    "lib/copyPdfPagesSafe.js": "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354",
+    "lib/imageInput.js": "a4bad04484637a84ff06d834189f429ba6da44171afbacac76f5faa522e4822b",
+    "lib/jpegValidation.js": "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34",
+    "lib/pageGeometry.js": "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "lib/pdfNavigationModel.js": "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56",
+    "lib/pdfNavigationValidation.js": "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467",
+    "lib/qpdf.js": "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59",
+    "lib/rasterLimits.js": "a3fda6a9e9ceb7ff78aff745d364b706d5c40b011c1bf70519ab118251ab9cc9",
+    "lib/siteConfig.json": "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264",
+    "lib/siteNavigation.json": "b86c4ebca5198a9f2c948c8838b5d80c6f83762f625fbb7571949c9ff3fd1fcd",
+    "lib/splitRanges.js": "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3",
+    "lib/toolDocumentation.json": "c1bfc4047dd975ffaa6cae9201b37c76c6f36d8c56abf01395eaa80cf601aed3",
+    "lib/toolMetadata.js": "8faf15068c4145328be0f2f6b42da59363bd4b1deef739ea18ba931c792c5b47",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "public/og.svg": "e48450ba318e9d28cfb88f0009902217285bae0e2580076fe28669bd43056a47",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "scripts/lab/preservation-postrepair.cjs": "266ad7fa1955f2b729285ed7e920acfc17a208bd7c34ab923427dc12b907f50c",
+    "scripts/lab/preservation.cjs": "9f3e9a369dc8411433e7ac72dd57aeeb02772adfa85c9e9540a3ce8369643fe2",
+    "scripts/lab/reviewed-source.cjs": "edb572399994f4464bff1ce2aa2a6f9da523340921900483cb996e0357635b7e",
+    "tests/batch3-articles.test.cjs": "26f6353a03313a91d62a91a6059e3caf94683bb43ee12911bdfe732b732261fe",
+    "tests/batch4b-final-differentiation.test.cjs": "2d0f7b446b3e695668780652030b84f706c52583fb0cea49300993df480289c8",
+    "tests/batch5-low-value-capability.test.cjs": "a0f897877e6ce567cf6c3098515030971e0f79d36c57bde4752e4a6b8e0d215a",
+    "tests/batch9c-corrections.test.cjs": "66b7f455fe7d5cea7ea840b9195cd3c0538bf4b5bf34380fd27b36cd2d323215",
+    "tests/competitor-differentiation.test.cjs": "6e27014dc397ae3b7a54fbbb1b4c7a92cf9cd74e37921618b2ac69301f5a3bba",
+    "tests/compression-publication.test.cjs": "fd124c06bc2dfe3625a640c787cdd766a973f8603a4d70156c6a86921ddb8d56",
+    "tests/content-integrity.test.cjs": "574376add281f750188d6a9f3c775de969c729e183c11b00de0624c0cd8788ea",
+    "tests/final-recovery.test.cjs": "503168cd6bfc89409f27e3fbdbee76168672d91ce4dba8e8fb6252d1a57bc693",
+    "tests/final-repair.test.cjs": "dd1ee896f05b8123e150776ed4c0c2cb7552c1eb8f6861cf47ad2f464525af92",
+    "tests/preservation-evidence.test.cjs": "5ee567fd44dbbe00c7aae91ff39c7f2f44724ba390d20b0736a1fae698937e48",
+    "tests/source-review.test.cjs": "529fd0dec2de411a6dcb51ea5843ee8dd39b5118697037de48048269ec4bf096",
+    "tests/windows-differentiation.test.cjs": "f3b114b033fc9f9c1163e68856564fc561f0ecbd59b2f32ad580befef1162c67"
+  },
+  "assetHashes": {
+    "public/icon.png": "116dea4a5ab754b174a17a1f36e36707200324e31d796b03c96df4d2a86d948d"
+  },
+  "replayedSourceHashes": {
+    "app/tools/compress-pdf/page.js": "f5122ff9337600b5d2fc63ce0d53aaa8e97e23be73401b94dde1a3371fa9f7c2",
+    "components/hooks/useGeneratedResult.js": "9339b89373ac431390938a5e0fdd0234210f7f72382adc223cb67c28d572a4f5",
+    "lib/pdfInput.js": "1ecb23b28e6f1db46b2fc030faf13d2fcef1d3b9de9f361f8c888f502ecd24a5",
+    "package-lock.json": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e",
+    "scripts/lab/collect-compression.cjs": "fa76bd8df9fafde98762fa55e3873b405519733dfaf6349b15d24143235a6ae4",
+    "lib/blogCatalog.json": "c82c225705541da24bbc2591f22a872c21e8970c4380f0a36c4e29ad8163b7b4",
+    "lib/blogMetadata.js": "f08b69de22f4e199a77f86b0b2daea7ca5422c7703600e1627031bf3c2805e06",
+    "lib/copyPdfPagesSafe.js": "2b35e66b4a241d8679b5d7e4326498d40af9254c5da5c06e49528921165cf354",
+    "lib/imageInput.js": "d05a69cb30f3edc722b041fd91d6c52e7b7d4e89d9125dd01073104503926123",
+    "lib/jpegValidation.js": "b2c72eda24e99d5b1c7726eb6d271cb321242f733be8a48b7a782054bf30ad34",
+    "lib/pageGeometry.js": "3b154bca3120123ef4dc495f534fd955c7bcfcfe7e2964c3b599791ce50899ff",
+    "lib/pdfNavigationModel.js": "30fe85770c5725ba578eaa1141513be84c2d8fe00ad1ec00fd821f121c62bf56",
+    "lib/pdfNavigationValidation.js": "4348d2bdc39efb70f9ee0733372a1ca2e3119acd1a0d9e352a60ed2e09de0467",
+    "lib/qpdf.js": "81159100f023e6504cad6c69286961f921fbac237fbfa0f7f502538320952f59",
+    "lib/rasterLimits.js": "a3fda6a9e9ceb7ff78aff745d364b706d5c40b011c1bf70519ab118251ab9cc9",
+    "lib/siteConfig.json": "1e0d0a507293d7338dddf448626c1c38b04734c973be5c92be0b92ecda149264",
+    "lib/siteNavigation.json": "b86c4ebca5198a9f2c948c8838b5d80c6f83762f625fbb7571949c9ff3fd1fcd",
+    "lib/splitRanges.js": "989525840caaf0681d975c00309df4faebec1949c099f4d311911c38a65a39b3",
+    "lib/toolDocumentation.json": "c1bfc4047dd975ffaa6cae9201b37c76c6f36d8c56abf01395eaa80cf601aed3",
+    "lib/toolGuides.json": "1a021f6b01a4bc763ce994fc93d81b7d094363327699f6fc9160c6a62035195e",
+    "lib/toolMetadata.js": "8faf15068c4145328be0f2f6b42da59363bd4b1deef739ea18ba931c792c5b47",
+    "components/hooks/useObjectUrls.js": "8edbf5782e741723e3b3260876da12903393e1cdefbcea4d6db1c74bce5192ca",
+    "components/hooks/usePdfInput.js": "f899e141327aef50458f1d45d14751e9547b0d5328afa167ea3f320f7f8ad26e",
+    "app/tools/add-page-numbers/layout.js": "50be43d480a2e25dea25d0ae78a0658064a54716c7313c6e780300adec95c425",
+    "app/tools/add-page-numbers/page.js": "187795ac8b7869ac6045e30a2a672d22541963dd55a7ff3c8babb290b79a48de",
+    "app/tools/compress-pdf/layout.js": "7c399613e41d7a386d7aa8693ac69856763e4bf98bddaea2ed94d2b490ed2f92",
+    "app/tools/delete-pages/layout.js": "9b69305208d25f5b2cb02a6b988a7de9c3fcad5cac22c92f01b68f9e1f5bfb38",
+    "app/tools/delete-pages/page.js": "7976c6390e4affda31fd32b37236dbac889d345409841f6674dbff40c5e17fc6",
+    "app/tools/jpg-to-pdf/layout.js": "4857b48520ffe10655f08625bbd1f905c3cc29f4c043af11a4a06b7970512920",
+    "app/tools/jpg-to-pdf/page.js": "b0c43ac3b9021bab521278c44415b1e5b020794a61a546eec316a0ac19befd45",
+    "app/tools/merge-pdf/layout.js": "150851f8d856ca4d9a15e08a1cf2f094091115a7a5b7a5c79d3fcb8b1ce32e16",
+    "app/tools/merge-pdf/page.js": "fd644df25cf5ebc9f8fe24f6ac3dc82c4dedfc884f50e37b81706e6dac6e6a6f",
+    "app/tools/pdf-to-grayscale/layout.js": "2f81b594aee036616e413f41b8ac1898e95a268f2d858ac7c2d7faebf808548c",
+    "app/tools/pdf-to-grayscale/page.js": "7345e465f75d66bda62f52df48c15fe92d0ff019ff45ecb23308c8dea2d593d8",
+    "app/tools/pdf-to-image/layout.js": "dcde9af263b186ec2482792b34441028deae5d7faa4f37bc23be2b1532bfd59b",
+    "app/tools/pdf-to-image/page.js": "d2e33db5c661c050aea00934968e69336ea41749e02db3f57ce1f48aaa101f57",
+    "app/tools/protect-pdf/layout.js": "5d0a5325dc8a3ac4ae016bec73cfec6abcb1eaacf66b7bc6ab7849deaf249b35",
+    "app/tools/protect-pdf/page.js": "081dbda7b705839bad13059c7964545eefe929ea20943f36a9ed2bbd6c864d69",
+    "app/tools/reorder-pages/layout.js": "43e3d8293f79eec70d1480a8ee52240b8a42527be40f02e42a0d8251de55ddcf",
+    "app/tools/reorder-pages/page.js": "51fc878b0c1d7f5db46fdf8954b0bf4e244427e1e54d7383c2dfb520fdba33b6",
+    "app/tools/rotate-pdf/layout.js": "5767a6c1b91c0b78c73dff25384dc6f80d2d4dbed6770787d46ac4fe3e15e13c",
+    "app/tools/rotate-pdf/page.js": "f4392b416feddd47748f74ead919abb3716a73ce54c2c46fafb3f1092b2344a9",
+    "app/tools/split-pdf/layout.js": "9f4c764a6264441310f670e5f8c8aedf7ac976dc282ad297442f53345fc6e834",
+    "app/tools/split-pdf/page.js": "bf9a7a67f3856410cc2c4d80f0787b162b443466d628b16a8dd7347bf3f025d3",
+    "app/tools/unlock-pdf/layout.js": "853ec2a315e8c2324b456b71925cd3012ebf3b82087147b94cdaf1048f1f8e77",
+    "app/tools/unlock-pdf/page.js": "1c12a139be5e55119ece8ac3415084b4fa76935d8c6c65697d7f1ad29e1cdf1f",
+    "app/tools/watermark-pdf/layout.js": "2ddf0821bd5258f108c8cba63b9a4e001893aa368d3fdd34275eb8e7bba19584",
+    "app/tools/watermark-pdf/page.js": "fcc1abb89e002f5a0383490e74b4ad2a2b04afdb5c799f7d3a15e19965fba21d",
+    "tests/final-repair.test.cjs": "dd1ee896f05b8123e150776ed4c0c2cb7552c1eb8f6861cf47ad2f464525af92",
+    "scripts/lab/preservation.cjs": "02d2082b48dafb7f32e150e95d347a7c3f33d798bddc273472590031f3090426",
+    "scripts/lab/preservation-postrepair.cjs": "266ad7fa1955f2b729285ed7e920acfc17a208bd7c34ab923427dc12b907f50c"
+  },
+  "evidence": [
+    {
+      "path": "docs/final-ux-release-2026-11-03/agent-a/compression-current-replay.json",
+      "sha256": "65cf4b40308e892e36d1690eb7d5c0be694082b2dbc61228841f5a3a21815fba",
+      "expectedPasses": 12
+    },
+    {
+      "path": "docs/final-ux-release-2026-11-03/agent-a/preservation-current-replay.json",
+      "sha256": "8a073c8a28f593ef70c7a8a2575b1f4715d1af6b45a9292f5bd423839b5c4427",
+      "expectedPasses": 22
+    }
+  ]
+}

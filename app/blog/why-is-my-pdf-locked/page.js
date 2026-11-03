@@ -5,7 +5,7 @@ export const metadata = blogMetadata("why-is-my-pdf-locked");
 
 const article = {
   "title": "Why Is My PDF Locked? Diagnose the Actual Problem",
-  "intro": "A PDF that will not open and a PDF that opens but cannot be edited are different problems. Start with the exact message from your viewer. PDFcraft Unlock can decrypt an authorized file with a supplied correct password; it does not solve every cause of a locked-looking document.",
+  "intro": "A PDF that will not open and a PDF that opens but cannot be edited are different problems. Start with the exact message from your viewer. GetPDFCraft Unlock can decrypt an authorized file with a supplied correct password; it does not solve every cause of a locked-looking document.",
   "sections": [
     {
       "heading": "Match the symptom to a next step",
@@ -36,7 +36,7 @@ const article = {
             "Check whether the app supports editing and whether the chosen storage location allows saving a copy. Do not assume an opening-password problem."
           ],
           [
-            "PDFcraft security engine cannot load",
+            "GetPDFCraft security engine cannot load",
             "Check the connection and browser restrictions affecting the remote qpdf runtime."
           ]
         ]
@@ -44,7 +44,7 @@ const article = {
     },
     {
       "heading": "Opening passwords and permissions answer different questions",
-      "text": "An opening-password prompt asks for access to encrypted content. An editing or printing restriction concerns permitted operations and may appear after a document opens. Encryption is the protection mechanism, not a diagnosis for every disabled button. Check the viewer's document-security information and the sender's instructions before deciding whether decryption matches the problem. PDFcraft Unlock requires a password you know; it is not a password-cracking or general restriction-bypass workflow."
+      "text": "An opening-password prompt asks for access to encrypted content. An editing or printing restriction concerns permitted operations and may appear after a document opens. Encryption is the protection mechanism, not a diagnosis for every disabled button. Check the viewer's document-security information and the sender's instructions before deciding whether decryption matches the problem. GetPDFCraft Unlock requires a password you know; it is not a password-cracking or general restriction-bypass workflow."
     },
     {
       "heading": "Use Unlock only for a matching problem",
@@ -52,7 +52,7 @@ const article = {
     },
     {
       "heading": "Understand a failed unlock",
-      "text": "A qpdf error may indicate a wrong password, damaged PDF, or unsupported input. The current error message cannot always identify which. Try the password against the original in a compatible viewer or ask the sender for a valid copy. PDFcraft does not recover unknown passwords."
+      "text": "A qpdf error may indicate a wrong password, damaged PDF, or unsupported input. The current error message cannot always identify which. Try the password against the original in a compatible viewer or ask the sender for a valid copy. GetPDFCraft does not recover unknown passwords."
     },
     {
       "heading": "An unencrypted file is a different case",
@@ -78,12 +78,12 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "Can PDFcraft recover a forgotten PDF password?",
+      "q": "Can GetPDFCraft recover a forgotten PDF password?",
       "a": "No. Check your own records or ask the sender for access."
     },
     {
       "q": "Why does a PDF open but remain difficult to edit?",
-      "a": "First check whether your viewer offers editing and what its security panel reports. If the page is a scanned image, opening it does not create editable text. PDFcraft Unlock only decrypts; PDFcraft has no OCR or existing-text editor."
+      "a": "First check whether your viewer offers editing and what its security panel reports. If the page is a scanned image, opening it does not create editable text. GetPDFCraft Unlock only decrypts; GetPDFCraft has no OCR or existing-text editor."
     },
     {
       "q": "Does Unlock repair a damaged PDF?",

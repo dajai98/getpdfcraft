@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(root, f));
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
+const { historicalSource } = require('../scripts/lab/reviewed-source.cjs');
 const report = JSON.parse(read('data/lab/compression.json'));
 const manifest = JSON.parse(read('tests/fixtures/compression/manifest.json'));
 let passed = 0;
@@ -19,7 +20,7 @@ check('Nine unique records, independent inspections and explicit Node-only scope
 check('Collected source and lockfile hashes match this evidence version', () => {
   for (const [file, hash] of Object.entries(report.sourceHashes)) {
     const archived = file === 'scripts/lab/collect-compression.cjs' ? 'tests/evidence/compression/legacy-collector.cjs' : file;
-    assert.equal(sha(read(archived)), hash, file);
+    assert.equal(sha(historicalSource(read, archived, hash)), hash, file);
   }
 });
 for (const r of report.results) check('Traceable measurements: ' + r.fixtureId, () => {

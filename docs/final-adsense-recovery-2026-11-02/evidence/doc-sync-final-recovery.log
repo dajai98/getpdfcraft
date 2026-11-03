@@ -1,0 +1,64 @@
+Warning: Cannot polyfill `DOMMatrix`, rendering may be broken.
+Warning: Cannot polyfill `Path2D`, rendering may be broken.
+PASS rotate-pdf rejects zero-page without a download
+PASS rotate-pdf rejects empty without a download
+PASS rotate-pdf rejects malformed without a download
+PASS rotate-pdf rejects wrong extension content without a download
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS rotate-pdf preserves 1 valid pages (mislabeled filename)
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS rotate-pdf preserves 3 valid pages (mislabeled filename)
+PASS watermark-pdf rejects zero-page without a download
+PASS watermark-pdf rejects empty without a download
+PASS watermark-pdf rejects malformed without a download
+PASS watermark-pdf rejects wrong extension content without a download
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Bold.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS watermark-pdf preserves 1 valid pages (mislabeled filename)
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Bold.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS watermark-pdf preserves 3 valid pages (mislabeled filename)
+PASS add-page-numbers rejects zero-page without a download
+PASS add-page-numbers rejects empty without a download
+PASS add-page-numbers rejects malformed without a download
+PASS add-page-numbers rejects wrong extension content without a download
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS add-page-numbers preserves 1 valid pages (mislabeled filename)
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS add-page-numbers preserves 3 valid pages (mislabeled filename)
+PASS compress-pdf rejects zero-page without a download
+PASS compress-pdf rejects empty without a download
+PASS compress-pdf rejects malformed without a download
+PASS compress-pdf rejects wrong extension content without a download
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS compress-pdf preserves 1 valid pages (mislabeled filename)
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+Warning: fetchStandardFontData: failed to fetch file "LiberationSans-Regular.ttf" with "UnknownErrorException: The standard font "baseUrl" parameter must be specified, ensure that the "standardFontDataUrl" API parameter is provided.".
+PASS compress-pdf preserves 3 valid pages (mislabeled filename)
+PASS rotate-pdf ignores obsolete failure after remove
+PASS rotate-pdf ignores obsolete failure after replace
+PASS rotate-pdf ignores obsolete failure after unmount
+PASS watermark-pdf ignores obsolete failure after remove
+PASS watermark-pdf ignores obsolete failure after replace
+PASS watermark-pdf ignores obsolete failure after unmount
+PASS add-page-numbers ignores obsolete failure after remove
+PASS add-page-numbers ignores obsolete failure after replace
+PASS add-page-numbers ignores obsolete failure after unmount
+PASS page numbers reject invalid/overflowing start 
+PASS page numbers reject invalid/overflowing start -1
+PASS page numbers reject invalid/overflowing start 0
+PASS page numbers reject invalid/overflowing start 1.5
+PASS page numbers reject invalid/overflowing start 9007199254740991
+PASS grayscale destroys pending task and suppresses stale state after remove
+PASS grayscale destroys pending task and suppresses stale state after replace
+PASS grayscale destroys pending task and suppresses stale state after unmount
+TOTAL 41 PASS 41 FAIL 0

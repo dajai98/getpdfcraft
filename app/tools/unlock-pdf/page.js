@@ -7,11 +7,11 @@ import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
-  { q: "Is removing a PDF password on PDFcraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed." },
+  { q: "Is removing a PDF password on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
-  { q: "Can PDFcraft crack or bypass a PDF password?", a: "No. PDFcraft requires the correct current password to remove protection. It cannot crack or bypass passwords on documents you are not authorized to access." },
-  { q: "Is it legal to remove a PDF password?", a: "PDFcraft is intended for files you own or are authorized to modify. Laws, agreements, and permissions may vary; the tool does not determine whether a particular use is permitted." },
-  { q: "What if I forgot the PDF password?", a: "If you do not know the current password, PDFcraft cannot help. You would need to contact whoever created the protected PDF." },
+  { q: "Can GetPDFCraft crack or bypass a PDF password?", a: "No. GetPDFCraft requires the correct current password to remove protection. It cannot crack or bypass passwords on documents you are not authorized to access." },
+  { q: "Is it legal to remove a PDF password?", a: "GetPDFCraft is intended for files you own or are authorized to modify. Laws, agreements, and permissions may vary; the tool does not determine whether a particular use is permitted." },
+  { q: "What if I forgot the PDF password?", a: "If you do not know the current password, GetPDFCraft cannot help. You would need to contact whoever created the protected PDF." },
   { q: "Does it work on iPhone and Android?", a: "Use a current browser on desktop or mobile. Compatibility and practical file limits depend on your browser and device." },
 ];
 
@@ -49,14 +49,14 @@ export default function UnlockPDF() {
     <ToolLayout
       tag="Unlock PDF" tagBg="#F0FDF4" tagColor="#16A34A"
       title="Unlock PDF — Remove Password"
-      desc="Remove password protection from a PDF you own. You must know the current password. PDFcraft cannot crack or guess passwords."
+      desc="Remove password protection from a PDF you own. You must know the current password. GetPDFCraft cannot crack or guess passwords."
       current="/tools/unlock-pdf"
       faqs={faqs}
     >
       {/* Important notice */}
       <div style={{ background: "#FEF2F2", border: "1px solid #fecaca", borderRadius: 12, padding: "16px", marginBottom: 20 }}>
         <p style={{ fontSize: 13, color: "#DC2626", margin: 0, fontWeight: 700 }}>⚠️ You must know the current password</p>
-        <p style={{ fontSize: 13, color: "#6b7280", margin: "6px 0 0 0", lineHeight: 1.6 }}>This tool removes password protection from PDFs <strong>you already have the password for</strong>. PDFcraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.</p>
+        <p style={{ fontSize: 13, color: "#6b7280", margin: "6px 0 0 0", lineHeight: 1.6 }}>This tool removes password protection from PDFs <strong>you already have the password for</strong>. GetPDFCraft cannot crack, guess, or bypass unknown passwords. If you forgot the password, we cannot help — this tool is not a password cracker.</p>
       </div>
 
       {/* Privacy notice */}

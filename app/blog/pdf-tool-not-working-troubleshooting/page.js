@@ -12,6 +12,21 @@ export default function Post() {
       intro={"Start with the actual error and a non-sensitive sample when a tool fails. The cause may be the document, browser resources, a blocked runtime download, or a product defect. Local document processing does not mean every failure is local or user-fixable."}
       sections={[
   {
+    "heading": "Match the error to a useful next step",
+    "text": "These examples follow the current validation paths. A refusal is not always evidence that your PDF is damaged: some valid document features are deliberately unsupported.",
+    "table": {
+      "headers": ["What you see", "What it means", "Next step"],
+      "rows": [
+        ["PDF could not be read", "The parser could not accept a complete document with at least one page.", "Open the original in a PDF viewer. Re-download an incomplete file; renaming its extension does not repair it."],
+        ["Unsupported AcroForm or navigation", "The page-copy workflow cannot safely rebuild that document structure.", "Use a PDF application that supports the form or navigation. Do not discard an original form merely to bypass the check."],
+        ["Invalid or out-of-bounds range", "Split needs ascending page ranges within the actual page count.", "For a three-page PDF use 1-2,3. Avoid 3-1, page 4 or a trailing comma."],
+        ["Could not load the PDF security engine", "The qpdf runtime was unavailable before password processing.", "Check connection and blocked-resource messages, then retry. A different password cannot repair a missing runtime."],
+        ["QPDF status failure", "The password may be wrong, or the document may be damaged or unsupported.", "Confirm the known password in a trusted viewer. GetPDFCraft cannot recover an unknown password."],
+        ["Rendering limit exceeded", "A page or the total encoded images exceed the renderer's guardrails.", "Split into smaller groups if possible. A single oversized page needs a desktop application or a smaller page from the source."]
+      ]
+    }
+  },
+  {
     "heading": "\"Nothing happens when I click the button\"",
     "steps": [
       {
@@ -34,7 +49,7 @@ export default function Post() {
     "steps": [
       {
         "title": "The PDF is password-protected",
-        "body": "Many page tools reject encrypted input. Unlock an authorized copy with its correct password before retrying. PDFcraft does not crack unknown passwords."
+        "body": "Many page tools reject encrypted input. Unlock an authorized copy with its correct password before retrying. GetPDFCraft does not crack unknown passwords."
       },
       {
         "title": "The file isn't actually a valid PDF",
@@ -54,8 +69,8 @@ export default function Post() {
     "heading": "\"The page froze or my browser crashed on a large file\"",
     "steps": [
       {
-        "title": "There's no artificial file size limit — your device's memory is the real ceiling",
-        "body": "The inspected tools do not impose an app-level file-size quota, but available browser memory and document complexity limit processing. Large raster pages can be especially demanding."
+        "title": "Check rendering limits as well as available memory",
+        "body": "PDF to Image and Grayscale stop above 16 million pixels per page, 16,384 pixels per side or 128 MiB of encoded page images. These guards do not guarantee enough memory: a device can fail below them. Other PDF operations are also limited by document complexity and available resources."
       },
       {
         "title": "Close other tabs before processing a large file",
@@ -129,7 +144,7 @@ export default function Post() {
     "a": "A processing error can have several causes. For Protect/Unlock, a qpdf status failure alone cannot reliably distinguish a wrong password from a damaged or unsupported PDF."
   },
   {
-    "q": "Is there a file size limit on PDFcraft?",
+    "q": "Is there a file size limit on GetPDFCraft?",
     "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
   },
   {

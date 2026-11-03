@@ -1,0 +1,215 @@
+{
+  "scope": "Historical October 2026 Node-handler observations, not a fresh browser benchmark or typical savings. Source files are not redistributed. Hashes identify the exact measured bytes.",
+  "method": "Compare outputBytes minus inputBytes; divide by inputBytes and multiply by 100 for percent change. Missing output is a rejection, never a zero-percent success.",
+  "limitations": [
+    "No universal visual, form-interaction or signature-preservation claim.",
+    "Current validation improvements do not retroactively change these historical byte measurements.",
+    "Synthetic proxies are not actual photographs, physical scans or Office exports."
+  ],
+  "observations": [
+    {
+      "fixture": "text-heavy",
+      "kind": "SYNTHETIC",
+      "inputBytes": 55978,
+      "outputBytes": 28359,
+      "byteChange": -27619,
+      "percentChange": -49.339026045946625,
+      "inputSha256": "2c5562135e5e775bee7b7a39b582f1c070d7e82f8e00ff1dad37a47952266f33",
+      "outputSha256": "5d4a257c3fc669eb729951fd5cfcf0d36d9c71edd47c361ae06c6a21d02a56fb",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "image-heavy-synthetic",
+      "kind": "SYNTHETIC",
+      "inputBytes": 2362383,
+      "outputBytes": 2361500,
+      "byteChange": -883,
+      "percentChange": -0.03737751245246854,
+      "inputSha256": "2825b0105c9bd012f6a999f07d93cd409c1b7d9b26915e6d30587a7c5da82060",
+      "outputSha256": "de299544ce43f19711be986fa3bcc6fb79fca0e5d0baec6dfa2d65edece305f3",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "scan-style-synthetic",
+      "kind": "SYNTHETIC",
+      "inputBytes": 724227,
+      "outputBytes": 722909,
+      "byteChange": -1318,
+      "percentChange": -0.18198713939137867,
+      "inputSha256": "0c7be06a9bfa36f6389120ff58433c3918c5dffb7b9679c47b7361111fd55fdc",
+      "outputSha256": "166e2f7bc05401cc68c9b551d23d7ca36163f8cdc31943116071143e543c6103",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "mixed",
+      "kind": "SYNTHETIC",
+      "inputBytes": 2363673,
+      "outputBytes": 2362409,
+      "byteChange": -1264,
+      "percentChange": -0.05347609419746301,
+      "inputSha256": "eebe510e12ed377212ebf5d74bc39429e5d08efd8fd8b86c467c5ba53b5026ad",
+      "outputSha256": "bb8a06b2eb487485bbbc6381434587ffb60891bcb9b1c2700b60a5bda2eec287",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "presentation-style",
+      "kind": "SYNTHETIC",
+      "inputBytes": 6969,
+      "outputBytes": 4325,
+      "byteChange": -2644,
+      "percentChange": -37.93944611852489,
+      "inputSha256": "d3537e6d395a3a67391ce897ff3ede532c2dda213ae22dda662f0f409ab0b5fc",
+      "outputSha256": "991a4c6ff675cd5122e15c941e43a8c89a926dc42a159803b8f994651800835f",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "form",
+      "kind": "SYNTHETIC",
+      "inputBytes": 4237,
+      "outputBytes": 3024,
+      "byteChange": -1213,
+      "percentChange": -28.62874675477933,
+      "inputSha256": "45925bb5d244370e131bca1ca555fd232b45b055f7c2b17b16858aa25ad36f42",
+      "outputSha256": "a6ba28589cda7ae835ad032be24653666713c5d81c151f55a6d3a0306df40b15",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "already-object-streams",
+      "kind": "SYNTHETIC",
+      "inputBytes": 28309,
+      "outputBytes": 28359,
+      "byteChange": 50,
+      "percentChange": 0.17662227560139884,
+      "inputSha256": "ef7ce96812ffbec0902e78d4220072c7c5000bc9b50c9dca41acd1fee4236322",
+      "outputSha256": "eca4c20a92c796f6ffcfa519ab8a57419c73767c7a49c82b31281a5b949f642d",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "minimal-control",
+      "kind": "SYNTHETIC",
+      "inputBytes": 595,
+      "outputBytes": 725,
+      "byteChange": 130,
+      "percentChange": 21.84873949579832,
+      "inputSha256": "f1d0c456e44a191fd3a907b8808cfcbb5acf2e3127101459e0da83311bd1afbf",
+      "outputSha256": "accded8f5e1dfdaa290fe6072487ccd10351d37260f0f1512b5a7071fd1e4237",
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "unsupported-input",
+      "kind": "SYNTHETIC",
+      "inputBytes": 58,
+      "outputBytes": null,
+      "byteChange": null,
+      "percentChange": null,
+      "inputSha256": "f11658239f1405b6271e236992e773c87ee255f3f5adf606bc319b9571fbb536",
+      "outputSha256": null,
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Rejected; no output"
+    },
+    {
+      "fixture": "encrypted-input",
+      "kind": "SYNTHETIC",
+      "inputBytes": 58576,
+      "outputBytes": null,
+      "byteChange": null,
+      "percentChange": null,
+      "inputSha256": "0004426f4110e6c4b1952f34e6082a33bc852ad5b2c971c18f1809dca2acb637",
+      "outputSha256": null,
+      "measuredAt": "2026-10-15T19:31:56.007Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Rejected; no output"
+    },
+    {
+      "fixture": "nasa-access-plan",
+      "kind": "REAL_WORLD",
+      "inputBytes": 1081214,
+      "outputBytes": 1077480,
+      "byteChange": -3734,
+      "percentChange": -0.3453525389053416,
+      "inputSha256": "f22cf0cbebebadaea5c13e6b57ef8ccd883175cb93444cf4c77d6bac0c8e3d61",
+      "outputSha256": "a65b54549650d6b41619387a9502808152f9e8efc53575cb2dbba7e2644f255a",
+      "measuredAt": "2026-10-16T01:12:48.273Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    },
+    {
+      "fixture": "apollo11-press-kit",
+      "kind": "REAL_WORLD",
+      "inputBytes": 28028612,
+      "outputBytes": 27891686,
+      "byteChange": -136926,
+      "percentChange": -0.4885222286426456,
+      "inputSha256": "3cce3b01294e90bedf9af742124ef657ffdf27536921ef50464cc34836526898",
+      "outputSha256": "88352f365db07e42812a02dd22c59fe3fcf2e01ca3811d27a20f35c02622acc2",
+      "measuredAt": "2026-10-16T12:30:42.211Z",
+      "environment": {
+        "node": "v24.15.0",
+        "pdfLib": "1.17.1",
+        "pdfjs": "4.4.168"
+      },
+      "outcome": "Output reparsed"
+    }
+  ]
+}

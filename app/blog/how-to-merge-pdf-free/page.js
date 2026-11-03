@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FEF2F2",
   "ctaHref": "/tools/merge-pdf",
   "ctaText": "Merge your PDFs — free to use",
-  "intro": "A combined PDF is only useful if the pages arrive in the right order and its important links still work. PDFcraft appends two or more PDFs in insertion order, then reconstructs supported navigation. Start with an ordered set of originals rather than treating Merge as a full document editor.",
+  "intro": "A combined PDF is only useful if the pages arrive in the right order and its important links still work. GetPDFCraft appends two or more PDFs in insertion order, then reconstructs supported navigation. Start with an ordered set of originals rather than treating Merge as a full document editor.",
   "sections": [
     {
       "heading": "Build a cover -> report -> appendix sequence",

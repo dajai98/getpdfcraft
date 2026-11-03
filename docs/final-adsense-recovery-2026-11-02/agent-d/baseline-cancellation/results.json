@@ -1,0 +1,39 @@
+{
+  "run": "baseline-cancellation",
+  "timestamp": "2026-11-02T11:50:05.175Z",
+  "scope": "Local static export, headless Edge; no physical mobile-device claim",
+  "responsive": [],
+  "workflows": [],
+  "supplemental": [
+    {
+      "name": "pdf-to-grayscale-remove-replace-cancel-retry",
+      "status": "PASS",
+      "method": "Held File.arrayBuffer; remove, replace, reject old read, assert no stale error/progress/download; successful retry",
+      "retry": true
+    },
+    {
+      "name": "pdf-to-image-remove-replace-cancel-retry",
+      "status": "PASS",
+      "method": "Held File.arrayBuffer; remove, replace, reject old read, assert no stale error/progress/download; successful retry",
+      "retry": true
+    }
+  ],
+  "consent": {
+    "beforeChoiceAds": 0,
+    "declinedValue": "declined",
+    "afterDeclineAds": 0,
+    "afterAcceptAds": 2,
+    "afterWithdrawalValue": "declined",
+    "afterWithdrawalAds": 2,
+    "status": "PASS"
+  },
+  "errors": [],
+  "browser": "156.0.4314.58",
+  "summary": {
+    "responsiveChecks": 0,
+    "responsiveFailures": 0,
+    "workflowPass": 0,
+    "workflowFail": 0,
+    "supplementalFail": 0
+  }
+}

@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#F0FDF4",
   "ctaHref": "/tools/pdf-to-image",
   "ctaText": "Convert PDF to image now — free, no watermark",
-  "intro": "Use PDF to Image when you need a picture of an entire page, such as a report preview. PDFcraft renders page content into a canvas; it does not simply extract the original photographs embedded inside the PDF.",
+  "intro": "Use PDF to Image when you need a picture of an entire page, such as a report preview. GetPDFCraft renders page content into a canvas; it does not simply extract the original photographs embedded inside the PDF.",
   "sections": [
     {
       "heading": "From a page to a downloadable image",
@@ -59,7 +59,7 @@ const article = {
     },
     {
       "heading": "Existing marks stay in the picture",
-      "text": "The exporter adds no PDFcraft branding watermark. A stamp or watermark already visible on the source page can appear in its rendered image. If you need the original embedded photo rather than the whole page, this tool is not an image-extraction workflow."
+      "text": "The exporter adds no GetPDFCraft branding watermark. A stamp or watermark already visible on the source page can appear in its rendered image. If you need the original embedded photo rather than the whole page, this tool is not an image-extraction workflow."
     },
     {
       "heading": "If rendering or saving fails",

@@ -5,11 +5,11 @@ export const metadata = blogMetadata("adobe-acrobat-alternative-free");
 
 const article = {
   "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks",
-  "intro": "A PDF editor and a page-operation tool solve different problems. PDFcraft can help assemble supported report pages, separate ranges or render page images. It is not a full Acrobat replacement. Before choosing an alternative, decide whether you need to move existing pages or change the information and workflow inside the document.",
+  "intro": "A PDF editor and a page-operation tool solve different problems. GetPDFCraft can help assemble supported report pages, separate ranges or render page images. It is not a full Acrobat replacement. Before choosing an alternative, decide whether you need to move existing pages or change the information and workflow inside the document.",
   "sections": [
     {
       "heading": "When a narrower page operation may fit",
-      "text": "If your report is already finished and you only need a cover followed by its pages, PDFcraft Merge may fit. It appends supported PDFs in insertion order. Split separates pages or ranges, while Reorder Pages moves individual pages with Up/Down controls. These operations can organize a document without giving you an editor for the sentences on its pages. Keep the original files and check the saved result rather than assuming that successful page assembly proves preservation of every document feature.",
+      "text": "If your report is already finished and you only need a cover followed by its pages, GetPDFCraft Merge may fit. It appends supported PDFs in insertion order. Split separates pages or ranges, while Reorder Pages moves individual pages with Up/Down controls. These operations can organize a document without giving you an editor for the sentences on its pages. Keep the original files and check the saved result rather than assuming that successful page assembly proves preservation of every document feature.",
       "steps": [
         {
           "title": "Choose the output you actually need",
@@ -37,11 +37,11 @@ const article = {
     },
     {
       "heading": "When an editor or broader workflow is required",
-      "text": "Adobe documents an Acrobat product family that includes existing-text and image editing, page organization, conversion, forms and signing workflows. Availability depends on the product and edition; do not assume every feature is included in every version. If you need to change a sentence already inside a PDF, PDFcraft's page tools are not an equivalent editor. Moving that page, adding a number or overlaying a watermark does not revise the original sentence. A watermark is a visible addition, not a substitute for editing or a security mechanism.",
+      "text": "Adobe documents an Acrobat product family that includes existing-text and image editing, page organization, conversion, forms and signing workflows. Availability depends on the product and edition; do not assume every feature is included in every version. If you need to change a sentence already inside a PDF, GetPDFCraft's page tools are not an equivalent editor. Moving that page, adding a number or overlaying a watermark does not revise the original sentence. A watermark is a visible addition, not a substitute for editing or a security mechanism.",
       "steps": [
         {
           "title": "Separate form and signing requirements",
-          "body": "Filling interactive fields, preparing forms or requesting signatures requires functionality beyond PDFcraft's page tools. Its safe page-copy workflow rejects AcroForm inputs rather than proving form preservation. If your process depends on forms or signatures, select a tool that explicitly supports the required operation and verify the resulting document."
+          "body": "Filling interactive fields, preparing forms or requesting signatures requires functionality beyond GetPDFCraft's page tools. Its safe page-copy workflow rejects AcroForm inputs rather than proving form preservation. If your process depends on forms or signatures, select a tool that explicitly supports the required operation and verify the resulting document."
         }
       ],
       "list": [
@@ -50,14 +50,14 @@ const article = {
           "href": "https://www.adobe.com/acrobat/features.html"
         },
         {
-          "text": "What PDFcraft can and cannot edit",
+          "text": "What GetPDFCraft can and cannot edit",
           "href": "/blog/how-to-edit-pdf-free"
         }
       ]
     },
     {
       "heading": "A scanned page image is not searchable text",
-      "text": "Adobe describes OCR as recognizing text in scanned PDFs so it becomes searchable and selectable. PDFcraft does not provide OCR. If a scanned report needs text search, exporting it as another image does not meet that requirement. PDF to Image renders appearance; it does not recognize words or add a searchable text layer. For this task, choose an OCR workflow and review its recognized text, especially names and numbers, before treating the result as usable. This is a capability distinction, not a claim that vendor output was tested here.",
+      "text": "Adobe describes OCR as recognizing text in scanned PDFs so it becomes searchable and selectable. GetPDFCraft does not provide OCR. If a scanned report needs text search, exporting it as another image does not meet that requirement. PDF to Image renders appearance; it does not recognize words or add a searchable text layer. For this task, choose an OCR workflow and review its recognized text, especially names and numbers, before treating the result as usable. This is a capability distinction, not a claim that vendor output was tested here.",
       "list": [
         {
           "text": "Adobe: recognizing text in scanned PDFs",
@@ -67,7 +67,7 @@ const article = {
     },
     {
       "heading": "Match password protection to the receiving workflow",
-      "text": "PDFcraft Protect can add password-based AES-256 opening protection to an unencrypted PDF through QPDF. It does not expose a full permission-management interface or make the document tamper-proof. Confirm that the recipient accepts a protected file, then verify the downloaded copy with the intended password. If the broader requirement includes managed signing, forms or other document workflows, opening protection alone is not enough. Choose the operation around that requirement instead of treating every feature labelled security as interchangeable.",
+      "text": "GetPDFCraft Protect can add password-based AES-256 opening protection to an unencrypted PDF through QPDF. It does not expose a full permission-management interface or make the document tamper-proof. Confirm that the recipient accepts a protected file, then verify the downloaded copy with the intended password. If the broader requirement includes managed signing, forms or other document workflows, opening protection alone is not enough. Choose the operation around that requirement instead of treating every feature labelled security as interchangeable.",
       "list": [
         {
           "text": "Add an opening password with Protect",
@@ -82,7 +82,7 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "Is PDFcraft a full Acrobat replacement?",
+      "q": "Is GetPDFCraft a full Acrobat replacement?",
       "a": "No. It offers narrower page operations and limited outputs, not a full editor or document-workflow suite. Check the particular Acrobat product and edition for the broader features your task requires."
     },
     {
@@ -91,7 +91,7 @@ const article = {
     },
     {
       "q": "Does rendering a scan perform OCR?",
-      "a": "No. Rendering creates pixels; OCR recognizes text. PDFcraft's image output does not add searchable or selectable text to a scan."
+      "a": "No. Rendering creates pixels; OCR recognizes text. GetPDFCraft's image output does not add searchable or selectable text to a scan."
     },
     {
       "q": "When may a narrower browser tool be enough?",
@@ -99,7 +99,7 @@ const article = {
     }
   ],
   "ctaHref": "/#tools",
-  "ctaText": "Choose a PDFcraft tool",
+  "ctaText": "Choose a GetPDFCraft tool",
   "tag": "Comparison",
   "tagColor": "#7C3AED",
   "tagBg": "#F5F3FF",

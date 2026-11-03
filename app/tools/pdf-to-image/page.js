@@ -1,12 +1,14 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
+import { useObjectUrls } from "@/components/hooks/useObjectUrls";
+import { checkRasterSize, checkEncodedSize } from "@/lib/rasterLimits";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 
 const faqs = [
   { q: "Which is better JPG or PNG?", a: "JPG uses lossy compression. PNG uses lossless encoding for the rendered page image; file sizes depend on the content." },
-  { q: "What resolution are the output images?", a: "PDFcraft renders at a fixed 2x scale. Suitability for printing depends on the source content and intended print size." },
-  { q: "Is there a watermark on the output images?", a: "No. This tool adds no PDFcraft branding watermark to the output images." },
+  { q: "What resolution are the output images?", a: "GetPDFCraft renders at a fixed 2x scale. Suitability for printing depends on the source content and intended print size." },
+  { q: "Is there a watermark on the output images?", a: "No. This tool adds no GetPDFCraft branding watermark to the output images." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Can I convert just one page?", a: "All pages are converted. You can then download only the specific page images you need." },
 ];
@@ -21,6 +23,7 @@ export default function PDFToImage() {
 
   const request = useRef(0);
   const activeTask = useRef(null);
+  const urls = useObjectUrls();
   const cancel = () => {
     request.current += 1;
     const task = activeTask.current;
@@ -28,7 +31,7 @@ export default function PDFToImage() {
     if (task) void task.destroy().catch(() => {});
   };
   useEffect(() => cancel, []);
-  const resetOutput = () => { cancel(); setImages([]); setError(""); setProgress(0); setProcessing(false); };
+  const resetOutput = () => { cancel(); urls.clear(); setImages([]); setError(""); setProgress(0); setProcessing(false); };
   const loadFile = files => { resetOutput(); setFile(files[0]); };
 
   const convert = async () => {
@@ -37,6 +40,8 @@ export default function PDFToImage() {
     resetOutput();
     const token = request.current;
     let loadingTask, canvas;
+    const results = [];
+    let published = false;
     setProcessing(true);
     try {
       const pdfjsLib = await import("pdfjs-dist");
@@ -49,32 +54,38 @@ export default function PDFToImage() {
       loadingTask = pdfjsLib.getDocument({ data: bytes });
       activeTask.current = loadingTask;
       const pdf = await loadingTask.promise;
-      const results = [];
+      let encodedBytes = 0;
       for (let i = 1; i <= pdf.numPages; i++) {
+        if (token !== request.current) return;
         const page = await pdf.getPage(i);
         const viewport = page.getViewport({ scale: 2 });
+        checkRasterSize(viewport);
         canvas = document.createElement("canvas");
         canvas.width = viewport.width; canvas.height = viewport.height;
         const ctx = canvas.getContext("2d");
         if (!ctx || !canvas.width || !canvas.height) throw new Error("Canvas unavailable");
         await page.render({ canvasContext: ctx, viewport }).promise;
         if (token !== request.current) return;
-        const dataUrl = canvas.toDataURL(`image/${format}`, 0.92);
-        if (!dataUrl.startsWith(`data:image/${format}`)) throw new Error("Image encoding failed");
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, `image/${format}`, 0.92));
+        if (token !== request.current) return;
+        if (!blob || blob.type !== `image/${format}`) throw new Error("Image encoding failed");
+        encodedBytes += blob.size;
+        checkEncodedSize(encodedBytes);
         results.push({
-          dataUrl,
+          dataUrl: urls.create(blob),
           name: `page-${i}.${format === "jpeg" ? "jpg" : "png"}`
         });
         canvas.width = canvas.height = 0;
         page.cleanup();
         setProgress(Math.round((i / pdf.numPages) * 100));
       }
-      if (token === request.current) setImages(results);
+      if (token === request.current) { setImages(results); published = true; }
     } catch(e) {
-      if (token === request.current) setError(e.name === "PasswordException"
+      if (token === request.current) setError(e.name === "RasterLimitError" ? e.message : e.name === "PasswordException"
         ? "This PDF requires a password. Unlock it with the correct password first, then convert the unlocked PDF."
         : "Conversion failed. Try a valid PDF, a smaller file, or another browser. Check your connection if the rendering engine could not load.");
     } finally {
+      if (!published) results.forEach(result => urls.retire(result.dataUrl));
       if (canvas) canvas.width = canvas.height = 0;
       try { await loadingTask?.destroy(); } catch { /* Preserve the processing error. */ }
       if (activeTask.current === loadingTask) activeTask.current = null;
@@ -84,8 +95,9 @@ export default function PDFToImage() {
 
   return (
     <ToolLayout tag="PDF to Image" tagBg="#F0FDF4" tagColor="#16A34A"
-      title="PDF to Image" desc="Render every PDF page to JPG or PNG at a fixed 2x scale. Free to use; no PDFcraft branding watermark."
+      title="PDF to Image" desc="Render every PDF page to JPG or PNG at a fixed 2x scale. Free to use; no GetPDFCraft branding watermark."
       current="/tools/pdf-to-image" faqs={faqs}>
+      <p>Rendering limits: 16 million pixels per page, 16,384 pixels per side and 128 MiB of encoded images. Split larger documents into smaller groups; available memory may impose lower limits.</p>
 
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (
         <div>
@@ -102,12 +114,12 @@ export default function PDFToImage() {
             <p style={{ fontWeight: 600, color: "#374151", fontSize: 14, marginBottom: 12 }}>Output format</p>
             <div style={{ display: "flex", gap: 10 }}>
               {["jpeg","png"].map(f => (
-                <button key={f} aria-pressed={format === f} onClick={() => { resetOutput(); setFormat(f); }} style={{ padding: "10px 28px", borderRadius: 10, fontWeight: 600, fontSize: 14, border: `1.5px solid ${format===f?"#E8380D":"#e5e7eb"}`, background: format===f?"#E8380D":"white", color: format===f?"white":"#6b7280", cursor: "pointer", fontFamily: "inherit" }}>{f.toUpperCase()}</button>
+                <button key={f} aria-pressed={format === f} onClick={() => { resetOutput(); setFormat(f); }} style={{ padding: "10px 28px", borderRadius: 10, fontWeight: 600, fontSize: 14, border: `1.5px solid ${format===f?"#E8380D":"#e5e7eb"}`, background: format===f?"#C92F0A":"white", color: format===f?"white":"#6b7280", cursor: "pointer", fontFamily: "inherit" }}>{f.toUpperCase()}</button>
               ))}
             </div>
           </div>
 
-          <button onClick={convert} disabled={processing} style={{ width: "100%", background: processing?"#d1d5db":"#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing?"not-allowed":"pointer", fontFamily: "inherit" }}>
+          <button onClick={convert} disabled={processing} style={{ width: "100%", background: processing?"#d1d5db":"#C92F0A", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing?"not-allowed":"pointer", fontFamily: "inherit" }}>
             {processing ? `⏳ Converting... ${progress}%` : "◈ Convert to Images"}
           </button>
 
@@ -131,7 +143,7 @@ export default function PDFToImage() {
             <p style={{ fontWeight: 700, color: "#111827" }}>✅ {images.length} images ready</p>
             <button
               onClick={() => images.forEach(img => { const a = document.createElement("a"); a.href=img.dataUrl; a.download=img.name; a.click(); })}
-              style={{ background: "#E8380D", color: "white", border: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "inherit" }}
+              style={{ background: "#C92F0A", color: "white", border: "none", padding: "10px 20px", borderRadius: 10, fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "inherit" }}
             >
               ↓ Download All
             </button>
@@ -139,10 +151,10 @@ export default function PDFToImage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 12 }}>
             {images.map((img, i) => (
               <div key={i} style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 12, overflow: "hidden" }}>
-                <img src={img.dataUrl} alt={`Page ${i+1}`} style={{ width: "100%", display: "block" }} />
+                <img src={img.dataUrl} loading="lazy" alt={`Page ${i+1}`} style={{ width: "100%", display: "block" }} />
                 <div style={{ padding: "10px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontSize: 11, color: "#6b7280", fontWeight: 600 }}>Page {i+1}</span>
-                  <a aria-label={`Download page ${i+1} as ${format === "jpeg" ? "JPG" : "PNG"}`} href={img.dataUrl} download={img.name} style={{ fontSize: 12, fontWeight: 700, color: "#E8380D", textDecoration: "none" }}>↓</a>
+                  <a aria-label={`Download page ${i+1} as ${format === "jpeg" ? "JPG" : "PNG"}`} href={img.dataUrl} download={img.name} style={{ fontSize: 12, fontWeight: 700, color: "#C92F0A", textDecoration: "none" }}>↓</a>
                 </div>
               </div>
             ))}

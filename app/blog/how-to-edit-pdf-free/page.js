@@ -4,18 +4,18 @@ import BlogPost from "@/components/ui/BlogPost";
 export const metadata = blogMetadata("how-to-edit-pdf-free");
 
 const article = {
-  "title": "How to Edit PDF Free Online (No Adobe Needed)",
+  "title": "Edit PDF Pages Free: Reorder, Rotate and Add Labels",
   "date": "February 2026",
   "readTime": "6 min read",
   "tag": "Guide",
   "tagColor": "#4F46E5",
   "tagBg": "#EEF2FF",
   "ctaHref": "/",
-  "ctaText": "Edit your PDF now — free, no sign up",
-  "intro": "Start by naming the edit. Moving a page, changing its orientation and replacing a paragraph are different operations. PDFcraft supports page organization and limited drawn overlays; it is not a full Acrobat-style content editor.",
+  "ctaText": "Choose a PDF page operation",
+  "intro": "Start by naming the edit. Moving a page, changing its orientation and replacing a paragraph are different operations. GetPDFCraft supports page organization and limited drawn overlays; it is not a full Acrobat-style content editor.",
   "sections": [
     {
-      "heading": "Can PDFcraft make this edit?",
+      "heading": "Can GetPDFCraft make this edit?",
       "table": {
         "headers": [
           "Requested edit",

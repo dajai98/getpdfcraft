@@ -12,14 +12,14 @@ const article = {
   "tagBg": "#FEF2F2",
   "ctaHref": "/tools/protect-pdf",
   "ctaText": "Protect your PDF now — free",
-  "intro": "Choose a protection method by the problem it addresses. Controlling opening access, communicating confidentiality, validating a signature and removing sensitive content are different tasks. PDFcraft does not supply one operation that proves all of them.",
+  "intro": "Choose a protection method by the problem it addresses. Controlling opening access, communicating confidentiality, validating a signature and removing sensitive content are different tasks. GetPDFCraft does not supply one operation that proves all of them.",
   "sections": [
     {
       "heading": "Do not treat these controls as interchangeable",
       "table": {
         "headers": [
           "Concept",
-          "PDFcraft behavior",
+          "GetPDFCraft behavior",
           "What it does not establish"
         ],
         "rows": [
@@ -62,7 +62,7 @@ const article = {
     },
     {
       "heading": "Choose a signing workflow before preparing the final copy",
-      "text": "PDFcraft has no electronic-signature placement or certificate-based signing workflow. Ask whether the recipient requires a visible mark, a particular signing service or a certificate-based signature; these are not interchangeable requirements. Finalize the unsigned document before using the agreed signing method elsewhere. Reopen the returned file in an appropriate viewer, check its signature status and confirm recipient acceptance. A watermark or opening password is not a substitute for signing. Avoid later page edits unless their effect on the signature is understood; PDFcraft does not validate or guarantee signature preservation."
+      "text": "GetPDFCraft has no electronic-signature placement or certificate-based signing workflow. Ask whether the recipient requires a visible mark, a particular signing service or a certificate-based signature; these are not interchangeable requirements. Finalize the unsigned document before using the agreed signing method elsewhere. Reopen the returned file in an appropriate viewer, check its signature status and confirm recipient acceptance. A watermark or opening password is not a substitute for signing. Avoid later page edits unless their effect on the signature is understood; GetPDFCraft does not validate or guarantee signature preservation."
     },
     {
       "heading": "Separate preparation from distribution",
@@ -128,7 +128,7 @@ const article = {
     },
     {
       "q": "Can Delete Pages certify that confidential information is gone?",
-      "a": "No. PDFcraft does not provide a sanitization certificate or secure-redaction guarantee. Page visibility and complete data removal are separate concerns."
+      "a": "No. GetPDFCraft does not provide a sanitization certificate or secure-redaction guarantee. Page visibility and complete data removal are separate concerns."
     }
   ]
 };

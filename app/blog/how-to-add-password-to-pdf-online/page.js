@@ -15,7 +15,7 @@ const article = {
   "intro": "An opening password controls access to an encrypted copy; it does not make a PDF read-only. Before using Protect, confirm that the recipient can accept an encrypted attachment and that you can retain the password independently of the file.",
   "sections": [
     {
-      "heading": "The settings PDFcraft actually applies",
+      "heading": "The settings GetPDFCraft actually applies",
       "text": "Protect uses qpdf WebAssembly with AES-256 encryption. The entered value is both the user and owner password, and the configuration permits full printing and content extraction. There are no separate owner-password or permissions controls. Someone you give the password to should be treated as able to access the contents. The password is used in password-based key handling; it is not itself a 256-bit encryption key."
     },
     {
@@ -68,11 +68,11 @@ const article = {
     },
     {
       "q": "Can I block printing while letting someone open the file?",
-      "a": "Not through PDFcraft Protect. Its current qpdf options allow printing and extraction, and this interface provides no alternate permissions policy."
+      "a": "Not through GetPDFCraft Protect. Its current qpdf options allow printing and extraction, and this interface provides no alternate permissions policy."
     },
     {
       "q": "Do I need Adobe software or a subscription for this workflow?",
-      "a": "PDFcraft Protect requires neither an Adobe installation nor an Adobe subscription. It handles one PDF per operation."
+      "a": "GetPDFCraft Protect requires neither an Adobe installation nor an Adobe subscription. It handles one PDF per operation."
     },
     {
       "q": "How do I access and save a PDF in a mobile browser?",

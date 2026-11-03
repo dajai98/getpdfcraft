@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#EFF6FF",
   "ctaHref": "/tools/rotate-pdf",
   "ctaText": "Rotate your PDF pages now — free",
-  "intro": "PDFcraft Rotate changes the page rotation value rather than rendering a new image of each page. The important control is the additional angle: every page receives the same change, including pages that already have rotation.",
+  "intro": "GetPDFCraft Rotate changes the page rotation value rather than rendering a new image of each page. The important control is the additional angle: every page receives the same change, including pages that already have rotation.",
   "sections": [
     {
       "heading": "Predict the resulting rotation",

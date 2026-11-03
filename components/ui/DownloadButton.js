@@ -15,7 +15,7 @@ export default function DownloadButton({ url, filename, label = "Download" }) {
         display: "inline-flex",
         alignItems: "center",
         gap: 8,
-        background: "#E8380D",
+        background: "#C92F0A",
         color: "white",
         border: "none",
         padding: "14px 32px",
@@ -27,7 +27,7 @@ export default function DownloadButton({ url, filename, label = "Download" }) {
         transition: "background 0.2s",
       }}
       onMouseEnter={e => e.currentTarget.style.background = "#C42E08"}
-      onMouseLeave={e => e.currentTarget.style.background = "#E8380D"}
+      onMouseLeave={e => e.currentTarget.style.background = "#C92F0A"}
     >
       ↓ {label}
     </button>

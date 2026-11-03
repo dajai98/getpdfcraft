@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FEF2F2",
   "ctaHref": "/tools/merge-pdf",
   "ctaText": "Combine your PDFs and images now — free",
-  "intro": "PDFcraft does not have a one-step mixed PDF/image merge. First convert supported pictures into a PDF, then merge that output with the existing PDFs. Plan both the image order and where that image packet belongs in the final document.",
+  "intro": "GetPDFCraft does not have a one-step mixed PDF/image merge. First convert supported pictures into a PDF, then merge that output with the existing PDFs. Plan both the image order and where that image packet belongs in the final document.",
   "sections": [
     {
       "heading": "Example: report followed by photo evidence",

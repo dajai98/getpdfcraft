@@ -97,7 +97,7 @@ export default function SplitPDF() {
           </div>
 
           <button onClick={split} disabled={processing} style={{
-            width: "100%", background: processing ? "#d1d5db" : "#E8380D",
+            width: "100%", background: processing ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit",
           }}>

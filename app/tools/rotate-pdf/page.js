@@ -1,26 +1,30 @@
 "use client";
 import { useState } from "react";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 export default function RotatePDF() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const [processing, setProcessing] = useState(false);
+  const [error, setError] = useState("");
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult: invalidateOutput, isCurrentResult } = useGeneratedResult();
+  const invalidateResult = () => { invalidateOutput(); setProcessing(false); setError(""); };
   const [file, setFile] = useResultInput(null, invalidateResult);
   const [rotation, setRotation] = useResultInput(90, invalidateResult);
-  const [processing, setProcessing] = useState(false);
+
 
   const rotate = async () => {
     const resultVersion = beginResult();
-    setProcessing(true);
+    setProcessing(true); setError("");
     try {
-      const { PDFDocument, degrees } = await import("pdf-lib");
-      const doc = await PDFDocument.load(await file.arrayBuffer());
+      const { degrees } = await import("pdf-lib");
+      const doc = await loadPdf(file);
       doc.getPages().forEach(p => p.setRotation(degrees((p.getRotation().angle + rotation) % 360)));
       setDownloadUrl(URL.createObjectURL(new Blob([await doc.save()], { type: "application/pdf" })), resultVersion);
-    } catch(e) { alert("Error rotating PDF."); }
-    setProcessing(false);
+    } catch(e) { if (isCurrentResult(resultVersion)) setError(pdfInputError(e)); }
+    if (isCurrentResult(resultVersion)) setProcessing(false);
   };
 
   const options = [{ val: 90, label: "↻ 90° Right" }, { val: 180, label: "↕ 180°" }, { val: 270, label: "↺ 90° Left" }];
@@ -35,6 +39,7 @@ export default function RotatePDF() {
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
 ]}>
 
+      {error && <p role="alert">{error}</p>}
       {!file ? <UploadZone onFiles={f => { setFile(f[0]); }} label="Drop your PDF here" /> : (
         <div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
@@ -49,7 +54,7 @@ export default function RotatePDF() {
                 <button key={o.val} aria-pressed={rotation === o.val} onClick={() => setRotation(o.val)} style={{
                   flex: 1, padding: "12px 8px", borderRadius: 10, fontWeight: 600, fontSize: 14,
                   border: `1.5px solid ${rotation===o.val?"#E8380D":"#e5e7eb"}`,
-                  background: rotation===o.val ? "#E8380D" : "white",
+                  background: rotation===o.val ? "#C92F0A" : "white",
                   color: rotation===o.val ? "white" : "#6b7280",
                   cursor: "pointer", fontFamily: "inherit",
                 }}>{o.label}</button>
@@ -57,7 +62,7 @@ export default function RotatePDF() {
             </div>
           </div>
           <button onClick={rotate} disabled={processing} style={{
-            width: "100%", background: processing ? "#d1d5db" : "#E8380D",
+            width: "100%", background: processing ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit",
           }}>

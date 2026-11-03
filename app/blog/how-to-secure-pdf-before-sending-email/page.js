@@ -68,7 +68,7 @@ const article = {
     },
     {
       "heading": "Keep the final check about this exact file",
-      "text": "Reopen the attachment you intend to send, not an earlier draft. Check page count, sensitive visible content and password access. PDFcraft runs these document operations locally; site resources and the qpdf runtime still require network loading. Neither successful processing nor these checks establish email security or universal PDF compatibility."
+      "text": "Reopen the attachment you intend to send, not an earlier draft. Check page count, sensitive visible content and password access. GetPDFCraft runs these document operations locally; site resources and the qpdf runtime still require network loading. Neither successful processing nor these checks establish email security or universal PDF compatibility."
     },
     {
       "heading": "Continue with the appropriate tool",

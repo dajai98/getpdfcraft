@@ -19,10 +19,10 @@ function prose(value) {
 }
 function claims(text) {
   for (const re of [
-    /PDFcraft\s+(?:is|offers|provides)\s+(?:better|superior|more private)/i,
+    /GetPDFCraft\s+(?:is|offers|provides)\s+(?:better|superior|more private)/i,
     /iLovePDF\s+(?:requires?|needs?)\s+(?:a\s+)?(?:login|account|sign.in)/i,
     /iLovePDF\s+always\s+uploads?/i,
-    /PDFcraft\s+(?:(?:fully|completely)\s+replaces?|is\s+(?:a\s+)?(?:full|complete)\s+replacement\s+for)\s+(?:Adobe\s+)?Acrobat/i,
+    /GetPDFCraft\s+(?:(?:fully|completely)\s+replaces?|is\s+(?:a\s+)?(?:full|complete)\s+replacement\s+for)\s+(?:Adobe\s+)?Acrobat/i,
     /PDF[- ]to[- ]Image\s+(?:performs?|provides?|does|supports?)\s+OCR/i,
     /all\s+Acrobat\s+features\s+are\s+free/i,
     // Require a universal product-tier subject followed by affirmative
@@ -35,11 +35,11 @@ function validate(slug, source, html) {
   const spec = specs[slug], a = parse(source), visible = plain(html);
   assert.equal(a.title, spec.title); assert.equal(a.date, spec.date);
   assert(source.includes('metadata = blogMetadata("' + slug + '")'));
-  assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | PDFcraft');
+  assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | GetPDFCraft');
   assert.equal(plain(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), spec.title);
   for (const prefix of ['rel="canonical" href="', 'property="og:url" content="']) assert(html.includes(prefix + 'https://getpdfcraft.com/blog/' + slug + '"'));
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
-  assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, spec.iso);
+  assert.equal(schemas.find(x => x['@type'] === 'BlogPosting').datePublished, undefined);
   assert.equal(a.faqs.length, 4);
   assert.deepEqual(schemas.find(x => x['@type'] === 'FAQPage').mainEntity.map(x => ({q:x.name,a:x.acceptedAnswer.text})), a.faqs);
   for (const faq of a.faqs) { assert(visible.includes(faq.q)); assert(visible.includes(faq.a)); }
@@ -62,7 +62,7 @@ function validate(slug, source, html) {
   if (slug === 'ilovepdf-alternative') {
     assert(a.sections[0].table.rows.length <= 4);
     assert(a.sections[0].text.includes('file selection and drag ordering'));
-    assert(a.sections[2].text.includes('PDFcraft is not a full substitute'));
+    assert(a.sections[2].text.includes('GetPDFCraft is not a full substitute'));
     assert(a.sections[3].text.includes('does not establish offline availability'));
   } else {
     assert(a.intro.includes('not a full Acrobat replacement'));
@@ -70,7 +70,7 @@ function validate(slug, source, html) {
     assert(editing.includes('not an equivalent editor'));
     assert(editing.includes('Availability depends on the product and edition'));
     const ocr = a.sections.find(x => x.heading === 'A scanned page image is not searchable text').text;
-    assert(ocr.includes('PDFcraft does not provide OCR'));
+    assert(ocr.includes('GetPDFCraft does not provide OCR'));
     assert(ocr.includes('it does not recognize words or add a searchable text layer'));
   }
   console.log('PASS ' + slug + ': ' + words + ' words; metadata, claims, sections, links and FAQ/schema');
@@ -87,10 +87,10 @@ for (const slug of Object.keys(specs)) {
   const source = read('app/blog/' + slug + '/page.js'), html = read('out/blog/' + slug + '.html');
   validate(slug, source, html);
   const mutations = slug === 'ilovepdf-alternative' ? [
-    'PDFcraft is better than iLovePDF.', 'iLovePDF requires login.', 'iLovePDF always uploads your files.',
-    'PDFcraft is more private than iLovePDF.',
+    'GetPDFCraft is better than iLovePDF.', 'iLovePDF requires login.', 'iLovePDF always uploads your files.',
+    'GetPDFCraft is more private than iLovePDF.',
   ] : [
-    'PDFcraft fully replaces Acrobat.', 'PDF-to-Image performs OCR.', 'All Acrobat features are free.',
+    'GetPDFCraft fully replaces Acrobat.', 'PDF-to-Image performs OCR.', 'All Acrobat features are free.',
     'Every Acrobat edition includes OCR, forms and signing.',
     'All Acrobat editions include OCR.',
     'Every Acrobat plan provides forms and signing.',

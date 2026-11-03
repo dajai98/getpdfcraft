@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FEFCE8",
   "ctaHref": "/tools/compress-pdf",
   "ctaText": "Try structural compression and compare the result",
-  "intro": "'Without losing quality' needs a narrower meaning than 'the output looks identical in every viewer.' PDFcraft performs a structural rewrite without explicitly reducing image resolution. That describes the algorithm; it does not prove that every PDF feature or visible detail survives every input.",
+  "intro": "'Without losing quality' needs a narrower meaning than 'the output looks identical in every viewer.' GetPDFCraft performs a structural rewrite without explicitly reducing image resolution. That describes the algorithm; it does not prove that every PDF feature or visible detail survives every input.",
   "sections": [
     {
       "heading": "Separate image quality from file rewriting",

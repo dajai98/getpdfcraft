@@ -5,15 +5,15 @@ export const metadata = blogMetadata("ilovepdf-alternative");
 
 const article = {
   "title": "An iLovePDF Alternative for Local PDF Workflows",
-  "intro": "An iLovePDF alternative is useful only if it completes the job you actually need. PDFcraft can suit a supported page-assembly, range-extraction or page-image task without replacing a broader suite. Start with the required output: one combined PDF, separate ranges, or pictures of pages. An editable Office document or searchable scan is a different requirement.",
+  "intro": "An iLovePDF alternative is useful only if it completes the job you actually need. GetPDFCraft can suit a supported page-assembly, range-extraction or page-image task without replacing a broader suite. Start with the required output: one combined PDF, separate ranges, or pictures of pages. An editable Office document or searchable scan is a different requirement.",
   "sections": [
     {
       "heading": "Compare the task, not the suite name",
-      "text": "The official iLovePDF Merge page offers file selection and drag ordering. Its broader tool catalogue also lists Office conversions, OCR and signing. These are documented capabilities, not results of a local comparison test. PDFcraft has a narrower scope: choose it only when the operation and output below meet your requirement.",
+      "text": "The official iLovePDF Merge page offers file selection and drag ordering. Its broader tool catalogue also lists Office conversions, OCR and signing. These are documented capabilities, not results of a local comparison test. GetPDFCraft has a narrower scope: choose it only when the operation and output below meet your requirement.",
       "table": {
         "headers": [
           "Required result",
-          "PDFcraft workflow",
+          "GetPDFCraft workflow",
           "Decision boundary"
         ],
         "rows": [
@@ -43,7 +43,7 @@ const article = {
     },
     {
       "heading": "Check the page result before switching",
-      "text": "Suppose you need a cover followed by a report. In PDFcraft, add the cover first, then the report, and check the displayed list. Remove and re-add a misplaced file; Merge has no drag-order control. If individual pages need moving, Reorder Pages uses Up/Down controls. Keep the originals and reopen the combined PDF to check the boundary between inputs and any important navigation. Supported page copying is not a guarantee for every form or signed document.",
+      "text": "Suppose you need a cover followed by a report. In GetPDFCraft, add the cover first, then the report, and check the displayed list. Remove and re-add a misplaced file; Merge has no drag-order control. If individual pages need moving, Reorder Pages uses Up/Down controls. Keep the originals and reopen the combined PDF to check the boundary between inputs and any important navigation. Supported page copying is not a guarantee for every form or signed document.",
       "steps": [
         {
           "title": "Choose separate ranges deliberately",
@@ -71,18 +71,18 @@ const article = {
     },
     {
       "heading": "Know when the narrower workflow is not enough",
-      "text": "If the deliverable requires OCR, electronic signing or Office conversion, PDFcraft is not a full substitute. A page can look correct in an image while still failing a requirement for editable text. Likewise, putting documents together does not fill a form or create a signature workflow. Check the required feature in the provider's current product documentation before choosing it. Avoid switching tools halfway through a task only to discover that the final format is unavailable. A useful trial uses a non-sensitive sample with the same relevant features as the intended input; inspect its output rather than counting matching button names."
+      "text": "If the deliverable requires OCR, electronic signing or Office conversion, GetPDFCraft is not a full substitute. A page can look correct in an image while still failing a requirement for editable text. Likewise, putting documents together does not fill a form or create a signature workflow. Check the required feature in the provider's current product documentation before choosing it. Avoid switching tools halfway through a task only to discover that the final format is unavailable. A useful trial uses a non-sensitive sample with the same relevant features as the intended input; inspect its output rather than counting matching button names."
     },
     {
       "heading": "Local browser processing is not an offline promise",
-      "text": "PDFcraft processes documents locally in the browser, but its website and some processing components load web resources. That does not establish offline availability. iLovePDF separately documents a desktop option for local, offline processing. If disconnected operation is essential, evaluate that documented application workflow rather than treating all uses of either product as identical. This comparison does not establish a privacy ranking or successful execution on your device.",
+      "text": "GetPDFCraft processes documents locally in the browser, but its website and some processing components load web resources. That does not establish offline availability. iLovePDF separately documents a desktop option for local, offline processing. If disconnected operation is essential, evaluate that documented application workflow rather than treating all uses of either product as identical. This comparison does not establish a privacy ranking or successful execution on your device.",
       "list": [
         {
           "text": "iLovePDF: suite and desktop options",
           "href": "https://www.ilovepdf.com/features"
         },
         {
-          "text": "How PDFcraft processes files locally",
+          "text": "How GetPDFCraft processes files locally",
           "href": "/blog/how-browser-based-pdf-processing-works"
         }
       ]
@@ -90,8 +90,8 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "How do I decide whether PDFcraft is enough?",
-      "a": "Write down the required output and features first. A supported page task may fit; a requirement for an editable Office file, OCR or signing rules out PDFcraft as a complete replacement for that workflow."
+      "q": "How do I decide whether GetPDFCraft is enough?",
+      "a": "Write down the required output and features first. A supported page task may fit; a requirement for an editable Office file, OCR or signing rules out GetPDFCraft as a complete replacement for that workflow."
     },
     {
       "q": "Which unsupported suite features matter most?",
