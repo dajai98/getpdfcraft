@@ -16,7 +16,7 @@ const faqs = [
 ];
 
 export default function ReorderPages() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult, isCurrentResult } = useGeneratedResult();
   const { file, loading, error, setError, loadFile: readFile, resetFile } = usePdfInput(invalidateResult);
   const [order, setOrder] = useResultInput([], invalidateResult);
   const [processing, setProcessing] = useState(false);
@@ -48,7 +48,7 @@ export default function ReorderPages() {
       const src = await PDFDocument.load(await file.arrayBuffer());
       const blob = new Blob([await copyPagesWithNavigation([{ doc: src, order }])], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
+    } catch(e) { if (isCurrentResult(resultVersion)) setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
     setProcessing(false);
   };
 

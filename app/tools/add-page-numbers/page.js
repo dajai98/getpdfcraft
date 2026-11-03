@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
 import { pageNumberPlacement } from "@/lib/pageGeometry";
+import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -15,21 +16,25 @@ const faqs = [
 ];
 
 export default function AddPageNumbers() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const [processing, setProcessing] = useState(false);
+  const [error, setError] = useState("");
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult: invalidateOutput, isCurrentResult } = useGeneratedResult();
+  const invalidateResult = () => { invalidateOutput(); setProcessing(false); setError(""); };
   const [file, setFile] = useResultInput(null, invalidateResult);
   const [position, setPosition] = useResultInput("bottom-center", invalidateResult);
   const [startNum, setStartNum] = useResultInput(1, invalidateResult);
   const [fontSize, setFontSize] = useResultInput(12, invalidateResult);
-  const [processing, setProcessing] = useState(false);
+
 
   const loadFile = (files) => { setFile(files[0]); };
 
   const addNumbers = async () => {
     const resultVersion = beginResult();
-    setProcessing(true);
+    setProcessing(true); setError("");
     try {
-      const { PDFDocument, rgb, StandardFonts, degrees } = await import("pdf-lib");
-      const doc = await PDFDocument.load(await file.arrayBuffer());
+      const { rgb, StandardFonts, degrees } = await import("pdf-lib");
+      const doc = await loadPdf(file);
+      if (!Number.isSafeInteger(startNum) || startNum < 1 || !Number.isSafeInteger(startNum + doc.getPageCount() - 1)) throw new Error("Choose a positive whole starting number within the safe integer range.");
       const font = await doc.embedFont(StandardFonts.Helvetica);
       const pages = doc.getPages();
 
@@ -42,9 +47,9 @@ export default function AddPageNumbers() {
       const blob = new Blob([await doc.save()], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
     } catch (e) {
-      alert(e.message || "Error adding page numbers.");
+      if (isCurrentResult(resultVersion)) setError(/starting number|page is too small/i.test(e.message) ? e.message : pdfInputError(e));
     }
-    setProcessing(false);
+    if (isCurrentResult(resultVersion)) setProcessing(false);
   };
 
   const positions = [
@@ -62,6 +67,7 @@ export default function AddPageNumbers() {
       title="Add Page Numbers to PDF" desc="Number your PDF pages with custom position, size, and starting number. Free to use."
       current="/tools/add-page-numbers" faqs={faqs}
     >
+      {error && <p role="alert">{error}</p>}
       {/* 
         CLS FIX: Instead of conditionally mounting/unmounting components 
         (which causes the element to collapse from 364x747 to 0x0 on hydration),
@@ -132,7 +138,7 @@ export default function AddPageNumbers() {
               </label>
               <input id="add-page-numbers-field-1"
                 type="number" min="1" value={startNum}
-                onChange={e => setStartNum(parseInt(e.target.value) || 1)}
+                onChange={e => setStartNum(e.target.value === "" ? "" : Number(e.target.value))}
                 style={{
                   width: "100%", border: "1.5px solid #e5e7eb", borderRadius: 10,
                   padding: "10px 14px", fontSize: 14, fontFamily: "inherit",

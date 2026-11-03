@@ -8,6 +8,24 @@ const article = {
   "intro": "When choosing a Smallpdf alternative, test the particular job you need done. PDFcraft offers 13 free browser-based tools with no account required, but its available controls and output behavior may differ from the workflow you already use.",
   "sections": [
     {
+      "heading": "Documented differences to check before switching",
+      "text": "These distinctions come from Smallpdf's public product documentation checked on November 2, 2026, and PDFcraft's current controls. They are not a hands-on Smallpdf benchmark or a comparison of output quality. Features and account requirements can change.",
+      "table": {
+        "headers": ["Decision", "Smallpdf documentation", "PDFcraft behavior"],
+        "rows": [
+          ["Organize before merging", "The Merge page describes thumbnail previews and rearranging pages before finishing.", "Merge follows file insertion order. Reorder is a separate tool with Up/Down controls and no thumbnails."],
+          ["Where merging runs", "Its online Merge page describes cloud-based processing.", "Document bytes are processed locally; loading the website and some runtimes still makes network requests."],
+          ["Choose compression strength", "The Compress page lists Basic, Moderate (Pro) and Strong (Pro).", "One structural optimization pass, with no compression-level or target-size control. The output can grow."],
+          ["Change existing wording", "Its editor documentation offers existing-text editing, with Pro requirements described in its FAQ.", "Page operations and drawn labels only. Existing paragraphs cannot be edited."]
+        ]
+      },
+      "list": [
+        { "text": "Smallpdf Merge documentation", "href": "https://smallpdf.com/merge-pdf" },
+        { "text": "Smallpdf Compress documentation", "href": "https://smallpdf.com/compress-pdf" },
+        { "text": "Smallpdf Edit documentation and account requirements", "href": "https://smallpdf.com/edit-pdf" }
+      ]
+    },
+    {
       "heading": "A short evaluation workflow",
       "steps": [
         {
@@ -51,7 +69,7 @@ const article = {
     },
     {
       "heading": "Evaluate missing capabilities explicitly",
-      "text": "If your Smallpdf workflow depends on OCR, existing-text editing, Word/Excel conversion or e-signatures, PDFcraft cannot replace that step. Verify those requirements against Smallpdf's current documentation or another provider before switching. This is a PDFcraft capability checklist, not a verified current Smallpdf feature or price comparison. No current Smallpdf prices, quotas, account rules or upload policies are asserted here."
+      "text": "If your workflow depends on OCR, existing-text editing, Word/Excel conversion or e-signatures, PDFcraft cannot replace that step. The documented comparison above covers specific controls, not subscription prices, total usage quotas or a claim that either product produces better PDFs. Confirm any required feature in the provider's current documentation before switching."
     },
     {
       "heading": "Start with a supported task",

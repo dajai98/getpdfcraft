@@ -20,7 +20,7 @@ const article = {
         },
         {
           "title": "Generate an output",
-          "body": "PDF tools generally create bytes and expose them as a browser download through a Blob/object URL. PDF-to-image uses encoded image data URLs. The application may hold inputs, previews, and outputs in memory during the operation."
+          "body": "PDF tools create bytes and expose them as a browser download through a Blob/object URL. PDF to Image also stores encoded page images as Blobs, revoking their URLs when you reset or leave the tool. It renders one canvas at a time, but still retains the encoded outputs until reset. This reduces long base64 strings; it does not make memory use unlimited."
         },
         {
           "title": "Save and review",

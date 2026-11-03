@@ -185,6 +185,16 @@ const article = {
           "href": "/blog/pdf-file-size-too-large"
         }
       ]
+    },
+    {
+      "heading": "Inspect the recorded numbers",
+      "text": "Download the machine-readable observations to inspect input/output byte counts, SHA-256 identities, fixture categories and the recorded library versions. These are the historical October Node measurements shown above; changes to current validation do not turn them into a new browser benchmark. For your own file, retain both copies and repeat the size arithmetic below.",
+      "list": [
+        {
+          "text": "Download the historical compression observations (JSON)",
+          "href": "/examples/compression-observations.json"
+        }
+      ]
     }
   ],
   "faqs": [

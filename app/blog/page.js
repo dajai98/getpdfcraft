@@ -40,7 +40,6 @@ export default function BlogPage() {
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
                     <span style={{ background: post.tagBg, color: post.tagColor, fontSize: 10, fontWeight: 700, padding: "3px 9px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 0.8 }}>{post.tag}</span>
-                    {post.date && <span style={{ fontSize: 12, color: "#6b7280" }}>{post.date}</span>}
                   </div>
                   <h3 style={{ fontSize: 16, fontWeight: 700, color: "#111827", marginBottom: 4, lineHeight: 1.3 }}>{post.title}</h3>
                   <p style={{ fontSize: 13, color: "#6b7280", margin: 0 }}>{post.description}</p>

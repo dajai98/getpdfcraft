@@ -23,13 +23,13 @@ export default function Contact() {
       </div>
 
       {/* Contact card */}
-      <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 20, padding: 40, marginBottom: 32 }}>
+      <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 20, padding: "clamp(16px, 5vw, 40px)", marginBottom: 32 }}>
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 24, letterSpacing: -0.5 }}>
           Send an email
         </h2>
         <div style={{ background: "white", border: "1px solid #f3f4f6", borderRadius: 14, padding: 24, display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ fontSize: 28, flexShrink: 0 }}>📧</div>
-          <div>
+          <div style={{ minWidth: 0, overflowWrap: "anywhere" }}>
             <p style={{ fontWeight: 700, color: "#111827", fontSize: 15, marginBottom: 4 }}>Support</p>
             <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 8 }}>Questions, factual corrections, feedback, bug reports</p>
             <a

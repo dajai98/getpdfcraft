@@ -17,7 +17,7 @@ const faqs = [
 ];
 
 export default function DeletePages() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult, isCurrentResult } = useGeneratedResult();
   const { file, pageCount, loading, error, setError, loadFile: readFile, resetFile } = usePdfInput(invalidateResult);
   const [selected, setSelected] = useResultInput(new Set(), invalidateResult);
   const [processing, setProcessing] = useState(false);
@@ -44,7 +44,7 @@ export default function DeletePages() {
       const retained = doc.getPageIndices().filter(i => !selected.has(i));
       const blob = new Blob([await copySelectedPagesWithNavigation(doc, retained)], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
+    } catch(e) { if (isCurrentResult(resultVersion)) setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
     setProcessing(false);
   };
 

@@ -2,32 +2,36 @@
 import { useState } from "react";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
 import { watermarkPlacement } from "@/lib/pageGeometry";
+import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 export default function WatermarkPDF() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
+  const [processing, setProcessing] = useState(false);
+  const [error, setError] = useState("");
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult: invalidateOutput, isCurrentResult } = useGeneratedResult();
+  const invalidateResult = () => { invalidateOutput(); setProcessing(false); setError(""); };
   const [file, setFile] = useResultInput(null, invalidateResult);
   const [text, setText] = useResultInput("CONFIDENTIAL", invalidateResult);
   const [opacity, setOpacity] = useResultInput(0.3, invalidateResult);
-  const [processing, setProcessing] = useState(false);
+
 
   const apply = async () => {
     if (!file || !text) return;
     const resultVersion = beginResult();
-    setProcessing(true);
+    setProcessing(true); setError("");
     try {
-      const { PDFDocument, rgb, StandardFonts, degrees } = await import("pdf-lib");
-      const doc = await PDFDocument.load(await file.arrayBuffer());
+      const { rgb, StandardFonts, degrees } = await import("pdf-lib");
+      const doc = await loadPdf(file);
       const font = await doc.embedFont(StandardFonts.HelveticaBold);
       doc.getPages().forEach(page => {
         const { angle, ...placement } = watermarkPlacement(page, font, text);
         page.drawText(text, { ...placement, rotate: degrees(angle), font, color: rgb(0.5,0.5,0.5), opacity });
       });
       setDownloadUrl(URL.createObjectURL(new Blob([await doc.save()], { type: "application/pdf" })), resultVersion);
-    } catch(e) { alert("Error adding watermark."); }
-    setProcessing(false);
+    } catch(e) { if (isCurrentResult(resultVersion)) setError(/WinAnsi|encode/i.test(e.message) ? "This font cannot display one or more characters. Try a watermark using Latin letters, numbers and punctuation." : pdfInputError(e)); }
+    if (isCurrentResult(resultVersion)) setProcessing(false);
   };
 
   return (
@@ -40,6 +44,7 @@ export default function WatermarkPDF() {
   { q: "Will the watermark print?", a: "The watermark is drawn into each page's visible content. Review the output before printing." },
 ]}>
 
+      {error && <p role="alert">{error}</p>}
       {!file ? <UploadZone onFiles={f => { setFile(f[0]); }} label="Drop your PDF here" /> : (
         <div>
           <div style={{ background: "#f9fafb", border: "1px solid #f3f4f6", borderRadius: 14, padding: "16px 20px", marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>

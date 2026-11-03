@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
+import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
@@ -14,9 +15,12 @@ const faqs = [
 ];
 
 export default function MergePDF() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
-  const [files, setFiles] = useResultInput([], invalidateResult);
   const [processing, setProcessing] = useState(false);
+  const [error, setError] = useState("");
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult: invalidateOutput, isCurrentResult } = useGeneratedResult();
+  const invalidateResult = () => { invalidateOutput(); setProcessing(false); setError(""); };
+  const [files, setFiles] = useResultInput([], invalidateResult);
+
 
   const addFiles = (f) => { setFiles(p => [...p, ...f]); };
   const removeFile = (i) => setFiles(files.filter((_, j) => j !== i));
@@ -24,19 +28,18 @@ export default function MergePDF() {
   const merge = async () => {
     if (files.length < 2) return alert("Please add at least 2 PDF files.");
     const resultVersion = beginResult();
-    setProcessing(true);
+    setProcessing(true); setError("");
     try {
       const { copyPagesWithNavigation } = await import("@/lib/copyPdfPagesSafe");
-      const { PDFDocument } = await import("pdf-lib");
       const sources = [];
       for (const file of files) {
-        const doc = await PDFDocument.load(await file.arrayBuffer());
+        const doc = await loadPdf(file);
         sources.push({ doc, order: doc.getPageIndices() });
       }
       const blob = new Blob([await copyPagesWithNavigation(sources)], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
-    } catch(e) { alert(e.code === "PDF_NAVIGATION" ? e.message : "Error merging. Make sure files are not password protected."); }
-    setProcessing(false);
+    } catch(e) { if (isCurrentResult(resultVersion)) setError(e.code === "PDF_NAVIGATION" ? e.message : pdfInputError(e)); }
+    if (isCurrentResult(resultVersion)) setProcessing(false);
   };
 
   return (
@@ -44,6 +47,7 @@ export default function MergePDF() {
       title="Merge PDF Files" desc="Combine multiple PDFs into one file. Free to use, with local processing."
       current="/tools/merge-pdf" faqs={faqs}>
 
+      {error && <p role="alert">{error}</p>}
       <UploadZone onFiles={addFiles} multiple label="Drop PDFs here or click to browse" />
 
       {files.length > 0 && (

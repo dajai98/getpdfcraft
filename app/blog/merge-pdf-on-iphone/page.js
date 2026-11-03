@@ -33,12 +33,13 @@ export default function Post() {
       },
       {
         "title": "Download the merged PDF",
-        "body": "Use the browser’s download controls to locate the saved file or choose a destination if prompted. The location depends on browser settings and OS version; check the file manager or Files app after downloading."
+        "body": "After tapping Download, check Safari's Downloads button beside its search field. Apple's download guide also describes Files > Browse > iCloud Drive > Downloads. If you configured another save location, use that location instead. This is Apple's documented workflow, not a claim that this guide was tested on your iPhone."
       }
     ]
   },
   {
     "heading": "How to find the merged PDF on iPhone",
+    "list": [{ "text": "Apple: where to find iPhone and iPad downloads (checked November 2, 2026)", "href": "https://support.apple.com/en-us/102440" }],
     "steps": [
       {
         "title": "Confirm that a download completed",

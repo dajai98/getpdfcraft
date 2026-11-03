@@ -4,29 +4,14 @@ import Link from "next/link";
 import { AdLeaderboard } from "@/components/ui/Ads";
 import FAQSchema from "@/components/ui/FAQSchema";
 
-// Parses the display date strings actually used across blog posts
-// ("May 2026" or "February 3, 2026") into ISO 8601 for structured data.
-// Falls back to just the year if the format is unrecognized, rather than
-// guessing a day/month that isn't supported by the visible content.
-const MONTHS = { January: "01", February: "02", March: "03", April: "04", May: "05", June: "06", July: "07", August: "08", September: "09", October: "10", November: "11", December: "12" };
-function toISODate(display) {
-  if (!display) return undefined;
-  const withDay = display.match(/^(\w+)\s+(\d{1,2}),\s+(\d{4})$/);
-  if (withDay && MONTHS[withDay[1]]) return `${withDay[3]}-${MONTHS[withDay[1]]}-${withDay[2].padStart(2, "0")}`;
-  const monthOnly = display.match(/^(\w+)\s+(\d{4})$/);
-  if (monthOnly && MONTHS[monthOnly[1]]) return `${monthOnly[2]}-${MONTHS[monthOnly[1]]}`;
-  const yearOnly = display.match(/(\d{4})/);
-  return yearOnly ? yearOnly[1] : undefined;
-}
-
-export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, intro, sections, faqs, ctaText, ctaHref }) {
-  const isoDate = toISODate(date);
+// Historical date labels remain in source records, but are not verified publication
+// dates. Do not expose them as publication claims in the page or structured data.
+export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro, sections, faqs, ctaText, ctaHref }) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": title,
     "description": intro,
-    ...(isoDate ? { "datePublished": isoDate } : {}),
     "author": { "@type": "Organization", "name": "Dajai Studio" },
     "publisher": {
       "@type": "Organization",
@@ -44,7 +29,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, date, readTime, 
         <span style={{ background: tagBg, color: tagColor, fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>{tag}</span>
         <h1 style={{ fontSize: "clamp(28px, 5vw, 46px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>{title}</h1>
         <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#6b7280", flexWrap: "wrap" }}>
-          {date && <span>{date}</span>}<span>{date ? "· " : ""}{readTime}</span><span>· Published by Dajai Studio</span>
+          <span>{readTime}</span><span>· Published by Dajai Studio</span>
         </div>
       </div>
 

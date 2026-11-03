@@ -12,6 +12,17 @@ body {
 a { text-decoration: none; color: inherit; }
 ::selection { background: #E8380D; color: white; }
 
+.navbar-inner { max-width: 1152px; margin: 0 auto; padding: 0 24px; min-height: 64px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.navbar-links { display: flex; align-items: center; gap: 4px; }
+.navbar-links a { min-height: 44px; display: flex; align-items: center; }
+.navbar-toggle { display: none; min-height: 44px; padding: 8px 14px; border: 1px solid #d1d5db; border-radius: 8px; background: white; font: inherit; }
+@media (max-width: 767px) {
+  .navbar-inner { padding: 10px 16px; gap: 8px; }
+  .navbar-toggle { display: block; }
+  .navbar-links { display: none; flex-basis: 100%; flex-direction: column; align-items: stretch; padding-bottom: 6px; }
+  .navbar-links.is-expanded { display: flex; }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }

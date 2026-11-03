@@ -75,7 +75,7 @@ export default function Post() {
     "a": "Confirm the request and delivery channel, send only the requested information, and agree how the recipient will receive the password. Reopen the protected output first. This does not establish that the same file will be accepted by a separate application portal."
   }
 ]}
-      ctaText={"Prepare your job application PDFs — free"}
+      ctaText={"Add a password only when the recipient accepts it"}
       ctaHref={"/tools/protect-pdf"}
     />
   );

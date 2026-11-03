@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { checkRasterSize, checkEncodedSize } from "@/lib/rasterLimits";
 import { useGeneratedResult, useResultInput } from "@/components/hooks/useGeneratedResult";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
@@ -13,16 +14,25 @@ const faqs = [
 ];
 
 export default function PDFToGrayscale() {
-  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult } = useGeneratedResult();
-  const [file, setFile] = useResultInput(null, invalidateResult);
+  const { downloadUrl, setDownloadUrl, beginResult, invalidateResult, isCurrentResult } = useGeneratedResult();
   const [processing, setProcessing] = useState(false);
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState("");
+  const activeTask = useRef(null);
+  const cancelTask = () => {
+    const task = activeTask.current;
+    activeTask.current = null;
+    if (task) void task.destroy().catch(() => {});
+  };
+  const reset = () => { invalidateResult(); cancelTask(); setProcessing(false); setProgress(0); setError(""); };
+  const [file, setFile] = useResultInput(null, reset);
+  useEffect(() => cancelTask, []);
 
   const loadFile = (files) => { setFile(files[0]); setError(""); };
 
   const convert = async () => {
     if (!file || typeof window === "undefined") return;
+    cancelTask();
     const resultVersion = beginResult();
     setProcessing(true); setProgress(0); setError("");
     let loadingTask;
@@ -32,20 +42,28 @@ export default function PDFToGrayscale() {
       pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
       const { PDFDocument } = await import("pdf-lib");
 
-      loadingTask = pdfjsLib.getDocument({ data: await file.arrayBuffer(), stopAtErrors: true });
+      const bytes = await file.arrayBuffer();
+      if (!isCurrentResult(resultVersion)) return;
+      loadingTask = pdfjsLib.getDocument({ data: bytes, stopAtErrors: true });
+      activeTask.current = loadingTask;
       const pdf = await loadingTask.promise;
+      if (!isCurrentResult(resultVersion)) return;
       const newDoc = await PDFDocument.create();
+      let encodedBytes = 0;
 
       for (let i = 1; i <= pdf.numPages; i++) {
+        if (!isCurrentResult(resultVersion)) return;
         const page = await pdf.getPage(i);
         // PDF.js 4.4 viewports use PDF coordinates; UserUnit converts these to points.
         const physical = page.getViewport({ scale: page.userUnit });
         const viewport = page.getViewport({ scale: 1.5 * page.userUnit });
+        checkRasterSize(viewport);
         canvas = document.createElement("canvas");
         canvas.width = viewport.width; canvas.height = viewport.height;
         const ctx = canvas.getContext("2d");
         if (!ctx || !canvas.width || !canvas.height) throw new Error("Canvas unavailable");
         await page.render({ canvasContext: ctx, viewport }).promise;
+        if (!isCurrentResult(resultVersion)) return;
 
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const data = imageData.data;
@@ -58,24 +76,28 @@ export default function PDFToGrayscale() {
         const dataUrl = canvas.toDataURL("image/jpeg", 0.9);
         if (!dataUrl.startsWith("data:image/jpeg")) throw new Error("Page image could not be encoded");
         const jpgBytes = await fetch(dataUrl).then(r => r.arrayBuffer());
+        if (!isCurrentResult(resultVersion)) return;
+        encodedBytes += jpgBytes.byteLength;
+        checkEncodedSize(encodedBytes);
         const img = await newDoc.embedJpg(jpgBytes);
         const newPage = newDoc.addPage([physical.width, physical.height]);
         newPage.drawImage(img, { x: 0, y: 0, width: physical.width, height: physical.height });
         canvas.width = canvas.height = 0;
         page.cleanup();
-        setProgress(Math.round((i / pdf.numPages) * 100));
+        if (isCurrentResult(resultVersion)) setProgress(Math.round((i / pdf.numPages) * 100));
       }
 
       const blob = new Blob([await newDoc.save()], { type: "application/pdf" });
       setDownloadUrl(URL.createObjectURL(blob), resultVersion);
     } catch(e) {
-      setError(e.name === "PasswordException"
+      if (isCurrentResult(resultVersion)) setError(e.name === "RasterLimitError" ? e.message : e.name === "PasswordException"
         ? "This PDF requires a password. Unlock it with the correct password before converting."
         : "Conversion could not complete. The PDF may be invalid, the rendering engine may not have loaded, or this browser may have insufficient memory. No partial PDF was generated. Try a smaller PDF or another browser.");
     } finally {
       if (canvas) canvas.width = canvas.height = 0;
       try { await loadingTask?.destroy(); } catch { /* Preserve the conversion result/error. */ }
-      setProcessing(false);
+      if (activeTask.current === loadingTask) activeTask.current = null;
+      if (isCurrentResult(resultVersion)) setProcessing(false);
     }
   };
 
@@ -85,6 +107,7 @@ export default function PDFToGrayscale() {
       current="/tools/pdf-to-grayscale" faqs={faqs}>
 
       <p role="note">Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.</p>
+      <p>Rendering limits: 16 million pixels per page, 16,384 pixels per side and 128 MiB of encoded page images. Your browser may run out of memory sooner.</p>
       {error && <p role="alert">{error}</p>}
 
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (
