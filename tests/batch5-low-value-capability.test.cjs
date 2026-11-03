@@ -25,7 +25,7 @@ const specs = {
     sections: {
       'Keep a working source and a delivery copy': ['authoritative working version', 'Revise wording', 'The explicitly requested format'],
       'Example: revise the report, then assemble the packet': ['Correct the paragraph in the working document first', 'Only then assemble the PDF appendix', 'do not reconstruct editable Word paragraphs'],
-      'If only the PDF remains, conversion is a separate job': ['not a PDFcraft feature', 'no PDF-to-Word or OCR tool', 'compare paragraphs, tables and reading order'],
+      'If only the PDF remains, conversion is a separate job': ['not a GetPDFCraft feature', 'no PDF-to-Word or OCR tool', 'compare paragraphs, tables and reading order'],
       'Let the recipient requirement override your preference': ['receiving instructions', 'not a guarantee', 'Keep the source'],
     },
   },
@@ -39,9 +39,9 @@ const specs = {
 // Match affirmative product-operation claims; negative disclosures and
 // descriptions of external editors/signature concepts remain legitimate.
 const forbidden = [
-  /\bPDFcraft\s+(?:(?:can|will|lets you|allows you to|helps you)\s+)?(?:converts?|exports?|generates?|produces?|extracts?)\b[^.!?]{0,90}\b(?:Word|DOCX?|Excel|XLSX?|spreadsheets?|tables?)\b/i,
-  /\bUse\s+PDFcraft\s+to\s+(?:download|save|export|convert)\b[^.!?]{0,90}\b(?:DOCX?|Word|Excel|XLSX?)\b/i,
-  /\bPDFcraft\s+(?:(?:can|will|lets you|allows you to|helps you)\s+)?(?:(?:digitally|electronically)\s+signs?|signs?\s+(?:PDFs?|documents?)|(?:creates?|provides?|adds?)\s+(?:(?:digital|electronic|cryptographic|certificate-based)\s+)?signatures?)\b/i,
+  /\bGetPDFCraft\s+(?:(?:can|will|lets you|allows you to|helps you)\s+)?(?:converts?|exports?|generates?|produces?|extracts?)\b[^.!?]{0,90}\b(?:Word|DOCX?|Excel|XLSX?|spreadsheets?|tables?)\b/i,
+  /\bUse\s+GetPDFCraft\s+to\s+(?:download|save|export|convert)\b[^.!?]{0,90}\b(?:DOCX?|Word|Excel|XLSX?)\b/i,
+  /\bGetPDFCraft\s+(?:(?:can|will|lets you|allows you to|helps you)\s+)?(?:(?:digitally|electronically)\s+signs?|signs?\s+(?:PDFs?|documents?)|(?:creates?|provides?|adds?)\s+(?:(?:digital|electronic|cryptographic|certificate-based)\s+)?signatures?)\b/i,
   /\b(?:Use\s+)?Watermark\s+(?:to|can|lets you)\s+(?:(?:digitally|electronically)\s+)?sign\b/i,
   /\b(?:Password protection|Watermark)\s+(?:is|provides|creates|equals)\s+(?:an?\s+)?(?:digital|electronic|cryptographic)\s+signature\b/i,
 ];
@@ -53,7 +53,7 @@ function validate(slug, source, html) {
   claims(prose(a)); claims(plain(html));
   assert.equal(a.title, spec.title); assert.equal(a.date, spec.date);
   assert(source.includes('metadata = blogMetadata("' + slug + '")'));
-  assert.equal(plain(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | PDFcraft');
+  assert.equal(plain(html.match(/<title>(.*?)<\/title>/)[1]), spec.title + ' | GetPDFCraft');
   assert.equal(plain(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), spec.title);
   for (const key of ['rel="canonical" href="', 'property="og:url" content="']) assert(html.includes(key + origin + '/blog/' + slug + '"'));
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
@@ -86,28 +86,28 @@ function validate(slug, source, html) {
   }
 }
 const mutations = [
-  'PDFcraft converts PDF files to Word documents.',
-  'Use PDFcraft to download your PDF as DOCX.',
-  'PDFcraft converts PDF tables directly to Excel.',
-  'PDFcraft exports XLSX spreadsheets.',
-  'PDFcraft lets you digitally sign PDFs.',
-  'PDFcraft digitally signs PDFs.',
-  'PDFcraft electronically signs PDFs.',
-  'PDFcraft exports DOCX.',
+  'GetPDFCraft converts PDF files to Word documents.',
+  'Use GetPDFCraft to download your PDF as DOCX.',
+  'GetPDFCraft converts PDF tables directly to Excel.',
+  'GetPDFCraft exports XLSX spreadsheets.',
+  'GetPDFCraft lets you digitally sign PDFs.',
+  'GetPDFCraft digitally signs PDFs.',
+  'GetPDFCraft electronically signs PDFs.',
+  'GetPDFCraft exports DOCX.',
   'Use Watermark to digitally sign your document.',
   'Password protection is a digital signature.',
-  'PDFcraft can generate DOC files.',
-  'PDFcraft produces Excel workbooks.',
-  'PDFcraft extracts tables from your PDF.',
-  'PDFcraft allows you to electronically sign documents.',
-  'PDFcraft provides cryptographic signatures.',
+  'GetPDFCraft can generate DOC files.',
+  'GetPDFCraft produces Excel workbooks.',
+  'GetPDFCraft extracts tables from your PDF.',
+  'GetPDFCraft allows you to electronically sign documents.',
+  'GetPDFCraft provides cryptographic signatures.',
   'Watermark can sign PDFs.',
   'Watermark creates an electronic signature.',
 ];
 let rejected = 0;
 for (const text of [
-  'PDFcraft does not convert PDF to Word or Excel.',
-  'PDFcraft has no signing or OCR tool.',
+  'GetPDFCraft does not convert PDF to Word or Excel.',
+  'GetPDFCraft has no signing or OCR tool.',
   'Password protection is not a digital signature.',
   'Use a separate editor for Word conversion.',
   'A certificate-based signing workflow is different from a visible mark.',

@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FAF5FF",
   "ctaHref": "/tools/watermark-pdf",
   "ctaText": "Add watermark to your PDF now — free",
-  "intro": "A visible watermark is not a security control. Use a label such as DRAFT or REVIEW COPY to communicate status, not to prevent copying, editing or removal. PDFcraft adds text across every page rather than encrypting the document.",
+  "intro": "A visible watermark is not a security control. Use a label such as DRAFT or REVIEW COPY to communicate status, not to prevent copying, editing or removal. GetPDFCraft adds text across every page rather than encrypting the document.",
   "sections": [
     {
       "heading": "Controls versus fixed behavior",

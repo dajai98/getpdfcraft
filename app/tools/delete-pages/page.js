@@ -11,7 +11,7 @@ const faqs = [
   { q: "Can I delete multiple pages at once?", a: "Yes. Select multiple pages to remove in one operation, but at least one page must remain." },
   { q: "Does this securely erase page content?", a: "No. This tool removes pages from the visible document structure. Removed content may remain recoverable in PDF objects. It is not a secure redaction or sanitization tool." },
   { q: "Can I preview pages before deleting?", a: "The tool shows page numbers for selection, not page thumbnails. Check the original in a PDF viewer before choosing pages." },
-  { q: "Is the original file changed?", a: "No. PDFcraft creates a new file with the pages removed. Your original PDF is not affected." },
+  { q: "Is the original file changed?", a: "No. GetPDFCraft creates a new file with the pages removed. Your original PDF is not affected." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "What if I delete the wrong page?", a: "Simply upload the original file again and start over. The original is never modified." },
 ];
@@ -101,7 +101,7 @@ export default function DeletePages() {
           )}
 
           <button onClick={deletePages} disabled={processing || selected.size === 0} style={{
-            width: "100%", background: (processing || selected.size === 0) ? "#d1d5db" : "#E8380D",
+            width: "100%", background: (processing || selected.size === 0) ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16, cursor: (processing || selected.size === 0) ? "not-allowed" : "pointer", fontFamily: "inherit",
           }}>

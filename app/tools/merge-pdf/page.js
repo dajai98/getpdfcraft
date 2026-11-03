@@ -7,7 +7,7 @@ import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
 
 const faqs = [
-  { q: "Is merging PDFs on PDFcraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
+  { q: "Is merging PDFs on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
   { q: "Does it work on iPhone and Android?", a: "Use a current browser on desktop or mobile. Compatibility and practical file limits depend on your browser and device." },
@@ -70,7 +70,7 @@ export default function MergePDF() {
       )}
 
       {files.length >= 2 && !downloadUrl && (
-        <button onClick={merge} disabled={processing} style={{ marginTop: 20, width: "100%", background: processing ? "#d1d5db" : "#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
+        <button onClick={merge} disabled={processing} style={{ marginTop: 20, width: "100%", background: processing ? "#d1d5db" : "#C92F0A", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
           {processing ? "⏳ Merging your PDFs..." : `⊕ Merge ${files.length} PDFs`}
         </button>
       )}

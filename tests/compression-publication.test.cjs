@@ -37,7 +37,7 @@ const mutations = {
   'browser pass invented': m => { m.rows[0].browserExecution = 'PASS'; },
   'percentage altered': m => { m.rows[0].percentChange = -90; },
   'growth hidden': m => { m.rows = m.rows.filter(r => !(r.byteChange > 0)); },
-  'endorsement invented': m => { m.introduction += ' NASA endorses PDFcraft.'; },
+  'endorsement invented': m => { m.introduction += ' NASA endorses GetPDFCraft.'; },
   'universal guarantee invented': m => { m.introduction += ' Guaranteed savings and universal visual fidelity.'; },
   'synthetic proxy relabeled': m => { m.rows[1].fixtureKind = 'REAL_WORLD'; },
   'publication enabled': m => { m.publishEnabled = true; },

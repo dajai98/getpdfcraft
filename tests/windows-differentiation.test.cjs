@@ -14,7 +14,7 @@ const title = 'How to Merge PDF on Windows Without Installing an App';
 assert(source.includes('metadata = blogMetadata("' + slug + '")'));
 assert(source.includes('title={' + JSON.stringify(title) + '}'));
 assert(source.includes('date="February 2026"'));
-assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), title + ' | PDFcraft');
+assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), title + ' | GetPDFCraft');
 assert.equal(decode(html.match(/<h1[^>]*>(.*?)<\/h1>/)[1]), title);
 for (const pattern of ['rel="canonical" href="', 'property="og:url" content="']) {
   assert(html.includes(pattern + 'https://getpdfcraft.com/blog/' + slug + '"'));

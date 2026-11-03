@@ -130,7 +130,7 @@ function loadModule(p,cache={}) {
   await test('Offline and mobile statements qualified',()=>{
     assert(read('app/blog/how-to-merge-pdf-on-mac/page.js').includes('does not guarantee offline'));
     for(const f of walk('app/blog').filter(f=>f.endsWith('page.js')))assert(!/once loaded can work offline|works immediately|without downloading anything|for in your browser access/.test(read(f)),f);
-    assert(!read('app/tools/split-pdf/page.js').includes('Yes. PDFcraft works on iPhone'));
+    assert(!read('app/tools/split-pdf/page.js').includes('Yes. GetPDFCraft works on iPhone'));
     assert(read('app/tools/split-pdf/page.js').includes('Compatibility and practical file limits'));
   });
   await test('Homepage ranking titles replaced with destination titles',()=>{
@@ -144,12 +144,17 @@ function loadModule(p,cache={}) {
     assert(h.includes('rel="canonical" href="https://getpdfcraft.com/'+route+'"'));assert(!v('og:title').startsWith('Free PDF Tools Online'));
   });
   await test('CTA contrast at least 4.5',()=>{
-    assert(read('components/ui/BlogPost.js').includes('color: "#9ca3af", marginBottom: 24'));
+    const article=read('components/ui/BlogPost.js'),actionCss=read('app/globals.css');
+    const secondary=article.match(/<p style=\{\{ color: "#([0-9a-fA-F]{6})", marginBottom: 24 \}\}><Link href="\/blog#how-it-works"/);
+    const action=actionCss.match(/\.primary-action \{ background: #([0-9a-fA-F]{6});/);
+    assert(secondary && action,'CTA text and action fill must be inspectable');
     const luminance=s=>s.match(/../g).map(v=>parseInt(v,16)/255).map(v=>v<=0.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
-    const ratio=(luminance('9ca3af')+.05)/(luminance('111827')+.05);console.log('CTA contrast',ratio);assert(ratio>=4.5);
+    const textRatio=(luminance(secondary[1])+.05)/(luminance('111827')+.05);
+    const buttonRatio=1.05/(luminance(action[1])+.05);
+    console.log('CTA contrast',textRatio,buttonRatio);assert(textRatio>=4.5 && buttonRatio>=4.5);
   });
   await test('ESLint configuration loads',async()=>{const r=req('child_process').spawnSync(process.execPath,[root+'/node_modules/eslint/bin/eslint.js','--config','eslint.config.mjs','--format','json','app/page.js'],{cwd:root,encoding:'utf8'});assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout)[0].errorCount,0)});
-  await test('Icon is the existing 512x512 PNG and exported unchanged',()=>{
+  await test('Brand icon is the sole 512x512 PNG and exported unchanged',()=>{
     const b=fs.readFileSync(root+'/public/icon.png');assert.equal(b.subarray(0,8).toString('hex'),'89504e470d0a1a0a');assert.equal(b.readUInt32BE(16),512);assert.equal(b.readUInt32BE(20),512);assert.deepEqual(fs.readFileSync(root+'/out/icon.png'),b);
     const candidates=walk('app').concat(walk('public')).filter(f=>/(?:favicon|apple-icon|\/icon\.)/i.test(f));assert.deepEqual(candidates,['public/icon.png']);
     for(const f of walk('out').filter(f=>f.endsWith('.html'))){const links=[...read(f).matchAll(/<link[^>]*rel="([^"]*icon[^"]*)"[^>]*>/g)].map(m=>m[0]);assert.equal(links.length,1,f);assert(links[0].includes('href="/icon.png"'));assert(links[0].includes('sizes="512x512"'))}
@@ -160,7 +165,7 @@ function loadModule(p,cache={}) {
     assert(!read('app/tools/reorder-pages/page.js').includes('file, pageCount'));
   });
   await test('Editorial typos and duplicate FAQ answers removed',()=>{
-    assert(!read('lib/toolMetadata.js').includes('Free ? PDFcraft'));assert(!read('app/tools/watermark-pdf/page.js').includes('page?s'));
+    assert(!read('lib/toolMetadata.js').includes('Free ? GetPDFCraft'));assert(!read('app/tools/watermark-pdf/page.js').includes('page?s'));
     const s=read('app/blog/how-to-merge-pdf-on-windows/page.js');assert(s.includes('does not verify a direct PDF-merge workflow in Word'));assert(s.includes('does not establish a built-in merge feature'));
   });
   console.log('TOTAL '+results.length+' PASS '+results.filter(r=>r.status==='PASS').length+' FAIL '+results.filter(r=>r.status==='FAIL').length);

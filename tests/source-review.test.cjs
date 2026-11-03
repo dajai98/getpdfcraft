@@ -4,7 +4,7 @@ const { historicalSource, reviewedCurrentSource } = require('../scripts/lab/revi
 const read = p => fs.readFileSync(p);
 const file = 'app/tools/compress-pdf/page.js';
 const expected = '1bc4a7c268e12d3ce66fe8f70bb281e8b60ffd71fcc327bea6963bc770c8a8ce';
-const reviewFile = 'docs/final-adsense-recovery-2026-11-02/evidence/source-transition.json';
+const reviewFile = 'docs/final-ux-release-2026-11-03/evidence/source-transition.json';
 let count = 0;
 function test(name, fn) { fn(); count++; console.log('PASS ' + name); }
 test('historical source verifies original bytes separately from current source', () => {

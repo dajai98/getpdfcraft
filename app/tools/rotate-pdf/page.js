@@ -54,7 +54,7 @@ export default function RotatePDF() {
                 <button key={o.val} aria-pressed={rotation === o.val} onClick={() => setRotation(o.val)} style={{
                   flex: 1, padding: "12px 8px", borderRadius: 10, fontWeight: 600, fontSize: 14,
                   border: `1.5px solid ${rotation===o.val?"#E8380D":"#e5e7eb"}`,
-                  background: rotation===o.val ? "#E8380D" : "white",
+                  background: rotation===o.val ? "#C92F0A" : "white",
                   color: rotation===o.val ? "white" : "#6b7280",
                   cursor: "pointer", fontFamily: "inherit",
                 }}>{o.label}</button>
@@ -62,7 +62,7 @@ export default function RotatePDF() {
             </div>
           </div>
           <button onClick={rotate} disabled={processing} style={{
-            width: "100%", background: processing ? "#d1d5db" : "#E8380D",
+            width: "100%", background: processing ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit",
           }}>

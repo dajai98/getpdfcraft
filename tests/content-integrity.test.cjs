@@ -126,9 +126,9 @@ for (const post of posts) test('Shared article metadata ' + post.slug, () => {
   const source = read('app/blog/' + post.slug + '/page.js');
   assert(source.includes('metadata = blogMetadata(' + JSON.stringify(post.slug) + ')'));
   const html = read('out/blog/' + post.slug + '.html');
-  assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), post.title + ' | PDFcraft');
+  assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), post.title + ' | GetPDFCraft');
   assert.equal(attr(html, 'name', 'description', 'content'), post.description);
-  assert.equal(attr(html, 'property', 'og:title', 'content'), post.title + ' | PDFcraft');
+  assert.equal(attr(html, 'property', 'og:title', 'content'), post.title + ' | GetPDFCraft');
   assert.equal(normalize(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1]), post.title);
 });
 for (const [slug, [article]] of Object.entries(guides)) test('Relevant guide links ' + slug, () => {
@@ -149,7 +149,7 @@ test('Article publisher label agrees with organization schema without personal a
     assert.equal(article.author['@type'], 'Organization');
     assert.equal(article.author.name, article.publisher.name);
     assert(visible.includes('Published by ' + article.publisher.name), post.slug);
-    assert(!visible.includes('By PDFcraft'), post.slug);
+    assert(!visible.includes('By GetPDFCraft'), post.slug);
     assert(!/\b(?:Written|Tested) by Rai Dajai\b/i.test(visible), post.slug);
   }
 });
@@ -166,7 +166,7 @@ test('Existing favicon exported without changes; no duplicate icon tags', () => 
 test('Retained format/security guides clearly disclose missing tools', () => {
   for (const slug of ['pdf-vs-word-which-is-better', 'pdf-security-guide']) {
     const html = read('out/blog/' + slug + '.html');
-    assert(/PDFcraft (?:does not|has no)/.test(html), slug);
+    assert(/GetPDFCraft (?:does not|has no)/.test(html), slug);
   }
 });
 test('Measurement guide has no Tested badge or invented benchmark', () => {

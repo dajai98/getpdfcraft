@@ -120,7 +120,7 @@ export default function AddPageNumbers() {
                     padding: "10px 6px", borderRadius: 10, fontWeight: 600, fontSize: 12,
                     border: `1.5px solid ${position === p.val ? "#E8380D" : "#e5e7eb"}`,
                     background: position === p.val ? "#FEF2F2" : "white",
-                    color: position === p.val ? "#E8380D" : "#6b7280",
+                    color: position === p.val ? "#C92F0A" : "#6b7280",
                     cursor: "pointer", fontFamily: "inherit",
                   }}
                 >
@@ -171,7 +171,7 @@ export default function AddPageNumbers() {
           onClick={addNumbers}
           disabled={processing}
           style={{
-            width: "100%", background: processing ? "#d1d5db" : "#E8380D",
+            width: "100%", background: processing ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16,
             cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit"

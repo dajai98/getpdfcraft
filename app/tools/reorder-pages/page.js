@@ -12,7 +12,7 @@ const faqs = [
   { q: "Can I move a page to any position?", a: "Yes. Keep clicking Move Up or Move Down to move a page to any position in the document." },
   { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
-  { q: "Is the original file changed?", a: "No. PDFcraft creates a new reordered file. Your original PDF is not affected." },
+  { q: "Is the original file changed?", a: "No. GetPDFCraft creates a new reordered file. Your original PDF is not affected." },
 ];
 
 export default function ReorderPages() {
@@ -94,7 +94,7 @@ export default function ReorderPages() {
             ))}
           </div>
 
-          <button onClick={reorder} disabled={processing} style={{ width: "100%", background: processing ? "#d1d5db" : "#E8380D", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
+          <button onClick={reorder} disabled={processing} style={{ width: "100%", background: processing ? "#d1d5db" : "#C92F0A", color: "white", border: "none", padding: 16, borderRadius: 14, fontWeight: 700, fontSize: 16, cursor: processing ? "not-allowed" : "pointer", fontFamily: "inherit" }}>
             {processing ? "⏳ Reordering..." : "↕ Save New Order"}
           </button>
         </div>

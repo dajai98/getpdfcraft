@@ -31,7 +31,7 @@ function contrast(fg, bg) {
   return (Math.max(lum(fg), lum(bg)) + .05) / (Math.min(lum(fg), lum(bg)) + .05);
 }
 const home = read('out/index.html');
-for (const label of ['PDFcraft behavior', '13 free tools. Local document processing. No account required.']) {
+for (const label of ['GetPDFCraft behavior', '13 free tools. Local document processing. No account required.']) {
   const tag = [...home.matchAll(/<(th|p)\b([^>]*)>([^<]*)<\/(?:th|p)>/g)].find(m => m[3] === label);
   assert(tag, label); const color = tag[2].match(/color:(#[a-f\d]{6})/i)[1];
   assert(contrast(color, '#111827') >= 4.5, label);

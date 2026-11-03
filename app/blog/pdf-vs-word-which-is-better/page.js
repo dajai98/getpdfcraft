@@ -6,7 +6,7 @@ export default function Post() {
     <BlogPost tag={"Guide"} tagColor="#4F46E5" tagBg="#EEF2FF"
       title={"PDF vs Word — Which Format Should You Use?"}
       date="February 2026" readTime="7 min read"
-      intro={"Choose the format by what the next person must do: revise the wording, review a fixed page layout, or submit a file to a system with its own requirements. Keep the editable working document even when you deliver a PDF. PDFcraft can organize supported PDF pages, but it does not convert them into Word documents or edit their existing paragraphs."}
+      intro={"Choose the format by what the next person must do: revise the wording, review a fixed page layout, or submit a file to a system with its own requirements. Keep the editable working document even when you deliver a PDF. GetPDFCraft can organize supported PDF pages, but it does not convert them into Word documents or edit their existing paragraphs."}
       sections={[
   {
     "heading": "Keep a working source and a delivery copy",
@@ -50,7 +50,7 @@ export default function Post() {
         "body": "If a colleague must rewrite sections, agree on the editable format and version rather than sending only a flattened page image. Keep the previous delivery copy for comparison; label the new handoff clearly so the wrong version is not circulated."
       },
       {
-        "title": "Use PDFcraft only for the supported page task",
+        "title": "Use GetPDFCraft only for the supported page task",
         "body": "Merge appends PDFs in displayed insertion order; Reorder Pages changes the page sequence with Up/Down controls. Those operations do not reconstruct editable Word paragraphs. Check the tool limitations before using documents with interactive features."
       }
     ],
@@ -67,11 +67,11 @@ export default function Post() {
   },
   {
     "heading": "If only the PDF remains, conversion is a separate job",
-    "text": "Do not rename a .pdf file to .docx or use a page-image export as an editable-document recovery method. Microsoft documents that opening a PDF in Word converts a copy and attempts to reconstruct its layout; the result may differ, and a graphics-heavy page may remain an image. That is documented Word behavior, not a PDFcraft feature or a locally tested conversion result.",
+    "text": "Do not rename a .pdf file to .docx or use a page-image export as an editable-document recovery method. Microsoft documents that opening a PDF in Word converts a copy and attempts to reconstruct its layout; the result may differ, and a graphics-heavy page may remain an image. That is documented Word behavior, not a GetPDFCraft feature or a locally tested conversion result.",
     "steps": [
       {
         "title": "Check the result you actually need",
-        "body": "If the source is a scan, recovering its words requires a text-recognition workflow; a visible image of those words is not recognized text. PDFcraft has no PDF-to-Word or OCR tool. For a separate conversion workflow, compare paragraphs, tables and reading order against the original rather than treating a successful save as proof of accuracy."
+        "body": "If the source is a scan, recovering its words requires a text-recognition workflow; a visible image of those words is not recognized text. GetPDFCraft has no PDF-to-Word or OCR tool. For a separate conversion workflow, compare paragraphs, tables and reading order against the original rather than treating a successful save as proof of accuracy."
       }
     ],
     "list": [
@@ -108,15 +108,15 @@ export default function Post() {
     "a": "No. The format is not inherently tamper-proof. Format choice, opening access and signature validation are separate decisions; this guide does not promise editing prevention."
   },
   {
-    "q": "Can PDFcraft turn a PDF into an editable Word file?",
-    "a": "No. PDFcraft provides supported page operations and image output, not DOC or DOCX generation, existing-text editing or OCR. Use the editable source or a separate conversion workflow."
+    "q": "Can GetPDFCraft turn a PDF into an editable Word file?",
+    "a": "No. GetPDFCraft provides supported page operations and image output, not DOC or DOCX generation, existing-text editing or OCR. Use the editable source or a separate conversion workflow."
   },
   {
     "q": "When should I avoid converting back from PDF?",
     "a": "When you still have the current editable source, revise that source and export a new delivery copy. Reconstruction from PDF can require layout corrections and is not a replacement for keeping the working document."
   }
 ]}
-      ctaText={"Work with your PDFs — free tools from PDFcraft"}
+      ctaText={"Work with your PDFs — free tools from GetPDFCraft"}
       ctaHref={"/"}
     />
   );

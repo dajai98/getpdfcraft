@@ -5,7 +5,7 @@
     "tag": "Merge PDF",
     "tagColor": "#DC2626",
     "tagBg": "#FEF2F2",
-    "description": "Combine PDFs in insertion order with PDFcraft. Check page order, encrypted inputs, and practical browser limits."
+    "description": "Combine PDFs in insertion order with GetPDFCraft. Check page order, encrypted inputs, and practical browser limits."
   },
   {
     "slug": "compress-pdf-without-losing-quality",
@@ -48,16 +48,16 @@
     "tag": "Comparison",
     "tagColor": "#7C3AED",
     "tagBg": "#F5F3FF",
-    "description": "Evaluate PDFcraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies."
+    "description": "Evaluate GetPDFCraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies."
   },
   {
     "slug": "smallpdf-alternative",
-    "title": "A Smallpdf Alternative: Check PDFcraft Against Your Task",
+    "title": "A Smallpdf Alternative: Check GetPDFCraft Against Your Task",
     "date": "Feb 2, 2026",
     "tag": "Comparison",
     "tagColor": "#7C3AED",
     "tagBg": "#F5F3FF",
-    "description": "Consider PDFcraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability."
+    "description": "Consider GetPDFCraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability."
   },
   {
     "slug": "adobe-acrobat-alternative-free",
@@ -66,7 +66,7 @@
     "tag": "Comparison",
     "tagColor": "#7C3AED",
     "tagBg": "#F5F3FF",
-    "description": "See which PDF tasks PDFcraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence."
+    "description": "See which PDF tasks GetPDFCraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence."
   },
   {
     "slug": "merge-pdf-on-iphone",
@@ -105,12 +105,12 @@
   },
   {
     "slug": "best-free-pdf-tools-online",
-    "title": "13 Free PDFcraft Tools: What Each One Actually Does",
+    "title": "13 Free GetPDFCraft Tools: What Each One Actually Does",
     "date": "Feb 12, 2026",
     "tag": "Guide",
     "tagColor": "#4F46E5",
     "tagBg": "#EEF2FF",
-    "description": "A practical guide to all 13 PDFcraft tools, supported formats, controls, and limitations."
+    "description": "A practical guide to all 13 GetPDFCraft tools, supported formats, controls, and limitations."
   },
   {
     "slug": "how-to-convert-jpg-to-pdf",
@@ -128,7 +128,7 @@
     "tag": "Guide",
     "tagColor": "#4F46E5",
     "tagBg": "#EEF2FF",
-    "description": "Use PDFcraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool."
+    "description": "Use GetPDFCraft for page operations and limited overlays. Existing-text editing, OCR, and form filling require a different tool."
   },
   {
     "slug": "pdf-file-size-too-large",
@@ -146,7 +146,7 @@
     "tag": "Guide",
     "tagColor": "#2563EB",
     "tagBg": "#EFF6FF",
-    "description": "Apply 90, 180, or 270 degrees of additional rotation to all pages. PDFcraft does not provide selected-page rotation."
+    "description": "Apply 90, 180, or 270 degrees of additional rotation to all pages. GetPDFCraft does not provide selected-page rotation."
   },
   {
     "slug": "convert-pdf-to-png-free",
@@ -164,7 +164,7 @@
     "tag": "Mac",
     "tagColor": "#374151",
     "tagBg": "#F9FAFB",
-    "description": "Merge PDFs using PDFcraft or native options available on your Mac. Preserve originals and verify page order and output."
+    "description": "Merge PDFs using GetPDFCraft or native options available on your Mac. Preserve originals and verify page order and output."
   },
   {
     "slug": "how-to-merge-pdf-on-windows",
@@ -191,7 +191,7 @@
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
-    "description": "Distinguish opening-password encryption, visible labels, and signatures. Understand PDFcraft’s security and redaction limitations."
+    "description": "Distinguish opening-password encryption, visible labels, and signatures. Understand GetPDFCraft’s security and redaction limitations."
   },
   {
     "slug": "how-to-combine-pdf-and-images",
@@ -227,11 +227,11 @@
   },
   {
     "slug": "how-to-protect-pdf-from-editing",
-    "title": "Protect a PDF from Editing: What PDFcraft Can and Cannot Do",
+    "title": "Protect a PDF from Editing: What GetPDFCraft Can and Cannot Do",
     "tag": "Security",
     "tagColor": "#DB2777",
     "tagBg": "#FDF2F8",
-    "description": "Understand the limits of PDF passwords, watermarks, and rasterization. PDFcraft does not make documents read-only or tamper-proof."
+    "description": "Understand the limits of PDF passwords, watermarks, and rasterization. GetPDFCraft does not make documents read-only or tamper-proof."
   },
   {
     "slug": "secure-pdf-on-mac",
@@ -239,16 +239,16 @@
     "tag": "Mac",
     "tagColor": "#374151",
     "tagBg": "#F9FAFB",
-    "description": "Try PDFcraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility."
+    "description": "Try GetPDFCraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility."
   },
   {
     "slug": "how-browser-based-pdf-processing-works",
-    "title": "How PDFcraft Processes Files Locally in Your Browser",
+    "title": "How GetPDFCraft Processes Files Locally in Your Browser",
     "date": "Aug 5, 2026",
     "tag": "How It Works",
     "tagColor": "#0891B2",
     "tagBg": "#ECFEFF",
-    "description": "Follow PDFcraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests."
+    "description": "Follow GetPDFCraft’s local document processing, network dependencies, downloads, and privacy limits without assuming zero web requests."
   },
   {
     "slug": "pdf-compression-real-test-results",

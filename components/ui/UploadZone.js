@@ -64,7 +64,7 @@ export default function UploadZone({ onFiles, multiple = false, label = "Drop yo
         type="button"
         onClick={triggerInput}
         style={{
-          background: "#E8380D",
+          background: "#C92F0A",
           color: "white",
           border: "none",
           padding: "14px 36px",

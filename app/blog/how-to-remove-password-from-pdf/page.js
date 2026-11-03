@@ -50,7 +50,7 @@ const article = {
           ],
           [
             "No known password",
-            "Ask the sender or consult your records; PDFcraft provides no cracking or recovery path."
+            "Ask the sender or consult your records; GetPDFCraft provides no cracking or recovery path."
           ]
         ]
       }

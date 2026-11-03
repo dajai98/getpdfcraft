@@ -1,0 +1,38 @@
+[
+    {
+        "suite":  "content-integrity",
+        "exitCode":  0
+    },
+    {
+        "suite":  "batch3-articles",
+        "exitCode":  1
+    },
+    {
+        "suite":  "batch4b-final-differentiation",
+        "exitCode":  0
+    },
+    {
+        "suite":  "batch5-low-value-capability",
+        "exitCode":  0
+    },
+    {
+        "suite":  "batch9c-corrections",
+        "exitCode":  0
+    },
+    {
+        "suite":  "competitor-differentiation",
+        "exitCode":  0
+    },
+    {
+        "suite":  "windows-differentiation",
+        "exitCode":  0
+    },
+    {
+        "suite":  "final-repair",
+        "exitCode":  1
+    },
+    {
+        "suite":  "tool-documentation",
+        "exitCode":  0
+    }
+]

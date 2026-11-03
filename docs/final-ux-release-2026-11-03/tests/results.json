@@ -1,0 +1,102 @@
+[
+    {
+        "suite":  "batch3-articles.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\batch3-articles.test.log"
+    },
+    {
+        "suite":  "batch4b-final-differentiation.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\batch4b-final-differentiation.test.log"
+    },
+    {
+        "suite":  "batch5-low-value-capability.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\batch5-low-value-capability.test.log"
+    },
+    {
+        "suite":  "batch8-navigation.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\batch8-navigation.test.log"
+    },
+    {
+        "suite":  "batch9c-corrections.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\batch9c-corrections.test.log"
+    },
+    {
+        "suite":  "competitor-differentiation.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\competitor-differentiation.test.log"
+    },
+    {
+        "suite":  "compression-evidence.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-evidence.test.log"
+    },
+    {
+        "suite":  "compression-index.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-index.test.log"
+    },
+    {
+        "suite":  "compression-publication.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-publication.test.log"
+    },
+    {
+        "suite":  "compression-realworld.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-realworld.test.log"
+    },
+    {
+        "suite":  "compression-review.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-review.test.log"
+    },
+    {
+        "suite":  "compression-runs.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\compression-runs.test.log"
+    },
+    {
+        "suite":  "content-integrity.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\content-integrity.test.log"
+    },
+    {
+        "suite":  "final-recovery.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\final-recovery.test.log"
+    },
+    {
+        "suite":  "final-repair.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\final-repair.test.log"
+    },
+    {
+        "suite":  "navigation-repair.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\navigation-repair.test.log"
+    },
+    {
+        "suite":  "preservation-evidence.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\preservation-evidence.test.log"
+    },
+    {
+        "suite":  "source-review.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\source-review.test.log"
+    },
+    {
+        "suite":  "tool-documentation.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\tool-documentation.test.log"
+    },
+    {
+        "suite":  "windows-differentiation.test.cjs",
+        "exit":  0,
+        "log":  "docs\\final-ux-release-2026-11-03\\tests\\windows-differentiation.test.log"
+    }
+]

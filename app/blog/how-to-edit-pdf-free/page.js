@@ -12,10 +12,10 @@ const article = {
   "tagBg": "#EEF2FF",
   "ctaHref": "/",
   "ctaText": "Choose a PDF page operation",
-  "intro": "Start by naming the edit. Moving a page, changing its orientation and replacing a paragraph are different operations. PDFcraft supports page organization and limited drawn overlays; it is not a full Acrobat-style content editor.",
+  "intro": "Start by naming the edit. Moving a page, changing its orientation and replacing a paragraph are different operations. GetPDFCraft supports page organization and limited drawn overlays; it is not a full Acrobat-style content editor.",
   "sections": [
     {
-      "heading": "Can PDFcraft make this edit?",
+      "heading": "Can GetPDFCraft make this edit?",
       "table": {
         "headers": [
           "Requested edit",

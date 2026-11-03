@@ -1,6 +1,7 @@
 import Link from "next/link";
 import navigation from "@/lib/siteNavigation.json";
 import { AdLeaderboard } from "@/components/ui/Ads";
+import CategoryIcon from "@/components/ui/CategoryIcon";
 
 const tools = [
   { icon: "⊕", name: "Merge PDF", desc: "Combine multiple PDFs into one file.", href: "/tools/merge-pdf", bg: "#FEF2F2", color: "#DC2626" },
@@ -19,9 +20,9 @@ const tools = [
 ];
 
 const features = [
-  { icon: "🔒", title: "Files processed locally", desc: "PDFcraft processes document contents in your browser, without a PDF-processing upload backend. Website and third-party resource requests are separate from document processing." },
+  { icon: "🔒", title: "Files processed locally", desc: "GetPDFCraft processes document contents in your browser, without a PDF-processing upload backend. Website and third-party resource requests are separate from document processing." },
   { icon: "⚡", title: "Browser-based tools", desc: "Open a tool and select your files. Processing time and usable file size depend on your browser, device memory, and document complexity. Some tools load third-party processing resources." },
-  { icon: "✓", title: "Free to use", desc: "All 13 current tools are free to use with no account required. PDFcraft adds no branding watermark to your output." },
+  { icon: "✓", title: "Free to use", desc: "All 13 current tools are free to use with no account required. GetPDFCraft adds no branding watermark to your output." },
 ];
 
 const blogPosts = [
@@ -30,17 +31,24 @@ const blogPosts = [
   { tag: "Comparison", title: "An iLovePDF Alternative for Local PDF Workflows", href: "/blog/ilovepdf-alternative", color: "#7C3AED", bg: "#F5F3FF" },
   { tag: "iPhone", title: "How to Merge PDF on iPhone — No App Needed, Free", href: "/blog/merge-pdf-on-iphone", color: "#2563EB", bg: "#EFF6FF" },
   { tag: "Guide", title: "PDF vs Word — Which Format Is Better and When to Use Each?", href: "/blog/pdf-vs-word-which-is-better", color: "#4F46E5", bg: "#EEF2FF" },
-  { tag: "Guide", title: "13 Free PDFcraft Tools: What Each One Actually Does", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
+  { tag: "Guide", title: "13 Free GetPDFCraft Tools: What Each One Actually Does", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
 ];
 
 const comparisonRows = [
-  ["Document processing", "In your browser; no PDFcraft processing backend upload"],
+  ["Document processing", "In your browser; no GetPDFCraft processing backend upload"],
   ["Account", "No account required"],
   ["Current price", "All 13 tools are free to use"],
-  ["Output branding", "No PDFcraft branding watermark added"],
+  ["Output branding", "No GetPDFCraft branding watermark added"],
   ["Practical limits", "Browser memory, device speed, and file complexity"],
   ["Network access", "Website resources and some tool runtimes load over the internet"],
 ];
+
+const categoryCopy = {
+  pages: ["Page management", "Merge, split and arrange your pages."],
+  optimization: ["Size and appearance", "Compress, add labels or make grayscale copies."],
+  security: ["Password access", "Protect a PDF or unlock it with its password."],
+  rendering: ["Images and PDF", "Render pages or create a PDF from images."],
+};
 
 export default function HomePage() {
   return (
@@ -79,24 +87,19 @@ export default function HomePage() {
       `}</style>
 
       {/* Hero */}
-      <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px 70px", textAlign: "center" }}>
+      <section className="home-hero" style={{ maxWidth: 1152, margin: "0 auto", padding: "44px 24px 36px", textAlign: "center" }}>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#FEF2F2", color: "#DC2626", fontSize: 12, fontWeight: 700, padding: "6px 14px", borderRadius: 100, marginBottom: 28, textTransform: "uppercase", letterSpacing: 0.8, border: "1px solid #fecaca" }}>
           🔒 Privacy-First · Browser-Based · No Uploads
         </div>
-        <h1 style={{ fontSize: "clamp(40px, 7vw, 76px)", fontWeight: 800, color: "#111827", lineHeight: 1.05, letterSpacing: -3, marginBottom: 20 }}>
+        <h1 style={{ fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 800, color: "#111827", lineHeight: 1.08, letterSpacing: -2, marginBottom: 16 }}>
           Free PDF tools.<br />
           <span style={{ color: "#E8380D" }}>Private by design.</span>
         </h1>
         <p style={{ fontSize: 18, color: "#6b7280", maxWidth: 560, margin: "0 auto 36px", lineHeight: 1.65 }}>
           Merge, split, arrange and render PDF pages directly in your browser.
-          Local document processing. No account required. No PDFcraft branding watermarks.
+          Local document processing. No account required. No GetPDFCraft branding watermarks.
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginBottom: 48 }}>
-          {["✓ No account required", "✓ Files processed locally", "✓ 13 browser-based tools", "✓ Free to use"].map(t => (
-            <span key={t} style={{ background: "#f9fafb", border: "1px solid #e5e7eb", padding: "8px 16px", borderRadius: 100, fontSize: 13, color: "#6b7280", fontWeight: 500 }}>{t}</span>
-          ))}
-        </div>
-        <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 16, boxShadow: "0 4px 16px rgba(232,56,13,0.3)" }}>
+        <Link href="/#tools" className="primary-action" style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "white", textDecoration: "none", padding: "14px 24px", borderRadius: 12, fontWeight: 700, fontSize: 16 }}>
           Browse all 13 free tools ↓
         </Link>
       </section>
@@ -104,46 +107,20 @@ export default function HomePage() {
       {/* Ad */}
       <AdLeaderboard />
 
-      {/* What is PDFcraft */}
-      <section style={{ maxWidth: 860, margin: "0 auto", padding: "64px 24px 0" }}>
-        <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -1 }}>What is PDFcraft?</h2>
-        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 24 }}>
-          PDFcraft processes PDF contents directly in your browser without sending them to a PDFcraft processing backend. The website still requests web resources, and some tools download processing components from a third-party CDN.
-        </p>
-        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 40 }}>
-          Built by Dajai Studio, PDFcraft provides 13 free tools with no account required. You can <Link href="/tools/merge-pdf">merge documents</Link>, <Link href="/tools/compress-pdf">try structural compression</Link>, or <Link href="/tools/protect-pdf">add password protection</Link> locally. Results and processing time depend on the file and your device. See the <Link href="/privacy">Privacy Policy</Link> for website and advertising data practices.
-        </p>
-
-        {/* Comparison table */}
-        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>What to expect from PDFcraft</h3>
-        <div style={{ overflowX: "auto", marginBottom: 48 }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
-            <thead>
-              <tr style={{ background: "#111827" }}>
-                <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>Feature</th>
-                <th style={{ padding: "12px 20px", textAlign: "left", color: "#9ca3af", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>PDFcraft behavior</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonRows.map(([feature, behavior], i) => (
-                <tr key={i} style={{ background: i % 2 === 0 ? "#f9fafb" : "white" }}>
-                  <td style={{ padding: "11px 20px", color: "#15803D", fontWeight: 600, borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{feature}</td>
-                  <td style={{ padding: "11px 20px", color: "#6b7280", borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{behavior}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
       {/* Tools */}
-      <section id="tools" style={{ padding: "64px 24px 80px" }}>
+      <section id="tools" style={{ padding: "28px 24px 64px" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
+          <div style={{ textAlign: "center", marginBottom: 24 }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>All 13 PDF Tools — Free to Use</h2>
             <p style={{ fontSize: 16, color: "#6b7280" }}>Choose the operation you need. These tools do not edit existing text, perform OCR or convert PDFs to Word.</p>
           </div>
-          <nav aria-label="Tool categories"><ul>{navigation.toolGroups.map(group => <li key={group.id}><Link href={`/#tools-${group.id}`}>{group.label}</Link></li>)}</ul></nav>
+          <nav aria-label="Tool categories" className="category-nav"><ul className="category-card-grid">{navigation.toolGroups.map(group => (
+            <li key={group.id}><Link className="category-card" href={`/#tools-${group.id}`}>
+              <span className="category-card-icon"><CategoryIcon kind={group.id} /></span>
+              <span className="category-card-copy"><strong>{categoryCopy[group.id][0]}</strong><span>{categoryCopy[group.id][1]}</span></span>
+              <span className="category-card-arrow" aria-hidden="true">→</span>
+            </Link></li>
+          ))}</ul></nav>
           {navigation.toolGroups.map(group => (
           <section key={group.id} id={`tools-${group.id}`} style={{ marginTop: 32 }}>
           <h3 style={{ fontSize: 22, marginBottom: 16 }}>{group.label}</h3>
@@ -163,13 +140,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* What is GetPDFCraft */}
+      <section style={{ maxWidth: 860, margin: "0 auto", padding: "64px 24px 0" }}>
+        <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -1 }}>What is GetPDFCraft?</h2>
+        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 24 }}>
+          GetPDFCraft processes PDF contents directly in your browser without sending them to a GetPDFCraft processing backend. The website still requests web resources, and some tools download processing components from a third-party CDN.
+        </p>
+        <p style={{ fontSize: 16, color: "#6b7280", lineHeight: 1.8, marginBottom: 40 }}>
+          Built by Dajai Studio, GetPDFCraft provides 13 free tools with no account required. You can <Link href="/tools/merge-pdf">merge documents</Link>, <Link href="/tools/compress-pdf">try structural compression</Link>, or <Link href="/tools/protect-pdf">add password protection</Link> locally. Results and processing time depend on the file and your device. See the <Link href="/privacy">Privacy Policy</Link> for website and advertising data practices.
+        </p>
+
+        {/* Comparison table */}
+        <h3 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 20, letterSpacing: -0.5 }}>What to expect from GetPDFCraft</h3>
+        <div style={{ overflowX: "auto", marginBottom: 48 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+            <thead>
+              <tr style={{ background: "#111827" }}>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "white", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #E8380D" }}>Feature</th>
+                <th style={{ padding: "12px 20px", textAlign: "left", color: "#9ca3af", fontWeight: 700, fontSize: 13, borderBottom: "2px solid #374151" }}>GetPDFCraft behavior</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonRows.map(([feature, behavior], i) => (
+                <tr key={i} style={{ background: i % 2 === 0 ? "#f9fafb" : "white" }}>
+                  <td style={{ padding: "11px 20px", color: "#15803D", fontWeight: 600, borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{feature}</td>
+                  <td style={{ padding: "11px 20px", color: "#6b7280", borderBottom: "1px solid #f3f4f6", fontSize: 14 }}>{behavior}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* Ad */}
       <AdLeaderboard />
 
       {/* Features */}
       <section style={{ maxWidth: 1152, margin: "0 auto", padding: "80px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>Why PDFcraft?</h2>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, color: "#111827", letterSpacing: -1.5, marginBottom: 12 }}>Why GetPDFCraft?</h2>
           <p style={{ fontSize: 16, color: "#6b7280" }}>Local document processing. Browser-based. Free to use.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
@@ -214,8 +223,8 @@ export default function HomePage() {
             Your files. Your device. Your privacy.
           </h2>
           <p style={{ fontSize: 16, color: "#9ca3af", marginBottom: 32 }}>13 free tools. Local document processing. No account required.</p>
-          <Link href="/#tools" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#E8380D", color: "white", textDecoration: "none", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 17, boxShadow: "0 4px 20px rgba(232,56,13,0.4)" }}>
-            Start using PDFcraft free →
+          <Link href="/#tools" className="primary-action" style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "white", textDecoration: "none", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 17 }}>
+            Start using GetPDFCraft free →
           </Link>
         </div>
       </section>

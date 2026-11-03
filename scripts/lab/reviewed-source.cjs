@@ -6,7 +6,7 @@ const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const normalizedSha = b => sha(Buffer.from(b.toString('utf8').replace(/\r\n/g, '\n')));
 const archivePath = 'tests/evidence/preservation/runs/preservation-20261018-postrepair-02/source-snapshots.json';
 const archiveHash = '8659dca8e329b97e1abd1eda40a16914d265860c1e6961435f02b4f0079fefce';
-const reviewPath = 'docs/final-adsense-recovery-2026-11-02/evidence/source-transition.json';
+const reviewPath = 'docs/final-ux-release-2026-11-03/evidence/source-transition.json';
 function historicalSource(read, file, expected) {
   const current = read(file);
   if (sha(current) === expected) return current;
@@ -28,6 +28,9 @@ function reviewedCurrentSource(read, file, expected) {
   assert.equal(normalizedSha(current), review.currentLfHashes[file], 'current implementation/dependencies differ from reviewed source: ' + file);
   for (const [dependency, hash] of Object.entries(review.currentLfHashes)) {
     assert.equal(normalizedSha(read(dependency)), hash, 'current implementation review dependency changed: ' + dependency);
+  }
+  for (const [asset, hash] of Object.entries(review.assetHashes || {})) {
+    assert.equal(sha(read(asset)), hash, 'current implementation review asset changed: ' + asset);
   }
   for (const evidence of review.evidence) {
     assert.equal(sha(read(evidence.path)), evidence.sha256, 'current implementation replay evidence changed');

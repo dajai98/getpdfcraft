@@ -4,8 +4,8 @@ import BlogPost from "@/components/ui/BlogPost";
 export const metadata = blogMetadata("how-browser-based-pdf-processing-works");
 
 const article = {
-  "title": "How PDFcraft Processes Files Locally in Your Browser",
-  "intro": "When you select a document in PDFcraft, the application reads its bytes in your browser and uses client-side libraries to generate the output. There is no PDF-processing upload backend in this architecture. That is a statement about document processing, not a claim that the page makes no network requests.",
+  "title": "How GetPDFCraft Processes Files Locally in Your Browser",
+  "intro": "When you select a document in GetPDFCraft, the application reads its bytes in your browser and uses client-side libraries to generate the output. There is no PDF-processing upload backend in this architecture. That is a statement about document processing, not a claim that the page makes no network requests.",
   "sections": [
     {
       "heading": "From selection to download",
@@ -72,7 +72,7 @@ const article = {
   ],
   "faqs": [
     {
-      "q": "Are document contents sent to a PDFcraft processing server?",
+      "q": "Are document contents sent to a GetPDFCraft processing server?",
       "a": "The inspected application architecture processes them locally and has no PDF-processing upload backend."
     },
     {

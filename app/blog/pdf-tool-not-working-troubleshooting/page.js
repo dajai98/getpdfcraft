@@ -21,7 +21,7 @@ export default function Post() {
         ["Unsupported AcroForm or navigation", "The page-copy workflow cannot safely rebuild that document structure.", "Use a PDF application that supports the form or navigation. Do not discard an original form merely to bypass the check."],
         ["Invalid or out-of-bounds range", "Split needs ascending page ranges within the actual page count.", "For a three-page PDF use 1-2,3. Avoid 3-1, page 4 or a trailing comma."],
         ["Could not load the PDF security engine", "The qpdf runtime was unavailable before password processing.", "Check connection and blocked-resource messages, then retry. A different password cannot repair a missing runtime."],
-        ["QPDF status failure", "The password may be wrong, or the document may be damaged or unsupported.", "Confirm the known password in a trusted viewer. PDFcraft cannot recover an unknown password."],
+        ["QPDF status failure", "The password may be wrong, or the document may be damaged or unsupported.", "Confirm the known password in a trusted viewer. GetPDFCraft cannot recover an unknown password."],
         ["Rendering limit exceeded", "A page or the total encoded images exceed the renderer's guardrails.", "Split into smaller groups if possible. A single oversized page needs a desktop application or a smaller page from the source."]
       ]
     }
@@ -49,7 +49,7 @@ export default function Post() {
     "steps": [
       {
         "title": "The PDF is password-protected",
-        "body": "Many page tools reject encrypted input. Unlock an authorized copy with its correct password before retrying. PDFcraft does not crack unknown passwords."
+        "body": "Many page tools reject encrypted input. Unlock an authorized copy with its correct password before retrying. GetPDFCraft does not crack unknown passwords."
       },
       {
         "title": "The file isn't actually a valid PDF",
@@ -144,7 +144,7 @@ export default function Post() {
     "a": "A processing error can have several causes. For Protect/Unlock, a qpdf status failure alone cannot reliably distinguish a wrong password from a damaged or unsupported PDF."
   },
   {
-    "q": "Is there a file size limit on PDFcraft?",
+    "q": "Is there a file size limit on GetPDFCraft?",
     "a": "Practical limits depend on browser capabilities, available memory, and document complexity. A large or complex file may fail; keep your original and check the downloaded result."
   },
   {

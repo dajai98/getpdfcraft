@@ -10,13 +10,13 @@ export default function Footer() {
           <div style={{ gridColumn: "span 2" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
               <div style={{ width: 30, height: 30, background: "#E8380D", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 800, fontSize: 14 }}>P</div>
-              <span style={{ fontWeight: 800, fontSize: 17, color: "#111827" }}>PDFcraft</span>
+              <span style={{ fontWeight: 800, fontSize: 17, color: "#111827" }}>GetPDFCraft</span>
             </div>
             <p style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.7, maxWidth: 260, marginBottom: 16 }}>
               13 free PDF tools. No account required. Files processed locally in your browser.
             </p>
             <p style={{ fontSize: 12, color: "#6b7280", lineHeight: 1.6, maxWidth: 260, marginBottom: 8 }}>
-              PDFcraft is built by{" "}
+              GetPDFCraft is built by{" "}
               <span style={{ color: "#6b7280", fontWeight: 600 }}>Dajai Studio</span>
               , an indie studio from Nepal.
             </p>
@@ -25,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12, color: "#6b7280", textDecoration: "none", transition: "color 0.15s" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#E8380D"}
+              onMouseEnter={e => e.currentTarget.style.color = "#C92F0A"}
               onMouseLeave={e => e.currentTarget.style.color = "#6b7280"}
             >
               🎮 BrainStorm Quiz — Google Play →
@@ -93,7 +93,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div style={{ borderTop: "1px solid #e5e7eb", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <p style={{ fontSize: 13, color: "#6b7280" }}>© 2026 PDFcraft — By Dajai Studio, Nepal. All rights reserved.</p>
+          <p style={{ fontSize: 13, color: "#6b7280" }}>© 2026 GetPDFCraft — By Dajai Studio, Nepal. All rights reserved.</p>
           <div style={{ display: "flex", gap: 16 }}>
             {[["Privacy", "/privacy"], ["Terms", "/terms"], ["Contact", "/contact"]].map(([n, h]) => (
               <Link key={n} href={h} style={{ fontSize: 13, color: "#6b7280", textDecoration: "none" }}>{n}</Link>

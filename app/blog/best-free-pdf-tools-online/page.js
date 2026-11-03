@@ -4,8 +4,8 @@ import BlogPost from "@/components/ui/BlogPost";
 export const metadata = blogMetadata("best-free-pdf-tools-online");
 
 const article = {
-  "title": "13 Free PDFcraft Tools: What Each One Actually Does",
-  "intro": "The useful tool is the one that produces the result you need without losing a feature you rely on. This is a task map for PDFcraft's 13 tools, not an objective ranking of competing products or a claim that one site covers every PDF workflow.",
+  "title": "13 Free GetPDFCraft Tools: What Each One Actually Does",
+  "intro": "The useful tool is the one that produces the result you need without losing a feature you rely on. This is a task map for GetPDFCraft's 13 tools, not an objective ranking of competing products or a claim that one site covers every PDF workflow.",
   "sections": [
     {
       "heading": "Organize the document",
@@ -110,7 +110,7 @@ const article = {
     },
     {
       "heading": "Choose by the feature you cannot afford to lose",
-      "text": "A form requiring interaction is a poor input for page-copy tools that reject AcroForm. A searchable report should not be converted to Grayscale merely because a smaller file is desired: full-page JPEGs can grow. If you need existing-paragraph editing, font replacement, OCR, Word/Excel conversion or signing, PDFcraft is not enough."
+      "text": "A form requiring interaction is a poor input for page-copy tools that reject AcroForm. A searchable report should not be converted to Grayscale merely because a smaller file is desired: full-page JPEGs can grow. If you need existing-paragraph editing, font replacement, OCR, Word/Excel conversion or signing, GetPDFCraft is not enough."
     },
     {
       "heading": "Build a short workflow rather than running every tool",

@@ -5,7 +5,7 @@ export const metadata = blogMetadata("how-to-extract-pages-from-pdf");
 
 const article = {
   "title": "How to Extract Selected PDF Pages and Ranges",
-  "intro": "Extraction in PDFcraft uses Split PDF, not a separate extraction engine. Use it to prepare a focused packet from a longer source, then decide whether you need separate excerpts or one combined PDF.",
+  "intro": "Extraction in GetPDFCraft uses Split PDF, not a separate extraction engine. Use it to prepare a focused packet from a longer source, then decide whether you need separate excerpts or one combined PDF.",
   "sections": [
     {
       "heading": "Example: a cover plus two evidence sections",

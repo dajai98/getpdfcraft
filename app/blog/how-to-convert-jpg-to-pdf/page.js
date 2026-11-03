@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FEF2F2",
   "ctaHref": "/tools/jpg-to-pdf",
   "ctaText": "Convert JPG to PDF now — free, no watermark",
-  "intro": "A PDF can package a sequence of photographs or screenshots as pages. PDFcraft embeds supported JPEG/JPG and PNG images, one image per page, in the order you add them. It does not recognize the words in those images or automatically fit them to office paper sizes.",
+  "intro": "A PDF can package a sequence of photographs or screenshots as pages. GetPDFCraft embeds supported JPEG/JPG and PNG images, one image per page, in the order you add them. It does not recognize the words in those images or automatically fit them to office paper sizes.",
   "sections": [
     {
       "heading": "Assemble an ordered image packet",

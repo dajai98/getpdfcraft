@@ -12,7 +12,7 @@ const article = {
   "tagBg": "#FFF7ED",
   "ctaHref": "/tools/split-pdf",
   "ctaText": "Split your PDF now — free",
-  "intro": "Decide how many output files you need before entering ranges. PDFcraft Split interprets every comma-separated item as a separate PDF, which is useful for dividing a report into deliveries but different from building one nonconsecutive selection.",
+  "intro": "Decide how many output files you need before entering ranges. GetPDFCraft Split interprets every comma-separated item as a separate PDF, which is useful for dividing a report into deliveries but different from building one nonconsecutive selection.",
   "sections": [
     {
       "heading": "Predict the files before splitting",

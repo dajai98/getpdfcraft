@@ -39,7 +39,7 @@ export default function Post() {
   {
     "heading": "Combine existing pages, then check A1, A2 and B1",
     "tip": "A November 2, 2026 test on Windows used headless Microsoft Edge 156.0.4314.58 to merge two copies of a synthetic three-page PDF. The actual downloaded file independently reopened in PDF.js with six pages in the expected 1, 2, 3, 1, 2, 3 order. This checks that specific browser workflow; it does not establish compatibility with every Windows browser, PDF structure or device.",
-    "text": "For supported inputs, PDFcraft Merge appends existing PDF pages rather than converting their contents into Word paragraphs. Keep your originals while you prepare the combined copy. A successful download is a reason to inspect the result, not a guarantee that every document feature survived.",
+    "text": "For supported inputs, GetPDFCraft Merge appends existing PDF pages rather than converting their contents into Word paragraphs. Keep your originals while you prepare the combined copy. A successful download is a reason to inspect the result, not a guarantee that every document feature survived.",
     "steps": [
       {
         "title": "Establish the input sequence",

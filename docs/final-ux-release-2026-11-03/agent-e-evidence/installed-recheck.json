@@ -1,0 +1,420 @@
+{
+  "reviewDate": "2026-11-03",
+  "generatedAt": "2026-11-03T11:52:06.685Z",
+  "advisoryStatus": "Historical 27-entry inventory rechecked against current installation; not a fresh audit",
+  "hashes": [
+    {
+      "file": "package.json",
+      "sha256": "83d7992ce3c8b8afc365420f3a1947841047df9afe227741d2ac27d72eb16992"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "1b26912f3edd6be0d1c55808dc427a70810fa5637e371182ba481090ed82063e"
+    },
+    {
+      "file": "next.config.mjs",
+      "sha256": "b13cd723cc9e7b855ed033eeaf185a2d91c39730e780b6a9080eaf8b8c29dd57"
+    },
+    {
+      "file": "components/ui/CookieBanner.js",
+      "sha256": "0c10f7fa0217f89bed199930dc48ca80cd013aee17c068ad7b65fbcecf975717"
+    },
+    {
+      "file": "components/ui/Ads.js",
+      "sha256": "b4c24956ce4bcc5f8994f793a56acd519776d6c550e91bcf4e87b79f5f4cef96"
+    },
+    {
+      "file": "components/ui/Analytics.js",
+      "sha256": "9937f34339ab939999a2b13b75be83f86ed99816678949ffda567c915996a50e"
+    }
+  ],
+  "findings": [
+    {
+      "name": "@eslint-community/eslint-utils",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@eslint-community/eslint-utils",
+          "historicalVersion": "4.9.1",
+          "lockedVersion": "4.9.1",
+          "installedVersion": "4.9.1"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/eslintrc",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@eslint/eslintrc",
+          "historicalVersion": "2.1.4",
+          "lockedVersion": "2.1.4",
+          "installedVersion": "2.1.4"
+        }
+      ]
+    },
+    {
+      "name": "@humanwhocodes/config-array",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@humanwhocodes/config-array",
+          "historicalVersion": "0.13.0",
+          "lockedVersion": "0.13.0",
+          "installedVersion": "0.13.0"
+        }
+      ]
+    },
+    {
+      "name": "@mapbox/node-pre-gyp",
+      "severity": "high",
+      "scope": "Optional canvas installation chain; absent from this node_modules",
+      "nodes": [
+        {
+          "path": "node_modules/@mapbox/node-pre-gyp",
+          "historicalVersion": "1.0.11",
+          "lockedVersion": "1.0.11",
+          "installedVersion": null
+        }
+      ]
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@next/eslint-plugin-next",
+          "historicalVersion": "14.2.5",
+          "lockedVersion": "14.2.5",
+          "installedVersion": "14.2.5"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@typescript-eslint/parser",
+          "historicalVersion": "7.2.0",
+          "lockedVersion": "7.2.0",
+          "installedVersion": "7.2.0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@typescript-eslint/typescript-estree",
+          "historicalVersion": "7.2.0",
+          "lockedVersion": "7.2.0",
+          "installedVersion": "7.2.0"
+        }
+      ]
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "severity": "moderate",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/baseline-browser-mapping",
+          "historicalVersion": "2.10.29",
+          "lockedVersion": "2.10.29",
+          "installedVersion": "2.10.29"
+        }
+      ]
+    },
+    {
+      "name": "brace-expansion",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@next/eslint-plugin-next/node_modules/brace-expansion",
+          "historicalVersion": "2.1.0",
+          "lockedVersion": "2.1.0",
+          "installedVersion": "2.1.0"
+        },
+        {
+          "path": "node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion",
+          "historicalVersion": "2.1.0",
+          "lockedVersion": "2.1.0",
+          "installedVersion": "2.1.0"
+        },
+        {
+          "path": "node_modules/brace-expansion",
+          "historicalVersion": "1.1.14",
+          "lockedVersion": "1.1.14",
+          "installedVersion": "1.1.14"
+        }
+      ]
+    },
+    {
+      "name": "browserslist",
+      "severity": "high",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/browserslist",
+          "historicalVersion": "4.28.2",
+          "lockedVersion": "4.28.2",
+          "installedVersion": "4.28.2"
+        }
+      ]
+    },
+    {
+      "name": "eslint",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/eslint",
+          "historicalVersion": "8.57.1",
+          "lockedVersion": "8.57.1",
+          "installedVersion": "8.57.1"
+        }
+      ]
+    },
+    {
+      "name": "eslint-config-next",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/eslint-config-next",
+          "historicalVersion": "14.2.5",
+          "lockedVersion": "14.2.5",
+          "installedVersion": "14.2.5"
+        }
+      ]
+    },
+    {
+      "name": "eslint-plugin-import",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/eslint-plugin-import",
+          "historicalVersion": "2.32.0",
+          "lockedVersion": "2.32.0",
+          "installedVersion": "2.32.0"
+        }
+      ]
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/eslint-plugin-jsx-a11y",
+          "historicalVersion": "6.10.2",
+          "lockedVersion": "6.10.2",
+          "installedVersion": "6.10.2"
+        }
+      ]
+    },
+    {
+      "name": "eslint-plugin-react",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/eslint-plugin-react",
+          "historicalVersion": "7.37.5",
+          "lockedVersion": "7.37.5",
+          "installedVersion": "7.37.5"
+        }
+      ]
+    },
+    {
+      "name": "file-entry-cache",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/file-entry-cache",
+          "historicalVersion": "6.0.1",
+          "lockedVersion": "6.0.1",
+          "installedVersion": "6.0.1"
+        }
+      ]
+    },
+    {
+      "name": "flat-cache",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/flat-cache",
+          "historicalVersion": "3.2.0",
+          "lockedVersion": "3.2.0",
+          "installedVersion": "3.2.0"
+        }
+      ]
+    },
+    {
+      "name": "glob",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@next/eslint-plugin-next/node_modules/glob",
+          "historicalVersion": "10.3.10",
+          "lockedVersion": "10.3.10",
+          "installedVersion": "10.3.10"
+        },
+        {
+          "path": "node_modules/glob",
+          "historicalVersion": "7.2.3",
+          "lockedVersion": "7.2.3",
+          "installedVersion": "7.2.3"
+        }
+      ]
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/js-yaml",
+          "historicalVersion": "4.1.1",
+          "lockedVersion": "4.1.1",
+          "installedVersion": "4.1.1"
+        }
+      ]
+    },
+    {
+      "name": "minimatch",
+      "severity": "high",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/@next/eslint-plugin-next/node_modules/minimatch",
+          "historicalVersion": "9.0.9",
+          "lockedVersion": "9.0.9",
+          "installedVersion": "9.0.9"
+        },
+        {
+          "path": "node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch",
+          "historicalVersion": "9.0.3",
+          "lockedVersion": "9.0.3",
+          "installedVersion": "9.0.3"
+        },
+        {
+          "path": "node_modules/minimatch",
+          "historicalVersion": "3.1.5",
+          "lockedVersion": "3.1.5",
+          "installedVersion": "3.1.5"
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "severity": "high",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/nanoid",
+          "historicalVersion": "3.3.12",
+          "lockedVersion": "3.3.12",
+          "installedVersion": "3.3.12"
+        }
+      ]
+    },
+    {
+      "name": "next",
+      "severity": "critical",
+      "scope": "Build/development/server package; production configured as static export",
+      "nodes": [
+        {
+          "path": "node_modules/next",
+          "historicalVersion": "14.2.5",
+          "lockedVersion": "14.2.5",
+          "installedVersion": "14.2.5"
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "severity": "high",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/next/node_modules/postcss",
+          "historicalVersion": "8.4.31",
+          "lockedVersion": "8.4.31",
+          "installedVersion": "8.4.31"
+        },
+        {
+          "path": "node_modules/postcss",
+          "historicalVersion": "8.5.14",
+          "lockedVersion": "8.5.14",
+          "installedVersion": "8.5.14"
+        }
+      ]
+    },
+    {
+      "name": "postcss-selector-parser",
+      "severity": "moderate",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/postcss-selector-parser",
+          "historicalVersion": "6.1.2",
+          "lockedVersion": "6.1.2",
+          "installedVersion": "6.1.2"
+        }
+      ]
+    },
+    {
+      "name": "rimraf",
+      "severity": "moderate",
+      "scope": "Lint/build dependency; no application import",
+      "nodes": [
+        {
+          "path": "node_modules/rimraf",
+          "historicalVersion": "3.0.2",
+          "lockedVersion": "3.0.2",
+          "installedVersion": "3.0.2"
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "severity": "high",
+      "scope": "Build pipeline; no application import or visitor-supplied CSS/source map",
+      "nodes": [
+        {
+          "path": "node_modules/source-map-js",
+          "historicalVersion": "1.2.1",
+          "lockedVersion": "1.2.1",
+          "installedVersion": "1.2.1"
+        }
+      ]
+    },
+    {
+      "name": "tar",
+      "severity": "critical",
+      "scope": "Optional canvas installation chain; absent from this node_modules",
+      "nodes": [
+        {
+          "path": "node_modules/tar",
+          "historicalVersion": "6.2.1",
+          "lockedVersion": "6.2.1",
+          "installedVersion": null
+        }
+      ]
+    }
+  ]
+}

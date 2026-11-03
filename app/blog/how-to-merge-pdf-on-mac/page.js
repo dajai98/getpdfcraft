@@ -6,7 +6,7 @@ export default function Post() {
     <BlogPost tag={"Mac"} tagColor="#374151" tagBg="#F9FAFB"
       title={"How to Merge PDF on Mac Free (3 Easy Ways)"}
       date="February 2026" readTime="6 min read"
-      intro={"A Mac user has three different decisions here: assemble pages in Preview, combine selected Finder files, or append PDFs using PDFcraft in a browser. Choose based on how you need to control the pages, not a claim that one method is universally fastest. The native steps below describe Apple documentation, not a locally executed Mac test. Check the help for your installed macOS version."}
+      intro={"A Mac user has three different decisions here: assemble pages in Preview, combine selected Finder files, or append PDFs using GetPDFCraft in a browser. Choose based on how you need to control the pages, not a claim that one method is universally fastest. The native steps below describe Apple documentation, not a locally executed Mac test. Check the help for your installed macOS version."}
       sections={[
   {
     "heading": "Preview: assemble whole documents or selected pages",
@@ -53,8 +53,8 @@ export default function Post() {
     ]
   },
   {
-    "heading": "PDFcraft: append PDFs in the displayed source order",
-    "text": "PDFcraft Merge uses the displayed insertion order of source PDFs. Add the files in the required order, inspect the list, then merge and download. It has no drag-to-reorder file control. To change individual page positions afterward, Reorder Pages offers Up/Down controls. This browser workflow is distinct from dragging native Preview thumbnails or running a Finder Quick Action.",
+    "heading": "GetPDFCraft: append PDFs in the displayed source order",
+    "text": "GetPDFCraft Merge uses the displayed insertion order of source PDFs. Add the files in the required order, inspect the list, then merge and download. It has no drag-to-reorder file control. To change individual page positions afterward, Reorder Pages offers Up/Down controls. This browser workflow is distinct from dragging native Preview thumbnails or running a Finder Quick Action.",
     "steps": [
       {
         "title": "Check the append boundary",
@@ -82,7 +82,7 @@ export default function Post() {
   },
   {
     "heading": "Choose by the control you need",
-    "text": "Keep the source documents until the recipient has the intended result. Native and browser workflows are alternatives, not interchangeable guarantees. If you need offline work, verify the installed native workflow with locally available files; PDFcraft does not guarantee offline availability and may still need website or processing resources. No browser/device compatibility test is implied by this guide.",
+    "text": "Keep the source documents until the recipient has the intended result. Native and browser workflows are alternatives, not interchangeable guarantees. If you need offline work, verify the installed native workflow with locally available files; GetPDFCraft does not guarantee offline availability and may still need website or processing resources. No browser/device compatibility test is implied by this guide.",
     "table": {
       "headers": [
         "Need",
@@ -101,7 +101,7 @@ export default function Post() {
           "Selection order and resulting pages"
         ],
         [
-          "PDFcraft supported browser append",
+          "GetPDFCraft supported browser append",
           "Merge, then Reorder if needed",
           "Input limitations and final sequence"
         ]

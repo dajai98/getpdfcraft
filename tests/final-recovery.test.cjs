@@ -1,7 +1,6 @@
 // Current source-handler tests: actual PDF serialization + independent PDF.js parse.
 // Controlled async adapters test cancellation; they are not real-browser rendering.
 const assert = require('node:assert/strict');
-const fs = require('node:fs');
 const path = require('node:path');
 const { pathToFileURL } = require('node:url');
 const { PDFDocument } = require('pdf-lib');
@@ -15,8 +14,6 @@ async function fixture(count) { const d = await PDFDocument.create(); for(let i=
   const pdfjs = await import(pathToFileURL(path.resolve('node_modules/pdfjs-dist/legacy/build/pdf.mjs')).href);
   const h = await harness({adapter:pdfjs});
   const zero = await fixture(0);
-  const evidenceDir = 'docs/final-adsense-recovery-2026-11-02/evidence';
-  fs.mkdirSync(evidenceDir,{recursive:true}); fs.writeFileSync(evidenceDir+'/zero-pages.pdf',zero);
   for(const slug of [...Object.keys(operations),'compress-pdf']) {
     for(const [name,bytes] of [['zero-page',zero],['empty',new Uint8Array()],['malformed',Buffer.from('%PDF-1.7\ninvalid')],['wrong extension content',Buffer.from('not a PDF')]]) {
       await test(`${slug} rejects ${name} without a download`,async()=>{

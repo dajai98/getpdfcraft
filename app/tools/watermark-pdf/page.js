@@ -39,7 +39,7 @@ export default function WatermarkPDF() {
       title="Add Watermark to PDF" desc="Add a text watermark with opacity control. Document processing happens locally in your browser."
       current="/tools/watermark-pdf" faqs={[
   { q: "Can I use any text for the watermark?", a: "Yes. Type text supported by the built-in font such as CONFIDENTIAL, DRAFT, your name, or company name." },
-  { q: "Can I remove a watermark from a PDF?", a: "PDFcraft does not remove watermarks. Watermark removal requires specialized software." },
+  { q: "Can I remove a watermark from a PDF?", a: "GetPDFCraft does not remove watermarks. Watermark removal requires specialized software." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },
   { q: "Will the watermark print?", a: "The watermark is drawn into each page's visible content. Review the output before printing." },
 ]}>
@@ -68,7 +68,7 @@ export default function WatermarkPDF() {
             </div>
           </div>
           <button onClick={apply} disabled={processing || !text} style={{
-            width: "100%", background: (processing||!text) ? "#d1d5db" : "#E8380D",
+            width: "100%", background: (processing||!text) ? "#d1d5db" : "#C92F0A",
             color: "white", border: "none", padding: 16, borderRadius: 14,
             fontWeight: 700, fontSize: 16, cursor: (processing||!text) ? "not-allowed" : "pointer", fontFamily: "inherit",
           }}>

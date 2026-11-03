@@ -5,6 +5,7 @@
   <!-- Logo -->
   <rect x="80" y="80" width="64" height="64" rx="16" fill="#E8380D"/>
   <text x="112" y="122" font-family="Arial" font-size="36" font-weight="800" fill="white" text-anchor="middle">P</text>
+  <text x="164" y="122" font-family="Arial" font-size="34" font-weight="800" fill="#111827">GetPDFCraft</text>
   
   <!-- Title -->
   <text x="80" y="280" font-family="Arial" font-size="72" font-weight="800" fill="#111827">13 PDF tools.</text>

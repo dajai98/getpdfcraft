@@ -21,7 +21,7 @@ export default function Layout({ children }) {
 
         <h2 style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginBottom: 16, marginTop: 40 }}>Compress PDF Online — Free & Private</h2>
         <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 16 }}>
-          PDFcraft processes your PDF locally in your browser using object-stream serialization. No account is required. Compare the original and output sizes before downloading; the result may be larger.
+          GetPDFCraft processes your PDF locally in your browser using object-stream serialization. No account is required. Compare the original and output sizes before downloading; the result may be larger.
         </p>
 
         <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>What does the Compress PDF tool do?</h2>
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
           <li>Click <strong>Download</strong> to save the compressed PDF</li>
         </ol>
 
-        <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>Why use PDFcraft to compress PDFs?</h2>
+        <h2 style={{ fontSize: 20, fontWeight: 800, color: "#111827", marginBottom: 14, marginTop: 36 }}>Why use GetPDFCraft to compress PDFs?</h2>
         <ul style={{ fontSize: 15, color: "#6b7280", lineHeight: 2, paddingLeft: 20, marginBottom: 16 }}>
           <li><strong>Free to use</strong> — practical limits depend on your device and browser</li>
           <li><strong>No file uploads</strong> — compression happens locally in your browser</li>
@@ -63,7 +63,7 @@ export default function Layout({ children }) {
           Files are processed locally in your browser. This tool does not upload your document to a processing server. Keep your original and review the generated PDF before using it.
         </p>
         <p style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.8, marginBottom: 32 }}>
-          Wondering how much this tool will actually shrink your file? <a href="/blog/pdf-compression-real-test-results" style={{ color: "#E8380D", fontWeight: 600, textDecoration: "none" }}>Learn how to measure compression results for your own PDF →</a>
+          Wondering how much this tool will actually shrink your file? <a href="/blog/pdf-compression-real-test-results" style={{ color: "#C92F0A", fontWeight: 600, textDecoration: "none" }}>Learn how to measure compression results for your own PDF →</a>
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>

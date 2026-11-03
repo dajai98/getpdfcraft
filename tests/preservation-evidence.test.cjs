@@ -61,8 +61,9 @@ async function adversarial(m,dir,before,test){
 (async()=>{
  const {index,manifest:m,dir}=validate(),rt=await legacy.runtime(),h=await collector.harness(rt),fixtures=await collector.fixtures();
  await test('historical registration/artifacts/snapshots and current processing dependencies',()=>{validate();currentDependencies(m);});
- await test('editorial-only mutations do not invalidate historical evidence',()=>{
-  currentDependencies(m,p=>editorialSources.has(p)?Buffer.from('changed editorial text'):fs.readFileSync(path.join(root,p)));
+ await test('editorial-only mutations preserve historical evidence but invalidate current source review',()=>{
+  validate();
+  assert.throws(()=>currentDependencies(m,p=>editorialSources.has(p)?Buffer.from('changed editorial text'):fs.readFileSync(path.join(root,p))),/current implementation review dependency changed/);
   validate();
  });
  await test('processing mutations require review',()=>{

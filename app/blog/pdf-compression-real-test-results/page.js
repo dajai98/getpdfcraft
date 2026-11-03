@@ -132,7 +132,7 @@ const article = {
     },
     {
       "heading": "Why the synthetic and real rows are separate",
-      "text": "The noise image is not a photograph, the synthetic scan proxy is not a physical scan, and the generated presentation is not an observed Office export. The two real inputs were downloaded unchanged: NASA's published Public Access Plan and the archival Apollo 11 press kit. They are supplemental real-document observations, not a representative population. NASA does not endorse PDFcraft; using these measurements does not grant permission to redistribute the source PDFs or review images."
+      "text": "The noise image is not a photograph, the synthetic scan proxy is not a physical scan, and the generated presentation is not an observed Office export. The two real inputs were downloaded unchanged: NASA's published Public Access Plan and the archival Apollo 11 press kit. They are supplemental real-document observations, not a representative population. NASA does not endorse GetPDFCraft; using these measurements does not grant permission to redistribute the source PDFs or review images."
     },
     {
       "heading": "What the reductions and growth mean",
