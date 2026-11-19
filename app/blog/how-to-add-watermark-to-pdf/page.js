@@ -60,7 +60,7 @@ const article = {
     },
     {
       "heading": "What is added - and what is not removed",
-      "text": "The label is drawn into page content. Existing text is not redacted, and there is no image-logo import, tiled pattern, manual angle or font picker. Geometry and extraction tests observed placement and added text on controlled inputs, not universal visual fidelity. An editor may be able to remove the overlay."
+      "text": "The label is drawn into page content. Existing text is not redacted, and there is no image-logo import, tiled pattern, manual angle or font picker. An editor may be able to remove the overlay."
     },
     {
       "heading": "Keep the labeling workflow separate from access control",

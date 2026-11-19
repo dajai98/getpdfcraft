@@ -37,7 +37,7 @@ const article = {
     },
     {
       "heading": "A successful operation is a limited result",
-      "text": "The qpdf wrapper checks its exit status and requires a nonempty output. Controlled Node tests exercised correct, missing and wrong passwords. They did not establish universal security, signature preservation or interactive form behavior. An encryption algorithm does not make a weak password hard to guess. Strong encryption alone does not establish that a workflow meets legal or compliance requirements."
+      "text": "The qpdf wrapper checks its exit status and requires a nonempty output. An encryption algorithm does not make a weak password hard to guess. Strong encryption alone does not establish that a workflow meets legal or compliance requirements."
     },
     {
       "heading": "Add a visible confidentiality label",

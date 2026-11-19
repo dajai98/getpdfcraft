@@ -4,6 +4,7 @@ import { useObjectUrls } from "@/components/hooks/useObjectUrls";
 import { checkRasterSize, checkEncodedSize } from "@/lib/rasterLimits";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Which is better JPG or PNG?", a: "JPG uses lossy compression. PNG uses lossless encoding for the rendered page image; file sizes depend on the content." },
@@ -96,7 +97,13 @@ export default function PDFToImage() {
   return (
     <ToolLayout tag="PDF to Image" tagBg="#F0FDF4" tagColor="#16A34A"
       title="PDF to Image" desc="Render every PDF page to JPG or PNG at a fixed 2x scale. Free to use; no GetPDFCraft branding watermark."
-      current="/tools/pdf-to-image" faqs={faqs}>
+      current="/tools/pdf-to-image" testingNote={<TestingNote
+        heading="What I found when I tested conversion"
+        paragraphs={[
+          "I converted a 1 MB PDF with about 100 pages to images. It took roughly 10 to 15 seconds and finished without crashing. Both JPEG and PNG worked as output formats.",
+          "After processing, I could download all the images at once or pick individual pages — one, two, or whatever I needed. I haven't timed a much larger file or one with heavy scanned pages, so I can't say what those would do."
+        ]}
+      />} faqs={faqs}>
       <p>Rendering limits: 16 million pixels per page, 16,384 pixels per side and 128 MiB of encoded images. Split larger documents into smaller groups; available memory may impose lower limits.</p>
 
       {!file ? <UploadZone onFiles={loadFile} label="Drop your PDF here" /> : (

@@ -5,6 +5,7 @@ import { useGeneratedResult, useResultInput } from "@/components/hooks/useGenera
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Why convert PDF to grayscale?", a: "Use this tool to create grayscale page images in a PDF. The output may be larger than the original." },
@@ -104,7 +105,14 @@ export default function PDFToGrayscale() {
   return (
     <ToolLayout tag="PDF to Grayscale" tagBg="#F9FAFB" tagColor="#374151"
       title="PDF to Grayscale" desc="Convert PDF pages to grayscale images in a PDF, keeping their displayed physical page size."
-      current="/tools/pdf-to-grayscale" faqs={faqs}>
+      current="/tools/pdf-to-grayscale" testingNote={<TestingNote
+        heading="What I found when I tested grayscale conversion"
+        paragraphs={[
+          "I converted a colour image (a sunflower photo, saved as PDF) and the output was grey — the colour was actually removed, not just hidden. Text and images stayed in place.",
+          "One important limit: pages are turned into images, not kept as real text. After conversion you can't select or search the text, and links and forms stop working. If you need a searchable document, keep the original.",
+          "In my testing it worked on files under about 1 MB. Files around 1 MB or larger failed to convert — that matches the memory limits the tool warns about. Try a smaller file or a different browser if you hit that."
+        ]}
+      />} faqs={faqs}>
 
       <p role="note">Pages are rasterized as JPEG images. Searchable text, links, forms, bookmarks, digital signatures and other PDF semantics are not preserved. Output may be larger than the original. Keep your original file.</p>
       <p>Rendering limits: 16 million pixels per page, 16,384 pixels per side and 128 MiB of encoded page images. Your browser may run out of memory sooner.</p>

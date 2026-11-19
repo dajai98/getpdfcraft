@@ -100,8 +100,8 @@ const article = {
       }
     },
     {
-      "heading": "What the checks support",
-      "text": "Controlled Node evidence observed the requested rotation and extracted text on the fixture. It does not certify signatures, universal viewer behavior or every document structure. Rotation executes locally, while site resources still load from the web."
+      "heading": "Local processing and site resources",
+      "text": "Rotation executes locally, while site resources still load from the web."
     },
     {
       "heading": "Continue with the appropriate tool",

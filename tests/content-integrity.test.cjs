@@ -18,10 +18,10 @@ const attr = (html, key, value, result) => {
   const tag = (html.match(/<(?:meta|link)\b[^>]*>/g) || []).find(t => t.includes(key + '="' + value + '"'));
   return tag && decode(tag.match(new RegExp(result + '="([^"]*)"'))?.[1] || '');
 };
-test('Source inventory: 13 tools, 31 articles, 50 indexable routes', () => {
+test('Source inventory: 13 tools, 23 articles, 42 indexable routes', () => {
   assert.equal(routes.filter(r => r.startsWith('/tools/')).length, 13);
-  assert.equal(posts.length, 31); assert.equal(routes.length, 50);
-  assert.equal(redirects.length, 19);
+  assert.equal(posts.length, 23); assert.equal(routes.length, 42);
+  assert.equal(redirects.length, 30);
 });
 
 const batch4Merges = {
@@ -30,13 +30,59 @@ const batch4Merges = {
   'merge-pdf-on-android': 'how-to-merge-pdf-free',
   'how-to-compress-pdf-for-email': 'pdf-file-size-too-large',
   'split-pdf-into-two': 'how-to-split-pdf-online',
-  'how-to-compress-pdf-on-iphone': 'compress-pdf-without-losing-quality',
+  'how-to-compress-pdf-on-iphone': 'pdf-compression-real-test-results',
   'reduce-pdf-size-without-software': 'pdf-file-size-too-large',
   'how-to-encrypt-pdf-files-free': 'how-to-add-password-to-pdf-online',
   'how-to-lock-pdf-without-adobe': 'how-to-add-password-to-pdf-online',
   'password-protect-pdf-on-android': 'how-to-add-password-to-pdf-online',
   'lock-pdf-on-iphone': 'how-to-add-password-to-pdf-online',
 };
+const phase0Redirects = [
+  ['/blog/what-is-pdf', '/blog/best-free-pdf-tools-online'],
+  ['/blog/pdf-to-word-free', '/blog/best-free-pdf-tools-online'],
+  ['/app/pdfcraft', '/'],
+];
+for (const [from, to] of phase0Redirects) test('Phase 0 direct redirect ' + from, () => {
+  assert.deepEqual(redirects.filter(([source]) => source === from), [[from, to, '301']]);
+  assert(!routeSet.has(from)); assert(routeSet.has(to));
+  assert(!fs.existsSync(path.join(root, htmlPath(from))));
+  assert(!xml.includes('<loc>' + origin + from + '</loc>'));
+  assert.equal(new URL(attr(read(htmlPath(to)), 'rel', 'canonical', 'href')).href, new URL(to, origin).href);
+});
+const phase1Removals = [
+  'adobe-acrobat-alternative-free',
+  'ilovepdf-alternative',
+  'smallpdf-alternative',
+  'pdf-vs-word-which-is-better',
+  'how-to-merge-pdf-on-mac',
+  'merge-pdf-on-iphone',
+  'secure-pdf-on-mac',
+];
+for (const slug of phase1Removals) test('Phase 1 direct redirect and removed route ' + slug, () => {
+  const from = '/blog/' + slug, to = '/blog';
+  assert.deepEqual(redirects.filter(([source]) => source === from), [[from, to, '301']]);
+  assert(!routeSet.has(from)); assert(routeSet.has(to));
+  assert(!posts.some(post => post.slug === slug));
+  assert(!fs.existsSync(path.join(root, 'app/blog', slug, 'page.js')));
+  assert(!fs.existsSync(path.join(root, htmlPath(from))));
+  assert(!fs.existsSync(path.join(root, 'out/blog', slug, 'index.html')));
+  for (const sitemap of [xml, read('public/sitemap.xml'), read('out/sitemap.xml')]) {
+    assert(!sitemap.includes('<loc>' + origin + from + '</loc>'));
+    assert(sitemap.includes('<loc>' + origin + to + '</loc>'));
+  }
+  assert.equal(attr(read(htmlPath(to)), 'rel', 'canonical', 'href'), origin + to);
+});
+test('Phase 2b duplicate compression article redirects to retained measurement guide', () => {
+  const slug = 'compress-pdf-without-losing-quality';
+  const from = '/blog/' + slug, to = '/blog/pdf-compression-real-test-results';
+  assert.deepEqual(redirects.filter(([source]) => source === from), [[from, to, '301']]);
+  assert(!routeSet.has(from)); assert(routeSet.has(to));
+  assert(!posts.some(post => post.slug === slug));
+  assert(!fs.existsSync(path.join(root, 'app/blog', slug, 'page.js')));
+  assert(!fs.existsSync(path.join(root, htmlPath(from))));
+  for (const sitemap of [xml, read('public/sitemap.xml'), read('out/sitemap.xml')]) assert(!sitemap.includes('<loc>' + origin + from + '</loc>'));
+  assert.equal(attr(read(htmlPath(to)), 'rel', 'canonical', 'href'), origin + to);
+});
 for (const [source, destination] of Object.entries(batch4Merges)) test('Batch 4 direct redirect and removed route ' + source, () => {
   const from = '/blog/' + source, to = '/blog/' + destination;
   assert.deepEqual(redirects.filter(([f]) => f === from), [[from, to, '301']]);
@@ -56,10 +102,12 @@ test('All redirects are direct, unique and exported unchanged', () => {
   assert.equal(sources.size, redirects.length);
   for (const [from, to] of redirects) { assert(!routeSet.has(from)); assert(routeSet.has(to)); assert(!sources.has(to)); }
   assert.equal(read('public/_redirects'), read('out/_redirects'));
-  assert.equal((xml.match(/<loc>/g) || []).length, 50);
+  assert.deepEqual(redirects.filter(([from]) => from === '/blog/best-free-pdf-tools-online-updated-adobe'), [['/blog/best-free-pdf-tools-online-updated-adobe', '/blog/best-free-pdf-tools-online', '301']]);
+  assert.equal((xml.match(/<loc>/g) || []).length, 42);
 });
-test('No exported HTML links or canonicals refer to merged source URLs', () => {
-  const removed = new Set(Object.keys(batch4Merges).map(s => '/blog/' + s));
+test('No exported HTML links or canonicals refer to redirected source URLs', () => {
+  const removed = new Set(redirects.map(([from]) => from));
+  assert(removed.has('/blog/compress-pdf-without-losing-quality'));
   function inspect(directory) {
     for (const entry of fs.readdirSync(directory, {withFileTypes: true})) {
       const file = path.join(directory, entry.name);
@@ -91,7 +139,7 @@ test('Robots permits crawling and points to canonical sitemap', () => {
   assert(read('out/robots.txt').includes('Sitemap: ' + origin + '/sitemap.xml'));
   assert(!/Disallow:\s*\/\s*(?:\r?\n|$)/.test(read('out/robots.txt')));
 });
-test('Blog index uses catalog and includes exactly all 31 article URLs', () => {
+test('Blog index uses catalog and includes exactly all 23 article URLs', () => {
   assert(read('app/blog/page.js').includes('import posts from "@/lib/blogCatalog.json"'));
   assert(!read('app/blog/page.js').includes('const posts = ['));
   const slugs = [...new Set([...read('out/blog.html').matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map(m => m[1]))].sort();
@@ -136,7 +184,7 @@ for (const [slug, [article]] of Object.entries(guides)) test('Relevant guide lin
   const html = read('out/tools/' + slug + '.html');
   for (const guide of [article, ...require('../lib/siteNavigation.json').secondaryGuides[slug].map(([guide]) => guide)]) assert(html.includes('href="/blog/' + guide + '"'));
 });
-test('Article publisher label agrees with organization schema without personal authorship claims', () => {
+test('Article byline, bio, metadata and schema identify Rai Dajai', () => {
   for (const post of posts) {
     const html = read('out/blog/' + post.slug + '.html');
     const visible = normalize(html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '').replace(/<[^>]*>/g, ' '));
@@ -146,11 +194,13 @@ test('Article publisher label agrees with organization schema without personal a
     const article = articles[0];
     assert.equal(article.publisher['@type'], 'Organization');
     assert.equal(article.publisher.name, 'Dajai Studio');
-    assert.equal(article.author['@type'], 'Organization');
-    assert.equal(article.author.name, article.publisher.name);
-    assert(visible.includes('Published by ' + article.publisher.name), post.slug);
-    assert(!visible.includes('By GetPDFCraft'), post.slug);
-    assert(!/\b(?:Written|Tested) by Rai Dajai\b/i.test(visible), post.slug);
+    assert.equal(article.author['@type'], 'Person');
+    assert.equal(article.author.name, 'Rai Dajai');
+    assert.equal(article.author.url, origin + '/about');
+    assert(visible.includes('By Rai Dajai'), post.slug);
+    assert(visible.includes('About the author Rai Dajai is a self-taught developer from Nepal'), post.slug);
+    assert(visible.includes('I test every tool with real files and document the problems I run into.'), post.slug);
+    assert.equal(attr(html, 'name', 'author', 'content'), 'Rai Dajai');
   }
 });
 test('Existing favicon exported without changes; no duplicate icon tags', () => {
@@ -163,8 +213,8 @@ test('Existing favicon exported without changes; no duplicate icon tags', () => 
     assert.equal(tags.length, 1); assert(tags[0].includes('href="/icon.png"'));
   }
 });
-test('Retained format/security guides clearly disclose missing tools', () => {
-  for (const slug of ['pdf-vs-word-which-is-better', 'pdf-security-guide']) {
+test('Retained security guides clearly disclose missing tools', () => {
+  for (const slug of ['how-to-protect-pdf-from-editing', 'pdf-security-guide']) {
     const html = read('out/blog/' + slug + '.html');
     assert(/GetPDFCraft (?:does not|has no)/.test(html), slug);
   }

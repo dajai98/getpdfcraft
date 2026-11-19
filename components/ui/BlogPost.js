@@ -3,16 +3,18 @@
 import Link from "next/link";
 import { AdLeaderboard } from "@/components/ui/Ads";
 import FAQSchema from "@/components/ui/FAQSchema";
+import AuthorBio from "@/components/ui/AuthorBio";
+import TestingNote from "@/components/ui/TestingNote";
 
 // Historical date labels remain in source records, but are not verified publication
 // dates. Do not expose them as publication claims in the page or structured data.
-export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro, sections, faqs, ctaText, ctaHref }) {
+export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro, sections, faqs, afterFaqs, ctaText, ctaHref }) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": title,
     "description": intro,
-    "author": { "@type": "Organization", "name": "Dajai Studio" },
+    "author": { "@type": "Person", "name": "Rai Dajai", "url": "https://getpdfcraft.com/about" },
     "publisher": {
       "@type": "Organization",
       "name": "Dajai Studio",
@@ -29,7 +31,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro,
         <span style={{ background: tagBg, color: tagColor, fontSize: 11, fontWeight: 700, padding: "5px 14px", borderRadius: 100, textTransform: "uppercase", letterSpacing: 1 }}>{tag}</span>
         <h1 style={{ fontSize: "clamp(28px, 5vw, 46px)", fontWeight: 800, color: "#111827", marginTop: 16, marginBottom: 14, letterSpacing: -1.5, lineHeight: 1.1 }}>{title}</h1>
         <div style={{ display: "flex", gap: 16, fontSize: 13, color: "#6b7280", flexWrap: "wrap" }}>
-          <span>{readTime}</span><span>· Published by Dajai Studio</span>
+          <span>{readTime}</span><span>By <Link href="/about">Rai Dajai</Link></span>
         </div>
       </div>
 
@@ -42,7 +44,11 @@ export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro,
         {sections.map((section, i) => (
           <div key={i} style={{ marginBottom: 36 }}>
             {section.heading && <h2 style={{ fontSize: 24, fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -0.5 }}>{section.heading}</h2>}
+            {section.testingNote && <TestingNote {...section.testingNote} />}
             {section.text && <p style={{ marginBottom: 16, color: "#374151" }}>{section.text}</p>}
+            {section.paragraphs && section.paragraphs.map((paragraph, index) => (
+              <p key={index} style={{ marginBottom: 16, color: "#374151" }}>{paragraph}</p>
+            ))}
 
             {/* Comparison Table */}
             {section.table && (
@@ -116,6 +122,7 @@ export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro,
                 ))}
               </ul>
             )}
+            {section.afterText && <p style={{ marginBottom: 16, color: "#374151" }}>{section.afterText}</p>}
           </div>
         ))}
 
@@ -135,6 +142,13 @@ export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro,
           </div>
         )}
 
+        {afterFaqs && (
+          <div style={{ marginTop: 36 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#111827", marginBottom: 16, letterSpacing: -0.5 }}>{afterFaqs.heading}</h2>
+            <p><Link href={afterFaqs.href} style={{ fontWeight: 600 }}>{afterFaqs.text}</Link></p>
+          </div>
+        )}
+
         {/* CTA */}
         <div style={{ background: "#111827", borderRadius: 20, padding: 36, textAlign: "center", marginTop: 48 }}>
           <h3 style={{ fontWeight: 800, fontSize: 24, color: "white", marginBottom: 12 }}>{ctaText}</h3>
@@ -146,6 +160,8 @@ export default function BlogPost({ tag, tagColor, tagBg, title, readTime, intro,
 
         {/* Bottom ad */}
         <AdLeaderboard />
+
+        <AuthorBio />
       </div>
     </div>
   );

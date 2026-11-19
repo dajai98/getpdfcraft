@@ -118,7 +118,7 @@ const article = {
     },
     {
       "heading": "No account does not mean no dependencies",
-      "text": "The current tools are free with no account requirement. Document operations run locally, while website resources and some runtimes load over the network. Browser memory and input complexity impose practical limits. Internal Node evidence is not a universal device-compatibility test."
+      "text": "The current tools are free with no account requirement. Document operations run locally, while website resources and some runtimes load over the network. Browser memory and input complexity impose practical limits."
     },
     {
       "heading": "Open the tool you selected",

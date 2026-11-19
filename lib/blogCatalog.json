@@ -8,15 +8,6 @@
     "description": "Combine PDFs in insertion order with GetPDFCraft. Check page order, encrypted inputs, and practical browser limits."
   },
   {
-    "slug": "compress-pdf-without-losing-quality",
-    "title": "How to Compress PDF Without Losing Quality",
-    "date": "Jan 18, 2026",
-    "tag": "Compress",
-    "tagColor": "#CA8A04",
-    "tagBg": "#FEFCE8",
-    "description": "Try structural PDF compression without explicit image downsampling. Compare sizes and inspect the output; savings are not guaranteed."
-  },
-  {
     "slug": "convert-pdf-to-jpg-free",
     "title": "How to Convert PDF to JPG Free — No Watermark",
     "date": "Jan 20, 2026",
@@ -40,51 +31,6 @@
     "tagColor": "#4F46E5",
     "tagBg": "#EEF2FF",
     "description": "Unlock an authorized PDF with its correct password. Understand error messages, output checks, and what the tool cannot recover."
-  },
-  {
-    "slug": "ilovepdf-alternative",
-    "title": "An iLovePDF Alternative for Local PDF Workflows",
-    "date": "Feb 1, 2026",
-    "tag": "Comparison",
-    "tagColor": "#7C3AED",
-    "tagBg": "#F5F3FF",
-    "description": "Evaluate GetPDFCraft for local page operations and limited conversions, with clear limitations and no assumed iLovePDF prices or policies."
-  },
-  {
-    "slug": "smallpdf-alternative",
-    "title": "A Smallpdf Alternative: Check GetPDFCraft Against Your Task",
-    "date": "Feb 2, 2026",
-    "tag": "Comparison",
-    "tagColor": "#7C3AED",
-    "tagBg": "#F5F3FF",
-    "description": "Consider GetPDFCraft’s free local tools for a specific PDF task, without assuming Smallpdf pricing, limits, or feature availability."
-  },
-  {
-    "slug": "adobe-acrobat-alternative-free",
-    "title": "A Free Adobe Acrobat Alternative for Core PDF Tasks",
-    "date": "Feb 3, 2026",
-    "tag": "Comparison",
-    "tagColor": "#7C3AED",
-    "tagBg": "#F5F3FF",
-    "description": "See which PDF tasks GetPDFCraft can handle locally, and where you need a different tool. No assumed Adobe prices or feature equivalence."
-  },
-  {
-    "slug": "merge-pdf-on-iphone",
-    "title": "How to Merge PDF on iPhone Free (No App Needed)",
-    "date": "Feb 4, 2026",
-    "tag": "iPhone",
-    "tagColor": "#1D4ED8",
-    "tagBg": "#EFF6FF",
-    "description": "Merge PDFs in insertion order using an iPhone browser. Check browser support and locate downloads through your chosen settings."
-  },
-  {
-    "slug": "pdf-vs-word-which-is-better",
-    "title": "PDF vs Word — Which Format Should You Use?",
-    "date": "Feb 9, 2026",
-    "tag": "Guide",
-    "tagColor": "#4F46E5",
-    "tagBg": "#EEF2FF",
-    "description": "Choose fixed-layout PDF or an editable document format according to recipient needs, with realistic compatibility and security limits."
   },
   {
     "slug": "how-to-add-password-to-pdf-online",
@@ -158,15 +104,6 @@
     "description": "Convert PDF pages to PNG raster images. Understand pixel resolution, lossless encoding, and why transparency is not promised."
   },
   {
-    "slug": "how-to-merge-pdf-on-mac",
-    "title": "How to Merge PDF on Mac Free (3 Easy Ways)",
-    "date": "Feb 23, 2026",
-    "tag": "Mac",
-    "tagColor": "#374151",
-    "tagBg": "#F9FAFB",
-    "description": "Merge PDFs using GetPDFCraft or native options available on your Mac. Preserve originals and verify page order and output."
-  },
-  {
     "slug": "how-to-merge-pdf-on-windows",
     "title": "How to Merge PDF on Windows Without Installing an App",
     "date": "Feb 24, 2026",
@@ -234,14 +171,6 @@
     "description": "Understand the limits of PDF passwords, watermarks, and rasterization. GetPDFCraft does not make documents read-only or tamper-proof."
   },
   {
-    "slug": "secure-pdf-on-mac",
-    "title": "How to Password-Protect a PDF on Mac",
-    "tag": "Mac",
-    "tagColor": "#374151",
-    "tagBg": "#F9FAFB",
-    "description": "Try GetPDFCraft password protection on Mac or check native app options. Verify the encrypted output instead of assuming algorithm or compatibility."
-  },
-  {
     "slug": "how-browser-based-pdf-processing-works",
     "title": "How GetPDFCraft Processes Files Locally in Your Browser",
     "date": "Aug 5, 2026",
@@ -257,7 +186,7 @@
     "tag": "Measurement",
     "tagColor": "#CA8A04",
     "tagBg": "#FEFCE8",
-    "description": "Measure your own PDF compression result using input and output byte counts. No unsupported timing or percentage benchmarks."
+    "description": "Real browser tests on two PDFs show why one file grew while a text-heavy document shrank. Learn how to compare your own result."
   },
   {
     "slug": "pdf-tool-not-working-troubleshooting",

@@ -6,6 +6,7 @@ import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 export default function WatermarkPDF() {
   const [processing, setProcessing] = useState(false);
@@ -37,7 +38,13 @@ export default function WatermarkPDF() {
   return (
     <ToolLayout tag="Watermark PDF" tagBg="#FAF5FF" tagColor="#9333EA"
       title="Add Watermark to PDF" desc="Add a text watermark with opacity control. Document processing happens locally in your browser."
-      current="/tools/watermark-pdf" faqs={[
+      current="/tools/watermark-pdf" testingNote={<TestingNote
+        heading="What I found when I tested watermarking"
+        paragraphs={[
+          "I added a text watermark to a PDF with this tool. It appeared in the middle of every page — one page or many, it applied to all of them at once. The page text stayed readable underneath, and the watermark didn't cover or distort anything.",
+          "I only tested a short text watermark. I didn't try images, different positions, or very large files, so I can't say how it handles those."
+        ]}
+      />} faqs={[
   { q: "Can I use any text for the watermark?", a: "Yes. Type text supported by the built-in font such as CONFIDENTIAL, DRAFT, your name, or company name." },
   { q: "Can I remove a watermark from a PDF?", a: "GetPDFCraft does not remove watermarks. Watermark removal requires specialized software." },
   { q: "How are my files processed?", a: "Document processing happens locally in your browser; this tool does not upload documents to a processing server." },

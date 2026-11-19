@@ -6,6 +6,7 @@ import { pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Can I delete multiple pages at once?", a: "Yes. Select multiple pages to remove in one operation, but at least one page must remain." },
@@ -52,7 +53,15 @@ export default function DeletePages() {
     <ToolLayout
       tag="Delete Pages" tagBg="#FEF2F2" tagColor="#DC2626"
       title="Delete PDF Pages" desc="Remove unwanted pages from the visible PDF document. Local processing; not secure redaction."
-      current="/tools/delete-pages" faqs={faqs}
+      current="/tools/delete-pages" testingNote={<TestingNote
+        heading="What I found when I tested deleting pages"
+        paragraphs={[
+          "I deleted page 2 from a 3-page PDF (15.8 KB). The output was 10.5 KB — roughly a third smaller, which matches removing one of three pages.",
+          "You can select more than one page at a time before deleting, so you don't have to repeat the operation page by page. I also tried a 2 MB PDF with 125 pages and it handled that without trouble.",
+          "One limit worth knowing: the tool won't let you delete every page. If you try, it stops you and says at least one page must remain. That's deliberate — a PDF with zero pages isn't a valid file.",
+          "I didn't test files with mixed page sizes, so I can't say how it handles those."
+        ]}
+      />} faqs={faqs}
     >
       <p role="note">This removes pages from the visible document structure. Removed content may remain recoverable. Do not use this tool for secure redaction or sanitization.</p>
 

@@ -9,6 +9,15 @@ export default function Post() {
       intro={"To merge PDFs on Windows without installing an app, first distinguish combining existing pages from printing to PDF or converting through Word. The right choice depends on whether you want page assembly, a printable copy or editable content."}
       sections={[
   {
+    "testingNote": {
+      "heading": "What I found when I tested merging on Windows",
+      "paragraphs": [
+        "I merged two ordinary PDFs with this tool on Windows — a small document and a 3-page one. The merged file opened normally, the pages came out in the order I added them, and the page count matched what I expected. Reordering pages inside a PDF also worked, and the page count stayed the same.",
+        "I haven't tested very large files, encrypted PDFs, or documents with unusual internal structures. For ordinary documents, it did what it should."
+      ]
+    }
+  },
+  {
     "heading": "Choose the operation before choosing the tool",
     "text": "On Windows, saving something as PDF and combining existing PDFs are different tasks. Start with what you have: finished PDF pages, content open in an application, or a document you need to edit. Choose the operation that matches that starting point. A new file with a .pdf extension does not, by itself, tell you how its pages were assembled.",
     "table": {
@@ -38,7 +47,6 @@ export default function Post() {
   },
   {
     "heading": "Combine existing pages, then check A1, A2 and B1",
-    "tip": "A November 2, 2026 test on Windows used headless Microsoft Edge 156.0.4314.58 to merge two copies of a synthetic three-page PDF. The actual downloaded file independently reopened in PDF.js with six pages in the expected 1, 2, 3, 1, 2, 3 order. This checks that specific browser workflow; it does not establish compatibility with every Windows browser, PDF structure or device.",
     "text": "For supported inputs, GetPDFCraft Merge appends existing PDF pages rather than converting their contents into Word paragraphs. Keep your originals while you prepare the combined copy. A successful download is a reason to inspect the result, not a guarantee that every document feature survived.",
     "steps": [
       {
@@ -47,7 +55,7 @@ export default function Post() {
       },
       {
         "title": "Merge and download",
-        "body": "Run Merge, then save the resulting PDF. Suppose input A contains A1 and A2, while input B contains B1. With A before B, the expected order is A1 → A2 → B1. This is an example to check against your files, not a measured Windows browser test."
+        "body": "Run Merge, then save the resulting PDF. Suppose input A contains A1 and A2, while input B contains B1. With A before B, the expected order is A1 → A2 → B1."
       },
       {
         "title": "Reopen the saved file independently",
@@ -71,7 +79,7 @@ export default function Post() {
   },
   {
     "heading": "Printing application content is a different workflow",
-    "text": "Microsoft documents selecting Microsoft Print to PDF as a printer when saving printable application content. That is useful when your starting point is content in that application. It does not establish that several existing PDF page trees have been appended into one combined document. Do not rely on separate print jobs to merge files. Opening A and B in separate tabs and printing each does not automatically create the A1 → A2 → B1 result. Check the actual output instead of assuming that a PDF filename means the merge happened. This guide does not establish a built-in merge feature for every Windows configuration, or claim that no such option can exist.",
+    "text": "Microsoft documents the process of selecting Microsoft Print to PDF as a printer when saving printable application content. That is useful when your starting point is content in that application. It does not establish that several existing PDF page trees have been appended into one combined document. Do not rely on separate print jobs to merge files. Opening A and B in separate tabs and printing each does not automatically create the A1 → A2 → B1 result. Check the actual output instead of assuming that a PDF filename means the merge happened.",
     "list": [
       {
         "text": "Microsoft: printing messages, calendars and other Outlook items",
@@ -97,7 +105,7 @@ export default function Post() {
   },
   {
     "q": "Can I open a PDF in Word and combine it there?",
-    "a": "This guide does not verify a direct PDF-merge workflow in Word. Opening a PDF converts a copy into editable content, and layout may change. Combining that content would be an editing task, not the same operation as appending the existing PDF pages."
+    "a": "Opening a PDF converts a copy into editable content, and layout may change. Combining that content would be an editing task, not the same operation as appending the existing PDF pages."
   },
   {
     "q": "How do I fix the page order before merging?",

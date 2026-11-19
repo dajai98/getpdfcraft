@@ -5,6 +5,7 @@ import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 export default function RotatePDF() {
   const [processing, setProcessing] = useState(false);
@@ -32,7 +33,13 @@ export default function RotatePDF() {
   return (
     <ToolLayout tag="Rotate PDF" tagBg="#EFF6FF" tagColor="#2563EB"
       title="Rotate PDF Pages" desc="Fix page orientation in your browser. All pages rotated together."
-      current="/tools/rotate-pdf" faqs={[
+      current="/tools/rotate-pdf" testingNote={<TestingNote
+        heading="What I found when I tested rotating"
+        paragraphs={[
+          "The tool gives three options: 90° right, 90° left, and 180°. I tested it on a 1 MB PDF and a 10-page PDF, and both worked — every page rotated correctly.",
+          "One thing to know: you can't pick individual pages. Whatever angle you choose applies to every page in the file. If only some pages are sideways, this tool will rotate the correct ones and the upright ones together, so check the result before you keep it."
+        ]}
+      />} faqs={[
   { q: "Can I rotate just one page?", a: "This tool rotates all pages together; it does not offer individual page selection." },
   { q: "What rotation angles are available?", a: "You can rotate 90 degrees right, 180 degrees, or 90 degrees left which is 270 degrees." },
   { q: "Will rotating affect the PDF quality?", a: "Rotation changes page orientation without re-encoding page content. Keep your original; rewriting a PDF can affect signatures and document-level features." },

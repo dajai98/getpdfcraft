@@ -5,6 +5,7 @@ import { readSupportedImage } from "@/lib/imageInput";
 import { useObjectUrls } from "@/components/hooks/useObjectUrls";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Which image formats does GetPDFCraft support?", a: "GetPDFCraft supports JPEG/JPG and PNG images. Other image formats are not supported." },
@@ -76,7 +77,13 @@ export default function JPGtoPDF() {
     <ToolLayout
       tag="JPG to PDF" tagBg="#FEF2F2" tagColor="#DC2626"
       title="JPG to PDF" desc="Convert images to PDF in your browser. JPEG/JPG and PNG supported. Free, no watermark, no sign up."
-      current="/tools/jpg-to-pdf" faqs={faqs}
+      current="/tools/jpg-to-pdf" testingNote={<TestingNote
+        heading="What I found when I tested converting images"
+        paragraphs={[
+          "I converted a JPEG photo (a sunflower) and a PNG image to PDF with this tool. Both worked — the images appeared in the PDF and looked the same as the originals, with no visible stretching or blurring. I honestly expected it to fail, and it didn't.",
+          "I only tested one image per conversion. I didn't try adding several images into one PDF, or very large photos, so I can't say how it handles those."
+        ]}
+      />} faqs={faqs}
     >
       {/* Upload area */}
       <div

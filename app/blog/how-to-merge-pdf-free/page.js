@@ -36,8 +36,8 @@ const article = {
       "text": "Available file-picker locations and multi-select gestures depend on your browser and device. Retrieving a cloud-hosted input is a separate transfer from the local merge. Locate the saved output through your browser's download controls; the storage location can vary.",
       "list": [
         {
-          "text": "Find and save files on iPhone",
-          "href": "/blog/merge-pdf-on-iphone"
+          "text": "Open Merge PDF in your browser",
+          "href": "/tools/merge-pdf"
         }
       ]
     },
@@ -47,7 +47,7 @@ const article = {
     },
     {
       "heading": "Opening instructions are deliberately different",
-      "text": "Source OpenActions are omitted rather than choosing one file's initial destination or action for the merged document. Bookmark hierarchies remain distinct. The output is serialized, reopened and structurally validated before a download is exposed; that check is not a visual review or a signature-validity test."
+      "text": "Source OpenActions are omitted rather than choosing one file's initial destination or action for the merged document. Bookmark hierarchies remain distinct. The output is serialized, reopened and structurally validated before a download is exposed."
     },
     {
       "heading": "When another workflow is needed",
@@ -74,7 +74,7 @@ const article = {
     },
     {
       "heading": "Check links as well as page count",
-      "text": "Try a bookmark and a cross-page link from each source. Controlled Node tests cover supported mappings, not every PDF feature or browser. The handler copies locally without a processing upload; website resources still load. Keep each original until the combined document meets its intended use."
+      "text": "Try a bookmark and a cross-page link from each source. The handler copies locally without a processing upload; website resources still load. Keep each original until the combined document meets its intended use."
     },
     {
       "heading": "Choose the next operation",
@@ -90,10 +90,6 @@ const article = {
         {
           "text": "Choose a Windows merge workflow",
           "href": "/blog/how-to-merge-pdf-on-windows"
-        },
-        {
-          "text": "Compare Mac merge workflows",
-          "href": "/blog/how-to-merge-pdf-on-mac"
         }
       ]
     }

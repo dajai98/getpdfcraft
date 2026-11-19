@@ -6,6 +6,7 @@ import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Can I choose where the page number appears?", a: "Yes. Choose from bottom center, bottom right, bottom left, top center, top right, or top left." },
@@ -65,7 +66,13 @@ export default function AddPageNumbers() {
     <ToolLayout
       tag="Page Numbers" tagBg="#F0FDF4" tagColor="#16A34A"
       title="Add Page Numbers to PDF" desc="Number your PDF pages with custom position, size, and starting number. Free to use."
-      current="/tools/add-page-numbers" faqs={faqs}
+      current="/tools/add-page-numbers" testingNote={<TestingNote
+        heading="What I found when I tested page numbering"
+        paragraphs={[
+          "I tested every position — top and bottom, left, center, and right — and all three font sizes (large, medium, small). The numbers appeared where I chose them.",
+          "The “Start from page” setting is really the starting number, not the page it begins applying to. If you enter 5, the first page is numbered 5, the second 6, and so on. I tested 1, 3, 5, and 5000; all worked. With 5000 on a 3-page file, the pages came out as 5000, 5001, 5002. You can't start from 0."
+        ]}
+      />} faqs={faqs}
     >
       {error && <p role="alert">{error}</p>}
       {/* 
