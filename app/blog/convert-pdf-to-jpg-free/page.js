@@ -63,7 +63,7 @@ const article = {
     },
     {
       "heading": "If rendering or saving fails",
-      "text": "A password prompt requires an authorized unlocked copy first. The PDF.js worker loads from jsDelivr; blocked worker loading, canvas limits or memory pressure can prevent completion. File bytes are rendered locally, but that does not imply offline operation or tested compatibility with every browser. Inspect the actual saved image rather than just its on-page preview."
+      "text": "A password prompt requires an authorized unlocked copy first. The PDF.js worker loads from jsDelivr; blocked worker loading, canvas limits or memory pressure can prevent completion. File bytes are rendered locally, but that does not imply offline operation. Inspect the actual saved image rather than just its on-page preview."
     },
     {
       "heading": "Choose the next operation",

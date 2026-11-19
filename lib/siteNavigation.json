@@ -6,8 +6,6 @@
       "articles": [
         "how-to-merge-pdf-free",
         "how-to-merge-pdf-on-windows",
-        "how-to-merge-pdf-on-mac",
-        "merge-pdf-on-iphone",
         "how-to-split-pdf-online",
         "how-to-extract-pages-from-pdf",
         "how-to-rotate-pdf"
@@ -24,16 +22,14 @@
         "how-to-protect-pdf-from-editing",
         "how-to-add-watermark-to-pdf",
         "how-to-secure-pdf-before-sending-email",
-        "how-to-lock-pdf-for-job-applications",
-        "secure-pdf-on-mac"
+        "how-to-lock-pdf-for-job-applications"
       ]
     },
     {
       "id": "optimization",
       "label": "Compression and file size",
       "articles": [
-        "pdf-file-size-too-large",
-        "compress-pdf-without-losing-quality"
+        "pdf-file-size-too-large"
       ]
     },
     {
@@ -51,11 +47,7 @@
       "label": "Choose a tool or document workflow",
       "articles": [
         "best-free-pdf-tools-online",
-        "pdf-vs-word-which-is-better",
-        "how-to-edit-pdf-free",
-        "ilovepdf-alternative",
-        "adobe-acrobat-alternative-free",
-        "smallpdf-alternative"
+        "how-to-edit-pdf-free"
       ]
     },
     {
@@ -122,7 +114,7 @@
     ],
     "compress-pdf": [
       [
-        "compress-pdf-without-losing-quality",
+        "pdf-compression-real-test-results",
         "Understand compression and quality"
       ],
       [
@@ -169,7 +161,7 @@
     ],
     "pdf-to-grayscale": [
       [
-        "compress-pdf-without-losing-quality",
+        "pdf-compression-real-test-results",
         "Compare structural compression and rasterization"
       ]
     ],

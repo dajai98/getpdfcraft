@@ -5,6 +5,7 @@ import { loadPdf, pdfInputError } from "@/lib/pdfInput";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Is merging PDFs on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
@@ -45,7 +46,13 @@ export default function MergePDF() {
   return (
     <ToolLayout tag="Merge PDF" tagBg="#FEF2F2" tagColor="#DC2626"
       title="Merge PDF Files" desc="Combine multiple PDFs into one file. Free to use, with local processing."
-      current="/tools/merge-pdf" faqs={faqs}>
+      current="/tools/merge-pdf" testingNote={<TestingNote
+        heading="What I found when I tested merging"
+        paragraphs={[
+          "I merged a small PDF and a 3-page PDF with this tool on Windows. The merged file opened normally, the pages came out in the order I added them, and the page count matched what I expected. Reordering pages inside a merged file also worked, and the page count stayed the same.",
+          "I haven't tested very large files, encrypted PDFs, or documents with unusual internal structures. For ordinary documents, it did what it should."
+        ]}
+      />} faqs={faqs}>
 
       {error && <p role="alert">{error}</p>}
       <UploadZone onFiles={addFiles} multiple label="Drop PDFs here or click to browse" />

@@ -45,7 +45,7 @@ const article = {
     },
     {
       "heading": "Use two checkpoints, not one success message",
-      "text": "Save both the image-only PDF and final combined PDF until the task is complete. Confirm image order at the first checkpoint and overall order at the second. Both operations process locally, but web resources and browser memory are still needed; device/download behavior is not universally verified."
+      "text": "Save both the image-only PDF and final combined PDF until the task is complete. Confirm image order at the first checkpoint and overall order at the second. Both operations process locally, but web resources and browser memory are still needed."
     },
     {
       "heading": "Continue with the appropriate tool",

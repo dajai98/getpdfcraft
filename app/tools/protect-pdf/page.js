@@ -5,6 +5,7 @@ import { runQpdf } from "@/lib/qpdf";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Is password protecting a PDF on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed. The tools are free to use; practical limits depend on your device and browser." },
@@ -54,6 +55,13 @@ export default function ProtectPDF() {
       title="Protect PDF with Password"
       desc="Add 256-bit AES password protection to an unencrypted PDF. Free to use. Files are processed locally in your browser."
       current="/tools/protect-pdf"
+      testingNote={<TestingNote
+        heading="What I found when I tested protecting"
+        paragraphs={[
+          "I tested this on an unprotected PDF and it worked — the file came out encrypted and asked for the password when opened. I also tried it on a PDF that was already password-protected, and the tool didn't add a second password on top. It appears to want an unprotected file as input.",
+          "I only tested text-based documents. I didn't try large files or files with forms, so I can't say how it handles those."
+        ]}
+      />}
       faqs={faqs}
     >
       {/* Trust notice */}

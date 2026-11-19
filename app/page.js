@@ -27,10 +27,10 @@ const features = [
 
 const blogPosts = [
   { tag: "Merge PDF", title: "How to Merge PDF Files Free — No Sign Up", href: "/blog/how-to-merge-pdf-free", color: "#DC2626", bg: "#FEF2F2" },
-  { tag: "Compress", title: "PDF Compression — What It Can and Cannot Reduce", href: "/blog/compress-pdf-without-losing-quality", color: "#CA8A04", bg: "#FEFCE8" },
-  { tag: "Comparison", title: "An iLovePDF Alternative for Local PDF Workflows", href: "/blog/ilovepdf-alternative", color: "#7C3AED", bg: "#F5F3FF" },
-  { tag: "iPhone", title: "How to Merge PDF on iPhone — No App Needed, Free", href: "/blog/merge-pdf-on-iphone", color: "#2563EB", bg: "#EFF6FF" },
-  { tag: "Guide", title: "PDF vs Word — Which Format Is Better and When to Use Each?", href: "/blog/pdf-vs-word-which-is-better", color: "#4F46E5", bg: "#EEF2FF" },
+  { tag: "Compress", title: "PDF Compression — What It Can and Cannot Reduce", href: "/blog/pdf-compression-real-test-results", color: "#CA8A04", bg: "#FEFCE8" },
+  { tag: "Guide", title: "Edit PDF Pages Free: Reorder, Rotate and Add Labels", href: "/blog/how-to-edit-pdf-free", color: "#7C3AED", bg: "#F5F3FF" },
+  { tag: "Merge PDF", title: "How to Combine PDF and Images Into One File Free", href: "/blog/how-to-combine-pdf-and-images", color: "#2563EB", bg: "#EFF6FF" },
+  { tag: "Guide", title: "PDF File Size Too Large? How to Fix It Free", href: "/blog/pdf-file-size-too-large", color: "#4F46E5", bg: "#EEF2FF" },
   { tag: "Guide", title: "13 Free GetPDFCraft Tools: What Each One Actually Does", href: "/blog/best-free-pdf-tools-online", color: "#4F46E5", bg: "#EEF2FF" },
 ];
 

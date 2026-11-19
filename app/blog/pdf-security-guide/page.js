@@ -90,18 +90,18 @@ const article = {
           "href": "/blog/how-to-add-password-to-pdf-online"
         },
         {
-          "text": "Prepare a protected copy on Mac",
-          "href": "/blog/secure-pdf-on-mac"
+          "text": "Prepare a protected copy in your browser",
+          "href": "/tools/protect-pdf"
         }
       ]
     },
     {
       "heading": "Local processing has a specific meaning",
-      "text": "The document operations run in browser memory without a PDF-processing upload backend. Website requests still occur; qpdf WASM and PDF.js workers load remotely for the relevant tools. This is not a claim that every network request is absent, that memory is securely erased or that every device has been tested."
+      "text": "The document operations run in browser memory without a PDF-processing upload backend. Website requests still occur; qpdf WASM and PDF.js workers load remotely for the relevant tools."
     },
     {
-      "heading": "Evidence is narrower than a security certification",
-      "text": "Controlled tests observed password acceptance/rejection and some parsed document features. Interactive forms, signature preservation and universal browser behavior are not established. A file that reopens successfully can still require checks for the particular property you rely on. Visible labels and rasterization do not make a document uneditable."
+      "heading": "Check the result you rely on",
+      "text": "A file that reopens successfully can still require checks for the particular property you rely on. Visible labels and rasterization do not make a document uneditable."
     },
     {
       "heading": "Continue with the appropriate tool",

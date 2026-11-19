@@ -5,7 +5,7 @@ import FAQSchema from "@/components/ui/FAQSchema";
 import ToolDocumentation from "@/components/ui/ToolDocumentation";
 import toolDocumentation from "@/lib/toolDocumentation.json";
 
-export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children, current, faqs }) {
+export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children, current, faqs, testingNote }) {
   const documentation = toolDocumentation[current?.replace(/^\/tools\//, "")];
   // Route documentation is the visible FAQ/schema source. Legacy page props
   // remain a fallback for callers outside the documented production tools.
@@ -59,6 +59,7 @@ export default function ToolLayout({ tag, tagColor, tagBg, title, desc, children
               {children}
             </div>
 
+            {testingNote}
             <ToolDocumentation documentation={documentation} />
             <ToolGuides current={current} />
 

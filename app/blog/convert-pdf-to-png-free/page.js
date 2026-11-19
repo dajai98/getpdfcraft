@@ -17,7 +17,7 @@ export default function Post() {
     "steps": [
       {
         "title": "Dimensions come from the rendered page",
-        "body": "The current implementation requests a viewport at scale 2 and assigns its width and height to the canvas. Different page sizes or rotations can produce different image dimensions. This describes the code path, not a controlled browser pixel test or a promise of a particular print resolution."
+        "body": "The current implementation requests a viewport at scale 2 and assigns its width and height to the canvas. Different page sizes or rotations can produce different image dimensions."
       },
       {
         "title": "Resolution remains finite",
@@ -51,7 +51,7 @@ export default function Post() {
     "steps": [
       {
         "title": "Check the background instead of assuming transparency",
-        "body": "The current render call supplies no background override and uses PDF.js canvas default background behavior. PNG as a format can carry transparency, but this tool does not promise to preserve transparency from every PDF. Inspect the downloaded background against its intended destination; no universal background or visual-fidelity result is claimed here."
+        "body": "The current render call supplies no background override and uses PDF.js canvas default background behavior. PNG as a format can carry transparency, but this tool does not promise to preserve transparency from every PDF. Inspect the downloaded background against its intended destination."
       }
     ]
   },

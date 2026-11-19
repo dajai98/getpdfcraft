@@ -6,7 +6,7 @@ import CategoryIcon from "@/components/ui/CategoryIcon";
 
 const featuredGuides = [
   ["how-browser-based-pdf-processing-works", "How local processing works", "Understand browser processing, downloads and practical limits.", "how-it-works"],
-  ["pdf-compression-real-test-results", "Measure your compression result", "Compare original and output sizes and inspect recorded observations.", "optimization"],
+  ["pdf-compression-real-test-results", "Measure your compression result", "Compare two real PDF results and learn how to check your own file.", "optimization"],
   ["pdf-tool-not-working-troubleshooting", "Troubleshoot a failed operation", "Use error messages and file checks to choose the next step.", "decisions"],
 ];
 

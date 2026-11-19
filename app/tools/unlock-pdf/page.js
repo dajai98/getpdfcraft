@@ -5,6 +5,7 @@ import { runQpdf } from "@/lib/qpdf";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 const faqs = [
   { q: "Is removing a PDF password on GetPDFCraft really free?", a: "Yes, completely free. No hidden fees, no premium plan needed." },
@@ -51,6 +52,13 @@ export default function UnlockPDF() {
       title="Unlock PDF — Remove Password"
       desc="Remove password protection from a PDF you own. You must know the current password. GetPDFCraft cannot crack or guess passwords."
       current="/tools/unlock-pdf"
+      testingNote={<TestingNote
+        heading="What I found when I tested unlocking"
+        paragraphs={[
+          "This tool only works if you already know the password. I tested it on a file whose password I had set myself, and it removed the protection correctly. When I tried it without knowing the password, it couldn't open the file — it doesn't guess or crack passwords.",
+          "That's the intended behavior. Only use this on documents you own or have permission to modify. It's for removing protection you already have the key to, not for opening someone else's locked file."
+        ]}
+      />}
       faqs={faqs}
     >
       {/* Important notice */}

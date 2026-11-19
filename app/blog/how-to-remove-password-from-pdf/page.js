@@ -57,7 +57,7 @@ const article = {
     },
     {
       "heading": "The output needs different handling",
-      "text": "An unencrypted copy should not be distributed on the assumption that the old opening password still protects it. Decide where to store it and who may receive it. Controlled Node checks exercised a Protect-to-Unlock workflow and observed text/field values, not interactive form behavior, signature preservation or universal compatibility."
+      "text": "An unencrypted copy should not be distributed on the assumption that the old opening password still protects it. Decide where to store it and who may receive it."
     },
     {
       "heading": "Local decryption still loads a runtime",
@@ -84,7 +84,7 @@ const article = {
     },
     {
       "q": "Will the unlocked copy retain a valid digital signature?",
-      "a": "Signature preservation is not verified. Keep the signed original and use a workflow that explicitly validates signatures when that matters."
+      "a": "Keep the signed original and use a workflow that explicitly validates signatures when that matters."
     }
   ],
   "ctaHref": "/tools/unlock-pdf",

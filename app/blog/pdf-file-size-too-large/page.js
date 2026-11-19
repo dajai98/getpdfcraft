@@ -65,7 +65,7 @@ const article = {
     },
     {
       "heading": "A larger output is not a hidden success",
-      "text": "Small PDFs can gain serialization overhead; already-packed inputs can also grow. The audited sample includes both outcomes. A large percentage increase on a tiny control and a small percentage reduction on a large scan have very different byte consequences. Compare absolute bytes as well as percentages."
+      "text": "Small PDFs can gain serialization overhead; already-packed inputs can also grow. Compare absolute bytes as well as percentages."
     },
     {
       "heading": "Do not rasterize blindly",
@@ -73,7 +73,7 @@ const article = {
       "list": [
         {
           "text": "Compare compression and quality tradeoffs",
-          "href": "/blog/compress-pdf-without-losing-quality"
+          "href": "/blog/pdf-compression-real-test-results"
         }
       ]
     },

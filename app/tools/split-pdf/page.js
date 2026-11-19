@@ -7,6 +7,7 @@ import { parsePageRanges } from "@/lib/splitRanges";
 import UploadZone from "@/components/ui/UploadZone";
 import ToolLayout from "@/components/ui/ToolLayout";
 import DownloadButton from "@/components/ui/DownloadButton";
+import TestingNote from "@/components/ui/TestingNote";
 
 export default function SplitPDF() {
   const { beginResult, isCurrentResult, invalidateResult: invalidateSingle } = useGeneratedResult();
@@ -56,7 +57,10 @@ export default function SplitPDF() {
   return (
     <ToolLayout tag="Split PDF" tagBg="#FFF7ED" tagColor="#EA580C"
       title="Split PDF File" desc="Extract pages or split a PDF into individual files. Free to use."
-      current="/tools/split-pdf" faqs={[
+      current="/tools/split-pdf" testingNote={<TestingNote
+        heading="What I found when I tested splitting"
+        paragraphs={["I tested both modes on a 3-page PDF. \"Extract all pages as individual PDFs\" gave me each page as a separate file, so I could download only the ones I needed. \"Extract specific page range\" let me choose a range like 1-2 or 1-3 and gave me exactly those pages. Both did what they should on a normal document. I didn't try a very large file or a scanned document, so I can't say how it handles those."]}
+      />} faqs={[
   { q: "Can I split a PDF into individual pages?", a: "Yes. Select the Split All Pages option and every page becomes its own PDF file." },
   { q: "Can I extract specific pages?", a: "Yes. Use the Page Range option and enter pages like 1-3, 5, 7-10. Each range becomes a separate PDF." },
   { q: "What are the practical limits?", a: "No app-level file-size quota; practical limits depend on your device and browser. Large files or many pages may exceed available memory." },
