@@ -10,6 +10,11 @@ body {
 }
 
 a { text-decoration: none; color: inherit; }
+main a:not([class]) {
+  color: #B92B0A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 ::selection { background: #C92F0A; color: white; }
 
 /* Navigation surfaces: links remain recognizable without a hover device. */
